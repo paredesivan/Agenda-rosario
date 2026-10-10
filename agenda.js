@@ -6,7 +6,7 @@ const pad = n => String(n).padStart(2, "0");
 const dateKey = (y, m, d) => `${y}-${pad(m + 1)}-${pad(d)}`;
 
 async function loadEvents() {
-  const response = await fetch(`data/eventos.json?t=${Date.now()}`, {cache: "no-store"});
+  const response = await fetch(`eventos.json?t=${Date.now()}`, {cache: "no-store"});
   if (!response.ok) throw Error("No se pudo cargar la agenda");
   const data = await response.json();
   events = data.eventos;
