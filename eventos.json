@@ -1,0 +1,37 @@
+{
+  "actualizado": "2026-10-10",
+  "eventos": [
+    {
+      "fecha": "2026-10-17", "hora": "13:00",
+      "nombre": "DENSO – Encuentro de Diseño Rosarino",
+      "lugar": "CEC · Paseo de las Artes 310",
+      "direccion": "Paseo de las Artes 310, Rosario, Santa Fe",
+      "descripcion": "Diseño, arte, música y talleres.",
+      "evento_url": "", "precio": 0
+    },
+    {
+      "fecha": "2026-10-17", "hora": "14:00",
+      "nombre": "Encuentro Nacional de Bandas",
+      "lugar": "Monumento Nacional a la Bandera",
+      "direccion": "Monumento Nacional a la Bandera, Rosario",
+      "descripcion": "Bandas y música al aire libre.",
+      "evento_url": "", "precio": 0
+    },
+    {
+      "fecha": "2026-10-17", "hora": "18:00",
+      "nombre": "Noche de Peatonales",
+      "lugar": "Peatonales del centro",
+      "direccion": "Peatonal Córdoba y San Martín, Rosario",
+      "descripcion": "Ferias, espectáculos, música y gastronomía.",
+      "evento_url": "", "precio": 0
+    },
+    {
+      "fecha": "2026-10-17", "hora": "20:00",
+      "nombre": "Impresiones Sonoras",
+      "lugar": "Centro Cultural Parque de España",
+      "direccion": "Centro Cultural Parque de España, Rosario",
+      "descripcion": "Concierto del Ensamble Municipal de Vientos.",
+      "evento_url": "", "precio": 0
+    }
+  ]
+}
