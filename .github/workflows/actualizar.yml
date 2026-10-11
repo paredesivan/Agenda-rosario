@@ -21,6 +21,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Instalar dependencias
+        run: pip install requests beautifulsoup4
+
       - name: Actualizar eventos
         run: python actualizar_eventos.py
 
