@@ -242,6 +242,391 @@ def actualizar():
     for error in errores:
         print(f"Aviso: {error}")
 
+# Fuentes adicionales y consultas moderadas.
+from html import unescape
+from time import monotonic, sleep
+
+EXTRAS = (
+    (
+        "Plataforma Lavardén",
+        "https://plataformalavarden.gob.ar/agenda/",
+        "Mendoza 1085",
+    ),
+    (
+        "Centro Cultural Parque de España",
+        "https://ccpe.org.ar/web/agenda/",
+        "Sarmiento y el río",
+    ),
+    (
+        "Teatro Municipal La Comedia",
+        "https://teatrolacomedia.gob.ar/espectaculos/programacion/",
+        "Mitre 958",
+    ),
+)
+
+SESION = requests.Session()
+SESION.headers.update({
+    "User-Agent": "AgendaRosario/3.0 (+https://paredesivan.github.io/Agenda-rosario/)",
+    "Accept": "text/html,application/xhtml+xml",
+    "Accept-Language": "es-AR,es;q=0.9",
+})
+SESION.mount("https://", HTTPAdapter(max_retries=Retry(
+    total=1,
+    backoff_factor=1,
+    status_forcelist=(500, 502, 503, 504),
+    respect_retry_after_header=False,
+)))
+
+ULTIMA, BLOQUEADOS, FALLAS = {}, set(), {}
+
+
+def descargar(url):
+    host = urlsplit(url).hostname
+    if host in BLOQUEADOS:
+        raise requests.RequestException(
+            f"Fuente pausada: {host}; se conservan sus datos"
+        )
+
+    espera = 1.5 - (monotonic() - ULTIMA.get(host, 0))
+    if espera > 0:
+        sleep(espera)
+
+    try:
+        respuesta = SESION.get(url, timeout=(10, 25))
+        if respuesta.status_code in (403, 429):
+            BLOQUEADOS.add(host)
+            raise requests.HTTPError(
+                f"HTTP {respuesta.status_code}: fuente pausada hasta la próxima revisión",
+                response=respuesta,
+            )
+        respuesta.raise_for_status()
+        FALLAS[host] = 0
+        respuesta.encoding = "utf-8"
+        return BeautifulSoup(respuesta.text, "html.parser")
+    except (requests.ConnectionError, requests.Timeout):
+        FALLAS[host] = FALLAS.get(host, 0) + 1
+        if FALLAS[host] >= 3:
+            BLOQUEADOS.add(host)
+        raise
+    finally:
+        ULTIMA[host] = monotonic()
+
+
+def acceso(valor, venta=False):
+    valor = normalizar(valor)
+    patron = r"\$\s*(\d{1,3}(?:\.\d{3})+(?:,\d{1,2})?|\d+(?:,\d{1,2})?)"
+    importes = [
+        float(n.replace(".", "").replace(",", "."))
+        for n in re.findall(patron, valor)
+    ]
+    importes = sorted(set(n for n in importes if n > 0))
+
+    if len(importes) == 1:
+        return importes[0], ""
+    if importes:
+        nota = (
+            f"Entradas entre ${importes[0]:,.0f} "
+            f"y ${importes[-1]:,.0f}. "
+        ).replace(",", ".")
+        return None, nota
+
+    if re.search(
+        r"\bgratis\b|\bgratuit[ao]s?\b|entrada libre|sin (?:costo|cargo)",
+        valor,
+    ):
+        return 0, ""
+
+    if venta or re.search(
+        r"entradas? (?:a la venta|anticipadas|en venta)|arancelad|boleteria|tickets",
+        valor,
+    ):
+        return None, ""
+
+    return None, None
+
+
+def resumen(valor):
+    palabras = valor.split()
+    return " ".join(palabras[:22]) + ("…" if len(palabras) > 22 else "")
+
+
+def evento_extra(fecha, hora, nombre, url, fuente, direccion,
+                 descripcion, precio, nota):
+    return {
+        "fecha": fecha,
+        "hora": hora,
+        "nombre": unescape(nombre),
+        "lugar": fuente,
+        "direccion": direccion + ", Rosario, Santa Fe",
+        "descripcion": nota + resumen(descripcion),
+        "evento_url": url,
+        "precio": precio,
+        "origen": fuente,
+    }
+
+
+def sin_repetidos(eventos):
+    resultado = []
+    sedes = ("lavarden", "parque de espana", "comedia")
+    for evento in eventos:
+        nombre = normalizar(evento["nombre"])
+        lugar = normalizar(evento["lugar"])
+        sede = next((v for v in sedes if v in lugar), lugar)
+        repetido = False
+
+        for anterior in resultado:
+            otro = normalizar(anterior["nombre"])
+            otro_lugar = normalizar(anterior["lugar"])
+            otra_sede = next(
+                (v for v in sedes if v in otro_lugar), otro_lugar
+            )
+            mismo_turno = (
+                evento["fecha"], evento["hora"], sede
+            ) == (
+                anterior["fecha"], anterior["hora"], otra_sede
+            )
+            mismo_nombre = (
+                nombre == otro
+                or len(nombre) >= 8 and nombre in otro
+                or len(otro) >= 8 and otro in nombre
+            )
+            if mismo_turno and mismo_nombre:
+                repetido = True
+                break
+
+        if not repetido:
+            resultado.append(evento)
+    return resultado
+
+
+def lavarden(html, fuente, url, direccion, hoy):
+    tarjetas = html.select(".jet-listing-grid__item")
+    if not tarjetas:
+        raise ValueError("Cambió el formato de la agenda Lavardén")
+
+    eventos = []
+    for tarjeta in tarjetas:
+        enlace = tarjeta.select_one("h2 a[href]")
+        valores = [
+            texto(v)
+            for v in tarjeta.select(".jet-listing-dynamic-field__content")
+        ]
+        fecha = next(
+            (v for v in valores if re.search(r"\d{1,2}:\d{2}\s*hs", v)),
+            "",
+        )
+        partes = re.search(
+            r"(\d{1,2})\s+(\w+)(?:\s+(\d{4}))?,\s*(\d{1,2}):(\d{2})",
+            normalizar(fecha),
+        )
+        if not enlace or not partes or partes[2] not in MESES:
+            continue
+
+        mes = MESES.index(partes[2]) + 1
+        anio = (
+            int(partes[3]) if partes[3]
+            else hoy.year + (hoy.month == 12 and mes == 1)
+        )
+        dia = date(anio, mes, int(partes[1]))
+        if not hoy <= dia <= hoy + timedelta(days=30):
+            continue
+
+        venta = any(
+            "entradaslavarden.com" in a["href"]
+            for a in tarjeta.select("a[href]")
+        )
+        precio, nota = acceso(texto(tarjeta), venta)
+        if nota is None:
+            continue
+
+        descripcion = texto(
+            tarjeta.select_one(".elementor-widget-text-editor")
+        )
+        eventos.append(evento_extra(
+            dia.isoformat(),
+            f"{int(partes[4]):02d}:{partes[5]}",
+            texto(enlace),
+            enlace["href"],
+            fuente,
+            direccion,
+            descripcion,
+            precio,
+            nota,
+        ))
+    return eventos, set()
+
+
+def eventos_schema(valor):
+    if isinstance(valor, list):
+        for v in valor:
+            yield from eventos_schema(v)
+    elif isinstance(valor, dict):
+        tipos = valor.get("@type", [])
+        if tipos == "Event" or isinstance(tipos, list) and "Event" in tipos:
+            yield valor
+        for v in valor.values():
+            if isinstance(v, (list, dict)):
+                yield from eventos_schema(v)
+
+
+def calendario(html, fuente, url, direccion, hoy):
+    fichas = []
+    for tag in html.select('script[type="application/ld+json"]'):
+        try:
+            fichas.extend(eventos_schema(json.loads(tag.get_text())))
+        except ValueError:
+            continue
+    if not fichas:
+        raise ValueError("Cambió el formato del calendario")
+
+    eventos, fallidos, vistos = [], set(), set()
+    for ficha in fichas:
+        fecha = ficha.get("startDate", "")[:10]
+        enlace = (
+            ficha.get("url")
+            or ficha.get("offers", {}).get("url", "")
+        )
+        if not enlace or enlace in vistos:
+            continue
+        if urlsplit(enlace).hostname != urlsplit(url).hostname:
+            continue
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", fecha):
+            continue
+        if not hoy <= date.fromisoformat(fecha) <= hoy + timedelta(days=30):
+            continue
+
+        vistos.add(enlace)
+        try:
+            detalle = descargar(enlace)
+            cuerpo = detalle.select_one(".mec-single-event-description")
+            if not cuerpo:
+                raise ValueError("La ficha no tiene descripción verificable")
+            descripcion = texto(cuerpo)
+
+            if re.search(
+                r"\bsuspendid[ao]\b|\bcancelad[ao]\b|\breprogramad[ao]\b",
+                normalizar(descripcion),
+            ):
+                continue
+
+            hora = texto(detalle.select_one(
+                ".mec-single-event-time .mec-events-abbr"
+            ))
+            coincidencia = re.match(r"(\d{1,2}):(\d{2})", hora)
+            if not coincidencia:
+                continue
+            hora = f"{int(coincidencia[1]):02d}:{coincidencia[2]}"
+
+            precio, nota = acceso(descripcion)
+            if nota is None:
+                continue
+
+            eventos.append(evento_extra(
+                fecha, hora, ficha.get("name", ""), enlace,
+                fuente, direccion, descripcion, precio, nota,
+            ))
+        except (requests.RequestException, ValueError) as error:
+            fallidos.add(enlace)
+            print(
+                f"Aviso: {fuente}: {type(error).__name__}; "
+                "se conserva la ficha anterior",
+                flush=True,
+            )
+    return eventos, fallidos
+
+
+def actualizar():
+    ahora = datetime.now(ZONA)
+    hoy = ahora.date()
+    anteriores = (
+        json.loads(ARCHIVO.read_text(encoding="utf-8"))
+        if ARCHIVO.exists() else {"eventos": []}
+    )
+    conocidos = anteriores.get("eventos", [])
+    eventos, fallidos, errores, correctas = [], set(), [], set()
+    BLOQUEADOS.clear()
+    FALLAS.clear()
+
+    for fuente, url, direccion in EXTRAS:
+        try:
+            html = descargar(url)
+            parser = lavarden if fuente == "Plataforma Lavardén" else calendario
+            nuevos, fallas = parser(html, fuente, url, direccion, hoy)
+            eventos.extend(nuevos)
+            fallidos.update(fallas)
+            correctas.add(fuente)
+            if fallas:
+                errores.append(f"{fuente}: {len(fallas)} fichas pendientes")
+            print(f"{fuente}: {len(nuevos)} actividades", flush=True)
+        except (requests.RequestException, ValueError) as error:
+            errores.append(
+                f"{fuente}: {type(error).__name__}; "
+                "se conservan datos anteriores"
+            )
+
+    try:
+        enlaces, avisos = obtener_enlaces()
+        errores.extend(avisos)
+        enlaces.update(
+            e["evento_url"] for e in conocidos
+            if e.get("origen") == ORIGEN
+            and e["fecha"] >= hoy.isoformat()
+            and e.get("evento_url")
+        )
+        for indice, url in enumerate(sorted(enlaces), 1):
+            _, nuevos, error, eliminado = consultar_evento(url, hoy)
+            eventos.extend(nuevos)
+            if error and not eliminado:
+                fallidos.add(url)
+            if indice % 20 == 0:
+                print(
+                    f"Municipalidad: {indice}/{len(enlaces)} fichas",
+                    flush=True,
+                )
+        correctas.add(ORIGEN)
+    except (requests.RequestException, ValueError, RuntimeError) as error:
+        errores.append(
+            f"Municipalidad: {type(error).__name__}; "
+            "se conservan datos anteriores"
+        )
+
+    if fallidos:
+        errores.append(f"{len(fallidos)} fichas pendientes de consulta")
+    if not eventos:
+        raise RuntimeError(
+            "No se obtuvieron actividades; se conserva la agenda anterior"
+        )
+
+    resultados = {clave(e): e for e in eventos}
+    for e in conocidos:
+        conservar = (
+            e.get("origen") not in correctas
+            or e.get("evento_url") in fallidos
+        )
+        if e["fecha"] >= hoy.isoformat() and conservar:
+            resultados.setdefault(clave(e), e)
+
+    datos = {
+        "actualizado": ahora.strftime("%Y-%m-%d %H:%M"),
+        "estado": "parcial" if errores else "completo",
+        "eventos": sorted(
+            sin_repetidos(resultados.values()),
+            key=lambda e: (e["fecha"], e["hora"], e["nombre"]),
+        ),
+    }
+    temporal = ARCHIVO.with_suffix(".json.tmp")
+    temporal.write_text(
+        json.dumps(datos, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    temporal.replace(ARCHIVO)
+    print(
+        f"Agenda actualizada: {len(datos['eventos'])} actividades",
+        flush=True,
+    )
+    for error in errores:
+        print(f"Aviso: {error}", flush=True)
+
 
 if __name__ == "__main__":
     actualizar()
