@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-12 02:55",
-  "estado": "completo",
+  "actualizado": "2026-10-12 03:48",
+  "estado": "parcial",
   "eventos": [
     {
       "fecha": "2026-10-12",
@@ -292,6 +292,17 @@
     {
       "fecha": "2026-10-15",
       "hora": "13:00",
+      "nombre": "76º Workshop de ARAV",
+      "lugar": "Metropolitano",
+      "direccion": "Junín 501, Rosario, Santa Fe, Argentina",
+      "descripcion": "Rosario volverá a convertirse en el punto de encuentro para los principales actores del turismo nacional con la realización del 76º Workshop…",
+      "evento_url": "https://www.rosarioencartel.com.ar/76o-workshop-de-arav/",
+      "precio": 0,
+      "origen": "Rosario en Cartel"
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "13:00",
       "nombre": "A favor de la fantasía en contra de la inflación",
       "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
       "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
@@ -448,11 +459,26 @@
       "hora": "20:30",
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "direccion": "Mitre 754, Rosario",
       "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo/",
       "precio": null,
-      "origen": "Teatro Astengo"
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "20:30",
+      "nombre": "Ensayo Vania (una fallida representación sobre la felicidad)",
+      "lugar": "La Orilla Infinita",
+      "direccion": "Colón 2148, Rosario, Santa Fe",
+      "descripcion": "Entrada general. Consultá descuentos y disponibilidad en la tienda oficial.",
+      "evento_url": "https://laorillainfinita.com.ar/productos/vania/",
+      "precio": 18000,
+      "origen": "La Orilla Infinita",
+      "precio_etiqueta": "General $18.000"
     },
     {
       "fecha": "2026-10-15",
@@ -731,6 +757,17 @@
     },
     {
       "fecha": "2026-10-16",
+      "hora": "20:30",
+      "nombre": "«Mama mía»",
+      "lugar": "Centro Cultural Parque de España",
+      "direccion": "Centro Cultural Parque de España, Rosario, Santa Fe, Argentina",
+      "descripcion": "En escena, hay una actriz en una sala de espera. Ella está en un laberinto mental inducido por el exceso de químicos.…",
+      "evento_url": "https://www.rosarioencartel.com.ar/mama-mia/",
+      "precio": 0,
+      "origen": "Rosario en Cartel"
+    },
+    {
+      "fecha": "2026-10-16",
       "hora": "21:00",
       "nombre": "CIRKUS CIRKOR",
       "lugar": "Teatro Broadway",
@@ -757,11 +794,25 @@
       "hora": "21:00",
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "direccion": "Mitre 754, Rosario",
       "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151/",
       "precio": null,
-      "origen": "Teatro Astengo"
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:00",
+      "nombre": "HAMLET SE VA DE GIRA",
+      "lugar": "Teatro del Rayo",
+      "direccion": "Salta 2991, Rosario, Santa Fe",
+      "descripcion": "Entradas y reservas por el enlace oficial. Consultá el valor vigente.",
+      "evento_url": "https://elrayomisterioso.org.ar/index.php/es/component/sppagebuilder/?view=page&id=219",
+      "precio": null,
+      "origen": "Teatro del Rayo"
     },
     {
       "fecha": "2026-10-16",
@@ -871,7 +922,9 @@
       "direccion": "Paseo de las Artes 310, Rosario, Santa Fe",
       "descripcion": "Diseño, arte, música y talleres.",
       "evento_url": "",
-      "precio": 0
+      "precio": 0,
+      "origen": "Manual",
+      "fuente_pendiente": true
     },
     {
       "fecha": "2026-10-17",
@@ -1024,11 +1077,14 @@
       "hora": "21:00",
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "direccion": "Mitre 754, Rosario",
       "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151-882/",
       "precio": null,
-      "origen": "Teatro Astengo"
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-17",
@@ -1065,6 +1121,30 @@
       "precio": null,
       "origen": "ATIR",
       "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:00",
+      "nombre": "La función de los invisibles",
+      "lugar": "La Orilla Infinita",
+      "direccion": "Colón 2148, Rosario, Santa Fe",
+      "descripcion": "Entrada general. Consultá descuentos y disponibilidad en la tienda oficial.",
+      "evento_url": "https://laorillainfinita.com.ar/productos/invisibles/",
+      "precio": 20000,
+      "origen": "La Orilla Infinita",
+      "precio_etiqueta": "General $20.000"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:00",
+      "nombre": "Los Pericos",
+      "lugar": "Metropolitano",
+      "direccion": "Junín 501, Rosario, Santa Fe, Argentina",
+      "descripcion": "La histórica banda de rock reggae llega a la ciudad en el marco de la gira “Inmortal” que lleva el nombre de…",
+      "evento_url": "https://www.rosarioencartel.com.ar/los-pericos/",
+      "precio": 70000.0,
+      "origen": "Rosario en Cartel",
+      "precio_etiqueta": "Desde $70.000"
     },
     {
       "fecha": "2026-10-17",
@@ -1201,14 +1281,29 @@
     },
     {
       "fecha": "2026-10-18",
+      "hora": "20:00",
+      "nombre": "Pureza Mariana",
+      "lugar": "La Orilla Infinita",
+      "direccion": "Colón 2148, Rosario, Santa Fe",
+      "descripcion": "Entrada general. Consultá descuentos y disponibilidad en la tienda oficial.",
+      "evento_url": "https://laorillainfinita.com.ar/productos/purezamariana/",
+      "precio": 15000,
+      "origen": "La Orilla Infinita",
+      "precio_etiqueta": "General $15.000"
+    },
+    {
+      "fecha": "2026-10-18",
       "hora": "20:30",
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "direccion": "Mitre 754, Rosario",
       "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281/",
       "precio": null,
-      "origen": "Teatro Astengo"
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-18",
@@ -1231,7 +1326,8 @@
       "descripcion": "+ Espectáculos David Bisbal en Rosario 18 Octubre 21:00 hs IMPORTANTE! Venta sólo a través del sitio oficial de Turbo entrada COMPRAR…",
       "evento_url": "https://www.metropolitano.ar/espectaculo/david-bisbal/",
       "precio": null,
-      "origen": "Metropolitano"
+      "origen": "Metropolitano",
+      "entrada_paga": true
     },
     {
       "fecha": "2026-10-18",
@@ -1503,11 +1599,14 @@
       "hora": "20:30",
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "direccion": "Mitre 754, Rosario",
       "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281-708/",
       "precio": null,
-      "origen": "Teatro Astengo"
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-22",
@@ -1650,18 +1749,45 @@
       "descripcion": "ABUELAS",
       "evento_url": "https://www.d7entradas.com.ar/eventos/abuelas-e349",
       "precio": null,
-      "origen": "Distrito Siete"
+      "origen": "Distrito Siete",
+      "entrada_paga": true
     },
     {
       "fecha": "2026-10-22",
       "hora": "20:30",
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "direccion": "Mitre 754, Rosario",
       "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281-708-471/",
       "precio": null,
-      "origen": "Teatro Astengo"
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-22",
+      "hora": "20:30",
+      "nombre": "Ensayo Vania (una fallida representación sobre la felicidad)",
+      "lugar": "La Orilla Infinita",
+      "direccion": "Colón 2148, Rosario, Santa Fe",
+      "descripcion": "Entrada general. Consultá descuentos y disponibilidad en la tienda oficial.",
+      "evento_url": "https://laorillainfinita.com.ar/productos/vania/",
+      "precio": 18000,
+      "origen": "La Orilla Infinita",
+      "precio_etiqueta": "General $18.000"
+    },
+    {
+      "fecha": "2026-10-22",
+      "hora": "21:00",
+      "nombre": "Claudio Gabis",
+      "lugar": "Complejo Cultural Atlas",
+      "direccion": "Mitre 645, Rosario, Santa Fe, Argentina",
+      "descripcion": "Vuelve a recorrer el país una leyenda viva del Rock Argentino. De septiembre a noviembre de 2026, el guitarrista fundador de Manal…",
+      "evento_url": "https://www.rosarioencartel.com.ar/claudio-gabis/",
+      "precio": 30000.0,
+      "origen": "Rosario en Cartel"
     },
     {
       "fecha": "2026-10-23",
@@ -1856,11 +1982,25 @@
       "hora": "21:00",
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "direccion": "Mitre 754, Rosario",
       "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151-463/",
       "precio": null,
-      "origen": "Teatro Astengo"
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-23",
+      "hora": "21:00",
+      "nombre": "HAMLET SE VA DE GIRA",
+      "lugar": "Teatro del Rayo",
+      "direccion": "Salta 2991, Rosario, Santa Fe",
+      "descripcion": "Entradas y reservas por el enlace oficial. Consultá el valor vigente.",
+      "evento_url": "https://elrayomisterioso.org.ar/index.php/es/component/sppagebuilder/?view=page&id=219",
+      "precio": null,
+      "origen": "Teatro del Rayo"
     },
     {
       "fecha": "2026-10-23",
@@ -1871,7 +2011,8 @@
       "descripcion": "HOMENAJE AL PADRE DEL HEAVY NACIONAL",
       "evento_url": "https://www.d7entradas.com.ar/eventos/homenaje-al-padre-del-heavy-nacional-e346",
       "precio": null,
-      "origen": "Distrito Siete"
+      "origen": "Distrito Siete",
+      "entrada_paga": true
     },
     {
       "fecha": "2026-10-23",
@@ -2090,11 +2231,14 @@
       "hora": "21:00",
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "direccion": "Mitre 754, Rosario",
       "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151-463-782/",
       "precio": null,
-      "origen": "Teatro Astengo"
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-24",
@@ -2119,6 +2263,30 @@
       "precio": null,
       "origen": "Rosario3",
       "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-24",
+      "hora": "21:00",
+      "nombre": "La función de los invisibles",
+      "lugar": "La Orilla Infinita",
+      "direccion": "Colón 2148, Rosario, Santa Fe",
+      "descripcion": "Entrada general. Consultá descuentos y disponibilidad en la tienda oficial.",
+      "evento_url": "https://laorillainfinita.com.ar/productos/invisibles/",
+      "precio": 20000,
+      "origen": "La Orilla Infinita",
+      "precio_etiqueta": "General $20.000"
+    },
+    {
+      "fecha": "2026-10-24",
+      "hora": "21:00",
+      "nombre": "Los Nocheros",
+      "lugar": "La Segunda Seguros Arena",
+      "direccion": "Cafferata 729, Rosario, Santa Fe, Argentina",
+      "descripcion": "Una de las bandas de folclore argentino más importante del país recorre Argentina y regresa a Rosario en el marco de la…",
+      "evento_url": "https://www.rosarioencartel.com.ar/los-nocheros-2026/",
+      "precio": 50000.0,
+      "origen": "Rosario en Cartel",
+      "precio_etiqueta": "Desde $50.000"
     },
     {
       "fecha": "2026-10-24",
@@ -2269,11 +2437,14 @@
       "hora": "20:30",
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "direccion": "Mitre 754, Rosario",
       "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281-666/",
       "precio": null,
-      "origen": "Teatro Astengo"
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-25",
@@ -2652,6 +2823,18 @@
       "origen": "Municipalidad de Rosario"
     },
     {
+      "fecha": "2026-10-29",
+      "hora": "20:30",
+      "nombre": "Ensayo Vania (una fallida representación sobre la felicidad)",
+      "lugar": "La Orilla Infinita",
+      "direccion": "Colón 2148, Rosario, Santa Fe",
+      "descripcion": "Entrada general. Consultá descuentos y disponibilidad en la tienda oficial.",
+      "evento_url": "https://laorillainfinita.com.ar/productos/vania/",
+      "precio": 18000,
+      "origen": "La Orilla Infinita",
+      "precio_etiqueta": "General $18.000"
+    },
+    {
       "fecha": "2026-10-30",
       "hora": "08:00",
       "nombre": "Exposición La Noche de Los Lápices. Ayer y hoy",
@@ -2858,7 +3041,19 @@
       "descripcion": "+ Espectáculos Camilo 30 de octubre 21:00 hs IMPORTANTE! Venta sólo a través del sitio oficial de Turbo entrada COMPRAR EN EL…",
       "evento_url": "https://www.metropolitano.ar/espectaculo/camilo/",
       "precio": null,
-      "origen": "Metropolitano"
+      "origen": "Metropolitano",
+      "entrada_paga": true
+    },
+    {
+      "fecha": "2026-10-30",
+      "hora": "21:00",
+      "nombre": "HAMLET SE VA DE GIRA",
+      "lugar": "Teatro del Rayo",
+      "direccion": "Salta 2991, Rosario, Santa Fe",
+      "descripcion": "Entradas y reservas por el enlace oficial. Consultá el valor vigente.",
+      "evento_url": "https://elrayomisterioso.org.ar/index.php/es/component/sppagebuilder/?view=page&id=219",
+      "precio": null,
+      "origen": "Teatro del Rayo"
     },
     {
       "fecha": "2026-10-30",
@@ -2869,7 +3064,8 @@
       "descripcion": "Princesa Tetrabrick / El Espíritu Frenético de la Noche / Cicuta",
       "evento_url": "https://www.d7entradas.com.ar/eventos/princesa-tetrabrick-el-espiritu-frenetico-de-la-noche-cicuta-e353",
       "precio": null,
-      "origen": "Distrito Siete"
+      "origen": "Distrito Siete",
+      "entrada_paga": true
     },
     {
       "fecha": "2026-10-30",
@@ -2881,6 +3077,18 @@
       "evento_url": "https://plataformalavarden.gob.ar/actividades/pupina-plomer/",
       "precio": null,
       "origen": "Plataforma Lavardén"
+    },
+    {
+      "fecha": "2026-10-30",
+      "hora": "21:00",
+      "nombre": "Sergio Dalma",
+      "lugar": "La Segunda Seguros Arena",
+      "direccion": "Cafferata 729, Rosario, Santa Fe, Argentina",
+      "descripcion": "El artista español vuelve a Rosario con su nueva gira «Tour Ritorno a Vía Dalma»",
+      "evento_url": "https://www.rosarioencartel.com.ar/sergio-dalma-circulo-2026/",
+      "precio": 80000.0,
+      "origen": "Rosario en Cartel",
+      "precio_etiqueta": "Desde $80.000"
     },
     {
       "fecha": "2026-10-31",
@@ -3047,7 +3255,20 @@
       "descripcion": "HARLEM GLOBETROTTERS EN VENTA!! Fechas y horarios Sábado 31 de Octubre a las 21:00 Hs. en CLUB ATLETICO PROVINCIAL Más información COMPRA…",
       "evento_url": "https://teatrobroadwayrosario.com/cartelera/864/harlem-globetrotters",
       "precio": null,
-      "origen": "Teatro Broadway"
+      "origen": "Teatro Broadway",
+      "entrada_paga": true
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "21:00",
+      "nombre": "Harlem Globetrotters",
+      "lugar": "Club Atlético Provincial",
+      "direccion": "Club Atlético Provincial C.A.P. - Boulevard 27 de Febrero, Rosario, Santa Fe, Argentina",
+      "descripcion": "Un show mágico, aclamado mundialmente, que combina deportes con acrobacias y humor. ¡Un espectáculo para disfrutar en familia! Con 100 años de…",
+      "evento_url": "https://www.rosarioencartel.com.ar/harlem-globetrotters/",
+      "precio": 70000.0,
+      "origen": "Rosario en Cartel",
+      "precio_etiqueta": "Desde $70.000"
     },
     {
       "fecha": "2026-10-31",
@@ -3064,13 +3285,26 @@
     {
       "fecha": "2026-10-31",
       "hora": "21:00",
+      "nombre": "La función de los invisibles",
+      "lugar": "La Orilla Infinita",
+      "direccion": "Colón 2148, Rosario, Santa Fe",
+      "descripcion": "Entrada general. Consultá descuentos y disponibilidad en la tienda oficial.",
+      "evento_url": "https://laorillainfinita.com.ar/productos/invisibles/",
+      "precio": 20000,
+      "origen": "La Orilla Infinita",
+      "precio_etiqueta": "General $20.000"
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "21:00",
       "nombre": "Un Poco de Ruido",
       "lugar": "Metropolitano",
       "direccion": "Junín 501, Rosario, Santa Fe",
       "descripcion": "+ Espectáculos Un Poco de Ruido 31 Octubre 21:00 hs IMPORTANTE! Venta sólo a través del sitio oficial de Turbo entrada COMPRAR…",
       "evento_url": "https://www.metropolitano.ar/espectaculo/un-poco-de-ruido-2/",
       "precio": null,
-      "origen": "Metropolitano"
+      "origen": "Metropolitano",
+      "entrada_paga": true
     },
     {
       "fecha": "2026-10-31",
@@ -3463,11 +3697,26 @@
       "hora": "21:00",
       "nombre": "CHA CHA CHA 3.0 – Innovando para atrás",
       "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "direccion": "Mitre 754, Rosario",
       "descripcion": "Cha Cha Cha nunca fue solamente un programa de televisión. Fue una manera de mirar el mundo, de entrar en la estupidez,…",
       "evento_url": "https://teatroastengo.ar/events/chachacha-30-teatro-astengo/",
       "precio": null,
-      "origen": "Teatro Astengo"
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/chachacha-30/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-11-05",
+      "hora": "21:00",
+      "nombre": "«CHA CHA CHA 3.0»",
+      "lugar": "Teatro Astengo",
+      "direccion": "Auditorio Fundacion - Mitre, Rosario, Santa Fe, Argentina",
+      "descripcion": "El ciclo creado por Alfredo Casero , que marcó un antes y un después en la historia de la televisión argentina, prepara…",
+      "evento_url": "https://www.rosarioencartel.com.ar/cha-cha-cha/",
+      "precio": 40250.0,
+      "origen": "Rosario en Cartel",
+      "precio_etiqueta": "Desde $40.250"
     },
     {
       "fecha": "2026-11-06",
@@ -3559,6 +3808,18 @@
     },
     {
       "fecha": "2026-11-06",
+      "hora": "20:30",
+      "nombre": "Julieta Laso",
+      "lugar": "Teatro – Plataforma Lavardén",
+      "direccion": "Plataforma Lavarden, Mendoza, Rosario, Santa Fe, Argentina",
+      "descripcion": "Presenta «Fabriquera», su nuevo álbum producido junto al irreemplazable Melingo . Se trata del sexto disco de su carrera solista, con el…",
+      "evento_url": "https://www.rosarioencartel.com.ar/julieta-laso/",
+      "precio": 25000.0,
+      "origen": "Rosario en Cartel",
+      "precio_etiqueta": "Desde $25.000"
+    },
+    {
+      "fecha": "2026-11-06",
       "hora": "21:00",
       "nombre": "AXEL TOUR 2026",
       "lugar": "Teatro Broadway",
@@ -3568,6 +3829,30 @@
       "precio": null,
       "origen": "Teatro Broadway",
       "precio_etiqueta": "$60.000 – $90.000"
+    },
+    {
+      "fecha": "2026-11-06",
+      "hora": "21:00",
+      "nombre": "Axel",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe, Argentina",
+      "descripcion": "El cantautor llega a Rosario en el marco de la gira Así Vivir Tour 2026 .",
+      "evento_url": "https://www.rosarioencartel.com.ar/axel-2026/",
+      "precio": 45000.0,
+      "origen": "Rosario en Cartel",
+      "precio_etiqueta": "Desde $45.000"
+    },
+    {
+      "fecha": "2026-11-06",
+      "hora": "21:00",
+      "nombre": "Elena Roger",
+      "lugar": "Teatro El Círculo",
+      "direccion": "Teatro El Círculo - Laprida, Rosario, Santa Fe, Argentina",
+      "descripcion": "La aclamada voz argentina que conquistó Londres y Nueva York llega, en el marco de su Tour 2026 con un espectáculo único,…",
+      "evento_url": "https://www.rosarioencartel.com.ar/elena-roger/",
+      "precio": 46400.0,
+      "origen": "Rosario en Cartel",
+      "precio_etiqueta": "Desde $46.400"
     },
     {
       "fecha": "2026-11-06",
@@ -3629,11 +3914,14 @@
       "hora": "20:00",
       "nombre": "CONNIE BALLARINI",
       "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "direccion": "Mitre 754, Rosario",
       "descripcion": "Connie Ballarini no es solo comediante. Es actriz, youtuber, instagramer, tiktoker, hija de Lili, Tinderwoman, Culo de queso y una creadora de…",
       "evento_url": "https://teatroastengo.ar/events/connie-ballarini-2-638/",
       "precio": null,
-      "origen": "Teatro Astengo"
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/connie-ballarini/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-11-07",
@@ -3695,11 +3983,14 @@
       "hora": "19:00",
       "nombre": "CONNIE BALLARINI",
       "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "direccion": "Mitre 754, Rosario",
       "descripcion": "Connie Ballarini no es solo comediante. Es actriz, youtuber, instagramer, tiktoker, hija de Lili, Tinderwoman, Culo de queso y una creadora de…",
       "evento_url": "https://teatroastengo.ar/events/connie-ballarini-2-638-394/",
       "precio": null,
-      "origen": "Teatro Astengo"
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/connie-ballarini/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-11-08",
@@ -3723,6 +4014,30 @@
       "precio": null,
       "origen": "Teatro Broadway",
       "precio_etiqueta": "$35.000 – $50.000"
+    },
+    {
+      "fecha": "2026-11-08",
+      "hora": "20:00",
+      "nombre": "Pablo Cordonet",
+      "lugar": "Complejo Cultural Atlas",
+      "direccion": "Mitre 645, Rosario, Santa Fe, Argentina",
+      "descripcion": "“Tengo Data” , es el nuevo show de humor de Pablo Cordonet que aborda la ironía de la vida a partir de…",
+      "evento_url": "https://www.rosarioencartel.com.ar/pablo-cordonet-2026/",
+      "precio": 34000.0,
+      "origen": "Rosario en Cartel",
+      "precio_etiqueta": "Desde $34.000"
+    },
+    {
+      "fecha": "2026-11-08",
+      "hora": "21:00",
+      "nombre": "Ronnie Wood",
+      "lugar": "Metropolitano",
+      "direccion": "Junín 501, Rosario, Santa Fe, Argentina",
+      "descripcion": "Ronnie Wood se prepara para un nuevo tour, que contará con shows por Europa y después cruzará el Atlántico para presentarse en…",
+      "evento_url": "https://www.rosarioencartel.com.ar/ronnie-wood/",
+      "precio": 120000.0,
+      "origen": "Rosario en Cartel",
+      "precio_etiqueta": "Desde $120.000"
     },
     {
       "fecha": "2026-11-09",
