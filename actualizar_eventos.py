@@ -628,5 +628,235 @@ def actualizar():
         print(f"Aviso: {error}", flush=True)
 
 
+# Ampliación: teatros, música y bibliotecas.
+EXTRAS += (
+    ("Teatro Astengo", "https://teatroastengo.ar/events/", "Mitre 754"),
+    ("ATIR", "https://www.teatrosatir.ar/cartelera/", ""),
+    ("Teatro Broadway", "https://teatrobroadwayrosario.com/", "San Lorenzo 1223"),
+    ("Distrito Siete", "https://www.d7entradas.com.ar/", "Ovidio Lagos 790"),
+    ("Metropolitano", "https://www.metropolitano.ar/espectaculos/", "Junín 501"),
+    ("Biblioteca Argentina Dr. Juan Álvarez", "https://biblioargentina.gob.ar/web/agenda/", "Presidente Roca 731"),
+    ("Biblioteca Vigil", "https://bibliotecavigil.org.ar/inicio/eventos/", "Biblioteca Vigil"),
+)
+FUENTES += (f"{BASE}/inicio/agenda/buscar",)
+CATEGORIAS += ("biblioteca", "lectura", "poesia", "narracion", "charla", "boxeo")
+_calendario_anterior = calendario
+
+
+def hora_visible(valor):
+    m = re.match(r"\s*(\d{1,2})(?::|\.)(\d{2})(?:\s*([ap])\.?m\.?)?", normalizar(valor))
+    if not m:
+        return None
+    h = int(m[1])
+    if m[3]:
+        h = h % 12 + (12 if m[3] == "p" else 0)
+    return f"{h:02d}:{m[2]}" if h < 24 and int(m[2]) < 60 else None
+
+
+def fechas_publicadas(valor, hoy, anio_confirmado=False):
+    valor = normalizar(valor)
+    patron = (r"(?:(lunes|martes|miercoles|jueves|viernes|sabado|domingo)\s+)?"
+              r"(\d{1,2})\s+(?:de\s+)?(" + "|".join(MESES) + r")"
+              r"(?:\s+(?:de\s+)?(20\d{2}))?\s*(?:,\s*)?"
+              r"(?:a las?\s+|de\s+)?(\d{1,2})(?::|\.)?(\d{2})?"
+              r"(?:\s+a\s+\d{1,2}(?::\d{2})?)?\s*(?:hs?\.?|horas)\b")
+    resultado = []
+    for m in re.finditer(patron, valor):
+        if not m[1] and not m[4] and not anio_confirmado:
+            continue
+        mes = MESES.index(m[3]) + 1
+        anio = int(m[4]) if m[4] else hoy.year + (hoy.month == 12 and mes == 1)
+        try:
+            dia = date(anio, mes, int(m[2]))
+        except ValueError:
+            continue
+        if m[1] and DIAS[dia.weekday()] != m[1]:
+            continue
+        hora = hora_visible(f"{m[5]}:{m[6] or '00'}")
+        if hora and hoy <= dia <= hoy + timedelta(days=30):
+            resultado.append((dia.isoformat(), hora))
+    return list(dict.fromkeys(resultado))
+
+
+def actividad_ampliada(fecha, hora, titulo, enlace, fuente, direccion,
+                       descripcion, lugar=None, desde=False):
+    venta = fuente in ("Teatro Broadway", "Distrito Siete", "Metropolitano")
+    precio, nota = acceso(descripcion, venta)
+    e = evento_extra(fecha, hora, titulo, enlace, fuente, direccion,
+                     descripcion, precio, nota or "")
+    e["lugar"] = lugar or fuente
+    if nota is None:
+        e["precio_etiqueta"] = "Precio a confirmar"
+    elif nota:
+        valores = re.findall(r"\$[\d.]+", nota)
+        e["precio_etiqueta"] = " – ".join(v.rstrip(".") for v in valores)
+    elif desde and precio:
+        e["precio_etiqueta"] = f"Desde ${precio:,.0f}".replace(",", ".")
+    return e
+
+
+def calendario_mec(html, fuente, url, direccion, hoy):
+    fichas = []
+    for s in html.select('script[type="application/ld+json"]'):
+        try:
+            contenido = re.sub(r'\\(?!["\\/bfnrtu])', r'\\\\', s.get_text())
+            fichas.extend(eventos_schema(json.loads(contenido)))
+        except ValueError:
+            continue
+    if not fichas:
+        raise ValueError("No se encontró el calendario de la sala")
+
+    eventos, fallidos, cache, vistos = [], set(), {}, set()
+    for f in fichas:
+        fecha, enlace = f.get("startDate", "")[:10], f.get("url", "")
+        if not enlace or urlsplit(enlace).hostname != urlsplit(url).hostname:
+            continue
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", fecha) or (enlace, fecha) in vistos:
+            continue
+        if not hoy <= date.fromisoformat(fecha) <= hoy + timedelta(days=30):
+            continue
+        vistos.add((enlace, fecha))
+        try:
+            if enlace not in cache:
+                cache[enlace] = descargar(enlace)
+            detalle = cache[enlace]
+            cuerpo = detalle.select_one(".mec-single-event-description")
+            if not cuerpo:
+                raise ValueError("Ficha incompleta")
+            descripcion = texto(cuerpo)
+            if re.search(
+                r"\bsuspendid[ao]\b|\bcancelad[ao]\b|\breprogramad[ao]\b",
+                normalizar(descripcion),
+            ):
+                continue
+            hora = hora_visible(texto(detalle.select_one(
+                ".mec-single-event-time .mec-events-abbr"
+            )))
+            if not hora:
+                continue
+
+            loc = f.get("location", {})
+            lugar = loc.get("name") or fuente
+            domicilio = loc.get("address") or direccion
+            if isinstance(domicilio, dict):
+                domicilio = domicilio.get("streetAddress", direccion)
+
+            if fuente == "Biblioteca Vigil":
+                calle = re.search(r"\b(Alem|Gaboto)\s+(\d{3,4})\b", descripcion, re.I)
+                if calle:
+                    domicilio = calle[0]
+                if "astronom" in normalizar(f.get("name", "")):
+                    lugar = "Observatorio de la Biblioteca Vigil"
+                elif "teatro vigil" in normalizar(f.get("name", "")):
+                    lugar, domicilio = "Teatro Vigil", "Alem 3086"
+
+            precio_visible = texto(detalle.select_one(".mec-single-event-cost"))
+            eventos.append(actividad_ampliada(
+                fecha, hora, f.get("name", ""), enlace, fuente, domicilio,
+                precio_visible + " " + descripcion, lugar,
+            ))
+        except (requests.RequestException, ValueError):
+            fallidos.add(enlace)
+    return eventos, fallidos
+
+
+def calendario_paginas(html, fuente, url, direccion, hoy):
+    selectores = {
+        "Teatro Broadway": "a[href*='/cartelera/']",
+        "Distrito Siete": "a[href^='/eventos/']",
+        "Metropolitano": "a[href*='/espectaculo/']",
+        "Biblioteca Argentina Dr. Juan Álvarez": "h2 a[href], h3 a[href]",
+    }
+    tarjetas = html.select(selectores[fuente])
+    if not tarjetas:
+        raise ValueError("No se encontró la programación de la fuente")
+
+    eventos, fallidos, vistos = [], set(), set()
+    for a in tarjetas:
+        enlace = urljoin(url, a["href"])
+        if enlace in vistos or urlsplit(enlace).hostname != urlsplit(url).hostname:
+            continue
+        vistos.add(enlace)
+        if fuente == "Distrito Siete" and "venta finalizada" in normalizar(texto(a)):
+            continue
+        try:
+            detalle = descargar(enlace)
+            if fuente == "Distrito Siete":
+                titulo = texto(a.select_one("h2")) or texto(detalle.select_one("h2"))
+            elif fuente == "Teatro Broadway":
+                titulo = (
+                    texto(a.select_one(".tbr-show-card-title"))
+                    or texto(detalle.select_one("h1"))
+                )
+            else:
+                titulo = texto(detalle.select_one("h1")) or texto(a)
+
+            cuerpo = detalle.select_one(
+                ".entry-content, .tbr-detail-text, main, #main"
+            ) or detalle
+            descripcion = texto(cuerpo)
+            if re.search(
+                r"funcion\s+(?:se encuentra\s+)?suspendida|evento cancelado|show cancelado",
+                normalizar(descripcion),
+            ):
+                continue
+
+            if fuente == "Distrito Siete":
+                m = re.search(
+                    r"(\d{1,2})\.([A-Z]{3})\.(20\d{2})\s+(\d{1,2}:\d{2})hs",
+                    descripcion,
+                )
+                abreviaturas = (
+                    "ENE", "FEB", "MAR", "ABR", "MAY", "JUN",
+                    "JUL", "AGO", "SEP", "OCT", "NOV", "DIC",
+                )
+                fechas = []
+                if m and m[2] in abreviaturas:
+                    dia = date(int(m[3]), abreviaturas.index(m[2]) + 1, int(m[1]))
+                    if hoy <= dia <= hoy + timedelta(days=30):
+                        fechas = [(dia.isoformat(), m[4])]
+                precio = re.search(
+                    r"Precios desde\s+ARS\s*(\$\s*[\d.,]+)", descripcion
+                )
+                descripcion_precio = (precio[1] if precio else "") + " " + titulo
+            else:
+                if fuente == "Teatro Broadway":
+                    fechas_texto = " ".join(
+                        texto(x) for x in detalle.select(".tbr-detail-text")
+                    )
+                    descripcion = texto(detalle.select_one("main")) or texto(detalle)
+                else:
+                    fechas_texto = descripcion
+                anio_confirmado = fuente == "Metropolitano" and bool(re.search(
+                    rf'(?:datePublished|dateModified)[^\n]{{0,40}}{hoy.year}-',
+                    str(detalle),
+                ))
+                fechas = fechas_publicadas(fechas_texto, hoy, anio_confirmado)
+                descripcion_precio = descripcion
+
+            for fecha, hora in fechas:
+                e = actividad_ampliada(
+                    fecha, hora, titulo, enlace, fuente, direccion,
+                    descripcion_precio, desde=fuente == "Distrito Siete",
+                )
+                if fuente == "Distrito Siete":
+                    e["descripcion"] = resumen(titulo)
+                eventos.append(e)
+        except (requests.RequestException, ValueError):
+            fallidos.add(enlace)
+    return eventos, fallidos
+
+
+def calendario(html, fuente, url, direccion, hoy):
+    if fuente in ("Teatro Astengo", "ATIR", "Biblioteca Vigil"):
+        return calendario_mec(html, fuente, url, direccion, hoy)
+    if fuente in (
+        "Teatro Broadway", "Distrito Siete", "Metropolitano",
+        "Biblioteca Argentina Dr. Juan Álvarez",
+    ):
+        return calendario_paginas(html, fuente, url, direccion, hoy)
+    return _calendario_anterior(html, fuente, url, direccion, hoy)
+
+
 if __name__ == "__main__":
     actualizar()
