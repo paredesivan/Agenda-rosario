@@ -274,6 +274,81 @@ function addLink(parent, label, url, className = "") {
   parent.append(link);
 }
 
+const TRANSPORTE_API = "https://ws.rosario.gob.ar/ubicaciones/public";
+
+function renderTransit(parent, item) {
+  if (!item.direccion) return;
+  const box = document.createElement("section");
+  box.className = "transit-box";
+  const title = document.createElement("h4");
+  title.textContent = "🚌 Colectivos cerca";
+  const note = document.createElement("p");
+  note.textContent = "Líneas y paradas dentro de unas 6 cuadras";
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "transit-button";
+  button.textContent = "Ver líneas cercanas";
+  const result = document.createElement("div");
+  result.className = "transit-result";
+  const official = document.createElement("a");
+  official.href = "https://comollego.rosario.gob.ar/";
+  official.target = "_blank";
+  official.rel = "noopener noreferrer";
+  official.textContent = "Abrir ¿Cómo llego?";
+  official.className = "transit-official";
+  button.onclick = async () => {
+    button.disabled = true;
+    button.textContent = "Buscando líneas…";
+    result.textContent = "Consultando la red oficial de Rosario…";
+    try {
+      const geocode = await fetch(`${TRANSPORTE_API}/geojson/ubicaciones/all/all/${encodeURIComponent(item.direccion)}`);
+      if (!geocode.ok) throw new Error("geocode");
+      const locations = await geocode.json();
+      const location = (locations.features || []).find(feature => feature.geometry?.coordinates?.length >= 2);
+      if (!location) throw new Error("location");
+      const [x, y] = location.geometry.coordinates;
+      const stopsResponse = await fetch(`${TRANSPORTE_API}/paradas?xOrigen=${x}&yOrigen=${y}&radio=600`);
+      if (!stopsResponse.ok) throw new Error("stops");
+      const stops = (await stopsResponse.json()).slice(0, 8);
+      if (!stops.length) {
+        result.textContent = "No encontramos paradas dentro de seis cuadras.";
+      } else {
+        const details = await Promise.all(stops.map(stop =>
+          fetch(`${TRANSPORTE_API}/parada/${stop.idEmpresa || 1}/${stop.id}?incluirLineas=true`)
+            .then(response => response.ok ? response.json() : null).catch(() => null)));
+        const lines = new Map();
+        details.forEach(detail => (detail?.lineas || []).forEach(line => lines.set(`${line.idEmpresa}-${line.id}`, line.nombreCorto || line.nombre)));
+        result.replaceChildren();
+        if (lines.size) {
+          const chips = document.createElement("div");
+          chips.className = "transit-lines";
+          [...lines.values()].sort().forEach(line => {
+            const chip = document.createElement("span");
+            chip.textContent = line;
+            chips.append(chip);
+          });
+          result.append(chips);
+          const closest = stops.slice(0, 3).map(stop => `${stop.nombre} (${Math.round(Number(stop.distancia || 0))} m)`).join(" · ");
+          const stopsText = document.createElement("small");
+          stopsText.textContent = `Paradas cercanas: ${closest}`;
+          result.append(stopsText);
+        } else {
+          result.textContent = "Hay paradas cercanas, pero no pudimos leer sus líneas.";
+        }
+      }
+      result.append(official);
+      button.textContent = "Actualizar líneas";
+    } catch (_) {
+      result.textContent = "No pudimos consultar los colectivos ahora.";
+      result.append(official);
+      button.textContent = "Reintentar";
+    }
+    button.disabled = false;
+  };
+  box.append(title, note, button, result);
+  parent.append(box);
+}
+
 function precioDesdeTexto(texto) {
   const text = normalize(texto);
   if (/\b(gratis|gratuita|gratuito|sin cargo|entrada libre|acceso libre)\b/.test(text)) {
@@ -347,7 +422,9 @@ function renderEvent(item) {
 
   addLink(actions, "📍 Mapa", maps, "map");
 
-  card.append(time, title, place, desc, actions);
+  card.append(time, title, place, desc);
+  renderTransit(card, item);
+  card.append(actions);
 
   $("events").append(card);
 }
