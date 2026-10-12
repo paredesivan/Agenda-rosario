@@ -8,6 +8,7 @@ import json
 import re
 from datetime import date, datetime, timedelta
 from pathlib import Path
+from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlsplit, parse_qs
 
 import requests
@@ -603,6 +604,580 @@ def leer_museos(hoy, estado):
     return eventos, detalle_revision
 
 
+ESPACIOS_SEGUIDOS = (
+    ('Circo Rodas', ('circo rodas',), 'Linke-arte y Rosario en Cartel', 'Av. Circunvalación, Rosario, Santa Fe'),
+    ('La Surfera Beach', ('surfera',), 'Agenda municipal y Rosario en Cartel', 'Av. Costanera 2558, Granadero Baigorria, Santa Fe'),
+    ('Espacio Bravo', ('espacio bravo',), 'ATIR y prensa cultural', 'Catamarca 3624, Rosario, Santa Fe'),
+    ('Teatro del Rayo', ('teatro del rayo', 'rayo misterioso'), 'Web del Rayo y ATIR', 'Salta 2991, Rosario, Santa Fe'),
+    ('La Morada', ('la morada',), 'ATIR y prensa cultural', 'San Martín 771, Rosario, Santa Fe'),
+    ('Complejo Cultural Atlas', ('complejo cultural atlas',), 'CentroTicket, venta enlazada por Atlas', 'Mitre 645, Rosario, Santa Fe'),
+    ('La Segunda Seguros Arena', ('la segunda seguros arena', 'bioceres arena', 'l2 arena'), 'Entrada Play y Rosario en Cartel', 'Córdoba 3475, Rosario, Santa Fe'),
+    ('Estadio Central Córdoba', ('central cordoba', 'gabino sosa'), 'Entrada Play y agendas culturales', 'Estadio Gabino Sosa, Rosario, Santa Fe'),
+)
+
+
+def espacio_seguido(lugar):
+    nombre = normalizar(lugar)
+    return next((e for e in ESPACIOS_SEGUIDOS if any(alias in nombre for alias in e[1])), None)
+
+
+def descargar_catalogo(url):
+    """La misma consulta GET pública que realiza el catálogo de venta."""
+    from actualizar_eventos import SESION, BLOQUEADOS, ULTIMA, monotonic, sleep
+    host = urlsplit(url).hostname
+    if host in BLOQUEADOS:
+        raise requests.RequestException('Fuente pausada en esta revisión')
+    espera = 1.5 - (monotonic() - ULTIMA.get(host, 0))
+    if espera > 0:
+        sleep(espera)
+    try:
+        respuesta = SESION.get(url, timeout=(10, 25))
+        if respuesta.status_code in (403, 429):
+            BLOQUEADOS.add(host)
+        respuesta.raise_for_status()
+        return respuesta.json()
+    finally:
+        ULTIMA[host] = monotonic()
+
+
+def eventos_catalogo(datos, base, proveedor, hoy):
+    filas = datos.get('eventos')
+    if not isinstance(filas, list):
+        raise ValueError('Cambió el catálogo de entradas')
+    resultado, pendientes = [], 0
+    for fila in filas:
+        if not isinstance(fila, dict):
+            continue
+        sede = fila.get('lugar') or ''
+        espacio = espacio_seguido(sede)
+        if not espacio or not re.search(r'rosario|baigorria', normalizar(sede)):
+            continue
+        # Las carteleras con varias funciones sólo informan la primera fecha.
+        if fila.get('unica_fecha') is not True:
+            pendientes += 1
+            continue
+        try:
+            instante = datetime.strptime(fila.get('desde_fecha', ''), '%d/%m/%Y, %H:%M')
+        except (ValueError, TypeError):
+            pendientes += 1
+            continue
+        if not hoy <= instante.date() <= hoy + timedelta(days=30):
+            continue
+        titulo, slug = fila.get('nombre'), fila.get('slug')
+        if not isinstance(titulo, str) or not isinstance(slug, str) or not titulo or not slug:
+            continue
+        enlace = urljoin(base, slug.strip('/') + '/')
+        if not mismo_dominio(enlace, base):
+            continue
+        descripcion = texto(BeautifulSoup(fila.get('descripcion_evento') or titulo, 'html.parser'))
+        evento = actividad_ampliada(instante.date().isoformat(), instante.strftime('%H:%M'),
+            titulo, enlace, proveedor, espacio[3], descripcion, espacio[0])
+        evento['entradas_url'] = enlace
+        evento['entrada_paga'] = True
+        evento['funcion_unica_verificada'] = True
+        try:
+            precio = float(fila.get('entradas_online_desde'))
+        except (ValueError, TypeError):
+            precio = None
+        # Cero, ausencia de cifra o texto promocional no confirman gratuidad.
+        moneda = fila.get('moneda') or datos.get('moneda')
+        if precio and 0 < precio < 50_000_000 and moneda == 'ARS':
+            evento['precio'] = precio
+            evento['precio_etiqueta'] = f'Desde ${precio:,.0f}'.replace(',', '.')
+        else:
+            evento['precio'] = None
+            evento['precio_etiqueta'] = 'Precio a confirmar'
+        resultado.append(evento)
+    return resultado, pendientes
+
+
+def leer_rodas(html, url, hoy):
+    """Fechas efectivamente habilitadas en el selector; nunca expande horarios genéricos."""
+    script = str(html)
+    patron = r'window\[`linkearte_map_landing_widget_Sessions_.*?`\]\s*=\s*'
+    grupos = []
+    for match in re.finditer(patron, script):
+        try:
+            valor, _ = json.JSONDecoder().raw_decode(script[match.end():])
+            grupos.extend(valor)
+        except ValueError:
+            continue
+    sesiones = []
+    for grupo in grupos:
+        sesiones.extend(grupo if isinstance(grupo, list) else [grupo])
+    if not sesiones:
+        raise ValueError('No se encontraron funciones vendidas por el circo')
+    contenido = texto(html)
+    precio_texto = ' '.join(m[0] for m in re.finditer(r'(?:Platea|Preferencia lateral|Preferencia frontal|Palco lateral|Palco frontal|VIP)\s*:\s*\$[\d.]+', contenido, re.I))
+    eventos = {}
+    for sesion in sesiones:
+        if not isinstance(sesion, dict):
+            continue
+        sede = normalizar(str(sesion.get('litSala', '')))
+        if 'rodas' not in sede or 'rosario' not in sede or sesion.get('streamingOnly') is True:
+            continue
+        capacidad = [sesion.get(c) for c in ('aforo', 'entradasVendidas', 'entradasReservadas', 'entradasBloqueadas')]
+        if all(isinstance(v, (int, float)) for v in capacidad) and capacidad[0] - sum(capacidad[1:]) <= 0:
+            continue
+        try:
+            instante = datetime.fromisoformat(sesion.get('fechaCelebracionRecinto') or '')
+        except (ValueError, TypeError):
+            continue
+        if not hoy <= instante.date() <= hoy + timedelta(days=30):
+            continue
+        evento = actividad_ampliada(instante.date().isoformat(), instante.strftime('%H:%M'),
+            'Circo Rodas', url, 'Circo Rodas — Linke-arte', ESPACIOS_SEGUIDOS[0][3],
+            precio_texto, 'Circo Rodas')
+        evento['descripcion'] = 'Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.'
+        evento['entradas_url'] = url
+        evento['entrada_paga'] = True
+        evento['categorias'] = ['infancias']
+        eventos[clave(evento)] = evento
+    return list(eventos.values())
+
+
+def categorias_espacio(titulo, descripcion):
+    contenido = normalizar(titulo + ' ' + descripcion)
+    categorias = []
+    patrones = {
+        'musica': r'musica|musical|concierto|recital|orquesta|\bbanda|rock|jazz|cumbia|swing|folklore|blues|cantante|cantora|discograf|guitarrista|pianista|bandoneon|angela torres|ke personajes|\bbresh\b|nocheros|sergio dalma',
+        'teatro': r'teatr|stand.?up|humor|comedia|unipersonal',
+        'cine': r'pelicula|documental|proyeccion|cinematograf',
+        'libros': r'\blibro|lectura|charla|conferencia',
+        'danza': r'danza|ballet|flamenco|milonga',
+        'infancias': r'infancias|infantil|titeres|para toda la familia',
+    }
+    for categoria, patron in patrones.items():
+        if re.search(patron, contenido):
+            categorias.append(categoria)
+    return categorias
+
+
+def leer_espacios_extra(hoy, estado):
+    nuevos = []
+    for proveedor, base in (('Entrada Play', 'https://entradaplay.com/'),
+                            ('CentroTicket', 'https://centroticket.com.ar/')):
+        try:
+            datos = descargar_catalogo(urljoin(base, 'obtener_eventos/?cantidad_eventos=100'))
+            funciones, pendientes = eventos_catalogo(datos, base, proveedor, hoy)
+            for evento in funciones:
+                try:
+                    ficha = descargar(evento['evento_url'])
+                    cuerpo = ficha.select_one('.col-12.text-center.mt-3 > div.mt-3')
+                    descripcion = texto(cuerpo)
+                    if descripcion:
+                        evento['descripcion'] = resumen(descripcion)
+                    categorias = categorias_espacio(evento['nombre'], descripcion)
+                    if categorias:
+                        evento['categorias'] = categorias
+                except (requests.RequestException, ValueError, TypeError):
+                    pendientes += 1
+                    categorias = categorias_espacio(evento['nombre'], '')
+                    if categorias:
+                        evento['categorias'] = categorias
+            nuevos.extend(funciones)
+            estado[proveedor] = f'revisada: {len(funciones)} funciones; {pendientes} fichas pendientes'
+        except (requests.RequestException, ValueError, TypeError) as error:
+            estado[proveedor] = f'no accesible: {type(error).__name__}'
+    url = 'https://linke-arte.com/arg/es/circo-rodas-rosario'
+    try:
+        funciones = leer_rodas(descargar(url), url, hoy)
+        nuevos.extend(funciones)
+        estado['Circo Rodas — Linke-arte'] = f'revisada: {len(funciones)} funciones habilitadas'
+    except (requests.RequestException, ValueError, TypeError) as error:
+        estado['Circo Rodas — Linke-arte'] = f'no accesible: {type(error).__name__}'
+    return nuevos
+
+
+def misma_propuesta(a, b):
+    sede_a, sede_b = espacio_seguido(a.get('lugar', '')), espacio_seguido(b.get('lugar', ''))
+    if not sede_a or not sede_b or sede_a[0] != sede_b[0]:
+        return False
+    def titulo(e):
+        return ' '.join(re.findall(r'\w+', normalizar(e.get('nombre', ''))))
+    na, nb = titulo(a), titulo(b)
+    return na == nb or min(len(na), len(nb)) >= 8 and (na in nb or nb in na)
+
+
+def preferir_venta_oficial(eventos, nuevos):
+    # Sólo corrige fechas secundarias si el vendedor afirma que hay una única función.
+    verificados = [e for e in nuevos if e.get('funcion_unica_verificada')]
+    return [e for e in eventos if not (e.get('origen') == 'Rosario en Cartel' and
+            any(misma_propuesta(e, n) and (e['fecha'], e['hora']) != (n['fecha'], n['hora']) for n in verificados))]
+
+# Una ficha comprobada sirve de arranque y deja de consultarse al finalizar su edición.
+SEMILLAS_ESPACIOS = (
+    ('https://www.rosario.gob.ar/inicio/festival-gualicho-cofradia-encuentro-y-fiesta-ricotera', date(2026, 10, 17)),
+)
+
+
+def municipal_espacios(html, url, hoy):
+    from actualizar_eventos import ubicacion, fechas_regla
+    titulo = texto(html.select_one('main h1, h1'))
+    descripcion = texto(html.select_one('.descripcion'))
+    eventos = {}
+    for bloque in html.select('.cuando-fechas'):
+        lugar, direccion = ubicacion(bloque)
+        espacio = espacio_seguido(lugar)
+        if not espacio:
+            continue
+        fechas = []
+        for regla in bloque.select('.rule'):
+            fechas.extend(fechas_regla(regla, hoy))
+        for instante in bloque.select('time[datetime]'):
+            if not instante.select_one('.hora-desde'):
+                continue
+            momento = datetime.fromisoformat(instante['datetime'])
+            if momento.tzinfo:
+                momento = momento.astimezone(ZONA)
+            if hoy <= momento.date() <= hoy + timedelta(days=30):
+                fechas.append((momento.date().isoformat(), momento.strftime('%H:%M')))
+        paga = bool(re.search(r'\bpaga\b', normalizar(texto(bloque))))
+        for fecha, hora in fechas:
+            evento = actividad_ampliada(fecha, hora, titulo, url, 'Agenda municipal — Espacios',
+                espacio[3], descripcion, espacio[0])
+            evento['direccion'] = espacio[3]
+            if paga:
+                if evento['precio'] == 0:
+                    evento['precio'] = None
+                evento['entrada_paga'] = True
+                if evento['precio'] is None:
+                    evento['precio_etiqueta'] = 'Pago'
+            compra = next((urljoin(url, a['href']) for a in html.select('.descripcion a[href]')
+                           if 'entrada' in normalizar(texto(a)) and urlsplit(urljoin(url, a['href'])).scheme == 'https'), None)
+            if compra:
+                evento['entradas_url'] = compra
+            categorias = categorias_espacio(titulo, descripcion)
+            if categorias:
+                evento['categorias'] = categorias
+            eventos[clave(evento)] = evento
+    return list(eventos.values())
+
+
+def leer_municipal_espacios(hoy, estado):
+    candidatos = {url for url, hasta in SEMILLAS_ESPACIOS if hoy <= hasta}
+    # Revisitar fichas publicadas de estos espacios sin depender de una fecha mensual.
+    if ARCHIVO.exists():
+        anteriores = json.loads(ARCHIVO.read_text(encoding='utf-8')).get('eventos', [])
+        candidatos.update(e['evento_url'] for e in anteriores if e.get('fecha', '') >= hoy.isoformat()
+            and espacio_seguido(e.get('lugar', '')) and e.get('evento_url', '').startswith('https://www.rosario.gob.ar/inicio/'))
+    nuevos, fallidos = [], 0
+    for url in sorted(candidatos):
+        try:
+            nuevos.extend(municipal_espacios(descargar(url), url, hoy))
+        except (requests.RequestException, ValueError, TypeError):
+            fallidos += 1
+    estado['Agenda municipal — Espacios'] = f'revisada: {len(nuevos)} funciones; {fallidos} fichas pendientes'
+    return nuevos
+
+FUENTES_CSV = (
+    ('Teatro Broadway', 'teatro', 'https://teatrobroadwayrosario.com/', 'alta'),
+    ('Complejo Cultural Atlas', 'centro cultural', 'https://ccatlas.org.ar/', 'alta'),
+    ('Teatro Municipal La Comedia', 'teatro municipal', 'https://teatrolacomedia.gob.ar/', 'alta'),
+    ('Centro Cultural Roberto Fontanarrosa', 'centro cultural municipal', 'https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros', 'alta'),
+    ('Plataforma Lavarden', 'centro cultural provincial', 'https://plataformalavarden.gob.ar/', 'alta'),
+    ('Teatro El Circulo', 'teatro', 'https://www.teatroelcirculo.com/home', 'alta'),
+    ('Teatro Astengo', 'teatro', 'https://teatroastengo.ar/agenda-espectaculos/', 'alta'),
+    ('Metropolitano Rosario', 'salon/eventos', 'https://www.metropolitanoros.com.ar/', 'alta'),
+    ('La Segunda Seguros Arena', 'arena/eventos', 'https://www.instagram.com/bioceresarena/', 'alta'),
+    ('Anfiteatro Municipal Humberto de Nito', 'anfiteatro municipal', 'https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros', 'alta'),
+    ('Estadio Central Cordoba', 'estadio/club', 'https://www.centralcordoba.com.ar/', 'media'),
+    ('Club Atletico Provincial', 'club/eventos', 'https://www.clubprovincial.com.ar/', 'media'),
+    ('El Cairo Cine Publico', 'cine municipal', 'https://www.rosario.gob.ar/inicio/cine-el-cairo', 'alta'),
+    ('Centro Cultural Parque de Espana', 'centro cultural', 'https://www.ccpe.org.ar/', 'alta'),
+    ('Centro de Expresiones Contemporaneas', 'centro cultural municipal', 'https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros', 'alta'),
+    ('Centro Cultural Cine Lumiere', 'cine/centro cultural municipal', 'https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros', 'alta'),
+    ('Galpon de la Musica', 'centro cultural municipal', 'https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros', 'alta'),
+    ('Complejo Astronomico Municipal', 'espacio municipal', 'https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros', 'alta'),
+    ('La Granja de la Infancia', 'espacio municipal', 'https://www.rosario.gob.ar/inicio/triptico-de-la-infancia', 'media'),
+    ('El Jardin de los Ninos', 'espacio municipal', 'https://www.rosario.gob.ar/inicio/triptico-de-la-infancia', 'media'),
+    ('La Isla de los Inventos', 'espacio municipal', 'https://www.rosario.gob.ar/inicio/triptico-de-la-infancia', 'media'),
+    ('Museo Castagnino', 'museo', 'https://castagninomacro.org/', 'alta'),
+    ('Museo Macro', 'museo', 'https://castagninomacro.org/', 'alta'),
+    ('Museo de la Ciudad', 'museo municipal', 'https://www.rosario.gob.ar/inicio/museos-municipales', 'alta'),
+    ('Museo Estevez', 'museo municipal', 'https://www.rosario.gob.ar/inicio/museos-municipales', 'alta'),
+    ('Museo de la Memoria', 'museo', 'https://www.museodelamemoria.gob.ar/', 'alta'),
+    ('Museo Historico Provincial Julio Marc', 'museo provincial', 'https://www.santafe.gob.ar/index.php/web/content/view/full/93664', 'media'),
+    ('Museo de Arte Sacro Eduardo Barnes', 'museo', 'https://www.teatroelcirculo.com/', 'media'),
+    ('Sala Cultural de Abajo', 'sala independiente', 'https://www.instagram.com/salaculturaldeabajo/', 'media'),
+    ('Teatro del Rayo', 'sala independiente', 'https://www.elrayomisterioso.org.ar/', 'media'),
+    ('Espacio Bravo', 'sala independiente', 'https://www.instagram.com/espaciobravorosario/', 'media'),
+    ('Teatro La Morada', 'sala independiente', 'https://www.facebook.com/pages/La-Morada-Teatro/653965228022129', 'media'),
+    ('La Orilla Infinita', 'sala independiente', 'https://www.instagram.com/laorillainfinita/', 'media'),
+    ('Circo Rodas', 'circo itinerante', 'https://www.instagram.com/circorodasoficial/', 'media'),
+    ('La Surfera Beach', 'bar/espacio', 'https://www.instagram.com/lasurferabeach/', 'media'),
+    ('Bar El Cairo', 'bar cultural', 'https://www.instagram.com/barelcairorosario/', 'media'),
+    ('Casa de la Cultura Arijon', 'centro cultural municipal', 'https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros', 'media'),
+    ('ECU Espacio Cultural Universitario', 'espacio universitario', 'https://www.unr.edu.ar/', 'media'),
+    ('Monumento Nacional a la Bandera', 'espacio patrimonial', 'https://www.rosario.gob.ar/inicio/monumento-nacional-la-bandera', 'media'),
+    ('Mercado del Patio', 'mercado/espacio', 'https://www.mercadodelpatio.gob.ar/', 'media'),
+    ('Alto Rosario Shopping', 'shopping', 'https://www.altorosario.com.ar/', 'baja'),
+    ('Diferentes ambitos de Rosario', 'variable', 'https://www.rosario.gob.ar/inicio/agenda', 'baja'),
+)
+
+# Fuente aportada: fuentes_oficiales_agenda_rosario.csv. Se mantiene el enlace original
+# y se registra por separado la agenda específica usada para consultar.
+
+CSV_AGENDAS = (
+    ('Teatro El Circulo', 'https://www.teatroelcirculo.com/home', 'https://www.teatroelcirculo.com/tambi%C3%A9nenelcirculo', ''),
+    ('Club Atletico Provincial', 'https://www.clubprovincial.com.ar/', '', ''),
+    ('ECU Espacio Cultural Universitario', 'https://unr.edu.ar/agenda/', '', 'San Martín 750, Rosario, Santa Fe'),
+    ('Mercado del Patio', 'https://mercadodelpatio.gob.ar/', '', ''),
+    ('Alto Rosario Shopping', 'https://www.altorosario.com.ar/', '', ''),
+)
+
+
+def descargar_texto_publico(url):
+    from actualizar_eventos import SESION, BLOQUEADOS, ULTIMA, monotonic, sleep
+    host = urlsplit(url).hostname
+    if host in BLOQUEADOS:
+        raise requests.RequestException('Fuente pausada en esta revisión')
+    espera = 1.5 - (monotonic() - ULTIMA.get(host, 0))
+    if espera > 0:
+        sleep(espera)
+    try:
+        respuesta = SESION.get(url, timeout=(8, 15))
+        if respuesta.status_code in (403, 429):
+            BLOQUEADOS.add(host)
+        respuesta.raise_for_status()
+        respuesta.encoding = 'utf-8'
+        return respuesta.text
+    finally:
+        ULTIMA[host] = monotonic()
+
+
+def eventos_calendario_ics(contenido, hoy):
+    """Lee fechas completas de calendarios públicos, incluyendo líneas plegadas."""
+    if 'BEGIN:VCALENDAR' not in contenido:
+        raise ValueError('La fuente no devolvió un calendario')
+    contenido = re.sub(r'\r?\n[ \t]', '', contenido)
+    eventos = []
+    for bloque in re.findall(r'BEGIN:VEVENT\s*\n(.*?)END:VEVENT', contenido, re.S):
+        propiedades = {}
+        for linea in bloque.splitlines():
+            if ':' not in linea:
+                continue
+            nombre, valor = linea.split(':', 1)
+            propiedades[nombre] = valor.replace(r'\n', '\n').replace(r'\,', ',').replace(r'\;', ';').strip()
+        if propiedades.get('STATUS') in ('CANCELLED', 'TENTATIVE'):
+            continue
+        fecha_campo = next((k for k in propiedades if k == 'DTSTART' or k.startswith('DTSTART;')), '')
+        raw = propiedades.get(fecha_campo, '')
+        # Fechas sin horario y reglas recurrentes requieren un parser específico.
+        if 'T' not in raw or 'RRULE' in propiedades or 'RDATE' in propiedades:
+            continue
+        from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
+        try:
+            momento = datetime.strptime(raw.rstrip('Z'), '%Y%m%dT%H%M%S')
+            tz = re.search(r'TZID=([^;]+)', fecha_campo)
+            zona = ZoneInfo('UTC') if raw.endswith('Z') else ZoneInfo(tz[1].strip(chr(34))) if tz else ZONA
+            momento = momento.replace(tzinfo=zona).astimezone(ZONA)
+        except (ValueError, ZoneInfoNotFoundError):
+            continue
+        if not hoy <= momento.date() <= hoy + timedelta(days=30):
+            continue
+        titulo = propiedades.get('SUMMARY')
+        if titulo:
+            eventos.append({'fecha': momento.date().isoformat(), 'hora': momento.strftime('%H:%M'),
+                'nombre': titulo, 'evento_url': propiedades.get('URL', ''),
+                'descripcion': propiedades.get('DESCRIPTION', '')})
+    return eventos
+
+
+def leer_cairo(hoy):
+    base = 'https://elcairocinepublico.gob.ar/'
+    meses = {hoy.strftime('%Y-%m'), (hoy + timedelta(days=30)).strftime('%Y-%m')}
+    eventos, errores, cache = {}, 0, {}
+    for mes in sorted(meses):
+        # El formato de la navegación mensual y la exportación son enlaces públicos del cine.
+        url = urljoin(base, f'cartelera-de-sala/{mes}/?ical=1')
+        try:
+            funciones = eventos_calendario_ics(descargar_texto_publico(url), hoy)
+            for funcion in funciones:
+                enlace = funcion['evento_url']
+                if not mismo_dominio(enlace, base):
+                    enlace = urljoin(base, 'cartelera-de-sala/')
+                descripcion, precio_texto = funcion['descripcion'], ''
+                if enlace != urljoin(base, 'cartelera-de-sala/'):
+                    try:
+                        if enlace not in cache:
+                            cache[enlace] = descargar(enlace)
+                        ficha = cache[enlace]
+                        # Sólo el rótulo de entrada, no el año de la película ni precios relacionados.
+                        titulo_precio = next((h for h in ficha.select('h2, h3, h4') if normalizar(texto(h)).strip(': ') == 'entrada'), None)
+                        if titulo_precio:
+                            valores = []
+                            for nodo in titulo_precio.next_siblings:
+                                if getattr(nodo, 'name', '') in ('h1', 'h2', 'h3', 'h4'):
+                                    break
+                                if getattr(nodo, 'get_text', None):
+                                    valores.append(texto(nodo))
+                                elif isinstance(nodo, str):
+                                    valores.append(nodo.strip())
+                                if len(valores) >= 2:
+                                    break
+                            precio_texto = ' '.join(valores)
+                    except (requests.RequestException, ValueError):
+                        errores += 1
+                evento = actividad_ampliada(funcion['fecha'], funcion['hora'], funcion['nombre'], enlace,
+                    'El Cairo Cine Público', 'Santa Fe 1120, Rosario, Santa Fe', precio_texto,
+                    'El Cairo Cine Público')
+                evento['descripcion'] = resumen(texto(BeautifulSoup(descripcion, 'html.parser')))
+                evento['categorias'] = ['cine']
+                eventos[clave(evento)] = evento
+        except (requests.RequestException, ValueError):
+            errores += 1
+    return list(eventos.values()), errores
+
+
+def eventos_schema_culturales(valor):
+    tipos_evento = {'Event', 'MusicEvent', 'TheaterEvent', 'ScreeningEvent', 'ExhibitionEvent',
+                    'DanceEvent', 'EducationEvent', 'Festival', 'SportsEvent'}
+    if isinstance(valor, list):
+        for item in valor:
+            yield from eventos_schema_culturales(item)
+    elif isinstance(valor, dict):
+        tipos = valor.get('@type')
+        tipos = [tipos] if isinstance(tipos, str) else tipos if isinstance(tipos, list) else []
+        if set(t for t in tipos if isinstance(t, str)) & tipos_evento:
+            yield valor
+        for item in valor.values():
+            if isinstance(item, (list, dict)):
+                yield from eventos_schema_culturales(item)
+
+
+def schema_csv(html, fuente, url, direccion, hoy):
+    eventos = []
+    for tag in html.select('script[type="application/ld+json"]'):
+        try:
+            fichas = list(eventos_schema_culturales(json.loads(tag.get_text())))
+        except (ValueError, TypeError):
+            continue
+        for ficha in fichas:
+            raw = ficha.get('startDate')
+            if not isinstance(raw, str) or 'T' not in raw:
+                continue
+            try:
+                instante = datetime.fromisoformat(raw.replace('Z', '+00:00'))
+                if instante.tzinfo:
+                    instante = instante.astimezone(ZONA)
+            except ValueError:
+                continue
+            if not hoy <= instante.date() <= hoy + timedelta(days=30):
+                continue
+            if any(x in str(ficha.get('eventStatus', '')) for x in ('Cancelled', 'Postponed', 'Rescheduled')):
+                continue
+            loc = ficha.get('location') or {}
+            if not isinstance(loc, dict):
+                continue
+            lugar = loc.get('name') or ''
+            domicilio = loc.get('address') or direccion
+            if isinstance(domicilio, dict):
+                localidad = domicilio.get('addressLocality') or ''
+                if localidad and 'rosario' not in normalizar(localidad):
+                    continue
+                domicilio = domicilio.get('streetAddress') or direccion
+            if not isinstance(lugar, str) or not isinstance(domicilio, str) or not domicilio:
+                continue
+            if fuente == 'ECU Espacio Cultural Universitario' and not re.search(r'\becu\b|espacio cultural universitario', normalizar(lugar)):
+                continue
+            if fuente != 'ECU Espacio Cultural Universitario' and not (normalizar(fuente) in normalizar(lugar) or 'rosario' in normalizar(lugar + ' ' + domicilio)):
+                continue
+            titulo = ficha.get('name')
+            if not isinstance(titulo, str) or not titulo:
+                continue
+            enlace = ficha.get('url')
+            if not isinstance(enlace, str) or not mismo_dominio(enlace, url):
+                enlace = url
+            descripcion = texto(BeautifulSoup(str(ficha.get('description') or ''), 'html.parser'))
+            if ficha.get('isAccessibleForFree') is True:
+                descripcion_precio = descripcion + ' Entrada gratuita'
+            else:
+                descripcion_precio = descripcion
+            evento = actividad_ampliada(instante.date().isoformat(), instante.strftime('%H:%M'), titulo,
+                enlace, fuente, domicilio, descripcion_precio, lugar or fuente)
+            categorias = categorias_espacio(titulo, descripcion)
+            if categorias:
+                evento['categorias'] = categorias
+            eventos.append(evento)
+    return eventos
+
+
+def leer_agenda_csv(fuente, indice, segunda, direccion, hoy):
+    eventos, errores, visitadas, cache = [], 0, set(), {}
+    for portada in [u for u in (indice, segunda) if u]:
+        try:
+            html = descargar(portada)
+            cache[portada] = html
+            eventos.extend(schema_csv(html, fuente, portada, direccion, hoy))
+            links = []
+            for a in html.select('a[href]'):
+                link = urljoin(portada, a['href']).split('#', 1)[0]
+                if mismo_dominio(link, indice) and link not in links and re.search(
+                    r'agenda|evento|actividad|programacion|cartelera|concierto', normalizar(texto(a) + ' ' + urlsplit(link).path)):
+                    links.append(link)
+            for link in links[:8]:
+                if link in visitadas:
+                    continue
+                visitadas.add(link)
+                try:
+                    if link not in cache:
+                        cache[link] = descargar(link)
+                    eventos.extend(schema_csv(cache[link], fuente, link, direccion, hoy))
+                    if fuente == 'ECU Espacio Cultural Universitario':
+                        detalle = cache[link]
+                        titulo = texto(detalle.select_one('h1'))
+                        cuerpo = detalle.select_one('.mec-single-event-description')
+                        descripcion = texto(cuerpo)
+                        confirmado = bool(re.search(rf'(?:datePublished|dateModified|startDate)[^\n]{{0,60}}{hoy.year}-', str(detalle)))
+                        if titulo and cuerpo and confirmado and re.search(r'\becu\b|espacio cultural universitario', normalizar(descripcion)):
+                            for fecha, hora in fechas_publicadas(descripcion, hoy):
+                                evento = actividad_ampliada(fecha, hora, titulo, link, fuente, direccion, descripcion, fuente)
+                                categorias = categorias_espacio(titulo, descripcion)
+                                if categorias:
+                                    evento['categorias'] = categorias
+                                eventos.append(evento)
+                except (requests.RequestException, ValueError):
+                    errores += 1
+        except (requests.RequestException, ValueError):
+            errores += 1
+    return list({clave(e): e for e in eventos}.values()), errores
+
+
+def leer_fuentes_del_csv(hoy, estado):
+    nuevos = []
+    for fuente, indice, segunda, direccion in CSV_AGENDAS:
+        funciones, pendientes = leer_agenda_csv(fuente, indice, segunda, direccion, hoy)
+        nuevos.extend(funciones)
+        estado[fuente + ' — CSV'] = f'revisada: {len(funciones)} funciones; {pendientes} consultas pendientes'
+    funciones, pendientes = leer_cairo(hoy)
+    nuevos.extend(funciones)
+    estado['El Cairo — CSV'] = f'revisada: {len(funciones)} funciones; {pendientes} consultas pendientes'
+    return nuevos
+
+
+def revision_fuentes_csv(eventos, estado):
+    revision = []
+    for nombre, tipo, url, prioridad in FUENTES_CSV:
+        social = urlsplit(url).hostname in ('www.instagram.com', 'instagram.com', 'www.facebook.com', 'facebook.com')
+        estado_fuente = estado.get(nombre + ' — CSV', '')
+        if nombre == 'El Cairo Cine Publico':
+            estado_fuente = estado.get('El Cairo — CSV', '')
+        if not estado_fuente:
+            if tipo == 'variable':
+                estado_fuente = 'requiere identificar el organizador de cada evento'
+            elif social:
+                estado_fuente = 'referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles'
+            elif 'museo' in tipo:
+                estado_fuente = 'revisión del directorio y de las webs de museos'
+            else:
+                estado_fuente = 'revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa'
+        patron = normalizar(nombre).replace('teatro la morada', 'la morada')
+        cantidad = sum(1 for e in eventos if patron in normalizar(e.get('lugar', '') + ' ' + e.get('origen', '')))
+        revision.append({'nombre': nombre, 'url_aportada': url, 'tipo': tipo,
+            'prioridad': prioridad, 'estado': estado_fuente, 'actividades': cantidad})
+    return revision
+
 def actualizar_fuentes():
     ahora = datetime.now(ZONA)
     hoy = ahora.date()
@@ -612,6 +1187,10 @@ def actualizar_fuentes():
     # No se requiere ningún archivo de respaldo mensual.
     nuevos = []
     nuevos.extend(leer_atir(hoy, estado))
+    nuevos.extend(leer_fuentes_del_csv(hoy, estado))
+    espacios_nuevos = leer_espacios_extra(hoy, estado)
+    nuevos.extend(espacios_nuevos)
+    nuevos.extend(leer_municipal_espacios(hoy, estado))
     actividades_museos, revision_museos = leer_museos(hoy, estado)
     nuevos.extend(actividades_museos)
     for fuente, url, direccion, parser in (
@@ -639,13 +1218,17 @@ def actualizar_fuentes():
         estado[nombre] = f"revisada: {len(nuevos_cartel)} funciones verificadas; {len(fallos)} fichas pendientes"
     except (requests.RequestException, ValueError, TypeError) as error:
         estado[nombre] = f"no accesible: {type(error).__name__}"
-    vistos = {clave(e): e for e in datos.get("eventos", []) if e["fecha"] >= hoy.isoformat()}
+    anteriores = preferir_venta_oficial(datos.get("eventos", []), espacios_nuevos)
+    nuevos = preferir_venta_oficial(nuevos, espacios_nuevos)
+    vistos = {clave(e): e for e in anteriores if e["fecha"] >= hoy.isoformat()}
     agregados = 0
     for e in nuevos:
         key = clave(e)
         if key not in vistos:
             vistos[key] = e
             agregados += 1
+        elif e.get("funcion_unica_verificada") or e.get("origen") == "Circo Rodas — Linke-arte":
+            vistos[key] = e
     for evento in vistos.values():
         if evento.get("origen") == "Teatro Astengo" and not re.search(r"\d", evento.get("direccion", "")):
             evento["direccion"] = "Mitre 754, Rosario, Santa Fe"
@@ -653,8 +1236,9 @@ def actualizar_fuentes():
             evento["origen"] = "Manual"
         if not evento.get("evento_url"):
             evento["fuente_pendiente"] = True
-    datos["eventos"] = sorted(sin_repetidos(vistos.values()), key=lambda e: (e["fecha"], e["hora"], e["nombre"]))
-    if any("pendiente de consulta" in status or "revisión parcial" in status or "no accesible" in status or re.search(r"[1-9]\d* (?:errores|pendientes|fichas pendientes)", status) for status in estado.values()):
+    ordenados = sorted(vistos.values(), key=lambda e: not e.get("funcion_unica_verificada", False))
+    datos["eventos"] = sorted(sin_repetidos(ordenados), key=lambda e: (e["fecha"], e["hora"], e["nombre"]))
+    if any("pendiente de consulta" in status or "revisión parcial" in status or "no accesible" in status or re.search(r"[1-9]\d* (?:errores|pendientes|fichas pendientes|consultas pendientes|páginas pendientes)", status) for status in estado.values()):
         datos["estado"] = "parcial"
     temporal = ARCHIVO.with_suffix(".json.tmp")
     temporal.write_text(json.dumps(datos, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -664,6 +1248,10 @@ def actualizar_fuentes():
         "salas_independientes": len(SALAS), "medios": len(PRENSA),
         "funciones_agregadas": agregados, "fuentes": estado,
         "museos": revision_museos,
+        "fuentes_csv": revision_fuentes_csv(datos["eventos"], estado),
+        "espacios_seguidos": [{"nombre": e[0], "fuentes": e[2],
+            "actividades": sum(1 for a in datos["eventos"] if (espacio_seguido(a.get("lugar", "")) or (None,))[0] == e[0])}
+            for e in ESPACIOS_SEGUIDOS],
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Fuentes complementarias: {len(estado)} revisadas, {agregados} funciones agregadas")
     for fuente, resultado in estado.items():

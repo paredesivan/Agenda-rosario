@@ -16,18 +16,23 @@
     <section class="filter-section" aria-label="Filtrar actividades">
       <h2>¿Qué te gustaría hacer?</h2>
       <div class="filters" id="filters" role="group" aria-label="Categorías"></div>
-      <p class="hint">Elegí una categoría y un día marcado. Los números cuentan actividades desde hoy.</p>
+      <p class="hint">Elegí una categoría y un día marcado. Los números cuentan actividades desde hoy. Los días vacíos están deshabilitados.</p>
     </section>
     <section class="calendar" aria-label="Calendario de actividades">
       <div class="bar"><button id="prev" aria-label="Mes anterior">‹</button><h2 id="month"></h2><button id="next" aria-label="Mes siguiente">›</button></div>
-      <div class="calendar-tools"><button id="today" type="button">Ir a hoy</button><span>Los días destacados tienen actividades</span></div>
+      <div class="calendar-tools"><button id="today" type="button">Ir a hoy</button><span>Sólo podés elegir días destacados</span></div>
       <div class="days" id="days"></div>
     </section>
-    <div class="day-heading"><h2 id="selected"></h2><p id="day-count" role="status" aria-live="polite"></p></div>
+    <div class="day-heading" id="day-heading"><h2 id="selected"></h2><p id="day-count" role="status" aria-live="polite"></p></div>
     <p id="updated"></p>
     <section id="events" aria-label="Actividades del día"></section>
+    <nav class="day-navigation" aria-label="Navegar entre días con actividades">
+      <button id="previous-day" type="button">← Día anterior</button>
+      <button id="next-day" type="button">Siguiente día →</button>
+    </nav>
   </main>
   <footer>Las actividades pueden cambiar. Consultá siempre el enlace de la fuente.</footer>
   <script src="agenda.js" defer></script>
 </body>
 </html>
+

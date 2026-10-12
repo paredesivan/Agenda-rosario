@@ -10,25 +10,49 @@ const categories = [
 const normalize = value => String(value || "").normalize("NFD")
   .replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
+// Casos comprobados en la ficha de la fuente; evita clasificar sólo por el recinto.
+const verifiedCategories = [
+  ["rosario.gob.ar/inicio/medicine-como-el-arte-puede-ayudar-la-ciencia", ["cine"]],
+  ["ccpe.org.ar/web/actividades/la-montana-una-obra-escultorica", ["teatro", "danza"]],
+  ["d7entradas.com.ar/eventos/abuelas-e349", ["cine", "libros"]],
+  ["d7entradas.com.ar/eventos/nico-ibarburu-en-d7-e348", ["musica"]],
+  ["d7entradas.com.ar/eventos/murio-de-asco-alejandro-schanzenbach-e347", ["musica"]],
+  ["d7entradas.com.ar/eventos/princesa-tetrabrick-el-espiritu-frenetico-de-la-noche-cicuta-e353", ["musica"]],
+  ["plataformalavarden.gob.ar/actividades/pupina-plomer", ["teatro", "libros"]],
+  ["plataformalavarden.gob.ar/actividades/julieta-laso", ["musica"]]
+];
+
 function eventCategories(item) {
   const explicit = Array.isArray(item.categorias) ? item.categorias : [item.categoria];
-  const known = explicit.map(normalize).filter(c => categories.some(([id]) => id !== "todos" && id === c));
-  if (known.length) return [...new Set(known)];
+  const aliases = {"musica en vivo":"musica", "conciertos":"musica", "recitales":"musica",
+    "muestras":"museos", "exposiciones":"museos", "literatura":"libros", "charlas":"libros",
+    "infantil":"infancias", "teatral":"teatro", "peliculas":"cine"};
+  const known = explicit.map(value => aliases[normalize(value)] || normalize(value))
+    .filter(id => id !== "todos" && id !== "otros" && categories.some(([value]) => value === id));
   const content = normalize(`${item.nombre} ${item.descripcion || ""}`);
   const venue = normalize(`${item.lugar} ${item.origen || ""}`);
-  const result = [];
+  const result = [...known];
   const match = (id, pattern) => { if (pattern.test(content)) result.push(id); };
-  match("musica", /\b(musica|musical|recital|concierto|orquesta|banda|cantante|rock|jazz|opera|filarmonica|reggae|blues|cumbia|rap|folklore|tango|cantautor)\b/);
-  match("teatro", /\b(teatro|teatral|obra|comedia|dramaturgia|stand[ -]?up|monologo)\b/);
-  match("cine", /\b(cine|pelicula|film|documental|proyeccion|cinematografico)\b/);
-  match("museos", /\b(museo|museos|muestra|exposicion|artes visuales|fotografia|escultura)\b/);
-  match("ferias", /\b(feria|ferias|artesanos|artesanal|mercado)\b/);
-  match("libros", /\b(libro|libros|lectura|literatura|literario|poesia|narracion|charla|conferencia)\b/);
-  match("danza", /\b(danza|ballet|baile|milonga)\b/);
-  match("infancias", /\b(infancias|infantil|ninos|ninas|bebes|titeres)\b/);
-  if (/\b(museo|museos|macro|castagnino)\b/.test(venue) && !result.includes("museos")) result.push("museos");
-  if (!result.length && /teatro|astengo|atir|comedia/.test(venue)) result.push("teatro");
-  return result.length ? result : ["otros"];
+  match("musica", /\b(musica|musical(?:es)?|recital(?:es)?|concierto(?:s)?|orquesta(?:s)?|banda(?:s)?|cantante(?:s)?|cantora?|cantautor(?:a)?|rock|jazz|opera|filarmonica|reggae|blues|cumbia|rap|hip hop|fol[ck]lore|fol[ck]loric[oa]|chamame\w*|tanguer[oa]s?|tango|karaoke|cantata|ensamble|sonido de cuerdas|tambor|heavy|punk|dj)\b/);
+  match("teatro", /\b(teatro|teatral(?:es)?|comedia|dramaturgia|stand[ -]?up|monologo(?:s)?|unipersonal|humor|artes escenicas|en escena|actriz|actor)\b|\bobra(?:s)? (?:de teatro|teatral)/);
+  match("cine", /\b(cine|pelicula(?:s)?|film(?:s)?|documental(?:es)?|proyecci[oó]n(?:es)?|cinematografic[oa]|fulldome|slasher)\b/);
+  match("museos", /\b(museo(?:s)?|muestra(?:s)?|exposicion(?:es)?|artes visuales|fotografia|escultura(?:s)?)\b/);
+  match("ferias", /\b(feria(?:s)?|artesan[oa]s?|artesanal(?:es)?|mercado)\b/);
+  match("libros", /\b(libro(?:s)?|lectura(?:s)?|leer|literatura|literari[oa]|poesia|narracion|charla(?:s)?|conferencia(?:s)?|tertulia(?:s)?|conversa|cuento(?:s)?)\b/);
+  match("danza", /\b(danza(?:s)?|ballet|baile|bailar|milonga(?:s)?)\b/);
+  match("infancias", /\b(infancia(?:s)?|infantil(?:es)?|ninos|ninas|bebes|titere(?:s)?|nivel(?:es)? inicial|jugar|rompecabezas)\b|disfrutar en familia/);
+  // Los nombres de artistas permiten ubicar conciertos con descripciones mínimas.
+  match("musica", /\b(david bisbal|camilo|sergio dalma|ronnie wood|los nocheros|un poco de ruido|fiesta tnt)\b/);
+  if (/\b(cine|cinema|cinemateca)\b/.test(venue)) result.push("cine");
+  if (/\b(museo(?:s)?|macro|castagnino)\b/.test(venue)) result.push("museos");
+  if (/biblioteca/.test(venue) && /biblioteca|lectura|libro|bullying/.test(content)) result.push("libros");
+  if (!result.includes("musica") && !result.includes("cine") &&
+      (/teatro|astengo|atir|comedia|orilla infinita|cultural de abajo|caras y caretas|espacio bravo|la morada|la escalera|la torneria/.test(venue) ||
+       /\bfuncion (?:de|del)\b|\bgrandinetti\b/.test(content))) result.push("teatro");
+  const link = normalize(item.evento_url).replace(/^https?:\/\/(?:www\.)?/, "").split(/[?#]/)[0].replace(/\/$/, "");
+  const verified = verifiedCategories.find(([url]) => url === link);
+  if (verified) result.push(...verified[1]);
+  return result.length ? [...new Set(result)] : ["otros"];
 }
 
 function todayKey() {
@@ -42,6 +66,49 @@ function matchesFilter(item) {
 
 function futureEvents() {
   return events.filter(item => item.fecha >= todayKey());
+}
+
+function availableDates() {
+  return [...new Set(futureEvents().filter(matchesFilter).map(item => item.fecha))].sort();
+}
+
+function ensureSelection() {
+  const dates = availableDates();
+  if (dates.includes(selectedDate)) return;
+  const next = dates.find(key => key >= (selectedDate || todayKey())) || dates.at(-1) || null;
+  selectedDate = next;
+  if (next) visibleMonth = new Date(`${next.slice(0, 7)}-01T12:00:00`);
+}
+
+function selectDate(key, scroll = false) {
+  if (!availableDates().includes(key)) return;
+  selectedDate = key;
+  visibleMonth = new Date(`${key.slice(0, 7)}-01T12:00:00`);
+  render();
+  if (scroll) {
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    $("day-heading").scrollIntoView({behavior: reduced ? "auto" : "smooth", block:"start"});
+  }
+}
+
+function adjacentDate(direction) {
+  const dates = availableDates();
+  const index = dates.indexOf(selectedDate);
+  return index < 0 ? null : dates[index + direction] || null;
+}
+
+function renderNavigation() {
+  const previous = adjacentDate(-1), next = adjacentDate(1);
+  $("previous-day").disabled = !previous;
+  $("next-day").disabled = !next;
+  $("previous-day").onclick = () => { if (previous) selectDate(previous, true); };
+  $("next-day").onclick = () => { if (next) selectDate(next, true); };
+  const dates = availableDates();
+  const month = dateKey(visibleMonth.getFullYear(), visibleMonth.getMonth(), 1).slice(0, 7);
+  $("prev").disabled = !dates.some(key => key.slice(0, 7) < month);
+  $("next").disabled = !dates.some(key => key.slice(0, 7) > month);
+  $("today").disabled = !dates.length;
+  $("today").textContent = dates.includes(todayKey()) ? "Ir a hoy" : "Próximo día disponible";
 }
 
 function renderSummary() {
@@ -159,7 +226,10 @@ function addDay(grid, key, number) {
 
   button.textContent = number;
 
-  if (events.some(e => e.fecha === key && matchesFilter(e))) {
+  const available = availableDates().includes(key);
+  button.disabled = !available;
+  button.setAttribute("aria-label", `${number}${available ? ", con actividades" : ", sin actividades"}`);
+  if (available) {
     button.classList.add("has");
   }
 
@@ -168,8 +238,7 @@ function addDay(grid, key, number) {
   }
 
   button.onclick = () => {
-    selectedDate = key;
-    render();
+    selectDate(key);
   };
 
   grid.append(button);
@@ -260,17 +329,19 @@ function renderEvent(item) {
 }
 
 function render() {
+  ensureSelection();
   renderSummary();
+  renderNavigation();
   renderCalendar();
 
-  const date = new Date(`${selectedDate}T12:00:00`);
+  const date = selectedDate ? new Date(`${selectedDate}T12:00:00`) : null;
 
   $("selected").textContent =
-    date.toLocaleDateString("es-AR", {
+    date ? date.toLocaleDateString("es-AR", {
       weekday: "long",
       day: "numeric",
       month: "long"
-    });
+    }) : "Sin días disponibles";
 
   $("events").replaceChildren();
 
@@ -282,43 +353,24 @@ function render() {
 
   if (!list.length) {
     $("events").textContent =
-      activeFilter === "todos" ? "Todavía no hay actividades cargadas para esta fecha." : "No hay actividades de esta categoría para este día. Probá otra categoría o elegí un día marcado en el calendario.";
+      activeFilter === "todos" ? "Todavía no hay actividades cargadas para esta fecha." : "No hay actividades cargadas desde hoy para esta categoría. Elegí otra categoría.";
   }
 
   list.forEach(renderEvent);
 }
 
 // Navegar entre meses, actualizando la fecha seleccionada.
-function cambiarMes(desplazamiento) {
-  const diaSeleccionado =
-    Number(selectedDate.slice(-2));
-
-  visibleMonth = new Date(
-    visibleMonth.getFullYear(),
-    visibleMonth.getMonth() + desplazamiento,
-    1
-  );
-
-  const ultimoDia = new Date(
-    visibleMonth.getFullYear(),
-    visibleMonth.getMonth() + 1,
-    0
-  ).getDate();
-
-  selectedDate = dateKey(
-    visibleMonth.getFullYear(),
-    visibleMonth.getMonth(),
-    Math.min(diaSeleccionado, ultimoDia)
-  );
-
-  render();
+function cambiarMes(direction) {
+  const months = [...new Set(availableDates().map(key => key.slice(0, 7)))];
+  const current = dateKey(visibleMonth.getFullYear(), visibleMonth.getMonth(), 1).slice(0, 7);
+  const target = direction > 0 ? months.find(month => month > current) : months.filter(month => month < current).at(-1);
+  if (!target) return;
+  selectDate(availableDates().find(key => key.startsWith(target)));
 }
 
 $("today").onclick = () => {
-  const now = new Date();
-  selectedDate = todayKey();
-  visibleMonth = new Date(now.getFullYear(), now.getMonth(), 1);
-  render();
+  const key = availableDates().find(date => date >= todayKey());
+  if (key) selectDate(key);
 };
 
 $("prev").onclick = () => cambiarMes(-1);
@@ -334,4 +386,5 @@ loadEvents().catch(() => {
 setInterval(() => {
   loadEvents().catch(console.error);
 }, 60 * 60 * 1000);
+
 
