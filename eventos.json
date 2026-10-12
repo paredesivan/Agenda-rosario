@@ -1,26 +1,15 @@
 {
-  "actualizado": "2026-10-11 22:50",
+  "actualizado": "2026-10-12 00:04",
   "estado": "completo",
   "eventos": [
     {
-      "fecha": "2026-10-11",
-      "hora": "14:00",
-      "nombre": "Mercado de las Artes",
-      "lugar": "Av. Belgrano 328 (Ex Aduana)",
-      "direccion": "Av. Belgrano 328 (Ex Aduana), Rosario, Santa Fe",
-      "descripcion": "El próximo domingo 11 de octubre, de 14 a 19 h, llega una nueva edición de Mercado de las Artes, una propuesta…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/mercado-de-las-artes-5",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-11",
-      "hora": "18:00",
-      "nombre": "Festival Payasadas 2026",
-      "lugar": "Escuela Municipal de Artes Urbanas",
-      "direccion": "ESTEVEZ BOERO GUILLERMO 670, Rosario, Santa Fe",
-      "descripcion": "Del 7 al 11 de octubre, en la Escuela Municipal de Artes Urbanas (Estévez Boero 670) se llevará a cabo una nueva…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/festival-payasadas-2026",
+      "fecha": "2026-10-12",
+      "hora": "08:00",
+      "nombre": "Bienestar y actividad física en San Martín A",
+      "lugar": "Centro de Salud \"Vecinal San Martín A\"",
+      "direccion": "PIEDRAS 1469, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-san-martin",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -203,6 +192,18 @@
     {
       "fecha": "2026-10-14",
       "hora": "14:00",
+      "nombre": "Campaña: Stop bullying. Bullying no es un chiste. Es agresión.",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "Presidente Roca 731, Rosario, Santa Fe",
+      "descripcion": "Campaña: Stop bullying. Bullying no es un chiste. Es agresión. Por Biblioteca Argentina \"Dr. Juan Álvarez\" / 12 julio, 2026 El miércoles…",
+      "evento_url": "https://biblioargentina.gob.ar/web/campana-stop-bullying-bullying-no-es-un-chiste-es-agresion/",
+      "precio": null,
+      "origen": "Biblioteca Argentina Dr. Juan Álvarez",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-14",
+      "hora": "14:00",
       "nombre": "Entrenamiento y Ensayo para bailarines de tango",
       "lugar": "Centro Cultural  La Casa del Tango",
       "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
@@ -243,6 +244,17 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-14",
+      "hora": "20:00",
+      "nombre": "Observaciones astronómicas",
+      "lugar": "Observatorio de la Biblioteca Vigil",
+      "direccion": "Alem 3084, Rosario, Santa Fe",
+      "descripcion": "🔭 Una espectacular conjunción entre la estrella más brillante de la constelación del escorpión y la Luna se verá en octubre: ¡los…",
+      "evento_url": "https://bibliotecavigil.org.ar/inicio/events/observaciones-astronomicas/?occurrence=2026-10-14",
+      "precio": 0,
+      "origen": "Biblioteca Vigil"
     },
     {
       "fecha": "2026-10-14",
@@ -430,6 +442,17 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/rosario-sonido-de-cuerdas-dia-3",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "20:30",
+      "nombre": "ESCENAS DE LA VIDA CONYUGAL",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo/",
+      "precio": null,
+      "origen": "Teatro Astengo"
     },
     {
       "fecha": "2026-10-15",
@@ -631,6 +654,17 @@
     },
     {
       "fecha": "2026-10-16",
+      "hora": "18:00",
+      "nombre": "Presentación del libro «Viaje al corazón de Corpus Christi. Los ejecutados políticos de Pedro Donoso 582-A»",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "Presidente Roca 731, Rosario, Santa Fe",
+      "descripcion": "Presentación del libro «Viaje al corazón de Corpus Christi. Los ejecutados políticos de Pedro Donoso 582-A» Por Biblioteca Argentina \"Dr. Juan Álvarez\"…",
+      "evento_url": "https://biblioargentina.gob.ar/web/presentacion-del-libro-viaje-al-corazon-de-corpus-christi-los-ejecutados-politicos-de-pedro-donoso-582-a/",
+      "precio": 0,
+      "origen": "Biblioteca Argentina Dr. Juan Álvarez"
+    },
+    {
+      "fecha": "2026-10-16",
       "hora": "19:00",
       "nombre": "Función de Mama mía, un espectáculo de humor y cáncer (Villa de las Rosas)",
       "lugar": "Centro Cultural Parque de España / AECI",
@@ -698,6 +732,18 @@
     {
       "fecha": "2026-10-16",
       "hora": "21:00",
+      "nombre": "CIRKUS CIRKOR",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $40.000 y $90.000. CIRKUS CIRKOR EN VENTA!! Fechas y horarios Viernes 16 de Octubre a las 21:00 Hs. Sábado 17 de Octubre a las 21:00…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/836/cirkus-cirkor",
+      "precio": null,
+      "origen": "Teatro Broadway",
+      "precio_etiqueta": "$40.000 – $90.000"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:00",
       "nombre": "Darío Grandinetti en «El escritor de todas las cosas»",
       "lugar": "Plataforma Lavardén",
       "direccion": "Mendoza 1085, Rosario, Santa Fe",
@@ -705,6 +751,29 @@
       "evento_url": "https://plataformalavarden.gob.ar/actividades/dario-grandinetti-en-el-escritor-de-todas-las-cosas/",
       "precio": null,
       "origen": "Plataforma Lavardén"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:00",
+      "nombre": "ESCENAS DE LA VIDA CONYUGAL",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151/",
+      "precio": null,
+      "origen": "Teatro Astengo"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:00",
+      "nombre": "MURIÓ DE ASCO + ALEJANDRO SCHANZENBACH",
+      "lugar": "Distrito Siete",
+      "direccion": "Ovidio Lagos 790, Rosario, Santa Fe",
+      "descripcion": "MURIÓ DE ASCO + ALEJANDRO SCHANZENBACH",
+      "evento_url": "https://www.d7entradas.com.ar/eventos/murio-de-asco-alejandro-schanzenbach-e347",
+      "precio": 7500.0,
+      "origen": "Distrito Siete",
+      "precio_etiqueta": "Desde $7.500"
     },
     {
       "fecha": "2026-10-16",
@@ -872,6 +941,18 @@
     },
     {
       "fecha": "2026-10-17",
+      "hora": "16:00",
+      "nombre": "Primavera con sentidos",
+      "lugar": "Biblioteca Vigil",
+      "direccion": "Biblioteca Vigil, Rosario, Santa Fe",
+      "descripcion": "📚¡Nos encontramos para celebrar el Día de las Bibliotecas Populares y la Primavera! 💐 Desde nuestro espacio de infancias junto a talleristas…",
+      "evento_url": "https://bibliotecavigil.org.ar/inicio/events/primavera-con-sentidos/?occurrence=2026-10-17",
+      "precio": null,
+      "origen": "Biblioteca Vigil",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-17",
       "hora": "18:00",
       "nombre": "DÍA 2 | MOSTRA. Albertina Carri presenta su libro CINE VIVO + Proyección de cortos",
       "lugar": "Centro Cultural Cine Lumière",
@@ -906,6 +987,18 @@
     {
       "fecha": "2026-10-17",
       "hora": "21:00",
+      "nombre": "CIRKUS CIRKOR",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $40.000 y $90.000. CIRKUS CIRKOR EN VENTA!! Fechas y horarios Viernes 16 de Octubre a las 21:00 Hs. Sábado 17 de Octubre a las 21:00…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/836/cirkus-cirkor",
+      "precio": null,
+      "origen": "Teatro Broadway",
+      "precio_etiqueta": "$40.000 – $90.000"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:00",
       "nombre": "DÍA 2 | MOSTRA. Película invitada: Bombacha (Estreno en Rosario)",
       "lugar": "Centro Cultural Cine Lumière",
       "direccion": "VELEZ SARSFIELD DALMACIO 1027, Rosario, Santa Fe",
@@ -913,6 +1006,29 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/dia-2-mostra.-pelicula-invitada-bombacha-estreno-en-rosario",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:00",
+      "nombre": "ESCENAS DE LA VIDA CONYUGAL",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151-882/",
+      "precio": null,
+      "origen": "Teatro Astengo"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:00",
+      "nombre": "LA IDEOLOGÍA",
+      "lugar": "Tandava",
+      "direccion": "9 de Julio 754, Rosario, Santa Fe",
+      "descripcion": ".LA IDEOLOGÍA. Finales de los 90. El despertar del sueño revolucionario de una antigua guerrillera mientras intenta inculcar a su hijo sus…",
+      "evento_url": "https://www.teatrosatir.ar/cartelera/la-ideologia/",
+      "precio": null,
+      "origen": "ATIR",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-17",
@@ -1036,6 +1152,63 @@
       "origen": "Municipalidad de Rosario"
     },
     {
+      "fecha": "2026-10-18",
+      "hora": "20:00",
+      "nombre": "Las escenas secundarias",
+      "lugar": "Espacio Bravo",
+      "direccion": "Catamarca 3624, Rosario, Santa Fe",
+      "descripcion": "ESTRENO Luego de repente los dos se van. Luego de repente vuelven. Inalterados. Digamos que ahora inalterados. Por ahora inalterados. Actúan: Vanina…",
+      "evento_url": "https://www.teatrosatir.ar/cartelera/las-escenas-secundarias/",
+      "precio": null,
+      "origen": "ATIR",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-18",
+      "hora": "20:30",
+      "nombre": "ESCENAS DE LA VIDA CONYUGAL",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281/",
+      "precio": null,
+      "origen": "Teatro Astengo"
+    },
+    {
+      "fecha": "2026-10-18",
+      "hora": "21:00",
+      "nombre": "David Bisbal en Rosario",
+      "lugar": "Metropolitano",
+      "direccion": "Junín 501, Rosario, Santa Fe",
+      "descripcion": "+ Espectáculos David Bisbal en Rosario 18 Octubre 21:00 hs IMPORTANTE! Venta sólo a través del sitio oficial de Turbo entrada COMPRAR…",
+      "evento_url": "https://www.metropolitano.ar/espectaculo/david-bisbal/",
+      "precio": null,
+      "origen": "Metropolitano"
+    },
+    {
+      "fecha": "2026-10-18",
+      "hora": "21:00",
+      "nombre": "NICO IBARBURU EN D7",
+      "lugar": "Distrito Siete",
+      "direccion": "Ovidio Lagos 790, Rosario, Santa Fe",
+      "descripcion": "NICO IBARBURU EN D7",
+      "evento_url": "https://www.d7entradas.com.ar/eventos/nico-ibarburu-en-d7-e348",
+      "precio": 15000.0,
+      "origen": "Distrito Siete",
+      "precio_etiqueta": "Desde $15.000"
+    },
+    {
+      "fecha": "2026-10-19",
+      "hora": "08:00",
+      "nombre": "Bienestar y actividad física en San Martín A",
+      "lugar": "Centro de Salud \"Vecinal San Martín A\"",
+      "direccion": "PIEDRAS 1469, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-san-martin",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
       "fecha": "2026-10-19",
       "hora": "08:00",
       "nombre": "Exposición La Noche de Los Lápices. Ayer y hoy",
@@ -1109,6 +1282,17 @@
       "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
       "descripcion": "Itinerancia de la muestra surgida de la IV Convocatoria de Arte Correo dirigida a escuelas secundarias organizada con el colectivo Mujeraje y…",
       "evento_url": "https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-21",
+      "hora": "10:00",
+      "nombre": "Fogones de Palabras",
+      "lugar": "Hospital Intendente Gabriel Carrasco",
+      "direccion": "AVELLANEDA NICOLAS 1402, Rosario, Santa Fe",
+      "descripcion": "Lecturas compartidas y propuestas lúdicas y creativas abiertas a la comunidad hospitalaria y público en general como parte de la Red del…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/fogones-de-palabras-23",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1256,6 +1440,28 @@
       "origen": "Municipalidad de Rosario"
     },
     {
+      "fecha": "2026-10-21",
+      "hora": "20:00",
+      "nombre": "Observaciones astronómicas",
+      "lugar": "Observatorio de la Biblioteca Vigil",
+      "direccion": "Alem 3084, Rosario, Santa Fe",
+      "descripcion": "🔭 Una espectacular conjunción entre la estrella más brillante de la constelación del escorpión y la Luna se verá en octubre: ¡los…",
+      "evento_url": "https://bibliotecavigil.org.ar/inicio/events/observaciones-astronomicas/?occurrence=2026-10-21",
+      "precio": 0,
+      "origen": "Biblioteca Vigil"
+    },
+    {
+      "fecha": "2026-10-21",
+      "hora": "20:30",
+      "nombre": "ESCENAS DE LA VIDA CONYUGAL",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281-708/",
+      "precio": null,
+      "origen": "Teatro Astengo"
+    },
+    {
       "fecha": "2026-10-22",
       "hora": "08:00",
       "nombre": "Exposición La Noche de Los Lápices. Ayer y hoy",
@@ -1263,6 +1469,17 @@
       "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
       "descripcion": "Itinerancia de la muestra surgida de la IV Convocatoria de Arte Correo dirigida a escuelas secundarias organizada con el colectivo Mujeraje y…",
       "evento_url": "https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-22",
+      "hora": "10:30",
+      "nombre": "Encuentros en la Bebeteca",
+      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
+      "descripcion": "Espacio de mediación lectora con bebés de 0 a 3 años en compañía de una persona adulta. Actividad como parte de la…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/encuentros-en-la-bebeteca-1",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1375,6 +1592,28 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/un-maldito-policia-en-cine-lumiere",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-22",
+      "hora": "20:30",
+      "nombre": "ABUELAS",
+      "lugar": "Distrito Siete",
+      "direccion": "Ovidio Lagos 790, Rosario, Santa Fe",
+      "descripcion": "ABUELAS",
+      "evento_url": "https://www.d7entradas.com.ar/eventos/abuelas-e349",
+      "precio": null,
+      "origen": "Distrito Siete"
+    },
+    {
+      "fecha": "2026-10-22",
+      "hora": "20:30",
+      "nombre": "ESCENAS DE LA VIDA CONYUGAL",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281-708-471/",
+      "precio": null,
+      "origen": "Teatro Astengo"
     },
     {
       "fecha": "2026-10-23",
@@ -1551,6 +1790,52 @@
       "evento_url": "https://ccpe.org.ar/web/actividades/la-montana-una-obra-escultorica/",
       "precio": null,
       "origen": "Centro Cultural Parque de España"
+    },
+    {
+      "fecha": "2026-10-23",
+      "hora": "21:00",
+      "nombre": "DESPERTAR DE PRIMAVERA",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $30.000 y $65.000. DESPERTAR DE PRIMAVERA EN VENTA!! Fechas y horarios Viernes 23 de Octubre a las 21:00 Hs. Sábado 24 de Octubre a las…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/859/despertar-de-primavera",
+      "precio": null,
+      "origen": "Teatro Broadway",
+      "precio_etiqueta": "$30.000 – $65.000"
+    },
+    {
+      "fecha": "2026-10-23",
+      "hora": "21:00",
+      "nombre": "ESCENAS DE LA VIDA CONYUGAL",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151-463/",
+      "precio": null,
+      "origen": "Teatro Astengo"
+    },
+    {
+      "fecha": "2026-10-23",
+      "hora": "21:00",
+      "nombre": "HOMENAJE AL PADRE DEL HEAVY NACIONAL",
+      "lugar": "Distrito Siete",
+      "direccion": "Ovidio Lagos 790, Rosario, Santa Fe",
+      "descripcion": "HOMENAJE AL PADRE DEL HEAVY NACIONAL",
+      "evento_url": "https://www.d7entradas.com.ar/eventos/homenaje-al-padre-del-heavy-nacional-e346",
+      "precio": null,
+      "origen": "Distrito Siete"
+    },
+    {
+      "fecha": "2026-10-23",
+      "hora": "21:00",
+      "nombre": "LA IDEOLOGÍA",
+      "lugar": "Tandava",
+      "direccion": "9 de Julio 754, Rosario, Santa Fe",
+      "descripcion": ".LA IDEOLOGÍA. Finales de los 90. El despertar del sueño revolucionario de una antigua guerrillera mientras intenta inculcar a su hijo sus…",
+      "evento_url": "https://www.teatrosatir.ar/cartelera/la-ideologia/",
+      "precio": null,
+      "origen": "ATIR",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-24",
@@ -1731,6 +2016,29 @@
     {
       "fecha": "2026-10-24",
       "hora": "21:00",
+      "nombre": "DESPERTAR DE PRIMAVERA",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $30.000 y $65.000. DESPERTAR DE PRIMAVERA EN VENTA!! Fechas y horarios Viernes 23 de Octubre a las 21:00 Hs. Sábado 24 de Octubre a las…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/859/despertar-de-primavera",
+      "precio": null,
+      "origen": "Teatro Broadway",
+      "precio_etiqueta": "$30.000 – $65.000"
+    },
+    {
+      "fecha": "2026-10-24",
+      "hora": "21:00",
+      "nombre": "ESCENAS DE LA VIDA CONYUGAL",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151-463-782/",
+      "precio": null,
+      "origen": "Teatro Astengo"
+    },
+    {
+      "fecha": "2026-10-24",
+      "hora": "21:00",
       "nombre": "Paris Jazz Club",
       "lugar": "Plataforma Lavardén",
       "direccion": "Mendoza 1085, Rosario, Santa Fe",
@@ -1852,11 +2160,57 @@
     {
       "fecha": "2026-10-25",
       "hora": "20:00",
+      "nombre": "Las escenas secundarias",
+      "lugar": "Espacio Bravo",
+      "direccion": "Catamarca 3624, Rosario, Santa Fe",
+      "descripcion": "ESTRENO Luego de repente los dos se van. Luego de repente vuelven. Inalterados. Digamos que ahora inalterados. Por ahora inalterados. Actúan: Vanina…",
+      "evento_url": "https://www.teatrosatir.ar/cartelera/las-escenas-secundarias/",
+      "precio": null,
+      "origen": "ATIR",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "20:00",
       "nombre": "Los abrazos en Cine Lumière",
       "lugar": "Centro Cultural Cine Lumière",
       "direccion": "VELEZ SARSFIELD DALMACIO 1027, Rosario, Santa Fe",
       "descripcion": "Emma vuelve a casa después de dos años de ausencia. Sus hermanas y su madre habían perdido las esperanzas de volverlo a…",
       "evento_url": "https://www.rosario.gob.ar/inicio/los-abrazos-en-cine-lumiere",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "20:30",
+      "nombre": "ESCENAS DE LA VIDA CONYUGAL",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281-666/",
+      "precio": null,
+      "origen": "Teatro Astengo"
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "21:00",
+      "nombre": "DESPERTAR DE PRIMAVERA",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $30.000 y $65.000. DESPERTAR DE PRIMAVERA EN VENTA!! Fechas y horarios Viernes 23 de Octubre a las 21:00 Hs. Sábado 24 de Octubre a las…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/859/despertar-de-primavera",
+      "precio": null,
+      "origen": "Teatro Broadway",
+      "precio_etiqueta": "$30.000 – $65.000"
+    },
+    {
+      "fecha": "2026-10-26",
+      "hora": "08:00",
+      "nombre": "Bienestar y actividad física en San Martín A",
+      "lugar": "Centro de Salud \"Vecinal San Martín A\"",
+      "direccion": "PIEDRAS 1469, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-san-martin",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -2035,6 +2389,17 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-28",
+      "hora": "20:00",
+      "nombre": "Observaciones astronómicas",
+      "lugar": "Observatorio de la Biblioteca Vigil",
+      "direccion": "Alem 3084, Rosario, Santa Fe",
+      "descripcion": "🔭 Una espectacular conjunción entre la estrella más brillante de la constelación del escorpión y la Luna se verá en octubre: ¡los…",
+      "evento_url": "https://bibliotecavigil.org.ar/inicio/events/observaciones-astronomicas/?occurrence=2026-10-28",
+      "precio": 0,
+      "origen": "Biblioteca Vigil"
     },
     {
       "fecha": "2026-10-29",
@@ -2379,6 +2744,39 @@
     },
     {
       "fecha": "2026-10-30",
+      "hora": "20:30",
+      "nombre": "Octubre en el Teatro Vigil: El espejo de la memoria",
+      "lugar": "Teatro Vigil",
+      "direccion": "Alem 3086, Rosario, Santa Fe",
+      "descripcion": "Octubre en el Teatro Vigil 🎭 📆 Viernes 30 octubre 20:30h El espejo de la memoria Separadas por un muro, dos familias…",
+      "evento_url": "https://bibliotecavigil.org.ar/inicio/events/octubre-en-el-teatro-vigil-el-espejo-de-la-memoria/?occurrence=2026-10-30",
+      "precio": 0,
+      "origen": "Biblioteca Vigil"
+    },
+    {
+      "fecha": "2026-10-30",
+      "hora": "21:00",
+      "nombre": "Camilo",
+      "lugar": "Metropolitano",
+      "direccion": "Junín 501, Rosario, Santa Fe",
+      "descripcion": "+ Espectáculos Camilo 30 de octubre 21:00 hs IMPORTANTE! Venta sólo a través del sitio oficial de Turbo entrada COMPRAR EN EL…",
+      "evento_url": "https://www.metropolitano.ar/espectaculo/camilo/",
+      "precio": null,
+      "origen": "Metropolitano"
+    },
+    {
+      "fecha": "2026-10-30",
+      "hora": "21:00",
+      "nombre": "Princesa Tetrabrick / El Espíritu Frenético de la Noche / Cicuta",
+      "lugar": "Distrito Siete",
+      "direccion": "Ovidio Lagos 790, Rosario, Santa Fe",
+      "descripcion": "Princesa Tetrabrick / El Espíritu Frenético de la Noche / Cicuta",
+      "evento_url": "https://www.d7entradas.com.ar/eventos/princesa-tetrabrick-el-espiritu-frenetico-de-la-noche-cicuta-e353",
+      "precio": null,
+      "origen": "Distrito Siete"
+    },
+    {
+      "fecha": "2026-10-30",
       "hora": "21:00",
       "nombre": "Pupina Plomer",
       "lugar": "Plataforma Lavardén",
@@ -2512,6 +2910,18 @@
     {
       "fecha": "2026-10-31",
       "hora": "21:00",
+      "nombre": "FIESTA TNT",
+      "lugar": "Distrito Siete",
+      "direccion": "Ovidio Lagos 790, Rosario, Santa Fe",
+      "descripcion": "FIESTA TNT",
+      "evento_url": "https://www.d7entradas.com.ar/eventos/fiesta-tnt-e354",
+      "precio": 10000.0,
+      "origen": "Distrito Siete",
+      "precio_etiqueta": "Desde $10.000"
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "21:00",
       "nombre": "Fueye Solo: concierto acústico de bandoneón",
       "lugar": "Centro Cultural  La Casa del Tango",
       "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
@@ -2523,6 +2933,28 @@
     {
       "fecha": "2026-10-31",
       "hora": "21:00",
+      "nombre": "HARLEM GLOBETROTTERS",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "HARLEM GLOBETROTTERS EN VENTA!! Fechas y horarios Sábado 31 de Octubre a las 21:00 Hs. en CLUB ATLETICO PROVINCIAL Más información COMPRA…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/864/harlem-globetrotters",
+      "precio": null,
+      "origen": "Teatro Broadway"
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "21:00",
+      "nombre": "Un Poco de Ruido",
+      "lugar": "Metropolitano",
+      "direccion": "Junín 501, Rosario, Santa Fe",
+      "descripcion": "+ Espectáculos Un Poco de Ruido 31 Octubre 21:00 hs IMPORTANTE! Venta sólo a través del sitio oficial de Turbo entrada COMPRAR…",
+      "evento_url": "https://www.metropolitano.ar/espectaculo/un-poco-de-ruido-2/",
+      "precio": null,
+      "origen": "Metropolitano"
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "21:00",
       "nombre": "Víctor Heredia: Desde Paso del Rey",
       "lugar": "Teatro Municipal La Comedia",
       "direccion": "Mitre 958, Rosario, Santa Fe",
@@ -2530,6 +2962,17 @@
       "evento_url": "https://teatrolacomedia.gob.ar/espectaculo/victor-heredia-presenta-desde-paso-del-rey/",
       "precio": null,
       "origen": "Teatro Municipal La Comedia"
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "21:30",
+      "nombre": "JULIAN BELLESE",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "JULIAN BELLESE EN VENTA!! Fechas y horarios Sábado 31 de Octubre a las 21:30 Hs. Más información COMPRA TU ENTRADA HASTA 6…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/812/julian-bellese",
+      "precio": 40000.0,
+      "origen": "Teatro Broadway"
     },
     {
       "fecha": "2026-11-01",
@@ -2627,6 +3070,29 @@
       "direccion": "URIBURU PTE. JOSE EVARIST 637, Rosario, Santa Fe",
       "descripcion": "El Área de Cultura y Educación del Distrito Sur abre sus puertas a una experiencia de pop art y lenguaje cartoon …",
       "evento_url": "https://www.rosario.gob.ar/inicio/muestra-efervescencia-cromatica.-anomalia-de-un-universo-en-expansion",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-01",
+      "hora": "20:00",
+      "nombre": "ENNIO MORRICONE",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $40.000 y $70.000. ENNIO MORRICONE EN VENTA!! Fechas y horarios Domingo 1 de Noviembre a las 20:00 Hs. Más información COMPRA TU ENTRADA HASTA 6…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/862/ennio-morricone",
+      "precio": null,
+      "origen": "Teatro Broadway",
+      "precio_etiqueta": "$40.000 – $70.000"
+    },
+    {
+      "fecha": "2026-11-02",
+      "hora": "08:00",
+      "nombre": "Bienestar y actividad física en San Martín A",
+      "lugar": "Centro de Salud \"Vecinal San Martín A\"",
+      "direccion": "PIEDRAS 1469, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-san-martin",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -2775,6 +3241,17 @@
     },
     {
       "fecha": "2026-11-04",
+      "hora": "18:00",
+      "nombre": "Presentación del libro “Los desheredados»",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "Presidente Roca 731, Rosario, Santa Fe",
+      "descripcion": "Presentación del libro “Los desheredados» Por Biblioteca Argentina \"Dr. Juan Álvarez\" / 18 septiembre, 2026 El miércoles 4 de noviembre a las…",
+      "evento_url": "https://biblioargentina.gob.ar/web/presentacion-del-libro-los-desheredados/",
+      "precio": 0,
+      "origen": "Biblioteca Argentina Dr. Juan Álvarez"
+    },
+    {
+      "fecha": "2026-11-04",
       "hora": "19:00",
       "nombre": "Talleres anuales de Tango Danza",
       "lugar": "Centro Cultural  La Casa del Tango",
@@ -2860,6 +3337,17 @@
       "evento_url": "https://ccpe.org.ar/web/actividades/festival-celta-rosario/",
       "precio": null,
       "origen": "Centro Cultural Parque de España"
+    },
+    {
+      "fecha": "2026-11-05",
+      "hora": "21:00",
+      "nombre": "CHA CHA CHA 3.0 – Innovando para atrás",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "descripcion": "Cha Cha Cha nunca fue solamente un programa de televisión. Fue una manera de mirar el mundo, de entrar en la estupidez,…",
+      "evento_url": "https://teatroastengo.ar/events/chachacha-30-teatro-astengo/",
+      "precio": null,
+      "origen": "Teatro Astengo"
     },
     {
       "fecha": "2026-11-06",
@@ -2952,6 +3440,18 @@
     {
       "fecha": "2026-11-06",
       "hora": "21:00",
+      "nombre": "AXEL TOUR 2026",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $60.000 y $90.000. AXEL TOUR 2026 EN VENTA!! Fechas y horarios Viernes 6 de Noviembre a las 21:00 Hs. Más información COMPRA TU ENTRADA HASTA…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/807/axel-tour-2026",
+      "precio": null,
+      "origen": "Teatro Broadway",
+      "precio_etiqueta": "$60.000 – $90.000"
+    },
+    {
+      "fecha": "2026-11-06",
+      "hora": "21:00",
       "nombre": "Julieta Laso",
       "lugar": "Plataforma Lavardén",
       "direccion": "Mendoza 1085, Rosario, Santa Fe",
@@ -3005,6 +3505,28 @@
       "origen": "Municipalidad de Rosario"
     },
     {
+      "fecha": "2026-11-07",
+      "hora": "20:00",
+      "nombre": "CONNIE BALLARINI",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "descripcion": "Connie Ballarini no es solo comediante. Es actriz, youtuber, instagramer, tiktoker, hija de Lili, Tinderwoman, Culo de queso y una creadora de…",
+      "evento_url": "https://teatroastengo.ar/events/connie-ballarini-2-638/",
+      "precio": null,
+      "origen": "Teatro Astengo"
+    },
+    {
+      "fecha": "2026-11-07",
+      "hora": "21:00",
+      "nombre": "CARMEN, OSVALDO Y TODA LA FAMILIA",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "CARMEN, OSVALDO Y TODA LA FAMILIA EN VENTA!! Fechas y horarios Sábado 7 de Noviembre a las 21:00 Hs. Más información COMPRA…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/828/carmen-osvaldo-y-toda-la-familia",
+      "precio": 35000.0,
+      "origen": "Teatro Broadway"
+    },
+    {
       "fecha": "2026-11-08",
       "hora": "10:00",
       "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
@@ -3051,6 +3573,17 @@
     {
       "fecha": "2026-11-08",
       "hora": "19:00",
+      "nombre": "CONNIE BALLARINI",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario, Rosario, Santa Fe",
+      "descripcion": "Connie Ballarini no es solo comediante. Es actriz, youtuber, instagramer, tiktoker, hija de Lili, Tinderwoman, Culo de queso y una creadora de…",
+      "evento_url": "https://teatroastengo.ar/events/connie-ballarini-2-638-394/",
+      "precio": null,
+      "origen": "Teatro Astengo"
+    },
+    {
+      "fecha": "2026-11-08",
+      "hora": "19:00",
       "nombre": "Familia, sustantivo femenino",
       "lugar": "Teatro Municipal La Comedia",
       "direccion": "Mitre 958, Rosario, Santa Fe",
@@ -3058,6 +3591,29 @@
       "evento_url": "https://teatrolacomedia.gob.ar/espectaculo/familia-sustantivo-femenino/",
       "precio": null,
       "origen": "Teatro Municipal La Comedia"
+    },
+    {
+      "fecha": "2026-11-08",
+      "hora": "20:00",
+      "nombre": "LAS MUJERES DE LORCA",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $35.000 y $50.000. LAS MUJERES DE LORCA EN VENTA!! Fechas y horarios Domingo 8 de Noviembre a las 20:00 Hs. Más información COMPRA TU ENTRADA…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/870/las-mujeres-de-lorca",
+      "precio": null,
+      "origen": "Teatro Broadway",
+      "precio_etiqueta": "$35.000 – $50.000"
+    },
+    {
+      "fecha": "2026-11-09",
+      "hora": "08:00",
+      "nombre": "Bienestar y actividad física en San Martín A",
+      "lugar": "Centro de Salud \"Vecinal San Martín A\"",
+      "direccion": "PIEDRAS 1469, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-san-martin",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
     },
     {
       "fecha": "2026-11-09",
@@ -3111,6 +3667,83 @@
       "direccion": "URIBURU PTE. JOSE EVARIST 637, Rosario, Santa Fe",
       "descripcion": "El Área de Cultura y Educación del Distrito Sur abre sus puertas a una experiencia de pop art y lenguaje cartoon …",
       "evento_url": "https://www.rosario.gob.ar/inicio/muestra-efervescencia-cromatica.-anomalia-de-un-universo-en-expansion",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-11",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-11",
+      "hora": "14:00",
+      "nombre": "Entrenamiento y Ensayo para bailarines de tango",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Los miércoles a las 14 h el Centro Cultural La Casa del Tango ofrece un espacio de entrenamiento y ensayo para bailarines…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/entrenamiento-y-ensayo-para-bailarines-de-tango",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-11",
+      "hora": "14:00",
+      "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
+      "lugar": "Museo de la Ciudad Wladimir Mikielievich",
+      "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
+      "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-11",
+      "hora": "16:00",
+      "nombre": "Muestra: Efervescencia cromática. Anomalía de un universo en expansión",
+      "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
+      "direccion": "URIBURU PTE. JOSE EVARIST 637, Rosario, Santa Fe",
+      "descripcion": "El Área de Cultura y Educación del Distrito Sur abre sus puertas a una experiencia de pop art y lenguaje cartoon …",
+      "evento_url": "https://www.rosario.gob.ar/inicio/muestra-efervescencia-cromatica.-anomalia-de-un-universo-en-expansion",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-11",
+      "hora": "16:30",
+      "nombre": "Taller de Técnicas de Danza y Composición Instantánea",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Taller anual dictado por la docente Cecilia Morini . Dos encuentros por mes en los que se trabajan estilos de las danza…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-11",
+      "hora": "18:00",
+      "nombre": "Presentación del libro: «Alma de peón», de Maximiliano Mainero",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "Presidente Roca 731, Rosario, Santa Fe",
+      "descripcion": "Presentación del libro: «Alma de peón», de Maximiliano Mainero Por Biblioteca Argentina \"Dr. Juan Álvarez\" / 19 septiembre, 2026 El miércoles 11…",
+      "evento_url": "https://biblioargentina.gob.ar/web/presentacion-del-libro-alma-de-peon-de-maximiliano-mainero/",
+      "precio": 0,
+      "origen": "Biblioteca Argentina Dr. Juan Álvarez"
+    },
+    {
+      "fecha": "2026-11-11",
+      "hora": "19:00",
+      "nombre": "Talleres anuales de Tango Danza",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Los miércoles por la tarde se dictan las clases de tango danza a cargo del Prof. Guillermo Ruíz. El taller nivel inicial…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     }
