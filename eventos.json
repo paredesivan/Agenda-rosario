@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-12 16:36",
+  "actualizado": "2026-10-12 19:08",
   "estado": "parcial",
   "eventos": [
     {
@@ -43,6 +43,17 @@
     },
     {
       "fecha": "2026-10-12",
+      "hora": "15:00",
+      "nombre": "Muestra de Facultades e Institutos de Diseño: Estudiantes que Diseñan",
+      "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+      "direccion": "PASEO DE LAS ARTES 310, Rosario, Santa Fe",
+      "descripcion": "Estudiantes que Diseñan es un evento que reúne proyectos, procesos y experiencias de distintas instituciones educativas de Rosario para mostrar cómo se…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/muestra-de-facultades-e-institutos-de-diseno-estudiantes-que-disenan",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-12",
       "hora": "16:00",
       "nombre": "Último día para vivir la Escultura de los Deseos de Marta Minujín | Museo Castagnino",
       "lugar": "Museo Municipal de Bellas Artes Juan B. Castagnino",
@@ -68,6 +79,17 @@
       "categorias": [
         "infancias"
       ]
+    },
+    {
+      "fecha": "2026-10-12",
+      "hora": "18:00",
+      "nombre": "Ajedrez: nivel intermedio-avanzados",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "ROCA PTE. JULIO ARGENTINO 731, Rosario, Santa Fe",
+      "descripcion": "En el marco del Programa Municipal de Ajedrez se brinda el taller de Ajedrez: nivel intermedio-avanzados en la Biblioteca Argentina Dr. Juan…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/ajedrez-nivel-intermedio-avanzados",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
     },
     {
       "fecha": "2026-10-12",
@@ -1553,6 +1575,17 @@
     },
     {
       "fecha": "2026-10-19",
+      "hora": "18:00",
+      "nombre": "Ajedrez: nivel intermedio-avanzados",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "ROCA PTE. JULIO ARGENTINO 731, Rosario, Santa Fe",
+      "descripcion": "En el marco del Programa Municipal de Ajedrez se brinda el taller de Ajedrez: nivel intermedio-avanzados en la Biblioteca Argentina Dr. Juan…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/ajedrez-nivel-intermedio-avanzados",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-19",
       "hora": "18:30",
       "nombre": "Mis primeros pasos",
       "lugar": "Centro Cultural  La Casa del Tango",
@@ -2871,6 +2904,17 @@
     },
     {
       "fecha": "2026-10-26",
+      "hora": "18:00",
+      "nombre": "Ajedrez: nivel intermedio-avanzados",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "ROCA PTE. JULIO ARGENTINO 731, Rosario, Santa Fe",
+      "descripcion": "En el marco del Programa Municipal de Ajedrez se brinda el taller de Ajedrez: nivel intermedio-avanzados en la Biblioteca Argentina Dr. Juan…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/ajedrez-nivel-intermedio-avanzados",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-26",
       "hora": "18:30",
       "nombre": "Mis primeros pasos",
       "lugar": "Centro Cultural  La Casa del Tango",
@@ -4046,6 +4090,17 @@
     },
     {
       "fecha": "2026-11-02",
+      "hora": "18:00",
+      "nombre": "Ajedrez: nivel intermedio-avanzados",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "ROCA PTE. JULIO ARGENTINO 731, Rosario, Santa Fe",
+      "descripcion": "En el marco del Programa Municipal de Ajedrez se brinda el taller de Ajedrez: nivel intermedio-avanzados en la Biblioteca Argentina Dr. Juan…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/ajedrez-nivel-intermedio-avanzados",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-02",
       "hora": "18:30",
       "nombre": "Mis primeros pasos",
       "lugar": "Centro Cultural  La Casa del Tango",
@@ -4674,6 +4729,17 @@
       "direccion": "URIBURU PTE. JOSE EVARIST 637, Rosario, Santa Fe",
       "descripcion": "El Área de Cultura y Educación del Distrito Sur abre sus puertas a una experiencia de pop art y lenguaje cartoon …",
       "evento_url": "https://www.rosario.gob.ar/inicio/muestra-efervescencia-cromatica.-anomalia-de-un-universo-en-expansion",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-09",
+      "hora": "18:00",
+      "nombre": "Ajedrez: nivel intermedio-avanzados",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "ROCA PTE. JULIO ARGENTINO 731, Rosario, Santa Fe",
+      "descripcion": "En el marco del Programa Municipal de Ajedrez se brinda el taller de Ajedrez: nivel intermedio-avanzados en la Biblioteca Argentina Dr. Juan…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/ajedrez-nivel-intermedio-avanzados",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
