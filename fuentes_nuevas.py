@@ -62,7 +62,6 @@ NOMBRE = re.compile(
     r"(.{2,80}?)(?:,|\.|;|$)", re.I
 )
 REGISTRO = Path(__file__).with_name("fuentes_revisadas.json")
-RESPALDO = Path(__file__).with_name("eventos_verificados_octubre_2026.json")
 
 
 def clave(e):
@@ -249,9 +248,9 @@ def actualizar_fuentes():
     hoy = ahora.date()
     datos = json.loads(ARCHIVO.read_text(encoding="utf-8"))
     estado = {}
-    # Respaldo de 10 fechas comprobadas, útil si el diario bloquea robots.
-    respaldo = json.loads(RESPALDO.read_text(encoding="utf-8"))
-    nuevos = [e for e in respaldo["eventos"] if e["fecha"] >= hoy.isoformat()]
+    # Los eventos previos permanecen en eventos.json si una fuente no responde.
+    # No se requiere ningún archivo de respaldo mensual.
+    nuevos = []
     nuevos.extend(leer_atir(hoy, estado))
     for fuente, indice, ruta in PRENSA:
         try:
