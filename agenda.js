@@ -1,3 +1,4 @@
+
 let events = [];
 let visibleMonth = new Date(2026, 9, 1);
 let selectedDate = "2026-10-17";
@@ -69,7 +70,7 @@ function addLink(parent, label, url, className = "") {
 }
 
 function etiquetaPrecio(item) {
-    if (item.precio_etiqueta) return item.precio_etiqueta;
+  if (item.precio_etiqueta) return item.precio_etiqueta;
   if (item.precio === 0) return "Gratis";
   if (typeof item.precio === "number" && Number.isFinite(item.precio) && item.precio > 0) {
     return new Intl.NumberFormat("es-AR", {
@@ -82,34 +83,53 @@ function etiquetaPrecio(item) {
 function renderEvent(item) {
   const card = document.createElement("article");
   card.className = "event";
+
   const title = document.createElement("h3");
   title.textContent = item.nombre;
+
   const time = document.createElement("div");
   time.className = "time";
   time.textContent = `${item.hora} · ${etiquetaPrecio(item)}`;
+
   const place = document.createElement("p");
   place.textContent = item.lugar;
+
   const desc = document.createElement("p");
   desc.textContent = item.descripcion;
+
   const actions = document.createElement("div");
   actions.className = "actions";
+
   addLink(actions, "🎟 Página oficial", item.evento_url);
+
+  // Aparece sólo si existe un enlace directo a las entradas.
+  addLink(actions, "🎫 Comprar tickets", item.entradas_url);
+
   const maps = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.direccion)}`;
   addLink(actions, "📍 Mapa", maps, "map");
+
   card.append(time, title, place, desc, actions);
   $("events").append(card);
 }
 
 function render() {
   renderCalendar();
+
   const date = new Date(`${selectedDate}T12:00:00`);
   $("selected").textContent = date.toLocaleDateString("es-AR", {
     weekday: "long", day: "numeric", month: "long"
   });
+
   $("events").replaceChildren();
+
   const list = events.filter(e => e.fecha === selectedDate)
     .sort((a, b) => a.hora.localeCompare(b.hora));
-  if (!list.length) $("events").textContent = "Todavía no hay actividades cargadas para esta fecha.";
+
+  if (!list.length) {
+    $("events").textContent =
+      "Todavía no hay actividades cargadas para esta fecha.";
+  }
+
   list.forEach(renderEvent);
 }
 
@@ -117,11 +137,15 @@ $("prev").onclick = () => {
   visibleMonth.setMonth(visibleMonth.getMonth() - 1);
   render();
 };
+
 $("next").onclick = () => {
   visibleMonth.setMonth(visibleMonth.getMonth() + 1);
   render();
 };
+
 loadEvents().catch(() => {
-  $("events").textContent = "Error cargando eventos. Abrí la página desde un servidor web.";
+  $("events").textContent =
+    "Error cargando eventos. Abrí la página desde un servidor web.";
 });
+
 setInterval(() => loadEvents().catch(console.error), 60 * 60 * 1000);
