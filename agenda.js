@@ -69,6 +69,7 @@ function addLink(parent, label, url, className = "") {
 }
 
 function etiquetaPrecio(item) {
+    if (item.precio_etiqueta) return item.precio_etiqueta;
   if (item.precio === 0) return "Gratis";
   if (typeof item.precio === "number" && Number.isFinite(item.precio) && item.precio > 0) {
     return new Intl.NumberFormat("es-AR", {
