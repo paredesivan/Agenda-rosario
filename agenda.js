@@ -1,5 +1,74 @@
 
 let events = [];
+let activeFilter = "todos";
+const categories = [
+  ["todos", "Todo"], ["teatro", "Teatro"], ["musica", "Música"],
+  ["cine", "Cine"], ["museos", "Museos y muestras"], ["ferias", "Ferias"],
+  ["libros", "Libros y charlas"], ["danza", "Danza"],
+  ["infancias", "Infancias"], ["otros", "Otros"]
+];
+const normalize = value => String(value || "").normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+function eventCategories(item) {
+  const explicit = Array.isArray(item.categorias) ? item.categorias : [item.categoria];
+  const known = explicit.map(normalize).filter(c => categories.some(([id]) => id !== "todos" && id === c));
+  if (known.length) return [...new Set(known)];
+  const content = normalize(`${item.nombre} ${item.descripcion || ""}`);
+  const venue = normalize(`${item.lugar} ${item.origen || ""}`);
+  const result = [];
+  const match = (id, pattern) => { if (pattern.test(content)) result.push(id); };
+  match("musica", /\b(musica|musical|recital|concierto|orquesta|banda|cantante|rock|jazz|opera|filarmonica|reggae|blues|cumbia|rap|folklore|tango|cantautor)\b/);
+  match("teatro", /\b(teatro|teatral|obra|comedia|dramaturgia|stand[ -]?up|monologo)\b/);
+  match("cine", /\b(cine|pelicula|film|documental|proyeccion|cinematografico)\b/);
+  match("museos", /\b(museo|museos|muestra|exposicion|artes visuales|fotografia|escultura)\b/);
+  match("ferias", /\b(feria|ferias|artesanos|artesanal|mercado)\b/);
+  match("libros", /\b(libro|libros|lectura|literatura|literario|poesia|narracion|charla|conferencia)\b/);
+  match("danza", /\b(danza|ballet|baile|milonga)\b/);
+  match("infancias", /\b(infancias|infantil|ninos|ninas|bebes|titeres)\b/);
+  if (/\b(museo|museos|macro|castagnino)\b/.test(venue) && !result.includes("museos")) result.push("museos");
+  if (!result.length && /teatro|astengo|atir|comedia/.test(venue)) result.push("teatro");
+  return result.length ? result : ["otros"];
+}
+
+function todayKey() {
+  const now = new Date();
+  return dateKey(now.getFullYear(), now.getMonth(), now.getDate());
+}
+
+function matchesFilter(item) {
+  return activeFilter === "todos" || eventCategories(item).includes(activeFilter);
+}
+
+function futureEvents() {
+  return events.filter(item => item.fecha >= todayKey());
+}
+
+function renderSummary() {
+  const future = futureEvents();
+  $("total-events").textContent = future.length.toLocaleString("es-AR");
+  const last = future.reduce((value, item) => item.fecha > value ? item.fecha : value, "");
+  $("coverage").textContent = last ? `Hasta el ${new Date(last + "T12:00:00").toLocaleDateString("es-AR", {day:"numeric", month:"long"})}` : "Esperando nuevas actividades";
+  const filters = $("filters");
+  // Mantener los botones preserva el foco del teclado al filtrar.
+  if (!filters.children.length) {
+    for (const [id, label] of categories) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.dataset.filter = id;
+      button.onclick = () => { activeFilter = id; render(); };
+      filters.append(button);
+    }
+  }
+  for (const button of filters.children) {
+    const id = button.dataset.filter;
+    const label = categories.find(([value]) => value === id)[1];
+    const count = id === "todos" ? future.length : future.filter(item => eventCategories(item).includes(id)).length;
+    button.textContent = `${label} · ${count}`;
+    button.setAttribute("aria-pressed", String(activeFilter === id));
+  }
+}
+
 
 const $ = id => document.getElementById(id);
 const pad = n => String(n).padStart(2, "0");
@@ -46,7 +115,7 @@ async function loadEvents() {
   }
 
   const data = await response.json();
-  events = data.eventos;
+  events = Array.isArray(data.eventos) ? data.eventos : [];
 
   $("updated").textContent =
     `Datos revisados: ${data.actualizado || "sin fecha"}`;
@@ -90,7 +159,7 @@ function addDay(grid, key, number) {
 
   button.textContent = number;
 
-  if (events.some(e => e.fecha === key)) {
+  if (events.some(e => e.fecha === key && matchesFilter(e))) {
     button.classList.add("has");
   }
 
@@ -168,7 +237,7 @@ function renderEvent(item) {
   // Página del espectáculo.
   addLink(
     actions,
-    "🎟 Página oficial",
+    "↗ Ver información",
     item.evento_url
   );
 
@@ -191,6 +260,7 @@ function renderEvent(item) {
 }
 
 function render() {
+  renderSummary();
   renderCalendar();
 
   const date = new Date(`${selectedDate}T12:00:00`);
@@ -205,12 +275,14 @@ function render() {
   $("events").replaceChildren();
 
   const list = events
-    .filter(e => e.fecha === selectedDate)
+    .filter(e => e.fecha === selectedDate && matchesFilter(e))
     .sort((a, b) => a.hora.localeCompare(b.hora));
+
+  $("day-count").textContent = `${list.length} ${list.length === 1 ? "actividad" : "actividades"}${activeFilter === "todos" ? "" : " con este filtro"}`;
 
   if (!list.length) {
     $("events").textContent =
-      "Todavía no hay actividades cargadas para esta fecha.";
+      activeFilter === "todos" ? "Todavía no hay actividades cargadas para esta fecha." : "No hay actividades de esta categoría para este día. Probá otra categoría o elegí un día marcado en el calendario.";
   }
 
   list.forEach(renderEvent);
@@ -241,6 +313,13 @@ function cambiarMes(desplazamiento) {
 
   render();
 }
+
+$("today").onclick = () => {
+  const now = new Date();
+  selectedDate = todayKey();
+  visibleMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+  render();
+};
 
 $("prev").onclick = () => cambiarMes(-1);
 $("next").onclick = () => cambiarMes(1);

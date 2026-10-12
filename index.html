@@ -1,1 +1,33 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Agenda Rosario</title><link rel="stylesheet" href="estilos.css"></head><body><header><h1>Rosario ♥</h1><p>Arte · Música · Cine · Teatro · Ferias</p></header><main><section class="calendar"><div class="bar"><button id="prev" aria-label="Mes anterior">‹</button><h2 id="month"></h2><button id="next" aria-label="Mes siguiente">›</button></div><div class="days" id="days"></div></section><h2 id="selected"></h2><p id="updated"></p><section id="events"></section></main><footer>Las actividades pueden cambiar. Consultá siempre el enlace oficial.</footer><script src="agenda.js" defer></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Agenda Rosario</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header><h1>Rosario ♥</h1><p>Tu próxima salida está acá</p></header>
+  <main>
+    <section class="summary" aria-label="Actividades disponibles">
+      <div><strong id="total-events">—</strong><span>eventos cargados desde hoy</span></div>
+      <p id="coverage"></p>
+    </section>
+    <section class="filter-section" aria-label="Filtrar actividades">
+      <h2>¿Qué te gustaría hacer?</h2>
+      <div class="filters" id="filters" role="group" aria-label="Categorías"></div>
+      <p class="hint">Elegí una categoría y un día marcado. Los números cuentan actividades desde hoy.</p>
+    </section>
+    <section class="calendar" aria-label="Calendario de actividades">
+      <div class="bar"><button id="prev" aria-label="Mes anterior">‹</button><h2 id="month"></h2><button id="next" aria-label="Mes siguiente">›</button></div>
+      <div class="calendar-tools"><button id="today" type="button">Ir a hoy</button><span>Los días destacados tienen actividades</span></div>
+      <div class="days" id="days"></div>
+    </section>
+    <div class="day-heading"><h2 id="selected"></h2><p id="day-count" role="status" aria-live="polite"></p></div>
+    <p id="updated"></p>
+    <section id="events" aria-label="Actividades del día"></section>
+  </main>
+  <footer>Las actividades pueden cambiar. Consultá siempre el enlace de la fuente.</footer>
+  <script src="agenda.js" defer></script>
+</body>
+</html>

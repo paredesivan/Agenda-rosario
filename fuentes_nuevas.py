@@ -8,7 +8,7 @@ import json
 import re
 from datetime import date, datetime, timedelta
 from pathlib import Path
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import urljoin, urlsplit, parse_qs
 
 import requests
 from actualizar_eventos import (
@@ -409,6 +409,200 @@ def calendario_rayo(html, fuente, url, direccion, hoy):
                     eventos.append(e)
     return eventos, set()
 
+
+# Directorio oficial: se descubren todas las páginas y fichas, no una lista fija.
+DIRECTORIO_MUSEOS = "https://www.rosario.tur.ar/donde-ir/cultura/museos"
+
+
+def fichas_museos(html, base):
+    fichas = {}
+    for titulo in html.select('h6.titulo'):
+        tarjeta = titulo.find_parent(class_='item')
+        enlace = tarjeta.select_one('a.vermas[href]') if tarjeta else None
+        if enlace:
+            url = urljoin(base, enlace['href'])
+            if mismo_dominio(url, base) and '/cultura/museos/' in urlsplit(url).path:
+                fichas[url] = texto(titulo)
+    return fichas
+
+
+def informacion_museo(html, base):
+    direccion, webs = '', []
+    bloque = html.select_one('.recverde')
+    if bloque:
+        contenido = bloque.get_text('\n', strip=True)
+        direccion_match = re.search(r'Dirección:\s*([^\n]+)', contenido)
+        if direccion_match:
+            direccion = direccion_match[1].strip()
+        for a in bloque.select('a[href]'):
+            # El enlace bajo Web es el sitio de la institución, no redes sociales.
+            url = urljoin(base, a['href'])
+            if urlsplit(url).scheme in ('http', 'https'):
+                webs.append(url.replace('http://', 'https://', 1))
+    return direccion, list(dict.fromkeys(webs))
+
+
+def schema_museo(html, nombre, url, direccion, hoy):
+    """Eventos fechados; los horarios generales del museo no son funciones."""
+    resultado = []
+    for tag in html.select('script[type="application/ld+json"]'):
+        try:
+            fichas = list(eventos_schema(json.loads(tag.get_text())))
+        except (ValueError, TypeError):
+            continue
+        for ficha in fichas:
+            raw = ficha.get('startDate')
+            if not isinstance(raw, str) or 'T' not in raw:
+                continue
+            try:
+                momento = datetime.fromisoformat(raw.replace('Z', '+00:00'))
+                if momento.tzinfo:
+                    momento = momento.astimezone(ZONA)
+            except ValueError:
+                continue
+            if not hoy <= momento.date() <= hoy + timedelta(days=30):
+                continue
+            if any(x in str(ficha.get('eventStatus', '')) for x in ('Cancelled', 'Postponed', 'Rescheduled')):
+                continue
+            titulo = ficha.get('name')
+            if not isinstance(titulo, str) or not titulo.strip():
+                continue
+            loc = ficha.get('location') or {}
+            if isinstance(loc, list):
+                loc = loc[0] if loc else {}
+            if not isinstance(loc, dict):
+                continue
+            lugar = loc.get('name') or nombre
+            if not isinstance(lugar, str):
+                continue
+            # Una portada puede mostrar eventos ajenos: sólo aceptar sede compatible.
+            aliases = ('castagnino', 'macro', 'memoria', 'estevez', 'ciudad', 'deporte', 'marc', 'gallardo', 'democracia', 'barnes', 'parana', 'islas', 'experimental', 'opera', 'banderas', 'bolsa', 'salud', 'capital', 'beatmemo')
+            claves = [normalizar(nombre)] + [n for n in aliases if n in normalizar(nombre)]
+            if loc.get('name') and not any(n in normalizar(lugar) for n in claves):
+                continue
+            domicilio = loc.get('address') or direccion
+            if isinstance(domicilio, dict):
+                if domicilio.get('addressLocality') and 'rosario' not in normalizar(domicilio['addressLocality']):
+                    continue
+                domicilio = domicilio.get('streetAddress') or direccion
+            if not isinstance(domicilio, str) or not domicilio:
+                continue
+            enlace = ficha.get('url')
+            if not isinstance(enlace, str) or not mismo_dominio(enlace, url):
+                enlace = url
+            descripcion = str(ficha.get('description') or '')
+            if re.search(r'funcion suspendida|evento cancelado', normalizar(descripcion)):
+                continue
+            precio_texto = descripcion
+            if ficha.get('isAccessibleForFree') is True:
+                precio_texto += ' Entrada gratuita'
+            evento = actividad_ampliada(momento.date().isoformat(), momento.strftime('%H:%M'),
+                titulo, enlace, nombre, domicilio, precio_texto, lugar)
+            # Un cero genérico en offers no confirma entrada gratuita.
+            evento['categorias'] = ['museos']
+            # Un importe positivo en pesos puede usarse; el cero requiere gratuidad explícita.
+            ofertas = ficha.get('offers') or []
+            if isinstance(ofertas, dict):
+                ofertas = [ofertas]
+            if isinstance(ofertas, list):
+                importes = []
+                for oferta in ofertas:
+                    if not isinstance(oferta, dict) or oferta.get('priceCurrency') != 'ARS':
+                        continue
+                    try:
+                        precio = float(oferta.get('price'))
+                    except (TypeError, ValueError):
+                        continue
+                    if 0 < precio < 50_000_000:
+                        importes.append(precio)
+                if len(set(importes)) == 1:
+                    evento['precio'] = importes[0]
+                    evento.pop('precio_etiqueta', None)
+            resultado.append(evento)
+    return resultado
+
+
+def leer_museos(hoy, estado):
+    fichas, paginas, pendientes = {}, [DIRECTORIO_MUSEOS + '?page=1&lang=es'], set()
+    vistas = set()
+    while paginas and len(vistas) < 20:
+        indice = paginas.pop(0)
+        if indice in vistas:
+            continue
+        vistas.add(indice)
+        try:
+            html = descargar(indice)
+            actuales = fichas_museos(html, indice)
+            if not actuales:
+                raise ValueError('No se encontraron las fichas del directorio')
+            fichas.update(actuales)
+            for a in html.select('a[href*="page="]'):
+                link = urljoin(indice, a['href'])
+                if mismo_dominio(link, DIRECTORIO_MUSEOS) and urlsplit(link).path == urlsplit(DIRECTORIO_MUSEOS).path and link not in vistas:
+                    pagina = parse_qs(urlsplit(link).query).get('page', [''])[0]
+                    if pagina.isdigit():
+                        canonica = DIRECTORIO_MUSEOS + '?page=' + pagina + '&lang=es'
+                        if canonica not in vistas and canonica not in paginas:
+                            paginas.append(canonica)
+        except (requests.RequestException, ValueError, TypeError):
+            pendientes.add(indice)
+    # El museo urbano municipal no aparece en el catálogo de ETUR.
+    fichas['https://www.rosario.gob.ar/inicio/museos-municipales'] = 'Museo Urbano Arte a la Vista'
+    eventos, detalle_revision, cache_webs = [], [], {}
+    def consultar_web(link):
+        if link not in cache_webs:
+            cache_webs[link] = descargar(link)
+        return cache_webs[link]
+    for url, nombre in fichas.items():
+        revision = {'nombre': nombre, 'ficha': url, 'estado': 'revisado', 'actividades': 0}
+        try:
+            html = descargar(url)
+            direccion, webs = informacion_museo(html, url)
+            revision['webs'] = webs
+            nuevos = []
+            for web in webs:
+                try:
+                    portada = consultar_web(web)
+                    nuevos.extend(schema_museo(portada, nombre, web, direccion, hoy))
+                    enlaces = []
+                    for a in portada.select('a[href]'):
+                        link = urljoin(web, a['href']).split('#', 1)[0]
+                        if mismo_dominio(link, web) and link != web and re.search(
+                            r'agenda|actividad|programacion|evento|exposicion|muestra|visita|noticias|setsede',
+                            normalizar(texto(a)) + ' ' + urlsplit(link).path,
+                        ) and link not in enlaces:
+                            enlaces.append(link)
+                    profundas = 0
+                    for link in enlaces[:6]:
+                        try:
+                            pagina = consultar_web(link)
+                            nuevos.extend(schema_museo(pagina, nombre, link, direccion, hoy))
+                            # También seguir fichas enlazadas desde la sección Agenda.
+                            fichas_eventos = []
+                            for a in pagina.select('h2 a[href], h3 a[href]'):
+                                detalle = urljoin(link, a['href'])
+                                if mismo_dominio(detalle, web) and detalle not in enlaces and detalle not in fichas_eventos:
+                                    fichas_eventos.append(detalle)
+                            for detalle in fichas_eventos[:max(0, 4 - profundas)]:
+                                profundas += 1
+                                nuevos.extend(schema_museo(consultar_web(detalle), nombre, detalle, direccion, hoy))
+                        except (requests.RequestException, ValueError, TypeError):
+                            revision['estado'] = 'revisión parcial'
+                except (requests.RequestException, ValueError, TypeError):
+                    revision['estado'] = 'web pendiente de consulta'
+            propios = {clave(e): e for e in nuevos}
+            eventos.extend(propios.values())
+            revision['actividades'] = len(propios)
+            if not propios and revision['estado'] == 'revisado':
+                revision['estado'] = 'sin eventos fechados interpretables; también consultar la agenda municipal'
+        except (requests.RequestException, ValueError, TypeError):
+            revision['estado'] = 'ficha pendiente de consulta'
+        detalle_revision.append(revision)
+        estado[nombre] = f"{revision['estado']}: {revision['actividades']} actividades"
+    estado['Directorio de museos'] = f'{len(fichas)} espacios descubiertos; {len(pendientes)} páginas pendientes'
+    return eventos, detalle_revision
+
+
 def actualizar_fuentes():
     ahora = datetime.now(ZONA)
     hoy = ahora.date()
@@ -418,6 +612,8 @@ def actualizar_fuentes():
     # No se requiere ningún archivo de respaldo mensual.
     nuevos = []
     nuevos.extend(leer_atir(hoy, estado))
+    actividades_museos, revision_museos = leer_museos(hoy, estado)
+    nuevos.extend(actividades_museos)
     for fuente, url, direccion, parser in (
         ("La Orilla Infinita", "https://laorillainfinita.com.ar/", "Colón 2148", calendario_orilla),
         ("Teatro del Rayo", "https://elrayomisterioso.org.ar/index.php/es/component/sppagebuilder/?view=page&id=219", "Salta 2991", calendario_rayo),
@@ -458,7 +654,7 @@ def actualizar_fuentes():
         if not evento.get("evento_url"):
             evento["fuente_pendiente"] = True
     datos["eventos"] = sorted(sin_repetidos(vistos.values()), key=lambda e: (e["fecha"], e["hora"], e["nombre"]))
-    if any("no accesible" in status or re.search(r"[1-9]\d* (?:errores|pendientes|fichas pendientes)", status) for status in estado.values()):
+    if any("pendiente de consulta" in status or "revisión parcial" in status or "no accesible" in status or re.search(r"[1-9]\d* (?:errores|pendientes|fichas pendientes)", status) for status in estado.values()):
         datos["estado"] = "parcial"
     temporal = ARCHIVO.with_suffix(".json.tmp")
     temporal.write_text(json.dumps(datos, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -467,6 +663,7 @@ def actualizar_fuentes():
         "fecha_revision": ahora.strftime("%Y-%m-%d %H:%M"),
         "salas_independientes": len(SALAS), "medios": len(PRENSA),
         "funciones_agregadas": agregados, "fuentes": estado,
+        "museos": revision_museos,
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Fuentes complementarias: {len(estado)} revisadas, {agregados} funciones agregadas")
     for fuente, resultado in estado.items():
