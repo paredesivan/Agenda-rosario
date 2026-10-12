@@ -26,7 +26,8 @@ concurrency:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # La ejecución completa puede incluir más de 13 fuentes y fichas individuales.
+    timeout-minutes: 55
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v6
@@ -43,11 +44,17 @@ jobs:
         if: hashFiles('tests/**/*.py') != ''
         run: python -m unittest discover -s tests -v
 
-      - name: Actualizar eventos y fuentes complementarias
-        run: |
-          python actualizar_eventos.py
-          python fuentes_nuevas.py
-          python precios_ticketek.py
+      - name: Actualizar agenda municipal y salas principales
+        timeout-minutes: 15
+        run: python actualizar_eventos.py
+
+      - name: Revisar fuentes complementarias, salas y museos
+        timeout-minutes: 25
+        run: python fuentes_nuevas.py
+
+      - name: Revisar precios de Ticketek
+        timeout-minutes: 5
+        run: python precios_ticketek.py
 
       - name: Guardar cambios
         run: |
