@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - actualizar_eventos.py
+      - fuentes_nuevas.py
+      - precios_ticketek.py
       - requirements.txt
       - tests/**
       - .github/workflows/actualizar.yml
@@ -41,14 +43,17 @@ jobs:
         if: hashFiles('tests/**/*.py') != ''
         run: python -m unittest discover -s tests -v
 
-      - name: Actualizar eventos
-        run: python actualizar_eventos.py
+      - name: Actualizar eventos y fuentes complementarias
+        run: |
+          python actualizar_eventos.py
+          python fuentes_nuevas.py
+          python precios_ticketek.py
 
       - name: Guardar cambios
         run: |
           git config user.name "agenda-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add eventos.json
+          git add eventos.json fuentes_revisadas.json
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar agenda"
             git push origin HEAD:main
