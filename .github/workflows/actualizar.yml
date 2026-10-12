@@ -1,3 +1,4 @@
+
 name: Actualizar agenda
 
 on:
@@ -24,13 +25,17 @@ jobs:
       - name: Instalar dependencias
         run: pip install requests beautifulsoup4
 
-      - name: Actualizar eventos
-        run: python actualizar_eventos.py
+      - name: Actualizar agenda y fuentes complementarias
+        run: |
+          python actualizar_eventos.py
+          python fuentes_nuevas.py
+          python precios_ticketek.py
 
       - name: Guardar cambios
         run: |
           git config user.name "agenda-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add eventos.json
-          git diff --cached --quiet || git commit -m "Actualizar agenda"
+          git add eventos.json fuentes_revisadas.json
+          git diff --cached --quiet || git commit -m "Actualizar agenda y fuentes culturales"
           git push
+          
