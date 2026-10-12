@@ -74,10 +74,15 @@ def desde_ticketek(sopa):
 
 
 def fetch(session, url):
+    if not any(dominio(url, host) for host in ("ticketek.com.ar", "teatroastengo.ar")):
+        raise ValueError("Dominio no autorizado")
     respuesta = session.get(url, timeout=(8, 15), headers=HEADERS, allow_redirects=True)
     respuesta.raise_for_status()
     # No aceptar una redirección a otro evento o dominio.
-    if (not dominio(respuesta.url, "ticketek.com.ar") or
+    host = "ticketek.com.ar" if dominio(url, "ticketek.com.ar") else "teatroastengo.ar"
+    if not dominio(url, host):
+        raise ValueError("Dominio no autorizado")
+    if (not dominio(respuesta.url, host) or
             urlsplit(respuesta.url).path.rstrip("/") != urlsplit(url).path.rstrip("/")):
         raise ValueError("El destino de Ticketek cambió; evitar precios cruzados")
     return BeautifulSoup(respuesta.text, "html.parser")
@@ -105,11 +110,13 @@ def integrar(eventos, fetcher=fetch, pausar=time.sleep):
                     fichas[url] = enlace_ticketek(detalle, url)
                 except (requests.RequestException, ValueError):
                     fichas[url] = None
+                    est["errores"] += 1
             compra = fichas[url]
             if not compra:
                 continue
             est["enlaces"] += 1
             evento["entradas_url"] = compra
+            evento["entrada_paga"] = True
             # Evita mantener o asignar precio de otra plataforma o fecha.
             evento["precio"] = None
             evento["precio_etiqueta"] = "Precio a confirmar"
@@ -160,3 +167,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

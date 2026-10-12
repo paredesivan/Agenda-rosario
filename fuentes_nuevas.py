@@ -13,7 +13,8 @@ from urllib.parse import urljoin, urlsplit
 import requests
 from actualizar_eventos import (
     ARCHIVO, ZONA, descargar, normalizar, texto, resumen,
-    eventos_schema, calendario_mec,
+    eventos_schema, calendario_mec, hora_visible, fechas_publicadas,
+    actividad_ampliada, evento_extra, DIAS, MESES as MESES_LISTA, sin_repetidos,
 )
 
 SALAS = (
@@ -37,11 +38,6 @@ PRENSA = (
     ("El Ciudadano", "https://elciudadanoweb.com/seccion/espectaculos/", "/"),
 )
 CARTELERA = ("Rosario en Cartel", "https://rosarioencartel.com.ar/")
-ARTICULO_COMPROBADO = (
-    "https://www.rosario3.com/ocio/funciones-de-las-obras-el-viaje-del-tambor-"
-    "para-anormales-hervidero-caballito-de-batalla-ito-teatro-para-bebes-"
-    "y-quemarlo-todo-20261002-0028.html"
-)
 INTERES = re.compile(
     r"teatro|obra|recital|festival|funci[oó]n|concierto|agenda|"
     r"espect[aá]culo|orquesta|feria|muestra|cultural|danza|cartelera|show|en rosario", re.I
@@ -188,6 +184,49 @@ def recurrencias_rosario3(html, url, hoy):
     return encontrados
 
 
+
+def funciones_prensa(html, fuente, url, hoy):
+    """Fecha y hora de la función en un mismo párrafo; año de nota reciente."""
+    meta = html.select_one('meta[property="article:published_time"]')
+    if not meta or not meta.get("content"):
+        return []
+    try:
+        publicado = datetime.fromisoformat(meta["content"].replace("Z", "+00:00")).date()
+    except ValueError:
+        return []
+    if not 0 <= (hoy - publicado).days <= 45:
+        return []
+    sedes = [(n, d) for n, _, d in SALAS] + [
+        ("Centro Cultural Parque de España", "Sarmiento y el río"),
+        ("Teatro Astengo", "Mitre 754"),
+        ("Teatro Broadway", "San Lorenzo 1223"),
+        ("Metropolitano", "Junín 501"),
+        ("Plataforma Lavardén", "Sarmiento y Mendoza"),
+        ("Teatro Municipal La Comedia", "Mitre 958"),
+    ]
+    eventos = []
+    cuerpo = html.select_one('.entry-content, .article-body, article, main') or html
+    for p in cuerpo.select('p'):
+        original = texto(p)
+        limpio = normalizar(original)
+        lugares = [(n, d) for n, d in sedes if normalizar(n) in limpio]
+        if len(lugares) != 1 or re.search(r'cancelad|suspendid|reprogramad', limpio):
+            continue
+        titulo = re.search(r'^(.{2,100}?)\s+se presentar[aá]\b', original, re.I)
+        if not titulo:
+            titulo = re.search(r'[“«]([^”»]{2,100})[”»]', original)
+        if not titulo:
+            continue
+        horario_explicito = re.sub(r'(a las?\s+\d{1,2}[.:]\d{2})(?!\d)(?!\s*(?:hs?|horas)\b)', r'\1 hs', original, flags=re.I)
+        fechas = fechas_publicadas(horario_explicito.replace(',', ''), hoy, True)
+        for fecha, hora in fechas:
+            if date.fromisoformat(fecha).year not in (publicado.year, publicado.year + (publicado.month == 12)):
+                continue
+            nombre, direccion = lugares[0]
+            eventos.append(actividad_ampliada(fecha, hora, titulo[1].strip(), url,
+                fuente, direccion, original, nombre))
+    return eventos
+
 def leer_prensa(fuente, indice, ruta, hoy):
     portada = descargar(indice)
     enlaces = []
@@ -196,18 +235,23 @@ def leer_prensa(fuente, indice, ruta, hoy):
         link = urljoin(indice, a["href"]).split("#", 1)[0]
         if not mismo_dominio(link, indice) or ruta not in urlsplit(link).path:
             continue
-        if not INTERES.search(titular) or "/seccion/" in link or "/tag/" in link:
+        if not INTERES.search(titular) or "/seccion/" in link or "/secciones/" in link or "/tag/" in link:
             continue
         if link not in enlaces:
             enlaces.append(link)
-    # Esta nota contiene cuatro series de funciones futuras verificables.
-    if fuente == "Rosario3" and ARTICULO_COMPROBADO not in enlaces:
-        enlaces.insert(0, ARTICULO_COMPROBADO)
+    # Revisitar notas que todavía sostienen funciones futuras; sin URL fija.
+    if ARCHIVO.exists():
+        anteriores = json.loads(ARCHIVO.read_text(encoding="utf-8")).get("eventos", [])
+        for evento in anteriores:
+            link = evento.get("evento_url", "")
+            if evento.get("origen") == fuente and evento.get("fecha", "") >= hoy.isoformat() and mismo_dominio(link, indice) and link not in enlaces:
+                enlaces.insert(0, link)
     eventos, consultadas, fallidas = [], 0, 0
     for link in enlaces[:14]:
         try:
             articulo = descargar(link)
             eventos.extend(schema_local(articulo, fuente, link, hoy))
+            eventos.extend(funciones_prensa(articulo, fuente, link, hoy))
             if fuente == "Rosario3":
                 eventos.extend(recurrencias_rosario3(articulo, link, hoy))
             consultadas += 1
@@ -232,16 +276,138 @@ def leer_atir(hoy, estado):
                 # Algunas páginas individuales muestran la cartelera de otras salas.
                 # El calendario existente extrae el lugar real de cada ficha.
                 eventos, fallidos = calendario_mec(html, "ATIR", url, domicilio, hoy)
+                eventos = [e for e in eventos if nombre_sala(e["lugar"]) == nombre_sala(nombre)]
                 nuevos.extend(eventos)
-                estado[nombre] = f"revisada: {len(eventos)} funciones, {len(fallidos)} errores"
+                estado[nombre] = f"revisada: {len(eventos)} funciones propias, {len(fallidos)} errores"
             elif "no events" in normalizar(texto(html)) or html.select(".mec-calendar"):
-                estado[nombre] = "revisada: sin funciones estructuradas"
+                estado[nombre] = "revisada: sin funciones propias estructuradas"
             else:
                 estado[nombre] = "revisada: sin cartelera interpretable"
         except (requests.RequestException, ValueError, TypeError) as error:
             estado[nombre] = f"no accesible: {type(error).__name__}"
     return nuevos
 
+
+
+def calendario_encartel(html, fuente, url, direccion, hoy):
+    tarjetas = [a for a in html.select("a[href]") if
+                a.select_one("h3.title") or a.parent.get("class") == ["position_info"]]
+    if not tarjetas:
+        raise ValueError("Cambió el formato de Rosario en Cartel")
+    eventos, fallidos, vistos = [], set(), set()
+    for a in tarjetas:
+        enlace = urljoin(url, a["href"])
+        if enlace in vistos or urlsplit(enlace).hostname != urlsplit(url).hostname:
+            continue
+        vistos.add(enlace)
+        try:
+            detalle = descargar(enlace)
+            titulo = texto(detalle.select_one(".title-category-form h2"))
+            fecha = texto(detalle.select_one(".fecha-col .result-form"))
+            hora = hora_visible(texto(detalle.select_one(".horario-col .result-form")))
+            lugar = texto(detalle.select_one(".cinema-name"))
+            domicilio = texto(detalle.select_one(".cine-list .cinema-dir")) or lugar
+            if not titulo or not fecha or not hora or not lugar:
+                continue
+            # La Comedia se toma de su fuente oficial, que informa suspensiones.
+            if "comedia" in normalizar(lugar):
+                continue
+            fechas = fechas_publicadas(fecha + " " + hora + " hs", hoy)
+            descripcion = texto(detalle.select_one(".text-description-other p"))
+            precios = texto(detalle.select_one(".cine-list"))
+            for dia, horario in fechas:
+                e = actividad_ampliada(dia, horario, titulo, enlace, fuente, domicilio,
+                      precios, lugar, desde="desde" in normalizar(precios))
+                e["descripcion"] = resumen(descripcion)
+                eventos.append(e)
+        except (requests.RequestException, ValueError):
+            fallidos.add(enlace)
+    return eventos, fallidos
+
+def nombre_sala(valor):
+    valor = normalizar(valor)
+    return re.sub(r"^(?:teatro|sala|espacio)\s+", "", valor).strip()
+
+def calendario_orilla(html, fuente, url, direccion, hoy):
+    enlaces = {urljoin(url, a["href"]).lower().rstrip("/") + "/"
+               for a in html.select("a[href*='/productos/']")
+               if len(urlsplit(urljoin(url, a["href"])).path.strip("/").split("/")) == 2}
+    if not enlaces:
+        raise ValueError("No se encontraron entradas de la sala")
+    eventos, fallidos = [], set()
+    for enlace in sorted(enlaces):
+        if urlsplit(enlace).hostname != urlsplit(url).hostname:
+            continue
+        try:
+            detalle = descargar(enlace)
+            nodo = detalle.select_one("[data-variants]")
+            if not nodo:
+                continue
+            variantes = json.loads(nodo["data-variants"])
+            titulo = texto(detalle.select_one("h1"))
+            vistos = set()
+            for v in variantes:
+                if not v.get("available") or v.get("stock") == 0:
+                    continue
+                if "general" not in normalizar(v.get("option1") or ""):
+                    continue
+                opcion = v.get("option0") or ""
+                m = re.search(r"(\d{1,2})/(\d{1,2})(?:/(20\d{2}))?\s*[-–]\s*(\d{1,2}:\d{2})", opcion)
+                if not m:
+                    continue
+                anio = int(m[3]) if m[3] else hoy.year + (hoy.month == 12 and int(m[2]) == 1)
+                dia = date(anio, int(m[2]), int(m[1]))
+                hora = hora_visible(m[4])
+                if not hora or not hoy <= dia <= hoy + timedelta(days=30):
+                    continue
+                clave_funcion = (dia.isoformat(), hora)
+                if clave_funcion in vistos:
+                    continue
+                vistos.add(clave_funcion)
+                precio = v.get("price_number")
+                if not isinstance(precio, (int, float)) or precio <= 0:
+                    continue
+                e = evento_extra(dia.isoformat(), hora, titulo, enlace, fuente, direccion,
+                                 "Entrada general. Consultá descuentos y disponibilidad en la tienda oficial.", precio, "")
+                e["precio_etiqueta"] = f"General ${precio:,.0f}".replace(",", ".")
+                eventos.append(e)
+        except (requests.RequestException, ValueError):
+            fallidos.add(enlace)
+    return eventos, fallidos
+
+def calendario_rayo(html, fuente, url, direccion, hoy):
+    eventos = []
+    tabs = html.select(".sppb-nav-tabs a[href]")
+    if not tabs:
+        raise ValueError("Cambió la programación del Rayo")
+    for tab in tabs:
+        mes_texto = normalizar(texto(tab))
+        if mes_texto not in MESES_LISTA:
+            continue
+        mes = MESES_LISTA.index(mes_texto) + 1
+        anio = hoy.year + (hoy.month == 12 and mes == 1)
+        panel = html.select_one(tab["href"])
+        if not panel:
+            continue
+        for h in panel.select("h3.sppb-addon-title"):
+            spans = h.select("span")
+            if len(spans) != 2:
+                continue
+            regla, titulo = normalizar(texto(spans[0])), texto(spans[1])
+            m = re.fullmatch(r"(lunes|martes|miercoles|jueves|viernes|sabados|domingos) de " + mes_texto + r"\s*[-–]\s*(\d{1,2})(?::(\d{2}))?\s*hs?\.?", regla)
+            if not m:
+                continue
+            dia_semana = DIAS.index(m[1].rstrip("s") if m[1] in ("sabados", "domingos") else m[1])
+            hora = hora_visible(f"{m[2]}:{m[3] or '00'}")
+            if not hora:
+                continue
+            for i in range(31):
+                dia = hoy + timedelta(days=i)
+                if dia.year == anio and dia.month == mes and dia.weekday() == dia_semana:
+                    e = evento_extra(dia.isoformat(), hora, titulo, url, fuente, direccion,
+                            "Entradas y reservas por el enlace oficial. Consultá el valor vigente.", None, "")
+                    eventos.append(e)
+    return eventos, set()
 
 def actualizar_fuentes():
     ahora = datetime.now(ZONA)
@@ -252,6 +418,16 @@ def actualizar_fuentes():
     # No se requiere ningún archivo de respaldo mensual.
     nuevos = []
     nuevos.extend(leer_atir(hoy, estado))
+    for fuente, url, direccion, parser in (
+        ("La Orilla Infinita", "https://laorillainfinita.com.ar/", "Colón 2148", calendario_orilla),
+        ("Teatro del Rayo", "https://elrayomisterioso.org.ar/index.php/es/component/sppagebuilder/?view=page&id=219", "Salta 2991", calendario_rayo),
+    ):
+        try:
+            funciones, fallos = parser(descargar(url), fuente, url, direccion, hoy)
+            nuevos.extend(funciones)
+            estado[fuente] = f"revisada: {len(funciones)} funciones; {len(fallos)} pendientes"
+        except (requests.RequestException, ValueError, TypeError) as error:
+            estado[fuente] = f"no accesible: {type(error).__name__}"
     for fuente, indice, ruta in PRENSA:
         try:
             encontrados, leidas, fallidas = leer_prensa(fuente, indice, ruta, hoy)
@@ -261,9 +437,10 @@ def actualizar_fuentes():
             estado[fuente] = f"no accesible: {type(error).__name__}"
     nombre, url = CARTELERA
     try:
-        nuevos_cartel = schema_local(descargar(url), nombre, url, hoy)
+        url = "https://www.rosarioencartel.com.ar/"
+        nuevos_cartel, fallos = calendario_encartel(descargar(url), nombre, url, "", hoy)
         nuevos.extend(nuevos_cartel)
-        estado[nombre] = f"revisada: {len(nuevos_cartel)} funciones estructuradas"
+        estado[nombre] = f"revisada: {len(nuevos_cartel)} funciones verificadas; {len(fallos)} fichas pendientes"
     except (requests.RequestException, ValueError, TypeError) as error:
         estado[nombre] = f"no accesible: {type(error).__name__}"
     vistos = {clave(e): e for e in datos.get("eventos", []) if e["fecha"] >= hoy.isoformat()}
@@ -273,8 +450,15 @@ def actualizar_fuentes():
         if key not in vistos:
             vistos[key] = e
             agregados += 1
-    datos["eventos"] = sorted(vistos.values(), key=lambda e: (e["fecha"], e["hora"], e["nombre"]))
-    if any("no accesible" in status for status in estado.values()):
+    for evento in vistos.values():
+        if evento.get("origen") == "Teatro Astengo" and not re.search(r"\d", evento.get("direccion", "")):
+            evento["direccion"] = "Mitre 754, Rosario, Santa Fe"
+        if not evento.get("origen"):
+            evento["origen"] = "Manual"
+        if not evento.get("evento_url"):
+            evento["fuente_pendiente"] = True
+    datos["eventos"] = sorted(sin_repetidos(vistos.values()), key=lambda e: (e["fecha"], e["hora"], e["nombre"]))
+    if any("no accesible" in status or re.search(r"[1-9]\d* (?:errores|pendientes|fichas pendientes)", status) for status in estado.values()):
         datos["estado"] = "parcial"
     temporal = ARCHIVO.with_suffix(".json.tmp")
     temporal.write_text(json.dumps(datos, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -291,3 +475,4 @@ def actualizar_fuentes():
 
 if __name__ == "__main__":
     actualizar_fuentes()
+

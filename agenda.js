@@ -18,6 +18,24 @@ let selectedDate = dateKey(
   hoy.getDate()
 );
 
+function actualizarDia() {
+  const ahora = new Date();
+  const nueva = dateKey(ahora.getFullYear(), ahora.getMonth(), ahora.getDate());
+  const anterior = dateKey(hoy.getFullYear(), hoy.getMonth(), hoy.getDate());
+  if (nueva !== anterior) {
+    if (selectedDate === anterior) {
+      selectedDate = nueva;
+      visibleMonth = new Date(ahora.getFullYear(), ahora.getMonth(), 1);
+    }
+    hoy.setTime(ahora.getTime());
+    render();
+  }
+}
+setInterval(actualizarDia, 60 * 1000);
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) actualizarDia();
+});
+
 async function loadEvents() {
   const response = await fetch(`eventos.json?t=${Date.now()}`, {
     cache: "no-store"
@@ -123,7 +141,7 @@ function etiquetaPrecio(item) {
     }).format(item.precio);
   }
 
-  return "Pago";
+  return item.entrada_paga === true || item.entradas_url ? "Pago" : "Precio a confirmar";
 }
 
 function renderEvent(item) {
@@ -237,3 +255,4 @@ loadEvents().catch(() => {
 setInterval(() => {
   loadEvents().catch(console.error);
 }, 60 * 60 * 1000);
+

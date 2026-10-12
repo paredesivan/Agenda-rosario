@@ -1,26 +1,34 @@
 # Agenda Rosario
 
-Web estática sin frameworks. Código separado y funciones cortas.
+Agenda publicada en https://paredesivan.github.io/Agenda-rosario/.
 
-## Publicar
+## Actualización automática
 
-1. Creá un repositorio público llamado `agenda-rosario` en GitHub.
-2. Subí **el contenido** de esta carpeta a la raíz del repositorio.
-3. En **Settings → Pages → Build and deployment**, elegí **Deploy from a branch**, `main`, `/ (root)`.
-4. La web quedará en `https://paredesivan.github.io/agenda-rosario/` si tu usuario es `Paredesivan`.
+GitHub Actions ejecuta cada hora, al minuto 17, los recolectores
+`actualizar_eventos.py`, `fuentes_nuevas.py` y `precios_ticketek.py`.
+Actualiza `eventos.json` en la raíz y registra las consultas complementarias
+en `fuentes_revisadas.json`. Para ejecutar manualmente: Actions → Actualizar
+agenda → Run workflow → main. Una nueva ejecución usa el código actual.
 
-## Agregar un evento
+Las fuentes buscan funciones para los próximos 30 días. Las consultas fallidas
+conservan registros futuros anteriores. Un 403/429 no se sortea; se registra.
+Las fechas de publicación de noticias nunca se usan como fechas de funciones.
 
-Abrí `data/eventos.json` y agregá un objeto dentro de `eventos` siguiendo el ejemplo.
-`evento_url` debe ser el enlace HTTPS **directo a la ficha oficial**; si no lo tenés, dejalo vacío. Nunca uses búsquedas de Google como sustituto.
-`direccion` se usa para abrir Google Maps.
+## Precios y enlaces
 
-## Actualizaciones
+`precio: 0` significa gratuito confirmado. Un número positivo representa el
+importe publicado. `precio_etiqueta` permite indicar “Desde”, rangos o
+“Precio a confirmar”. `entrada_paga: true` indica acceso pago conocido aunque
+no haya importe. `entradas_url` enlaza a compra; `evento_url` a la fuente.
+Los importes Ticketek se leen sólo del espectáculo exacto enlazado por Astengo.
 
-La página vuelve a consultar `data/eventos.json` cada hora mientras esté abierta.
-GitHub Actions ejecuta **una validación horaria**, no una búsqueda automática de eventos.
-Para descubrir y publicar eventos sin intervención hace falta conectar fuentes oficiales, extraer fechas/precios y verificar enlaces. Se dejó deliberadamente sin publicar información no verificada.
+## Eventos manuales
 
-## Probar en tu PC
+Los objetos manuales deben incluir fecha, hora, nombre, lugar, dirección y
+`origen: "Manual"`. Agregá `evento_url` sólo si tenés una fuente verificable.
+Los datos incompletos requieren revisión: no se inventa un enlace.
 
-Desde la carpeta del proyecto ejecutá `python -m http.server 8000` y abrí `http://localhost:8000`.
+## Prueba local
+
+Instalá `requests` y `beautifulsoup4`; ejecutá `python -m http.server 8000`
+y abrí http://localhost:8000.
