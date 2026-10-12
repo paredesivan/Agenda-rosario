@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-12 04:30",
+  "actualizado": "2026-10-12 05:35",
   "estado": "parcial",
   "eventos": [
     {
@@ -37,6 +37,23 @@
     },
     {
       "fecha": "2026-10-12",
+      "hora": "15:00",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
+      ]
+    },
+    {
+      "fecha": "2026-10-12",
       "hora": "16:00",
       "nombre": "Último día para vivir la Escultura de los Deseos de Marta Minujín | Museo Castagnino",
       "lugar": "Museo Municipal de Bellas Artes Juan B. Castagnino",
@@ -45,6 +62,23 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/ultimo-dia-para-vivir-la-escultura-de-los-deseos-de-marta-minujin-museo-castagnino",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-12",
+      "hora": "17:30",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
+      ]
     },
     {
       "fecha": "2026-10-12",
@@ -67,6 +101,23 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/xabi-blo-geral-los-seres-en-el-galpon-11",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-12",
+      "hora": "20:00",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
+      ]
     },
     {
       "fecha": "2026-10-13",
@@ -291,6 +342,20 @@
     },
     {
       "fecha": "2026-10-15",
+      "hora": "12:00",
+      "nombre": "Clase abierta. Canto, ensamble y grabación",
+      "lugar": "ECU Espacio Cultural Universitario",
+      "direccion": "San Martín 750, Rosario, Santa Fe",
+      "descripcion": "El jueves 15 de octubre a las 12 hs. se presentarán los estudiantes de la cátedra de Práctica de Conjunto y Canto…",
+      "evento_url": "https://unr.edu.ar/agenda/clase-abierta-canto-ensamble-y-grabacion/",
+      "precio": 0,
+      "origen": "ECU Espacio Cultural Universitario",
+      "categorias": [
+        "musica"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
       "hora": "13:00",
       "nombre": "76º Workshop de ARAV",
       "lugar": "Metropolitano",
@@ -483,6 +548,20 @@
     {
       "fecha": "2026-10-15",
       "hora": "20:30",
+      "nombre": "LONG GOOD THURSDAY",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/long-good-thursday/",
+      "precio": 2000.0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "20:30",
       "nombre": "Orquesta Utópica presenta: Tango de Rosario en movimiento",
       "lugar": "Centro Cultural Parque de España",
       "direccion": "Sarmiento y el río, Rosario, Santa Fe",
@@ -490,6 +569,20 @@
       "evento_url": "https://ccpe.org.ar/web/actividades/orquesta-utopica-presenta-tango-de-rosario-en-movimiento/",
       "precio": null,
       "origen": "Centro Cultural Parque de España"
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "22:30",
+      "nombre": "THE TRUMAN SHOW VS. MÁS EXTRAÑO QUE LA FICCIÓN",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/the-truman-show-vs-mas-extrano-que-la-ficcion/",
+      "precio": 2000.0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
     },
     {
       "fecha": "2026-10-16",
@@ -758,6 +851,20 @@
     {
       "fecha": "2026-10-16",
       "hora": "20:30",
+      "nombre": "SIETE DÍAS",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/siete-dias/",
+      "precio": 2000.0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "20:30",
       "nombre": "«Mama mía»",
       "lugar": "Centro Cultural Parque de España",
       "direccion": "Centro Cultural Parque de España, Rosario, Santa Fe, Argentina",
@@ -840,6 +947,24 @@
     {
       "fecha": "2026-10-16",
       "hora": "21:00",
+      "nombre": "THE ROCK AND RULE SWING ORCHESTRA",
+      "lugar": "Complejo Cultural Atlas",
+      "direccion": "Mitre 645, Rosario, Santa Fe",
+      "descripcion": "THE ROCK AND RULE SWING ORCHESTRA El Viernes 16 de Octubre a las 21:00 hs en el Complejo Cutural Atlas (Mitre 645)…",
+      "evento_url": "https://centroticket.com.ar/THE-ROCK-AND-RULE-SWING-ORCHESTRA/",
+      "precio": 35000.0,
+      "origen": "CentroTicket",
+      "precio_etiqueta": "Desde $35.000",
+      "entradas_url": "https://centroticket.com.ar/THE-ROCK-AND-RULE-SWING-ORCHESTRA/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "musica"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:00",
       "nombre": "Tirria",
       "lugar": "Teatro Municipal La Comedia",
       "direccion": "Mitre 958, Rosario, Santa Fe",
@@ -891,6 +1016,23 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "12:00",
+      "nombre": "Festival Gualicho: Cofradía, Encuentro y Fiesta Ricotera",
+      "lugar": "La Surfera Beach",
+      "direccion": "Av. Costanera 2558, Granadero Baigorria, Santa Fe",
+      "descripcion": "El 17 de Octubre, a partir de las 12 h en La Surfera Beach (Av. Costanera 2558 - Gdro. Baigorria) se realiza…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/festival-gualicho-cofradia-encuentro-y-fiesta-ricotera",
+      "precio": null,
+      "origen": "Agenda municipal — Espacios",
+      "precio_etiqueta": "Pago",
+      "entrada_paga": true,
+      "entradas_url": "https://eventos.tqr.la/event/gualicho-ricotero?code=GUAL324880&fbclid=PAb21jcAUmnvpleHRuA2FlbQIxMQBwZG9mAnNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABpyE1dQgBuvBfqHolnf66CIwCICw0kiT9xStmCGhDaPhX5HEzrF_OGNtHIgMC_aem_jYFYh5ANq6h5J7NbJOgfDw",
+      "categorias": [
+        "musica"
+      ]
     },
     {
       "fecha": "2026-10-17",
@@ -1051,6 +1193,20 @@
     },
     {
       "fecha": "2026-10-17",
+      "hora": "20:30",
+      "nombre": "SIN AIRE",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/sin-aire/",
+      "precio": 2000.0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
       "hora": "21:00",
       "nombre": "CIRKUS CIRKOR",
       "lugar": "Teatro Broadway",
@@ -1158,6 +1314,21 @@
       "origen": "Plataforma Lavardén"
     },
     {
+      "fecha": "2026-10-17",
+      "hora": "22:30",
+      "nombre": "RECORDÁ ESTO",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/recorda-esto/2026-10-17/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
       "fecha": "2026-10-18",
       "hora": "08:00",
       "nombre": "Exposición La Noche de Los Lápices. Ayer y hoy",
@@ -1258,6 +1429,20 @@
     },
     {
       "fecha": "2026-10-18",
+      "hora": "18:00",
+      "nombre": "LA TETA ASUSTADA",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/la-teta-asustada/",
+      "precio": 0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-18",
       "hora": "20:00",
       "nombre": "DÍA 3 | MOSTRA. Barbara Forever. Función de cierre. Estreno en Rosario",
       "lugar": "Centro Cultural Cine Lumière",
@@ -1304,6 +1489,20 @@
       "entrada_paga": true,
       "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
       "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-18",
+      "hora": "20:30",
+      "nombre": "NO HAY FANTASMAS EN LA CALLE DOBRA",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/no-hay-fantasmas-en-la-calle-dobra/",
+      "precio": 2000.0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
     },
     {
       "fecha": "2026-10-18",
@@ -1780,14 +1979,51 @@
     },
     {
       "fecha": "2026-10-22",
+      "hora": "20:30",
+      "nombre": "LOS CALVOS",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/los-calvos/2026-10-22/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-22",
       "hora": "21:00",
-      "nombre": "Claudio Gabis",
+      "nombre": "Claudio Gabis en ROSARIO",
       "lugar": "Complejo Cultural Atlas",
-      "direccion": "Mitre 645, Rosario, Santa Fe, Argentina",
-      "descripcion": "Vuelve a recorrer el país una leyenda viva del Rock Argentino. De septiembre a noviembre de 2026, el guitarrista fundador de Manal…",
-      "evento_url": "https://www.rosarioencartel.com.ar/claudio-gabis/",
+      "direccion": "Mitre 645, Rosario, Santa Fe",
+      "descripcion": "Gira Argentina 2026 Vuelve a recorrer el país una leyenda viva del Rock Argentino. De septiembre a noviembre de 2026, el guitarrista…",
+      "evento_url": "https://centroticket.com.ar/Claudio-Gabis-en-ROSARIO/",
       "precio": 30000.0,
-      "origen": "Rosario en Cartel"
+      "origen": "CentroTicket",
+      "precio_etiqueta": "Desde $30.000",
+      "entradas_url": "https://centroticket.com.ar/Claudio-Gabis-en-ROSARIO/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "musica",
+        "libros"
+      ]
+    },
+    {
+      "fecha": "2026-10-22",
+      "hora": "22:30",
+      "nombre": "FELICIDAD VS. MI VIDA ES MI VIDA",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/felicidad-vs-mi-vida-es-mi-vida/",
+      "precio": 2000.0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
     },
     {
       "fecha": "2026-10-23",
@@ -1934,6 +2170,21 @@
     },
     {
       "fecha": "2026-10-23",
+      "hora": "18:00",
+      "nombre": "LOS CALVOS",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/los-calvos/2026-10-23/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-23",
       "hora": "19:30",
       "nombre": "Ciclo de Teatro +65: Noche de Reyes",
       "lugar": "Centro Municipal de Distrito Sudoeste \"Emilia Bertolé\"",
@@ -1964,6 +2215,39 @@
       "evento_url": "https://ccpe.org.ar/web/actividades/la-montana-una-obra-escultorica/",
       "precio": null,
       "origen": "Centro Cultural Parque de España"
+    },
+    {
+      "fecha": "2026-10-23",
+      "hora": "20:30",
+      "nombre": "RECORDÁ ESTO",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/recorda-esto/2026-10-23/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-23",
+      "hora": "21:00",
+      "nombre": "ANGELA TORRES",
+      "lugar": "La Segunda Seguros Arena",
+      "direccion": "Córdoba 3475, Rosario, Santa Fe",
+      "descripcion": "ANGELA TORRES",
+      "evento_url": "https://entradaplay.com/ANGELA-TORRES/",
+      "precio": 45000.0,
+      "origen": "Entrada Play",
+      "precio_etiqueta": "Desde $45.000",
+      "entradas_url": "https://entradaplay.com/ANGELA-TORRES/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "musica"
+      ]
     },
     {
       "fecha": "2026-10-23",
@@ -2183,6 +2467,20 @@
     },
     {
       "fecha": "2026-10-24",
+      "hora": "18:00",
+      "nombre": "LA ESPERA",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/la-espera/",
+      "precio": 0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-24",
       "hora": "19:00",
       "nombre": "Ciclo de Teatro +65: Marathón",
       "lugar": "Casa de Cultura Barrio Alvear",
@@ -2267,6 +2565,24 @@
     {
       "fecha": "2026-10-24",
       "hora": "21:00",
+      "nombre": "LOS NOCHEROS",
+      "lugar": "La Segunda Seguros Arena",
+      "direccion": "Córdoba 3475, Rosario, Santa Fe",
+      "descripcion": "LOS NOCHEROS",
+      "evento_url": "https://entradaplay.com/LOS-NOCHEROS/",
+      "precio": 50000.0,
+      "origen": "Entrada Play",
+      "precio_etiqueta": "Desde $50.000",
+      "entradas_url": "https://entradaplay.com/LOS-NOCHEROS/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "musica"
+      ]
+    },
+    {
+      "fecha": "2026-10-24",
+      "hora": "21:00",
       "nombre": "La función de los invisibles",
       "lugar": "La Orilla Infinita",
       "direccion": "Colón 2148, Rosario, Santa Fe",
@@ -2275,18 +2591,6 @@
       "precio": 20000,
       "origen": "La Orilla Infinita",
       "precio_etiqueta": "General $20.000"
-    },
-    {
-      "fecha": "2026-10-24",
-      "hora": "21:00",
-      "nombre": "Los Nocheros",
-      "lugar": "La Segunda Seguros Arena",
-      "direccion": "Cafferata 729, Rosario, Santa Fe, Argentina",
-      "descripcion": "Una de las bandas de folclore argentino más importante del país recorre Argentina y regresa a Rosario en el marco de la…",
-      "evento_url": "https://www.rosarioencartel.com.ar/los-nocheros-2026/",
-      "precio": 50000.0,
-      "origen": "Rosario en Cartel",
-      "precio_etiqueta": "Desde $50.000"
     },
     {
       "fecha": "2026-10-24",
@@ -2400,6 +2704,20 @@
     },
     {
       "fecha": "2026-10-25",
+      "hora": "18:00",
+      "nombre": "BAJO LAS BANDERAS, EL SOL",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/bajo-las-banderas-el-sol-2/",
+      "precio": 0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-25",
       "hora": "18:30",
       "nombre": "Mujeres que dejan huella",
       "lugar": "Teatro Municipal La Comedia",
@@ -2449,6 +2767,21 @@
     {
       "fecha": "2026-10-25",
       "hora": "20:30",
+      "nombre": "LOS CALVOS",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/los-calvos/2026-10-25/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "20:30",
       "nombre": "Para Anormales",
       "lugar": "Cultural de Abajo",
       "direccion": "Entre Ríos 579, Rosario, Santa Fe",
@@ -2457,6 +2790,25 @@
       "precio": null,
       "origen": "Rosario3",
       "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "20:30",
+      "nombre": "Santiago Molina Presenta DESDE UN NUEVO LUGAR",
+      "lugar": "Complejo Cultural Atlas",
+      "direccion": "Mitre 645, Rosario, Santa Fe",
+      "descripcion": "Santiago Molina llega por primera vez a Rosario con su propuesta que une la música celta con el folklore argentino Complejo Cultural…",
+      "evento_url": "https://centroticket.com.ar/Santiago-Molina-Presenta-DESDE-UN-NUEVO-LUGAR/",
+      "precio": 30000.0,
+      "origen": "CentroTicket",
+      "precio_etiqueta": "Desde $30.000",
+      "entradas_url": "https://centroticket.com.ar/Santiago-Molina-Presenta-DESDE-UN-NUEVO-LUGAR/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "musica",
+        "teatro"
+      ]
     },
     {
       "fecha": "2026-10-25",
@@ -2469,6 +2821,20 @@
       "precio": null,
       "origen": "Teatro Broadway",
       "precio_etiqueta": "$30.000 – $65.000"
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "22:30",
+      "nombre": "LA RANDOM",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/la-random-3/2026-10-25/",
+      "precio": 2000.0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
     },
     {
       "fecha": "2026-10-26",
@@ -2825,6 +3191,21 @@
     {
       "fecha": "2026-10-29",
       "hora": "20:30",
+      "nombre": "EL TREN FLUVIAL",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/el-tren-fluvial/2026-10-29/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-29",
+      "hora": "20:30",
       "nombre": "Ensayo Vania (una fallida representación sobre la felicidad)",
       "lugar": "La Orilla Infinita",
       "direccion": "Colón 2148, Rosario, Santa Fe",
@@ -2833,6 +3214,20 @@
       "precio": 18000,
       "origen": "La Orilla Infinita",
       "precio_etiqueta": "General $18.000"
+    },
+    {
+      "fecha": "2026-10-29",
+      "hora": "22:30",
+      "nombre": "EL ODIO VS. TIEMPOS VIOLENTOS",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "Mathieu Kassovitz",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/el-odio-vs-tiempos-violentos/",
+      "precio": 2000.0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
     },
     {
       "fecha": "2026-10-30",
@@ -2979,6 +3374,21 @@
     },
     {
       "fecha": "2026-10-30",
+      "hora": "18:00",
+      "nombre": "EL TREN FLUVIAL",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/el-tren-fluvial/2026-10-30/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-30",
       "hora": "19:00",
       "nombre": "Ciclo de Teatro + 65: Función de Los Disfrazados en el CMD Noroeste",
       "lugar": "Centro Municipal de Distrito Noroeste \"Olga y Leticia Cossettini\"",
@@ -3013,6 +3423,21 @@
     {
       "fecha": "2026-10-30",
       "hora": "20:00",
+      "nombre": "El jazz como danza social",
+      "lugar": "ECU Espacio Cultural Universitario",
+      "direccion": "San Martín 750, Rosario, Santa Fe",
+      "descripcion": "El viernes 30 de octubre, a las 20 hs, el ECU – Espacio Cultural Universitario será escenario de una nueva edición de…",
+      "evento_url": "https://unr.edu.ar/agenda/el-jazz-como-danza-social/",
+      "precio": 0,
+      "origen": "ECU Espacio Cultural Universitario",
+      "categorias": [
+        "musica",
+        "danza"
+      ]
+    },
+    {
+      "fecha": "2026-10-30",
+      "hora": "20:00",
       "nombre": "Terror en VHS en Cine Lumière",
       "lugar": "Centro Cultural Cine Lumière",
       "direccion": "VELEZ SARSFIELD DALMACIO 1027, Rosario, Santa Fe",
@@ -3020,6 +3445,20 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/terror-en-vhs-en-cine-lumiere-8",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-30",
+      "hora": "20:30",
+      "nombre": "MICRO-RETRO: CLAUDIO PERRIN (SOLXS + EL DESENTIERRO)",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/micro-retro-claudio-perrin-solxs-el-desentierro/",
+      "precio": 0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
     },
     {
       "fecha": "2026-10-30",
@@ -3043,6 +3482,24 @@
       "precio": null,
       "origen": "Metropolitano",
       "entrada_paga": true
+    },
+    {
+      "fecha": "2026-10-30",
+      "hora": "21:00",
+      "nombre": "El bingo musical de Veto y Fer",
+      "lugar": "Complejo Cultural Atlas",
+      "direccion": "Mitre 645, Rosario, Santa Fe",
+      "descripcion": "El bingo musical de Veto y Fer",
+      "evento_url": "https://centroticket.com.ar/El-bingo-musical-de-Veto-y-Fer-/",
+      "precio": 40000.0,
+      "origen": "CentroTicket",
+      "precio_etiqueta": "Desde $40.000",
+      "entradas_url": "https://centroticket.com.ar/El-bingo-musical-de-Veto-y-Fer-/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "musica"
+      ]
     },
     {
       "fecha": "2026-10-30",
@@ -3081,14 +3538,34 @@
     {
       "fecha": "2026-10-30",
       "hora": "21:00",
-      "nombre": "Sergio Dalma",
+      "nombre": "SERGIO DALMA",
       "lugar": "La Segunda Seguros Arena",
-      "direccion": "Cafferata 729, Rosario, Santa Fe, Argentina",
-      "descripcion": "El artista español vuelve a Rosario con su nueva gira «Tour Ritorno a Vía Dalma»",
-      "evento_url": "https://www.rosarioencartel.com.ar/sergio-dalma-circulo-2026/",
+      "direccion": "Córdoba 3475, Rosario, Santa Fe",
+      "descripcion": "SERGIO DALMA",
+      "evento_url": "https://entradaplay.com/SERGIO-DALMA/",
       "precio": 80000.0,
-      "origen": "Rosario en Cartel",
-      "precio_etiqueta": "Desde $80.000"
+      "origen": "Entrada Play",
+      "precio_etiqueta": "Desde $80.000",
+      "entradas_url": "https://entradaplay.com/SERGIO-DALMA/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "musica"
+      ]
+    },
+    {
+      "fecha": "2026-10-30",
+      "hora": "22:30",
+      "nombre": "EL REY DE LA COMEDIA",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/el-rey-de-la-comedia/",
+      "precio": 0,
+      "origen": "El Cairo Cine Público",
+      "categorias": [
+        "cine"
+      ]
     },
     {
       "fecha": "2026-10-31",
@@ -3213,6 +3690,39 @@
     },
     {
       "fecha": "2026-10-31",
+      "hora": "20:30",
+      "nombre": "RECORDÁ ESTO",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/recorda-esto/2026-10-31/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "20:30",
+      "nombre": "TABLAO FLAMENCO - ENTRE PALMAS",
+      "lugar": "Complejo Cultural Atlas",
+      "direccion": "Mitre 645, Rosario, Santa Fe",
+      "descripcion": "TABLAO FLAMENCO - ENTRE PALMAS Queremos invitarlos a compartir una noche muy especial para nosotros.Entre Palmas es un proyecto autogestivo de creación,…",
+      "evento_url": "https://centroticket.com.ar/TABLAO-FLAMENCO---ENTRE-PALMAS/",
+      "precio": 25000.0,
+      "origen": "CentroTicket",
+      "precio_etiqueta": "Desde $25.000",
+      "entradas_url": "https://centroticket.com.ar/TABLAO-FLAMENCO---ENTRE-PALMAS/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "danza"
+      ]
+    },
+    {
+      "fecha": "2026-10-31",
       "hora": "21:00",
       "nombre": "El viaje del tambor",
       "lugar": "Cultural de Abajo",
@@ -3285,6 +3795,24 @@
     {
       "fecha": "2026-10-31",
       "hora": "21:00",
+      "nombre": "KE PERSONAJES - CORAZON AUSENTE TOUR",
+      "lugar": "La Segunda Seguros Arena",
+      "direccion": "Córdoba 3475, Rosario, Santa Fe",
+      "descripcion": "KE PERSONAJES - CORAZON AUSENTE TOUR",
+      "evento_url": "https://entradaplay.com/KE-PERSONAJES---CORAZON-AUSENTE-TOUR/",
+      "precio": 90000.0,
+      "origen": "Entrada Play",
+      "precio_etiqueta": "Desde $90.000",
+      "entradas_url": "https://entradaplay.com/KE-PERSONAJES---CORAZON-AUSENTE-TOUR/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "musica"
+      ]
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "21:00",
       "nombre": "La función de los invisibles",
       "lugar": "La Orilla Infinita",
       "direccion": "Colón 2148, Rosario, Santa Fe",
@@ -3327,6 +3855,24 @@
       "evento_url": "https://teatrobroadwayrosario.com/cartelera/812/julian-bellese",
       "precio": 40000.0,
       "origen": "Teatro Broadway"
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "23:59",
+      "nombre": "BRESH | EDICIÓN ESPECIAL HALLOWEEN",
+      "lugar": "La Segunda Seguros Arena",
+      "direccion": "Córdoba 3475, Rosario, Santa Fe",
+      "descripcion": "BRESH | EDICIÓN ESPECIAL HALLOWEEN",
+      "evento_url": "https://entradaplay.com/BRESH---EDICION-ESPECIAL-HALLOWEEN/",
+      "precio": 12000.0,
+      "origen": "Entrada Play",
+      "precio_etiqueta": "Desde $12.000",
+      "entradas_url": "https://entradaplay.com/BRESH---EDICION-ESPECIAL-HALLOWEEN/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "musica"
+      ]
     },
     {
       "fecha": "2026-11-01",
@@ -3438,6 +3984,21 @@
       "precio": null,
       "origen": "Teatro Broadway",
       "precio_etiqueta": "$40.000 – $70.000"
+    },
+    {
+      "fecha": "2026-11-01",
+      "hora": "22:30",
+      "nombre": "EL TREN FLUVIAL",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/el-tren-fluvial/2026-11-01/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
     },
     {
       "fecha": "2026-11-02",
@@ -3866,6 +4427,25 @@
       "origen": "Plataforma Lavardén"
     },
     {
+      "fecha": "2026-11-06",
+      "hora": "21:00",
+      "nombre": "Pela Romero Presenta APRENDIENDO A QUERE-ME",
+      "lugar": "Complejo Cultural Atlas",
+      "direccion": "Mitre 645, Rosario, Santa Fe",
+      "descripcion": "¿Cómo soltar lo que nos hace daño? Llega una propuesta vivencial que busca transformar el dolor en decisión y las dudas en…",
+      "evento_url": "https://centroticket.com.ar/Pela-Romero-Presenta-APRENDIENDO-A-QUERE-ME/",
+      "precio": 33000.0,
+      "origen": "CentroTicket",
+      "precio_etiqueta": "Desde $33.000",
+      "entradas_url": "https://centroticket.com.ar/Pela-Romero-Presenta-APRENDIENDO-A-QUERE-ME/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "teatro",
+        "libros"
+      ]
+    },
+    {
       "fecha": "2026-11-07",
       "hora": "10:00",
       "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
@@ -3933,6 +4513,25 @@
       "evento_url": "https://teatrobroadwayrosario.com/cartelera/828/carmen-osvaldo-y-toda-la-familia",
       "precio": 35000.0,
       "origen": "Teatro Broadway"
+    },
+    {
+      "fecha": "2026-11-07",
+      "hora": "21:00",
+      "nombre": "HILDA FEST 2026 Rosario",
+      "lugar": "Complejo Cultural Atlas",
+      "direccion": "Mitre 645, Rosario, Santa Fe",
+      "descripcion": "HILDA FEST 2026 ¡La fiesta más esperada por todos los docentes llega a ROSARIO! El próximo Sábado 7 de Noviembre, el Centro…",
+      "evento_url": "https://centroticket.com.ar/HILDA-FEST-2026-Rosario/",
+      "precio": 30000.0,
+      "origen": "CentroTicket",
+      "precio_etiqueta": "Desde $30.000",
+      "entradas_url": "https://centroticket.com.ar/HILDA-FEST-2026-Rosario/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "musica",
+        "teatro"
+      ]
     },
     {
       "fecha": "2026-11-08",
@@ -4018,14 +4617,20 @@
     {
       "fecha": "2026-11-08",
       "hora": "20:00",
-      "nombre": "Pablo Cordonet",
+      "nombre": "Pablo Cordonet Presenta TENGO DATA",
       "lugar": "Complejo Cultural Atlas",
-      "direccion": "Mitre 645, Rosario, Santa Fe, Argentina",
-      "descripcion": "“Tengo Data” , es el nuevo show de humor de Pablo Cordonet que aborda la ironía de la vida a partir de…",
-      "evento_url": "https://www.rosarioencartel.com.ar/pablo-cordonet-2026/",
+      "direccion": "Mitre 645, Rosario, Santa Fe",
+      "descripcion": "\"TENGO DATA”, el show de humor de Pablo Cordonet que aborda la ironía de la vida a partir de la cantidad de…",
+      "evento_url": "https://centroticket.com.ar/Pablo-Cordonet-Presenta-TENGO-DATA/",
       "precio": 34000.0,
-      "origen": "Rosario en Cartel",
-      "precio_etiqueta": "Desde $34.000"
+      "origen": "CentroTicket",
+      "precio_etiqueta": "Desde $34.000",
+      "entradas_url": "https://centroticket.com.ar/Pablo-Cordonet-Presenta-TENGO-DATA/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true,
+      "categorias": [
+        "teatro"
+      ]
     },
     {
       "fecha": "2026-11-08",

@@ -1,8 +1,8 @@
 {
-  "fecha_revision": "2026-10-12 04:37",
+  "fecha_revision": "2026-10-12 05:43",
   "salas_independientes": 13,
   "medios": 3,
-  "funciones_agregadas": 2,
+  "funciones_agregadas": 41,
   "fuentes": {
     "Caras y Caretas": "revisada: sin funciones propias estructuradas",
     "Club Fosse": "revisada: sin funciones propias estructuradas",
@@ -17,12 +17,22 @@
     "La Sonrisa de Beckett": "revisada: sin funciones propias estructuradas",
     "Tandava": "revisada: 2 funciones propias, 0 errores",
     "La Tornería": "revisada: sin funciones propias estructuradas",
+    "Teatro El Circulo — CSV": "revisada: 0 funciones; 0 consultas pendientes",
+    "Club Atletico Provincial — CSV": "revisada: 0 funciones; 1 consultas pendientes",
+    "ECU Espacio Cultural Universitario — CSV": "revisada: 2 funciones; 0 consultas pendientes",
+    "Mercado del Patio — CSV": "revisada: 0 funciones; 1 consultas pendientes",
+    "Alto Rosario Shopping — CSV": "revisada: 0 funciones; 1 consultas pendientes",
+    "El Cairo — CSV": "revisada: 22 funciones; 0 consultas pendientes",
+    "Entrada Play": "revisada: 5 funciones; 0 fichas pendientes",
+    "CentroTicket": "revisada: 8 funciones; 1 fichas pendientes",
+    "Circo Rodas — Linke-arte": "revisada: 3 funciones habilitadas",
+    "Agenda municipal — Espacios": "revisada: 1 funciones; 0 fichas pendientes",
     "Muestra Inmersiva: Estación Rosario 300": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Bellas Artes Juan B. Castagnino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Arte Contemporáneo de Rosario (MACRO)": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de la Memoria": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Arte Decorativo Firma y Odilo Estévez": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de la Ciudad": "web pendiente de consulta: 0 actividades",
+    "Museo de la Ciudad": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo del Deporte Santafesino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Histórico Provincial Julio Marc": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo": "web pendiente de consulta: 0 actividades",
@@ -91,7 +101,7 @@
     {
       "nombre": "Museo de la Ciudad",
       "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-la-ciudad",
-      "estado": "web pendiente de consulta",
+      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
       "actividades": 0,
       "webs": [
         "https://www.instagram.com/museociudad/"
@@ -219,6 +229,386 @@
       "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
       "actividades": 0,
       "webs": []
+    }
+  ],
+  "fuentes_csv": [
+    {
+      "nombre": "Teatro Broadway",
+      "url_aportada": "https://teatrobroadwayrosario.com/",
+      "tipo": "teatro",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 12
+    },
+    {
+      "nombre": "Complejo Cultural Atlas",
+      "url_aportada": "https://ccatlas.org.ar/",
+      "tipo": "centro cultural",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 8
+    },
+    {
+      "nombre": "Teatro Municipal La Comedia",
+      "url_aportada": "https://teatrolacomedia.gob.ar/",
+      "tipo": "teatro municipal",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 7
+    },
+    {
+      "nombre": "Centro Cultural Roberto Fontanarrosa",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros",
+      "tipo": "centro cultural municipal",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 0
+    },
+    {
+      "nombre": "Plataforma Lavarden",
+      "url_aportada": "https://plataformalavarden.gob.ar/",
+      "tipo": "centro cultural provincial",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 7
+    },
+    {
+      "nombre": "Teatro El Circulo",
+      "url_aportada": "https://www.teatroelcirculo.com/home",
+      "tipo": "teatro",
+      "prioridad": "alta",
+      "estado": "revisada: 0 funciones; 0 consultas pendientes",
+      "actividades": 8
+    },
+    {
+      "nombre": "Teatro Astengo",
+      "url_aportada": "https://teatroastengo.ar/agenda-espectaculos/",
+      "tipo": "teatro",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 13
+    },
+    {
+      "nombre": "Metropolitano Rosario",
+      "url_aportada": "https://www.metropolitanoros.com.ar/",
+      "tipo": "salon/eventos",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 3
+    },
+    {
+      "nombre": "La Segunda Seguros Arena",
+      "url_aportada": "https://www.instagram.com/bioceresarena/",
+      "tipo": "arena/eventos",
+      "prioridad": "alta",
+      "estado": "referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles",
+      "actividades": 5
+    },
+    {
+      "nombre": "Anfiteatro Municipal Humberto de Nito",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros",
+      "tipo": "anfiteatro municipal",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 0
+    },
+    {
+      "nombre": "Estadio Central Cordoba",
+      "url_aportada": "https://www.centralcordoba.com.ar/",
+      "tipo": "estadio/club",
+      "prioridad": "media",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 0
+    },
+    {
+      "nombre": "Club Atletico Provincial",
+      "url_aportada": "https://www.clubprovincial.com.ar/",
+      "tipo": "club/eventos",
+      "prioridad": "media",
+      "estado": "revisada: 0 funciones; 1 consultas pendientes",
+      "actividades": 1
+    },
+    {
+      "nombre": "El Cairo Cine Publico",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/cine-el-cairo",
+      "tipo": "cine municipal",
+      "prioridad": "alta",
+      "estado": "revisada: 22 funciones; 0 consultas pendientes",
+      "actividades": 22
+    },
+    {
+      "nombre": "Centro Cultural Parque de Espana",
+      "url_aportada": "https://www.ccpe.org.ar/",
+      "tipo": "centro cultural",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 7
+    },
+    {
+      "nombre": "Centro de Expresiones Contemporaneas",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros",
+      "tipo": "centro cultural municipal",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 0
+    },
+    {
+      "nombre": "Centro Cultural Cine Lumiere",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros",
+      "tipo": "cine/centro cultural municipal",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 17
+    },
+    {
+      "nombre": "Galpon de la Musica",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros",
+      "tipo": "centro cultural municipal",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 0
+    },
+    {
+      "nombre": "Complejo Astronomico Municipal",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros",
+      "tipo": "espacio municipal",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 3
+    },
+    {
+      "nombre": "La Granja de la Infancia",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/triptico-de-la-infancia",
+      "tipo": "espacio municipal",
+      "prioridad": "media",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 1
+    },
+    {
+      "nombre": "El Jardin de los Ninos",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/triptico-de-la-infancia",
+      "tipo": "espacio municipal",
+      "prioridad": "media",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 0
+    },
+    {
+      "nombre": "La Isla de los Inventos",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/triptico-de-la-infancia",
+      "tipo": "espacio municipal",
+      "prioridad": "media",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 0
+    },
+    {
+      "nombre": "Museo Castagnino",
+      "url_aportada": "https://castagninomacro.org/",
+      "tipo": "museo",
+      "prioridad": "alta",
+      "estado": "revisión del directorio y de las webs de museos",
+      "actividades": 0
+    },
+    {
+      "nombre": "Museo Macro",
+      "url_aportada": "https://castagninomacro.org/",
+      "tipo": "museo",
+      "prioridad": "alta",
+      "estado": "revisión del directorio y de las webs de museos",
+      "actividades": 0
+    },
+    {
+      "nombre": "Museo de la Ciudad",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/museos-municipales",
+      "tipo": "museo municipal",
+      "prioridad": "alta",
+      "estado": "revisión del directorio y de las webs de museos",
+      "actividades": 26
+    },
+    {
+      "nombre": "Museo Estevez",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/museos-municipales",
+      "tipo": "museo municipal",
+      "prioridad": "alta",
+      "estado": "revisión del directorio y de las webs de museos",
+      "actividades": 0
+    },
+    {
+      "nombre": "Museo de la Memoria",
+      "url_aportada": "https://www.museodelamemoria.gob.ar/",
+      "tipo": "museo",
+      "prioridad": "alta",
+      "estado": "revisión del directorio y de las webs de museos",
+      "actividades": 0
+    },
+    {
+      "nombre": "Museo Historico Provincial Julio Marc",
+      "url_aportada": "https://www.santafe.gob.ar/index.php/web/content/view/full/93664",
+      "tipo": "museo provincial",
+      "prioridad": "media",
+      "estado": "revisión del directorio y de las webs de museos",
+      "actividades": 0
+    },
+    {
+      "nombre": "Museo de Arte Sacro Eduardo Barnes",
+      "url_aportada": "https://www.teatroelcirculo.com/",
+      "tipo": "museo",
+      "prioridad": "media",
+      "estado": "revisión del directorio y de las webs de museos",
+      "actividades": 0
+    },
+    {
+      "nombre": "Sala Cultural de Abajo",
+      "url_aportada": "https://www.instagram.com/salaculturaldeabajo/",
+      "tipo": "sala independiente",
+      "prioridad": "media",
+      "estado": "referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles",
+      "actividades": 0
+    },
+    {
+      "nombre": "Teatro del Rayo",
+      "url_aportada": "https://www.elrayomisterioso.org.ar/",
+      "tipo": "sala independiente",
+      "prioridad": "media",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 3
+    },
+    {
+      "nombre": "Espacio Bravo",
+      "url_aportada": "https://www.instagram.com/espaciobravorosario/",
+      "tipo": "sala independiente",
+      "prioridad": "media",
+      "estado": "referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles",
+      "actividades": 5
+    },
+    {
+      "nombre": "Teatro La Morada",
+      "url_aportada": "https://www.facebook.com/pages/La-Morada-Teatro/653965228022129",
+      "tipo": "sala independiente",
+      "prioridad": "media",
+      "estado": "referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles",
+      "actividades": 0
+    },
+    {
+      "nombre": "La Orilla Infinita",
+      "url_aportada": "https://www.instagram.com/laorillainfinita/",
+      "tipo": "sala independiente",
+      "prioridad": "media",
+      "estado": "referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles",
+      "actividades": 9
+    },
+    {
+      "nombre": "Circo Rodas",
+      "url_aportada": "https://www.instagram.com/circorodasoficial/",
+      "tipo": "circo itinerante",
+      "prioridad": "media",
+      "estado": "referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles",
+      "actividades": 3
+    },
+    {
+      "nombre": "La Surfera Beach",
+      "url_aportada": "https://www.instagram.com/lasurferabeach/",
+      "tipo": "bar/espacio",
+      "prioridad": "media",
+      "estado": "referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles",
+      "actividades": 1
+    },
+    {
+      "nombre": "Bar El Cairo",
+      "url_aportada": "https://www.instagram.com/barelcairorosario/",
+      "tipo": "bar cultural",
+      "prioridad": "media",
+      "estado": "referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles",
+      "actividades": 0
+    },
+    {
+      "nombre": "Casa de la Cultura Arijon",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros",
+      "tipo": "centro cultural municipal",
+      "prioridad": "media",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 0
+    },
+    {
+      "nombre": "ECU Espacio Cultural Universitario",
+      "url_aportada": "https://www.unr.edu.ar/",
+      "tipo": "espacio universitario",
+      "prioridad": "media",
+      "estado": "revisada: 2 funciones; 0 consultas pendientes",
+      "actividades": 2
+    },
+    {
+      "nombre": "Monumento Nacional a la Bandera",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/monumento-nacional-la-bandera",
+      "tipo": "espacio patrimonial",
+      "prioridad": "media",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
+      "actividades": 0
+    },
+    {
+      "nombre": "Mercado del Patio",
+      "url_aportada": "https://www.mercadodelpatio.gob.ar/",
+      "tipo": "mercado/espacio",
+      "prioridad": "media",
+      "estado": "revisada: 0 funciones; 1 consultas pendientes",
+      "actividades": 0
+    },
+    {
+      "nombre": "Alto Rosario Shopping",
+      "url_aportada": "https://www.altorosario.com.ar/",
+      "tipo": "shopping",
+      "prioridad": "baja",
+      "estado": "revisada: 0 funciones; 1 consultas pendientes",
+      "actividades": 0
+    },
+    {
+      "nombre": "Diferentes ambitos de Rosario",
+      "url_aportada": "https://www.rosario.gob.ar/inicio/agenda",
+      "tipo": "variable",
+      "prioridad": "baja",
+      "estado": "requiere identificar el organizador de cada evento",
+      "actividades": 0
+    }
+  ],
+  "espacios_seguidos": [
+    {
+      "nombre": "Circo Rodas",
+      "fuentes": "Linke-arte y Rosario en Cartel",
+      "actividades": 3
+    },
+    {
+      "nombre": "La Surfera Beach",
+      "fuentes": "Agenda municipal y Rosario en Cartel",
+      "actividades": 1
+    },
+    {
+      "nombre": "Espacio Bravo",
+      "fuentes": "ATIR y prensa cultural",
+      "actividades": 5
+    },
+    {
+      "nombre": "Teatro del Rayo",
+      "fuentes": "Web del Rayo y ATIR",
+      "actividades": 3
+    },
+    {
+      "nombre": "La Morada",
+      "fuentes": "ATIR y prensa cultural",
+      "actividades": 0
+    },
+    {
+      "nombre": "Complejo Cultural Atlas",
+      "fuentes": "CentroTicket, venta enlazada por Atlas",
+      "actividades": 8
+    },
+    {
+      "nombre": "La Segunda Seguros Arena",
+      "fuentes": "Entrada Play y Rosario en Cartel",
+      "actividades": 5
+    },
+    {
+      "nombre": "Estadio Central Córdoba",
+      "fuentes": "Entrada Play y agendas culturales",
+      "actividades": 0
     }
   ]
 }
