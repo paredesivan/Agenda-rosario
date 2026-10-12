@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-12 14:18",
-  "estado": "completo",
+  "actualizado": "2026-10-12 16:36",
+  "estado": "parcial",
   "eventos": [
     {
       "fecha": "2026-10-12",
@@ -518,7 +518,9 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo/",
       "precio": null,
       "origen": "Teatro Astengo",
-      "entrada_paga": true
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-15",
@@ -893,7 +895,9 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151/",
       "precio": null,
       "origen": "Teatro Astengo",
-      "entrada_paga": true
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-16",
@@ -1223,7 +1227,9 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151-882/",
       "precio": null,
       "origen": "Teatro Astengo",
-      "entrada_paga": true
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-17",
@@ -1469,7 +1475,9 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281/",
       "precio": null,
       "origen": "Teatro Astengo",
-      "entrada_paga": true
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-18",
@@ -1784,7 +1792,9 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281-708/",
       "precio": null,
       "origen": "Teatro Astengo",
-      "entrada_paga": true
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-22",
@@ -1940,7 +1950,9 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281-708-471/",
       "precio": null,
       "origen": "Teatro Astengo",
-      "entrada_paga": true
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-22",
@@ -2248,7 +2260,9 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151-463/",
       "precio": null,
       "origen": "Teatro Astengo",
-      "entrada_paga": true
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-23",
@@ -2293,6 +2307,17 @@
       "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
       "descripcion": "Itinerancia de la muestra surgida de la IV Convocatoria de Arte Correo dirigida a escuelas secundarias organizada con el colectivo Mujeraje y…",
       "evento_url": "https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-24",
+      "hora": "10:00",
+      "nombre": "\"Pañuelos al Viento\" Tercer Encuentro de Academias y Talleres de Danzas Folclóricas",
+      "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+      "direccion": "PASEO DE LAS ARTES 310, Rosario, Santa Fe",
+      "descripcion": "Los días 24 y 25 de octubre, el Centro de Expresiones Contemporáneas (CEC) será escenario del tercer Encuentro de Academias, Talleres y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/panuelos-al-viento-tercer-encuentro-de-academias-y-talleres-de-danzas-folcloricas",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -2509,7 +2534,9 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151-463-782/",
       "precio": null,
       "origen": "Teatro Astengo",
-      "entrada_paga": true
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-24",
@@ -2595,6 +2622,17 @@
       "direccion": "DIARIO LA CAPITAL 1602, Rosario, Santa Fe",
       "descripcion": "El Complejo Astronómico Municipal será escenario de Sobre Ruedas Rosas , una propuesta que combina la pasión por los vehículos con una…",
       "evento_url": "https://www.rosario.gob.ar/inicio/sobre-ruedas-rosas",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "10:00",
+      "nombre": "\"Pañuelos al Viento\" Tercer Encuentro de Academias y Talleres de Danzas Folclóricas",
+      "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+      "direccion": "PASEO DE LAS ARTES 310, Rosario, Santa Fe",
+      "descripcion": "Los días 24 y 25 de octubre, el Centro de Expresiones Contemporáneas (CEC) será escenario del tercer Encuentro de Academias, Talleres y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/panuelos-al-viento-tercer-encuentro-de-academias-y-talleres-de-danzas-folcloricas",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -2733,7 +2771,9 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281-666/",
       "precio": null,
       "origen": "Teatro Astengo",
-      "entrada_paga": true
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-25",
@@ -4234,7 +4274,9 @@
       "evento_url": "https://teatroastengo.ar/events/chachacha-30-teatro-astengo/",
       "precio": null,
       "origen": "Teatro Astengo",
-      "entrada_paga": true
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/chachacha-30/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-11-05",
@@ -4468,7 +4510,9 @@
       "evento_url": "https://teatroastengo.ar/events/connie-ballarini-2-638/",
       "precio": null,
       "origen": "Teatro Astengo",
-      "entrada_paga": true
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/connie-ballarini/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-11-07",
@@ -4554,7 +4598,9 @@
       "evento_url": "https://teatroastengo.ar/events/connie-ballarini-2-638-394/",
       "precio": null,
       "origen": "Teatro Astengo",
-      "entrada_paga": true
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/connie-ballarini/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-11-08",

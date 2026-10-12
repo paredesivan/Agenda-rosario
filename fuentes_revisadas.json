@@ -1,8 +1,8 @@
 {
-  "fecha_revision": "2026-10-12 06:25",
+  "fecha_revision": "2026-10-12 16:43",
   "salas_independientes": 13,
   "medios": 3,
-  "funciones_agregadas": 4,
+  "funciones_agregadas": 5,
   "fuentes": {
     "Caras y Caretas": "revisada: sin funciones propias estructuradas",
     "Club Fosse": "revisada: sin funciones propias estructuradas",
@@ -20,209 +20,21 @@
     "Teatro El Circulo — CSV": "revisada: 0 funciones; 0 consultas pendientes",
     "Club Atletico Provincial — CSV": "revisada: 0 funciones; 1 consultas pendientes",
     "ECU Espacio Cultural Universitario — CSV": "revisada: 2 funciones; 0 consultas pendientes",
-    "Mercado del Patio — CSV": "revisada: 0 funciones; 1 consultas pendientes",
+    "Mercado del Patio — CSV": "revisada: 0 funciones; 0 consultas pendientes",
     "Alto Rosario Shopping — CSV": "revisada: 0 funciones; 1 consultas pendientes",
     "El Cairo — CSV": "revisada: 22 funciones; 0 consultas pendientes",
     "Entrada Play": "revisada: 5 funciones; 0 fichas pendientes",
     "CentroTicket": "revisada: 8 funciones; 1 fichas pendientes",
-    "Circo Rodas — Linke-arte": "revisada: 3 funciones habilitadas",
+    "Circo Rodas — Linke-arte": "revisada: 2 funciones habilitadas",
     "Agenda municipal — Espacios": "revisada: 1 funciones; 0 fichas pendientes",
-    "Muestra Inmersiva: Estación Rosario 300": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de Bellas Artes Juan B. Castagnino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de Arte Contemporáneo de Rosario (MACRO)": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de la Memoria": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de Arte Decorativo Firma y Odilo Estévez": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de la Ciudad": "web pendiente de consulta: 0 actividades",
-    "Museo del Deporte Santafesino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo Histórico Provincial Julio Marc": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo": "web pendiente de consulta: 0 actividades",
-    "Museo Internacional para la Democracia": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de Arte Sacro Barnes": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de Sitio: \"El Paraná y las islas\"": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Experimental - Museo de Ciencias en Movimiento": "revisión parcial: 0 actividades",
-    "Museo de la ópera": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Sala de las Banderas": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de la Bolsa de Comercio": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Bajada de los Maestros": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de la Salud": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo Diario La Capital": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Beatmemo": "web pendiente de consulta: 0 actividades",
     "Museo Urbano Arte a la Vista": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Directorio de museos": "21 espacios descubiertos; 0 páginas pendientes",
+    "Directorio de museos": "1 espacios descubiertos; 1 páginas pendientes",
     "Rosario3": "revisada: 1 notas, 10 funciones, 0 errores",
     "La Capital": "revisada: 0 notas, 0 funciones, 0 errores",
     "El Ciudadano": "revisada: 5 notas, 1 funciones, 0 errores",
-    "Rosario en Cartel": "revisada: 18 funciones verificadas; 0 fichas pendientes"
+    "Rosario en Cartel": "revisada: 20 funciones verificadas; 0 fichas pendientes"
   },
   "museos": [
-    {
-      "nombre": "Muestra Inmersiva: Estación Rosario 300",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/muestra-inmersiva-estacion-rosario-300",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": []
-    },
-    {
-      "nombre": "Museo de Bellas Artes Juan B. Castagnino",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-bellas-artes-castagnino",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": [
-        "https://www.castagninomacro.org"
-      ]
-    },
-    {
-      "nombre": "Museo de Arte Contemporáneo de Rosario (MACRO)",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/macro",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": [
-        "https://castagninomacro.org/"
-      ]
-    },
-    {
-      "nombre": "Museo de la Memoria",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-la-memoria",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": [
-        "https://www.museodelamemoria.gob.ar/"
-      ]
-    },
-    {
-      "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-estevez",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": [
-        "https://www.museoestevez.gob.ar"
-      ]
-    },
-    {
-      "nombre": "Museo de la Ciudad",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-la-ciudad",
-      "estado": "web pendiente de consulta",
-      "actividades": 0,
-      "webs": [
-        "https://www.instagram.com/museociudad/"
-      ]
-    },
-    {
-      "nombre": "Museo del Deporte Santafesino",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-deporte-santafesino",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": [
-        "https://museodeldeportesf.gob.ar/"
-      ]
-    },
-    {
-      "nombre": "Museo Histórico Provincial Julio Marc",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-historico-julio-marc",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": [
-        "https://www.museomarc.gob.ar/"
-      ]
-    },
-    {
-      "nombre": "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-ciencias-naturales-angel-gallardo",
-      "estado": "web pendiente de consulta",
-      "actividades": 0,
-      "webs": [
-        "https://www.museogallardo.gob.ar"
-      ]
-    },
-    {
-      "nombre": "Museo Internacional para la Democracia",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-internacional-para-la-democracia",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": [
-        "https://www.museoparalademocracia.org/"
-      ]
-    },
-    {
-      "nombre": "Museo de Arte Sacro Barnes",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-arte-sacro",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": [
-        "https://www.teatroelcirculo.com"
-      ]
-    },
-    {
-      "nombre": "Museo de Sitio: \"El Paraná y las islas\"",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-sitio-el-parana-y-las-islas",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": []
-    },
-    {
-      "nombre": "Experimental - Museo de Ciencias en Movimiento",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-experimental-de-ciencias",
-      "estado": "revisión parcial",
-      "actividades": 0,
-      "webs": [
-        "https://www.complejoastronomico.gob.ar/noticias/informacion-sobre-experimental"
-      ]
-    },
-    {
-      "nombre": "Museo de la ópera",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-la-opera",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": []
-    },
-    {
-      "nombre": "Sala de las Banderas",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/sala-de-las-banderas",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": [
-        "https://www.monumentoalabandera.gob.ar/"
-      ]
-    },
-    {
-      "nombre": "Museo de la Bolsa de Comercio",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-la-bolsa-de-comercio",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": [
-        "https://www.bcr.com.ar/es"
-      ]
-    },
-    {
-      "nombre": "Bajada de los Maestros",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/bajada-de-los-maestros",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": []
-    },
-    {
-      "nombre": "Museo de la Salud",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-la-salud",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": []
-    },
-    {
-      "nombre": "Museo Diario La Capital",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-diario-la-capital",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
-      "actividades": 0,
-      "webs": []
-    },
-    {
-      "nombre": "Beatmemo",
-      "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/beatmemo",
-      "estado": "web pendiente de consulta",
-      "actividades": 0,
-      "webs": [
-        "https://www.beatmemo.com/"
-      ]
-    },
     {
       "nombre": "Museo Urbano Arte a la Vista",
       "ficha": "https://www.rosario.gob.ar/inicio/museos-municipales",
@@ -350,7 +162,7 @@
       "tipo": "centro cultural municipal",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 0
+      "actividades": 2
     },
     {
       "nombre": "Centro Cultural Cine Lumiere",
@@ -549,7 +361,7 @@
       "url_aportada": "https://www.mercadodelpatio.gob.ar/",
       "tipo": "mercado/espacio",
       "prioridad": "media",
-      "estado": "revisada: 0 funciones; 1 consultas pendientes",
+      "estado": "revisada: 0 funciones; 0 consultas pendientes",
       "actividades": 0
     },
     {
