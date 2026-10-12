@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-12 00:04",
+  "actualizado": "2026-10-12 02:32",
   "estado": "completo",
   "eventos": [
     {
@@ -942,6 +942,18 @@
     {
       "fecha": "2026-10-17",
       "hora": "16:00",
+      "nombre": "Ito",
+      "lugar": "La Orilla Infinita",
+      "direccion": "Colón 2148, Rosario, Santa Fe",
+      "descripcion": "Los sábados 3, 10, 17 y 24 de octubre a las 16 , en La Orilla Infinita (Colón 2148), se presenta Ito,…",
+      "evento_url": "https://www.rosario3.com/ocio/funciones-de-las-obras-el-viaje-del-tambor-para-anormales-hervidero-caballito-de-batalla-ito-teatro-para-bebes-y-quemarlo-todo-20261002-0028.html",
+      "precio": null,
+      "origen": "Rosario3",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "16:00",
       "nombre": "Primavera con sentidos",
       "lugar": "Biblioteca Vigil",
       "direccion": "Biblioteca Vigil, Rosario, Santa Fe",
@@ -1017,6 +1029,30 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151-882/",
       "precio": null,
       "origen": "Teatro Astengo"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:00",
+      "nombre": "El viaje del tambor",
+      "lugar": "Cultural de Abajo",
+      "direccion": "Entre Ríos 579, Rosario, Santa Fe",
+      "descripcion": "Los sábados de octubre a las 21 , en Cultural de Abajo (Entre Ríos 579), se presenta El viaje del tambor ,…",
+      "evento_url": "https://www.rosario3.com/ocio/funciones-de-las-obras-el-viaje-del-tambor-para-anormales-hervidero-caballito-de-batalla-ito-teatro-para-bebes-y-quemarlo-todo-20261002-0028.html",
+      "precio": null,
+      "origen": "Rosario3",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:00",
+      "nombre": "Hervidero",
+      "lugar": "Espacio Bravo",
+      "direccion": "Catamarca 3624, Rosario, Santa Fe",
+      "descripcion": "Los sábados de octubre a las 21 , en Espacio Bravo (Catamarca 3624), se presenta la obra Hervidero , con dirección y…",
+      "evento_url": "https://www.rosario3.com/ocio/funciones-de-las-obras-el-viaje-del-tambor-para-anormales-hervidero-caballito-de-batalla-ito-teatro-para-bebes-y-quemarlo-todo-20261002-0028.html",
+      "precio": null,
+      "origen": "Rosario3",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-17",
@@ -1173,6 +1209,18 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281/",
       "precio": null,
       "origen": "Teatro Astengo"
+    },
+    {
+      "fecha": "2026-10-18",
+      "hora": "20:30",
+      "nombre": "Para Anormales",
+      "lugar": "Cultural de Abajo",
+      "direccion": "Entre Ríos 579, Rosario, Santa Fe",
+      "descripcion": "Los domingos de octubre, a las 20.30 , en el Cultural de Abajo , se presenta la obra Para Anormales , una…",
+      "evento_url": "https://www.rosario3.com/ocio/funciones-de-las-obras-el-viaje-del-tambor-para-anormales-hervidero-caballito-de-batalla-ito-teatro-para-bebes-y-quemarlo-todo-20261002-0028.html",
+      "precio": null,
+      "origen": "Rosario3",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-18",
@@ -1938,6 +1986,18 @@
     },
     {
       "fecha": "2026-10-24",
+      "hora": "16:00",
+      "nombre": "Ito",
+      "lugar": "La Orilla Infinita",
+      "direccion": "Colón 2148, Rosario, Santa Fe",
+      "descripcion": "Los sábados 3, 10, 17 y 24 de octubre a las 16 , en La Orilla Infinita (Colón 2148), se presenta Ito,…",
+      "evento_url": "https://www.rosario3.com/ocio/funciones-de-las-obras-el-viaje-del-tambor-para-anormales-hervidero-caballito-de-batalla-ito-teatro-para-bebes-y-quemarlo-todo-20261002-0028.html",
+      "precio": null,
+      "origen": "Rosario3",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-24",
       "hora": "17:00",
       "nombre": "Ciclo de Teatro +65: 300 Millones",
       "lugar": "Club El Torito - Medrano 2110",
@@ -2035,6 +2095,30 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151-463-782/",
       "precio": null,
       "origen": "Teatro Astengo"
+    },
+    {
+      "fecha": "2026-10-24",
+      "hora": "21:00",
+      "nombre": "El viaje del tambor",
+      "lugar": "Cultural de Abajo",
+      "direccion": "Entre Ríos 579, Rosario, Santa Fe",
+      "descripcion": "Los sábados de octubre a las 21 , en Cultural de Abajo (Entre Ríos 579), se presenta El viaje del tambor ,…",
+      "evento_url": "https://www.rosario3.com/ocio/funciones-de-las-obras-el-viaje-del-tambor-para-anormales-hervidero-caballito-de-batalla-ito-teatro-para-bebes-y-quemarlo-todo-20261002-0028.html",
+      "precio": null,
+      "origen": "Rosario3",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-24",
+      "hora": "21:00",
+      "nombre": "Hervidero",
+      "lugar": "Espacio Bravo",
+      "direccion": "Catamarca 3624, Rosario, Santa Fe",
+      "descripcion": "Los sábados de octubre a las 21 , en Espacio Bravo (Catamarca 3624), se presenta la obra Hervidero , con dirección y…",
+      "evento_url": "https://www.rosario3.com/ocio/funciones-de-las-obras-el-viaje-del-tambor-para-anormales-hervidero-caballito-de-batalla-ito-teatro-para-bebes-y-quemarlo-todo-20261002-0028.html",
+      "precio": null,
+      "origen": "Rosario3",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-24",
@@ -2190,6 +2274,18 @@
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281-666/",
       "precio": null,
       "origen": "Teatro Astengo"
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "20:30",
+      "nombre": "Para Anormales",
+      "lugar": "Cultural de Abajo",
+      "direccion": "Entre Ríos 579, Rosario, Santa Fe",
+      "descripcion": "Los domingos de octubre, a las 20.30 , en el Cultural de Abajo , se presenta la obra Para Anormales , una…",
+      "evento_url": "https://www.rosario3.com/ocio/funciones-de-las-obras-el-viaje-del-tambor-para-anormales-hervidero-caballito-de-batalla-ito-teatro-para-bebes-y-quemarlo-todo-20261002-0028.html",
+      "precio": null,
+      "origen": "Rosario3",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-25",
@@ -2910,6 +3006,18 @@
     {
       "fecha": "2026-10-31",
       "hora": "21:00",
+      "nombre": "El viaje del tambor",
+      "lugar": "Cultural de Abajo",
+      "direccion": "Entre Ríos 579, Rosario, Santa Fe",
+      "descripcion": "Los sábados de octubre a las 21 , en Cultural de Abajo (Entre Ríos 579), se presenta El viaje del tambor ,…",
+      "evento_url": "https://www.rosario3.com/ocio/funciones-de-las-obras-el-viaje-del-tambor-para-anormales-hervidero-caballito-de-batalla-ito-teatro-para-bebes-y-quemarlo-todo-20261002-0028.html",
+      "precio": null,
+      "origen": "Rosario3",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "21:00",
       "nombre": "FIESTA TNT",
       "lugar": "Distrito Siete",
       "direccion": "Ovidio Lagos 790, Rosario, Santa Fe",
@@ -2940,6 +3048,18 @@
       "evento_url": "https://teatrobroadwayrosario.com/cartelera/864/harlem-globetrotters",
       "precio": null,
       "origen": "Teatro Broadway"
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "21:00",
+      "nombre": "Hervidero",
+      "lugar": "Espacio Bravo",
+      "direccion": "Catamarca 3624, Rosario, Santa Fe",
+      "descripcion": "Los sábados de octubre a las 21 , en Espacio Bravo (Catamarca 3624), se presenta la obra Hervidero , con dirección y…",
+      "evento_url": "https://www.rosario3.com/ocio/funciones-de-las-obras-el-viaje-del-tambor-para-anormales-hervidero-caballito-de-batalla-ito-teatro-para-bebes-y-quemarlo-todo-20261002-0028.html",
+      "precio": null,
+      "origen": "Rosario3",
+      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-10-31",
