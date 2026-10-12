@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-11 21:49",
-  "estado": "parcial",
+  "actualizado": "2026-10-11 22:50",
+  "estado": "completo",
   "eventos": [
     {
       "fecha": "2026-10-11",
@@ -48,12 +48,45 @@
     },
     {
       "fecha": "2026-10-12",
+      "hora": "16:00",
+      "nombre": "Último día para vivir la Escultura de los Deseos de Marta Minujín | Museo Castagnino",
+      "lugar": "Museo Municipal de Bellas Artes Juan B. Castagnino",
+      "direccion": "PELLEGRINI CARLOS 2202, Rosario, Santa Fe",
+      "descripcion": "El lunes 12 de octubre, a partir de las 16 h, en la Explanada del Museo Castagnino, se podrá disfrutar del último…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/ultimo-dia-para-vivir-la-escultura-de-los-deseos-de-marta-minujin-museo-castagnino",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-12",
       "hora": "18:30",
       "nombre": "Mis primeros pasos",
       "lugar": "Centro Cultural  La Casa del Tango",
       "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
       "descripcion": "En marzo comienza el taller anual de tango para principiantes con la docente Alejandra Viveka Cáceres . Las personas interesadas en realizar…",
       "evento_url": "https://www.rosario.gob.ar/inicio/mis-primeros-pasos",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-12",
+      "hora": "18:30",
+      "nombre": "Xabi Blo + Geral & Los Seres en el Galpón 11",
+      "lugar": "Galpón 11",
+      "direccion": "ESTEVEZ BOERO GUILLERMO 980, Rosario, Santa Fe",
+      "descripcion": "Xabi Blo y la banda Geral & Los Seres tocan en el escenario del Galpón 11.",
+      "evento_url": "https://www.rosario.gob.ar/inicio/xabi-blo-geral-los-seres-en-el-galpon-11",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-13",
+      "hora": "09:00",
+      "nombre": "Visitas Guiadas Biblioteca Estrada",
+      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
+      "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -76,6 +109,17 @@
       "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
       "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
       "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-13",
+      "hora": "20:30",
+      "nombre": "Rosario Sonido de Cuerdas - Día 1",
+      "lugar": "Museo de Arte Decorativo Firma y Odilo Estevez",
+      "direccion": "SANTA FE 748, Rosario, Santa Fe",
+      "descripcion": "La primera edición de Rosario Sonido de Cuerdas , el festival dedicado a los instrumentos de cuerdas con arco y la música…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/rosario-sonido-de-cuerdas-dia-1",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -136,6 +180,28 @@
     },
     {
       "fecha": "2026-10-14",
+      "hora": "13:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-14",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-14",
       "hora": "14:00",
       "nombre": "Entrenamiento y Ensayo para bailarines de tango",
       "lugar": "Centro Cultural  La Casa del Tango",
@@ -153,6 +219,39 @@
       "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
       "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
       "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-14",
+      "hora": "16:30",
+      "nombre": "Taller de Técnicas de Danza y Composición Instantánea",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Taller anual dictado por la docente Cecilia Morini . Dos encuentros por mes en los que se trabajan estilos de las danza…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-14",
+      "hora": "19:00",
+      "nombre": "Talleres anuales de Tango Danza",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Los miércoles por la tarde se dictan las clases de tango danza a cargo del Prof. Guillermo Ruíz. El taller nivel inicial…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-14",
+      "hora": "20:30",
+      "nombre": "Rosario Sonido de Cuerdas - Día 2",
+      "lugar": "Parque España",
+      "direccion": "SARMIENTO DOMINGO FAUSTINO 100, Rosario, Santa Fe",
+      "descripcion": "En el marco de la primera edición de Rosario Sonido de Cuerdas , el miércoles 14 de octubre, a las 20:30 h…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/rosario-sonido-de-cuerdas-dia-2",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -235,6 +334,28 @@
     },
     {
       "fecha": "2026-10-15",
+      "hora": "13:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-15",
       "hora": "14:00",
       "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
       "lugar": "Museo de la Ciudad Wladimir Mikielievich",
@@ -246,12 +367,34 @@
     },
     {
       "fecha": "2026-10-15",
+      "hora": "14:00",
+      "nombre": "Visitas Guiadas Biblioteca Estrada",
+      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
+      "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-15",
       "hora": "16:00",
       "nombre": "Ciclo de Teatro +65: El Club de la Risa",
       "lugar": "Bar Rosario Blend (Bv. Oroño 4898)",
       "direccion": "Bar Rosario Blend (Bv. Oroño 4898), Rosario, Santa Fe",
       "descripcion": "Con 4 funciones, se presenta el Club de la Risa . Está pensada como una propuesta de humor y música en espacios…",
       "evento_url": "https://www.rosario.gob.ar/inicio/ciclo-de-teatro-65-el-club-de-la-risa",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "16:00",
+      "nombre": "Segundo Encuentro Recreativo para Adultos Mayores",
+      "lugar": "Cabal 1400 bis",
+      "direccion": "Cabal 1400 bis, Rosario, Santa Fe",
+      "descripcion": "El Distrito Noroeste organiza un segundo encuentro con karaoke para adultos mayores del territorio.",
+      "evento_url": "https://www.rosario.gob.ar/inicio/segundo-encuentro-recreativo-para-adultos-mayores",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -276,6 +419,28 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/el-odio-en-cine-lumiere",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "20:00",
+      "nombre": "Rosario Sonido de Cuerdas - Día 3",
+      "lugar": "Foyer del Teatro El Círculo",
+      "direccion": "Foyer del Teatro El Círculo, Rosario, Santa Fe",
+      "descripcion": "En el marco de la primera edición de Rosario Sonido de Cuerdas , la Orquesta de Cámara Municipal de Rosario ofrecerá el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/rosario-sonido-de-cuerdas-dia-3",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "20:30",
+      "nombre": "Orquesta Utópica presenta: Tango de Rosario en movimiento",
+      "lugar": "Centro Cultural Parque de España",
+      "direccion": "Sarmiento y el río, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $23.000 y $39.000. El Centro Cultural Parque de España invita al concierto Tango de Rosario en movimiento. Bailando el Tango del Siglo XXI, de la…",
+      "evento_url": "https://ccpe.org.ar/web/actividades/orquesta-utopica-presenta-tango-de-rosario-en-movimiento/",
+      "precio": null,
+      "origen": "Centro Cultural Parque de España"
     },
     {
       "fecha": "2026-10-16",
@@ -356,6 +521,28 @@
     },
     {
       "fecha": "2026-10-16",
+      "hora": "13:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-16",
       "hora": "14:00",
       "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
       "lugar": "Museo de la Ciudad Wladimir Mikielievich",
@@ -395,6 +582,17 @@
       "direccion": "FRANCIA 4435, Rosario, Santa Fe",
       "descripcion": "En el marco del Ciclo de Teatro +65 , se realizan dos funciones del grupo cómico Lo Lumvrise . La primera función…",
       "evento_url": "https://www.rosario.gob.ar/inicio/ciclo-de-teatro-65-lo-lumvrise",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "17:00",
+      "nombre": "Tertulias Tangueras",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "En agosto se reanudan las Tertulias Tangueras con la conducción de Gerardo Quilici . Los encuentros para conversar y compartir opiniones y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/tertulias-tangueras-1",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -455,6 +653,17 @@
     },
     {
       "fecha": "2026-10-16",
+      "hora": "19:00",
+      "nombre": "Petit Conversa: Grandes Encuentros",
+      "lugar": "Plataforma Lavardén",
+      "direccion": "Mendoza 1085, Rosario, Santa Fe",
+      "descripcion": "Cultura, memoria y vejez activa",
+      "evento_url": "https://plataformalavarden.gob.ar/actividades/petit-conversa-grandes-encuentros/",
+      "precio": 0,
+      "origen": "Plataforma Lavardén"
+    },
+    {
+      "fecha": "2026-10-16",
       "hora": "20:00",
       "nombre": "DÍA 1 | MOSTRA. Apertura: Adolescencia, sexo y muerte en Camp Miasma",
       "lugar": "Centro Cultural Cine Lumière",
@@ -463,6 +672,61 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/dia-1-mostra.-apertura-adolescencia-sexo-y-muerte-en-camp-miasma",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "20:30",
+      "nombre": "Mama mía, un espectáculo de humor y cáncer",
+      "lugar": "Centro Cultural Parque de España",
+      "direccion": "Sarmiento y el río, Rosario, Santa Fe",
+      "descripcion": "El Centro Cultural Parque de España presenta la edición 2026 del ciclo de artes escénicas Un pasaje hasta aquí que surge a…",
+      "evento_url": "https://ccpe.org.ar/web/actividades/mama-mia-un-espectaculo-de-humor-y-cancer-villa-de-las-rosas/",
+      "precio": 0,
+      "origen": "Centro Cultural Parque de España"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "20:30",
+      "nombre": "Rosario Sonido de Cuerdas - Día 4",
+      "lugar": "Galpón 11",
+      "direccion": "ESTEVEZ BOERO GUILLERMO 980, Rosario, Santa Fe",
+      "descripcion": "La primera edición de Rosario Sonido de Cuerdas tendrá su cierre de programación de conciertos el viernes 16 de octubre, a las…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/rosario-sonido-de-cuerdas-dia-4",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:00",
+      "nombre": "Darío Grandinetti en «El escritor de todas las cosas»",
+      "lugar": "Plataforma Lavardén",
+      "direccion": "Mendoza 1085, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://plataformalavarden.gob.ar/actividades/dario-grandinetti-en-el-escritor-de-todas-las-cosas/",
+      "precio": null,
+      "origen": "Plataforma Lavardén"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:00",
+      "nombre": "Peña de Cantores y Cantoras",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Un espacio para los cantores y las cantoras de tango de la ciudad en la programación mensual de La Casa del Tango…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/pena-de-cantores-y-cantoras-0",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:00",
+      "nombre": "Tirria",
+      "lugar": "Teatro Municipal La Comedia",
+      "direccion": "Mitre 958, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $7.000 y $55.000. Género: Comedia Destinatarios: +13 Duración: 100 min. Tirria es una comedia negra que cuenta la historia de los Sobrado Alvear, familia patricia…",
+      "evento_url": "https://teatrolacomedia.gob.ar/espectaculo/tirria-2/",
+      "precio": null,
+      "origen": "Teatro Municipal La Comedia"
     },
     {
       "fecha": "2026-10-16",
@@ -564,6 +828,50 @@
     },
     {
       "fecha": "2026-10-17",
+      "hora": "13:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "13:00",
+      "nombre": "Seminario \"Anatomía Vivencial y Contact Improvisación\"",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Un sábado por mes. Dirigido a alumnos de baile, instructores y docentes de tango de nivel inicial e intermedio, enfocándose en la…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/seminario-anatomia-vivencial-y-contact-improvisacion",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "14:00",
+      "nombre": "VII Encuentro Nacional de Bandas",
+      "lugar": "Monumento Histórico Nacional a la Bandera Argentina",
+      "direccion": "SANTA FE 581, Rosario, Santa Fe",
+      "descripcion": "El sábado 17 de octubre, de 14 a 19 h, Rosario será sede de una nueva edición del Encuentro Nacional de Bandas…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/vii-encuentro-nacional-de-bandas",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-17",
       "hora": "18:00",
       "nombre": "DÍA 2 | MOSTRA. Albertina Carri presenta su libro CINE VIVO + Proyección de cortos",
       "lugar": "Centro Cultural Cine Lumière",
@@ -586,6 +894,17 @@
     },
     {
       "fecha": "2026-10-17",
+      "hora": "20:00",
+      "nombre": "Impresiones Sonoras – Ensamble Municipal de Vientos",
+      "lugar": "Centro Cultural Parque de España",
+      "direccion": "Sarmiento y el río, Rosario, Santa Fe",
+      "descripcion": "El sábado 17 de octubre , a partir de las 20 h , el Ensamble Municipal de Vientos , bajo la dirección…",
+      "evento_url": "https://ccpe.org.ar/web/actividades/impresiones-sonoras-ensamble-municipal-de-vientos/",
+      "precio": 0,
+      "origen": "Centro Cultural Parque de España"
+    },
+    {
+      "fecha": "2026-10-17",
       "hora": "21:00",
       "nombre": "DÍA 2 | MOSTRA. Película invitada: Bombacha (Estreno en Rosario)",
       "lugar": "Centro Cultural Cine Lumière",
@@ -594,6 +913,17 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/dia-2-mostra.-pelicula-invitada-bombacha-estreno-en-rosario",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:00",
+      "nombre": "Problema 1",
+      "lugar": "Plataforma Lavardén",
+      "direccion": "Mendoza 1085, Rosario, Santa Fe",
+      "descripcion": "el primer unipersonal de Teo López Puccio",
+      "evento_url": "https://plataformalavarden.gob.ar/actividades/problema-1/",
+      "precio": null,
+      "origen": "Plataforma Lavardén"
     },
     {
       "fecha": "2026-10-18",
@@ -652,6 +982,39 @@
     },
     {
       "fecha": "2026-10-18",
+      "hora": "10:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-18",
+      "hora": "10:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-18",
+      "hora": "10:00",
+      "nombre": "Tango en Calle",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Tango en Calle es una propuesta del Centro Cultural La Casa del Tango (Arturo Illia 1750) que suma su espacio, musicalización y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/tango-en-calle",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-18",
       "hora": "18:00",
       "nombre": "DÍA 3 | MOSTRA. Memoria Queer en VHS",
       "lugar": "Centro Cultural Cine Lumière",
@@ -702,6 +1065,17 @@
       "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
       "descripcion": "Itinerancia de la muestra surgida de la IV Convocatoria de Arte Correo dirigida a escuelas secundarias organizada con el colectivo Mujeraje y…",
       "evento_url": "https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-20",
+      "hora": "09:00",
+      "nombre": "Visitas Guiadas Biblioteca Estrada",
+      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
+      "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -784,6 +1158,28 @@
     },
     {
       "fecha": "2026-10-21",
+      "hora": "13:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-21",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-21",
       "hora": "14:00",
       "nombre": "Entrenamiento y Ensayo para bailarines de tango",
       "lugar": "Centro Cultural  La Casa del Tango",
@@ -818,11 +1214,44 @@
     {
       "fecha": "2026-10-21",
       "hora": "15:00",
+      "nombre": "El enfermo imaginario (versión litoraleña) | ESTRENO",
+      "lugar": "Teatro Municipal La Comedia",
+      "direccion": "Mitre 958, Rosario, Santa Fe",
+      "descripcion": "Género: Comedia Destinatarios: ATP Duración: 70 min. Versión de la comedia de Molière a cargo del grupo Tertulias del Oeste del Circuito…",
+      "evento_url": "https://teatrolacomedia.gob.ar/espectaculo/el-enfermo-imaginario-version-litoralena-estreno/",
+      "precio": 0,
+      "origen": "Teatro Municipal La Comedia"
+    },
+    {
+      "fecha": "2026-10-21",
+      "hora": "15:00",
       "nombre": "Función del CIT: El enfermo imaginario (Versión Litoraleña)",
       "lugar": "Teatro Municipal La Comedia",
       "direccion": "MITRE GENERAL BARTOLOME 958, Rosario, Santa Fe",
       "descripcion": "El miércoles 21 de octubre a las 15 hs, El Circuito Interbarrial de Teatro presenta en El Teatro La Comedia la obra…",
       "evento_url": "https://www.rosario.gob.ar/inicio/funcion-del-cit-el-enfermo-imaginario-version-litoralena-0",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-21",
+      "hora": "16:30",
+      "nombre": "Taller de Técnicas de Danza y Composición Instantánea",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Taller anual dictado por la docente Cecilia Morini . Dos encuentros por mes en los que se trabajan estilos de las danza…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-21",
+      "hora": "19:00",
+      "nombre": "Talleres anuales de Tango Danza",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Los miércoles por la tarde se dictan las clases de tango danza a cargo del Prof. Guillermo Ruíz. El taller nivel inicial…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -889,6 +1318,28 @@
       "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
       "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
       "evento_url": "https://www.rosario.gob.ar/inicio/geolocalizados-un-puente-entre-la-imagen-y-la-palabra",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-22",
+      "hora": "13:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-22",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -904,6 +1355,28 @@
       "origen": "Municipalidad de Rosario"
     },
     {
+      "fecha": "2026-10-22",
+      "hora": "14:00",
+      "nombre": "Visitas Guiadas Biblioteca Estrada",
+      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
+      "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-22",
+      "hora": "20:00",
+      "nombre": "Un Maldito Policía en Cine Lumière",
+      "lugar": "Centro Cultural Cine Lumière",
+      "direccion": "VELEZ SARSFIELD DALMACIO 1027, Rosario, Santa Fe",
+      "descripcion": "Dura y polémica película sobre la corrupción policial. Un policía (Harvey Keitel) agobiado por las enormes deudas contraídas en el juego y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/un-maldito-policia-en-cine-lumiere",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
       "fecha": "2026-10-23",
       "hora": "08:00",
       "nombre": "Exposición La Noche de Los Lápices. Ayer y hoy",
@@ -966,6 +1439,28 @@
       "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
       "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
       "evento_url": "https://www.rosario.gob.ar/inicio/geolocalizados-un-puente-entre-la-imagen-y-la-palabra",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-23",
+      "hora": "13:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-23",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1015,6 +1510,17 @@
     },
     {
       "fecha": "2026-10-23",
+      "hora": "17:00",
+      "nombre": "Tertulias Tangueras",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "En agosto se reanudan las Tertulias Tangueras con la conducción de Gerardo Quilici . Los encuentros para conversar y compartir opiniones y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/tertulias-tangueras-1",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-23",
       "hora": "19:30",
       "nombre": "Ciclo de Teatro +65: Noche de Reyes",
       "lugar": "Centro Municipal de Distrito Sudoeste \"Emilia Bertolé\"",
@@ -1034,6 +1540,17 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-23",
+      "hora": "20:30",
+      "nombre": "La montaña, una obra escultórica",
+      "lugar": "Centro Cultural Parque de España",
+      "direccion": "Sarmiento y el río, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $20.000 y $30.000. El Centro Cultural Parque de España presenta «La montaña, una obra escultórica», obra del colectivo artístico Micelio, que surge del Laboratorio de…",
+      "evento_url": "https://ccpe.org.ar/web/actividades/la-montana-una-obra-escultorica/",
+      "precio": null,
+      "origen": "Centro Cultural Parque de España"
     },
     {
       "fecha": "2026-10-24",
@@ -1098,6 +1615,28 @@
       "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
       "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
       "evento_url": "https://www.rosario.gob.ar/inicio/geolocalizados-un-puente-entre-la-imagen-y-la-palabra",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-24",
+      "hora": "13:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-24",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1190,6 +1729,17 @@
       "origen": "Municipalidad de Rosario"
     },
     {
+      "fecha": "2026-10-24",
+      "hora": "21:00",
+      "nombre": "Paris Jazz Club",
+      "lugar": "Plataforma Lavardén",
+      "direccion": "Mendoza 1085, Rosario, Santa Fe",
+      "descripcion": "presenta Jazz Cartoons",
+      "evento_url": "https://plataformalavarden.gob.ar/actividades/paris-jazz-club-2/",
+      "precio": null,
+      "origen": "Plataforma Lavardén"
+    },
+    {
       "fecha": "2026-10-25",
       "hora": "08:00",
       "nombre": "Exposición La Noche de Los Lápices. Ayer y hoy",
@@ -1197,6 +1747,17 @@
       "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
       "descripcion": "Itinerancia de la muestra surgida de la IV Convocatoria de Arte Correo dirigida a escuelas secundarias organizada con el colectivo Mujeraje y…",
       "evento_url": "https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "09:30",
+      "nombre": "Sobre Ruedas Rosas",
+      "lugar": "Complejo Astronómico Municipal",
+      "direccion": "DIARIO LA CAPITAL 1602, Rosario, Santa Fe",
+      "descripcion": "El Complejo Astronómico Municipal será escenario de Sobre Ruedas Rosas , una propuesta que combina la pasión por los vehículos con una…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/sobre-ruedas-rosas",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1243,6 +1804,50 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "10:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "10:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "10:00",
+      "nombre": "Tango en Calle",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Tango en Calle es una propuesta del Centro Cultural La Casa del Tango (Arturo Illia 1750) que suma su espacio, musicalización y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/tango-en-calle",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-25",
+      "hora": "18:30",
+      "nombre": "Mujeres que dejan huella",
+      "lugar": "Teatro Municipal La Comedia",
+      "direccion": "Mitre 958, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $7.000 y $25.000. Género: Danza española Destinatarios: ATP Duración: 90 min. Mujeres que aman y desafían aquello que les fue impuesto, mujeres que sostienen vínculos,…",
+      "evento_url": "https://teatrolacomedia.gob.ar/espectaculo/mujeres-que-dejan-huella/",
+      "precio": null,
+      "origen": "Teatro Municipal La Comedia"
     },
     {
       "fecha": "2026-10-25",
@@ -1290,6 +1895,17 @@
     },
     {
       "fecha": "2026-10-27",
+      "hora": "09:00",
+      "nombre": "Visitas Guiadas Biblioteca Estrada",
+      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
+      "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-27",
       "hora": "14:00",
       "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
       "lugar": "Museo de la Ciudad Wladimir Mikielievich",
@@ -1351,6 +1967,28 @@
       "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
       "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
       "evento_url": "https://www.rosario.gob.ar/inicio/geolocalizados-un-puente-entre-la-imagen-y-la-palabra",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-28",
+      "hora": "13:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-28",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1377,6 +2015,28 @@
       "origen": "Municipalidad de Rosario"
     },
     {
+      "fecha": "2026-10-28",
+      "hora": "16:30",
+      "nombre": "Taller de Técnicas de Danza y Composición Instantánea",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Taller anual dictado por la docente Cecilia Morini . Dos encuentros por mes en los que se trabajan estilos de las danza…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-28",
+      "hora": "19:00",
+      "nombre": "Talleres anuales de Tango Danza",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Los miércoles por la tarde se dictan las clases de tango danza a cargo del Prof. Guillermo Ruíz. El taller nivel inicial…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
       "fecha": "2026-10-29",
       "hora": "08:00",
       "nombre": "Exposición La Noche de Los Lápices. Ayer y hoy",
@@ -1439,6 +2099,28 @@
       "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
       "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
       "evento_url": "https://www.rosario.gob.ar/inicio/geolocalizados-un-puente-entre-la-imagen-y-la-palabra",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-29",
+      "hora": "13:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-29",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1455,12 +2137,56 @@
     },
     {
       "fecha": "2026-10-29",
+      "hora": "14:00",
+      "nombre": "Visitas Guiadas Biblioteca Estrada",
+      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
+      "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-29",
       "hora": "16:00",
       "nombre": "Ciclo de Teatro +65: Babilonia",
       "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
       "direccion": "URIBURU PTE. JOSE EVARIST 637, Rosario, Santa Fe",
       "descripcion": "En el marco del Ciclo de Teatro +65 se presenta \"Babilonia\" del grupo Bohemios, una adaptación de la obra de Armando Discépolo.",
       "evento_url": "https://www.rosario.gob.ar/inicio/ciclo-de-teatro-65-babilonia",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-29",
+      "hora": "16:00",
+      "nombre": "Proyección de Un cabo suelto en Cine Lumière",
+      "lugar": "Centro Cultural Cine Lumière",
+      "direccion": "VELEZ SARSFIELD DALMACIO 1027, Rosario, Santa Fe",
+      "descripcion": "Matiné + 65",
+      "evento_url": "https://www.rosario.gob.ar/inicio/proyeccion-de-un-cabo-suelto-en-cine-lumiere",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-29",
+      "hora": "19:30",
+      "nombre": "Piedra y camino. Cantata a la Luna en el CAM",
+      "lugar": "Complejo Astronómico Municipal",
+      "direccion": "DIARIO LA CAPITAL 1602, Rosario, Santa Fe",
+      "descripcion": "El 29 de octubre, a partir de las 19:30, el programa \"Piedra Camino\" , de Unicanal , plataforma de contenidos de la…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/piedra-y-camino.-cantata-la-luna-en-el-cam",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-29",
+      "hora": "20:00",
+      "nombre": "Un Maldito Policía en Cine Lumière",
+      "lugar": "Centro Cultural Cine Lumière",
+      "direccion": "VELEZ SARSFIELD DALMACIO 1027, Rosario, Santa Fe",
+      "descripcion": "Dura y polémica película sobre la corrupción policial. Un policía (Harvey Keitel) agobiado por las enormes deudas contraídas en el juego y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/un-maldito-policia-en-cine-lumiere",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1527,6 +2253,28 @@
       "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
       "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
       "evento_url": "https://www.rosario.gob.ar/inicio/geolocalizados-un-puente-entre-la-imagen-y-la-palabra",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-30",
+      "hora": "13:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-30",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1560,6 +2308,17 @@
       "direccion": "ROCA PTE. JULIO ARGENTINO 731, Rosario, Santa Fe",
       "descripcion": "El viernes 11 de septiembre, a partir de las 15 h, en Casa Imaginada , sala de la Biblioteca Argentina se realiza…",
       "evento_url": "https://www.rosario.gob.ar/inicio/bebes-en-bibliotecas",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-30",
+      "hora": "17:00",
+      "nombre": "Tertulias Tangueras",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "En agosto se reanudan las Tertulias Tangueras con la conducción de Gerardo Quilici . Los encuentros para conversar y compartir opiniones y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/tertulias-tangueras-1",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1608,6 +2367,28 @@
       "origen": "Municipalidad de Rosario"
     },
     {
+      "fecha": "2026-10-30",
+      "hora": "20:00",
+      "nombre": "Terror en VHS en Cine Lumière",
+      "lugar": "Centro Cultural Cine Lumière",
+      "direccion": "VELEZ SARSFIELD DALMACIO 1027, Rosario, Santa Fe",
+      "descripcion": "En Cine Lumière, el último viernes, presentamos 3 películas analógicas y no canónicas de terror en VHS. El público en sala vota…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/terror-en-vhs-en-cine-lumiere-8",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-30",
+      "hora": "21:00",
+      "nombre": "Pupina Plomer",
+      "lugar": "Plataforma Lavardén",
+      "direccion": "Mendoza 1085, Rosario, Santa Fe",
+      "descripcion": "presenta «Especial Brujas»",
+      "evento_url": "https://plataformalavarden.gob.ar/actividades/pupina-plomer/",
+      "precio": null,
+      "origen": "Plataforma Lavardén"
+    },
+    {
       "fecha": "2026-10-31",
       "hora": "08:00",
       "nombre": "Exposición La Noche de Los Lápices. Ayer y hoy",
@@ -1675,6 +2456,28 @@
     },
     {
       "fecha": "2026-10-31",
+      "hora": "13:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-31",
       "hora": "16:00",
       "nombre": "Muestra: Efervescencia cromática. Anomalía de un universo en expansión",
       "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
@@ -1716,6 +2519,17 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/fueye-solo-concierto-acustico-de-bandoneon",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "21:00",
+      "nombre": "Víctor Heredia: Desde Paso del Rey",
+      "lugar": "Teatro Municipal La Comedia",
+      "direccion": "Mitre 958, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $7.000 y $60.000. Género: Folclore Destinatarios: ATP Duración: 120 min. Víctor Heredia presenta Desde Paso del Rey , un show en el que repasa su…",
+      "evento_url": "https://teatrolacomedia.gob.ar/espectaculo/victor-heredia-presenta-desde-paso-del-rey/",
+      "precio": null,
+      "origen": "Teatro Municipal La Comedia"
     },
     {
       "fecha": "2026-11-01",
@@ -1774,6 +2588,39 @@
     },
     {
       "fecha": "2026-11-01",
+      "hora": "10:00",
+      "nombre": "Narcisa Hirsch, un viaje incógnito",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-01",
+      "hora": "10:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-01",
+      "hora": "10:00",
+      "nombre": "Tango en Calle",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Tango en Calle es una propuesta del Centro Cultural La Casa del Tango (Arturo Illia 1750) que suma su espacio, musicalización y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/tango-en-calle",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-01",
       "hora": "16:00",
       "nombre": "Muestra: Efervescencia cromática. Anomalía de un universo en expansión",
       "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
@@ -1829,6 +2676,17 @@
     },
     {
       "fecha": "2026-11-03",
+      "hora": "09:00",
+      "nombre": "Visitas Guiadas Biblioteca Estrada",
+      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
+      "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-03",
       "hora": "14:00",
       "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
       "lugar": "Museo de la Ciudad Wladimir Mikielievich",
@@ -1857,6 +2715,17 @@
       "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
       "descripcion": "Itinerancia de la muestra surgida de la IV Convocatoria de Arte Correo dirigida a escuelas secundarias organizada con el colectivo Mujeraje y…",
       "evento_url": "https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-04",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1894,6 +2763,28 @@
       "origen": "Municipalidad de Rosario"
     },
     {
+      "fecha": "2026-11-04",
+      "hora": "16:30",
+      "nombre": "Taller de Técnicas de Danza y Composición Instantánea",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Taller anual dictado por la docente Cecilia Morini . Dos encuentros por mes en los que se trabajan estilos de las danza…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-04",
+      "hora": "19:00",
+      "nombre": "Talleres anuales de Tango Danza",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Los miércoles por la tarde se dictan las clases de tango danza a cargo del Prof. Guillermo Ruíz. El taller nivel inicial…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
       "fecha": "2026-11-05",
       "hora": "08:00",
       "nombre": "Exposición La Noche de Los Lápices. Ayer y hoy",
@@ -1912,6 +2803,17 @@
       "direccion": "LETT FRANCISCO N 4253, Rosario, Santa Fe",
       "descripcion": "La Casa de Cultura Barrio Alvear se abre para jugar, imaginar, compartir cuentos, armar rompecabezas y construir con bloques. Todos los jueves…",
       "evento_url": "https://www.rosario.gob.ar/inicio/casa-abierta-en-casa-de-cultura-barrio-alvear",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-05",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1928,6 +2830,17 @@
     },
     {
       "fecha": "2026-11-05",
+      "hora": "14:00",
+      "nombre": "Visitas Guiadas Biblioteca Estrada",
+      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
+      "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-05",
       "hora": "16:00",
       "nombre": "Muestra: Efervescencia cromática. Anomalía de un universo en expansión",
       "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
@@ -1936,6 +2849,17 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/muestra-efervescencia-cromatica.-anomalia-de-un-universo-en-expansion",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-05",
+      "hora": "20:00",
+      "nombre": "Festival Celta Rosario",
+      "lugar": "Centro Cultural Parque de España",
+      "direccion": "Sarmiento y el río, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $20.000 y $60.000. Rosario vuelve a celebrar la música y la cultura de tradición celta con una nueva edición del Festival Celta Rosario. Un encuentro…",
+      "evento_url": "https://ccpe.org.ar/web/actividades/festival-celta-rosario/",
+      "precio": null,
+      "origen": "Centro Cultural Parque de España"
     },
     {
       "fecha": "2026-11-06",
@@ -1956,6 +2880,17 @@
       "direccion": "LETT FRANCISCO N 4253, Rosario, Santa Fe",
       "descripcion": "La Casa de Cultura Barrio Alvear se abre para jugar, imaginar, compartir cuentos, armar rompecabezas y construir con bloques. Todos los jueves…",
       "evento_url": "https://www.rosario.gob.ar/inicio/casa-abierta-en-casa-de-cultura-barrio-alvear",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-06",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -2004,6 +2939,28 @@
       "origen": "Municipalidad de Rosario"
     },
     {
+      "fecha": "2026-11-06",
+      "hora": "17:00",
+      "nombre": "Tertulias Tangueras",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "En agosto se reanudan las Tertulias Tangueras con la conducción de Gerardo Quilici . Los encuentros para conversar y compartir opiniones y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/tertulias-tangueras-1",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-06",
+      "hora": "21:00",
+      "nombre": "Julieta Laso",
+      "lugar": "Plataforma Lavardén",
+      "direccion": "Mendoza 1085, Rosario, Santa Fe",
+      "descripcion": "presenta «Fabriquera»",
+      "evento_url": "https://plataformalavarden.gob.ar/actividades/julieta-laso/",
+      "precio": null,
+      "origen": "Plataforma Lavardén"
+    },
+    {
       "fecha": "2026-11-07",
       "hora": "10:00",
       "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
@@ -2011,6 +2968,17 @@
       "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
       "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
       "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-07",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -2049,6 +3017,28 @@
     },
     {
       "fecha": "2026-11-08",
+      "hora": "10:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-08",
+      "hora": "10:00",
+      "nombre": "Tango en Calle",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Tango en Calle es una propuesta del Centro Cultural La Casa del Tango (Arturo Illia 1750) que suma su espacio, musicalización y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/tango-en-calle",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-08",
       "hora": "16:00",
       "nombre": "Muestra: Efervescencia cromática. Anomalía de un universo en expansión",
       "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
@@ -2057,6 +3047,17 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/muestra-efervescencia-cromatica.-anomalia-de-un-universo-en-expansion",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-08",
+      "hora": "19:00",
+      "nombre": "Familia, sustantivo femenino",
+      "lugar": "Teatro Municipal La Comedia",
+      "direccion": "Mitre 958, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $7.000 y $18.000. Disciplina: Teatro musical Destinatarios: ATP Duración: 60 min. Llega el 31 de diciembre y Mónica está por recibir muy ansiosamente en su…",
+      "evento_url": "https://teatrolacomedia.gob.ar/espectaculo/familia-sustantivo-femenino/",
+      "precio": null,
+      "origen": "Teatro Municipal La Comedia"
     },
     {
       "fecha": "2026-11-09",
@@ -2077,6 +3078,17 @@
       "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
       "descripcion": "En marzo comienza el taller anual de tango para principiantes con la docente Alejandra Viveka Cáceres . Las personas interesadas en realizar…",
       "evento_url": "https://www.rosario.gob.ar/inicio/mis-primeros-pasos",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-10",
+      "hora": "09:00",
+      "nombre": "Visitas Guiadas Biblioteca Estrada",
+      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
+      "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
