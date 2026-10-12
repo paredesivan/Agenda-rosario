@@ -1,11 +1,11 @@
 
 let events = [];
-let activeFilter = "todos";
+let activeFilters = [];
 const categories = [
   ["todos", "Todo"], ["teatro", "Teatro"], ["musica", "Música"],
   ["cine", "Cine"], ["museos", "Museos y muestras"], ["ferias", "Ferias"],
   ["libros", "Libros y charlas"], ["danza", "Danza"],
-  ["infancias", "Infancias"], ["otros", "Otros"]
+  ["infancias", "Infancias"], ["otros", "Otros"], ["gratis", "Gratis"]
 ];
 const normalize = value => String(value || "").normalize("NFD")
   .replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -61,7 +61,11 @@ function todayKey() {
 }
 
 function matchesFilter(item) {
-  return activeFilter === "todos" || eventCategories(item).includes(activeFilter);
+  if (!activeFilters.length) return true;
+  const gratis = activeFilters.includes("gratis");
+  const categoriesSelected = activeFilters.filter(filter => filter !== "gratis");
+  const matchesCategory = !categoriesSelected.length || categoriesSelected.some(filter => eventCategories(item).includes(filter));
+  return matchesCategory && (!gratis || estadoPrecio(item).gratis);
 }
 
 function futureEvents() {
@@ -122,17 +126,29 @@ function renderSummary() {
     for (const [id, label] of categories) {
       const button = document.createElement("button");
       button.type = "button";
+      button.setAttribute("role", id === "todos" ? "button" : "checkbox");
       button.dataset.filter = id;
-      button.onclick = () => { activeFilter = id; render(); };
+      button.onclick = () => {
+        if (id === "todos") {
+          activeFilters = [];
+        } else if (activeFilters.includes(id)) {
+          activeFilters = activeFilters.filter(value => value !== id);
+        } else {
+          activeFilters = [...activeFilters, id];
+        }
+        render();
+      };
       filters.append(button);
     }
   }
   for (const button of filters.children) {
     const id = button.dataset.filter;
     const label = categories.find(([value]) => value === id)[1];
-    const count = id === "todos" ? future.length : future.filter(item => eventCategories(item).includes(id)).length;
+    const count = id === "todos" ? future.length : future.filter(item => id === "gratis" ? estadoPrecio(item).gratis : eventCategories(item).includes(id)).length;
     button.textContent = `${label} · ${count}`;
-    button.setAttribute("aria-pressed", String(activeFilter === id));
+    const selected = id === "todos" ? activeFilters.length === 0 : activeFilters.includes(id);
+    button.setAttribute("aria-checked", String(selected));
+    button.setAttribute("aria-pressed", String(selected));
   }
 }
 
@@ -258,28 +274,36 @@ function addLink(parent, label, url, className = "") {
   parent.append(link);
 }
 
+function precioDesdeTexto(texto) {
+  const text = normalize(texto);
+  if (/\b(gratis|gratuita|gratuito|sin cargo|entrada libre|acceso libre)\b/.test(text)) {
+    return {gratis: true, etiqueta: "Gratis"};
+  }
+  const matches = [...String(texto || "").matchAll(/(?:\$|ars\s*)\s*([\d.]+(?:,[\d]{1,2})?)/gi)]
+    .map(match => Number(match[1].replace(/\./g, "").replace(",", ".")))
+    .filter(value => Number.isFinite(value) && value > 0 && value < 50000000);
+  if (!matches.length) return null;
+  const amount = Math.min(...matches);
+  const formatted = new Intl.NumberFormat("es-AR", {style: "currency", currency: "ARS", maximumFractionDigits: 2}).format(amount);
+  return {gratis: false, etiqueta: matches.length > 1 || /\bdesde\b/i.test(texto) ? `Desde ${formatted}` : formatted};
+}
+
+function estadoPrecio(item) {
+  if (item.precio === 0) return {gratis: true, etiqueta: "Gratis"};
+  if (item.precio_etiqueta && /\b(gratis|gratuita|gratuito|sin cargo|libre)\b/i.test(item.precio_etiqueta)) {
+    return {gratis: true, etiqueta: "Gratis"};
+  }
+  if (typeof item.precio === "number" && Number.isFinite(item.precio) && item.precio > 0) {
+    return {gratis: false, etiqueta: new Intl.NumberFormat("es-AR", {style: "currency", currency: "ARS", maximumFractionDigits: 2}).format(item.precio)};
+  }
+  const desdeDescripcion = precioDesdeTexto(item.descripcion);
+  if (desdeDescripcion) return desdeDescripcion;
+  if (item.precio_etiqueta) return {gratis: false, etiqueta: item.precio_etiqueta};
+  return {gratis: false, etiqueta: item.entrada_paga === true || item.entradas_url ? "Pago" : "Precio a confirmar"};
+}
+
 function etiquetaPrecio(item) {
-  if (item.precio_etiqueta) {
-    return item.precio_etiqueta;
-  }
-
-  if (item.precio === 0) {
-    return "Gratis";
-  }
-
-  if (
-    typeof item.precio === "number" &&
-    Number.isFinite(item.precio) &&
-    item.precio > 0
-  ) {
-    return new Intl.NumberFormat("es-AR", {
-      style: "currency",
-      currency: "ARS",
-      maximumFractionDigits: 2
-    }).format(item.precio);
-  }
-
-  return item.entrada_paga === true || item.entradas_url ? "Pago" : "Precio a confirmar";
+  return estadoPrecio(item).etiqueta;
 }
 
 function renderEvent(item) {
@@ -349,11 +373,11 @@ function render() {
     .filter(e => e.fecha === selectedDate && matchesFilter(e))
     .sort((a, b) => a.hora.localeCompare(b.hora));
 
-  $("day-count").textContent = `${list.length} ${list.length === 1 ? "actividad" : "actividades"}${activeFilter === "todos" ? "" : " con este filtro"}`;
+  $("day-count").textContent = `${list.length} ${list.length === 1 ? "actividad" : "actividades"}${activeFilters.length ? " con estos filtros" : ""}`;
 
   if (!list.length) {
     $("events").textContent =
-      activeFilter === "todos" ? "Todavía no hay actividades cargadas para esta fecha." : "No hay actividades cargadas desde hoy para esta categoría. Elegí otra categoría.";
+      activeFilters.length === 0 ? "Todavía no hay actividades cargadas para esta fecha." : "No hay actividades que coincidan con todos los filtros elegidos. Probá quitar uno.";
   }
 
   list.forEach(renderEvent);
