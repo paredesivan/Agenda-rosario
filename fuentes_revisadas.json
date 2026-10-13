@@ -1,8 +1,8 @@
 {
-  "fecha_revision": "2026-10-13 17:16",
+  "fecha_revision": "2026-10-13 18:09",
   "salas_independientes": 13,
   "medios": 3,
-  "funciones_agregadas": 6,
+  "funciones_agregadas": 1,
   "fuentes": {
     "Feria Internacional del Libro de Rosario": "revisada: 6 jornadas; fuente oficial",
     "Microteatro Rosario": "revisada: 53 funciones en 12 obras; 0 fichas pendientes",
@@ -33,8 +33,8 @@
     "Museo de Bellas Artes Juan B. Castagnino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Arte Contemporáneo de Rosario (MACRO)": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de la Memoria": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de Arte Decorativo Firma y Odilo Estévez": "web pendiente de consulta: 0 actividades",
-    "Museo de la Ciudad": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
+    "Museo de Arte Decorativo Firma y Odilo Estévez": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
+    "Museo de la Ciudad": "web pendiente de consulta: 0 actividades",
     "Museo del Deporte Santafesino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Histórico Provincial Julio Marc": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo": "web pendiente de consulta: 0 actividades",
@@ -54,7 +54,7 @@
     "Rosario3": "revisada: 1 notas, 10 funciones, 0 errores",
     "La Capital": "revisada: 0 notas, 0 funciones, 0 errores",
     "El Ciudadano": "revisada: 7 notas, 1 funciones, 0 errores",
-    "Rosario en Cartel": "revisada: 21 funciones verificadas; 1 fichas pendientes"
+    "Rosario en Cartel": "no accesible: ConnectionError"
   },
   "museos": [
     {
@@ -94,7 +94,7 @@
     {
       "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
       "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-estevez",
-      "estado": "web pendiente de consulta",
+      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
       "actividades": 0,
       "webs": [
         "https://www.museoestevez.gob.ar"
@@ -103,7 +103,7 @@
     {
       "nombre": "Museo de la Ciudad",
       "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-la-ciudad",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
+      "estado": "web pendiente de consulta",
       "actividades": 0,
       "webs": [
         "https://www.instagram.com/museociudad/"
