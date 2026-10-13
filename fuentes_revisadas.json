@@ -1,5 +1,5 @@
 {
-  "fecha_revision": "2026-10-13 13:54",
+  "fecha_revision": "2026-10-13 16:28",
   "salas_independientes": 13,
   "medios": 3,
   "funciones_agregadas": 6,
@@ -34,7 +34,7 @@
     "Museo de Arte Contemporáneo de Rosario (MACRO)": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de la Memoria": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Arte Decorativo Firma y Odilo Estévez": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de la Ciudad": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
+    "Museo de la Ciudad": "web pendiente de consulta: 0 actividades",
     "Museo del Deporte Santafesino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Histórico Provincial Julio Marc": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo": "web pendiente de consulta: 0 actividades",
@@ -53,7 +53,7 @@
     "Directorio de museos": "21 espacios descubiertos; 0 páginas pendientes",
     "Rosario3": "revisada: 1 notas, 10 funciones, 0 errores",
     "La Capital": "revisada: 0 notas, 0 funciones, 0 errores",
-    "El Ciudadano": "revisada: 6 notas, 1 funciones, 0 errores",
+    "El Ciudadano": "revisada: 7 notas, 1 funciones, 0 errores",
     "Rosario en Cartel": "revisada: 21 funciones verificadas; 0 fichas pendientes"
   },
   "museos": [
@@ -103,7 +103,7 @@
     {
       "nombre": "Museo de la Ciudad",
       "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-la-ciudad",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
+      "estado": "web pendiente de consulta",
       "actividades": 0,
       "webs": [
         "https://www.instagram.com/museociudad/"
