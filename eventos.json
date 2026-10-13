@@ -1,29 +1,7 @@
 {
-  "actualizado": "2026-10-13 08:50",
+  "actualizado": "2026-10-13 10:15",
   "estado": "parcial",
   "eventos": [
-    {
-      "fecha": "2026-10-13",
-      "hora": "08:30",
-      "nombre": "Bienestar y actividad física en Puente Gallego",
-      "lugar": "Centro de Salud \"San Vicente de Paul\"",
-      "direccion": "PUNTA DEL INDIO 7760, Rosario, Santa Fe",
-      "descripcion": "Desde el Distrito Sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-puente-gallego",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-13",
-      "hora": "09:00",
-      "nombre": "Visitas Guiadas Biblioteca Estrada",
-      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
-      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
-      "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
     {
       "fecha": "2026-10-13",
       "hora": "10:00",
@@ -34,6 +12,20 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/circo-de-artes-visuales-en-el-teatro-el-circulo",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-13",
+      "hora": "13:00",
+      "nombre": "Feria Internacional del Libro de Rosario",
+      "lugar": "Centro Cultural Roberto Fontanarrosa",
+      "direccion": "San Martín 1080, Rosario, Santa Fe",
+      "descripcion": "Feria con stands de librerías y editoriales, presentaciones, charlas y actividades para todas las edades. Entrada gratuita con QR. Horario oficial: 13:00 a 21:00.",
+      "evento_url": "https://feriadellibrorosario.gob.ar/",
+      "precio": 0,
+      "origen": "Feria Internacional del Libro de Rosario",
+      "categorias": [
+        "ferias"
+      ]
     },
     {
       "fecha": "2026-10-13",
@@ -100,6 +92,20 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/episodio-ii-19762026-que-digan-donde-estan",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-14",
+      "hora": "13:00",
+      "nombre": "Feria Internacional del Libro de Rosario",
+      "lugar": "Centro Cultural Roberto Fontanarrosa",
+      "direccion": "San Martín 1080, Rosario, Santa Fe",
+      "descripcion": "Feria con stands de librerías y editoriales, presentaciones, charlas y actividades para todas las edades. Entrada gratuita con QR. Horario oficial: 13:00 a 21:00.",
+      "evento_url": "https://feriadellibrorosario.gob.ar/",
+      "precio": 0,
+      "origen": "Feria Internacional del Libro de Rosario",
+      "categorias": [
+        "ferias"
+      ]
     },
     {
       "fecha": "2026-10-14",
@@ -200,6 +206,17 @@
       "evento_url": "https://bibliotecavigil.org.ar/inicio/events/observaciones-astronomicas/?occurrence=2026-10-14",
       "precio": 0,
       "origen": "Biblioteca Vigil"
+    },
+    {
+      "fecha": "2026-10-14",
+      "hora": "20:30",
+      "nombre": "Rosario Sonido de Cuerdas",
+      "lugar": "Centro Cultural Parque de España",
+      "direccion": "Sarmiento y el río, Rosario, Santa Fe",
+      "descripcion": "El miércoles 14 de octubre, a las 20:30 hs, el Túnel 4 del Parque de España será escenario de un concierto especial…",
+      "evento_url": "https://ccpe.org.ar/web/actividades/rosario-sonido-de-cuerdas/",
+      "precio": 0,
+      "origen": "Centro Cultural Parque de España"
     },
     {
       "fecha": "2026-10-14",
@@ -317,6 +334,20 @@
     {
       "fecha": "2026-10-15",
       "hora": "13:00",
+      "nombre": "Feria Internacional del Libro de Rosario",
+      "lugar": "Centro Cultural Roberto Fontanarrosa",
+      "direccion": "San Martín 1080, Rosario, Santa Fe",
+      "descripcion": "Feria con stands de librerías y editoriales, presentaciones, charlas y actividades para todas las edades. Entrada gratuita con QR. Horario oficial: 13:00 a 22:00.",
+      "evento_url": "https://feriadellibrorosario.gob.ar/",
+      "precio": 0,
+      "origen": "Feria Internacional del Libro de Rosario",
+      "categorias": [
+        "ferias"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "13:00",
       "nombre": "GEOLOCALIZADOS: Un puente entre la imagen y la palabra",
       "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
       "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
@@ -390,6 +421,21 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/segundo-encuentro-recreativo-para-adultos-mayores",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "18:00",
+      "nombre": "ADOLESCENCIA, SEXO Y MUERTE EN CAMPAMENTO MIASMA",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/adolescencia-sexo-y-muerte-en-campamento-miasma/2026-10-15/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
     },
     {
       "fecha": "2026-10-15",
@@ -494,6 +540,214 @@
     },
     {
       "fecha": "2026-10-15",
+      "hora": "20:45",
+      "nombre": "El juego del amor propio",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "evento_url": "https://www.microteatrorosario.com/productos/eljuegoj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "20:50",
+      "nombre": "Tribulaciones de un gigoló",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "20:55",
+      "nombre": "Prometo volver a engañarte",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "evento_url": "https://www.microteatrorosario.com/productos/prometovolverj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "21:10",
+      "nombre": "El juego del amor propio",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "evento_url": "https://www.microteatrorosario.com/productos/eljuegoj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "21:15",
+      "nombre": "Tribulaciones de un gigoló",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "21:20",
+      "nombre": "Prometo volver a engañarte",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "evento_url": "https://www.microteatrorosario.com/productos/prometovolverj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "21:35",
+      "nombre": "El juego del amor propio",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "evento_url": "https://www.microteatrorosario.com/productos/eljuegoj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "21:40",
+      "nombre": "Tribulaciones de un gigoló",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "21:45",
+      "nombre": "Prometo volver a engañarte",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "evento_url": "https://www.microteatrorosario.com/productos/prometovolverj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "22:10",
+      "nombre": "Julieta & Julieta",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietaj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "22:15",
+      "nombre": "Amore di mafia",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Último trabajo juntos de dos mafiosos particulares. Uno se retira, el otro recién…",
+      "evento_url": "https://www.microteatrorosario.com/productos/amoredimafiaj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "22:20",
+      "nombre": "Madrid, ¡un sueño!",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Emocionante como “Hairspray”, “Fame” y “Flashdance”. Si tenés un sueño, si buscás la…",
+      "evento_url": "https://www.microteatrorosario.com/productos/madridj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "22:25",
+      "nombre": "Nunca es tarde",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Cuando Rick, el detective canchero, se encuentra con Betty, la Femme Fatale, sabía…",
+      "evento_url": "https://www.microteatrorosario.com/productos/nuncaestardej/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
       "hora": "22:30",
       "nombre": "THE TRUMAN SHOW VS. MÁS EXTRAÑO QUE LA FICCIÓN",
       "lugar": "El Cairo Cine Público",
@@ -504,6 +758,150 @@
       "origen": "El Cairo Cine Público",
       "categorias": [
         "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "22:40",
+      "nombre": "Julieta & Julieta",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietaj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "22:45",
+      "nombre": "Amore di mafia",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Último trabajo juntos de dos mafiosos particulares. Uno se retira, el otro recién…",
+      "evento_url": "https://www.microteatrorosario.com/productos/amoredimafiaj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "22:50",
+      "nombre": "Madrid, ¡un sueño!",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Emocionante como “Hairspray”, “Fame” y “Flashdance”. Si tenés un sueño, si buscás la…",
+      "evento_url": "https://www.microteatrorosario.com/productos/madridj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "22:55",
+      "nombre": "Nunca es tarde",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Cuando Rick, el detective canchero, se encuentra con Betty, la Femme Fatale, sabía…",
+      "evento_url": "https://www.microteatrorosario.com/productos/nuncaestardej/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "23:10",
+      "nombre": "Julieta & Julieta",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietaj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "23:15",
+      "nombre": "Amore di mafia",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Último trabajo juntos de dos mafiosos particulares. Uno se retira, el otro recién…",
+      "evento_url": "https://www.microteatrorosario.com/productos/amoredimafiaj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "23:20",
+      "nombre": "Madrid, ¡un sueño!",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Emocionante como “Hairspray”, “Fame” y “Flashdance”. Si tenés un sueño, si buscás la…",
+      "evento_url": "https://www.microteatrorosario.com/productos/madridj/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "23:25",
+      "nombre": "Nunca es tarde",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Cuando Rick, el detective canchero, se encuentra con Betty, la Femme Fatale, sabía…",
+      "evento_url": "https://www.microteatrorosario.com/productos/nuncaestardej/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "00:15",
+      "nombre": "Julieta & Julieta",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
       ]
     },
     {
@@ -571,6 +969,20 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/episodio-ii-19762026-que-digan-donde-estan",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "13:00",
+      "nombre": "Feria Internacional del Libro de Rosario",
+      "lugar": "Centro Cultural Roberto Fontanarrosa",
+      "direccion": "San Martín 1080, Rosario, Santa Fe",
+      "descripcion": "Feria con stands de librerías y editoriales, presentaciones, charlas y actividades para todas las edades. Entrada gratuita con QR. Horario oficial: 13:00 a 22:00.",
+      "evento_url": "https://feriadellibrorosario.gob.ar/",
+      "precio": 0,
+      "origen": "Feria Internacional del Libro de Rosario",
+      "categorias": [
+        "ferias"
+      ]
     },
     {
       "fecha": "2026-10-16",
@@ -698,6 +1110,21 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/funcion-del-cit-el-enfermo-imaginario-version-litoralena",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "18:00",
+      "nombre": "HANGAR ROJO",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/hangar-rojo/2026-10-16/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
     },
     {
       "fecha": "2026-10-16",
@@ -831,6 +1258,22 @@
     },
     {
       "fecha": "2026-10-16",
+      "hora": "20:55",
+      "nombre": "El juego del amor propio",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
       "hora": "21:00",
       "nombre": "CIRKUS CIRKOR",
       "lugar": "Teatro Broadway",
@@ -931,6 +1374,134 @@
     },
     {
       "fecha": "2026-10-16",
+      "hora": "21:00",
+      "nombre": "Una escueta historia de amor",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Tiempo después de separarse, Diego y Sara se cruzan en el bar donde…",
+      "evento_url": "https://www.microteatrorosario.com/productos/una-escueta-historia-de-amor-1qv0b/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:05",
+      "nombre": "Prometo volver a engañarte",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:20",
+      "nombre": "El juego del amor propio",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:25",
+      "nombre": "Una escueta historia de amor",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Tiempo después de separarse, Diego y Sara se cruzan en el bar donde…",
+      "evento_url": "https://www.microteatrorosario.com/productos/una-escueta-historia-de-amor-1qv0b/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:30",
+      "nombre": "Prometo volver a engañarte",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:45",
+      "nombre": "El juego del amor propio",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:50",
+      "nombre": "Una escueta historia de amor",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Tiempo después de separarse, Diego y Sara se cruzan en el bar donde…",
+      "evento_url": "https://www.microteatrorosario.com/productos/una-escueta-historia-de-amor-1qv0b/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:55",
+      "nombre": "Prometo volver a engañarte",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
       "hora": "22:00",
       "nombre": "DÍA 1 | MOSTRA. Cortos rosarinos fuera de la norma (63´, R-13)",
       "lugar": "Centro Cultural Cine Lumière",
@@ -939,6 +1510,133 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/dia-1-mostra.-cortos-rosarinos-fuera-de-la-norma-63-r-13",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "22:10",
+      "nombre": "El juego del amor propio",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "22:15",
+      "nombre": "Una escueta historia de amor",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Tiempo después de separarse, Diego y Sara se cruzan en el bar donde…",
+      "evento_url": "https://www.microteatrorosario.com/productos/una-escueta-historia-de-amor-1qv0b/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "22:20",
+      "nombre": "Prometo volver a engañarte",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "22:30",
+      "nombre": "ROMEO Y OFELIA",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/romeo-y-ofelia/2026-10-16/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "22:45",
+      "nombre": "Julieta & Julieta",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "23:15",
+      "nombre": "Julieta & Julieta",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "23:45",
+      "nombre": "Julieta & Julieta",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "00:15",
+      "nombre": "Julieta & Julieta",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
     },
     {
       "fecha": "2026-10-17",
@@ -961,6 +1659,20 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/circo-de-artes-visuales-en-el-teatro-el-circulo",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "10:00",
+      "nombre": "Feria Internacional del Libro de Rosario",
+      "lugar": "Centro Cultural Roberto Fontanarrosa",
+      "direccion": "San Martín 1080, Rosario, Santa Fe",
+      "descripcion": "Feria con stands de librerías y editoriales, presentaciones, charlas y actividades para todas las edades. Entrada gratuita con QR. Horario oficial: 10:00 a 00:00.",
+      "evento_url": "https://feriadellibrorosario.gob.ar/",
+      "precio": 0,
+      "origen": "Feria Internacional del Libro de Rosario",
+      "categorias": [
+        "ferias"
+      ]
     },
     {
       "fecha": "2026-10-17",
@@ -1161,6 +1873,21 @@
     },
     {
       "fecha": "2026-10-17",
+      "hora": "18:00",
+      "nombre": "ROMEO Y OFELIA",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/romeo-y-ofelia/2026-10-17/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
       "hora": "20:00",
       "nombre": "Circo Rodas",
       "lugar": "Circo Rodas",
@@ -1210,6 +1937,22 @@
       "origen": "El Cairo Cine Público",
       "categorias": [
         "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "20:55",
+      "nombre": "El juego del amor propio",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
       ]
     },
     {
@@ -1322,6 +2065,182 @@
     },
     {
       "fecha": "2026-10-17",
+      "hora": "21:00",
+      "nombre": "Tribulaciones de un gigoló",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesvys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:05",
+      "nombre": "Prometo volver a engañarte",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:20",
+      "nombre": "El juego del amor propio",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:25",
+      "nombre": "Tribulaciones de un gigoló",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesvys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:30",
+      "nombre": "Prometo volver a engañarte",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:45",
+      "nombre": "El juego del amor propio",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:50",
+      "nombre": "Tribulaciones de un gigoló",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesvys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "21:55",
+      "nombre": "Prometo volver a engañarte",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "22:10",
+      "nombre": "El juego del amor propio",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "22:15",
+      "nombre": "Tribulaciones de un gigoló",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesvys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "22:20",
+      "nombre": "Prometo volver a engañarte",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
       "hora": "22:30",
       "nombre": "RECORDÁ ESTO",
       "lugar": "El Cairo Cine Público",
@@ -1333,6 +2252,54 @@
       "precio_etiqueta": "$2.000 – $4.000",
       "categorias": [
         "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "22:45",
+      "nombre": "Julieta & Julieta",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "23:15",
+      "nombre": "Julieta & Julieta",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "23:45",
+      "nombre": "Julieta & Julieta",
+      "lugar": "Microteatro Rosario",
+      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
+      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
+      "precio": null,
+      "origen": "Microteatro Rosario",
+      "precio_etiqueta": "Precio a confirmar",
+      "entrada_paga": true,
+      "categorias": [
+        "teatro"
       ]
     },
     {
@@ -1422,6 +2389,20 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/tango-en-calle",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-18",
+      "hora": "13:00",
+      "nombre": "Feria Internacional del Libro de Rosario",
+      "lugar": "Centro Cultural Roberto Fontanarrosa",
+      "direccion": "San Martín 1080, Rosario, Santa Fe",
+      "descripcion": "Feria con stands de librerías y editoriales, presentaciones, charlas y actividades para todas las edades. Entrada gratuita con QR. Horario oficial: 13:00 a 21:00.",
+      "evento_url": "https://feriadellibrorosario.gob.ar/",
+      "precio": 0,
+      "origen": "Feria Internacional del Libro de Rosario",
+      "categorias": [
+        "ferias"
+      ]
     },
     {
       "fecha": "2026-10-18",
@@ -1597,6 +2578,21 @@
       "precio": 15000.0,
       "origen": "Distrito Siete",
       "precio_etiqueta": "Desde $15.000"
+    },
+    {
+      "fecha": "2026-10-18",
+      "hora": "22:30",
+      "nombre": "HANGAR ROJO",
+      "lugar": "El Cairo Cine Público",
+      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/hangar-rojo/2026-10-18/",
+      "precio": null,
+      "origen": "El Cairo Cine Público",
+      "precio_etiqueta": "$2.000 – $4.000",
+      "categorias": [
+        "cine"
+      ]
     },
     {
       "fecha": "2026-10-19",
@@ -4793,7 +5789,7 @@
       "nombre": "Familia, sustantivo femenino",
       "lugar": "Teatro Municipal La Comedia",
       "direccion": "Mitre 958, Rosario, Santa Fe",
-      "descripcion": "Entradas entre $7.000 y $18.000. Disciplina: Teatro musical Destinatarios: ATP Duración: 60 min. Llega el 31 de diciembre y Mónica está por recibir muy ansiosamente en su…",
+      "descripcion": "Entradas entre $7.000 y $22.000. Disciplina: Teatro musical Destinatarios: ATP Duración: 60 min. Llega el 31 de diciembre y Mónica está por recibir muy ansiosamente en su…",
       "evento_url": "https://teatrolacomedia.gob.ar/espectaculo/familia-sustantivo-femenino/",
       "precio": null,
       "origen": "Teatro Municipal La Comedia"
