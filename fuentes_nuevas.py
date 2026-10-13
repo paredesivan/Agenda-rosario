@@ -952,7 +952,7 @@ def leer_feria_libro(hoy, estado):
 
 
 def importe_microteatro(valor, meta=False):
-    """Convierte precios de Tiendanube, ignorando importes en cero."""
+    """Convierte precios de Tiendanube sin interpretar $0 ni el carrito como precio."""
     if not isinstance(valor, str):
         return None
     if meta:
@@ -961,16 +961,15 @@ def importe_microteatro(valor, meta=False):
             return numero if 0 < numero < 50_000_000 else None
         except ValueError:
             return None
-
-    for encontrado in re.finditer(r"\$\s*([\d.]+(?:,[0-9]{1,2})?)", valor):
-        numero = encontrado[1].replace(".", "").replace(",", ".")
-        try:
-            resultado = float(numero)
-        except ValueError:
-            continue
-        if 0 < resultado < 50_000_000:
-            return resultado
-    return None
+    encontrado = re.search(r"\$\s*([\d.]+(?:,[0-9]{1,2})?)", valor)
+    if not encontrado:
+        return None
+    numero = encontrado[1].replace(".", "").replace(",", ".")
+    try:
+        resultado = float(numero)
+        return resultado if 0 < resultado < 50_000_000 else None
+    except ValueError:
+        return None
 
 
 def leer_microteatro(hoy, estado):
