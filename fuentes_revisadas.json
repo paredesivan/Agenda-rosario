@@ -1,8 +1,8 @@
 {
-  "fecha_revision": "2026-10-12 19:18",
+  "fecha_revision": "2026-10-13 00:12",
   "salas_independientes": 13,
   "medios": 3,
-  "funciones_agregadas": 5,
+  "funciones_agregadas": 16,
   "fuentes": {
     "Caras y Caretas": "revisada: sin funciones propias estructuradas",
     "Club Fosse": "revisada: sin funciones propias estructuradas",
@@ -25,7 +25,7 @@
     "El Cairo — CSV": "revisada: 22 funciones; 0 consultas pendientes",
     "Entrada Play": "revisada: 5 funciones; 0 fichas pendientes",
     "CentroTicket": "revisada: 8 funciones; 1 fichas pendientes",
-    "Circo Rodas — Linke-arte": "revisada: 1 funciones habilitadas",
+    "Circo Rodas — Linke-arte": "revisada: 10 funciones habilitadas",
     "Agenda municipal — Espacios": "revisada: 1 funciones; 0 fichas pendientes",
     "Muestra Inmersiva: Estación Rosario 300": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Bellas Artes Juan B. Castagnino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
@@ -52,7 +52,7 @@
     "Rosario3": "revisada: 1 notas, 10 funciones, 0 errores",
     "La Capital": "revisada: 0 notas, 0 funciones, 0 errores",
     "El Ciudadano": "revisada: 5 notas, 1 funciones, 0 errores",
-    "Rosario en Cartel": "revisada: 20 funciones verificadas; 0 fichas pendientes"
+    "Rosario en Cartel": "revisada: 21 funciones verificadas; 0 fichas pendientes"
   },
   "museos": [
     {
@@ -278,7 +278,7 @@
       "tipo": "teatro",
       "prioridad": "alta",
       "estado": "revisada: 0 funciones; 0 consultas pendientes",
-      "actividades": 8
+      "actividades": 7
     },
     {
       "nombre": "Teatro Astengo",
@@ -350,7 +350,7 @@
       "tipo": "centro cultural municipal",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 3
+      "actividades": 2
     },
     {
       "nombre": "Centro Cultural Cine Lumiere",
@@ -422,7 +422,7 @@
       "tipo": "museo municipal",
       "prioridad": "alta",
       "estado": "revisión del directorio y de las webs de museos",
-      "actividades": 26
+      "actividades": 27
     },
     {
       "nombre": "Museo Estevez",
@@ -502,7 +502,7 @@
       "tipo": "circo itinerante",
       "prioridad": "media",
       "estado": "referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles",
-      "actividades": 3
+      "actividades": 10
     },
     {
       "nombre": "La Surfera Beach",
@@ -573,7 +573,7 @@
     {
       "nombre": "Circo Rodas",
       "fuentes": "Linke-arte y Rosario en Cartel",
-      "actividades": 3
+      "actividades": 10
     },
     {
       "nombre": "La Surfera Beach",

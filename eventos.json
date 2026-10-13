@@ -1,135 +1,7 @@
 {
-  "actualizado": "2026-10-12 19:08",
+  "actualizado": "2026-10-13 00:03",
   "estado": "parcial",
   "eventos": [
-    {
-      "fecha": "2026-10-12",
-      "hora": "10:00",
-      "nombre": "Circo de Artes Visuales en el Teatro El Círculo",
-      "lugar": "Teatro El Círculo",
-      "direccion": "LAPRIDA FRANCISCO NARCISO 1201, Rosario, Santa Fe",
-      "descripcion": "Se inaugura la muestra “A mar abierto” del artista plástico, escritor y cineasta JUAN CARLOS CAPURRO. Entrada libre y gratuita La muestra…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/circo-de-artes-visuales-en-el-teatro-el-circulo",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-12",
-      "hora": "12:00",
-      "nombre": "7° Edición de la Fiesta Chamamecera",
-      "lugar": "Centro Municipal de Distrito Sudoeste \"Emilia Bertolé\"",
-      "direccion": "FRANCIA 4435, Rosario, Santa Fe",
-      "descripcion": "El lunes 12 de octubre, a partir de las 12 h, en el Patio Cívico del Centro Municipal de Distrito Sudoeste \"Emilia…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/7deg-edicion-de-la-fiesta-chamamecera",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-12",
-      "hora": "15:00",
-      "nombre": "Circo Rodas",
-      "lugar": "Circo Rodas",
-      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
-      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
-      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
-      "precio": null,
-      "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
-      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
-      "entrada_paga": true,
-      "categorias": [
-        "infancias"
-      ]
-    },
-    {
-      "fecha": "2026-10-12",
-      "hora": "15:00",
-      "nombre": "Muestra de Facultades e Institutos de Diseño: Estudiantes que Diseñan",
-      "lugar": "Centro de Expresiones Contemporáneas (CEC)",
-      "direccion": "PASEO DE LAS ARTES 310, Rosario, Santa Fe",
-      "descripcion": "Estudiantes que Diseñan es un evento que reúne proyectos, procesos y experiencias de distintas instituciones educativas de Rosario para mostrar cómo se…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/muestra-de-facultades-e-institutos-de-diseno-estudiantes-que-disenan",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-12",
-      "hora": "16:00",
-      "nombre": "Último día para vivir la Escultura de los Deseos de Marta Minujín | Museo Castagnino",
-      "lugar": "Museo Municipal de Bellas Artes Juan B. Castagnino",
-      "direccion": "PELLEGRINI CARLOS 2202, Rosario, Santa Fe",
-      "descripcion": "El lunes 12 de octubre, a partir de las 16 h, en la Explanada del Museo Castagnino, se podrá disfrutar del último…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/ultimo-dia-para-vivir-la-escultura-de-los-deseos-de-marta-minujin-museo-castagnino",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-12",
-      "hora": "17:30",
-      "nombre": "Circo Rodas",
-      "lugar": "Circo Rodas",
-      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
-      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
-      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
-      "precio": null,
-      "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
-      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
-      "entrada_paga": true,
-      "categorias": [
-        "infancias"
-      ]
-    },
-    {
-      "fecha": "2026-10-12",
-      "hora": "18:00",
-      "nombre": "Ajedrez: nivel intermedio-avanzados",
-      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-      "direccion": "ROCA PTE. JULIO ARGENTINO 731, Rosario, Santa Fe",
-      "descripcion": "En el marco del Programa Municipal de Ajedrez se brinda el taller de Ajedrez: nivel intermedio-avanzados en la Biblioteca Argentina Dr. Juan…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/ajedrez-nivel-intermedio-avanzados",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-12",
-      "hora": "18:30",
-      "nombre": "Mis primeros pasos",
-      "lugar": "Centro Cultural  La Casa del Tango",
-      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
-      "descripcion": "En marzo comienza el taller anual de tango para principiantes con la docente Alejandra Viveka Cáceres . Las personas interesadas en realizar…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/mis-primeros-pasos",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-12",
-      "hora": "18:30",
-      "nombre": "Xabi Blo + Geral & Los Seres en el Galpón 11",
-      "lugar": "Galpón 11",
-      "direccion": "ESTEVEZ BOERO GUILLERMO 980, Rosario, Santa Fe",
-      "descripcion": "Xabi Blo y la banda Geral & Los Seres tocan en el escenario del Galpón 11.",
-      "evento_url": "https://www.rosario.gob.ar/inicio/xabi-blo-geral-los-seres-en-el-galpon-11",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-12",
-      "hora": "20:00",
-      "nombre": "Circo Rodas",
-      "lugar": "Circo Rodas",
-      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
-      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
-      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
-      "precio": null,
-      "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
-      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
-      "entrada_paga": true,
-      "categorias": [
-        "infancias"
-      ]
-    },
     {
       "fecha": "2026-10-13",
       "hora": "09:00",
@@ -511,6 +383,23 @@
     {
       "fecha": "2026-10-15",
       "hora": "20:00",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
+      ]
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "20:00",
       "nombre": "El odio en Cine Lumière",
       "lugar": "Centro Cultural Cine Lumière",
       "direccion": "VELEZ SARSFIELD DALMACIO 1027, Rosario, Santa Fe",
@@ -751,6 +640,23 @@
     },
     {
       "fecha": "2026-10-16",
+      "hora": "17:30",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
       "hora": "18:00",
       "nombre": "Ciclo de Teatro +65: El Enfermo Imaginario (versión litoraleña)",
       "lugar": "Centro Municipal de Distrito Oeste \"Felipe Moré\"",
@@ -825,6 +731,23 @@
       "evento_url": "https://plataformalavarden.gob.ar/actividades/petit-conversa-grandes-encuentros/",
       "precio": 0,
       "origen": "Plataforma Lavardén"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "20:00",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
+      ]
     },
     {
       "fecha": "2026-10-16",
@@ -1147,6 +1070,23 @@
     },
     {
       "fecha": "2026-10-17",
+      "hora": "15:00",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
       "hora": "16:00",
       "nombre": "Ito",
       "lugar": "La Orilla Infinita",
@@ -1171,6 +1111,23 @@
     },
     {
       "fecha": "2026-10-17",
+      "hora": "17:30",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
       "hora": "18:00",
       "nombre": "DÍA 2 | MOSTRA. Albertina Carri presenta su libro CINE VIVO + Proyección de cortos",
       "lugar": "Centro Cultural Cine Lumière",
@@ -1179,6 +1136,23 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/dia-2-mostra.-albertina-carri-presenta-su-libro-cine-vivo-proyeccion-de-cortos",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "20:00",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
+      ]
     },
     {
       "fecha": "2026-10-17",
@@ -1429,6 +1403,40 @@
     },
     {
       "fecha": "2026-10-18",
+      "hora": "15:00",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
+      ]
+    },
+    {
+      "fecha": "2026-10-18",
+      "hora": "17:30",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
+      ]
+    },
+    {
+      "fecha": "2026-10-18",
       "hora": "18:00",
       "nombre": "DÍA 3 | MOSTRA. Memoria Queer en VHS",
       "lugar": "Centro Cultural Cine Lumière",
@@ -1450,6 +1458,23 @@
       "origen": "El Cairo Cine Público",
       "categorias": [
         "cine"
+      ]
+    },
+    {
+      "fecha": "2026-10-18",
+      "hora": "20:00",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
       ]
     },
     {
@@ -1594,6 +1619,23 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/mis-primeros-pasos",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-19",
+      "hora": "20:00",
+      "nombre": "Circo Rodas",
+      "lugar": "Circo Rodas",
+      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
+      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
+      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "precio": null,
+      "origen": "Circo Rodas — Linke-arte",
+      "precio_etiqueta": "$21.000 – $43.000",
+      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
+      "entrada_paga": true,
+      "categorias": [
+        "infancias"
+      ]
     },
     {
       "fecha": "2026-10-20",
@@ -4863,6 +4905,73 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-12",
+      "hora": "13:00",
+      "nombre": "Casa Abierta en Casa de Cultura Barrio Alvear",
+      "lugar": "Casa de Cultura Barrio Alvear",
+      "direccion": "LETT FRANCISCO N 4253, Rosario, Santa Fe",
+      "descripcion": "La Casa de Cultura Barrio Alvear se abre para jugar, imaginar, compartir cuentos, armar rompecabezas y construir con bloques. Todos los jueves…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/casa-abierta-en-casa-de-cultura-barrio-alvear",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-12",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-12",
+      "hora": "14:00",
+      "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
+      "lugar": "Museo de la Ciudad Wladimir Mikielievich",
+      "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
+      "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-12",
+      "hora": "14:00",
+      "nombre": "Visitas Guiadas Biblioteca Estrada",
+      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
+      "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-12",
+      "hora": "16:00",
+      "nombre": "Muestra: Efervescencia cromática. Anomalía de un universo en expansión",
+      "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
+      "direccion": "URIBURU PTE. JOSE EVARIST 637, Rosario, Santa Fe",
+      "descripcion": "El Área de Cultura y Educación del Distrito Sur abre sus puertas a una experiencia de pop art y lenguaje cartoon …",
+      "evento_url": "https://www.rosario.gob.ar/inicio/muestra-efervescencia-cromatica.-anomalia-de-un-universo-en-expansion",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-12",
+      "hora": "21:00",
+      "nombre": "Diego Torres en Rosario",
+      "lugar": "Metropolitano",
+      "direccion": "Junín 501, Rosario, Santa Fe",
+      "descripcion": "+ Espectáculos Diego Torres en Rosario 12 de noviembre, 21:00 hs IMPORTANTE! Venta sólo a través del sitio oficial de Turbo entrada…",
+      "evento_url": "https://www.metropolitano.ar/espectaculo/diego-torres-2/",
+      "precio": null,
+      "origen": "Metropolitano",
+      "entrada_paga": true
     }
   ]
 }
