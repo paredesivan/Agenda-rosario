@@ -4,3 +4,6 @@
 
 
 .days button:disabled{background:#f7f7f7;color:#757575;cursor:not-allowed;font-weight:400;outline:none}.bar button:disabled{color:#999;cursor:not-allowed}.day-navigation{display:flex;gap:12px;justify-content:space-between;margin:24px 0 8px}.day-navigation button{flex:1;min-height:48px;padding:12px 14px;border-radius:12px;border:1px solid #20263b;background:#20263b;color:#fff;font:600 15px system-ui;cursor:pointer}.day-navigation button:disabled,.calendar-tools button:disabled{background:#eceef2;color:#686d79;border-color:#c9ced7;cursor:not-allowed}.day-heading{scroll-margin-top:18px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.event-info{display:block;color:inherit;text-decoration:none;cursor:pointer;border-radius:10px}.event-info:hover{background:#f8faff}.event-info:focus-visible{outline:3px solid #a52b50;outline-offset:3px}
+

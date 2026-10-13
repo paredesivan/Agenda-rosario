@@ -310,13 +310,23 @@ function renderEvent(item) {
   const card = document.createElement("article");
   card.className = "event";
 
+  // Toda la información del evento abre la misma ficha que antes abría el botón.
+  const infoUrl = item.evento_url || item.entradas_url;
+  const info = document.createElement(infoUrl ? "a" : "div");
+  info.className = "event-info";
+  if (infoUrl) {
+    info.href = infoUrl;
+    info.target = "_blank";
+    info.rel = "noopener noreferrer";
+    info.setAttribute("aria-label", `Ver información de ${item.nombre}`);
+  }
+
   const title = document.createElement("h3");
   title.textContent = item.nombre;
 
   const time = document.createElement("div");
   time.className = "time";
-  time.textContent =
-    `${item.hora} · ${etiquetaPrecio(item)}`;
+  time.textContent = `${item.hora} · ${etiquetaPrecio(item)}`;
 
   const place = document.createElement("p");
   place.textContent = item.lugar;
@@ -324,32 +334,20 @@ function renderEvent(item) {
   const desc = document.createElement("p");
   desc.textContent = item.descripcion;
 
+  info.append(time, title, place, desc);
+
   const actions = document.createElement("div");
   actions.className = "actions";
 
-  // Página del espectáculo.
-  addLink(
-    actions,
-    "↗ Ver información",
-    item.evento_url
-  );
-
-  // Enlace directo a Ticketek si está disponible.
-  addLink(
-    actions,
-    "🎫 Comprar tickets",
-    item.entradas_url
-  );
-
-  // Ubicación en Google Maps.
+  // El mapa ocupa el lugar que tenía “Ver información”.
   const maps =
     `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.direccion)}`;
-
   addLink(actions, "📍 Mapa", maps, "map");
 
-  card.append(time, title, place, desc);
-  card.append(actions);
+  // Enlace directo a Ticketek si está disponible.
+  addLink(actions, "🎫 Comprar tickets", item.entradas_url);
 
+  card.append(info, actions);
   $("events").append(card);
 }
 
@@ -411,5 +409,6 @@ loadEvents().catch(() => {
 setInterval(() => {
   loadEvents().catch(console.error);
 }, 60 * 60 * 1000);
+
 
 
