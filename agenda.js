@@ -1,4 +1,3 @@
-
 let events = [];
 let activeFilters = [];
 const categories = [
@@ -151,7 +150,6 @@ function renderSummary() {
     button.setAttribute("aria-pressed", String(selected));
   }
 }
-
 
 const $ = id => document.getElementById(id);
 const pad = n => String(n).padStart(2, "0");
@@ -306,6 +304,34 @@ function etiquetaPrecio(item) {
   return estadoPrecio(item).etiqueta;
 }
 
+function horarioEvento(item) {
+  const inicio = String(item.hora || "").trim();
+  const finDirecto = item.hora_fin || item.hora_hasta || item.hasta || item.fin || item.endTime;
+  if (finDirecto) {
+    const fin = String(finDirecto).match(/(?:T|\b)(\d{1,2}):([0-5]\d)/);
+    if (fin) return `${inicio}–${fin[1].padStart(2, "0")}:${fin[2]}`;
+  }
+
+  // Algunas fuentes publican el rango en la descripción (por ejemplo, la Feria
+  // del Libro); mostrarlo junto a la hora evita que quede escondido en el texto.
+  const texto = String(item.descripcion || "");
+  const rango = texto.match(/(?:horario(?:\s+oficial)?\s*[:：]?\s*(?:de\s*)?|\bde)\s*(\d{1,2}(?::[0-5]\d)?)\s*(?:a|hasta|[-–])\s*(\d{1,2}(?::[0-5]\d)?)(?:\s*(?:hs?|horas))?/i);
+  if (rango) {
+    const formatear = valor => {
+      const [h, m = "00"] = valor.split(":");
+      return `${h.padStart(2, "0")}:${m}`;
+    };
+    const desde = formatear(rango[1]);
+    const hasta = formatear(rango[2]);
+    return inicio && inicio !== desde ? `${desde}–${hasta}` : `${inicio || desde}–${hasta}`;
+  }
+
+  // También aceptar rangos ya normalizados en el propio campo hora.
+  const horaConRango = inicio.match(/^(\d{1,2}:\d{2})\s*(?:a|hasta|[-–])\s*(\d{1,2}:\d{2})$/i);
+  if (horaConRango) return `${horaConRango[1]}–${horaConRango[2]}`;
+  return inicio;
+}
+
 function renderEvent(item) {
   const card = document.createElement("article");
   card.className = "event";
@@ -326,7 +352,7 @@ function renderEvent(item) {
 
   const time = document.createElement("div");
   time.className = "time";
-  time.textContent = `${item.hora} · ${etiquetaPrecio(item)}`;
+  time.textContent = `${horarioEvento(item)} · ${etiquetaPrecio(item)}`;
 
   const place = document.createElement("p");
   place.textContent = item.lugar;
@@ -409,6 +435,3 @@ loadEvents().catch(() => {
 setInterval(() => {
   loadEvents().catch(console.error);
 }, 60 * 60 * 1000);
-
-
-
