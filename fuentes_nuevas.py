@@ -870,11 +870,226 @@ def leer_municipal_espacios(hoy, estado):
     estado['Agenda municipal — Espacios'] = f'revisada: {len(nuevos)} funciones; {fallidos} fichas pendientes'
     return nuevos
 
+FERIA_LIBRO_URL = "https://feriadellibrorosario.gob.ar/"
+MICROTEATRO_URL = "https://www.microteatrorosario.com/"
+
+
+def leer_feria_libro(hoy, estado):
+    """Lee del sitio oficial el período y los horarios diarios de la Feria."""
+    fuente = "Feria Internacional del Libro de Rosario"
+    try:
+        pagina = normalizar(texto(descargar(FERIA_LIBRO_URL)))
+        periodo = re.search(
+            r"del?\s+(\d{1,2})\s+al\s+(\d{1,2})\s+de\s+([a-z]+)\s+de\s+(\d{4})",
+            pagina,
+        )
+        if not periodo:
+            raise ValueError("no se encontró el período publicado")
+        dia_inicio, dia_fin, nombre_mes, anio = periodo.groups()
+        mes = MESES.get(nombre_mes)
+        if not mes:
+            raise ValueError("mes del período no reconocido")
+        inicio = date(int(anio), mes, int(dia_inicio))
+        fin = date(int(anio), mes, int(dia_fin))
+
+        horarios = {}
+        reglas = (
+            (r"de lunes a miercoles de (\d{1,2}) a (\d{1,2})h", {0, 1, 2}),
+            (r"jueves y viernes de (\d{1,2}) a (\d{1,2})h", {3, 4}),
+            (r"sabados? de (\d{1,2}) a (\d{1,2})h", {5}),
+        )
+        for patron, dias in reglas:
+            coincidencia = re.search(patron, pagina)
+            if coincidencia:
+                apertura, cierre = map(int, coincidencia.groups())
+                for dia in dias:
+                    horarios[dia] = (apertura, cierre)
+
+        for dia, mes_texto, apertura, cierre in re.findall(
+            r"domingo (\d{1,2}) de ([a-z]+) de (\d{1,2}) a (\d{1,2})h",
+            pagina,
+        ):
+            mes_domingo = MESES.get(mes_texto)
+            if mes_domingo == mes:
+                fecha_domingo = date(int(anio), mes_domingo, int(dia))
+                horarios[fecha_domingo.weekday()] = (int(apertura), int(cierre))
+
+        descripcion_base = (
+            "Feria con stands de librerías y editoriales, presentaciones, charlas y "
+            "actividades para todas las edades. Entrada gratuita con QR."
+        )
+        eventos = []
+        actual = max(inicio, hoy)
+        limite = min(fin, hoy + timedelta(days=30))
+        while actual <= limite:
+            horario = horarios.get(actual.weekday())
+            if horario:
+                apertura, cierre = horario
+                hora = f"{apertura:02d}:00"
+                fin_visible = f"{cierre:02d}:00"
+                eventos.append({
+                    "fecha": actual.isoformat(),
+                    "hora": hora,
+                    "nombre": fuente,
+                    "lugar": "Centro Cultural Roberto Fontanarrosa",
+                    "direccion": "San Martín 1080, Rosario, Santa Fe",
+                    "descripcion": (
+                        f"{descripcion_base} Horario oficial: {hora} a {fin_visible}."
+                    ),
+                    "evento_url": FERIA_LIBRO_URL,
+                    "precio": 0,
+                    "origen": fuente,
+                    "categorias": ["ferias"],
+                })
+            actual += timedelta(days=1)
+        if not eventos:
+            raise ValueError("sin jornadas futuras con horario publicado")
+        estado[fuente] = f"revisada: {len(eventos)} jornadas; fuente oficial"
+        return eventos
+    except (requests.RequestException, ValueError, TypeError) as error:
+        estado[fuente] = f"no accesible: {type(error).__name__}"
+        return []
+
+
+def importe_microteatro(valor, meta=False):
+    """Convierte precios de Tiendanube sin interpretar $0 ni el carrito como precio."""
+    if not isinstance(valor, str):
+        return None
+    if meta:
+        try:
+            numero = float(valor.strip().replace(",", "."))
+            return numero if 0 < numero < 50_000_000 else None
+        except ValueError:
+            return None
+    encontrado = re.search(r"\$\s*([\d.]+(?:,[0-9]{1,2})?)", valor)
+    if not encontrado:
+        return None
+    numero = encontrado[1].replace(".", "").replace(",", ".")
+    try:
+        resultado = float(numero)
+        return resultado if 0 < resultado < 50_000_000 else None
+    except ValueError:
+        return None
+
+
+def leer_microteatro(hoy, estado):
+    """Lee productos públicos de Microteatro y expande fechas/horarios disponibles."""
+    fuente = "Microteatro Rosario"
+    indice = urljoin(MICROTEATRO_URL, "productos/")
+    eventos, pendientes, revisadas = {}, 0, 0
+    try:
+        portada = descargar(indice)
+        enlaces = []
+        for a in portada.select("a[href]"):
+            enlace = urljoin(indice, a["href"]).split("#", 1)[0]
+            ruta = urlsplit(enlace).path
+            if (mismo_dominio(enlace, indice) and ruta.startswith("/productos/")
+                    and ruta != "/productos/" and enlace not in enlaces):
+                enlaces.append(enlace)
+        if not enlaces:
+            raise ValueError("no se encontraron productos de la cartelera")
+
+        for enlace in enlaces[:40]:
+            try:
+                ficha = descargar(enlace)
+                titulo = texto(ficha.select_one("h1"))
+                if not titulo:
+                    pendientes += 1
+                    continue
+                formulario = (ficha.select_one(".product_form, .product-form, "
+                    ".js-product-form, form[action*='cart']") or ficha)
+                texto_formulario = texto(formulario)
+                normalizado = normalizar(texto_formulario)
+                posicion_horarios = normalizado.find("horarios")
+                if posicion_horarios < 0:
+                    pendientes += 1
+                    continue
+                fechas_raw = set(re.findall(
+                    r"\b(\d{2}/\d{2}/\d{4})\b", texto_formulario
+                ))
+                fechas = []
+                for fecha_raw in fechas_raw:
+                    try:
+                        fecha = datetime.strptime(fecha_raw, "%d/%m/%Y").date()
+                    except ValueError:
+                        continue
+                    if hoy <= fecha <= hoy + timedelta(days=30):
+                        fechas.append(fecha)
+                horas_segmento = texto_formulario[posicion_horarios:posicion_horarios + 300]
+                horas = sorted(set(re.findall(
+                    r"(?<!\d)(?:[01]?\d|2[0-3]):[0-5]\d(?!\d)", horas_segmento
+                )))
+                if not fechas or not horas:
+                    continue
+
+                precio = None
+                for nodo in ficha.select(
+                    'meta[itemprop="price"], meta[property="product:price:amount"]'
+                ):
+                    precio = importe_microteatro(nodo.get("content"), meta=True)
+                    if precio:
+                        break
+                if not precio:
+                    for selector in (
+                        '[itemprop="price"]', ".js-price-display", ".price-display",
+                        ".product-price", "[data-product-price]",
+                    ):
+                        nodo = ficha.select_one(selector)
+                        if nodo:
+                            precio = importe_microteatro(
+                                nodo.get("content") or nodo.get("data-product-price") or texto(nodo)
+                            )
+                            if precio:
+                                break
+                if not precio:
+                    texto_pagina = texto(ficha)
+                    inicio_titulo = texto_pagina.find(titulo)
+                    zona_precio = texto_pagina[inicio_titulo + len(titulo):inicio_titulo + len(titulo) + 180]
+                    precio = importe_microteatro(zona_precio)
+
+                descripcion_nodo = ficha.select_one(
+                    ".product-description, .product_description, [itemprop='description']"
+                )
+                descripcion = texto(descripcion_nodo) if descripcion_nodo else ""
+                if precio:
+                    precio_etiqueta = "$" + f"{precio:,.0f}".replace(",", ".")
+                    texto_precio = f"Entrada: {precio_etiqueta}. "
+                else:
+                    precio_etiqueta = "Precio a confirmar"
+                    texto_precio = "Entrada paga; consultar precio en la ficha oficial. "
+
+                for fecha in fechas:
+                    for hora in horas:
+                        evento = actividad_ampliada(
+                            fecha.isoformat(), hora, titulo, enlace, fuente,
+                            "San Lorenzo 1329, Rosario, Santa Fe",
+                            texto_precio + descripcion, fuente,
+                        )
+                        evento["precio"] = precio
+                        evento["precio_etiqueta"] = precio_etiqueta
+                        evento["entrada_paga"] = True
+                        evento["categorias"] = ["teatro"]
+                        eventos[clave(evento)] = evento
+                revisadas += 1
+            except (requests.RequestException, ValueError, TypeError):
+                pendientes += 1
+        estado[fuente] = (
+            f"revisada: {len(eventos)} funciones en {revisadas} obras; "
+            f"{pendientes} fichas pendientes"
+        )
+        return list(eventos.values())
+    except (requests.RequestException, ValueError, TypeError) as error:
+        estado[fuente] = f"no accesible: {type(error).__name__}"
+        return []
+
+
 FUENTES_CSV = (
     ('Teatro Broadway', 'teatro', 'https://teatrobroadwayrosario.com/', 'alta'),
     ('Complejo Cultural Atlas', 'centro cultural', 'https://ccatlas.org.ar/', 'alta'),
     ('Teatro Municipal La Comedia', 'teatro municipal', 'https://teatrolacomedia.gob.ar/', 'alta'),
     ('Centro Cultural Roberto Fontanarrosa', 'centro cultural municipal', 'https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros', 'alta'),
+    ('Feria Internacional del Libro de Rosario', 'feria del libro', 'https://feriadellibrorosario.gob.ar/', 'alta'),
+    ('Microteatro Rosario', 'teatro', 'https://www.microteatrorosario.com/productos/', 'alta'),
     ('Plataforma Lavarden', 'centro cultural provincial', 'https://plataformalavarden.gob.ar/', 'alta'),
     ('Teatro El Circulo', 'teatro', 'https://www.teatroelcirculo.com/home', 'alta'),
     ('Teatro Astengo', 'teatro', 'https://teatroastengo.ar/agenda-espectaculos/', 'alta'),
@@ -1186,6 +1401,8 @@ def actualizar_fuentes():
     # Los eventos previos permanecen en eventos.json si una fuente no responde.
     # No se requiere ningún archivo de respaldo mensual.
     nuevos = []
+    nuevos.extend(leer_feria_libro(hoy, estado))
+    nuevos.extend(leer_microteatro(hoy, estado))
     nuevos.extend(leer_atir(hoy, estado))
     nuevos.extend(leer_fuentes_del_csv(hoy, estado))
     espacios_nuevos = leer_espacios_extra(hoy, estado)
@@ -1260,4 +1477,5 @@ def actualizar_fuentes():
 
 if __name__ == "__main__":
     actualizar_fuentes()
+
 
