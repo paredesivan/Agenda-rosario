@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-13 10:15",
+  "actualizado": "2026-10-13 13:44",
   "estado": "parcial",
   "eventos": [
     {
@@ -182,6 +182,17 @@
       "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
       "descripcion": "Taller anual dictado por la docente Cecilia Morini . Dos encuentros por mes en los que se trabajan estilos de las danza…",
       "evento_url": "https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-14",
+      "hora": "19:00",
+      "nombre": "Ciclo: Hablemos de Opera",
+      "lugar": "Teatro El Círculo",
+      "direccion": "LAPRIDA FRANCISCO NARCISO 1201, Rosario, Santa Fe",
+      "descripcion": "Se realizará en el Museo de la Opera del Teatro El Círculo , el tradicional ciclo de encuentros previos para poder acercarse…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/ciclo-hablemos-de-opera",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -458,7 +469,7 @@
       "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "precio": null,
       "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
+      "precio_etiqueta": "$12.000 – $26.000",
       "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "entrada_paga": true,
       "categorias": [
@@ -1082,7 +1093,7 @@
       "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "precio": null,
       "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
+      "precio_etiqueta": "$12.000 – $26.000",
       "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "entrada_paga": true,
       "categorias": [
@@ -1191,7 +1202,7 @@
       "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "precio": null,
       "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
+      "precio_etiqueta": "$12.000 – $26.000",
       "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "entrada_paga": true,
       "categorias": [
@@ -1812,7 +1823,7 @@
       "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "precio": null,
       "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
+      "precio_etiqueta": "$12.000 – $26.000",
       "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "entrada_paga": true,
       "categorias": [
@@ -1853,7 +1864,7 @@
       "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "precio": null,
       "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
+      "precio_etiqueta": "$12.000 – $26.000",
       "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "entrada_paga": true,
       "categorias": [
@@ -1896,7 +1907,7 @@
       "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "precio": null,
       "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
+      "precio_etiqueta": "$12.000 – $26.000",
       "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "entrada_paga": true,
       "categorias": [
@@ -2414,7 +2425,7 @@
       "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "precio": null,
       "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
+      "precio_etiqueta": "$12.000 – $26.000",
       "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "entrada_paga": true,
       "categorias": [
@@ -2431,7 +2442,7 @@
       "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "precio": null,
       "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
+      "precio_etiqueta": "$12.000 – $26.000",
       "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "entrada_paga": true,
       "categorias": [
@@ -2473,7 +2484,7 @@
       "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "precio": null,
       "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
+      "precio_etiqueta": "$12.000 – $26.000",
       "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "entrada_paga": true,
       "categorias": [
@@ -2648,7 +2659,7 @@
       "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "precio": null,
       "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$21.000 – $43.000",
+      "precio_etiqueta": "$12.000 – $26.000",
       "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
       "entrada_paga": true,
       "categorias": [
@@ -4317,6 +4328,17 @@
     {
       "fecha": "2026-10-29",
       "hora": "16:00",
+      "nombre": "Circuito Interbarrial de teatro “Babilonia”",
+      "lugar": "Área de Servicios Urbanos Distrito Sur",
+      "direccion": "DE LA QUINTANA HILARION 45, Rosario, Santa Fe",
+      "descripcion": "Una adaptación de la obra de Armando Discépolo. Actúan vecinas y vecinos actores del grupo Bohemios.",
+      "evento_url": "https://www.rosario.gob.ar/inicio/circuito-interbarrial-de-teatro-babilonia",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-29",
+      "hora": "16:00",
       "nombre": "Proyección de Un cabo suelto en Cine Lumière",
       "lugar": "Centro Cultural Cine Lumière",
       "direccion": "VELEZ SARSFIELD DALMACIO 1027, Rosario, Santa Fe",
@@ -4811,6 +4833,17 @@
       "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
       "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
       "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "14:00",
+      "nombre": "Festival de Stand Up en el Fontanarrosa",
+      "lugar": "Cultural Fontanarrosa",
+      "direccion": "SAN MARTIN GRAL. JOSE 1080, Rosario, Santa Fe",
+      "descripcion": "El sábado 31 de octubre, el Cultural Fontanarrosa será sede del Festival de Stand Up en el Fontanarrosa , producido por Comediantes…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/festival-de-stand-en-el-fontanarrosa",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -6078,6 +6111,17 @@
       "precio": null,
       "origen": "Metropolitano",
       "entrada_paga": true
+    },
+    {
+      "fecha": "2026-11-12",
+      "hora": "21:30",
+      "nombre": "DANIEL GAMBARTTE",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "DANIEL GAMBARTTE EN VENTA!! Fechas y horarios Jueves 12 de Noviembre a las 21:30 Hs. Más información BIODESCODIFICACIÓN EN VIVO COMPRA TU…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/871/daniel-gambartte",
+      "precio": 50000.0,
+      "origen": "Teatro Broadway"
     }
   ]
 }
