@@ -1,8 +1,8 @@
 {
-  "fecha_revision": "2026-10-13 00:12",
+  "fecha_revision": "2026-10-13 08:58",
   "salas_independientes": 13,
   "medios": 3,
-  "funciones_agregadas": 16,
+  "funciones_agregadas": 6,
   "fuentes": {
     "Caras y Caretas": "revisada: sin funciones propias estructuradas",
     "Club Fosse": "revisada: sin funciones propias estructuradas",
@@ -19,7 +19,7 @@
     "La Tornería": "revisada: sin funciones propias estructuradas",
     "Teatro El Circulo — CSV": "revisada: 0 funciones; 0 consultas pendientes",
     "Club Atletico Provincial — CSV": "revisada: 0 funciones; 1 consultas pendientes",
-    "ECU Espacio Cultural Universitario — CSV": "revisada: 2 funciones; 0 consultas pendientes",
+    "ECU Espacio Cultural Universitario — CSV": "revisada: 0 funciones; 0 consultas pendientes",
     "Mercado del Patio — CSV": "revisada: 0 funciones; 0 consultas pendientes",
     "Alto Rosario Shopping — CSV": "revisada: 0 funciones; 1 consultas pendientes",
     "El Cairo — CSV": "revisada: 22 funciones; 0 consultas pendientes",
@@ -32,7 +32,7 @@
     "Museo de Arte Contemporáneo de Rosario (MACRO)": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de la Memoria": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Arte Decorativo Firma y Odilo Estévez": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de la Ciudad": "web pendiente de consulta: 0 actividades",
+    "Museo de la Ciudad": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo del Deporte Santafesino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Histórico Provincial Julio Marc": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo": "web pendiente de consulta: 0 actividades",
@@ -101,7 +101,7 @@
     {
       "nombre": "Museo de la Ciudad",
       "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-la-ciudad",
-      "estado": "web pendiente de consulta",
+      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
       "actividades": 0,
       "webs": [
         "https://www.instagram.com/museociudad/"
@@ -533,7 +533,7 @@
       "url_aportada": "https://www.unr.edu.ar/",
       "tipo": "espacio universitario",
       "prioridad": "media",
-      "estado": "revisada: 2 funciones; 0 consultas pendientes",
+      "estado": "revisada: 0 funciones; 0 consultas pendientes",
       "actividades": 2
     },
     {

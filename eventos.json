@@ -1,7 +1,18 @@
 {
-  "actualizado": "2026-10-13 00:03",
+  "actualizado": "2026-10-13 08:50",
   "estado": "parcial",
   "eventos": [
+    {
+      "fecha": "2026-10-13",
+      "hora": "08:30",
+      "nombre": "Bienestar y actividad física en Puente Gallego",
+      "lugar": "Centro de Salud \"San Vicente de Paul\"",
+      "direccion": "PUNTA DEL INDIO 7760, Rosario, Santa Fe",
+      "descripcion": "Desde el Distrito Sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-puente-gallego",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
     {
       "fecha": "2026-10-13",
       "hora": "09:00",
@@ -198,6 +209,17 @@
       "direccion": "SARMIENTO DOMINGO FAUSTINO 100, Rosario, Santa Fe",
       "descripcion": "En el marco de la primera edición de Rosario Sonido de Cuerdas , el miércoles 14 de octubre, a las 20:30 h…",
       "evento_url": "https://www.rosario.gob.ar/inicio/rosario-sonido-de-cuerdas-dia-2",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-15",
+      "hora": "08:30",
+      "nombre": "Bienestar y actividad física en Puente Gallego",
+      "lugar": "Centro de Salud \"San Vicente de Paul\"",
+      "direccion": "PUNTA DEL INDIO 7760, Rosario, Santa Fe",
+      "descripcion": "Desde el Distrito Sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-puente-gallego",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -1650,6 +1672,17 @@
     },
     {
       "fecha": "2026-10-20",
+      "hora": "08:30",
+      "nombre": "Bienestar y actividad física en Puente Gallego",
+      "lugar": "Centro de Salud \"San Vicente de Paul\"",
+      "direccion": "PUNTA DEL INDIO 7760, Rosario, Santa Fe",
+      "descripcion": "Desde el Distrito Sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-puente-gallego",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-20",
       "hora": "09:00",
       "nombre": "Visitas Guiadas Biblioteca Estrada",
       "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
@@ -1879,6 +1912,17 @@
       "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
       "descripcion": "Itinerancia de la muestra surgida de la IV Convocatoria de Arte Correo dirigida a escuelas secundarias organizada con el colectivo Mujeraje y…",
       "evento_url": "https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-22",
+      "hora": "08:30",
+      "nombre": "Bienestar y actividad física en Puente Gallego",
+      "lugar": "Centro de Salud \"San Vicente de Paul\"",
+      "direccion": "PUNTA DEL INDIO 7760, Rosario, Santa Fe",
+      "descripcion": "Desde el Distrito Sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-puente-gallego",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -2979,6 +3023,17 @@
     },
     {
       "fecha": "2026-10-27",
+      "hora": "08:30",
+      "nombre": "Bienestar y actividad física en Puente Gallego",
+      "lugar": "Centro de Salud \"San Vicente de Paul\"",
+      "direccion": "PUNTA DEL INDIO 7760, Rosario, Santa Fe",
+      "descripcion": "Desde el Distrito Sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-puente-gallego",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-27",
       "hora": "09:00",
       "nombre": "Visitas Guiadas Biblioteca Estrada",
       "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
@@ -3139,6 +3194,17 @@
       "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
       "descripcion": "Itinerancia de la muestra surgida de la IV Convocatoria de Arte Correo dirigida a escuelas secundarias organizada con el colectivo Mujeraje y…",
       "evento_url": "https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-29",
+      "hora": "08:30",
+      "nombre": "Bienestar y actividad física en Puente Gallego",
+      "lugar": "Centro de Salud \"San Vicente de Paul\"",
+      "direccion": "PUNTA DEL INDIO 7760, Rosario, Santa Fe",
+      "descripcion": "Desde el Distrito Sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-puente-gallego",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -4165,6 +4231,17 @@
     },
     {
       "fecha": "2026-11-03",
+      "hora": "08:30",
+      "nombre": "Bienestar y actividad física en Puente Gallego",
+      "lugar": "Centro de Salud \"San Vicente de Paul\"",
+      "direccion": "PUNTA DEL INDIO 7760, Rosario, Santa Fe",
+      "descripcion": "Desde el Distrito Sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-puente-gallego",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-03",
       "hora": "09:00",
       "nombre": "Visitas Guiadas Biblioteca Estrada",
       "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
@@ -4292,6 +4369,17 @@
       "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
       "descripcion": "Itinerancia de la muestra surgida de la IV Convocatoria de Arte Correo dirigida a escuelas secundarias organizada con el colectivo Mujeraje y…",
       "evento_url": "https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-05",
+      "hora": "08:30",
+      "nombre": "Bienestar y actividad física en Puente Gallego",
+      "lugar": "Centro de Salud \"San Vicente de Paul\"",
+      "direccion": "PUNTA DEL INDIO 7760, Rosario, Santa Fe",
+      "descripcion": "Desde el Distrito Sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-puente-gallego",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -4798,6 +4886,17 @@
     },
     {
       "fecha": "2026-11-10",
+      "hora": "08:30",
+      "nombre": "Bienestar y actividad física en Puente Gallego",
+      "lugar": "Centro de Salud \"San Vicente de Paul\"",
+      "direccion": "PUNTA DEL INDIO 7760, Rosario, Santa Fe",
+      "descripcion": "Desde el Distrito Sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-puente-gallego",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-10",
       "hora": "09:00",
       "nombre": "Visitas Guiadas Biblioteca Estrada",
       "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
@@ -4903,6 +5002,17 @@
       "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
       "descripcion": "Los miércoles por la tarde se dictan las clases de tango danza a cargo del Prof. Guillermo Ruíz. El taller nivel inicial…",
       "evento_url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-12",
+      "hora": "08:30",
+      "nombre": "Bienestar y actividad física en Puente Gallego",
+      "lugar": "Centro de Salud \"San Vicente de Paul\"",
+      "direccion": "PUNTA DEL INDIO 7760, Rosario, Santa Fe",
+      "descripcion": "Desde el Distrito Sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-puente-gallego",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
