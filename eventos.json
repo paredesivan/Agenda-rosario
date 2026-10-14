@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-13 18:01",
+  "actualizado": "2026-10-13 20:44",
   "estado": "parcial",
   "eventos": [
     {
@@ -29,12 +29,12 @@
     },
     {
       "fecha": "2026-10-13",
-      "hora": "14:00",
-      "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
-      "lugar": "Museo de la Ciudad Wladimir Mikielievich",
-      "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
-      "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
+      "hora": "18:00",
+      "nombre": "Odisea, de Homero a Christopher Nolan",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "ROCA PTE. JULIO ARGENTINO 731, Rosario, Santa Fe",
+      "descripcion": "En la Biblioteca Argentina Dr. Juan Álvarez se realizará un recorrido por Odisea, de Homero a Christopher Nolan a cargo de la…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/odisea-de-homero-christopher-nolan",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -2651,6 +2651,17 @@
     },
     {
       "fecha": "2026-10-19",
+      "hora": "18:00",
+      "nombre": "Odisea, de Homero a Christopher Nolan",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "ROCA PTE. JULIO ARGENTINO 731, Rosario, Santa Fe",
+      "descripcion": "En la Biblioteca Argentina Dr. Juan Álvarez se realizará un recorrido por Odisea, de Homero a Christopher Nolan a cargo de la…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/odisea-de-homero-christopher-nolan",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-19",
       "hora": "18:30",
       "nombre": "Mis primeros pasos",
       "lugar": "Centro Cultural  La Casa del Tango",
@@ -4014,6 +4025,17 @@
       "direccion": "ROCA PTE. JULIO ARGENTINO 731, Rosario, Santa Fe",
       "descripcion": "En el marco del Programa Municipal de Ajedrez se brinda el taller de Ajedrez: nivel intermedio-avanzados en la Biblioteca Argentina Dr. Juan…",
       "evento_url": "https://www.rosario.gob.ar/inicio/ajedrez-nivel-intermedio-avanzados",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-26",
+      "hora": "18:00",
+      "nombre": "Odisea, de Homero a Christopher Nolan",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "ROCA PTE. JULIO ARGENTINO 731, Rosario, Santa Fe",
+      "descripcion": "En la Biblioteca Argentina Dr. Juan Álvarez se realizará un recorrido por Odisea, de Homero a Christopher Nolan a cargo de la…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/odisea-de-homero-christopher-nolan",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
