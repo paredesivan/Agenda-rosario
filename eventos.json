@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14 13:55",
+  "actualizado": "2026-10-14 17:52",
   "estado": "parcial",
   "eventos": [
     {
@@ -63,17 +63,6 @@
     {
       "fecha": "2026-10-14",
       "hora": "13:00",
-      "nombre": "GEOLOCALIZADOS: Un puente entre la imagen y la palabra",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/geolocalizados-un-puente-entre-la-imagen-y-la-palabra",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "13:00",
       "nombre": "Narcisa Hirsch, un viaje incógnito",
       "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
       "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
@@ -104,17 +93,6 @@
       "precio": null,
       "origen": "Biblioteca Argentina Dr. Juan Álvarez",
       "precio_etiqueta": "Precio a confirmar"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "14:00",
-      "nombre": "Entrenamiento y Ensayo para bailarines de tango",
-      "lugar": "Centro Cultural  La Casa del Tango",
-      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
-      "descripcion": "Los miércoles a las 14 h el Centro Cultural La Casa del Tango ofrece un espacio de entrenamiento y ensayo para bailarines…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/entrenamiento-y-ensayo-para-bailarines-de-tango",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
     },
     {
       "fecha": "2026-10-14",
@@ -468,11 +446,15 @@
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
       "direccion": "Mitre 754, Rosario",
-      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "descripcion": "Obra teatral con Ricardo Darín y Andrea Pietra.",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo/",
       "precio": null,
       "origen": "Teatro Astengo",
       "entrada_paga": true,
+      "hora_fin": "22:30",
+      "descubrimiento_fuentes": [
+        "EntradaFan"
+      ],
       "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
       "precio_etiqueta": "Precio a confirmar"
     },
@@ -508,7 +490,7 @@
       "nombre": "Orquesta Utópica presenta: Tango de Rosario en movimiento",
       "lugar": "Centro Cultural Parque de España",
       "direccion": "Sarmiento y el río, Rosario, Santa Fe",
-      "descripcion": "Entradas entre $23.000 y $39.000. El Centro Cultural Parque de España invita al concierto Tango de Rosario en movimiento. Bailando el Tango del Siglo XXI, de la…",
+      "descripcion": "Concierto de tango con parejas de baile invitadas.",
       "evento_url": "https://ccpe.org.ar/web/actividades/orquesta-utopica-presenta-tango-de-rosario-en-movimiento/",
       "precio": null,
       "origen": "Centro Cultural Parque de España"
@@ -1276,11 +1258,15 @@
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
       "direccion": "Mitre 754, Rosario",
-      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "descripcion": "Obra teatral con Ricardo Darín y Andrea Pietra.",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151/",
       "precio": null,
       "origen": "Teatro Astengo",
       "entrada_paga": true,
+      "hora_fin": "23:00",
+      "descubrimiento_fuentes": [
+        "EntradaFan"
+      ],
       "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
       "precio_etiqueta": "Precio a confirmar"
     },
@@ -1970,11 +1956,15 @@
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
       "direccion": "Mitre 754, Rosario",
-      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "descripcion": "Obra teatral con Ricardo Darín y Andrea Pietra.",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-151-882/",
       "precio": null,
       "origen": "Teatro Astengo",
       "entrada_paga": true,
+      "hora_fin": "23:00",
+      "descubrimiento_fuentes": [
+        "EntradaFan"
+      ],
       "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
       "precio_etiqueta": "Precio a confirmar"
     },
@@ -2507,11 +2497,15 @@
       "nombre": "ESCENAS DE LA VIDA CONYUGAL",
       "lugar": "Teatro Astengo",
       "direccion": "Mitre 754, Rosario",
-      "descripcion": "«ESCENAS DE LA VIDA CONYUGAL» de Ingmar Bergman, con Ricardo Darín & Andrea Pietra. Dirección: Norma Aleandro. Música: Diego Savoretti. Sinopsis: “Escenas…",
+      "descripcion": "Obra teatral con Ricardo Darín y Andrea Pietra.",
       "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo-281/",
       "precio": null,
       "origen": "Teatro Astengo",
       "entrada_paga": true,
+      "hora_fin": "22:30",
+      "descubrimiento_fuentes": [
+        "EntradaFan"
+      ],
       "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
       "precio_etiqueta": "Precio a confirmar"
     },
@@ -2894,6 +2888,9 @@
       "precio": null,
       "origen": "Teatro Astengo",
       "entrada_paga": true,
+      "descubrimiento_fuentes": [
+        "EntradaFan"
+      ],
       "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
       "precio_etiqueta": "Precio a confirmar"
     },
@@ -3063,6 +3060,9 @@
       "precio": null,
       "origen": "Teatro Astengo",
       "entrada_paga": true,
+      "descubrimiento_fuentes": [
+        "EntradaFan"
+      ],
       "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
       "precio_etiqueta": "Precio a confirmar"
     },
@@ -3360,7 +3360,10 @@
       "evento_url": "https://teatrobroadwayrosario.com/cartelera/859/despertar-de-primavera",
       "precio": null,
       "origen": "Teatro Broadway",
-      "precio_etiqueta": "$30.000 – $65.000"
+      "precio_etiqueta": "$30.000 – $65.000",
+      "descubrimiento_fuentes": [
+        "Rosario Times"
+      ]
     },
     {
       "fecha": "2026-10-23",
@@ -3373,6 +3376,9 @@
       "precio": null,
       "origen": "Teatro Astengo",
       "entrada_paga": true,
+      "descubrimiento_fuentes": [
+        "EntradaFan"
+      ],
       "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
       "precio_etiqueta": "Precio a confirmar"
     },
@@ -3634,7 +3640,10 @@
       "evento_url": "https://teatrobroadwayrosario.com/cartelera/859/despertar-de-primavera",
       "precio": null,
       "origen": "Teatro Broadway",
-      "precio_etiqueta": "$30.000 – $65.000"
+      "precio_etiqueta": "$30.000 – $65.000",
+      "descubrimiento_fuentes": [
+        "Rosario Times"
+      ]
     },
     {
       "fecha": "2026-10-24",
@@ -3647,6 +3656,9 @@
       "precio": null,
       "origen": "Teatro Astengo",
       "entrada_paga": true,
+      "descubrimiento_fuentes": [
+        "EntradaFan"
+      ],
       "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
       "precio_etiqueta": "Precio a confirmar"
     },
@@ -3884,6 +3896,9 @@
       "precio": null,
       "origen": "Teatro Astengo",
       "entrada_paga": true,
+      "descubrimiento_fuentes": [
+        "EntradaFan"
+      ],
       "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
       "precio_etiqueta": "Precio a confirmar"
     },
@@ -3943,7 +3958,10 @@
       "evento_url": "https://teatrobroadwayrosario.com/cartelera/859/despertar-de-primavera",
       "precio": null,
       "origen": "Teatro Broadway",
-      "precio_etiqueta": "$30.000 – $65.000"
+      "precio_etiqueta": "$30.000 – $65.000",
+      "descubrimiento_fuentes": [
+        "Rosario Times"
+      ]
     },
     {
       "fecha": "2026-10-25",
