@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14 08:55",
+  "actualizado": "2026-10-14 13:55",
   "estado": "parcial",
   "eventos": [
     {
@@ -137,6 +137,17 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-14",
+      "hora": "18:00",
+      "nombre": "Concierto del Conjunto Pro Musica de Rosario",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "Presidente Roca 731, Rosario, Santa Fe",
+      "descripcion": "Concierto del Conjunto Pro Musica de Rosario Por Biblioteca Argentina \"Dr. Juan Álvarez\" / 12 julio, 2026 Miércoles 14 de octubre, 18…",
+      "evento_url": "https://biblioargentina.gob.ar/web/concierto-del-conjunto-pro-musica-de-rosario/",
+      "precio": 0,
+      "origen": "Biblioteca Argentina Dr. Juan Álvarez"
     },
     {
       "fecha": "2026-10-14",
