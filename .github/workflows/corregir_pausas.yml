@@ -1,0 +1,43 @@
+name: Aplicar pausas seguras (una vez)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# No competir con la actualización automática que también publica commits.
+concurrency:
+  group: actualizar-agenda
+  cancel-in-progress: false
+
+jobs:
+  aplicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar dependencias de pruebas
+        run: python -m pip install requests beautifulsoup4
+      - name: Aplicar pausas por dominio
+        run: python corregir_pausas.py
+      - name: Comprobar sintaxis
+        run: python -m py_compile actualizar_eventos.py fuentes_nuevas.py auditar_fuentes.py
+      - name: Ejecutar pruebas
+        run: python -m unittest discover -s tests -p test_auditoria_fuentes.py -v
+      - name: Confirmar cambios en GitHub
+        run: |
+          git add actualizar_eventos.py fuentes_nuevas.py
+          if git diff --cached --quiet; then
+            echo 'Las pausas ya estaban corregidas. No se requiere commit.'
+          else
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Respetar pausas por dominio en fuentes culturales'
+            git push origin HEAD:${{ github.ref_name }}
+          fi
