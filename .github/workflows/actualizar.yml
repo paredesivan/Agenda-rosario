@@ -6,6 +6,9 @@ on:
     paths:
       - actualizar_eventos.py
       - fuentes_nuevas.py
+      - fuentes_adicionales.py
+      - fuentes_adicionales.json
+      - eventos_verificados_adicionales.json
       - precios_ticketek.py
       - requirements.txt
       - tests/**
@@ -27,7 +30,7 @@ jobs:
   actualizar:
     runs-on: ubuntu-latest
     # La ejecución completa puede incluir más de 13 fuentes y fichas individuales.
-    timeout-minutes: 55
+    timeout-minutes: 95
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v6
@@ -45,12 +48,12 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Actualizar agenda municipal y salas principales
-        timeout-minutes: 15
-        run: python actualizar_eventos.py
+        timeout-minutes: 35
+        run: python -u actualizar_eventos.py
 
       - name: Revisar fuentes complementarias, salas y museos
-        timeout-minutes: 25
-        run: python fuentes_nuevas.py
+        timeout-minutes: 45
+        run: python -u fuentes_nuevas.py
 
       - name: Revisar precios de Ticketek
         timeout-minutes: 5
@@ -60,7 +63,7 @@ jobs:
         run: |
           git config user.name "agenda-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add eventos.json fuentes_revisadas.json
+          git add eventos.json fuentes_revisadas.json cache_fuentes_adicionales.json candidatos_fuentes_adicionales.json
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar agenda"
             git push origin HEAD:main
@@ -70,3 +73,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
+
