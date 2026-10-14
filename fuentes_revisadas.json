@@ -1,10 +1,10 @@
 {
-  "fecha_revision": "2026-10-13 20:52",
+  "fecha_revision": "2026-10-14 02:05",
   "salas_independientes": 13,
   "medios": 3,
-  "funciones_agregadas": 1,
+  "funciones_agregadas": 2,
   "fuentes": {
-    "Feria Internacional del Libro de Rosario": "revisada: 6 jornadas; fuente oficial",
+    "Feria Internacional del Libro de Rosario": "revisada: 5 jornadas; fuente oficial",
     "Microteatro Rosario": "revisada: 53 funciones en 12 obras; 0 fichas pendientes",
     "Caras y Caretas": "revisada: sin funciones propias estructuradas",
     "Club Fosse": "revisada: sin funciones propias estructuradas",
@@ -26,14 +26,14 @@
     "Alto Rosario Shopping — CSV": "revisada: 0 funciones; 1 consultas pendientes",
     "El Cairo — CSV": "revisada: 27 funciones; 0 consultas pendientes",
     "Entrada Play": "revisada: 5 funciones; 0 fichas pendientes",
-    "CentroTicket": "revisada: 8 funciones; 1 fichas pendientes",
+    "CentroTicket": "revisada: 9 funciones; 1 fichas pendientes",
     "Circo Rodas — Linke-arte": "revisada: 10 funciones habilitadas",
     "Agenda municipal — Espacios": "revisada: 1 funciones; 0 fichas pendientes",
     "Muestra Inmersiva: Estación Rosario 300": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Bellas Artes Juan B. Castagnino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Arte Contemporáneo de Rosario (MACRO)": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de la Memoria": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de Arte Decorativo Firma y Odilo Estévez": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
+    "Museo de Arte Decorativo Firma y Odilo Estévez": "web pendiente de consulta: 0 actividades",
     "Museo de la Ciudad": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo del Deporte Santafesino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Histórico Provincial Julio Marc": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
@@ -94,7 +94,7 @@
     {
       "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
       "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-estevez",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
+      "estado": "web pendiente de consulta",
       "actividades": 0,
       "webs": [
         "https://www.museoestevez.gob.ar"
@@ -240,7 +240,7 @@
       "tipo": "teatro",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 13
+      "actividades": 14
     },
     {
       "nombre": "Complejo Cultural Atlas",
@@ -248,7 +248,7 @@
       "tipo": "centro cultural",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 8
+      "actividades": 9
     },
     {
       "nombre": "Teatro Municipal La Comedia",
@@ -264,7 +264,7 @@
       "tipo": "centro cultural municipal",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 6
+      "actividades": 5
     },
     {
       "nombre": "Feria Internacional del Libro de Rosario",
@@ -272,7 +272,7 @@
       "tipo": "feria del libro",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 6
+      "actividades": 5
     },
     {
       "nombre": "Microteatro Rosario",
@@ -296,7 +296,7 @@
       "tipo": "teatro",
       "prioridad": "alta",
       "estado": "revisada: 0 funciones; 0 consultas pendientes",
-      "actividades": 8
+      "actividades": 7
     },
     {
       "nombre": "Teatro Astengo",
@@ -440,7 +440,7 @@
       "tipo": "museo municipal",
       "prioridad": "alta",
       "estado": "revisión del directorio y de las webs de museos",
-      "actividades": 26
+      "actividades": 27
     },
     {
       "nombre": "Museo Estevez",
@@ -616,7 +616,7 @@
     {
       "nombre": "Complejo Cultural Atlas",
       "fuentes": "CentroTicket, venta enlazada por Atlas",
-      "actividades": 8
+      "actividades": 9
     },
     {
       "nombre": "La Segunda Seguros Arena",
