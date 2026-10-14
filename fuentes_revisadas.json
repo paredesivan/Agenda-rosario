@@ -1,5 +1,5 @@
 {
-  "fecha_revision": "2026-10-14 18:05",
+  "fecha_revision": "2026-10-14 19:22",
   "salas_independientes": 13,
   "medios": 3,
   "funciones_agregadas": 6,
@@ -34,7 +34,7 @@
     "Museo de Arte Contemporáneo de Rosario (MACRO)": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de la Memoria": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Arte Decorativo Firma y Odilo Estévez": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de la Ciudad": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
+    "Museo de la Ciudad": "web pendiente de consulta: 0 actividades",
     "Museo del Deporte Santafesino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Histórico Provincial Julio Marc": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo": "web pendiente de consulta: 0 actividades",
@@ -57,7 +57,7 @@
     "Rosario en Cartel": "revisada: 21 funciones verificadas; 0 fichas pendientes",
     "Rosario Times": "revisada: 3 coincidencias con registros oficiales; 4 candidatos pendientes; 0 consultas pendientes",
     "EntradaFan": "revisada: 9 coincidencias con registros oficiales; 10 candidatos pendientes; 0 consultas pendientes",
-    "SalePlan": "revisada: 0 coincidencias con registros oficiales; 26 candidatos pendientes; 0 consultas pendientes",
+    "SalePlan": "revisada: 0 coincidencias con registros oficiales; 28 candidatos pendientes; 0 consultas pendientes",
     "Disfruta Rosario": "consulta manual; auditoría pendiente"
   },
   "museos": [
@@ -107,7 +107,7 @@
     {
       "nombre": "Museo de la Ciudad",
       "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-la-ciudad",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
+      "estado": "web pendiente de consulta",
       "actividades": 0,
       "webs": [
         "https://www.instagram.com/museociudad/"
@@ -444,7 +444,7 @@
       "tipo": "museo municipal",
       "prioridad": "alta",
       "estado": "revisión del directorio y de las webs de museos",
-      "actividades": 27
+      "actividades": 26
     },
     {
       "nombre": "Museo Estevez",

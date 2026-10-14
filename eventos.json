@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14 17:52",
+  "actualizado": "2026-10-14 19:08",
   "estado": "parcial",
   "eventos": [
     {
@@ -10,39 +10,6 @@
       "direccion": "LAPRIDA FRANCISCO NARCISO 1201, Rosario, Santa Fe",
       "descripcion": "Se inaugura la muestra “A mar abierto” del artista plástico, escritor y cineasta JUAN CARLOS CAPURRO. Entrada libre y gratuita La muestra…",
       "evento_url": "https://www.rosario.gob.ar/inicio/circo-de-artes-visuales-en-el-teatro-el-circulo",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "13:00",
-      "nombre": "A favor de la fantasía en contra de la inflación",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/favor-de-la-fantasia-en-contra-de-la-inflacion",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "13:00",
-      "nombre": "ANATOMÍA DEL FERVOR. Collages 1998. Carlos Herrera",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/anatomia-del-fervor.-collages-1998.-carlos-herrera",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "13:00",
-      "nombre": "Episodio II: 1976/2026 Que digan dónde están",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/episodio-ii-19762026-que-digan-donde-estan",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -62,28 +29,6 @@
     },
     {
       "fecha": "2026-10-14",
-      "hora": "13:00",
-      "nombre": "Narcisa Hirsch, un viaje incógnito",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "13:00",
-      "nombre": "Nivel de Río. Instalación de Maxi Murad",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-14",
       "hora": "14:00",
       "nombre": "Campaña: Stop bullying. Bullying no es un chiste. Es agresión.",
       "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
@@ -93,28 +38,6 @@
       "precio": null,
       "origen": "Biblioteca Argentina Dr. Juan Álvarez",
       "precio_etiqueta": "Precio a confirmar"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "14:00",
-      "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
-      "lugar": "Museo de la Ciudad Wladimir Mikielievich",
-      "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
-      "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "16:30",
-      "nombre": "Taller de Técnicas de Danza y Composición Instantánea",
-      "lugar": "Centro Cultural  La Casa del Tango",
-      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
-      "descripcion": "Taller anual dictado por la docente Cecilia Morini . Dos encuentros por mes en los que se trabajan estilos de las danza…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
     },
     {
       "fecha": "2026-10-14",
@@ -501,11 +424,11 @@
       "nombre": "El juego del amor propio",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "descripcion": "Entrada: $5.750. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
       "evento_url": "https://www.microteatrorosario.com/productos/eljuegoj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -517,11 +440,11 @@
       "nombre": "Tribulaciones de un gigoló",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se calzó la capa. El destino los…",
       "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -533,11 +456,11 @@
       "nombre": "Prometo volver a engañarte",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
       "evento_url": "https://www.microteatrorosario.com/productos/prometovolverj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -549,11 +472,11 @@
       "nombre": "El juego del amor propio",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "descripcion": "Entrada: $5.750. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
       "evento_url": "https://www.microteatrorosario.com/productos/eljuegoj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -565,11 +488,11 @@
       "nombre": "Tribulaciones de un gigoló",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se calzó la capa. El destino los…",
       "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -581,11 +504,11 @@
       "nombre": "Prometo volver a engañarte",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
       "evento_url": "https://www.microteatrorosario.com/productos/prometovolverj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -597,11 +520,11 @@
       "nombre": "El juego del amor propio",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "descripcion": "Entrada: $5.750. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
       "evento_url": "https://www.microteatrorosario.com/productos/eljuegoj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -613,11 +536,11 @@
       "nombre": "Tribulaciones de un gigoló",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se calzó la capa. El destino los…",
       "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -629,11 +552,11 @@
       "nombre": "Prometo volver a engañarte",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
       "evento_url": "https://www.microteatrorosario.com/productos/prometovolverj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -645,11 +568,11 @@
       "nombre": "Julieta & Julieta",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
       "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietaj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -661,11 +584,11 @@
       "nombre": "Amore di mafia",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Último trabajo juntos de dos mafiosos particulares. Uno se retira, el otro recién…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Último trabajo juntos de dos mafiosos particulares. Uno se retira, el otro recién comienza. ¿Cómo terminará esta historia? Dramaturgia:…",
       "evento_url": "https://www.microteatrorosario.com/productos/amoredimafiaj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -677,11 +600,11 @@
       "nombre": "Madrid, ¡un sueño!",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Emocionante como “Hairspray”, “Fame” y “Flashdance”. Si tenés un sueño, si buscás la…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Emocionante como “Hairspray”, “Fame” y “Flashdance”. Si tenés un sueño, si buscás la fama... acá es donde vas a…",
       "evento_url": "https://www.microteatrorosario.com/productos/madridj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -693,11 +616,11 @@
       "nombre": "Nunca es tarde",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Cuando Rick, el detective canchero, se encuentra con Betty, la Femme Fatale, sabía…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Cuando Rick, el detective canchero, se encuentra con Betty, la Femme Fatale, sabía que era una trampa. Dramaturgia: Nacho…",
       "evento_url": "https://www.microteatrorosario.com/productos/nuncaestardej/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -723,11 +646,11 @@
       "nombre": "Julieta & Julieta",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
       "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietaj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -739,11 +662,11 @@
       "nombre": "Amore di mafia",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Último trabajo juntos de dos mafiosos particulares. Uno se retira, el otro recién…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Último trabajo juntos de dos mafiosos particulares. Uno se retira, el otro recién comienza. ¿Cómo terminará esta historia? Dramaturgia:…",
       "evento_url": "https://www.microteatrorosario.com/productos/amoredimafiaj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -755,11 +678,11 @@
       "nombre": "Madrid, ¡un sueño!",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Emocionante como “Hairspray”, “Fame” y “Flashdance”. Si tenés un sueño, si buscás la…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Emocionante como “Hairspray”, “Fame” y “Flashdance”. Si tenés un sueño, si buscás la fama... acá es donde vas a…",
       "evento_url": "https://www.microteatrorosario.com/productos/madridj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -771,11 +694,11 @@
       "nombre": "Nunca es tarde",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Cuando Rick, el detective canchero, se encuentra con Betty, la Femme Fatale, sabía…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Cuando Rick, el detective canchero, se encuentra con Betty, la Femme Fatale, sabía que era una trampa. Dramaturgia: Nacho…",
       "evento_url": "https://www.microteatrorosario.com/productos/nuncaestardej/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -787,11 +710,11 @@
       "nombre": "Julieta & Julieta",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
       "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietaj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -803,11 +726,11 @@
       "nombre": "Amore di mafia",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Último trabajo juntos de dos mafiosos particulares. Uno se retira, el otro recién…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Último trabajo juntos de dos mafiosos particulares. Uno se retira, el otro recién comienza. ¿Cómo terminará esta historia? Dramaturgia:…",
       "evento_url": "https://www.microteatrorosario.com/productos/amoredimafiaj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -819,11 +742,11 @@
       "nombre": "Madrid, ¡un sueño!",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Emocionante como “Hairspray”, “Fame” y “Flashdance”. Si tenés un sueño, si buscás la…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Emocionante como “Hairspray”, “Fame” y “Flashdance”. Si tenés un sueño, si buscás la fama... acá es donde vas a…",
       "evento_url": "https://www.microteatrorosario.com/productos/madridj/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -835,11 +758,11 @@
       "nombre": "Nunca es tarde",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Cuando Rick, el detective canchero, se encuentra con Betty, la Femme Fatale, sabía…",
+      "descripcion": "Entrada: $5.750. Sinopsis: Cuando Rick, el detective canchero, se encuentra con Betty, la Femme Fatale, sabía que era una trampa. Dramaturgia: Nacho…",
       "evento_url": "https://www.microteatrorosario.com/productos/nuncaestardej/",
-      "precio": null,
+      "precio": 5750.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$5.750",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -851,11 +774,11 @@
       "nombre": "Julieta & Julieta",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
       "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1219,11 +1142,11 @@
       "nombre": "El juego del amor propio",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "descripcion": "Entrada: $6.470. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
       "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1339,11 +1262,11 @@
       "nombre": "Una escueta historia de amor",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Tiempo después de separarse, Diego y Sara se cruzan en el bar donde…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Tiempo después de separarse, Diego y Sara se cruzan en el bar donde todo comenzó. Dice el cineasta Godard…",
       "evento_url": "https://www.microteatrorosario.com/productos/una-escueta-historia-de-amor-1qv0b/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1355,11 +1278,11 @@
       "nombre": "Prometo volver a engañarte",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
       "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1371,11 +1294,11 @@
       "nombre": "El juego del amor propio",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "descripcion": "Entrada: $6.470. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
       "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1387,11 +1310,11 @@
       "nombre": "Una escueta historia de amor",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Tiempo después de separarse, Diego y Sara se cruzan en el bar donde…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Tiempo después de separarse, Diego y Sara se cruzan en el bar donde todo comenzó. Dice el cineasta Godard…",
       "evento_url": "https://www.microteatrorosario.com/productos/una-escueta-historia-de-amor-1qv0b/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1403,11 +1326,11 @@
       "nombre": "Prometo volver a engañarte",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
       "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1419,11 +1342,11 @@
       "nombre": "El juego del amor propio",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "descripcion": "Entrada: $6.470. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
       "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1435,11 +1358,11 @@
       "nombre": "Una escueta historia de amor",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Tiempo después de separarse, Diego y Sara se cruzan en el bar donde…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Tiempo después de separarse, Diego y Sara se cruzan en el bar donde todo comenzó. Dice el cineasta Godard…",
       "evento_url": "https://www.microteatrorosario.com/productos/una-escueta-historia-de-amor-1qv0b/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1451,11 +1374,11 @@
       "nombre": "Prometo volver a engañarte",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
       "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1478,11 +1401,11 @@
       "nombre": "El juego del amor propio",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "descripcion": "Entrada: $6.470. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
       "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1494,11 +1417,11 @@
       "nombre": "Una escueta historia de amor",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Tiempo después de separarse, Diego y Sara se cruzan en el bar donde…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Tiempo después de separarse, Diego y Sara se cruzan en el bar donde todo comenzó. Dice el cineasta Godard…",
       "evento_url": "https://www.microteatrorosario.com/productos/una-escueta-historia-de-amor-1qv0b/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1510,11 +1433,11 @@
       "nombre": "Prometo volver a engañarte",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
       "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1541,11 +1464,11 @@
       "nombre": "Julieta & Julieta",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
       "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1557,11 +1480,11 @@
       "nombre": "Julieta & Julieta",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
       "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1573,11 +1496,11 @@
       "nombre": "Julieta & Julieta",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
       "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1589,11 +1512,11 @@
       "nombre": "Julieta & Julieta",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
       "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -1917,11 +1840,11 @@
       "nombre": "El juego del amor propio",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "descripcion": "Entrada: $6.470. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
       "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2045,11 +1968,11 @@
       "nombre": "Tribulaciones de un gigoló",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se calzó la capa. El destino los…",
       "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesvys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2061,11 +1984,11 @@
       "nombre": "Prometo volver a engañarte",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
       "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2077,11 +2000,11 @@
       "nombre": "El juego del amor propio",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "descripcion": "Entrada: $6.470. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
       "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2093,11 +2016,11 @@
       "nombre": "Tribulaciones de un gigoló",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se calzó la capa. El destino los…",
       "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesvys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2109,11 +2032,11 @@
       "nombre": "Prometo volver a engañarte",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
       "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2125,11 +2048,11 @@
       "nombre": "El juego del amor propio",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "descripcion": "Entrada: $6.470. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
       "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2141,11 +2064,11 @@
       "nombre": "Tribulaciones de un gigoló",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se calzó la capa. El destino los…",
       "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesvys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2157,11 +2080,11 @@
       "nombre": "Prometo volver a engañarte",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
       "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2173,11 +2096,11 @@
       "nombre": "El juego del amor propio",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y…",
+      "descripcion": "Entrada: $6.470. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
       "evento_url": "https://www.microteatrorosario.com/productos/eljuegovys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2189,11 +2112,11 @@
       "nombre": "Tribulaciones de un gigoló",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se calzó la capa. El destino los…",
       "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesvys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2205,11 +2128,11 @@
       "nombre": "Prometo volver a engañarte",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
       "evento_url": "https://www.microteatrorosario.com/productos/prometovolvervys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2236,11 +2159,11 @@
       "nombre": "Julieta & Julieta",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
       "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2252,11 +2175,11 @@
       "nombre": "Julieta & Julieta",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
       "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
@@ -2268,11 +2191,11 @@
       "nombre": "Julieta & Julieta",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada paga; consultar precio en la ficha oficial. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola…",
+      "descripcion": "Entrada: $6.470. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
       "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietavys/",
-      "precio": null,
+      "precio": 6470.0,
       "origen": "Microteatro Rosario",
-      "precio_etiqueta": "Precio a confirmar",
+      "precio_etiqueta": "$6.470",
       "entrada_paga": true,
       "categorias": [
         "teatro"
