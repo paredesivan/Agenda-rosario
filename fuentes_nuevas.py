@@ -1524,7 +1524,10 @@ def actualizar_fuentes():
         if key not in vistos:
             vistos[key] = e
             agregados += 1
-        elif e.get("funcion_unica_verificada") or e.get("origen") == "Circo Rodas — Linke-arte":
+        elif (e.get("funcion_unica_verificada")
+              or e.get("origen") == "Circo Rodas — Linke-arte"
+              or (e.get("origen") == "Microteatro Rosario"
+                  and e.get("precio") is not None)):
             vistos[key] = e
     for evento in vistos.values():
         if evento.get("origen") == "Teatro Astengo" and not re.search(r"\d", evento.get("direccion", "")):
@@ -1557,6 +1560,3 @@ def actualizar_fuentes():
 
 if __name__ == "__main__":
     actualizar_fuentes()
-
-
-
