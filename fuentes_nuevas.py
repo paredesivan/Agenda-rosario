@@ -972,6 +972,107 @@ def importe_microteatro(valor, meta=False):
         return None
 
 
+def precio_producto_microteatro(ficha, titulo=""):
+    """Busca exclusivamente importes del producto, no del carrito ni sugerencias."""
+    def normalizar_importe(valor):
+        if isinstance(valor, (int, float)) and not isinstance(valor, bool):
+            n = float(valor)
+        elif isinstance(valor, str):
+            bruto = valor.strip().replace("$", "").replace("ARS", "").strip()
+            bruto = re.sub(r"[^0-9.,]", "", bruto)
+            if not bruto:
+                return None
+            if "," in bruto and "." in bruto:
+                bruto = bruto.replace(".", "").replace(",", ".") if bruto.rfind(",") > bruto.rfind(".") else bruto.replace(",", "")
+            elif "," in bruto:
+                parte = bruto.rsplit(",", 1)[1]
+                bruto = bruto.replace(",", ".") if len(parte) <= 2 else bruto.replace(",", "")
+            elif bruto.count(".") == 1 and len(bruto.rsplit(".", 1)[1]) == 3:
+                bruto = bruto.replace(".", "")
+            try:
+                n = float(bruto)
+            except ValueError:
+                return None
+        else:
+            return None
+        return n if 0 < n < 50_000_000 else None
+
+    def recorrer_datos(obj):
+        if isinstance(obj, list):
+            for fila in obj:
+                yield from recorrer_datos(fila)
+        elif isinstance(obj, dict):
+            tipo = obj.get("@type", "")
+            tipos = tipo if isinstance(tipo, list) else [tipo]
+            if any(isinstance(t, str) and t.lower() == "product" for t in tipos):
+                ofertas = obj.get("offers")
+                for oferta in ofertas if isinstance(ofertas, list) else [ofertas]:
+                    if not isinstance(oferta, dict):
+                        continue
+                    moneda = oferta.get("priceCurrency", "ARS")
+                    if moneda not in (None, "", "ARS"):
+                        continue
+                    p = normalizar_importe(oferta.get("price"))
+                    if p is not None:
+                        yield p
+            for v in obj.values():
+                if isinstance(v, (dict, list)):
+                    yield from recorrer_datos(v)
+
+    # Información de producto estructurada.
+    for nodo in ficha.select('script[type="application/ld+json"]'):
+        try:
+            import json
+            datos = json.loads(nodo.string or nodo.get_text())
+        except (ValueError, TypeError):
+            continue
+        for precio in recorrer_datos(datos):
+            return precio
+
+    # Metadatos del producto (el contenido se expresa en pesos, no centavos).
+    for selector in (
+        'meta[property="product:price:amount"]',
+        'meta[property="og:price:amount"]',
+        'meta[itemprop="price"]',
+    ):
+        for nodo in ficha.select(selector):
+            precio = normalizar_importe(nodo.get("content"))
+            if precio is not None:
+                return precio
+
+    # Elementos de precio visibles. Evitar .price genérico fuera de la ficha.
+    cuerpo = ficha.select_one('main, .product-detail, .js-product-detail, .product-container') or ficha
+    for selector in (
+        '[itemprop="offers"] [itemprop="price"]',
+        '[itemprop="price"]',
+        '.js-price-display', '.js-product-price', '.price-display',
+        '.product-price', '[data-store="product-price"]',
+        '[data-store="price-container"]',
+    ):
+        for nodo in cuerpo.select(selector):
+            # Buscar importe con símbolo $, antes de aceptar otros formatos.
+            valores = re.findall(r"\$\s*([\d.,]+)", nodo.get_text(" ", strip=True))
+            for valor in valores:
+                precio = normalizar_importe(valor)
+                if precio is not None:
+                    return precio
+            for key in ("content",):
+                precio = normalizar_importe(nodo.get(key))
+                if precio is not None:
+                    return precio
+
+    # Último recurso: importe cercano al título dentro de la ficha principal.
+    texto_contenedor = cuerpo.get_text(" ", strip=True)
+    pos = texto_contenedor.find(titulo) if titulo else -1
+    if pos >= 0:
+        fragmento = texto_contenedor[pos + len(titulo):pos + len(titulo) + 350]
+        for valor in re.findall(r"\$\s*([\d.,]+)", fragmento):
+            precio = normalizar_importe(valor)
+            if precio is not None:
+                return precio
+    return None
+
+
 def leer_microteatro(hoy, estado):
     """Lee productos públicos de Microteatro y expande fechas/horarios disponibles."""
     fuente = "Microteatro Rosario"
@@ -1022,30 +1123,7 @@ def leer_microteatro(hoy, estado):
                 if not fechas or not horas:
                     continue
 
-                precio = None
-                for nodo in ficha.select(
-                    'meta[itemprop="price"], meta[property="product:price:amount"]'
-                ):
-                    precio = importe_microteatro(nodo.get("content"), meta=True)
-                    if precio:
-                        break
-                if not precio:
-                    for selector in (
-                        '[itemprop="price"]', ".js-price-display", ".price-display",
-                        ".product-price", "[data-product-price]",
-                    ):
-                        nodo = ficha.select_one(selector)
-                        if nodo:
-                            precio = importe_microteatro(
-                                nodo.get("content") or nodo.get("data-product-price") or texto(nodo)
-                            )
-                            if precio:
-                                break
-                if not precio:
-                    texto_pagina = texto(ficha)
-                    inicio_titulo = texto_pagina.find(titulo)
-                    zona_precio = texto_pagina[inicio_titulo + len(titulo):inicio_titulo + len(titulo) + 180]
-                    precio = importe_microteatro(zona_precio)
+                precio = precio_producto_microteatro(ficha, titulo)
 
                 descripcion_nodo = ficha.select_one(
                     ".product-description, .product_description, [itemprop='description']"
@@ -1435,6 +1513,8 @@ def actualizar_fuentes():
         estado[nombre] = f"revisada: {len(nuevos_cartel)} funciones verificadas; {len(fallos)} fichas pendientes"
     except (requests.RequestException, ValueError, TypeError) as error:
         estado[nombre] = f"no accesible: {type(error).__name__}"
+    from fuentes_adicionales import revisar
+    nuevos.extend(revisar(hoy, datos.get("eventos", []) + nuevos, estado))
     anteriores = preferir_venta_oficial(datos.get("eventos", []), espacios_nuevos)
     nuevos = preferir_venta_oficial(nuevos, espacios_nuevos)
     vistos = {clave(e): e for e in anteriores if e["fecha"] >= hoy.isoformat()}
@@ -1455,7 +1535,7 @@ def actualizar_fuentes():
             evento["fuente_pendiente"] = True
     ordenados = sorted(vistos.values(), key=lambda e: not e.get("funcion_unica_verificada", False))
     datos["eventos"] = sorted(sin_repetidos(ordenados), key=lambda e: (e["fecha"], e["hora"], e["nombre"]))
-    if any("pendiente de consulta" in status or "revisión parcial" in status or "no accesible" in status or re.search(r"[1-9]\d* (?:errores|pendientes|fichas pendientes|consultas pendientes|páginas pendientes)", status) for status in estado.values()):
+    if any("candidatos pendientes" in status and not "0 candidatos pendientes" in status or "consulta manual" in status or "pendiente de consulta" in status or "revisión parcial" in status or "no accesible" in status or re.search(r"[1-9]\d* (?:errores|pendientes|fichas pendientes|consultas pendientes|páginas pendientes)", status) for status in estado.values()):
         datos["estado"] = "parcial"
     temporal = ARCHIVO.with_suffix(".json.tmp")
     temporal.write_text(json.dumps(datos, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -1477,5 +1557,6 @@ def actualizar_fuentes():
 
 if __name__ == "__main__":
     actualizar_fuentes()
+
 
 

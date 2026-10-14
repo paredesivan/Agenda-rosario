@@ -1,0 +1,124 @@
+{
+  "revision": "2026-10-14",
+  "tipo": "consulta limitada de datos factuales con verificación oficial; no es licencia ni dictamen",
+  "base_commit": "afbe9d2bc259295830e6250d232a53e7bece5536",
+  "reglas": {
+    "copiar_imagenes": false,
+    "copiar_descripciones": false,
+    "comprobar": [
+      "fecha completa y año",
+      "hora de inicio y fin cuando se publique",
+      "sede en Rosario",
+      "precio oficial",
+      "edad mínima",
+      "cancelaciones",
+      "disponibilidad"
+    ],
+    "robots_no_equivale_a_licencia": true
+  },
+  "fuentes": [
+    {
+      "nombre": "Rosario Times",
+      "url": "https://rosariotimes.com/",
+      "tipo": "medio",
+      "eventos_rosario_detectados": true,
+      "consulta": "manual",
+      "importacion_automatica": "sólo mediante fuente oficial; datos secundarios sin confirmar quedan en candidatos",
+      "estado": "consulta factual limitada con límites, caché y detención ante 403/429",
+      "robots": {
+        "url": "https://rosariotimes.com/robots.txt",
+        "http": 200,
+        "contenido": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://rosariotimes.com/sitemap.xml\n",
+        "crawl_delay": null,
+        "revision": "2026-10-14; comprobación HTTP directa"
+      },
+      "terminos_url": null,
+      "licencia": "Derechos reservados; no se identificó licencia de reutilización",
+      "frecuencia_autorizada": null,
+      "verificacion_oficial_obligatoria": true,
+      "consulta_automatica": true,
+      "frecuencia_configurada_segundos": 7200,
+      "pausa_entre_consultas_segundos": 5,
+      "base_de_uso": "Decisión de alcance: datos factuales de eventos; sin fotos, descripciones ni réplica de la base. No afirma permiso contractual."
+    },
+    {
+      "nombre": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-rosario/c3642",
+      "tipo": "reventa",
+      "eventos_rosario_detectados": true,
+      "consulta": "manual",
+      "importacion_automatica": "sólo mediante fuente oficial; datos secundarios sin confirmar quedan en candidatos",
+      "estado": "consulta factual limitada con límites, caché y detención ante 403/429",
+      "robots": {
+        "url": "https://www.entradafan.com.ar/robots.txt",
+        "http": 200,
+        "contenido": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /test-error/\n\nSitemap: https://www.entradafan.com.ar/sitemap/sitemap.xml\n",
+        "crawl_delay": null,
+        "revision": "2026-10-14; comprobación HTTP directa"
+      },
+      "terminos_url": "https://www.entradafan.com.ar/terms",
+      "licencia": "Cláusulas 10.1–10.4: restricciones de reproducción y explotación; no se presume autorización por atribuir la fuente",
+      "frecuencia_autorizada": null,
+      "usar_precio_como_oficial": false,
+      "verificacion_oficial_obligatoria": true,
+      "consulta_automatica": true,
+      "frecuencia_configurada_segundos": 7200,
+      "pausa_entre_consultas_segundos": 5,
+      "base_de_uso": "Decisión de alcance: datos factuales de eventos; sin fotos, descripciones ni réplica de la base. No afirma permiso contractual."
+    },
+    {
+      "nombre": "SalePlan",
+      "url": "https://saleplan.ar/rosario/eventos",
+      "tipo": "agregador",
+      "eventos_rosario_detectados": true,
+      "consulta": "manual",
+      "importacion_automatica": "sólo mediante fuente oficial; datos secundarios sin confirmar quedan en candidatos",
+      "estado": "robots verificado: permite listado; consulta factual acotada con caché",
+      "robots": {
+        "url": "https://saleplan.ar/robots.txt",
+        "http": 200,
+        "crawl_delay": null,
+        "contenido": "User-agent: *\nAllow: /\nDisallow: /wizadm\nDisallow: /go/\n\n# Sitemap index — Google follows this to discover all sub-sitemaps.\nSitemap: https://saleplan.ar/sitemap.xml\n",
+        "revision": "2026-10-14; comprobación HTTP directa"
+      },
+      "terminos_url": "https://saleplan.ar/legal/terminos",
+      "licencia": "Sección 11 restringe extracción/explotación masiva sin autorización; sección 12 prohíbe scraping abusivo y eludir controles",
+      "frecuencia_autorizada": null,
+      "verificacion_oficial_obligatoria": true,
+      "observaciones": [
+        "Listado incluye radio de 50 km: comprobar ciudad de cada sede",
+        "Encabezado observado muestra 2027 mientras fichas incluyen días compatibles con 2026; no inferir año del encabezado"
+      ],
+      "consulta_automatica": true,
+      "frecuencia_configurada_segundos": 7200,
+      "pausa_entre_consultas_segundos": 5,
+      "base_de_uso": "Decisión de alcance: datos factuales de eventos; sin fotos, descripciones ni réplica de la base. No afirma permiso contractual."
+    },
+    {
+      "nombre": "Disfruta Rosario",
+      "url": "https://disfrutarosario.com/",
+      "consulta_automatica": false,
+      "estado": "auditoría previa incompleta; referencia manual del paquete control_fuentes_salidas_rosario"
+    }
+  ],
+  "dominios_oficiales_existentes": [
+    "rosario.gob.ar",
+    "teatroastengo.ar",
+    "teatrobroadwayrosario.com",
+    "teatrolacomedia.gob.ar",
+    "ccpe.org.ar",
+    "teatroelcirculo.com",
+    "metropolitano.ar",
+    "plataformalavarden.gob.ar",
+    "ccatlas.org.ar",
+    "elcairocinepublico.gob.ar",
+    "feriadellibrorosario.gob.ar",
+    "bibliotecavigil.org.ar",
+    "unr.edu.ar",
+    "mercadodelpatio.gob.ar",
+    "microteatrorosario.com",
+    "elrayomisterioso.org.ar",
+    "laorillainfinita.com.ar",
+    "teatrosatir.ar"
+  ]
+}

@@ -1,0 +1,76 @@
+name: Actualizar agenda
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - actualizar_eventos.py
+      - fuentes_nuevas.py
+      - fuentes_adicionales.py
+      - fuentes_adicionales.json
+      - eventos_verificados_adicionales.json
+      - precios_ticketek.py
+      - requirements.txt
+      - tests/**
+      - .github/workflows/actualizar.yml
+  schedule:
+    # GitHub interpreta este horario en UTC: cada dos horas, minuto 17.
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: actualizar-agenda
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    # La ejecución completa puede incluir más de 13 fuentes y fichas individuales.
+    timeout-minutes: 95
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v6
+
+      - name: Preparar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: python -m pip install requests beautifulsoup4
+
+      - name: Verificar extracción de fechas y eventos
+        if: hashFiles('tests/**/*.py') != ''
+        run: python -m unittest discover -s tests -v
+
+      - name: Actualizar agenda municipal y salas principales
+        timeout-minutes: 35
+        run: python -u actualizar_eventos.py
+
+      - name: Revisar fuentes complementarias, salas y museos
+        timeout-minutes: 45
+        run: python -u fuentes_nuevas.py
+
+      - name: Revisar precios de Ticketek
+        timeout-minutes: 5
+        run: python precios_ticketek.py
+
+      - name: Guardar cambios
+        run: |
+          git config user.name "agenda-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add eventos.json fuentes_revisadas.json cache_fuentes_adicionales.json candidatos_fuentes_adicionales.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Actualizar agenda"
+            git push origin HEAD:main
+          fi
+
+      - name: Publicar actualización en GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
+

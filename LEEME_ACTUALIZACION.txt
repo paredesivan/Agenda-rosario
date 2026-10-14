@@ -1,0 +1,84 @@
+PAQUETE ÚNICO — AGENDA ROSARIO — 14/10/2026
+
+Este paquete reemplaza los ZIP anteriores de reparación de Microteatro,
+control de fuentes y fuentes adicionales enviados en los chats.
+Se preparó sobre la versión actual de GitHub, commit
+afbe9d2bc259295830e6250d232a53e7bece5536.
+GitHub todavía no fue modificado por este trabajo.
+
+QUÉ SUBIR
+
+1. En la raíz de Agenda-rosario, subir/reemplazar:
+   fuentes_nuevas.py
+   fuentes_adicionales.py
+   fuentes_adicionales.json
+   eventos_verificados_adicionales.json
+   POLITICA_FUENTES.md
+
+2. Dentro de tests, subir:
+   test_fuentes_adicionales.py
+
+3. Reemplazar el contenido del archivo existente:
+   .github/workflows/actualizar.yml
+
+DESDE ANDROID
+
+Para los archivos de la raíz: repositorio > Add file > Upload files,
+seleccionar los cinco archivos del punto 1 y guardar con Commit changes.
+
+Para el test: abrir la carpeta tests > Add file > Upload files,
+subir test_fuentes_adicionales.py y guardar.
+
+Para el workflow: abrir .github > workflows > actualizar.yml > Edit.
+Abrir WORKFLOW_ACTUALIZAR.txt de este ZIP, copiar TODO su contenido,
+reemplazar TODO el contenido del editor y guardar con Commit changes.
+El .yml de la carpeta .github del ZIP y el .txt tienen el mismo contenido.
+El .txt es sólo una copia para facilitar su lectura en Android.
+No subir el workflow a la raíz: no se ejecutaría allí.
+
+AL TERMINAR
+
+Actions > Actualizar agenda > Run workflow > main > Run workflow.
+Ejecutarlo una vez después de terminar de subir todos los archivos evita
+depender de una ejecución iniciada cuando aún faltaban archivos.
+Después queda programado cada dos horas, sujeto a demoras de GitHub.
+
+La primera ejecución puede empezar antes de que termines de subir todo.
+Si falló por un archivo faltante, completá la subida y ejecutá Run workflow.
+
+NO HACE FALTA VOLVER A SUBIR
+
+actualizar_eventos.py, agenda.js, index.html, estilos.css, precios_ticketek.py,
+auditar_fuentes.py, corregir_pausas.py y los workflows de auditoría y pausas.
+La versión de esos archivos en GitHub ya contiene mejoras respecto de ZIP viejos.
+No reemplaces eventos.json ni fuentes_revisadas.json con copias antiguas.
+
+QUÉ CAMBIA
+
+- Precio de Microteatro: incorpora lectura de producto estructurado y visible.
+- La ejecución deja de cortarse a los 15 minutos del paso principal:
+  límites de 35 min para principal, 45 para complementarias y 95 para el trabajo.
+- Rosario Times, EntradaFan y SalePlan: consulta acotada de hechos con caché.
+- Se separan los candidatos sin confirmar de los eventos publicados.
+- Cinco funciones del otro paquete ya estaban presentes: sólo se completan
+  metadatos cuando coinciden nombre, día, hora, sede y dominio oficial.
+- Disfruta Rosario queda registrado como referencia manual pendiente de auditoría.
+
+LIMITACIONES REALES
+
+No significa que todos los eventos de esas páginas aparecerán automáticamente.
+Los candidatos sin confirmación oficial quedan en candidatos_fuentes_adicionales.json.
+Las fuentes nuevas no copian afiches, artículos, sinopsis ni precios de reventa.
+En la comprobación real se detectaron candidatos; no se agregó ningún evento
+nuevo confirmado a la página publicada. Esto ocurrirá con el workflow y sólo
+cuando el recolector encuentre respaldo oficial suficiente.
+Redirecciones y bloqueos requieren revisión; no se sortean.
+
+VALIDACIÓN
+
+24 pruebas pasadas; Python y YAML verificados.
+Las tres páginas y sus robots.txt fueron accesibles en la comprobación directa.
+No se ejecutó el workflow remoto ni se modificó GitHub.
+
+Si cambiás los mismos archivos en GitHub después de este paquete, no uses
+una copia vieja para pisar cambios nuevos: volver a comparar antes de subir.

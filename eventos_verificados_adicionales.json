@@ -1,0 +1,70 @@
+{
+  "reviewed_at": "2026-10-14",
+  "note": "Sólo completa metadatos de funciones ya presentes, con mismo nombre, fecha, hora, sede y dominio oficial. No importa ni duplica eventos.",
+  "events": [
+    {
+      "title": "Orquesta Utópica presenta: Tango de Rosario en movimiento",
+      "date": "2026-10-15",
+      "start": "20:30",
+      "end": null,
+      "venue": "Centro Cultural Parque de España",
+      "source_url": "https://ccpe.org.ar/web/actividades/orquesta-utopica-presenta-tango-de-rosario-en-movimiento/",
+      "source_type": "official_venue",
+      "verification": "verified_official",
+      "price": null,
+      "description_original": "Concierto de tango con parejas de baile invitadas."
+    },
+    {
+      "title": "Escenas de la vida conyugal",
+      "date": "2026-10-15",
+      "start": "20:30",
+      "end": "22:30",
+      "venue": "Teatro Astengo",
+      "address": "Mitre 754, Rosario",
+      "source_url": "https://teatroastengo.ar/events/",
+      "source_type": "official_venue",
+      "verification": "verified_official",
+      "price": null,
+      "description_original": "Obra teatral con Ricardo Darín y Andrea Pietra."
+    },
+    {
+      "title": "Escenas de la vida conyugal",
+      "date": "2026-10-16",
+      "start": "21:00",
+      "end": "23:00",
+      "venue": "Teatro Astengo",
+      "address": "Mitre 754, Rosario",
+      "source_url": "https://teatroastengo.ar/events/",
+      "source_type": "official_venue",
+      "verification": "verified_official",
+      "price": null,
+      "description_original": "Obra teatral con Ricardo Darín y Andrea Pietra."
+    },
+    {
+      "title": "Escenas de la vida conyugal",
+      "date": "2026-10-17",
+      "start": "21:00",
+      "end": "23:00",
+      "venue": "Teatro Astengo",
+      "address": "Mitre 754, Rosario",
+      "source_url": "https://teatroastengo.ar/events/",
+      "source_type": "official_venue",
+      "verification": "verified_official",
+      "price": null,
+      "description_original": "Obra teatral con Ricardo Darín y Andrea Pietra."
+    },
+    {
+      "title": "Escenas de la vida conyugal",
+      "date": "2026-10-18",
+      "start": "20:30",
+      "end": "22:30",
+      "venue": "Teatro Astengo",
+      "address": "Mitre 754, Rosario",
+      "source_url": "https://teatroastengo.ar/events/",
+      "source_type": "official_venue",
+      "verification": "verified_official",
+      "price": null,
+      "description_original": "Obra teatral con Ricardo Darín y Andrea Pietra."
+    }
+  ]
+}
