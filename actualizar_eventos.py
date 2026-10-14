@@ -277,6 +277,14 @@ SESION.mount("https://", HTTPAdapter(max_retries=Retry(
     respect_retry_after_header=False,
 )))
 
+# Pausas solicitadas en robots.txt, revisadas el 14/10/2026.
+# La pausa general mínima sigue siendo 1,5 segundos.
+PAUSAS_POR_HOST = {
+    "bibliotecavigil.org.ar": 60.0,
+    "www.metropolitano.ar": 10.0,
+    "www.teatrosatir.ar": 10.0,
+}
+
 ULTIMA, BLOQUEADOS, FALLAS = {}, set(), {}
 
 
@@ -287,7 +295,7 @@ def descargar(url):
             f"Fuente pausada: {host}; se conservan sus datos"
         )
 
-    espera = 1.5 - (monotonic() - ULTIMA.get(host, 0))
+    espera = max(1.5, PAUSAS_POR_HOST.get(host, 1.5)) - (monotonic() - ULTIMA.get(host, 0))
     if espera > 0:
         sleep(espera)
 

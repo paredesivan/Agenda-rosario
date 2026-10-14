@@ -623,11 +623,11 @@ def espacio_seguido(lugar):
 
 def descargar_catalogo(url):
     """La misma consulta GET pública que realiza el catálogo de venta."""
-    from actualizar_eventos import SESION, BLOQUEADOS, ULTIMA, monotonic, sleep
+    from actualizar_eventos import SESION, BLOQUEADOS, ULTIMA, monotonic, sleep, PAUSAS_POR_HOST
     host = urlsplit(url).hostname
     if host in BLOQUEADOS:
         raise requests.RequestException('Fuente pausada en esta revisión')
-    espera = 1.5 - (monotonic() - ULTIMA.get(host, 0))
+    espera = max(1.5, PAUSAS_POR_HOST.get(host, 1.5)) - (monotonic() - ULTIMA.get(host, 0))
     if espera > 0:
         sleep(espera)
     try:
@@ -1143,11 +1143,11 @@ CSV_AGENDAS = (
 
 
 def descargar_texto_publico(url):
-    from actualizar_eventos import SESION, BLOQUEADOS, ULTIMA, monotonic, sleep
+    from actualizar_eventos import SESION, BLOQUEADOS, ULTIMA, monotonic, sleep, PAUSAS_POR_HOST
     host = urlsplit(url).hostname
     if host in BLOQUEADOS:
         raise requests.RequestException('Fuente pausada en esta revisión')
-    espera = 1.5 - (monotonic() - ULTIMA.get(host, 0))
+    espera = max(1.5, PAUSAS_POR_HOST.get(host, 1.5)) - (monotonic() - ULTIMA.get(host, 0))
     if espera > 0:
         sleep(espera)
     try:
