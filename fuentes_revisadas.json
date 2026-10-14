@@ -1,8 +1,8 @@
 {
-  "fecha_revision": "2026-10-14 02:05",
+  "fecha_revision": "2026-10-14 09:04",
   "salas_independientes": 13,
   "medios": 3,
-  "funciones_agregadas": 2,
+  "funciones_agregadas": 1,
   "fuentes": {
     "Feria Internacional del Libro de Rosario": "revisada: 5 jornadas; fuente oficial",
     "Microteatro Rosario": "revisada: 53 funciones en 12 obras; 0 fichas pendientes",
@@ -33,7 +33,7 @@
     "Museo de Bellas Artes Juan B. Castagnino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Arte Contemporáneo de Rosario (MACRO)": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de la Memoria": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de Arte Decorativo Firma y Odilo Estévez": "web pendiente de consulta: 0 actividades",
+    "Museo de Arte Decorativo Firma y Odilo Estévez": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de la Ciudad": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo del Deporte Santafesino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Histórico Provincial Julio Marc": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
@@ -94,7 +94,7 @@
     {
       "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
       "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-estevez",
-      "estado": "web pendiente de consulta",
+      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
       "actividades": 0,
       "webs": [
         "https://www.museoestevez.gob.ar"
