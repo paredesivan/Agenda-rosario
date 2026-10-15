@@ -12,7 +12,7 @@
       "last_modified": null
     },
     "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/": {
-      "consultado": 1792012697.611872,
+      "consultado": 1792101985.416954,
       "datos": {
         "hechos": [],
         "enlaces": [
@@ -25,7 +25,7 @@
       "last_modified": null
     },
     "https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/": {
-      "consultado": 1792012703.6779227,
+      "consultado": 1792101990.9620984,
       "datos": {
         "hechos": [],
         "enlaces": [
@@ -38,7 +38,7 @@
       "last_modified": null
     },
     "https://rosariotimes.com/gabriel-rolon-llega-a-rosario-con-su-obra-palabra-plena/": {
-      "consultado": 1792012709.3900547,
+      "consultado": 1792101996.6749022,
       "datos": {
         "hechos": [],
         "enlaces": [
@@ -50,7 +50,7 @@
       "last_modified": null
     },
     "https://rosariotimes.com/la-fiesta-de-las-colectividades-2026-tendra-lugar-del-6-al-15-de-noviembre/": {
-      "consultado": 1792012715.0931866,
+      "consultado": 1792102002.3749988,
       "datos": {
         "hechos": [],
         "enlaces": [
@@ -470,13 +470,45 @@
           "lugar": "Plataforma Lavarden",
           "direccion": "Mendoza 1085, Rosario, S2000",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/B0V2Y6YFQWEK/candlelight-las-cuatro-estaciones-de-vivaldi"
+        },
+        {
+          "nombre": "Candlelight: Tributo a Taylor Swift",
+          "fecha": "2026-10-30",
+          "hora": "19:00",
+          "lugar": "City Center Rosario",
+          "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
+          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift"
+        },
+        {
+          "nombre": "Candlelight: Lo Mejor de Hans Zimmer",
+          "fecha": "2026-10-30",
+          "hora": "21:30",
+          "lugar": "City Center Rosario",
+          "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
+          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer"
+        },
+        {
+          "nombre": "Candlelight: De Música Ligera",
+          "fecha": "2026-11-21",
+          "hora": "21:30",
+          "lugar": "City Center Rosario",
+          "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
+          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/4EWY0B1WK49R/candlelight-de-musica-ligera"
+        },
+        {
+          "nombre": "Candlelight: Las Cuatro Estaciones de Vivaldi",
+          "fecha": "2026-12-05",
+          "hora": "19:00",
+          "lugar": "Plataforma Lavarden",
+          "direccion": "Mendoza 1085, Rosario, S2000",
+          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/B0V2Y6YFQWEK/candlelight-las-cuatro-estaciones-de-vivaldi"
         }
       ],
       "etag": null,
       "last_modified": null
     },
     "https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift": {
-      "consultado": 1792012731.3550203,
+      "consultado": 1792102003.081605,
       "datos": {
         "hechos": [
           {
@@ -503,7 +535,7 @@
       "last_modified": null
     },
     "https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer": {
-      "consultado": 1792012736.6167424,
+      "consultado": 1792102008.379478,
       "datos": {
         "hechos": [
           {
@@ -530,7 +562,7 @@
       "last_modified": null
     },
     "https://saleplan.ar/santa-fe/rosario/planes/4EWY0B1WK49R/candlelight-de-musica-ligera": {
-      "consultado": 1792012741.8857312,
+      "consultado": 1792102013.7240908,
       "datos": {
         "hechos": [
           {
@@ -557,7 +589,7 @@
       "last_modified": null
     },
     "https://saleplan.ar/santa-fe/rosario/planes/B0V2Y6YFQWEK/candlelight-las-cuatro-estaciones-de-vivaldi": {
-      "consultado": 1792012747.1194947,
+      "consultado": 1792102019.110137,
       "datos": {
         "hechos": [
           {
@@ -582,6 +614,130 @@
       },
       "etag": null,
       "last_modified": null
+    },
+    "https://entradaslavarden.com/?categoria=ESPECT%C3%81CULOS": {
+      "consultado": 1792102026.5834851,
+      "datos": [
+        {
+          "nombre": "La Albert Moreno: Cumpleaños Charly!",
+          "fecha": "2026-10-22",
+          "hora": "21:00",
+          "precio": 15000,
+          "entradas_url": "https://entradaslavarden.com/-La-Albert-Moreno--Cumpleanos-Charly--/"
+        },
+        {
+          "nombre": "Paris Jazz Club: JAZZ CARTOONS",
+          "fecha": "2026-10-24",
+          "hora": "21:00",
+          "precio": 30000,
+          "entradas_url": "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/"
+        },
+        {
+          "nombre": "Pupina Plomer presenta Especial Brujas",
+          "fecha": "2026-10-30",
+          "hora": "21:00",
+          "precio": 30000,
+          "entradas_url": "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/"
+        },
+        {
+          "nombre": "PEZ en Rosario",
+          "fecha": "2026-11-13",
+          "hora": "21:00",
+          "precio": 30000,
+          "entradas_url": "https://entradaslavarden.com/PEZ-en-Rosario/"
+        },
+        {
+          "nombre": "SILVINA GANDINI presenta FUEGO Aceites Perfumados",
+          "fecha": "2026-11-15",
+          "hora": "20:00",
+          "precio": 25000,
+          "entradas_url": "https://entradaslavarden.com/SILVINA-GANDINI-presenta-FUEGO-Aceites-Perfumados/"
+        },
+        {
+          "nombre": "QUE OLOR en VIVO",
+          "fecha": "2026-11-20",
+          "hora": "20:30",
+          "precio": 30000,
+          "entradas_url": "https://entradaslavarden.com/QUE-OLOR-en-VIVO/"
+        }
+      ],
+      "etag": null,
+      "last_modified": null
+    },
+    "https://plataformalavarden.gob.ar/actividades/problema-1/": {
+      "consultado": 1792102040.6819499,
+      "datos": [
+        "https://entradaslavarden.com/Problema-1/"
+      ],
+      "etag": null,
+      "last_modified": null
+    },
+    "https://entradaslavarden.com/Problema-1/": {
+      "consultado": 1792102041.0141575,
+      "datos": {
+        "nombre": "Problema 1",
+        "funciones": [
+          [
+            "2026-10-17",
+            "21:00"
+          ]
+        ],
+        "entradas_url": "https://entradaslavarden.com/Problema-1/",
+        "precio": 35000,
+        "bloqueada": false
+      },
+      "etag": null,
+      "last_modified": null
+    },
+    "https://plataformalavarden.gob.ar/actividades/pupina-plomer/": {
+      "consultado": 1792102052.3496633,
+      "datos": [
+        "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/"
+      ],
+      "etag": null,
+      "last_modified": null
+    },
+    "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/": {
+      "consultado": 1792102052.6100984,
+      "datos": {
+        "nombre": "Pupina Plomer presenta Especial Brujas",
+        "funciones": [
+          [
+            "2026-10-30",
+            "21:00"
+          ]
+        ],
+        "entradas_url": "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/",
+        "precio": 30000,
+        "bloqueada": false
+      },
+      "etag": null,
+      "last_modified": null
+    },
+    "https://plataformalavarden.gob.ar/actividades/julieta-laso/": {
+      "consultado": 1792102060.111503,
+      "datos": [
+        "https://entradaslavarden.com/JULIETA-LASO-presenta-FABRIQUERA/"
+      ],
+      "etag": null,
+      "last_modified": null
+    },
+    "https://entradaslavarden.com/JULIETA-LASO-presenta-FABRIQUERA/": {
+      "consultado": 1792102060.4158359,
+      "datos": {
+        "nombre": "JULIETA LASO presenta FABRIQUERA",
+        "funciones": [
+          [
+            "2026-11-06",
+            "21:00"
+          ]
+        ],
+        "entradas_url": "https://entradaslavarden.com/JULIETA-LASO-presenta-FABRIQUERA/",
+        "precio": 25000,
+        "bloqueada": false
+      },
+      "etag": null,
+      "last_modified": null
     }
   },
   "robots": {
@@ -599,16 +755,26 @@
       "consultado": 1792012720.757483,
       "reglas": "User-agent: *\nAllow: /\nDisallow: /wizadm\nDisallow: /go/\n\n# Sitemap index — Google follows this to discover all sub-sitemaps.\nSitemap: https://saleplan.ar/sitemap.xml\n",
       "http": 200
+    },
+    "https://entradaslavarden.com/robots.txt": {
+      "consultado": 1792102021.1599379,
+      "reglas": "# As a condition of accessing this website, you agree to abide by the following\n# content signals:\n\n# (a)  If a content-signal = yes, you may collect content for the corresponding\n#      use.\n# (b)  If a content-signal = no, you may not collect content for the\n#      corresponding use.\n# (c)  If the website operator does not include a content signal for a\n#      corresponding use, the website operator neither grants nor restricts\n#      permission via content signal with respect to the corresponding use.\n\n# The content signals and their meanings are:\n\n# search:   building a search index and providing search results (e.g., returning\n#           hyperlinks and short excerpts from your website's contents). Search does not\n#           include providing AI-generated search summaries.\n# ai-input: inputting content into one or more AI models (e.g., retrieval\n#           augmented generation, grounding, or other real-time taking of content for\n#           generative AI search answers).\n# ai-train: training or fine-tuning AI models.\n\n# ANY RESTRICTIONS EXPRESSED VIA CONTENT SIGNALS ARE EXPRESS RESERVATIONS OF\n# RIGHTS UNDER ARTICLE 4 OF THE EUROPEAN UNION DIRECTIVE 2019/790 ON COPYRIGHT\n# AND RELATED RIGHTS IN THE DIGITAL SINGLE MARKET.\n",
+      "http": 200
+    },
+    "https://plataformalavarden.gob.ar/robots.txt": {
+      "consultado": 1792102027.9323475,
+      "reglas": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://plataformalavarden.gob.ar/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK",
+      "http": 200
     }
   },
   "notas_diarias": {
-    "rosariotimes.com:2026-10-14": [
+    "rosariotimes.com:2026-10-15": [
       "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
       "https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/",
       "https://rosariotimes.com/gabriel-rolon-llega-a-rosario-con-su-obra-palabra-plena/",
       "https://rosariotimes.com/la-fiesta-de-las-colectividades-2026-tendra-lugar-del-6-al-15-de-noviembre/"
     ],
-    "saleplan.ar:2026-10-14": [
+    "saleplan.ar:2026-10-15": [
       "https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift",
       "https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer",
       "https://saleplan.ar/santa-fe/rosario/planes/4EWY0B1WK49R/candlelight-de-musica-ligera",

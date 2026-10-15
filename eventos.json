@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15 17:27",
+  "actualizado": "2026-10-15 18:41",
   "estado": "parcial",
   "eventos": [
     {
@@ -1882,8 +1882,13 @@
       "direccion": "Mendoza 1085, Rosario, Santa Fe",
       "descripcion": "el primer unipersonal de Teo López Puccio",
       "evento_url": "https://plataformalavarden.gob.ar/actividades/problema-1/",
-      "precio": null,
-      "origen": "Plataforma Lavardén"
+      "precio": 35000,
+      "origen": "Plataforma Lavardén",
+      "entradas_url": "https://entradaslavarden.com/Problema-1/",
+      "precio_etiqueta": "Desde $35.000 + cargo de servicio",
+      "entrada_paga": true,
+      "precio_fuente": "Entradas Lavardén",
+      "precio_consultado": "2026-10-15 19:07"
     },
     {
       "fecha": "2026-10-17",
@@ -3613,8 +3618,13 @@
       "direccion": "Mendoza 1085, Rosario, Santa Fe",
       "descripcion": "presenta Jazz Cartoons",
       "evento_url": "https://plataformalavarden.gob.ar/actividades/paris-jazz-club-2/",
-      "precio": null,
-      "origen": "Plataforma Lavardén"
+      "precio": 30000,
+      "origen": "Plataforma Lavardén",
+      "precio_etiqueta": "Desde $30.000 + cargo de servicio",
+      "entradas_url": "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/",
+      "entrada_paga": true,
+      "precio_fuente": "Entradas Lavardén",
+      "precio_consultado": "2026-10-15 19:07"
     },
     {
       "fecha": "2026-10-24",
@@ -4649,8 +4659,13 @@
       "direccion": "Mendoza 1085, Rosario, Santa Fe",
       "descripcion": "presenta «Especial Brujas»",
       "evento_url": "https://plataformalavarden.gob.ar/actividades/pupina-plomer/",
-      "precio": null,
-      "origen": "Plataforma Lavardén"
+      "precio": 30000,
+      "origen": "Plataforma Lavardén",
+      "precio_etiqueta": "Desde $30.000 + cargo de servicio",
+      "entradas_url": "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/",
+      "entrada_paga": true,
+      "precio_fuente": "Entradas Lavardén",
+      "precio_consultado": "2026-10-15 19:07"
     },
     {
       "fecha": "2026-10-30",
@@ -5644,8 +5659,13 @@
       "direccion": "Mendoza 1085, Rosario, Santa Fe",
       "descripcion": "presenta «Fabriquera»",
       "evento_url": "https://plataformalavarden.gob.ar/actividades/julieta-laso/",
-      "precio": null,
-      "origen": "Plataforma Lavardén"
+      "precio": 25000,
+      "origen": "Plataforma Lavardén",
+      "entradas_url": "https://entradaslavarden.com/JULIETA-LASO-presenta-FABRIQUERA/",
+      "precio_etiqueta": "Desde $25.000 + cargo de servicio",
+      "entrada_paga": true,
+      "precio_fuente": "Entradas Lavardén",
+      "precio_consultado": "2026-10-15 19:07"
     },
     {
       "fecha": "2026-11-06",

@@ -1,8 +1,8 @@
 {
-  "fecha_revision": "2026-10-15 17:39",
+  "fecha_revision": "2026-10-15 18:53",
   "salas_independientes": 13,
   "medios": 3,
-  "funciones_agregadas": 24,
+  "funciones_agregadas": 0,
   "fuentes": {
     "Feria Internacional del Libro de Rosario": "revisada: 4 jornadas; fuente oficial",
     "Microteatro Rosario": "revisada: 53 funciones en 12 obras; 0 fichas pendientes",
@@ -34,7 +34,7 @@
     "Museo de Arte Contemporáneo de Rosario (MACRO)": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de la Memoria": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Arte Decorativo Firma y Odilo Estévez": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de la Ciudad": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
+    "Museo de la Ciudad": "web pendiente de consulta: 0 actividades",
     "Museo del Deporte Santafesino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Histórico Provincial Julio Marc": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo": "web pendiente de consulta: 0 actividades",
@@ -54,10 +54,10 @@
     "Rosario3": "revisada: 1 notas, 10 funciones, 0 errores",
     "La Capital": "revisada: 0 notas, 0 funciones, 0 errores",
     "El Ciudadano": "revisada: 5 notas, 0 funciones, 0 errores",
-    "Rosario en Cartel": "revisada: 22 funciones verificadas; 2 fichas pendientes",
+    "Rosario en Cartel": "revisada: 2 funciones verificadas; 33 fichas pendientes",
     "Rosario Times": "revisada: 3 coincidencias con registros oficiales; 4 candidatos pendientes; 0 consultas pendientes",
     "EntradaFan": "revisada: 9 coincidencias con registros oficiales; 10 candidatos pendientes; 0 consultas pendientes",
-    "SalePlan": "revisada: 0 coincidencias con registros oficiales; 26 candidatos pendientes; 0 consultas pendientes",
+    "SalePlan": "revisada: 0 coincidencias con registros oficiales; 28 candidatos pendientes; 0 consultas pendientes",
     "Disfruta Rosario": "consulta manual; auditoría pendiente",
     "Passline": "fichas futuras incorporadas con enlace directo; precio actualizado en Passline"
   },
@@ -108,7 +108,7 @@
     {
       "nombre": "Museo de la Ciudad",
       "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-la-ciudad",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
+      "estado": "web pendiente de consulta",
       "actividades": 0,
       "webs": [
         "https://www.instagram.com/museociudad/"
