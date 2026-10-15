@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15 15:19",
+  "actualizado": "2026-10-15 17:27",
   "estado": "parcial",
   "eventos": [
     {
@@ -1198,6 +1198,22 @@
     {
       "fecha": "2026-10-16",
       "hora": "21:30",
+      "nombre": "OKTOBERFEST + FREDDY Y LOS SOLARES - DECADA DISCO",
+      "lugar": "DECADA DISCO",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/freddy-y-los-solares-decada-disco",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "21:30",
       "nombre": "Prometo volver a engañarte",
       "lugar": "Microteatro Rosario",
       "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
@@ -1633,6 +1649,22 @@
     {
       "fecha": "2026-10-17",
       "hora": "18:00",
+      "nombre": "Festival Ludueña",
+      "lugar": "Paseo Ludueña",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/festival-luduena",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "18:00",
       "nombre": "Mercado de las Artes en La Noche de Peatonales",
       "lugar": "Plaza 25 de Mayo",
       "direccion": "Plaza 25 de Mayo, Rosario, Santa Fe",
@@ -1694,6 +1726,22 @@
       "evento_url": "https://ccpe.org.ar/web/actividades/impresiones-sonoras-ensamble-municipal-de-vientos/",
       "precio": 0,
       "origen": "Centro Cultural Parque de España"
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "20:00",
+      "nombre": "Oliver Kozlov en vivo en Rosario",
+      "lugar": "Corcovado Estudio",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/oliver-kozlov-en-vivo-en-rosario",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
     },
     {
       "fecha": "2026-10-17",
@@ -2058,6 +2106,22 @@
       "entrada_paga": true,
       "categorias": [
         "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "hora": "23:30",
+      "nombre": "La Re en Rosario!",
+      "lugar": "Capi Club",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/la-re-en-rosario-l-1710",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
       ]
     },
     {
@@ -3251,6 +3315,22 @@
     {
       "fecha": "2026-10-24",
       "hora": "10:00",
+      "nombre": "Festival Bandera 2026",
+      "lugar": "Parque Estación Central",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/festival-bandera-2026",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
+    },
+    {
+      "fecha": "2026-10-24",
+      "hora": "10:00",
       "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
       "lugar": "Museo de la Ciudad Wladimir Mikielievich",
       "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
@@ -3535,6 +3615,22 @@
       "evento_url": "https://plataformalavarden.gob.ar/actividades/paris-jazz-club-2/",
       "precio": null,
       "origen": "Plataforma Lavardén"
+    },
+    {
+      "fecha": "2026-10-24",
+      "hora": "23:30",
+      "nombre": "MARTIN HUERGO X QUATRO",
+      "lugar": "Complejo Forest",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/martin-huergo-x-quatro",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
     },
     {
       "fecha": "2026-10-25",
@@ -4222,6 +4318,22 @@
     },
     {
       "fecha": "2026-10-29",
+      "hora": "21:00",
+      "nombre": "MATIAS ACUÑA - CROWDWORKING - ROSARIO",
+      "lugar": "Capitan Bar",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/matias-acuna-crowdworking-rosario",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
+    },
+    {
+      "fecha": "2026-10-29",
       "hora": "22:30",
       "nombre": "EL ODIO VS. TIEMPOS VIOLENTOS",
       "lugar": "El Cairo Cine Público",
@@ -4874,6 +4986,22 @@
     },
     {
       "fecha": "2026-10-31",
+      "hora": "23:00",
+      "nombre": "EMI GALVAN ALL NIGHT LONG - 7HS SET",
+      "lugar": "Complejo Forest",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/emi-galvan-all-night-long-7hs-set/musica-electronica-rosario-gabriel-soressi",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
+    },
+    {
+      "fecha": "2026-10-31",
       "hora": "23:59",
       "nombre": "BRESH | EDICIÓN ESPECIAL HALLOWEEN",
       "lugar": "La Segunda Seguros Arena",
@@ -4980,6 +5108,22 @@
     },
     {
       "fecha": "2026-11-01",
+      "hora": "14:00",
+      "nombre": "Potencia Emprendedora Rosario",
+      "lugar": "Hotel Ros Tower",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/potencia-emprendedora-rosario-556858",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
+    },
+    {
+      "fecha": "2026-11-01",
       "hora": "16:00",
       "nombre": "Muestra: Efervescencia cromática. Anomalía de un universo en expansión",
       "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
@@ -4988,6 +5132,22 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/muestra-efervescencia-cromatica.-anomalia-de-un-universo-en-expansion",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-01",
+      "hora": "19:30",
+      "nombre": "TOO YUGAN EN ROSARIO Imponiendo zona sur tour",
+      "lugar": "Somos Musica",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/too-yugan-en-rosario-imponiendo-zona-sur-tour",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
     },
     {
       "fecha": "2026-11-01",
@@ -5507,6 +5667,22 @@
       ]
     },
     {
+      "fecha": "2026-11-06",
+      "hora": "23:30",
+      "nombre": "BROKE PARTY en ROSARIO - Especial Halloween",
+      "lugar": "Club Mercury",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/broke-party-en-rosario-especial-halloween",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
+    },
+    {
       "fecha": "2026-11-07",
       "hora": "10:00",
       "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
@@ -5592,6 +5768,38 @@
       "categorias": [
         "musica",
         "teatro"
+      ]
+    },
+    {
+      "fecha": "2026-11-07",
+      "hora": "23:30",
+      "nombre": "DRAMER en Rosario",
+      "lugar": "Capi Club",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/dramer-en-rosario",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
+    },
+    {
+      "fecha": "2026-11-07",
+      "hora": "23:30",
+      "nombre": "LONDONGROUND X BOILER",
+      "lugar": "Complejo Forest",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/londonground-x-boiler/musica-electronica-rosario-gabriel-soressi",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
       ]
     },
     {
@@ -6103,6 +6311,22 @@
     },
     {
       "fecha": "2026-11-14",
+      "hora": "20:00",
+      "nombre": "el PROFE BORDA DESPIDE EL AÑO en ROSARIO",
+      "lugar": "Distrito 7",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/el-profe-borda-despide-el-ano-en-rosario",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
+    },
+    {
+      "fecha": "2026-11-14",
       "hora": "21:00",
       "nombre": "ALEX UBAGO EN LA SEGUNDA SEGUROS ARENA",
       "lugar": "La Segunda Seguros Arena",
@@ -6115,6 +6339,70 @@
       "entradas_url": "https://entradaplay.com/ALEX-UBAGO-EN-BIOCERES-ARENA/",
       "entrada_paga": true,
       "funcion_unica_verificada": true
+    },
+    {
+      "fecha": "2026-11-14",
+      "hora": "21:00",
+      "nombre": "SUDBEAT SHOWCASE - Hipódromo de Rosario",
+      "lugar": "Hipódromo de Rosario",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/sudbeat-showcase-141126-hipodromo-de-rosario/gabriel-soressi-525803",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
+    },
+    {
+      "fecha": "2026-11-21",
+      "hora": "21:00",
+      "nombre": "El Caribefunk en Rosario",
+      "lugar": "Distrito 7",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/el-caribefunk-en-rosario-21-nov",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
+    },
+    {
+      "fecha": "2026-11-22",
+      "hora": "22:30",
+      "nombre": "RARESH & FRANCO CINELLI",
+      "lugar": "Complejo Forest",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/raresh-franco-cinelli",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
+    },
+    {
+      "fecha": "2026-12-19",
+      "hora": "18:00",
+      "nombre": "FESTIVAL DE HOUSE - DENNIS CRUZ",
+      "lugar": "Playa de la musica",
+      "direccion": "",
+      "descripcion": "",
+      "evento_url": "https://www.passline.com/eventos/dennis-cruz-552671",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio actualizado en Passline",
+      "origen": "Passline",
+      "fuente_verificada": true,
+      "descubrimiento_fuentes": [
+        "Passline"
+      ]
     }
   ]
 }
