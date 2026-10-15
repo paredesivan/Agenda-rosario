@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15 14:22",
+  "actualizado": "2026-10-15 15:19",
   "estado": "parcial",
   "eventos": [
     {
@@ -137,17 +137,6 @@
       "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
       "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
       "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "14:00",
-      "nombre": "Visitas Guiadas Biblioteca Estrada",
-      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
-      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
-      "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },

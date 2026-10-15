@@ -1,5 +1,5 @@
 {
-  "fecha_revision": "2026-10-15 14:37",
+  "fecha_revision": "2026-10-15 15:33",
   "salas_independientes": 13,
   "medios": 3,
   "funciones_agregadas": 6,
@@ -57,7 +57,7 @@
     "Rosario en Cartel": "revisada: 22 funciones verificadas; 0 fichas pendientes",
     "Rosario Times": "revisada: 3 coincidencias con registros oficiales; 4 candidatos pendientes; 0 consultas pendientes",
     "EntradaFan": "revisada: 9 coincidencias con registros oficiales; 10 candidatos pendientes; 0 consultas pendientes",
-    "SalePlan": "revisada: 0 coincidencias con registros oficiales; 26 candidatos pendientes; 0 consultas pendientes",
+    "SalePlan": "revisada: 0 coincidencias con registros oficiales; 28 candidatos pendientes; 0 consultas pendientes",
     "Disfruta Rosario": "consulta manual; auditoría pendiente"
   },
   "museos": [
