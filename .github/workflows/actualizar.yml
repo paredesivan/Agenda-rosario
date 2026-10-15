@@ -8,6 +8,7 @@ on:
       - fuentes_nuevas.py
       - fuentes_adicionales.py
       - fuentes_adicionales.json
+      - candidatos_passline.json
       - eventos_verificados_adicionales.json
       - precios_ticketek.py
       - requirements.txt
@@ -73,4 +74,5 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
+
 
