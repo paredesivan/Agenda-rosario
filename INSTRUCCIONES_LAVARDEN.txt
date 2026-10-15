@@ -1,0 +1,20 @@
+VERSIÓN COMPLETA: reemplaza el ZIP lavarden_precios_entradas.zip anterior.
+
+Subir precios_lavarden.py y auditoria_entradas_lavarden.json a la raíz.
+Subir test_precios_lavarden.py a tests/.
+Reemplazar .github/workflows/actualizar.yml respetando esa carpeta.
+verificacion_lavarden.json es un informe de comprobación; no hace falta subirlo.
+
+La subida a main activa la actualización; luego continúa cada dos horas.
+No reemplazar eventos.json, agenda.js ni otros archivos con versiones anteriores.
+
+Ahora sigue cada enlace Ticket oficial además del listado de la boletería.
+Precio visible online; fecha/hora comprobadas con el selector de funciones.
+La apertura de puertas no se usa como hora de inicio.
+Si hay varias funciones sin precio individual, conserva el enlace sin inventar precio.
+No importa eventos nuevos ni cambia fuentes ajenas a Lavardén.
+
+Cinco funciones verificadas: Grandinetti desde $40.000; Problema 1 desde $35.000; Paris Jazz Club y Pupina Plomer desde $30.000; Julieta Laso desde $25.000. Cargo de servicio adicional.
+27 pruebas correctas. Informe sobre cinco fichas reales incluido.
+Timeouts o bloqueos quedan pendientes; caché y pausa 403/429.
+Base GitHub: 53c899c70c2af215e06c6d7c59719ecdac9b97bf.

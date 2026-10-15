@@ -1,0 +1,22 @@
+{
+  "fuente": "Entradas Lavardén",
+  "revision": "2026-10-15",
+  "base_commit": "53c899c70c2af215e06c6d7c59719ecdac9b97bf",
+  "url": "https://entradaslavarden.com/?categoria=ESPECT%C3%81CULOS",
+  "robots_http": 200,
+  "robots_contenido": "# As a condition of accessing this website, you agree to abide by the following\n# content signals:\n\n# (a)  If a content-signal = yes, you may collect content for the corresponding\n#      use.\n# (b)  If a content-signal = no, you may not collect content for the\n#      corresponding use.\n# (c)  If the website operator does not include a content signal for a\n#      corresponding use, the website operator neither grants nor restricts\n#      permission via content signal with respect to the corresponding use.\n\n# The content signals and their meanings are:\n\n# search:   building a search index and providing search results (e.g., returning\n#           hyperlinks and short excerpts from your website's contents). Search does not\n#           include providing AI-generated search summaries.\n# ai-input: inputting content into one or more AI models (e.g., retrieval\n#           augmented generation, grounding, or other real-time taking of content for\n#           generative AI search answers).\n# ai-train: training or fine-tuning AI models.\n\n# ANY RESTRICTIONS EXPRESSED VIA CONTENT SIGNALS ARE EXPRESS RESERVATIONS OF\n# RIGHTS UNDER ARTICLE 4 OF THE EUROPEAN UNION DIRECTIVE 2019/790 ON COPYRIGHT\n# AND RELATED RIGHTS IN THE DIGITAL SINGLE MARKET.\n",
+  "terminos": "Condiciones Legales incluidas en la portada; condiciones de venta y cargos de servicio. No se identificó permiso expreso de reutilización ni frecuencia autorizada.",
+  "alcance": "Listado público más enlaces Ticket publicados en las fichas oficiales de Plataforma Lavardén. Completa sólo funciones con fecha y hora verificadas. No copia fotos ni sinopsis, ni accede a checkout o APIs privadas.",
+  "limites": {
+    "listado_segundos": 7200,
+    "robots_segundos": 604800,
+    "pausa_segundos": 5,
+    "403_429": "pausa mínima de 24 horas, respeta Retry-After",
+    "fichas_por_ciclo": 20,
+    "ficha_cache_segundos": 7200,
+    "presupuesto_por_ciclo_segundos": 600
+  },
+  "nota": "Ausencia de exclusión técnica no equivale a licencia. Consulta factual limitada; no afirma autorización contractual.",
+  "verificacion": "Precio visible online. No usa ofertas JSON-LD con cero/moneda None. Apertura de puertas separada del inicio. Precio global de ficha sólo con una única función; múltiples funciones quedan con enlace y sin precio nuevo.",
+  "pruebas": "27 pruebas correctas y procesamiento de cinco pares de fichas oficiales/boletería reales. Consultas HTTP con requests tuvieron timeouts en este entorno; verificación realizada sobre HTML descargado con curl."
+}
