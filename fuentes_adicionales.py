@@ -317,6 +317,41 @@ def completar_verificados(eventos, hoy):
             e['descripcion'] = f['description_original']
 
 
+
+def cargar_candidatos_passline(hoy, archivo=None):
+    """Convierte fichas curadas de Passline en eventos con enlace de origen.
+
+    Passline se toma como fuente primaria de los datos que publica en su ficha.
+    No se descarga ni modifica su descripción o sus imágenes. Sólo se incluyen
+    fichas futuras hasta 90 días, con referencia directa a la publicación.
+    """
+    archivo = archivo or ROOT / 'candidatos_passline.json'
+    if not archivo.exists():
+        return []
+    datos = json.loads(archivo.read_text(encoding='utf-8'))
+    limite = (hoy + timedelta(days=90)).isoformat()
+    salida = []
+    for ficha in datos.get('candidatos', []):
+        fecha = ficha.get('fecha', '')
+        if not (hoy.isoformat() <= fecha <= limite):
+            continue
+        salida.append({
+            'fecha': fecha,
+            'hora': ficha.get('hora'),
+            'nombre': ficha.get('nombre'),
+            'lugar': ficha.get('lugar'),
+            'direccion': ficha.get('direccion') or '',
+            'descripcion': '',
+            'evento_url': ficha.get('referencia'),
+            'precio': None,
+            'precio_etiqueta': 'Consultar precio actualizado en Passline',
+            'origen': 'Passline',
+            'fuente_verificada': True,
+            'descubrimiento_fuentes': ['Passline'],
+        })
+    return salida
+
+
 def revisar(hoy, eventos, estado, acceso=None):
     completar_verificados(eventos, hoy)
     config = json.loads((ROOT / 'fuentes_adicionales.json').read_text(encoding='utf-8'))
@@ -406,8 +441,20 @@ def revisar(hoy, eventos, estado, acceso=None):
                               f'{notas_pendientes} consultas pendientes')
         except (requests.RequestException, ValueError) as error:
             estado[nombre] = f'no accesible: {str(error)[:180]}; se conservan datos'
+    # Passline funciona como fuente primaria para sus propias fichas. Se añaden
+    # los datos mínimos con enlace directo; el precio vigente se consulta allí.
+    claves_eventos = {(e.get('fecha'), e.get('hora'), norm(e.get('nombre', '')),
+                       firma_sede(e.get('lugar', ''))) for e in eventos + nuevos}
+    for evento in cargar_candidatos_passline(hoy):
+        firma = (evento.get('fecha'), evento.get('hora'), norm(evento.get('nombre', '')),
+                 firma_sede(evento.get('lugar', '')))
+        if firma not in claves_eventos:
+            nuevos.append(evento)
+            claves_eventos.add(firma)
+    estado['Passline'] = 'fichas futuras incorporadas con enlace directo; precio actualizado en Passline'
     guardar(archivo_cache, acceso.cache)
     guardar(ROOT / 'candidatos_fuentes_adicionales.json',
-            {'fecha_revision': hoy.isoformat(), 'nota': 'Estos candidatos no están publicados como eventos confirmados.',
+            {'fecha_revision': hoy.isoformat(), 'nota': 'Candidatos de fuentes secundarias; las fichas de Passline se importan como eventos con enlace directo.',
              'candidatos': pendientes})
     return nuevos
+

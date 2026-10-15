@@ -1,0 +1,168 @@
+{
+  "fecha_revision": "2026-10-15",
+  "nota": "Fichas publicadas en Passline. Passline se toma como fuente primaria de estos datos y cada evento enlaza a su ficha; el precio vigente se consulta allí.",
+  "candidatos": [
+    {
+      "nombre": "OKTOBERFEST + FREDDY Y LOS SOLARES - DECADA DISCO",
+      "fecha": "2026-10-16",
+      "hora": "21:30",
+      "lugar": "DECADA DISCO",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/freddy-y-los-solares-decada-disco",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "Oliver Kozlov en vivo en Rosario",
+      "fecha": "2026-10-17",
+      "hora": "20:00",
+      "lugar": "Corcovado Estudio",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/oliver-kozlov-en-vivo-en-rosario",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "Festival Ludueña",
+      "fecha": "2026-10-17",
+      "hora": "18:00",
+      "lugar": "Paseo Ludueña",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/festival-luduena",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "La Re en Rosario!",
+      "fecha": "2026-10-17",
+      "hora": "23:30",
+      "lugar": "Capi Club",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/la-re-en-rosario-l-1710",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "Festival Bandera 2026",
+      "fecha": "2026-10-24",
+      "hora": "10:00",
+      "lugar": "Parque Estación Central",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/festival-bandera-2026",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "MARTIN HUERGO X QUATRO",
+      "fecha": "2026-10-24",
+      "hora": "23:30",
+      "lugar": "Complejo Forest",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/martin-huergo-x-quatro",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "MATIAS ACUÑA - CROWDWORKING - ROSARIO",
+      "fecha": "2026-10-29",
+      "hora": "21:00",
+      "lugar": "Capitan Bar",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/matias-acuna-crowdworking-rosario",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "EMI GALVAN ALL NIGHT LONG - 7HS SET",
+      "fecha": "2026-10-31",
+      "hora": "23:00",
+      "lugar": "Complejo Forest",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/emi-galvan-all-night-long-7hs-set/musica-electronica-rosario-gabriel-soressi",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "Potencia Emprendedora Rosario",
+      "fecha": "2026-11-01",
+      "hora": "14:00",
+      "lugar": "Hotel Ros Tower",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/potencia-emprendedora-rosario-556858",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "TOO YUGAN EN ROSARIO Imponiendo zona sur tour",
+      "fecha": "2026-11-01",
+      "hora": "19:30",
+      "lugar": "Somos Musica",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/too-yugan-en-rosario-imponiendo-zona-sur-tour",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "BROKE PARTY en ROSARIO - Especial Halloween",
+      "fecha": "2026-11-06",
+      "hora": "23:30",
+      "lugar": "Club Mercury",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/broke-party-en-rosario-especial-halloween",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "LONDONGROUND X BOILER",
+      "fecha": "2026-11-07",
+      "hora": "23:30",
+      "lugar": "Complejo Forest",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/londonground-x-boiler/musica-electronica-rosario-gabriel-soressi",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "DRAMER en Rosario",
+      "fecha": "2026-11-07",
+      "hora": "23:30",
+      "lugar": "Capi Club",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/dramer-en-rosario",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "SUDBEAT SHOWCASE - Hipódromo de Rosario",
+      "fecha": "2026-11-14",
+      "hora": "21:00",
+      "lugar": "Hipódromo de Rosario",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/sudbeat-showcase-141126-hipodromo-de-rosario/gabriel-soressi-525803",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "el PROFE BORDA DESPIDE EL AÑO en ROSARIO",
+      "fecha": "2026-11-14",
+      "hora": "20:00",
+      "lugar": "Distrito 7",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/el-profe-borda-despide-el-ano-en-rosario",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "El Caribefunk en Rosario",
+      "fecha": "2026-11-21",
+      "hora": "21:00",
+      "lugar": "Distrito 7",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/el-caribefunk-en-rosario-21-nov",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "RARESH & FRANCO CINELLI",
+      "fecha": "2026-11-22",
+      "hora": "22:30",
+      "lugar": "Complejo Forest",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/raresh-franco-cinelli",
+      "fuente": "Passline"
+    },
+    {
+      "nombre": "FESTIVAL DE HOUSE - DENNIS CRUZ",
+      "fecha": "2026-12-19",
+      "hora": "18:00",
+      "lugar": "Playa de la musica",
+      "direccion": "",
+      "referencia": "https://www.passline.com/eventos/dennis-cruz-552671",
+      "fuente": "Passline"
+    }
+  ]
+}

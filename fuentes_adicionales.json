@@ -1,5 +1,5 @@
 {
-  "revision": "2026-10-14",
+  "revision": "2026-10-15",
   "tipo": "consulta limitada de datos factuales con verificación oficial; no es licencia ni dictamen",
   "base_commit": "afbe9d2bc259295830e6250d232a53e7bece5536",
   "reglas": {
@@ -99,6 +99,28 @@
       "url": "https://disfrutarosario.com/",
       "consulta_automatica": false,
       "estado": "auditoría previa incompleta; referencia manual del paquete control_fuentes_salidas_rosario"
+    },
+    {
+      "nombre": "Passline",
+      "url": "https://www.passline.com/eventos",
+      "tipo": "ticketera",
+      "eventos_rosario_detectados": true,
+      "consulta": "manual, fichas puntuales",
+      "importacion_automatica": "fichas curadas manualmente; Passline se toma como fuente primaria de los datos publicados en cada ficha",
+      "estado": "fuente primaria para sus propias publicaciones; consulta del catálogo general desactivada",
+      "robots": {
+        "url": "https://www.passline.com/robots.txt",
+        "http": 200,
+        "contenido": "User-agent: *\nDisallow: / mago\nDisallow: /carro.*\nDisallow: carro.*\nDisallow: /carro*\nDisallow: /mis-tickets-de-cortesia-inicio*\nDisallow: mis-tickets-de-cortesia-inicio*\nDisallow: /ticket-enviar-mail*\nDisallow: ticket-enviar-mail*\nDisallow: /ticket*\nAllow:",
+        "crawl_delay": null,
+        "revision": "2026-10-15; revisión web directa"
+      },
+      "terminos_url": "https://home.passline.com/terminos-y-condiciones",
+      "licencia": "La cláusula TERCERO limita el uso a fines personales y prohíbe descargar o modificar contenidos; no aclara extracción de campos factuales mínimos con enlace. Riesgo contractual no resuelto; no se afirma permiso.",
+      "frecuencia_autorizada": null,
+      "verificacion_oficial_obligatoria": false,
+      "consulta_automatica": false,
+      "base_de_uso": "Se toman como fuente primaria los datos factuales de las fichas publicadas por Passline: nombre, fecha, hora, sede y enlace directo. Se deja el precio para consultar en Passline, porque puede cambiar. No se copian imágenes ni descripciones. La carga de fichas es manual; no se consulta el catálogo general ni se sortea Queue-it."
     }
   ],
   "dominios_oficiales_existentes": [
@@ -122,3 +144,4 @@
     "teatrosatir.ar"
   ]
 }
+

@@ -1,0 +1,33 @@
+ACTUALIZACIÓN PASSLINE — AGENDA ROSARIO
+
+Archivos incluidos (reemplazar en la raíz del repositorio):
+- fuentes_adicionales.py
+- fuentes_adicionales.json
+- candidatos_passline.json (nuevo)
+- .github/workflows/actualizar.yml
+
+Qué hace
+- Registra Passline como fuente primaria de los datos de sus propias fichas.
+- Incorpora como eventos las fichas curadas manualmente que estén dentro de los
+  próximos 90 días, evitando duplicados por fecha, hora, nombre y sede.
+- Guarda nombre, fecha, hora, sede y enlace directo. Deja el precio para consultar
+  en Passline, porque puede cambiar.
+- No consulta automáticamente el catálogo general: durante la auditoría redirigió
+  a Queue-it. El paquete no sortea ni sigue esa redirección.
+- No copia fotos ni descripciones. Los enlaces de Passline quedan como referencia
+  visible de cada evento.
+
+Para aplicar
+1. Extraer el ZIP en la carpeta local del repositorio, conservando las rutas.
+2. Revisar los cambios antes de subirlos.
+3. Subir/reemplazar los tres archivos existentes y agregar candidatos_passline.json
+   en la raíz.
+4. La próxima ejecución del workflow añadirá a eventos.json las fichas futuras
+   incluidas en candidatos_passline.json.
+
+Auditoría
+La carga está limitada a datos factuales mínimos y enlaces a las fichas de
+Passline. No se automatizan consultas ni se copian textos promocionales o fotos.
+Los términos consultados no aclaran expresamente esta reutilización acotada; esta
+decisión de alcance no constituye una licencia ni un dictamen legal.
+
