@@ -1,7 +1,7 @@
 {
   "paginas": {
     "https://rosariotimes.com/": {
-      "consultado": 1792025770.288039,
+      "consultado": 1792050862.10995,
       "datos": [
         "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
         "https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/",
@@ -63,7 +63,7 @@
       "last_modified": null
     },
     "https://www.entradafan.com.ar/entradas-rosario/c3642": {
-      "consultado": 1792025770.7537074,
+      "consultado": 1792050862.5891957,
       "datos": [
         {
           "nombre": "Escenas de la Vida Conyugal",
@@ -274,11 +274,11 @@
           "referencia": "https://www.entradafan.com.ar/entradas-ha-ash-rosario/e/17863"
         }
       ],
-      "etag": "W/\"15ee1wzpq0z2uus\"",
+      "etag": "W/\"j47x9e9fde2z64\"",
       "last_modified": null
     },
     "https://saleplan.ar/rosario/eventos": {
-      "consultado": 1792025771.3963008,
+      "consultado": 1792050863.3773215,
       "datos": [
         {
           "nombre": "Candlelight: Tributo a Taylor Swift",
@@ -406,6 +406,11 @@
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
+          "nombre": "PAVEL PETROV X ONCE ROSARIO 16 OCTUBRE",
+          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/67RN9D1QTYH8/pavel-petrov-x-once-rosario-16-octubre",
+          "estado": "fecha completa y sede pendientes de fuente oficial"
+        },
+        {
           "nombre": "Eber Ludueña",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/5A96MSN0WSEB/eber-luduena",
           "estado": "fecha completa y sede pendientes de fuente oficial"
@@ -433,11 +438,6 @@
         {
           "nombre": "Agus Bernasconi: Siempre fue música",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/CV6QMA2SGXKK/agus-bernasconi-siempre-fue-musica",
-          "estado": "fecha completa y sede pendientes de fuente oficial"
-        },
-        {
-          "nombre": "Festival Ludueña",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/KF2RZB1CYRYT/festival-luduena",
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {

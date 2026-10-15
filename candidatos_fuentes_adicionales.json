@@ -1,5 +1,5 @@
 {
-  "fecha_revision": "2026-10-14",
+  "fecha_revision": "2026-10-15",
   "nota": "Estos candidatos no están publicados como eventos confirmados.",
   "candidatos": [
     {
@@ -283,6 +283,12 @@
       "fuente": "SalePlan"
     },
     {
+      "nombre": "PAVEL PETROV X ONCE ROSARIO 16 OCTUBRE",
+      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/67RN9D1QTYH8/pavel-petrov-x-once-rosario-16-octubre",
+      "estado": "pendiente de confirmación oficial",
+      "fuente": "SalePlan"
+    },
+    {
       "nombre": "Eber Ludueña",
       "referencia": "https://saleplan.ar/santa-fe/rosario/planes/5A96MSN0WSEB/eber-luduena",
       "estado": "pendiente de confirmación oficial",
@@ -315,12 +321,6 @@
     {
       "nombre": "Agus Bernasconi: Siempre fue música",
       "referencia": "https://saleplan.ar/santa-fe/rosario/planes/CV6QMA2SGXKK/agus-bernasconi-siempre-fue-musica",
-      "estado": "pendiente de confirmación oficial",
-      "fuente": "SalePlan"
-    },
-    {
-      "nombre": "Festival Ludueña",
-      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/KF2RZB1CYRYT/festival-luduena",
       "estado": "pendiente de confirmación oficial",
       "fuente": "SalePlan"
     },

@@ -1,10 +1,10 @@
 {
-  "fecha_revision": "2026-10-14 21:46",
+  "fecha_revision": "2026-10-15 04:41",
   "salas_independientes": 13,
   "medios": 3,
-  "funciones_agregadas": 0,
+  "funciones_agregadas": 7,
   "fuentes": {
-    "Feria Internacional del Libro de Rosario": "revisada: 5 jornadas; fuente oficial",
+    "Feria Internacional del Libro de Rosario": "revisada: 4 jornadas; fuente oficial",
     "Microteatro Rosario": "revisada: 53 funciones en 12 obras; 0 fichas pendientes",
     "Caras y Caretas": "revisada: sin funciones propias estructuradas",
     "Club Fosse": "revisada: sin funciones propias estructuradas",
@@ -25,7 +25,7 @@
     "Mercado del Patio — CSV": "revisada: 0 funciones; 0 consultas pendientes",
     "Alto Rosario Shopping — CSV": "revisada: 0 funciones; 1 consultas pendientes",
     "El Cairo — CSV": "revisada: 27 funciones; 0 consultas pendientes",
-    "Entrada Play": "revisada: 5 funciones; 0 fichas pendientes",
+    "Entrada Play": "revisada: 6 funciones; 0 fichas pendientes",
     "CentroTicket": "revisada: 9 funciones; 1 fichas pendientes",
     "Circo Rodas — Linke-arte": "revisada: 10 funciones habilitadas",
     "Agenda municipal — Espacios": "revisada: 1 funciones; 0 fichas pendientes",
@@ -54,7 +54,7 @@
     "Rosario3": "revisada: 1 notas, 10 funciones, 0 errores",
     "La Capital": "revisada: 0 notas, 0 funciones, 0 errores",
     "El Ciudadano": "revisada: 5 notas, 0 funciones, 0 errores",
-    "Rosario en Cartel": "no accesible: ConnectionError",
+    "Rosario en Cartel": "revisada: 22 funciones verificadas; 0 fichas pendientes",
     "Rosario Times": "revisada: 3 coincidencias con registros oficiales; 4 candidatos pendientes; 0 consultas pendientes",
     "EntradaFan": "revisada: 9 coincidencias con registros oficiales; 10 candidatos pendientes; 0 consultas pendientes",
     "SalePlan": "revisada: 0 coincidencias con registros oficiales; 26 candidatos pendientes; 0 consultas pendientes",
@@ -244,7 +244,7 @@
       "tipo": "teatro",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 14
+      "actividades": 15
     },
     {
       "nombre": "Complejo Cultural Atlas",
@@ -268,7 +268,7 @@
       "tipo": "centro cultural municipal",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 5
+      "actividades": 4
     },
     {
       "nombre": "Feria Internacional del Libro de Rosario",
@@ -276,7 +276,7 @@
       "tipo": "feria del libro",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 5
+      "actividades": 4
     },
     {
       "nombre": "Microteatro Rosario",
@@ -300,7 +300,7 @@
       "tipo": "teatro",
       "prioridad": "alta",
       "estado": "revisada: 0 funciones; 0 consultas pendientes",
-      "actividades": 7
+      "actividades": 5
     },
     {
       "nombre": "Teatro Astengo",
@@ -324,7 +324,7 @@
       "tipo": "arena/eventos",
       "prioridad": "alta",
       "estado": "referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles",
-      "actividades": 5
+      "actividades": 6
     },
     {
       "nombre": "Anfiteatro Municipal Humberto de Nito",
@@ -364,7 +364,7 @@
       "tipo": "centro cultural",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 8
+      "actividades": 7
     },
     {
       "nombre": "Centro de Expresiones Contemporaneas",
@@ -444,7 +444,7 @@
       "tipo": "museo municipal",
       "prioridad": "alta",
       "estado": "revisión del directorio y de las webs de museos",
-      "actividades": 26
+      "actividades": 27
     },
     {
       "nombre": "Museo Estevez",
@@ -625,7 +625,7 @@
     {
       "nombre": "La Segunda Seguros Arena",
       "fuentes": "Entrada Play y Rosario en Cartel",
-      "actividades": 5
+      "actividades": 6
     },
     {
       "nombre": "Estadio Central Córdoba",

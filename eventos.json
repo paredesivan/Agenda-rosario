@@ -1,99 +1,7 @@
 {
-  "actualizado": "2026-10-14 21:32",
+  "actualizado": "2026-10-15 04:28",
   "estado": "parcial",
   "eventos": [
-    {
-      "fecha": "2026-10-14",
-      "hora": "10:00",
-      "nombre": "Circo de Artes Visuales en el Teatro El Círculo",
-      "lugar": "Teatro El Círculo",
-      "direccion": "LAPRIDA FRANCISCO NARCISO 1201, Rosario, Santa Fe",
-      "descripcion": "Se inaugura la muestra “A mar abierto” del artista plástico, escritor y cineasta JUAN CARLOS CAPURRO. Entrada libre y gratuita La muestra…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/circo-de-artes-visuales-en-el-teatro-el-circulo",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "13:00",
-      "nombre": "Feria Internacional del Libro de Rosario",
-      "lugar": "Centro Cultural Roberto Fontanarrosa",
-      "direccion": "San Martín 1080, Rosario, Santa Fe",
-      "descripcion": "Feria con stands de librerías y editoriales, presentaciones, charlas y actividades para todas las edades. Entrada gratuita con QR. Horario oficial: 13:00 a 21:00.",
-      "evento_url": "https://feriadellibrorosario.gob.ar/",
-      "precio": 0,
-      "origen": "Feria Internacional del Libro de Rosario",
-      "categorias": [
-        "ferias"
-      ]
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "14:00",
-      "nombre": "Campaña: Stop bullying. Bullying no es un chiste. Es agresión.",
-      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-      "direccion": "Presidente Roca 731, Rosario, Santa Fe",
-      "descripcion": "Campaña: Stop bullying. Bullying no es un chiste. Es agresión. Por Biblioteca Argentina \"Dr. Juan Álvarez\" / 12 julio, 2026 El miércoles…",
-      "evento_url": "https://biblioargentina.gob.ar/web/campana-stop-bullying-bullying-no-es-un-chiste-es-agresion/",
-      "precio": null,
-      "origen": "Biblioteca Argentina Dr. Juan Álvarez",
-      "precio_etiqueta": "Precio a confirmar"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "18:00",
-      "nombre": "Concierto del Conjunto Pro Musica de Rosario",
-      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-      "direccion": "Presidente Roca 731, Rosario, Santa Fe",
-      "descripcion": "Concierto del Conjunto Pro Musica de Rosario Por Biblioteca Argentina \"Dr. Juan Álvarez\" / 12 julio, 2026 Miércoles 14 de octubre, 18…",
-      "evento_url": "https://biblioargentina.gob.ar/web/concierto-del-conjunto-pro-musica-de-rosario/",
-      "precio": 0,
-      "origen": "Biblioteca Argentina Dr. Juan Álvarez"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "19:00",
-      "nombre": "Ciclo: Hablemos de Opera",
-      "lugar": "Teatro El Círculo",
-      "direccion": "LAPRIDA FRANCISCO NARCISO 1201, Rosario, Santa Fe",
-      "descripcion": "Se realizará en el Museo de la Opera del Teatro El Círculo , el tradicional ciclo de encuentros previos para poder acercarse…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/ciclo-hablemos-de-opera",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "19:00",
-      "nombre": "Talleres anuales de Tango Danza",
-      "lugar": "Centro Cultural  La Casa del Tango",
-      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
-      "descripcion": "Los miércoles por la tarde se dictan las clases de tango danza a cargo del Prof. Guillermo Ruíz. El taller nivel inicial…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "20:30",
-      "nombre": "Rosario Sonido de Cuerdas",
-      "lugar": "Centro Cultural Parque de España",
-      "direccion": "Sarmiento y el río, Rosario, Santa Fe",
-      "descripcion": "El miércoles 14 de octubre, a las 20:30 hs, el Túnel 4 del Parque de España será escenario de un concierto especial…",
-      "evento_url": "https://ccpe.org.ar/web/actividades/rosario-sonido-de-cuerdas/",
-      "precio": 0,
-      "origen": "Centro Cultural Parque de España"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "20:30",
-      "nombre": "Rosario Sonido de Cuerdas - Día 2",
-      "lugar": "Parque España",
-      "direccion": "SARMIENTO DOMINGO FAUSTINO 100, Rosario, Santa Fe",
-      "descripcion": "En el marco de la primera edición de Rosario Sonido de Cuerdas , el miércoles 14 de octubre, a las 20:30 h…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/rosario-sonido-de-cuerdas-dia-2",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
     {
       "fecha": "2026-10-15",
       "hora": "08:30",
@@ -6169,6 +6077,55 @@
       "precio": null,
       "origen": "Teatro Broadway",
       "precio_etiqueta": "$35.000 – $50.000"
+    },
+    {
+      "fecha": "2026-11-14",
+      "hora": "10:00",
+      "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
+      "lugar": "Museo de la Ciudad Wladimir Mikielievich",
+      "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
+      "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-14",
+      "hora": "13:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-14",
+      "hora": "20:00",
+      "nombre": "LA CENA DE LOS TONTOS",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $40.000 y $65.000. LA CENA DE LOS TONTOS EN VENTA!! Fechas y horarios Sábado 14 de Noviembre a las 20:00 Hs. Domingo 15 de Noviembre…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/860/la-cena-de-los-tontos",
+      "precio": null,
+      "origen": "Teatro Broadway",
+      "precio_etiqueta": "$40.000 – $65.000"
+    },
+    {
+      "fecha": "2026-11-14",
+      "hora": "21:00",
+      "nombre": "ALEX UBAGO EN LA SEGUNDA SEGUROS ARENA",
+      "lugar": "La Segunda Seguros Arena",
+      "direccion": "Córdoba 3475, Rosario, Santa Fe",
+      "descripcion": "ALEX UBAGO EN LA SEGUNDA SEGUROS ARENA",
+      "evento_url": "https://entradaplay.com/ALEX-UBAGO-EN-BIOCERES-ARENA/",
+      "precio": 70000.0,
+      "origen": "Entrada Play",
+      "precio_etiqueta": "Desde $70.000",
+      "entradas_url": "https://entradaplay.com/ALEX-UBAGO-EN-BIOCERES-ARENA/",
+      "entrada_paga": true,
+      "funcion_unica_verificada": true
     }
   ]
 }
