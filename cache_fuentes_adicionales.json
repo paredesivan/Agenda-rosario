@@ -1,13 +1,12 @@
 {
   "paginas": {
     "https://rosariotimes.com/": {
-      "consultado": 1792050862.10995,
+      "consultado": 1792072250.6989555,
       "datos": [
         "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
         "https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/",
         "https://rosariotimes.com/gabriel-rolon-llega-a-rosario-con-su-obra-palabra-plena/",
-        "https://rosariotimes.com/la-fiesta-de-las-colectividades-2026-tendra-lugar-del-6-al-15-de-noviembre/",
-        "https://rosariotimes.com/llega-a-rosario-la-gran-noche-de-los-espumantes-2026-16-de-octubre/"
+        "https://rosariotimes.com/la-fiesta-de-las-colectividades-2026-tendra-lugar-del-6-al-15-de-noviembre/"
       ],
       "etag": null,
       "last_modified": null
@@ -63,7 +62,7 @@
       "last_modified": null
     },
     "https://www.entradafan.com.ar/entradas-rosario/c3642": {
-      "consultado": 1792050862.5891957,
+      "consultado": 1792072251.036367,
       "datos": [
         {
           "nombre": "Escenas de la Vida Conyugal",
@@ -278,7 +277,7 @@
       "last_modified": null
     },
     "https://saleplan.ar/rosario/eventos": {
-      "consultado": 1792050863.3773215,
+      "consultado": 1792072251.8755503,
       "datos": [
         {
           "nombre": "Candlelight: Tributo a Taylor Swift",

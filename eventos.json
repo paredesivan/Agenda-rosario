@@ -1,18 +1,7 @@
 {
-  "actualizado": "2026-10-15 04:28",
+  "actualizado": "2026-10-15 10:27",
   "estado": "parcial",
   "eventos": [
-    {
-      "fecha": "2026-10-15",
-      "hora": "08:30",
-      "nombre": "Bienestar y actividad física en Puente Gallego",
-      "lugar": "Centro de Salud \"San Vicente de Paul\"",
-      "direccion": "PUNTA DEL INDIO 7760, Rosario, Santa Fe",
-      "descripcion": "Desde el Distrito Sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-puente-gallego",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
     {
       "fecha": "2026-10-15",
       "hora": "10:00",
@@ -876,6 +865,17 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/ciclo-de-teatro-65-el-enfermo-imaginario-version-litoralena",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "18:00",
+      "nombre": "Concierto de la 10ª promoción de la Orquesta Escuela de Tango del Centro Cultural La Casa del Tango",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "Presidente Roca 731, Rosario, Santa Fe",
+      "descripcion": "Concierto de la 10ª promoción de la Orquesta Escuela de Tango del Centro Cultural La Casa del Tango Por Biblioteca Argentina \"Dr.…",
+      "evento_url": "https://biblioargentina.gob.ar/web/concierto-de-la-10-promocion-de-la-orquesta-escuela-de-tango-del-centro-cultural-la-casa-del-tango/",
+      "precio": 0,
+      "origen": "Biblioteca Argentina Dr. Juan Álvarez"
     },
     {
       "fecha": "2026-10-16",

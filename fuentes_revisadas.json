@@ -1,8 +1,8 @@
 {
-  "fecha_revision": "2026-10-15 04:41",
+  "fecha_revision": "2026-10-15 10:41",
   "salas_independientes": 13,
   "medios": 3,
-  "funciones_agregadas": 7,
+  "funciones_agregadas": 0,
   "fuentes": {
     "Feria Internacional del Libro de Rosario": "revisada: 4 jornadas; fuente oficial",
     "Microteatro Rosario": "revisada: 53 funciones en 12 obras; 0 fichas pendientes",
@@ -14,7 +14,7 @@
     "La Grieta": "revisada: sin funciones propias estructuradas",
     "Teatro de la Manzana": "revisada: sin funciones propias estructuradas",
     "La Morada": "revisada: sin funciones propias estructuradas",
-    "La Orilla Infinita": "revisada: 7 funciones; 1 pendientes",
+    "La Orilla Infinita": "revisada: 4 funciones; 2 pendientes",
     "Teatro del Rayo": "revisada: 3 funciones; 0 pendientes",
     "La Sonrisa de Beckett": "revisada: sin funciones propias estructuradas",
     "Tandava": "revisada: 2 funciones propias, 0 errores",
@@ -54,7 +54,7 @@
     "Rosario3": "revisada: 1 notas, 10 funciones, 0 errores",
     "La Capital": "revisada: 0 notas, 0 funciones, 0 errores",
     "El Ciudadano": "revisada: 5 notas, 0 funciones, 0 errores",
-    "Rosario en Cartel": "revisada: 22 funciones verificadas; 0 fichas pendientes",
+    "Rosario en Cartel": "no accesible: ConnectionError",
     "Rosario Times": "revisada: 3 coincidencias con registros oficiales; 4 candidatos pendientes; 0 consultas pendientes",
     "EntradaFan": "revisada: 9 coincidencias con registros oficiales; 10 candidatos pendientes; 0 consultas pendientes",
     "SalePlan": "revisada: 0 coincidencias con registros oficiales; 26 candidatos pendientes; 0 consultas pendientes",
