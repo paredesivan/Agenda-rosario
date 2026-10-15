@@ -1,8 +1,8 @@
 {
-  "fecha_revision": "2026-10-14 19:22",
+  "fecha_revision": "2026-10-14 21:46",
   "salas_independientes": 13,
   "medios": 3,
-  "funciones_agregadas": 6,
+  "funciones_agregadas": 0,
   "fuentes": {
     "Feria Internacional del Libro de Rosario": "revisada: 5 jornadas; fuente oficial",
     "Microteatro Rosario": "revisada: 53 funciones en 12 obras; 0 fichas pendientes",
@@ -53,11 +53,11 @@
     "Directorio de museos": "21 espacios descubiertos; 0 páginas pendientes",
     "Rosario3": "revisada: 1 notas, 10 funciones, 0 errores",
     "La Capital": "revisada: 0 notas, 0 funciones, 0 errores",
-    "El Ciudadano": "revisada: 6 notas, 1 funciones, 0 errores",
-    "Rosario en Cartel": "revisada: 21 funciones verificadas; 0 fichas pendientes",
+    "El Ciudadano": "revisada: 5 notas, 0 funciones, 0 errores",
+    "Rosario en Cartel": "no accesible: ConnectionError",
     "Rosario Times": "revisada: 3 coincidencias con registros oficiales; 4 candidatos pendientes; 0 consultas pendientes",
     "EntradaFan": "revisada: 9 coincidencias con registros oficiales; 10 candidatos pendientes; 0 consultas pendientes",
-    "SalePlan": "revisada: 0 coincidencias con registros oficiales; 28 candidatos pendientes; 0 consultas pendientes",
+    "SalePlan": "revisada: 0 coincidencias con registros oficiales; 26 candidatos pendientes; 0 consultas pendientes",
     "Disfruta Rosario": "consulta manual; auditoría pendiente"
   },
   "museos": [

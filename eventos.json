@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14 19:08",
+  "actualizado": "2026-10-14 21:32",
   "estado": "parcial",
   "eventos": [
     {
@@ -71,17 +71,6 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-14",
-      "hora": "20:00",
-      "nombre": "Observaciones astronómicas",
-      "lugar": "Observatorio de la Biblioteca Vigil",
-      "direccion": "Alem 3084, Rosario, Santa Fe",
-      "descripcion": "🔭 Una espectacular conjunción entre la estrella más brillante de la constelación del escorpión y la Luna se verá en octubre: ¡los…",
-      "evento_url": "https://bibliotecavigil.org.ar/inicio/events/observaciones-astronomicas/?occurrence=2026-10-14",
-      "precio": 0,
-      "origen": "Biblioteca Vigil"
     },
     {
       "fecha": "2026-10-14",

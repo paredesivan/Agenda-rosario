@@ -1,7 +1,7 @@
 {
   "paginas": {
     "https://rosariotimes.com/": {
-      "consultado": 1792012691.871652,
+      "consultado": 1792025770.288039,
       "datos": [
         "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
         "https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/",
@@ -63,7 +63,7 @@
       "last_modified": null
     },
     "https://www.entradafan.com.ar/entradas-rosario/c3642": {
-      "consultado": 1792012720.408874,
+      "consultado": 1792025770.7537074,
       "datos": [
         {
           "nombre": "Escenas de la Vida Conyugal",
@@ -278,7 +278,7 @@
       "last_modified": null
     },
     "https://saleplan.ar/rosario/eventos": {
-      "consultado": 1792012726.1014423,
+      "consultado": 1792025771.3963008,
       "datos": [
         {
           "nombre": "Candlelight: Tributo a Taylor Swift",
@@ -353,11 +353,6 @@
         {
           "nombre": "Candlelight: Queen vs. ABBA",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/R97VKAA5W67G/candlelight-queen-vs-abba",
-          "estado": "fecha completa y sede pendientes de fuente oficial"
-        },
-        {
-          "nombre": "Paz Martínez",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/XKJD32SXP48S/paz-martinez",
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
@@ -441,36 +436,9 @@
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
-          "nombre": "Candlelight: Tributo a Taylor Swift",
-          "fecha": "2026-10-30",
-          "hora": "19:00",
-          "lugar": "City Center Rosario",
-          "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift"
-        },
-        {
-          "nombre": "Candlelight: Lo Mejor de Hans Zimmer",
-          "fecha": "2026-10-30",
-          "hora": "21:30",
-          "lugar": "City Center Rosario",
-          "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer"
-        },
-        {
-          "nombre": "Candlelight: De Música Ligera",
-          "fecha": "2026-11-21",
-          "hora": "21:30",
-          "lugar": "City Center Rosario",
-          "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/4EWY0B1WK49R/candlelight-de-musica-ligera"
-        },
-        {
-          "nombre": "Candlelight: Las Cuatro Estaciones de Vivaldi",
-          "fecha": "2026-12-05",
-          "hora": "19:00",
-          "lugar": "Plataforma Lavarden",
-          "direccion": "Mendoza 1085, Rosario, S2000",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/B0V2Y6YFQWEK/candlelight-las-cuatro-estaciones-de-vivaldi"
+          "nombre": "Festival Ludueña",
+          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/KF2RZB1CYRYT/festival-luduena",
+          "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
           "nombre": "Candlelight: Tributo a Taylor Swift",
