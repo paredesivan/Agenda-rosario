@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15 10:27",
+  "actualizado": "2026-10-15 14:22",
   "estado": "parcial",
   "eventos": [
     {
@@ -106,17 +106,6 @@
       "categorias": [
         "ferias"
       ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "13:00",
-      "nombre": "GEOLOCALIZADOS: Un puente entre la imagen y la palabra",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/geolocalizados-un-puente-entre-la-imagen-y-la-palabra",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
     },
     {
       "fecha": "2026-10-15",
@@ -2843,6 +2832,17 @@
       "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
       "descripcion": "PLANETA BIBLIOTECA: La aventura de leer, para escuelas de Niveles Inicial y Primario y otras instituciones educativas y recreativas. Turno Mañana: martes…",
       "evento_url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-22",
+      "hora": "16:00",
+      "nombre": "Inauguración de Muestra \"Historia del Rock en Rosario\"",
+      "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
+      "direccion": "URIBURU PTE. JOSE EVARIST 637, Rosario, Santa Fe",
+      "descripcion": "Llega una nueva muestra que propone recorrer cinco décadas del rock de nuestra ciudad, desde los años 60 hasta la diversidad de…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/inauguracion-de-muestra-historia-del-rock-en-rosario",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
