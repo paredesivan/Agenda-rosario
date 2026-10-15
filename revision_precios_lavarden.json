@@ -2,8 +2,11 @@
   "funciones_revisadas": [
     {
       "oficial": "https://plataformalavarden.gob.ar/actividades/dario-grandinetti-en-el-escritor-de-todas-las-cosas/",
-      "precios_completados": 0,
-      "estado": "pendiente: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+      "precios_completados": 1,
+      "enlaces": [
+        "https://entradaslavarden.com/El-escritor-de-todas-las-cosas/"
+      ],
+      "estado": "precio verificado"
     },
     {
       "oficial": "https://plataformalavarden.gob.ar/actividades/problema-1/",
@@ -15,8 +18,11 @@
     },
     {
       "oficial": "https://plataformalavarden.gob.ar/actividades/paris-jazz-club-2/",
-      "precios_completados": 0,
-      "estado": "pendiente: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+      "precios_completados": 1,
+      "enlaces": [
+        "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/"
+      ],
+      "estado": "precio verificado"
     },
     {
       "oficial": "https://plataformalavarden.gob.ar/actividades/pupina-plomer/",

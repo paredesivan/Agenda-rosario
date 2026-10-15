@@ -1,7 +1,7 @@
 {
   "paginas": {
     "https://rosariotimes.com/": {
-      "consultado": 1792097643.1218126,
+      "consultado": 1792107064.4533663,
       "datos": [
         "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
         "https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/",
@@ -62,7 +62,7 @@
       "last_modified": null
     },
     "https://www.entradafan.com.ar/entradas-rosario/c3642": {
-      "consultado": 1792097643.5480812,
+      "consultado": 1792107064.7257288,
       "datos": [
         {
           "nombre": "Escenas de la Vida Conyugal",
@@ -277,7 +277,7 @@
       "last_modified": null
     },
     "https://saleplan.ar/rosario/eventos": {
-      "consultado": 1792097644.376396,
+      "consultado": 1792107065.3203702,
       "datos": [
         {
           "nombre": "Candlelight: Tributo a Taylor Swift",
@@ -355,21 +355,6 @@
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
-          "nombre": "ELECTRONIC SESSIONS #1",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/6MKS5FN1NCP5/electronic-sessions-1",
-          "estado": "fecha completa y sede pendientes de fuente oficial"
-        },
-        {
-          "nombre": "Peña La Coplera",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/WX2YJHN5PPSP/pena-la-coplera",
-          "estado": "fecha completa y sede pendientes de fuente oficial"
-        },
-        {
-          "nombre": "Escenas de la vida conyugal",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/783WGSEAAQWN/escenas-de-la-vida-conyugal",
-          "estado": "fecha completa y sede pendientes de fuente oficial"
-        },
-        {
           "nombre": "⚔️ LvRod & Juana Maidagan en Bon Scott (Rosario)",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/07AYWEESVZVD/lvrod-juana-maidagan-en-bon-scott-rosario",
           "estado": "fecha completa y sede pendientes de fuente oficial"
@@ -392,6 +377,11 @@
         {
           "nombre": "THE ROCK AND RULE SWING ORCHESTRA",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/CB64X8ECFDBY/the-rock-and-rule-swing-orchestra",
+          "estado": "fecha completa y sede pendientes de fuente oficial"
+        },
+        {
+          "nombre": "Escenas de la vida conyugal",
+          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/783WGSEAAQWN/escenas-de-la-vida-conyugal",
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
@@ -440,36 +430,14 @@
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
-          "nombre": "Candlelight: Tributo a Taylor Swift",
-          "fecha": "2026-10-30",
-          "hora": "19:00",
-          "lugar": "City Center Rosario",
-          "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift"
+          "nombre": "Festival Ludueña",
+          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/KF2RZB1CYRYT/festival-luduena",
+          "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
-          "nombre": "Candlelight: Lo Mejor de Hans Zimmer",
-          "fecha": "2026-10-30",
-          "hora": "21:30",
-          "lugar": "City Center Rosario",
-          "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer"
-        },
-        {
-          "nombre": "Candlelight: De Música Ligera",
-          "fecha": "2026-11-21",
-          "hora": "21:30",
-          "lugar": "City Center Rosario",
-          "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/4EWY0B1WK49R/candlelight-de-musica-ligera"
-        },
-        {
-          "nombre": "Candlelight: Las Cuatro Estaciones de Vivaldi",
-          "fecha": "2026-12-05",
-          "hora": "19:00",
-          "lugar": "Plataforma Lavarden",
-          "direccion": "Mendoza 1085, Rosario, S2000",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/B0V2Y6YFQWEK/candlelight-las-cuatro-estaciones-de-vivaldi"
+          "nombre": "Autochocador Club + Recreo Uruguayo, Club Forestal, Uhh! Tengo Ratas En Mi Atado",
+          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/55208EQYKF2Q/autochocador-club-recreo-uruguayo-club-forestal-uhh-tengo-ratas-en-mi-atado",
+          "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
           "nombre": "Candlelight: Tributo a Taylor Swift",
@@ -734,6 +702,56 @@
         ],
         "entradas_url": "https://entradaslavarden.com/JULIETA-LASO-presenta-FABRIQUERA/",
         "precio": 25000,
+        "bloqueada": false
+      },
+      "etag": null,
+      "last_modified": null
+    },
+    "https://plataformalavarden.gob.ar/actividades/dario-grandinetti-en-el-escritor-de-todas-las-cosas/": {
+      "consultado": 1792107068.3374543,
+      "datos": [
+        "https://entradaslavarden.com/El-escritor-de-todas-las-cosas/"
+      ],
+      "etag": null,
+      "last_modified": null
+    },
+    "https://entradaslavarden.com/El-escritor-de-todas-las-cosas/": {
+      "consultado": 1792107068.7916563,
+      "datos": {
+        "nombre": "El escritor de todas las cosas",
+        "funciones": [
+          [
+            "2026-10-16",
+            "21:00"
+          ]
+        ],
+        "entradas_url": "https://entradaslavarden.com/El-escritor-de-todas-las-cosas/",
+        "precio": 40000,
+        "bloqueada": false
+      },
+      "etag": null,
+      "last_modified": null
+    },
+    "https://plataformalavarden.gob.ar/actividades/paris-jazz-club-2/": {
+      "consultado": 1792107074.7982695,
+      "datos": [
+        "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/"
+      ],
+      "etag": null,
+      "last_modified": null
+    },
+    "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/": {
+      "consultado": 1792107075.0622876,
+      "datos": {
+        "nombre": "Paris Jazz Club: JAZZ CARTOONS",
+        "funciones": [
+          [
+            "2026-10-24",
+            "21:00"
+          ]
+        ],
+        "entradas_url": "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/",
+        "precio": 30000,
         "bloqueada": false
       },
       "etag": null,

@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15 18:41",
+  "actualizado": "2026-10-15 20:05",
   "estado": "parcial",
   "eventos": [
     {
@@ -52,50 +52,6 @@
     {
       "fecha": "2026-10-15",
       "hora": "13:00",
-      "nombre": "A favor de la fantasía en contra de la inflación",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/favor-de-la-fantasia-en-contra-de-la-inflacion",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "13:00",
-      "nombre": "ANATOMÍA DEL FERVOR. Collages 1998. Carlos Herrera",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/anatomia-del-fervor.-collages-1998.-carlos-herrera",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "13:00",
-      "nombre": "Casa Abierta en Casa de Cultura Barrio Alvear",
-      "lugar": "Casa de Cultura Barrio Alvear",
-      "direccion": "LETT FRANCISCO N 4253, Rosario, Santa Fe",
-      "descripcion": "La Casa de Cultura Barrio Alvear se abre para jugar, imaginar, compartir cuentos, armar rompecabezas y construir con bloques. Todos los jueves…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/casa-abierta-en-casa-de-cultura-barrio-alvear",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "13:00",
-      "nombre": "Episodio II: 1976/2026 Que digan dónde están",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/episodio-ii-19762026-que-digan-donde-estan",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "13:00",
       "nombre": "Feria Internacional del Libro de Rosario",
       "lugar": "Centro Cultural Roberto Fontanarrosa",
       "direccion": "San Martín 1080, Rosario, Santa Fe",
@@ -106,39 +62,6 @@
       "categorias": [
         "ferias"
       ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "13:00",
-      "nombre": "Narcisa Hirsch, un viaje incógnito",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "13:00",
-      "nombre": "Nivel de Río. Instalación de Maxi Murad",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "14:00",
-      "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
-      "lugar": "Museo de la Ciudad Wladimir Mikielievich",
-      "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
-      "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
     },
     {
       "fecha": "2026-10-15",
@@ -1047,8 +970,13 @@
       "direccion": "Mendoza 1085, Rosario, Santa Fe",
       "descripcion": "",
       "evento_url": "https://plataformalavarden.gob.ar/actividades/dario-grandinetti-en-el-escritor-de-todas-las-cosas/",
-      "precio": null,
-      "origen": "Plataforma Lavardén"
+      "precio": 40000,
+      "origen": "Plataforma Lavardén",
+      "entradas_url": "https://entradaslavarden.com/El-escritor-de-todas-las-cosas/",
+      "precio_etiqueta": "Desde $40.000 + cargo de servicio",
+      "entrada_paga": true,
+      "precio_fuente": "Entradas Lavardén",
+      "precio_consultado": "2026-10-15 20:31"
     },
     {
       "fecha": "2026-10-16",
@@ -3624,7 +3552,7 @@
       "entradas_url": "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-15 19:07"
+      "precio_consultado": "2026-10-15 20:31"
     },
     {
       "fecha": "2026-10-24",

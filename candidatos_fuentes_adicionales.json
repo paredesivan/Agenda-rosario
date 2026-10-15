@@ -223,24 +223,6 @@
       "fuente": "SalePlan"
     },
     {
-      "nombre": "ELECTRONIC SESSIONS #1",
-      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/6MKS5FN1NCP5/electronic-sessions-1",
-      "estado": "pendiente de confirmación oficial",
-      "fuente": "SalePlan"
-    },
-    {
-      "nombre": "Peña La Coplera",
-      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/WX2YJHN5PPSP/pena-la-coplera",
-      "estado": "pendiente de confirmación oficial",
-      "fuente": "SalePlan"
-    },
-    {
-      "nombre": "Escenas de la vida conyugal",
-      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/783WGSEAAQWN/escenas-de-la-vida-conyugal",
-      "estado": "pendiente de confirmación oficial",
-      "fuente": "SalePlan"
-    },
-    {
       "nombre": "⚔️ LvRod & Juana Maidagan en Bon Scott (Rosario)",
       "referencia": "https://saleplan.ar/santa-fe/rosario/planes/07AYWEESVZVD/lvrod-juana-maidagan-en-bon-scott-rosario",
       "estado": "pendiente de confirmación oficial",
@@ -267,6 +249,12 @@
     {
       "nombre": "THE ROCK AND RULE SWING ORCHESTRA",
       "referencia": "https://saleplan.ar/santa-fe/rosario/planes/CB64X8ECFDBY/the-rock-and-rule-swing-orchestra",
+      "estado": "pendiente de confirmación oficial",
+      "fuente": "SalePlan"
+    },
+    {
+      "nombre": "Escenas de la vida conyugal",
+      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/783WGSEAAQWN/escenas-de-la-vida-conyugal",
       "estado": "pendiente de confirmación oficial",
       "fuente": "SalePlan"
     },
@@ -325,24 +313,16 @@
       "fuente": "SalePlan"
     },
     {
-      "nombre": "Candlelight: Tributo a Taylor Swift",
-      "fecha": "2026-10-30",
-      "hora": "19:00",
-      "lugar": "City Center Rosario",
-      "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
-      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift",
-      "fuente": "SalePlan",
-      "estado": "pendiente de confirmación oficial"
+      "nombre": "Festival Ludueña",
+      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/KF2RZB1CYRYT/festival-luduena",
+      "estado": "pendiente de confirmación oficial",
+      "fuente": "SalePlan"
     },
     {
-      "nombre": "Candlelight: Lo Mejor de Hans Zimmer",
-      "fecha": "2026-10-30",
-      "hora": "21:30",
-      "lugar": "City Center Rosario",
-      "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
-      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer",
-      "fuente": "SalePlan",
-      "estado": "pendiente de confirmación oficial"
+      "nombre": "Autochocador Club + Recreo Uruguayo, Club Forestal, Uhh! Tengo Ratas En Mi Atado",
+      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/55208EQYKF2Q/autochocador-club-recreo-uruguayo-club-forestal-uhh-tengo-ratas-en-mi-atado",
+      "estado": "pendiente de confirmación oficial",
+      "fuente": "SalePlan"
     },
     {
       "nombre": "Candlelight: Tributo a Taylor Swift",
