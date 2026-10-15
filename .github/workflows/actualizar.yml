@@ -8,8 +8,8 @@ on:
       - fuentes_nuevas.py
       - fuentes_adicionales.py
       - fuentes_adicionales.json
-      - candidatos_passline.json
       - eventos_verificados_adicionales.json
+      - precios_lavarden.py
       - precios_ticketek.py
       - requirements.txt
       - tests/**
@@ -56,6 +56,10 @@ jobs:
         timeout-minutes: 45
         run: python -u fuentes_nuevas.py
 
+      - name: Revisar precios y entradas de Lavardén
+        timeout-minutes: 15
+        run: python -u precios_lavarden.py
+
       - name: Revisar precios de Ticketek
         timeout-minutes: 5
         run: python precios_ticketek.py
@@ -64,7 +68,7 @@ jobs:
         run: |
           git config user.name "agenda-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add eventos.json fuentes_revisadas.json cache_fuentes_adicionales.json candidatos_fuentes_adicionales.json
+          git add revision_precios_lavarden.json eventos.json fuentes_revisadas.json cache_fuentes_adicionales.json candidatos_fuentes_adicionales.json
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar agenda"
             git push origin HEAD:main
@@ -74,5 +78,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
-
 
