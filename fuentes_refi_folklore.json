@@ -1,0 +1,19 @@
+{
+  "revision": "2026-10-16",
+  "dias_futuros": 30,
+  "max_fichas_por_revision": 30,
+  "max_paginas_folklore": 3,
+  "refiticket": {
+    "habilitada": true,
+    "base": "https://refiticket.ar/",
+    "catalogo": "https://refiticket.ar/obtener_eventos/?cantidad_eventos=100"
+  },
+  "rosario_folklore": {
+    "habilitada": false,
+    "permiso_automatizacion": false,
+    "referencia_permiso": "",
+    "base": "https://rosariofolklore.com.ar/",
+    "listado": "https://rosariofolklore.com.ar/ciudad/rosario/",
+    "motivo": "Los términos prohíben la extracción automatizada del catálogo sin acuerdo previo. Preparado, pero no se consulta hasta contar con permiso."
+  }
+}

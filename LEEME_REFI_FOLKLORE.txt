@@ -1,0 +1,87 @@
+INCORPORACIÓN DINÁMICA DE FUENTES — AGENDA ROSARIO
+
+ARCHIVOS QUE HAY QUE SUBIR
+
+En la raíz del repositorio:
+  fuentes_refi_folklore.py
+  fuentes_refi_folklore.json
+
+En tests/:
+  test_refi_folklore.py
+
+En .github/workflows/ (reemplazar el existente):
+  actualizar.yml
+
+AUDITORIA_REFI_FOLKLORE.md documenta las fuentes y puede subirse en la raíz.
+Este LEEME es sólo una guía.
+
+No crear carpetas con el nombre del ZIP ni subir el ZIP al repositorio.
+Los cuatro archivos de ejecución deben quedar exactamente en las rutas de arriba.
+No reemplazar actualizar_eventos.py, fuentes_nuevas.py, fuentes_adicionales.py,
+agenda.js ni eventos.json: el paquete usa las versiones ya existentes.
+
+FUNCIONAMIENTO
+
+Al completar la subida en main, la Action «Actualizar agenda» se dispara sola.
+Primero ejecuta todas las pruebas de tests/, luego actualiza las fuentes
+existentes y ejecuta el módulo nuevo. Continúa con los precios y la publicación.
+Se mantiene la actualización cada dos horas, minuto 17 UTC. GitHub puede demorar
+el inicio de una ejecución programada. No necesitás Node ni ejecutar nada local.
+
+El código consulta el catálogo público de RefiTicket y descubre sus slugs nuevos.
+Después lee los selectores reales de fecha y horario de cada ficha.
+No contiene nombres, fechas ni enlaces particulares de los eventos encontrados.
+Importa Rosario ciudad, desde hoy hasta 30 días hacia adelante; se puede ajustar
+el horizonte en la configuración. El catálogo permite hasta 100 fichas y se
+consultan como máximo 30 fichas de detalle por revisión; si los supera, registra
+la revisión como pendiente y conserva los datos anteriores, sin borrado parcial.
+
+No descarga afiches ni replica descripciones. Usa títulos, fechas, horarios,
+sede, dirección, categorías y precio cuando hay un precio publicado fiable.
+Los ceros ambiguos de la ticketera no se convierten en entrada gratuita.
+
+La caché se genera automáticamente como cache_refi_folklore.json, se guarda en
+el repositorio con los resultados y evita repetir consultas dentro de dos horas.
+Respeta robots.txt, un mínimo de cinco segundos entre consultas, HTTP 403/429,
+Retry-After y redirecciones pendientes. No sortea bloqueos ni inicia sesión.
+Si falla una ficha, conserva la anterior; una revisión completa permite retirar
+funciones que ya no están publicadas. No elimina eventos de otras fuentes.
+
+ROSARIO FOLKLORE
+
+El conector está preparado pero DESACTIVADO. Sus términos publicados prohíben
+la extracción automática del catálogo sin acuerdo con el titular. El listado
+manual previo no equivale a autorización para importarlo periódicamente.
+
+Para solicitar el permiso, el contacto publicado es WhatsApp 341 255 4543.
+Precisar el uso: campos factuales con enlace, sin imágenes ni descripciones,
+hasta 30 fichas, cada dos horas, caché y respeto de robots.txt. Acordar los límites
+con el titular; no se envió ningún mensaje en tu nombre.
+
+Sólo después de obtener el permiso: en fuentes_refi_folklore.json cambiar
+habilitada y permiso_automatizacion de rosario_folklore a true y completar
+referencia_permiso con la referencia al acuerdo. No incluir datos privados.
+El conector descubre fichas desde el listado de Rosario y sigue su paginación;
+lee JSON-LD o el enlace iCalendar de cada ficha, sin inventar años ni horarios.
+No se validó contra el HTML/calendario real de esa fuente, inaccesible desde
+este entorno durante la implementación. Al habilitarlo requiere una comprobación
+en vivo; ante formato desconocido se registran fichas pendientes y no se inventan
+datos. Los eventos importados desde el agregador no se marcan como fuente oficial.
+
+VERIFICACIÓN REALIZADA
+
+RefiTicket: consulta real el 16/10/2026, siete funciones válidas y cero fichas
+pendientes. Bestia Bebé aparece hoy a las 20:00 con precio desde $15.000.
+Se probó el descubrimiento posterior de títulos y slugs desconocidos usando
+fechas de otro año, varias funciones, cancelación, caché, duplicados y fallos.
+Ver AUDITORIA_REFI_FOLKLORE.md para el alcance y las limitaciones.
+
+Para comprobar la instalación en GitHub desde el teléfono:
+  Actions > Actualizar agenda > ejecución más reciente.
+  El paso «Revisar RefiTicket y conectores autorizados» debe mostrar funciones
+  encontradas y el estado de Rosario Folklore. El número variará con el catálogo.
+  fuentes_revisadas.json conserva el detalle de ambas fuentes.
+
+Base revisada: paredesivan/Agenda-rosario, main
+Commit de referencia: 4dc7705a47e0fb32f4b211f7268a2890912985ed
+No se modificó el repositorio remoto ni se publicó desde esta conversación.
