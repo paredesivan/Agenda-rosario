@@ -68,7 +68,7 @@ jobs:
         run: |
           git config user.name "agenda-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add revision_precios_lavarden.json eventos.json fuentes_revisadas.json cache_fuentes_adicionales.json candidatos_fuentes_adicionales.json
+          git add revision_precios_lavarden.json eventos.json fuentes_revisadas.json cache_fuentes_adicionales.json cache_cm25.json candidatos_fuentes_adicionales.json
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar agenda"
             git push origin HEAD:main
