@@ -6,10 +6,29 @@ from unittest.mock import Mock
 import requests
 from bs4 import BeautifulSoup
 from fuentes_adicionales import Acceso, hechos_schema, corroborar, listado_saleplan, listado_entradafan
-from fuentes_nuevas import precio_producto_microteatro
+from fuentes_nuevas import precio_producto_microteatro, eventos_cm25
 
 
 class TestFuentesAdicionales(unittest.TestCase):
+    def test_cm25_acepta_solo_fecha_hora_sede_y_titulo_futuros(self):
+        html = BeautifulSoup('<main><h1>#</h1><h2>16OCT / Música en la casa</h2>'
+            '<p>El viernes 16 de octubre a las 21 hs se presenta el ciclo.</p>'
+            '<p>Corrientes 987 / PTA. ALTA / Rosario</p></main>', 'html.parser')
+        eventos = eventos_cm25(html, 'https://www.cm25.ar/novedades.html', date(2026, 10, 15))
+        self.assertEqual(len(eventos), 1)
+        self.assertEqual(eventos[0]['fecha'], '2026-10-16')
+        self.assertEqual(eventos[0]['hora'], '21:00')
+        self.assertEqual(eventos[0]['precio'], 0)
+        self.assertEqual(eventos[0]['descripcion'], '')
+
+    def test_cm25_descarta_fecha_vencida_o_sin_sede(self):
+        pasada = BeautifulSoup('<main><h2>10ABR / Actividad</h2><p>10 de abril a las 21 hs</p>'
+                               '<p>Corrientes 987 Rosario</p></main>', 'html.parser')
+        sin_sede = BeautifulSoup('<main><h2>Actividad</h2><p>16 de octubre a las 21 hs</p></main>',
+                                 'html.parser')
+        self.assertEqual(eventos_cm25(pasada, 'https://www.cm25.ar/novedades.html', date(2026, 10, 15)), [])
+        self.assertEqual(eventos_cm25(sin_sede, 'https://www.cm25.ar/novedades.html', date(2026, 10, 15)), [])
+
     def ficha(self, localidad='Rosario', status='EventScheduled'):
         f = {'@type': 'MusicEvent', 'name': 'Concierto',
              'startDate': '2026-10-15T20:30:00', 'eventStatus': status,
