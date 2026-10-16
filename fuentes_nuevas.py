@@ -1487,15 +1487,22 @@ def eventos_cm25(html, url, hoy):
 def leer_cm25(hoy, estado):
     """Consulta CM25 sólo si robots.txt permite la ruta y usa caché condicional."""
     from fuentes_adicionales import Acceso
+    acceso = None
     try:
         cache = json.loads(CM25_CACHE.read_text(encoding='utf-8')) if CM25_CACHE.exists() else {}
-        eventos = Acceso(cache).leer(CM25_NOVEDADES,
+        acceso = Acceso(cache)
+        eventos = acceso.leer(CM25_NOVEDADES,
             lambda dom, url: eventos_cm25(dom, url, hoy), tipo='listado')
         CM25_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         estado['Centro Cultural 25 de Mayo'] = f'revisada con robots.txt: {len(eventos)} eventos verificables'
         return eventos
     except (requests.RequestException, ValueError, TypeError) as error:
-        estado['Centro Cultural 25 de Mayo'] = f'consulta detenida: {type(error).__name__}'
+        url = getattr(acceso, 'ultima_url', '') if acceso else ''
+        etapa = 'robots.txt' if url.endswith('/robots.txt') else 'novedades.html'
+        detalle = str(error).replace('\n', ' ')[:180]
+        estado['Centro Cultural 25 de Mayo'] = (
+            f'consulta detenida en {etapa}: {type(error).__name__}: {detalle}'
+        )
         return []
 
 

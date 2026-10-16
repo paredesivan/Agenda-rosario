@@ -48,15 +48,24 @@ class Acceso:
 
     def pedir(self, url, demora=5, headers=None):
         dominio = host(url)
+        self.ultima_url = url
         if self.cache.get('pausas', {}).get(dominio, 0) > self.reloj():
             raise ValueError('dominio pausado por respuesta anterior')
         espera = demora - (self.reloj() - self.ultima.get(dominio, 0))
         if espera > 0:
             self.dormir(espera)
         try:
-            # No reintenta ni sigue redirecciones a dominios sin auditar.
-            r = self.session.get(url, headers={'User-Agent': UA, **(headers or {})},
-                                 timeout=(8, 15), allow_redirects=False)
+            # Un único reintento ante fallos transitorios de transporte. No se
+            # reintenta ante 403/429 ni se siguen redirecciones no auditadas.
+            for intento in range(2):
+                try:
+                    r = self.session.get(url, headers={'User-Agent': UA, **(headers or {})},
+                                         timeout=(8, 15), allow_redirects=False)
+                    break
+                except (requests.ConnectionError, requests.Timeout):
+                    if intento:
+                        raise
+                    self.dormir(2)
             if r.status_code in (403, 429):
                 pausa = 86400
                 retry = r.headers.get('Retry-After', '')
