@@ -1,0 +1,59 @@
+name: Pruebas de la agenda
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.py"
+      - "tests/**"
+      - "e2e/**"
+      - "agenda.js"
+      - "index.html"
+      - "estilos.css"
+      - ".github/workflows/**"
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pruebas-python:
+    name: Pruebas de reglas e integración
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v6
+      - name: Preparar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Instalar dependencias
+        run: python -m pip install requests beautifulsoup4
+      - name: Comprobar sintaxis
+        run: >-
+          python -m py_compile actualizar_eventos.py fuentes_nuevas.py
+          fuentes_adicionales.py auditar_fuentes.py precios_lavarden.py
+          precios_ticketek.py corregir_pausas.py
+      - name: Ejecutar pruebas unitarias y de integración
+        run: python -m unittest discover -s tests -v
+
+  prueba-navegador:
+    name: Prueba E2E en Chromium
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v6
+      - name: Preparar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Instalar Playwright
+        run: python -m pip install playwright
+      - name: Instalar Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Probar filtros y enlaces en la agenda
+        run: python e2e/test_agenda_browser.py
