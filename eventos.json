@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16 15:18",
+  "actualizado": "2026-10-16 17:29",
   "estado": "parcial",
   "eventos": [
     {
@@ -117,17 +117,6 @@
       "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
       "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
       "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-16",
-      "hora": "15:00",
-      "nombre": "Bebés en bibliotecas",
-      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-      "direccion": "ROCA PTE. JULIO ARGENTINO 731, Rosario, Santa Fe",
-      "descripcion": "El viernes 11 de septiembre, a partir de las 15 h, en Casa Imaginada , sala de la Biblioteca Argentina se realiza…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/bebes-en-bibliotecas",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -276,6 +265,23 @@
     {
       "fecha": "2026-10-16",
       "hora": "20:00",
+      "nombre": "BESTIA BEBE | YENDO RÁPIDO A NINGÚN LUGAR",
+      "lugar": "REFI",
+      "direccion": "VELEZ SARSFIELD 641, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://refiticket.ar/BESTIA-BEBE---YENDO-RAPIDO-A-NINGUN-LUGAR/",
+      "entradas_url": "https://refiticket.ar/BESTIA-BEBE---YENDO-RAPIDO-A-NINGUN-LUGAR/",
+      "origen": "RefiTicket",
+      "precio": 15000.0,
+      "precio_etiqueta": "Desde $15.000",
+      "fuente_verificada": true,
+      "categorias": [
+        "musica"
+      ]
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "20:00",
       "nombre": "Circo Rodas",
       "lugar": "Circo Rodas",
       "direccion": "Av. Circunvalación, Rosario, Santa Fe",
@@ -402,7 +408,7 @@
       "precio_etiqueta": "Desde $40.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 15:46"
+      "precio_consultado": "2026-10-16 18:00"
     },
     {
       "fecha": "2026-10-16",
@@ -1242,7 +1248,7 @@
       "precio_etiqueta": "Desde $35.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 15:46"
+      "precio_consultado": "2026-10-16 18:00"
     },
     {
       "fecha": "2026-10-17",
@@ -1923,6 +1929,23 @@
       "origen": "Municipalidad de Rosario"
     },
     {
+      "fecha": "2026-10-20",
+      "hora": "18:00",
+      "nombre": "DISEÑAR SONIDO PARA CINE | REGISTRO SONORO EN EL CINE",
+      "lugar": "REFI",
+      "direccion": "VELEZ SARSFIELD 641, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://refiticket.ar/DISENAR-SONIDO-PARA-CINE---REGISTRO-SONORO-EN-EL-CINE/",
+      "entradas_url": "https://refiticket.ar/DISENAR-SONIDO-PARA-CINE---REGISTRO-SONORO-EN-EL-CINE/",
+      "origen": "RefiTicket",
+      "precio": null,
+      "precio_etiqueta": "Consultar precio en RefiTicket",
+      "fuente_verificada": true,
+      "categorias": [
+        "cine"
+      ]
+    },
+    {
       "fecha": "2026-10-21",
       "hora": "08:00",
       "nombre": "Exposición La Noche de Los Lápices. Ayer y hoy",
@@ -2584,6 +2607,23 @@
     },
     {
       "fecha": "2026-10-23",
+      "hora": "20:00",
+      "nombre": "VOSNOSOSLINDO FEST | CHARLY GARCIA 75 AÑOS",
+      "lugar": "REFI",
+      "direccion": "VELEZ SARSFIELD 641, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://refiticket.ar/VOSNOSOSLINDO-FEST---CHARLY-GARCIA-75-ANOS/",
+      "entradas_url": "https://refiticket.ar/VOSNOSOSLINDO-FEST---CHARLY-GARCIA-75-ANOS/",
+      "origen": "RefiTicket",
+      "precio": 15000.0,
+      "precio_etiqueta": "Desde $15.000",
+      "fuente_verificada": true,
+      "categorias": [
+        "musica"
+      ]
+    },
+    {
+      "fecha": "2026-10-23",
       "hora": "20:30",
       "nombre": "La montaña, una obra escultórica",
       "lugar": "Centro Cultural Parque de España",
@@ -3022,7 +3062,7 @@
       "entradas_url": "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 15:46"
+      "precio_consultado": "2026-10-16 18:00"
     },
     {
       "fecha": "2026-10-24",
@@ -4096,7 +4136,7 @@
       "entradas_url": "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 15:46"
+      "precio_consultado": "2026-10-16 18:00"
     },
     {
       "fecha": "2026-10-30",
@@ -4250,6 +4290,20 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/elaha-en-cine-lumiere",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-31",
+      "hora": "20:00",
+      "nombre": "HORROR SHOW",
+      "lugar": "REFI",
+      "direccion": "VELEZ SARSFIELD 641, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://refiticket.ar/HORROR-SHOW/",
+      "entradas_url": "https://refiticket.ar/HORROR-SHOW/",
+      "origen": "RefiTicket",
+      "precio": 6000.0,
+      "precio_etiqueta": "Desde $6.000",
+      "fuente_verificada": true
     },
     {
       "fecha": "2026-10-31",
@@ -5118,7 +5172,7 @@
       "precio_etiqueta": "Desde $25.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 15:46"
+      "precio_consultado": "2026-10-16 18:00"
     },
     {
       "fecha": "2026-11-06",
@@ -5212,6 +5266,23 @@
       "entrada_paga": true,
       "entradas_url": "https://www.ticketek.com.ar/connie-ballarini/teatro-astengo",
       "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-11-07",
+      "hora": "20:00",
+      "nombre": "NO TAN CHIC FEST VOL. 2",
+      "lugar": "REFI",
+      "direccion": "VELEZ SARSFIELD 641, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://refiticket.ar/NO-TAN-CHIC-FEST-VOL--2/",
+      "entradas_url": "https://refiticket.ar/NO-TAN-CHIC-FEST-VOL--2/",
+      "origen": "RefiTicket",
+      "precio": 10000.0,
+      "precio_etiqueta": "Desde $10.000",
+      "fuente_verificada": true,
+      "categorias": [
+        "musica"
+      ]
     },
     {
       "fecha": "2026-11-07",
@@ -5644,6 +5715,18 @@
     },
     {
       "fecha": "2026-11-12",
+      "hora": "20:00",
+      "nombre": "ROMITO ROMARIO PRESENTA \"ACEYTE\"",
+      "lugar": "Distrito Siete",
+      "direccion": "Ovidio Lagos 790, Rosario, Santa Fe",
+      "descripcion": "ROMITO ROMARIO PRESENTA \"ACEYTE\"",
+      "evento_url": "https://www.d7entradas.com.ar/eventos/romito-romario-presenta-aceyte-e356",
+      "precio": null,
+      "origen": "Distrito Siete",
+      "entrada_paga": true
+    },
+    {
+      "fecha": "2026-11-12",
       "hora": "21:00",
       "nombre": "Diego Torres en Rosario",
       "lugar": "Metropolitano",
@@ -5775,6 +5858,23 @@
     {
       "fecha": "2026-11-13",
       "hora": "21:00",
+      "nombre": "POST PUNK JUNK | ROT.MAN",
+      "lugar": "REFI",
+      "direccion": "VELEZ SARSFIELD 641, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://refiticket.ar/POST-PUNK-JUNK---ROT-MAN/",
+      "entradas_url": "https://refiticket.ar/POST-PUNK-JUNK---ROT-MAN/",
+      "origen": "RefiTicket",
+      "precio": 7000.0,
+      "precio_etiqueta": "Desde $7.000",
+      "fuente_verificada": true,
+      "categorias": [
+        "musica"
+      ]
+    },
+    {
+      "fecha": "2026-11-13",
+      "hora": "21:00",
       "nombre": "SERGIO TORRES",
       "lugar": "Teatro Broadway",
       "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
@@ -5805,6 +5905,20 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-14",
+      "hora": "19:00",
+      "nombre": "FIESTA CAVERNA",
+      "lugar": "REFI",
+      "direccion": "VELEZ SARSFIELD 641, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://refiticket.ar/FIESTA-CAVERNA/",
+      "entradas_url": "https://refiticket.ar/FIESTA-CAVERNA/",
+      "origen": "RefiTicket",
+      "precio": 15000.0,
+      "precio_etiqueta": "Desde $15.000",
+      "fuente_verificada": true
     },
     {
       "fecha": "2026-11-14",
@@ -5924,7 +6038,7 @@
       "precio_etiqueta": "Desde $25.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 15:47"
+      "precio_consultado": "2026-10-16 18:00"
     },
     {
       "fecha": "2026-11-21",
@@ -5974,5 +6088,6 @@
         "Passline"
       ]
     }
-  ]
+  ],
+  "actualizado_fuentes_refi_folklore": "2026-10-16 17:59"
 }

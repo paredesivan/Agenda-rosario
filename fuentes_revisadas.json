@@ -1,8 +1,8 @@
 {
-  "fecha_revision": "2026-10-16 15:33",
+  "fecha_revision": "2026-10-16 17:45",
   "salas_independientes": 13,
   "medios": 3,
-  "funciones_agregadas": 7,
+  "funciones_agregadas": 6,
   "fuentes": {
     "Feria Internacional del Libro de Rosario": "revisada: 3 jornadas; fuente oficial",
     "Microteatro Rosario": "revisada: 32 funciones en 5 obras; 0 fichas pendientes",
@@ -28,15 +28,15 @@
     "Centro Cultural Madres de Plaza 25 de Mayo": "revisada con robots.txt: 1 eventos verificables",
     "Entrada Play": "revisada: 6 funciones; 0 fichas pendientes",
     "CentroTicket": "revisada: 9 funciones; 1 fichas pendientes",
-    "Circo Rodas — Linke-arte": "revisada: 9 funciones habilitadas",
+    "Circo Rodas — Linke-arte": "revisada: 8 funciones habilitadas",
     "Agenda municipal — Espacios": "revisada: 1 funciones; 0 fichas pendientes",
     "Muestra Inmersiva: Estación Rosario 300": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Bellas Artes Juan B. Castagnino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Arte Contemporáneo de Rosario (MACRO)": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de la Memoria": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Arte Decorativo Firma y Odilo Estévez": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo de la Ciudad": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo del Deporte Santafesino": "web pendiente de consulta: 0 actividades",
+    "Museo de la Ciudad": "web pendiente de consulta: 0 actividades",
+    "Museo del Deporte Santafesino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Histórico Provincial Julio Marc": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo": "web pendiente de consulta: 0 actividades",
     "Museo Internacional para la Democracia": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
@@ -54,13 +54,15 @@
     "Directorio de museos": "21 espacios descubiertos; 0 páginas pendientes",
     "Rosario3": "revisada: 1 notas, 10 funciones, 0 errores",
     "La Capital": "revisada: 0 notas, 0 funciones, 0 errores",
-    "El Ciudadano": "revisada: 6 notas, 0 funciones, 0 errores",
+    "El Ciudadano": "revisada: 5 notas, 0 funciones, 0 errores",
     "Rosario en Cartel": "revisada: 21 funciones verificadas; 0 fichas pendientes",
     "Rosario Times": "revisada: 3 coincidencias con registros oficiales; 3 candidatos pendientes; 0 consultas pendientes",
     "EntradaFan": "revisada: 8 coincidencias con registros oficiales; 10 candidatos pendientes; 0 consultas pendientes",
     "SalePlan": "revisada: 0 coincidencias con registros oficiales; 26 candidatos pendientes; 0 consultas pendientes",
     "Disfruta Rosario": "consulta manual; auditoría pendiente",
-    "Passline": "fichas futuras incorporadas con enlace directo; precio actualizado en Passline"
+    "Passline": "fichas futuras incorporadas con enlace directo; precio actualizado en Passline",
+    "RefiTicket": "revisada: 7 funciones; 0 fichas pendientes",
+    "Rosario Folklore": "desactivada: falta permiso de automatización del titular"
   },
   "museos": [
     {
@@ -109,7 +111,7 @@
     {
       "nombre": "Museo de la Ciudad",
       "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-de-la-ciudad",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
+      "estado": "web pendiente de consulta",
       "actividades": 0,
       "webs": [
         "https://www.instagram.com/museociudad/"
@@ -118,7 +120,7 @@
     {
       "nombre": "Museo del Deporte Santafesino",
       "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-deporte-santafesino",
-      "estado": "web pendiente de consulta",
+      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
       "actividades": 0,
       "webs": [
         "https://museodeldeportesf.gob.ar/"
@@ -642,5 +644,6 @@
       "fuentes": "Entrada Play y agendas culturales",
       "actividades": 0
     }
-  ]
+  ],
+  "revision_refi_folklore": "2026-10-16 17:59"
 }
