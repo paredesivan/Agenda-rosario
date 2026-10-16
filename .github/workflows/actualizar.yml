@@ -6,6 +6,8 @@ on:
     paths:
       - actualizar_eventos.py
       - fuentes_nuevas.py
+      - fuentes_refi_folklore.py
+      - fuentes_refi_folklore.json
       - fuentes_adicionales.py
       - fuentes_adicionales.json
       - eventos_verificados_adicionales.json
@@ -56,6 +58,10 @@ jobs:
         timeout-minutes: 45
         run: python -u fuentes_nuevas.py
 
+      - name: Revisar RefiTicket y conectores autorizados
+        timeout-minutes: 12
+        run: python -u fuentes_refi_folklore.py
+
       - name: Revisar precios y entradas de Lavardén
         timeout-minutes: 15
         run: python -u precios_lavarden.py
@@ -68,7 +74,7 @@ jobs:
         run: |
           git config user.name "agenda-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add revision_precios_lavarden.json eventos.json fuentes_revisadas.json cache_fuentes_adicionales.json cache_cm25.json candidatos_fuentes_adicionales.json
+          git add cache_refi_folklore.json revision_precios_lavarden.json eventos.json fuentes_revisadas.json cache_fuentes_adicionales.json cache_cm25.json candidatos_fuentes_adicionales.json
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar agenda"
             git push origin HEAD:main
@@ -78,4 +84,5 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
+
 
