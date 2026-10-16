@@ -1,0 +1,14 @@
+INTEGRACIÓN CM25 PARA AGENDA ROSARIO
+
+Contenido del paquete:
+- fuentes_nuevas.py: reemplaza el archivo homónimo del repositorio por esta versión.
+- tests/test_fuentes_adicionales.py: incorpora pruebas para validar fecha, hora, dirección y descarte de actividades vencidas.
+- AUDITORIA_CM25.md: alcance y límites de la revisión de la fuente.
+
+Aplicación:
+1. En el repositorio, reemplazá fuentes_nuevas.py por el archivo de este paquete.
+2. Reemplazá tests/test_fuentes_adicionales.py por la versión incluida (conserva las pruebas anteriores y agrega dos pruebas CM25).
+3. Subí ambos archivos respetando sus rutas.
+4. Ejecutá el workflow existente de actualización de la agenda.
+
+El código consulta robots.txt en ejecución; si no puede verificar que la ruta esté permitida, detiene la consulta de CM25 y conserva el resto de la actualización. El caché cache_cm25.json se crea automáticamente junto al script.

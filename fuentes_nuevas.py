@@ -1206,6 +1206,7 @@ FUENTES_CSV = (
     ('Mercado del Patio', 'mercado/espacio', 'https://www.mercadodelpatio.gob.ar/', 'media'),
     ('Alto Rosario Shopping', 'shopping', 'https://www.altorosario.com.ar/', 'baja'),
     ('Diferentes ambitos de Rosario', 'variable', 'https://www.rosario.gob.ar/inicio/agenda', 'baja'),
+    ('Centro Cultural 25 de Mayo', 'centro cultural independiente', CM25_NOVEDADES, 'alta'),
 )
 
 # Fuente aportada: fuentes_oficiales_agenda_rosario.csv. Se mantiene el enlace original
@@ -1437,6 +1438,67 @@ def leer_agenda_csv(fuente, indice, segunda, direccion, hoy):
     return list({clave(e): e for e in eventos}.values()), errores
 
 
+CM25_NOVEDADES = 'https://www.cm25.ar/novedades.html'
+CM25_CACHE = Path(__file__).with_name('cache_cm25.json')
+CM25_MESES = {normalizar(nombre): numero for numero, nombre in enumerate(
+    ('enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio',
+     'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'), 1)}
+
+
+def eventos_cm25(html, url, hoy):
+    """Extrae sólo actos futuros con fecha, hora y sede explícitas."""
+    cuerpo = html.select_one('main') or html.select_one('article') or html
+    texto_pagina = texto(cuerpo)
+    patron = re.compile(
+        r'\b(\d{1,2})\s+de\s+(enero|febrero|marzo|abril|mayo|junio|julio|'
+        r'agosto|septiembre|setiembre|octubre|noviembre|diciembre)'
+        r'(?:\s+de\s+(20\d{2}))?\s+a\s+las?\s+'
+        r'(\d{1,2})(?:[:.](\d{2}))?\s*(?:hs?\.?|horas?)\b', re.I)
+    m = patron.search(texto_pagina)
+    if not m:
+        return []
+    dia, nombre_mes, anio, hora, minuto = m.groups()
+    mes = CM25_MESES.get(normalizar(nombre_mes))
+    if not mes and normalizar(nombre_mes) == 'setiembre':
+        mes = 9
+    hora, minuto = int(hora), int(minuto or 0)
+    try:
+        fecha = date(int(anio) if anio else hoy.year, mes, int(dia))
+    except (TypeError, ValueError):
+        return []
+    if not hoy <= fecha <= hoy + timedelta(days=30) or hora > 23 or minuto > 59:
+        return []
+    if 'corrientes 987' not in normalizar(texto_pagina):
+        return []
+    nombre = next((texto(n) for n in cuerpo.select('h1, h2, h3')
+                   if texto(n).strip() and texto(n).strip() != '#'), '')
+    nombre = re.sub(r'^\s*\d{1,2}\s*[a-záéíóú]{3,4}\s*/?\s*', '', nombre, flags=re.I).strip(' /-')
+    if not nombre or len(nombre) > 120:
+        return []
+    return [{
+        'fecha': fecha.isoformat(), 'hora': f'{hora:02d}:{minuto:02d}',
+        'nombre': nombre, 'lugar': 'Centro Cultural 25 de Mayo',
+        'direccion': 'Corrientes 987, planta alta, Rosario, Santa Fe',
+        'descripcion': '', 'evento_url': url, 'precio': 0,
+        'precio_etiqueta': 'Gratis', 'origen': 'Centro Cultural 25 de Mayo',
+    }]
+
+
+def leer_cm25(hoy, estado):
+    """Consulta CM25 sólo si robots.txt permite la ruta y usa caché condicional."""
+    from fuentes_adicionales import Acceso
+    try:
+        cache = json.loads(CM25_CACHE.read_text(encoding='utf-8')) if CM25_CACHE.exists() else {}
+        eventos = Acceso(cache).leer(CM25_NOVEDADES,
+            lambda dom, url: eventos_cm25(dom, url, hoy), tipo='listado')
+        CM25_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        estado['Centro Cultural 25 de Mayo'] = f'revisada con robots.txt: {len(eventos)} eventos verificables'
+        return eventos
+    except (requests.RequestException, ValueError, TypeError) as error:
+        estado['Centro Cultural 25 de Mayo'] = f'consulta detenida: {type(error).__name__}'
+        return []
+
+
 def leer_fuentes_del_csv(hoy, estado):
     nuevos = []
     for fuente, indice, segunda, direccion in CSV_AGENDAS:
@@ -1483,6 +1545,7 @@ def actualizar_fuentes():
     nuevos.extend(leer_microteatro(hoy, estado))
     nuevos.extend(leer_atir(hoy, estado))
     nuevos.extend(leer_fuentes_del_csv(hoy, estado))
+    nuevos.extend(leer_cm25(hoy, estado))
     espacios_nuevos = leer_espacios_extra(hoy, estado)
     nuevos.extend(espacios_nuevos)
     nuevos.extend(leer_municipal_espacios(hoy, estado))
@@ -1524,10 +1587,7 @@ def actualizar_fuentes():
         if key not in vistos:
             vistos[key] = e
             agregados += 1
-        elif (e.get("funcion_unica_verificada")
-              or e.get("origen") == "Circo Rodas — Linke-arte"
-              or (e.get("origen") == "Microteatro Rosario"
-                  and e.get("precio") is not None)):
+        elif e.get("funcion_unica_verificada") or e.get("origen") == "Circo Rodas — Linke-arte":
             vistos[key] = e
     for evento in vistos.values():
         if evento.get("origen") == "Teatro Astengo" and not re.search(r"\d", evento.get("direccion", "")):
@@ -1560,3 +1620,6 @@ def actualizar_fuentes():
 
 if __name__ == "__main__":
     actualizar_fuentes()
+
+
+
