@@ -10,6 +10,16 @@ from fuentes_nuevas import precio_producto_microteatro, eventos_cm25
 
 
 class TestFuentesAdicionales(unittest.TestCase):
+    def test_reintenta_una_vez_si_la_conexion_es_transitoria(self):
+        response = Mock(status_code=200, headers={}, text='ok')
+        session = Mock()
+        session.get.side_effect = [requests.ConnectionError('conexión transitoria'), response]
+        espera = Mock()
+        acceso = Acceso({}, session, reloj=lambda: 100000, dormir=espera)
+        self.assertIs(acceso.pedir('https://x.com/agenda'), response)
+        self.assertEqual(session.get.call_count, 2)
+        espera.assert_called_once_with(2)
+
     def test_cm25_acepta_solo_fecha_hora_sede_y_titulo_futuros(self):
         html = BeautifulSoup('<main><h1>#</h1><h2>16OCT / Música en la casa</h2>'
             '<p>El viernes 16 de octubre a las 21 hs se presenta el ciclo.</p>'
