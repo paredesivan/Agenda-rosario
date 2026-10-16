@@ -1,560 +1,7 @@
 {
-  "actualizado": "2026-10-15 20:05",
+  "actualizado": "2026-10-16 01:34",
   "estado": "parcial",
   "eventos": [
-    {
-      "fecha": "2026-10-15",
-      "hora": "10:00",
-      "nombre": "Circo de Artes Visuales en el Teatro El Círculo",
-      "lugar": "Teatro El Círculo",
-      "direccion": "LAPRIDA FRANCISCO NARCISO 1201, Rosario, Santa Fe",
-      "descripcion": "Se inaugura la muestra “A mar abierto” del artista plástico, escritor y cineasta JUAN CARLOS CAPURRO. Entrada libre y gratuita La muestra…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/circo-de-artes-visuales-en-el-teatro-el-circulo",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "11:00",
-      "nombre": "Festirock",
-      "lugar": "Plaza La Esperanza",
-      "direccion": "Plaza La Esperanza, Rosario, Santa Fe",
-      "descripcion": "Jornada llena de música y propuestas divertidas: se trata de un increíble festival de bandas en vivo con la participación de escuelas…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/festirock",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "12:00",
-      "nombre": "Clase abierta. Canto, ensamble y grabación",
-      "lugar": "ECU Espacio Cultural Universitario",
-      "direccion": "San Martín 750, Rosario, Santa Fe",
-      "descripcion": "El jueves 15 de octubre a las 12 hs. se presentarán los estudiantes de la cátedra de Práctica de Conjunto y Canto…",
-      "evento_url": "https://unr.edu.ar/agenda/clase-abierta-canto-ensamble-y-grabacion/",
-      "precio": 0,
-      "origen": "ECU Espacio Cultural Universitario",
-      "categorias": [
-        "musica"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "13:00",
-      "nombre": "76º Workshop de ARAV",
-      "lugar": "Metropolitano",
-      "direccion": "Junín 501, Rosario, Santa Fe, Argentina",
-      "descripcion": "Rosario volverá a convertirse en el punto de encuentro para los principales actores del turismo nacional con la realización del 76º Workshop…",
-      "evento_url": "https://www.rosarioencartel.com.ar/76o-workshop-de-arav/",
-      "precio": 0,
-      "origen": "Rosario en Cartel"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "13:00",
-      "nombre": "Feria Internacional del Libro de Rosario",
-      "lugar": "Centro Cultural Roberto Fontanarrosa",
-      "direccion": "San Martín 1080, Rosario, Santa Fe",
-      "descripcion": "Feria con stands de librerías y editoriales, presentaciones, charlas y actividades para todas las edades. Entrada gratuita con QR. Horario oficial: 13:00 a 22:00.",
-      "evento_url": "https://feriadellibrorosario.gob.ar/",
-      "precio": 0,
-      "origen": "Feria Internacional del Libro de Rosario",
-      "categorias": [
-        "ferias"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "16:00",
-      "nombre": "Ciclo de Teatro +65: El Club de la Risa",
-      "lugar": "Bar Rosario Blend (Bv. Oroño 4898)",
-      "direccion": "Bar Rosario Blend (Bv. Oroño 4898), Rosario, Santa Fe",
-      "descripcion": "Con 4 funciones, se presenta el Club de la Risa . Está pensada como una propuesta de humor y música en espacios…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/ciclo-de-teatro-65-el-club-de-la-risa",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "16:00",
-      "nombre": "Segundo Encuentro Recreativo para Adultos Mayores",
-      "lugar": "Cabal 1400 bis",
-      "direccion": "Cabal 1400 bis, Rosario, Santa Fe",
-      "descripcion": "El Distrito Noroeste organiza un segundo encuentro con karaoke para adultos mayores del territorio.",
-      "evento_url": "https://www.rosario.gob.ar/inicio/segundo-encuentro-recreativo-para-adultos-mayores",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "18:00",
-      "nombre": "ADOLESCENCIA, SEXO Y MUERTE EN CAMPAMENTO MIASMA",
-      "lugar": "El Cairo Cine Público",
-      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
-      "descripcion": "",
-      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/adolescencia-sexo-y-muerte-en-campamento-miasma/2026-10-15/",
-      "precio": null,
-      "origen": "El Cairo Cine Público",
-      "precio_etiqueta": "$2.000 – $4.000",
-      "categorias": [
-        "cine"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "19:30",
-      "nombre": "MediCine: Como el arte puede ayudar a la ciencia",
-      "lugar": "Consultorios del Británico (Piso 10 - Jujuy 1540)",
-      "direccion": "Consultorios del Británico (Piso 10 - Jujuy 1540), Rosario, Santa Fe",
-      "descripcion": "En el marco del Octubre Rosa , mes de concientización sobre el Cáncer de Mama, la Fundación Sanatorio Británico invita a una…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/medicine-como-el-arte-puede-ayudar-la-ciencia",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "20:00",
-      "nombre": "Circo Rodas",
-      "lugar": "Circo Rodas",
-      "direccion": "Av. Circunvalación, Rosario, Santa Fe",
-      "descripcion": "Espectáculo circense para toda la familia. Consultá sectores, promociones y disponibilidad en la venta oficial.",
-      "evento_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
-      "precio": null,
-      "origen": "Circo Rodas — Linke-arte",
-      "precio_etiqueta": "$12.000 – $26.000",
-      "entradas_url": "https://linke-arte.com/arg/es/circo-rodas-rosario",
-      "entrada_paga": true,
-      "categorias": [
-        "infancias"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "20:00",
-      "nombre": "El odio en Cine Lumière",
-      "lugar": "Centro Cultural Cine Lumière",
-      "direccion": "VELEZ SARSFIELD DALMACIO 1027, Rosario, Santa Fe",
-      "descripcion": "La Escuela de Orientación Lacaniana de Rosario (EOL) y Cine Lumière presentan el jueves 8, la segunda jornada del ciclo: Cine y…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/el-odio-en-cine-lumiere",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "20:00",
-      "nombre": "Rosario Sonido de Cuerdas - Día 3",
-      "lugar": "Foyer del Teatro El Círculo",
-      "direccion": "Foyer del Teatro El Círculo, Rosario, Santa Fe",
-      "descripcion": "En el marco de la primera edición de Rosario Sonido de Cuerdas , la Orquesta de Cámara Municipal de Rosario ofrecerá el…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/rosario-sonido-de-cuerdas-dia-3",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "20:30",
-      "nombre": "ESCENAS DE LA VIDA CONYUGAL",
-      "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario",
-      "descripcion": "Obra teatral con Ricardo Darín y Andrea Pietra.",
-      "evento_url": "https://teatroastengo.ar/events/escenas-de-la-vida-conyugal-teatro-astengo/",
-      "precio": null,
-      "origen": "Teatro Astengo",
-      "entrada_paga": true,
-      "hora_fin": "22:30",
-      "descubrimiento_fuentes": [
-        "EntradaFan"
-      ],
-      "entradas_url": "https://www.ticketek.com.ar/escenas-de-la-vida-conyugal/teatro-astengo",
-      "precio_etiqueta": "Precio a confirmar"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "20:30",
-      "nombre": "Ensayo Vania (una fallida representación sobre la felicidad)",
-      "lugar": "La Orilla Infinita",
-      "direccion": "Colón 2148, Rosario, Santa Fe",
-      "descripcion": "Entrada general. Consultá descuentos y disponibilidad en la tienda oficial.",
-      "evento_url": "https://laorillainfinita.com.ar/productos/vania/",
-      "precio": 18000,
-      "origen": "La Orilla Infinita",
-      "precio_etiqueta": "General $18.000"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "20:30",
-      "nombre": "LONG GOOD THURSDAY",
-      "lugar": "El Cairo Cine Público",
-      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
-      "descripcion": "",
-      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/long-good-thursday/",
-      "precio": 2000.0,
-      "origen": "El Cairo Cine Público",
-      "categorias": [
-        "cine"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "20:30",
-      "nombre": "Orquesta Utópica presenta: Tango de Rosario en movimiento",
-      "lugar": "Centro Cultural Parque de España",
-      "direccion": "Sarmiento y el río, Rosario, Santa Fe",
-      "descripcion": "Concierto de tango con parejas de baile invitadas.",
-      "evento_url": "https://ccpe.org.ar/web/actividades/orquesta-utopica-presenta-tango-de-rosario-en-movimiento/",
-      "precio": null,
-      "origen": "Centro Cultural Parque de España"
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "20:45",
-      "nombre": "El juego del amor propio",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
-      "evento_url": "https://www.microteatrorosario.com/productos/eljuegoj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "20:50",
-      "nombre": "Tribulaciones de un gigoló",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se calzó la capa. El destino los…",
-      "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "20:55",
-      "nombre": "Prometo volver a engañarte",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
-      "evento_url": "https://www.microteatrorosario.com/productos/prometovolverj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "21:10",
-      "nombre": "El juego del amor propio",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
-      "evento_url": "https://www.microteatrorosario.com/productos/eljuegoj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "21:15",
-      "nombre": "Tribulaciones de un gigoló",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se calzó la capa. El destino los…",
-      "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "21:20",
-      "nombre": "Prometo volver a engañarte",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
-      "evento_url": "https://www.microteatrorosario.com/productos/prometovolverj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "21:35",
-      "nombre": "El juego del amor propio",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: En plena terapia, dentro de la mente de Enzo, alguien lo desafía y al juego da comienzo. Dramaturgia: Pedro…",
-      "evento_url": "https://www.microteatrorosario.com/productos/eljuegoj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "21:40",
-      "nombre": "Tribulaciones de un gigoló",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Ella decidió darse los gustos en vida. Él quedó sin empleo y se calzó la capa. El destino los…",
-      "evento_url": "https://www.microteatrorosario.com/productos/tribulacionesj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "21:45",
-      "nombre": "Prometo volver a engañarte",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Marta ha dejado una nota a Marcos diciendo “TENEMOS QUE HABLAR”. Cuando te esperes lo peor, probablemente estés en…",
-      "evento_url": "https://www.microteatrorosario.com/productos/prometovolverj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "22:10",
-      "nombre": "Julieta & Julieta",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
-      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietaj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "22:15",
-      "nombre": "Amore di mafia",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Último trabajo juntos de dos mafiosos particulares. Uno se retira, el otro recién comienza. ¿Cómo terminará esta historia? Dramaturgia:…",
-      "evento_url": "https://www.microteatrorosario.com/productos/amoredimafiaj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "22:20",
-      "nombre": "Madrid, ¡un sueño!",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Emocionante como “Hairspray”, “Fame” y “Flashdance”. Si tenés un sueño, si buscás la fama... acá es donde vas a…",
-      "evento_url": "https://www.microteatrorosario.com/productos/madridj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "22:25",
-      "nombre": "Nunca es tarde",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Cuando Rick, el detective canchero, se encuentra con Betty, la Femme Fatale, sabía que era una trampa. Dramaturgia: Nacho…",
-      "evento_url": "https://www.microteatrorosario.com/productos/nuncaestardej/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "22:30",
-      "nombre": "THE TRUMAN SHOW VS. MÁS EXTRAÑO QUE LA FICCIÓN",
-      "lugar": "El Cairo Cine Público",
-      "direccion": "Santa Fe 1120, Rosario, Santa Fe",
-      "descripcion": "",
-      "evento_url": "https://elcairocinepublico.gob.ar/pelicula-de-sala/the-truman-show-vs-mas-extrano-que-la-ficcion/",
-      "precio": 2000.0,
-      "origen": "El Cairo Cine Público",
-      "categorias": [
-        "cine"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "22:40",
-      "nombre": "Julieta & Julieta",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
-      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietaj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "22:45",
-      "nombre": "Amore di mafia",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Último trabajo juntos de dos mafiosos particulares. Uno se retira, el otro recién comienza. ¿Cómo terminará esta historia? Dramaturgia:…",
-      "evento_url": "https://www.microteatrorosario.com/productos/amoredimafiaj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "22:50",
-      "nombre": "Madrid, ¡un sueño!",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Emocionante como “Hairspray”, “Fame” y “Flashdance”. Si tenés un sueño, si buscás la fama... acá es donde vas a…",
-      "evento_url": "https://www.microteatrorosario.com/productos/madridj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "22:55",
-      "nombre": "Nunca es tarde",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Cuando Rick, el detective canchero, se encuentra con Betty, la Femme Fatale, sabía que era una trampa. Dramaturgia: Nacho…",
-      "evento_url": "https://www.microteatrorosario.com/productos/nuncaestardej/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "23:10",
-      "nombre": "Julieta & Julieta",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Dos julietas, un amor que se desgarra en dos voces ¿Existe una sola verdad? Dramaturgia: Miguel Alcantud Dirección: Sandra…",
-      "evento_url": "https://www.microteatrorosario.com/productos/julietayjulietaj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "23:15",
-      "nombre": "Amore di mafia",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Último trabajo juntos de dos mafiosos particulares. Uno se retira, el otro recién comienza. ¿Cómo terminará esta historia? Dramaturgia:…",
-      "evento_url": "https://www.microteatrorosario.com/productos/amoredimafiaj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "23:20",
-      "nombre": "Madrid, ¡un sueño!",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Emocionante como “Hairspray”, “Fame” y “Flashdance”. Si tenés un sueño, si buscás la fama... acá es donde vas a…",
-      "evento_url": "https://www.microteatrorosario.com/productos/madridj/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
-    {
-      "fecha": "2026-10-15",
-      "hora": "23:25",
-      "nombre": "Nunca es tarde",
-      "lugar": "Microteatro Rosario",
-      "direccion": "San Lorenzo 1329, Rosario, Santa Fe",
-      "descripcion": "Entrada: $5.750. Sinopsis: Cuando Rick, el detective canchero, se encuentra con Betty, la Femme Fatale, sabía que era una trampa. Dramaturgia: Nacho…",
-      "evento_url": "https://www.microteatrorosario.com/productos/nuncaestardej/",
-      "precio": 5750.0,
-      "origen": "Microteatro Rosario",
-      "precio_etiqueta": "$5.750",
-      "entrada_paga": true,
-      "categorias": [
-        "teatro"
-      ]
-    },
     {
       "fecha": "2026-10-16",
       "hora": "00:15",
@@ -976,7 +423,7 @@
       "precio_etiqueta": "Desde $40.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-15 20:31"
+      "precio_consultado": "2026-10-16 01:59"
     },
     {
       "fecha": "2026-10-16",
@@ -1816,7 +1263,7 @@
       "precio_etiqueta": "Desde $35.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-15 19:07"
+      "precio_consultado": "2026-10-16 01:59"
     },
     {
       "fecha": "2026-10-17",
@@ -3552,7 +2999,7 @@
       "entradas_url": "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-15 20:31"
+      "precio_consultado": "2026-10-16 01:59"
     },
     {
       "fecha": "2026-10-24",
@@ -4593,7 +4040,7 @@
       "entradas_url": "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-15 19:07"
+      "precio_consultado": "2026-10-16 02:00"
     },
     {
       "fecha": "2026-10-30",
@@ -5593,7 +5040,7 @@
       "precio_etiqueta": "Desde $25.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-15 19:07"
+      "precio_consultado": "2026-10-16 02:00"
     },
     {
       "fecha": "2026-11-06",
@@ -6195,6 +5642,20 @@
     {
       "fecha": "2026-11-13",
       "hora": "21:00",
+      "nombre": "CINEGRAF «música, recuerdos y humor»",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario",
+      "descripcion": "CINEGRAF « Música, recuerdos y humor para volver a bailar nuestra historia» Hay canciones que no solo se escuchan: se viven. Son…",
+      "evento_url": "https://teatroastengo.ar/events/cinegraf-teatro-astengo/",
+      "precio": null,
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/cinegraf/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-11-13",
+      "hora": "21:00",
       "nombre": "ELIZABETH KARAYEKOV BIG BAND",
       "lugar": "Complejo Cultural Atlas",
       "direccion": "Mitre 645, Rosario, Santa Fe",
@@ -6303,6 +5764,67 @@
       "descubrimiento_fuentes": [
         "Passline"
       ]
+    },
+    {
+      "fecha": "2026-11-15",
+      "hora": "10:00",
+      "nombre": "La Ruta de los Azulejos. Historias, artes y oficios en la ciudad",
+      "lugar": "Museo de la Ciudad Wladimir Mikielievich",
+      "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
+      "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-15",
+      "hora": "10:00",
+      "nombre": "Nivel de Río. Instalación de Maxi Murad",
+      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
+      "descripcion": "El Museo de Arte Contemporáneo de Rosario (Bv. Oroño y el río Paraná) inaugura su programa curatorial 2026 bajo el concepto LIBREDEUDA…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-15",
+      "hora": "10:00",
+      "nombre": "Tango en Calle",
+      "lugar": "Centro Cultural  La Casa del Tango",
+      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
+      "descripcion": "Tango en Calle es una propuesta del Centro Cultural La Casa del Tango (Arturo Illia 1750) que suma su espacio, musicalización y…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/tango-en-calle",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-15",
+      "hora": "20:00",
+      "nombre": "LA CENA DE LOS TONTOS",
+      "lugar": "Teatro Broadway",
+      "direccion": "San Lorenzo 1223, Rosario, Santa Fe",
+      "descripcion": "Entradas entre $40.000 y $65.000. LA CENA DE LOS TONTOS EN VENTA!! Fechas y horarios Sábado 14 de Noviembre a las 20:00 Hs. Domingo 15 de Noviembre…",
+      "evento_url": "https://teatrobroadwayrosario.com/cartelera/860/la-cena-de-los-tontos",
+      "precio": null,
+      "origen": "Teatro Broadway",
+      "precio_etiqueta": "$40.000 – $65.000"
+    },
+    {
+      "fecha": "2026-11-15",
+      "hora": "20:00",
+      "nombre": "Plataforma de Novedades: Silvina Gandini",
+      "lugar": "Plataforma Lavardén",
+      "direccion": "Mendoza 1085, Rosario, Santa Fe",
+      "descripcion": "presenta FUEGO Aceites Perfumados",
+      "evento_url": "https://plataformalavarden.gob.ar/actividades/plataforma-de-novedades-silvina-gandini/",
+      "precio": 25000,
+      "origen": "Plataforma Lavardén",
+      "entradas_url": "https://entradaslavarden.com/SILVINA-GANDINI-presenta-FUEGO-Aceites-Perfumados/",
+      "precio_etiqueta": "Desde $25.000 + cargo de servicio",
+      "entrada_paga": true,
+      "precio_fuente": "Entradas Lavardén",
+      "precio_consultado": "2026-10-16 02:00"
     },
     {
       "fecha": "2026-11-21",

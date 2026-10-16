@@ -1,11 +1,11 @@
 {
-  "fecha_revision": "2026-10-15 20:18",
+  "fecha_revision": "2026-10-16 01:47",
   "salas_independientes": 13,
   "medios": 3,
   "funciones_agregadas": 6,
   "fuentes": {
-    "Feria Internacional del Libro de Rosario": "revisada: 4 jornadas; fuente oficial",
-    "Microteatro Rosario": "revisada: 53 funciones en 12 obras; 0 fichas pendientes",
+    "Feria Internacional del Libro de Rosario": "revisada: 3 jornadas; fuente oficial",
+    "Microteatro Rosario": "revisada: 32 funciones en 5 obras; 0 fichas pendientes",
     "Caras y Caretas": "revisada: sin funciones propias estructuradas",
     "Club Fosse": "revisada: sin funciones propias estructuradas",
     "Cultural de Abajo": "revisada: sin funciones propias estructuradas",
@@ -21,10 +21,10 @@
     "La Tornería": "revisada: sin funciones propias estructuradas",
     "Teatro El Circulo — CSV": "revisada: 0 funciones; 0 consultas pendientes",
     "Club Atletico Provincial — CSV": "revisada: 0 funciones; 1 consultas pendientes",
-    "ECU Espacio Cultural Universitario — CSV": "revisada: 2 funciones; 0 consultas pendientes",
+    "ECU Espacio Cultural Universitario — CSV": "revisada: 1 funciones; 0 consultas pendientes",
     "Mercado del Patio — CSV": "revisada: 0 funciones; 0 consultas pendientes",
     "Alto Rosario Shopping — CSV": "revisada: 0 funciones; 1 consultas pendientes",
-    "El Cairo — CSV": "revisada: 27 funciones; 0 consultas pendientes",
+    "El Cairo — CSV": "revisada: 24 funciones; 0 consultas pendientes",
     "Entrada Play": "revisada: 6 funciones; 0 fichas pendientes",
     "CentroTicket": "revisada: 9 funciones; 1 fichas pendientes",
     "Circo Rodas — Linke-arte": "revisada: 9 funciones habilitadas",
@@ -35,7 +35,7 @@
     "Museo de la Memoria": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de Arte Decorativo Firma y Odilo Estévez": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo de la Ciudad": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
-    "Museo del Deporte Santafesino": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
+    "Museo del Deporte Santafesino": "web pendiente de consulta: 0 actividades",
     "Museo Histórico Provincial Julio Marc": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
     "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo": "web pendiente de consulta: 0 actividades",
     "Museo Internacional para la Democracia": "sin eventos fechados interpretables; también consultar la agenda municipal: 0 actividades",
@@ -53,10 +53,10 @@
     "Directorio de museos": "21 espacios descubiertos; 0 páginas pendientes",
     "Rosario3": "revisada: 1 notas, 10 funciones, 0 errores",
     "La Capital": "revisada: 0 notas, 0 funciones, 0 errores",
-    "El Ciudadano": "revisada: 5 notas, 0 funciones, 0 errores",
-    "Rosario en Cartel": "revisada: 22 funciones verificadas; 0 fichas pendientes",
+    "El Ciudadano": "revisada: 6 notas, 0 funciones, 0 errores",
+    "Rosario en Cartel": "revisada: 21 funciones verificadas; 0 fichas pendientes",
     "Rosario Times": "revisada: 3 coincidencias con registros oficiales; 4 candidatos pendientes; 0 consultas pendientes",
-    "EntradaFan": "revisada: 9 coincidencias con registros oficiales; 10 candidatos pendientes; 0 consultas pendientes",
+    "EntradaFan": "revisada: 8 coincidencias con registros oficiales; 10 candidatos pendientes; 0 consultas pendientes",
     "SalePlan": "revisada: 0 coincidencias con registros oficiales; 26 candidatos pendientes; 0 consultas pendientes",
     "Disfruta Rosario": "consulta manual; auditoría pendiente",
     "Passline": "fichas futuras incorporadas con enlace directo; precio actualizado en Passline"
@@ -117,7 +117,7 @@
     {
       "nombre": "Museo del Deporte Santafesino",
       "ficha": "https://www.rosario.tur.ar/donde-ir/cultura/museos/museo-deporte-santafesino",
-      "estado": "sin eventos fechados interpretables; también consultar la agenda municipal",
+      "estado": "web pendiente de consulta",
       "actividades": 0,
       "webs": [
         "https://museodeldeportesf.gob.ar/"
@@ -245,7 +245,7 @@
       "tipo": "teatro",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 15
+      "actividades": 16
     },
     {
       "nombre": "Complejo Cultural Atlas",
@@ -269,7 +269,7 @@
       "tipo": "centro cultural municipal",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 4
+      "actividades": 3
     },
     {
       "nombre": "Feria Internacional del Libro de Rosario",
@@ -277,7 +277,7 @@
       "tipo": "feria del libro",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 4
+      "actividades": 3
     },
     {
       "nombre": "Microteatro Rosario",
@@ -285,7 +285,7 @@
       "tipo": "teatro",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 53
+      "actividades": 32
     },
     {
       "nombre": "Plataforma Lavarden",
@@ -293,7 +293,7 @@
       "tipo": "centro cultural provincial",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 7
+      "actividades": 8
     },
     {
       "nombre": "Teatro El Circulo",
@@ -301,7 +301,7 @@
       "tipo": "teatro",
       "prioridad": "alta",
       "estado": "revisada: 0 funciones; 0 consultas pendientes",
-      "actividades": 5
+      "actividades": 3
     },
     {
       "nombre": "Teatro Astengo",
@@ -317,7 +317,7 @@
       "tipo": "salon/eventos",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 3
+      "actividades": 2
     },
     {
       "nombre": "La Segunda Seguros Arena",
@@ -356,8 +356,8 @@
       "url_aportada": "https://www.rosario.gob.ar/inicio/cine-el-cairo",
       "tipo": "cine municipal",
       "prioridad": "alta",
-      "estado": "revisada: 27 funciones; 0 consultas pendientes",
-      "actividades": 27
+      "estado": "revisada: 24 funciones; 0 consultas pendientes",
+      "actividades": 24
     },
     {
       "nombre": "Centro Cultural Parque de Espana",
@@ -365,7 +365,7 @@
       "tipo": "centro cultural",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 7
+      "actividades": 6
     },
     {
       "nombre": "Centro de Expresiones Contemporaneas",
@@ -381,7 +381,7 @@
       "tipo": "cine/centro cultural municipal",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 17
+      "actividades": 16
     },
     {
       "nombre": "Galpon de la Musica",
@@ -445,7 +445,7 @@
       "tipo": "museo municipal",
       "prioridad": "alta",
       "estado": "revisión del directorio y de las webs de museos",
-      "actividades": 26
+      "actividades": 27
     },
     {
       "nombre": "Museo Estevez",
@@ -517,7 +517,7 @@
       "tipo": "sala independiente",
       "prioridad": "media",
       "estado": "referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles",
-      "actividades": 9
+      "actividades": 8
     },
     {
       "nombre": "Circo Rodas",
@@ -525,7 +525,7 @@
       "tipo": "circo itinerante",
       "prioridad": "media",
       "estado": "referencia social; se usan ATIR, ticketeras o agendas públicas cuando están disponibles",
-      "actividades": 10
+      "actividades": 9
     },
     {
       "nombre": "La Surfera Beach",
@@ -556,8 +556,8 @@
       "url_aportada": "https://www.unr.edu.ar/",
       "tipo": "espacio universitario",
       "prioridad": "media",
-      "estado": "revisada: 2 funciones; 0 consultas pendientes",
-      "actividades": 2
+      "estado": "revisada: 1 funciones; 0 consultas pendientes",
+      "actividades": 1
     },
     {
       "nombre": "Monumento Nacional a la Bandera",
@@ -596,7 +596,7 @@
     {
       "nombre": "Circo Rodas",
       "fuentes": "Linke-arte y Rosario en Cartel",
-      "actividades": 10
+      "actividades": 9
     },
     {
       "nombre": "La Surfera Beach",

@@ -1,5 +1,5 @@
 {
-  "fecha_revision": "2026-10-15",
+  "fecha_revision": "2026-10-16",
   "nota": "Candidatos de fuentes secundarias; las fichas de Passline se importan como eventos con enlace directo.",
   "candidatos": [
     {
@@ -223,12 +223,6 @@
       "fuente": "SalePlan"
     },
     {
-      "nombre": "⚔️ LvRod & Juana Maidagan en Bon Scott (Rosario)",
-      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/07AYWEESVZVD/lvrod-juana-maidagan-en-bon-scott-rosario",
-      "estado": "pendiente de confirmación oficial",
-      "fuente": "SalePlan"
-    },
-    {
       "nombre": "Tirria",
       "referencia": "https://saleplan.ar/santa-fe/rosario/planes/R4P754GB78G1/tirria",
       "estado": "pendiente de confirmación oficial",
@@ -307,12 +301,6 @@
       "fuente": "SalePlan"
     },
     {
-      "nombre": "Agus Bernasconi: Siempre fue música",
-      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/CV6QMA2SGXKK/agus-bernasconi-siempre-fue-musica",
-      "estado": "pendiente de confirmación oficial",
-      "fuente": "SalePlan"
-    },
-    {
       "nombre": "Festival Ludueña",
       "referencia": "https://saleplan.ar/santa-fe/rosario/planes/KF2RZB1CYRYT/festival-luduena",
       "estado": "pendiente de confirmación oficial",
@@ -321,6 +309,18 @@
     {
       "nombre": "Autochocador Club + Recreo Uruguayo, Club Forestal, Uhh! Tengo Ratas En Mi Atado",
       "referencia": "https://saleplan.ar/santa-fe/rosario/planes/55208EQYKF2Q/autochocador-club-recreo-uruguayo-club-forestal-uhh-tengo-ratas-en-mi-atado",
+      "estado": "pendiente de confirmación oficial",
+      "fuente": "SalePlan"
+    },
+    {
+      "nombre": "Oliver Kozlov en vivo en Rosario",
+      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/Y9K1331MQ9V9/oliver-kozlov-en-vivo-en-rosario",
+      "estado": "pendiente de confirmación oficial",
+      "fuente": "SalePlan"
+    },
+    {
+      "nombre": "El beso de la mujer araña",
+      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/B2JE0HM1KKSJ/el-beso-de-la-mujer-arana",
       "estado": "pendiente de confirmación oficial",
       "fuente": "SalePlan"
     },
