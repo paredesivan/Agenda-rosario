@@ -1,7 +1,7 @@
 {
   "paginas": {
     "https://rosariotimes.com/": {
-      "consultado": 1792164523.450109,
+      "consultado": 1792176388.924503,
       "datos": [
         "https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/",
         "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
@@ -61,7 +61,7 @@
       "last_modified": null
     },
     "https://www.entradafan.com.ar/entradas-rosario/c3642": {
-      "consultado": 1792164523.9093978,
+      "consultado": 1792176389.2093706,
       "datos": [
         {
           "nombre": "Escenas de la Vida Conyugal",
@@ -268,7 +268,7 @@
       "last_modified": null
     },
     "https://saleplan.ar/rosario/eventos": {
-      "consultado": 1792164524.5490205,
+      "consultado": 1792176389.8440568,
       "datos": [
         {
           "nombre": "Candlelight: Tributo a Taylor Swift",
@@ -461,38 +461,6 @@
           "lugar": "Plataforma Lavarden",
           "direccion": "Mendoza 1085, Rosario, S2000",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/B0V2Y6YFQWEK/candlelight-las-cuatro-estaciones-de-vivaldi"
-        },
-        {
-          "nombre": "Candlelight: Tributo a Taylor Swift",
-          "fecha": "2026-10-30",
-          "hora": "19:00",
-          "lugar": "City Center Rosario",
-          "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift"
-        },
-        {
-          "nombre": "Candlelight: Lo Mejor de Hans Zimmer",
-          "fecha": "2026-10-30",
-          "hora": "21:30",
-          "lugar": "City Center Rosario",
-          "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer"
-        },
-        {
-          "nombre": "Candlelight: De Música Ligera",
-          "fecha": "2026-11-21",
-          "hora": "21:30",
-          "lugar": "City Center Rosario",
-          "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/4EWY0B1WK49R/candlelight-de-musica-ligera"
-        },
-        {
-          "nombre": "Candlelight: Las Cuatro Estaciones de Vivaldi",
-          "fecha": "2026-12-05",
-          "hora": "19:00",
-          "lugar": "Plataforma Lavarden",
-          "direccion": "Mendoza 1085, Rosario, S2000",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/B0V2Y6YFQWEK/candlelight-las-cuatro-estaciones-de-vivaldi"
         }
       ],
       "etag": null,
@@ -607,7 +575,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/?categoria=ESPECT%C3%81CULOS": {
-      "consultado": 1792164526.5766072,
+      "consultado": 1792176391.7762647,
       "datos": [
         {
           "nombre": "La Albert Moreno: Cumpleaños Charly!",
@@ -656,7 +624,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/problema-1/": {
-      "consultado": 1792164535.450743,
+      "consultado": 1792176400.394276,
       "datos": [
         "https://entradaslavarden.com/Problema-1/"
       ],
@@ -664,7 +632,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/Problema-1/": {
-      "consultado": 1792164537.0291417,
+      "consultado": 1792176402.3430283,
       "datos": {
         "nombre": "Problema 1",
         "funciones": [
@@ -681,7 +649,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/pupina-plomer/": {
-      "consultado": 1792164548.3872955,
+      "consultado": 1792176413.4553492,
       "datos": [
         "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/"
       ],
@@ -689,7 +657,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/": {
-      "consultado": 1792164548.6394572,
+      "consultado": 1792176413.7767746,
       "datos": {
         "nombre": "Pupina Plomer presenta Especial Brujas",
         "funciones": [
@@ -706,7 +674,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/julieta-laso/": {
-      "consultado": 1792164555.756644,
+      "consultado": 1792176419.1934202,
       "datos": [
         "https://entradaslavarden.com/JULIETA-LASO-presenta-FABRIQUERA/"
       ],
@@ -714,7 +682,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/JULIETA-LASO-presenta-FABRIQUERA/": {
-      "consultado": 1792164555.9879923,
+      "consultado": 1792176419.5075505,
       "datos": {
         "nombre": "JULIETA LASO presenta FABRIQUERA",
         "funciones": [
@@ -731,7 +699,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/dario-grandinetti-en-el-escritor-de-todas-las-cosas/": {
-      "consultado": 1792164528.9450142,
+      "consultado": 1792176393.808737,
       "datos": [
         "https://entradaslavarden.com/El-escritor-de-todas-las-cosas/"
       ],
@@ -739,7 +707,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/El-escritor-de-todas-las-cosas/": {
-      "consultado": 1792164531.783544,
+      "consultado": 1792176397.0456653,
       "datos": {
         "nombre": "El escritor de todas las cosas",
         "funciones": [
@@ -756,7 +724,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/paris-jazz-club-2/": {
-      "consultado": 1792164541.892412,
+      "consultado": 1792176406.8660262,
       "datos": [
         "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/"
       ],
@@ -764,7 +732,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/": {
-      "consultado": 1792164542.278798,
+      "consultado": 1792176407.630851,
       "datos": {
         "nombre": "Paris Jazz Club: JAZZ CARTOONS",
         "funciones": [
@@ -781,7 +749,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/plataforma-de-novedades-silvina-gandini/": {
-      "consultado": 1792164562.1083798,
+      "consultado": 1792176427.793447,
       "datos": [
         "https://entradaslavarden.com/SILVINA-GANDINI-presenta-FUEGO-Aceites-Perfumados/"
       ],
@@ -789,7 +757,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/SILVINA-GANDINI-presenta-FUEGO-Aceites-Perfumados/": {
-      "consultado": 1792164562.4145598,
+      "consultado": 1792176428.1258903,
       "datos": {
         "nombre": "SILVINA GANDINI presenta FUEGO Aceites Perfumados",
         "funciones": [

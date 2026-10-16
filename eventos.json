@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16 13:55",
+  "actualizado": "2026-10-16 15:18",
   "estado": "parcial",
   "eventos": [
     {
@@ -90,17 +90,6 @@
     {
       "fecha": "2026-10-16",
       "hora": "13:00",
-      "nombre": "GEOLOCALIZADOS: Un puente entre la imagen y la palabra",
-      "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
-      "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
-      "descripcion": "Este viernes 28 de agosto a las 19 h, el Museo de arte contemporáneo de Rosario (macro) renueva parte de su programación…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/geolocalizados-un-puente-entre-la-imagen-y-la-palabra",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-16",
-      "hora": "13:00",
       "nombre": "Narcisa Hirsch, un viaje incógnito",
       "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
       "direccion": "LOPEZ ESTANISLAO 2250, Rosario, Santa Fe",
@@ -128,17 +117,6 @@
       "direccion": "OROÑO NICASIO 2361, Rosario, Santa Fe",
       "descripcion": "La Ruta de los Azulejos. Historia, artes y oficios de la ciudad es la nueva producción del Museo de la Ciudad, que…",
       "evento_url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-10-16",
-      "hora": "14:00",
-      "nombre": "Laboratorio creativo de tango y música",
-      "lugar": "Centro Cultural  La Casa del Tango",
-      "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
-      "descripcion": "Laboratorio creativo de TANGO Y MUSICA Abordaje de los elementos de la música y su relación con la danza:",
-      "evento_url": "https://www.rosario.gob.ar/inicio/laboratorio-creativo-de-tango-y-musica",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -326,6 +304,18 @@
     {
       "fecha": "2026-10-16",
       "hora": "20:30",
+      "nombre": "BANGNIER",
+      "lugar": "Centro Cultural Madres de Plaza 25 de Mayo",
+      "direccion": "Corrientes 987, planta alta, Rosario, Santa Fe",
+      "descripcion": "",
+      "evento_url": "https://www.cm25.ar/novedades.html",
+      "precio": 0,
+      "precio_etiqueta": "Gratis",
+      "origen": "Centro Cultural Madres de Plaza 25 de Mayo"
+    },
+    {
+      "fecha": "2026-10-16",
+      "hora": "20:30",
       "nombre": "Mama mía, un espectáculo de humor y cáncer",
       "lugar": "Centro Cultural Parque de España",
       "direccion": "Sarmiento y el río, Rosario, Santa Fe",
@@ -412,7 +402,7 @@
       "precio_etiqueta": "Desde $40.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 12:28"
+      "precio_consultado": "2026-10-16 15:46"
     },
     {
       "fecha": "2026-10-16",
@@ -1252,7 +1242,7 @@
       "precio_etiqueta": "Desde $35.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 12:28"
+      "precio_consultado": "2026-10-16 15:46"
     },
     {
       "fecha": "2026-10-17",
@@ -3032,7 +3022,7 @@
       "entradas_url": "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 12:29"
+      "precio_consultado": "2026-10-16 15:46"
     },
     {
       "fecha": "2026-10-24",
@@ -4106,7 +4096,7 @@
       "entradas_url": "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 12:29"
+      "precio_consultado": "2026-10-16 15:46"
     },
     {
       "fecha": "2026-10-30",
@@ -5128,7 +5118,7 @@
       "precio_etiqueta": "Desde $25.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 12:29"
+      "precio_consultado": "2026-10-16 15:46"
     },
     {
       "fecha": "2026-11-06",
@@ -5934,7 +5924,7 @@
       "precio_etiqueta": "Desde $25.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 12:29"
+      "precio_consultado": "2026-10-16 15:47"
     },
     {
       "fecha": "2026-11-21",
