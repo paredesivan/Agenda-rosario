@@ -20,6 +20,7 @@ from actualizar_eventos import (
 
 # La fuente CM25 se declara antes del catálogo FUENTES_CSV, que la referencia.
 CM25_NOVEDADES = 'https://www.cm25.ar/novedades.html'
+CM25_NOMBRE = 'Centro Cultural Madres de Plaza 25 de Mayo'
 CM25_CACHE = Path(__file__).with_name('cache_cm25.json')
 CM25_MESES = {normalizar(nombre): numero for numero, nombre in enumerate(
     ('enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio',
@@ -1213,7 +1214,7 @@ FUENTES_CSV = (
     ('Mercado del Patio', 'mercado/espacio', 'https://www.mercadodelpatio.gob.ar/', 'media'),
     ('Alto Rosario Shopping', 'shopping', 'https://www.altorosario.com.ar/', 'baja'),
     ('Diferentes ambitos de Rosario', 'variable', 'https://www.rosario.gob.ar/inicio/agenda', 'baja'),
-    ('Centro Cultural 25 de Mayo', 'centro cultural independiente', CM25_NOVEDADES, 'alta'),
+    (CM25_NOMBRE, 'centro cultural independiente', CM25_NOVEDADES, 'alta'),
 )
 
 # Fuente aportada: fuentes_oficiales_agenda_rosario.csv. Se mantiene el enlace original
@@ -1446,42 +1447,73 @@ def leer_agenda_csv(fuente, indice, segunda, direccion, hoy):
 
 
 def eventos_cm25(html, url, hoy):
-    """Extrae sólo actos futuros con fecha, hora y sede explícitas."""
-    cuerpo = html.select_one('main') or html.select_one('article') or html
-    texto_pagina = texto(cuerpo)
-    patron = re.compile(
-        r'\b(\d{1,2})\s+de\s+(enero|febrero|marzo|abril|mayo|junio|julio|'
-        r'agosto|septiembre|setiembre|octubre|noviembre|diciembre)'
-        r'(?:\s+de\s+(20\d{2}))?\s+a\s+las?\s+'
-        r'(\d{1,2})(?:[:.](\d{2}))?\s*(?:hs?\.?|horas?)\b', re.I)
-    m = patron.search(texto_pagina)
-    if not m:
+    """Lee tarjetas de CM25: encabezados DDMMM y horarios en el texto siguiente."""
+    cuerpo = html.select_one('#body') or html.select_one('main') or html.select_one('article') or html
+    # La sede aparece en el pie de página, fuera del contenedor de novedades.
+    if 'corrientes 987' not in normalizar(texto(html)):
         return []
-    dia, nombre_mes, anio, hora, minuto = m.groups()
-    mes = CM25_MESES.get(normalizar(nombre_mes))
-    if not mes and normalizar(nombre_mes) == 'setiembre':
-        mes = 9
-    hora, minuto = int(hora), int(minuto or 0)
-    try:
-        fecha = date(int(anio) if anio else hoy.year, mes, int(dia))
-    except (TypeError, ValueError):
-        return []
-    if not hoy <= fecha <= hoy + timedelta(days=30) or hora > 23 or minuto > 59:
-        return []
-    if 'corrientes 987' not in normalizar(texto_pagina):
-        return []
-    nombre = next((texto(n) for n in cuerpo.select('h1, h2, h3')
-                   if texto(n).strip() and texto(n).strip() != '#'), '')
-    nombre = re.sub(r'^\s*\d{1,2}\s*[a-záéíóú]{3,4}\s*/?\s*', '', nombre, flags=re.I).strip(' /-')
-    if not nombre or len(nombre) > 120:
-        return []
-    return [{
-        'fecha': fecha.isoformat(), 'hora': f'{hora:02d}:{minuto:02d}',
-        'nombre': nombre, 'lugar': 'Centro Cultural 25 de Mayo',
-        'direccion': 'Corrientes 987, planta alta, Rosario, Santa Fe',
-        'descripcion': '', 'evento_url': url, 'precio': 0,
-        'precio_etiqueta': 'Gratis', 'origen': 'Centro Cultural 25 de Mayo',
-    }]
+
+    meses = {k[:3].upper(): v for k, v in (
+        ('enero', 1), ('febrero', 2), ('marzo', 3), ('abril', 4),
+        ('mayo', 5), ('junio', 6), ('julio', 7), ('agosto', 8),
+        ('septiembre', 9), ('octubre', 10), ('noviembre', 11), ('diciembre', 12))}
+    fecha_re = re.compile(r'^\s*(\d{1,2})\s*([A-ZÁÉÍÓÚ]{3,9})\s*/\s*(.+?)\s*$', re.I)
+    hora_re = re.compile(
+        r'\b(?:desde\s+)?(?:a\s+)?las?\s+(\d{1,2})(?:[:.]([0-5]\d))?'
+        r'\s*(?:hs?\.?|horas?)?\b', re.I)
+    encabezados = []
+    for nodo in cuerpo.select('a, h1, h2, h3, h4'):
+        m = fecha_re.match(texto(nodo))
+        if m:
+            dia, mes_txt, titulo = m.groups()
+            mes_txt = normalizar(mes_txt).upper()
+            mes = meses.get(mes_txt[:3])
+            if mes:
+                encabezados.append((nodo, int(dia), mes, titulo.strip()))
+
+    resultado = []
+    for nodo, dia, mes, titulo in encabezados:
+        # CM25 publica DDMMM sin año; usar la próxima ocurrencia de esa fecha.
+        anio = hoy.year
+        try:
+            fecha = date(anio, mes, dia)
+        except ValueError:
+            continue
+        if fecha < hoy - timedelta(days=1):
+            try:
+                fecha = date(anio + 1, mes, dia)
+            except ValueError:
+                continue
+        if fecha < hoy:
+            continue
+
+        textos = []
+        for hermano in nodo.next_siblings:
+            if getattr(hermano, 'name', None) in ('a', 'h1', 'h2', 'h3', 'h4') and fecha_re.match(texto(hermano)):
+                break
+            if getattr(hermano, 'get_text', None):
+                textos.append(hermano.get_text(' ', strip=True))
+            elif isinstance(hermano, str):
+                textos.append(hermano)
+        bloque = ' '.join(textos)
+        hm = hora_re.search(bloque)
+        if not hm:
+            continue
+        hora, minuto = int(hm.group(1)), int(hm.group(2) or 0)
+        if hora > 23:
+            continue
+        # No publicar titulares genéricos o sólo fechas como nombres de evento.
+        titulo = re.sub(r'\s+', ' ', titulo).strip(' /-')
+        if not titulo or len(titulo) > 120:
+            continue
+        resultado.append({
+            'fecha': fecha.isoformat(), 'hora': f'{hora:02d}:{minuto:02d}',
+            'nombre': titulo, 'lugar': CM25_NOMBRE,
+            'direccion': 'Corrientes 987, planta alta, Rosario, Santa Fe',
+            'descripcion': '', 'evento_url': url, 'precio': 0,
+            'precio_etiqueta': 'Gratis', 'origen': CM25_NOMBRE,
+        })
+    return resultado
 
 
 def leer_cm25(hoy, estado):
@@ -1494,13 +1526,13 @@ def leer_cm25(hoy, estado):
         eventos = acceso.leer(CM25_NOVEDADES,
             lambda dom, url: eventos_cm25(dom, url, hoy), tipo='listado')
         CM25_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-        estado['Centro Cultural 25 de Mayo'] = f'revisada con robots.txt: {len(eventos)} eventos verificables'
+        estado[CM25_NOMBRE] = f'revisada con robots.txt: {len(eventos)} eventos verificables'
         return eventos
     except (requests.RequestException, ValueError, TypeError) as error:
         url = getattr(acceso, 'ultima_url', '') if acceso else ''
         etapa = 'robots.txt' if url.endswith('/robots.txt') else 'novedades.html'
         detalle = str(error).replace('\n', ' ')[:180]
-        estado['Centro Cultural 25 de Mayo'] = (
+        estado[CM25_NOMBRE] = (
             f'consulta detenida en {etapa}: {type(error).__name__}: {detalle}'
         )
         return []

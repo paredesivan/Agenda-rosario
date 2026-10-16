@@ -1,14 +1,29 @@
-CORRECCIÓN DE CONEXIÓN PARA CM25
+CORRECCIÓN CM25 — ARCHIVOS Y RUTAS
 
-Reemplazá estos archivos en el repositorio, conservando sus rutas:
-- fuentes_adicionales.py
-- fuentes_nuevas.py
-- tests/test_fuentes_adicionales.py
+Descomprimí manteniendo las carpetas. Copiá y reemplazá en tu repositorio:
 
-Qué corrige:
-- Reintenta una sola vez tras un fallo transitorio de conexión o timeout.
-- No reintenta HTTP 403/429 ni sigue redirecciones sin auditar.
-- El estado de CM25 especifica si la falla ocurrió en robots.txt o novedades.html e incluye el detalle acotado del error.
-- Agrega una prueba del reintento. Se conservan las demás pruebas del archivo.
+1) fuentes_nuevas.py -> raíz del repositorio/fuentes_nuevas.py
+2) tests/test_fuentes_adicionales.py -> raíz del repositorio/tests/test_fuentes_adicionales.py
+3) tests/test_cm25_integration.py -> raíz del repositorio/tests/test_cm25_integration.py
+4) AUDITORIA_CM25.md -> raíz del repositorio/AUDITORIA_CM25.md
 
-Después de subir los archivos, la Action «Pruebas de la agenda» debe ejecutarse automáticamente. Si queda verde, ejecutá «Actualizar agenda». La consulta a CM25 seguirá respetando robots.txt, la caché y la pausa entre peticiones.
+No subas la carpeta entrega_cm25 como carpeta nueva dentro del repositorio.
+Los archivos de prueba conservan la carpeta tests/ en minúscula, como está en el
+repositorio y como la busca el workflow.
+
+El extractor no contiene títulos ni fechas de eventos particulares. En cada
+actualización recorre las tarjetas que estén publicadas en la página de CM25,
+lee el encabezado DDMMM / título y busca el horario dentro de esa misma tarjeta.
+Incluye fechas futuras publicadas (la página no informa el año), descarta las que
+no tienen horario y consulta la página como máximo una vez cada dos horas.
+
+Al guardar fuentes_nuevas.py o los tests en la rama main debería activarse el
+workflow existente. También se puede ejecutar desde Actions > Actualizar agenda
+> Run workflow. En el resumen debe aparecer Centro Cultural Madres de Plaza 25
+de Mayo con el número de eventos que efectivamente pudo verificar.
+5) .github/workflows/actualizar.yml -> raíz del repositorio/.github/workflows/actualizar.yml
+6) cache_cm25.json -> raíz del repositorio/cache_cm25.json
+
+El workflow conserva el caché de CM25 tras cada ejecución. No agregues
+cache_cm25.json al filtro de rutas que dispara el workflow: hacerlo causaría
+que cada actualización de caché iniciara otra ejecución.
