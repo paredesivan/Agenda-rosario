@@ -18,6 +18,13 @@ from actualizar_eventos import (
     actividad_ampliada, evento_extra, DIAS, MESES as MESES_LISTA, sin_repetidos,
 )
 
+# La fuente CM25 se declara antes del catálogo FUENTES_CSV, que la referencia.
+CM25_NOVEDADES = 'https://www.cm25.ar/novedades.html'
+CM25_CACHE = Path(__file__).with_name('cache_cm25.json')
+CM25_MESES = {normalizar(nombre): numero for numero, nombre in enumerate(
+    ('enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio',
+     'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'), 1)}
+
 SALAS = (
     ("Caras y Caretas", "caras-y-caretas", "Corrientes 1518"),
     ("Club Fosse", "club-fosse", "Salta 2829"),
@@ -1436,13 +1443,6 @@ def leer_agenda_csv(fuente, indice, segunda, direccion, hoy):
         except (requests.RequestException, ValueError):
             errores += 1
     return list({clave(e): e for e in eventos}.values()), errores
-
-
-CM25_NOVEDADES = 'https://www.cm25.ar/novedades.html'
-CM25_CACHE = Path(__file__).with_name('cache_cm25.json')
-CM25_MESES = {normalizar(nombre): numero for numero, nombre in enumerate(
-    ('enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio',
-     'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'), 1)}
 
 
 def eventos_cm25(html, url, hoy):
