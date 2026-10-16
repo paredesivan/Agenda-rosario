@@ -1,5 +1,5 @@
 {
-  "fecha_revision": "2026-10-16 08:39",
+  "fecha_revision": "2026-10-16 12:15",
   "salas_independientes": 13,
   "medios": 3,
   "funciones_agregadas": 6,
@@ -25,6 +25,7 @@
     "Mercado del Patio — CSV": "revisada: 0 funciones; 0 consultas pendientes",
     "Alto Rosario Shopping — CSV": "revisada: 0 funciones; 1 consultas pendientes",
     "El Cairo — CSV": "revisada: 24 funciones; 0 consultas pendientes",
+    "Centro Cultural 25 de Mayo": "consulta detenida: ConnectionError",
     "Entrada Play": "revisada: 6 funciones; 0 fichas pendientes",
     "CentroTicket": "revisada: 9 funciones; 1 fichas pendientes",
     "Circo Rodas — Linke-arte": "revisada: 9 funciones habilitadas",
@@ -365,7 +366,7 @@
       "tipo": "centro cultural",
       "prioridad": "alta",
       "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
-      "actividades": 6
+      "actividades": 7
     },
     {
       "nombre": "Centro de Expresiones Contemporaneas",
@@ -589,6 +590,14 @@
       "tipo": "variable",
       "prioridad": "baja",
       "estado": "requiere identificar el organizador de cada evento",
+      "actividades": 0
+    },
+    {
+      "nombre": "Centro Cultural 25 de Mayo",
+      "url_aportada": "https://www.cm25.ar/novedades.html",
+      "tipo": "centro cultural independiente",
+      "prioridad": "alta",
+      "estado": "revisión mediante recolectores existentes y agenda municipal; no garantiza cartelera completa",
       "actividades": 0
     }
   ],

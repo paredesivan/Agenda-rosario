@@ -1,7 +1,7 @@
 {
   "paginas": {
     "https://rosariotimes.com/": {
-      "consultado": 1792151530.8530865,
+      "consultado": 1792164523.450109,
       "datos": [
         "https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/",
         "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
@@ -61,7 +61,7 @@
       "last_modified": null
     },
     "https://www.entradafan.com.ar/entradas-rosario/c3642": {
-      "consultado": 1792151536.8379703,
+      "consultado": 1792164523.9093978,
       "datos": [
         {
           "nombre": "Escenas de la Vida Conyugal",
@@ -264,11 +264,11 @@
           "referencia": "https://www.entradafan.com.ar/entradas-ha-ash-rosario/e/17863"
         }
       ],
-      "etag": "W/\"morn1ildmo2x5e\"",
+      "etag": "W/\"12elp53grj82su2\"",
       "last_modified": null
     },
     "https://saleplan.ar/rosario/eventos": {
-      "consultado": 1792151537.3966799,
+      "consultado": 1792164524.5490205,
       "datos": [
         {
           "nombre": "Candlelight: Tributo a Taylor Swift",
@@ -346,6 +346,11 @@
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
+          "nombre": "Tirria",
+          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/R4P754GB78G1/tirria",
+          "estado": "fecha completa y sede pendientes de fuente oficial"
+        },
+        {
           "nombre": "Positano Wine Festival",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/XBAMM8HG0GG4/positano-wine-festival",
           "estado": "fecha completa y sede pendientes de fuente oficial"
@@ -376,11 +381,6 @@
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
-          "nombre": "PAVEL PETROV X ONCE ROSARIO 16 OCTUBRE",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/67RN9D1QTYH8/pavel-petrov-x-once-rosario-16-octubre",
-          "estado": "fecha completa y sede pendientes de fuente oficial"
-        },
-        {
           "nombre": "Eber Ludueña",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/5A96MSN0WSEB/eber-luduena",
           "estado": "fecha completa y sede pendientes de fuente oficial"
@@ -406,6 +406,11 @@
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
+          "nombre": "Agus Bernasconi: Siempre fue música",
+          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/CV6QMA2SGXKK/agus-bernasconi-siempre-fue-musica",
+          "estado": "fecha completa y sede pendientes de fuente oficial"
+        },
+        {
           "nombre": "Festival Ludueña",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/KF2RZB1CYRYT/festival-luduena",
           "estado": "fecha completa y sede pendientes de fuente oficial"
@@ -423,11 +428,6 @@
         {
           "nombre": "El beso de la mujer araña",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/B2JE0HM1KKSJ/el-beso-de-la-mujer-arana",
-          "estado": "fecha completa y sede pendientes de fuente oficial"
-        },
-        {
-          "nombre": "La función de los invisibles",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/8CCMKVZQNDDH/la-funcion-de-los-invisibles",
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
@@ -575,7 +575,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/?categoria=ESPECT%C3%81CULOS": {
-      "consultado": 1792151539.373552,
+      "consultado": 1792164526.5766072,
       "datos": [
         {
           "nombre": "La Albert Moreno: Cumpleaños Charly!",
@@ -624,7 +624,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/problema-1/": {
-      "consultado": 1792151547.321949,
+      "consultado": 1792164535.450743,
       "datos": [
         "https://entradaslavarden.com/Problema-1/"
       ],
@@ -632,7 +632,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/Problema-1/": {
-      "consultado": 1792151550.0216935,
+      "consultado": 1792164537.0291417,
       "datos": {
         "nombre": "Problema 1",
         "funciones": [
@@ -649,7 +649,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/pupina-plomer/": {
-      "consultado": 1792151561.8384864,
+      "consultado": 1792164548.3872955,
       "datos": [
         "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/"
       ],
@@ -657,7 +657,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/": {
-      "consultado": 1792151562.0987473,
+      "consultado": 1792164548.6394572,
       "datos": {
         "nombre": "Pupina Plomer presenta Especial Brujas",
         "funciones": [
@@ -674,7 +674,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/julieta-laso/": {
-      "consultado": 1792151568.4811008,
+      "consultado": 1792164555.756644,
       "datos": [
         "https://entradaslavarden.com/JULIETA-LASO-presenta-FABRIQUERA/"
       ],
@@ -682,7 +682,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/JULIETA-LASO-presenta-FABRIQUERA/": {
-      "consultado": 1792151568.734191,
+      "consultado": 1792164555.9879923,
       "datos": {
         "nombre": "JULIETA LASO presenta FABRIQUERA",
         "funciones": [
@@ -699,7 +699,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/dario-grandinetti-en-el-escritor-de-todas-las-cosas/": {
-      "consultado": 1792151540.8440816,
+      "consultado": 1792164528.9450142,
       "datos": [
         "https://entradaslavarden.com/El-escritor-de-todas-las-cosas/"
       ],
@@ -707,7 +707,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/El-escritor-de-todas-las-cosas/": {
-      "consultado": 1792151544.7957408,
+      "consultado": 1792164531.783544,
       "datos": {
         "nombre": "El escritor de todas las cosas",
         "funciones": [
@@ -724,7 +724,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/paris-jazz-club-2/": {
-      "consultado": 1792151553.8092208,
+      "consultado": 1792164541.892412,
       "datos": [
         "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/"
       ],
@@ -732,7 +732,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/": {
-      "consultado": 1792151555.238333,
+      "consultado": 1792164542.278798,
       "datos": {
         "nombre": "Paris Jazz Club: JAZZ CARTOONS",
         "funciones": [
@@ -749,7 +749,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/plataforma-de-novedades-silvina-gandini/": {
-      "consultado": 1792151574.8084676,
+      "consultado": 1792164562.1083798,
       "datos": [
         "https://entradaslavarden.com/SILVINA-GANDINI-presenta-FUEGO-Aceites-Perfumados/"
       ],
@@ -757,7 +757,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/SILVINA-GANDINI-presenta-FUEGO-Aceites-Perfumados/": {
-      "consultado": 1792151575.0893333,
+      "consultado": 1792164562.4145598,
       "datos": {
         "nombre": "SILVINA GANDINI presenta FUEGO Aceites Perfumados",
         "funciones": [

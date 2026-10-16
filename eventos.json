@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16 08:26",
+  "actualizado": "2026-10-16 12:00",
   "estado": "parcial",
   "eventos": [
     {
@@ -17,17 +17,6 @@
       "categorias": [
         "teatro"
       ]
-    },
-    {
-      "fecha": "2026-10-16",
-      "hora": "09:00",
-      "nombre": "Bienestar y actividad física en el sudoeste",
-      "lugar": "Centro de Salud \"Santa Teresita\"",
-      "direccion": "FRANCIA 4435, Rosario, Santa Fe",
-      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-el-sudoeste",
-      "precio": 0,
-      "origen": "Municipalidad de Rosario"
     },
     {
       "fecha": "2026-10-16",
@@ -423,7 +412,7 @@
       "precio_etiqueta": "Desde $40.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 08:52"
+      "precio_consultado": "2026-10-16 12:28"
     },
     {
       "fecha": "2026-10-16",
@@ -1263,7 +1252,7 @@
       "precio_etiqueta": "Desde $35.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 08:52"
+      "precio_consultado": "2026-10-16 12:28"
     },
     {
       "fecha": "2026-10-17",
@@ -3021,7 +3010,7 @@
       "entradas_url": "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 08:52"
+      "precio_consultado": "2026-10-16 12:29"
     },
     {
       "fecha": "2026-10-24",
@@ -3687,6 +3676,17 @@
     },
     {
       "fecha": "2026-10-29",
+      "hora": "17:00",
+      "nombre": "Zurcir voces hasta volverlas familiares",
+      "lugar": "Centro Cultural Parque de España",
+      "direccion": "Sarmiento y el río, Rosario, Santa Fe",
+      "descripcion": "Si los textiles que usamos hablaran, ¿qué contarían sobre las vidas, los vínculos y los territorios que atravesamos? El Centro Cultural Parque…",
+      "evento_url": "https://ccpe.org.ar/web/actividades/zurcir-voces-hasta-volverlas-familiares/",
+      "precio": 0,
+      "origen": "Centro Cultural Parque de España"
+    },
+    {
+      "fecha": "2026-10-29",
       "hora": "19:30",
       "nombre": "Piedra y camino. Cantata a la Luna en el CAM",
       "lugar": "Complejo Astronómico Municipal",
@@ -4084,7 +4084,7 @@
       "entradas_url": "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 08:52"
+      "precio_consultado": "2026-10-16 12:29"
     },
     {
       "fecha": "2026-10-30",
@@ -5106,7 +5106,7 @@
       "precio_etiqueta": "Desde $25.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 08:52"
+      "precio_consultado": "2026-10-16 12:29"
     },
     {
       "fecha": "2026-11-06",
@@ -5912,7 +5912,7 @@
       "precio_etiqueta": "Desde $25.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 08:52"
+      "precio_consultado": "2026-10-16 12:29"
     },
     {
       "fecha": "2026-11-21",
