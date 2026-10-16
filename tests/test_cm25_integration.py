@@ -12,19 +12,25 @@ from fuentes_nuevas import CM25_NOVEDADES, FUENTES_CSV, leer_cm25
 
 
 class TestIntegracionCM25(unittest.TestCase):
+    def test_workflow_persiste_cache_entre_actualizaciones(self):
+        raiz = Path(fuentes_nuevas.__file__).parent
+        workflow = (raiz / ".github" / "workflows" / "actualizar.yml").read_text(encoding="utf-8")
+        self.assertIn("cache_cm25.json", workflow)
+        self.assertTrue((raiz / "cache_cm25.json").is_file())
+
     def test_fuente_oficial_esta_registrada_con_prioridad_alta(self):
         fuente = next(
             item for item in FUENTES_CSV
-            if item[0] == "Centro Cultural 25 de Mayo"
+            if item[0] == "Centro Cultural Madres de Plaza 25 de Mayo"
         )
         self.assertEqual(fuente[2], CM25_NOVEDADES)
         self.assertEqual(fuente[3], "alta")
 
     def test_consulta_url_parsea_evento_y_guarda_cache(self):
         html = BeautifulSoup(
-            "<main><h2>16OCT / Música en la casa</h2>"
-            "<p>El viernes 16 de octubre a las 21 hs se presenta el ciclo.</p>"
-            "<p>Corrientes 987 / Planta alta / Rosario</p></main>",
+            "<div id='body'><div><a>16OCT / Actividad de prueba</a>"
+            "<p>El viernes 16 desde las 20.30 presentamos la actividad.</p>"
+            "</div></div><footer>Corrientes 987 / Planta alta / Rosario</footer>",
             "html.parser",
         )
         recibido = {}
@@ -49,10 +55,10 @@ class TestIntegracionCM25(unittest.TestCase):
             self.assertEqual(recibido, {"url": CM25_NOVEDADES, "tipo": "listado"})
             self.assertEqual(len(eventos), 1)
             self.assertEqual(eventos[0]["fecha"], "2026-10-16")
-            self.assertEqual(eventos[0]["hora"], "21:00")
+            self.assertEqual(eventos[0]["hora"], "20:30")
             self.assertIn(
                 "1 eventos verificables",
-                estado["Centro Cultural 25 de Mayo"],
+                estado["Centro Cultural Madres de Plaza 25 de Mayo"],
             )
             self.assertTrue(ruta_cache.is_file())
 

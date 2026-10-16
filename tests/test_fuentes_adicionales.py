@@ -20,23 +20,34 @@ class TestFuentesAdicionales(unittest.TestCase):
         self.assertEqual(session.get.call_count, 2)
         espera.assert_called_once_with(2)
 
-    def test_cm25_acepta_solo_fecha_hora_sede_y_titulo_futuros(self):
-        html = BeautifulSoup('<main><h1>#</h1><h2>16OCT / Música en la casa</h2>'
-            '<p>El viernes 16 de octubre a las 21 hs se presenta el ciclo.</p>'
-            '<p>Corrientes 987 / PTA. ALTA / Rosario</p></main>', 'html.parser')
-        eventos = eventos_cm25(html, 'https://www.cm25.ar/novedades.html', date(2026, 10, 15))
-        self.assertEqual(len(eventos), 1)
+    def test_cm25_acepta_formato_real_de_tarjetas_y_descarta_sin_hora(self):
+        html = BeautifulSoup('<div id="body"><div>'
+            '<a class="style424">16OCT / Evento de prueba</a><br>'
+            '<p>El viernes 16 desde las 20.30 presentamos una actividad.</p>'
+            '<a class="style42">12DIC / Actividad que se publique después</a><br>'
+            '<p>El sábado 12 a las 19 hs se presenta la actividad.</p>'
+            '<a class="style42">22OCT / Actividad sin horario</a><br>'
+            '<p>Los invitamos a la inauguración de la muestra.</p>'
+            '</div></div><footer><p class="style6">CORRIENTES 987 / PTA. ALTA / ROSARIO</p></footer>', 'html.parser')
+        eventos = eventos_cm25(html, 'https://www.cm25.ar/novedades.html', date(2026, 10, 16))
+        self.assertEqual(len(eventos), 2)
         self.assertEqual(eventos[0]['fecha'], '2026-10-16')
-        self.assertEqual(eventos[0]['hora'], '21:00')
+        self.assertEqual(eventos[0]['hora'], '20:30')
+        self.assertEqual(eventos[0]['nombre'], 'Evento de prueba')
+        self.assertEqual(eventos[0]['lugar'], 'Centro Cultural Madres de Plaza 25 de Mayo')
         self.assertEqual(eventos[0]['precio'], 0)
         self.assertEqual(eventos[0]['descripcion'], '')
+        self.assertEqual(eventos[1]['fecha'], '2026-12-12')
+        self.assertEqual(eventos[1]['hora'], '19:00')
+        self.assertEqual(eventos[1]['nombre'], 'Actividad que se publique después')
 
-    def test_cm25_descarta_fecha_vencida_o_sin_sede(self):
+    def test_cm25_interpreta_proxima_ocurrencia_y_descarta_sin_sede(self):
         pasada = BeautifulSoup('<main><h2>10ABR / Actividad</h2><p>10 de abril a las 21 hs</p>'
                                '<p>Corrientes 987 Rosario</p></main>', 'html.parser')
         sin_sede = BeautifulSoup('<main><h2>Actividad</h2><p>16 de octubre a las 21 hs</p></main>',
                                  'html.parser')
-        self.assertEqual(eventos_cm25(pasada, 'https://www.cm25.ar/novedades.html', date(2026, 10, 15)), [])
+        eventos = eventos_cm25(pasada, 'https://www.cm25.ar/novedades.html', date(2026, 10, 15))
+        self.assertEqual(eventos[0]['fecha'], '2027-04-10')
         self.assertEqual(eventos_cm25(sin_sede, 'https://www.cm25.ar/novedades.html', date(2026, 10, 15)), [])
 
     def ficha(self, localidad='Rosario', status='EventScheduled'):
