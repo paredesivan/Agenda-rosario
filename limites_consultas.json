@@ -1,0 +1,8 @@
+{
+  "general": {"pausa_segundos": 1.5, "conexion_segundos": 10, "lectura_segundos": 25, "max_consultas": 120, "max_bytes": 8000000},
+  "hosts": {
+    "bibliotecavigil.org.ar": {"pausa_segundos": 60},
+    "www.metropolitano.ar": {"pausa_segundos": 10},
+    "www.teatrosatir.ar": {"pausa_segundos": 10}
+  }
+}

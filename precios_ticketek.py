@@ -15,6 +15,7 @@ from urllib.parse import urljoin, urlsplit
 from zoneinfo import ZoneInfo
 
 import requests
+from control_http import SesionControlada
 from bs4 import BeautifulSoup
 
 ARCHIVO = Path(__file__).with_name("eventos.json")
@@ -97,7 +98,7 @@ def es_astengo(evento):
 
 def integrar(eventos, fetcher=fetch, pausar=time.sleep):
     fichas, tickets, est = {}, {}, {"enlaces": 0, "con_precio": 0, "sin_precio": 0, "errores": 0}
-    session = requests.Session()
+    session = SesionControlada()
     bloqueado = False
     try:
         for evento in eventos:

@@ -234,6 +234,7 @@ def actualizar():
         raise RuntimeError("No se extrajeron actividades verificables; no se reemplaza la agenda")
     datos = {"actualizado": ahora.strftime("%Y-%m-%d %H:%M"),
              "estado": "parcial" if errores else "completo",
+        "avisos_fuentes": errores,
              "eventos": combinar_eventos(eventos, conocidos, fallidos, hoy)}
     temporal = ARCHIVO.with_suffix(".json.tmp")
     temporal.write_text(json.dumps(datos, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -264,19 +265,13 @@ EXTRAS = (
     ),
 )
 
-SESION = requests.Session()
+from control_http import SesionControlada
+SESION = SesionControlada()
 SESION.headers.update({
     "User-Agent": "AgendaRosario/3.0 (+https://paredesivan.github.io/Agenda-rosario/)",
     "Accept": "text/html,application/xhtml+xml",
     "Accept-Language": "es-AR,es;q=0.9",
 })
-SESION.mount("https://", HTTPAdapter(max_retries=Retry(
-    total=1,
-    backoff_factor=1,
-    status_forcelist=(500, 502, 503, 504),
-    respect_retry_after_header=False,
-)))
-
 # Pausas solicitadas en robots.txt, revisadas el 14/10/2026.
 # La pausa general mínima sigue siendo 1,5 segundos.
 PAUSAS_POR_HOST = {
@@ -562,7 +557,10 @@ def actualizar():
             nuevos, fallas = parser(html, fuente, url, direccion, hoy)
             eventos.extend(nuevos)
             fallidos.update(fallas)
-            correctas.add(fuente)
+            if not nuevos and any(e.get("origen") == fuente and e.get("fecha", "") >= hoy.isoformat() for e in conocidos):
+                errores.append(f"{fuente}: extracción vacía; se conservan datos anteriores")
+            else:
+                correctas.add(fuente)
             if fallas:
                 errores.append(f"{fuente}: {len(fallas)} fichas pendientes")
             print(f"{fuente}: {len(nuevos)} actividades", flush=True)
@@ -617,6 +615,7 @@ def actualizar():
     datos = {
         "actualizado": ahora.strftime("%Y-%m-%d %H:%M"),
         "estado": "parcial" if errores else "completo",
+        "avisos_fuentes": errores,
         "eventos": sorted(
             sin_repetidos(resultados.values()),
             key=lambda e: (e["fecha"], e["hora"], e["nombre"]),

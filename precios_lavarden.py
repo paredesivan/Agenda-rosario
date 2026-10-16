@@ -6,6 +6,7 @@ mediante Acceso. No consulta compra, usuarios, imágenes ni APIs privadas.
 import json
 import re
 import requests
+from control_http import SesionControlada
 import time
 from datetime import datetime
 from pathlib import Path
@@ -17,7 +18,7 @@ ROOT = Path(__file__).resolve().parent
 URL = 'https://entradaslavarden.com/?categoria=ESPECT%C3%81CULOS'
 
 
-class SesionLavarden(requests.Session):
+class SesionLavarden(SesionControlada):
     def get(self, url, **kwargs):
         # Algunas fichas tardan más en establecer la conexión. Sin reintentos.
         kwargs['timeout'] = (30, 30)

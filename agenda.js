@@ -136,17 +136,29 @@ function duplicateEvents(a, b) {
 }
 
 function deduplicatedEvents(items) {
-  const groups = [];
+  // Comparar sólo funciones del mismo día y horario.
+  const buckets = new Map();
   for (const item of items) {
+    const start = String(item.hora || "").match(/\d{1,2}:\d{2}/)?.[0];
+    const key = `${item.fecha}|${start}`;
+    if (!buckets.has(key)) buckets.set(key, []);
+    const groups = buckets.get(key);
     const group = groups.find(candidate => candidate.every(existing => duplicateEvents(item, existing)));
     if (group) group.push(item);
     else groups.push([item]);
   }
-  return groups.map(group => [...group].sort((a, b) => sourceReliability(b) - sourceReliability(a))[0]);
+  return [...buckets.values()].flatMap(groups => groups.map(group =>
+    [...group].sort((a, b) => sourceReliability(b) - sourceReliability(a))[0]));
 }
 
+let futureCache = {source: null, day: null, items: []};
 function futureEvents() {
-  return deduplicatedEvents(events.filter(item => item.fecha >= todayKey()));
+  const day = todayKey();
+  if (futureCache.source !== events || futureCache.day !== day) {
+    futureCache = {source: events, day,
+      items: deduplicatedEvents(events.filter(item => item.fecha >= day))};
+  }
+  return futureCache.items;
 }
 
 function availableDates() {
@@ -264,22 +276,45 @@ document.addEventListener("visibilitychange", () => {
   if (!document.hidden) actualizarDia();
 });
 
+let loadingEvents = false;
 async function loadEvents() {
-  const response = await fetch(`eventos.json?t=${Date.now()}`, {
-    cache: "no-store"
-  });
-
-  if (!response.ok) {
-    throw Error("No se pudo cargar la agenda");
+  if (loadingEvents) return;
+  loadingEvents = true;
+  const started = performance.now();
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 15000);
+  try {
+    const response = await fetch("eventos.json", {
+      cache: "no-cache", signal: controller.signal
+    });
+    if (!response.ok) throw Error("No se pudo cargar la agenda");
+    const text = await response.text();
+    const data = JSON.parse(text);
+    if (!Array.isArray(data.eventos) || data.eventos.some(item =>
+      !item || typeof item.fecha !== "string" || typeof item.hora !== "string" ||
+      typeof item.nombre !== "string" || typeof item.lugar !== "string")) {
+      throw Error("Datos inválidos; se conserva la agenda visible");
+    }
+    events = data.eventos;
+    $("updated").textContent = `Datos revisados: ${data.actualizado || "sin fecha"}` +
+      (data.estado === "parcial" ? " · Algunas fuentes están pendientes de revisión" : "");
+    const renderStarted = performance.now();
+    render();
+    window.agendaMetrics = {
+      jsonBytes: new TextEncoder().encode(text).length,
+      events: events.length,
+      renderMs: performance.now() - renderStarted,
+      loadMs: performance.now() - started
+    };
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      window.agendaMetrics.visibleMs = performance.now() - started;
+      window.agendaMetrics.navigationVisibleMs = performance.now();
+      window.dispatchEvent(new CustomEvent("agenda:ready", {detail: window.agendaMetrics}));
+    }));
+  } finally {
+    clearTimeout(timer);
+    loadingEvents = false;
   }
-
-  const data = await response.json();
-  events = Array.isArray(data.eventos) ? data.eventos : [];
-
-  $("updated").textContent =
-    `Datos revisados: ${data.actualizado || "sin fecha"}`;
-
-  render();
 }
 
 function renderCalendar() {
@@ -436,7 +471,8 @@ function renderEvent(item) {
   place.textContent = item.lugar;
 
   const desc = document.createElement("p");
-  desc.textContent = item.descripcion;
+  desc.textContent = item.descripcion || "";
+  if (item.revision_pendiente) desc.textContent += " · Información anterior: pendiente de revisión";
 
   info.append(time, title, place, desc);
 
@@ -472,7 +508,7 @@ function render() {
 
   $("events").replaceChildren();
 
-  const list = deduplicatedEvents(events.filter(e => e.fecha === selectedDate))
+  const list = futureEvents().filter(e => e.fecha === selectedDate)
     .filter(matchesFilter)
     .sort((a, b) => a.hora.localeCompare(b.hora));
 
@@ -506,7 +542,7 @@ $("next").onclick = () => cambiarMes(1);
 // Cargar eventos al abrir.
 loadEvents().catch(() => {
   $("events").textContent =
-    "Error cargando eventos. Abrí la página desde un servidor web.";
+    "Error cargando eventos. Intentá recargar la página en unos instantes.";
 });
 
 // Revisar el archivo de eventos cada hora.

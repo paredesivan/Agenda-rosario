@@ -15,6 +15,7 @@ from urllib.parse import urljoin, urlsplit
 from urllib.robotparser import RobotFileParser
 
 import requests
+from control_http import SesionControlada
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent
@@ -43,7 +44,7 @@ def guardar(path, value):
 
 class Acceso:
     def __init__(self, cache, session=None, reloj=time.time, dormir=time.sleep):
-        self.cache, self.session = cache, session or requests.Session()
+        self.cache, self.session = cache, session or SesionControlada()
         self.reloj, self.dormir, self.ultima = reloj, dormir, {}
 
     def pedir(self, url, demora=5, headers=None):
@@ -57,13 +58,13 @@ class Acceso:
         try:
             # Un único reintento ante fallos transitorios de transporte. No se
             # reintenta ante 403/429 ni se siguen redirecciones no auditadas.
-            for intento in range(2):
+            for intento in range(1 if isinstance(self.session, SesionControlada) else 2):
                 try:
                     r = self.session.get(url, headers={'User-Agent': UA, **(headers or {})},
                                          timeout=(8, 15), allow_redirects=False)
                     break
                 except (requests.ConnectionError, requests.Timeout):
-                    if intento:
+                    if intento or isinstance(self.session, SesionControlada):
                         raise
                     self.dormir(2)
             if r.status_code in (403, 429):
