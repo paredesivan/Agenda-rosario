@@ -4,6 +4,16 @@
   "candidatos": [
     {
       "fuente": "Rosario Times",
+      "referencia": "https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/",
+      "enlaces": [
+        "https://www.rosariocarshow.com",
+        "https://www.facebook.com/rosariotimesok",
+        "https://www.linkedin.com/company/rosariotimes"
+      ],
+      "estado": "comprobar organizador"
+    },
+    {
+      "fuente": "Rosario Times",
       "referencia": "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
       "enlaces": [
         "https://teatrobroadwayrosario.com/cartelera/859/despertar-de-primavera",
@@ -17,24 +27,6 @@
       "referencia": "https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/",
       "enlaces": [
         "https://entradas.rosariocarshow.com",
-        "https://www.facebook.com/rosariotimesok",
-        "https://www.linkedin.com/company/rosariotimes"
-      ],
-      "estado": "comprobar organizador"
-    },
-    {
-      "fuente": "Rosario Times",
-      "referencia": "https://rosariotimes.com/gabriel-rolon-llega-a-rosario-con-su-obra-palabra-plena/",
-      "enlaces": [
-        "https://www.facebook.com/rosariotimesok",
-        "https://www.linkedin.com/company/rosariotimes"
-      ],
-      "estado": "comprobar organizador"
-    },
-    {
-      "fuente": "Rosario Times",
-      "referencia": "https://rosariotimes.com/la-fiesta-de-las-colectividades-2026-tendra-lugar-del-6-al-15-de-noviembre/",
-      "enlaces": [
         "https://www.facebook.com/rosariotimesok",
         "https://www.linkedin.com/company/rosariotimes"
       ],
@@ -223,12 +215,6 @@
       "fuente": "SalePlan"
     },
     {
-      "nombre": "Tirria",
-      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/R4P754GB78G1/tirria",
-      "estado": "pendiente de confirmación oficial",
-      "fuente": "SalePlan"
-    },
-    {
       "nombre": "Positano Wine Festival",
       "referencia": "https://saleplan.ar/santa-fe/rosario/planes/XBAMM8HG0GG4/positano-wine-festival",
       "estado": "pendiente de confirmación oficial",
@@ -321,6 +307,12 @@
     {
       "nombre": "El beso de la mujer araña",
       "referencia": "https://saleplan.ar/santa-fe/rosario/planes/B2JE0HM1KKSJ/el-beso-de-la-mujer-arana",
+      "estado": "pendiente de confirmación oficial",
+      "fuente": "SalePlan"
+    },
+    {
+      "nombre": "La función de los invisibles",
+      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/8CCMKVZQNDDH/la-funcion-de-los-invisibles",
       "estado": "pendiente de confirmación oficial",
       "fuente": "SalePlan"
     },

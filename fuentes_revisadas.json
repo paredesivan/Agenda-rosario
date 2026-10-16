@@ -1,5 +1,5 @@
 {
-  "fecha_revision": "2026-10-16 01:47",
+  "fecha_revision": "2026-10-16 08:39",
   "salas_independientes": 13,
   "medios": 3,
   "funciones_agregadas": 6,
@@ -55,7 +55,7 @@
     "La Capital": "revisada: 0 notas, 0 funciones, 0 errores",
     "El Ciudadano": "revisada: 6 notas, 0 funciones, 0 errores",
     "Rosario en Cartel": "revisada: 21 funciones verificadas; 0 fichas pendientes",
-    "Rosario Times": "revisada: 3 coincidencias con registros oficiales; 4 candidatos pendientes; 0 consultas pendientes",
+    "Rosario Times": "revisada: 3 coincidencias con registros oficiales; 3 candidatos pendientes; 0 consultas pendientes",
     "EntradaFan": "revisada: 8 coincidencias con registros oficiales; 10 candidatos pendientes; 0 consultas pendientes",
     "SalePlan": "revisada: 0 coincidencias con registros oficiales; 26 candidatos pendientes; 0 consultas pendientes",
     "Disfruta Rosario": "consulta manual; auditoría pendiente",

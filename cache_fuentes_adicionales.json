@@ -1,12 +1,11 @@
 {
   "paginas": {
     "https://rosariotimes.com/": {
-      "consultado": 1792126775.851059,
+      "consultado": 1792151530.8530865,
       "datos": [
+        "https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/",
         "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
-        "https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/",
-        "https://rosariotimes.com/gabriel-rolon-llega-a-rosario-con-su-obra-palabra-plena/",
-        "https://rosariotimes.com/la-fiesta-de-las-colectividades-2026-tendra-lugar-del-6-al-15-de-noviembre/"
+        "https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/"
       ],
       "etag": null,
       "last_modified": null
@@ -62,7 +61,7 @@
       "last_modified": null
     },
     "https://www.entradafan.com.ar/entradas-rosario/c3642": {
-      "consultado": 1792126776.3329132,
+      "consultado": 1792151536.8379703,
       "datos": [
         {
           "nombre": "Escenas de la Vida Conyugal",
@@ -269,7 +268,7 @@
       "last_modified": null
     },
     "https://saleplan.ar/rosario/eventos": {
-      "consultado": 1792126777.1814363,
+      "consultado": 1792151537.3966799,
       "datos": [
         {
           "nombre": "Candlelight: Tributo a Taylor Swift",
@@ -344,11 +343,6 @@
         {
           "nombre": "Candlelight: Queen vs. ABBA",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/R97VKAA5W67G/candlelight-queen-vs-abba",
-          "estado": "fecha completa y sede pendientes de fuente oficial"
-        },
-        {
-          "nombre": "Tirria",
-          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/R4P754GB78G1/tirria",
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
@@ -429,6 +423,11 @@
         {
           "nombre": "El beso de la mujer araña",
           "referencia": "https://saleplan.ar/santa-fe/rosario/planes/B2JE0HM1KKSJ/el-beso-de-la-mujer-arana",
+          "estado": "fecha completa y sede pendientes de fuente oficial"
+        },
+        {
+          "nombre": "La función de los invisibles",
+          "referencia": "https://saleplan.ar/santa-fe/rosario/planes/8CCMKVZQNDDH/la-funcion-de-los-invisibles",
           "estado": "fecha completa y sede pendientes de fuente oficial"
         },
         {
@@ -576,7 +575,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/?categoria=ESPECT%C3%81CULOS": {
-      "consultado": 1792126779.0205693,
+      "consultado": 1792151539.373552,
       "datos": [
         {
           "nombre": "La Albert Moreno: Cumpleaños Charly!",
@@ -625,7 +624,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/problema-1/": {
-      "consultado": 1792126787.301873,
+      "consultado": 1792151547.321949,
       "datos": [
         "https://entradaslavarden.com/Problema-1/"
       ],
@@ -633,7 +632,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/Problema-1/": {
-      "consultado": 1792126789.6800156,
+      "consultado": 1792151550.0216935,
       "datos": {
         "nombre": "Problema 1",
         "funciones": [
@@ -650,7 +649,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/pupina-plomer/": {
-      "consultado": 1792126800.3387446,
+      "consultado": 1792151561.8384864,
       "datos": [
         "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/"
       ],
@@ -658,7 +657,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/": {
-      "consultado": 1792126800.7010906,
+      "consultado": 1792151562.0987473,
       "datos": {
         "nombre": "Pupina Plomer presenta Especial Brujas",
         "funciones": [
@@ -675,7 +674,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/julieta-laso/": {
-      "consultado": 1792126806.9931583,
+      "consultado": 1792151568.4811008,
       "datos": [
         "https://entradaslavarden.com/JULIETA-LASO-presenta-FABRIQUERA/"
       ],
@@ -683,7 +682,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/JULIETA-LASO-presenta-FABRIQUERA/": {
-      "consultado": 1792126807.3498156,
+      "consultado": 1792151568.734191,
       "datos": {
         "nombre": "JULIETA LASO presenta FABRIQUERA",
         "funciones": [
@@ -700,7 +699,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/dario-grandinetti-en-el-escritor-de-todas-las-cosas/": {
-      "consultado": 1792126780.7224665,
+      "consultado": 1792151540.8440816,
       "datos": [
         "https://entradaslavarden.com/El-escritor-de-todas-las-cosas/"
       ],
@@ -708,7 +707,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/El-escritor-de-todas-las-cosas/": {
-      "consultado": 1792126784.341657,
+      "consultado": 1792151544.7957408,
       "datos": {
         "nombre": "El escritor de todas las cosas",
         "funciones": [
@@ -725,7 +724,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/paris-jazz-club-2/": {
-      "consultado": 1792126793.7094126,
+      "consultado": 1792151553.8092208,
       "datos": [
         "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/"
       ],
@@ -733,7 +732,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/": {
-      "consultado": 1792126795.033497,
+      "consultado": 1792151555.238333,
       "datos": {
         "nombre": "Paris Jazz Club: JAZZ CARTOONS",
         "funciones": [
@@ -750,7 +749,7 @@
       "last_modified": null
     },
     "https://plataformalavarden.gob.ar/actividades/plataforma-de-novedades-silvina-gandini/": {
-      "consultado": 1792126813.770627,
+      "consultado": 1792151574.8084676,
       "datos": [
         "https://entradaslavarden.com/SILVINA-GANDINI-presenta-FUEGO-Aceites-Perfumados/"
       ],
@@ -758,7 +757,7 @@
       "last_modified": null
     },
     "https://entradaslavarden.com/SILVINA-GANDINI-presenta-FUEGO-Aceites-Perfumados/": {
-      "consultado": 1792126814.179753,
+      "consultado": 1792151575.0893333,
       "datos": {
         "nombre": "SILVINA GANDINI presenta FUEGO Aceites Perfumados",
         "funciones": [
@@ -770,6 +769,19 @@
         "entradas_url": "https://entradaslavarden.com/SILVINA-GANDINI-presenta-FUEGO-Aceites-Perfumados/",
         "precio": 25000,
         "bloqueada": false
+      },
+      "etag": null,
+      "last_modified": null
+    },
+    "https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/": {
+      "consultado": 1792151536.5332806,
+      "datos": {
+        "hechos": [],
+        "enlaces": [
+          "https://www.rosariocarshow.com",
+          "https://www.facebook.com/rosariotimesok",
+          "https://www.linkedin.com/company/rosariotimes"
+        ]
       },
       "etag": null,
       "last_modified": null
@@ -803,17 +815,8 @@
     }
   },
   "notas_diarias": {
-    "rosariotimes.com:2026-10-15": [
-      "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
-      "https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/",
-      "https://rosariotimes.com/gabriel-rolon-llega-a-rosario-con-su-obra-palabra-plena/",
-      "https://rosariotimes.com/la-fiesta-de-las-colectividades-2026-tendra-lugar-del-6-al-15-de-noviembre/"
-    ],
-    "saleplan.ar:2026-10-15": [
-      "https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift",
-      "https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer",
-      "https://saleplan.ar/santa-fe/rosario/planes/4EWY0B1WK49R/candlelight-de-musica-ligera",
-      "https://saleplan.ar/santa-fe/rosario/planes/B0V2Y6YFQWEK/candlelight-las-cuatro-estaciones-de-vivaldi"
+    "rosariotimes.com:2026-10-16": [
+      "https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/"
     ]
   }
 }

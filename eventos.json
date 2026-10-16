@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16 01:34",
+  "actualizado": "2026-10-16 08:26",
   "estado": "parcial",
   "eventos": [
     {
@@ -20,12 +20,12 @@
     },
     {
       "fecha": "2026-10-16",
-      "hora": "08:00",
-      "nombre": "Exposición La Noche de Los Lápices. Ayer y hoy",
-      "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
-      "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
-      "descripcion": "Itinerancia de la muestra surgida de la IV Convocatoria de Arte Correo dirigida a escuelas secundarias organizada con el colectivo Mujeraje y…",
-      "evento_url": "https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy",
+      "hora": "09:00",
+      "nombre": "Bienestar y actividad física en el sudoeste",
+      "lugar": "Centro de Salud \"Santa Teresita\"",
+      "direccion": "FRANCIA 4435, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-el-sudoeste",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -423,7 +423,7 @@
       "precio_etiqueta": "Desde $40.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 01:59"
+      "precio_consultado": "2026-10-16 08:52"
     },
     {
       "fecha": "2026-10-16",
@@ -1263,7 +1263,7 @@
       "precio_etiqueta": "Desde $35.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 01:59"
+      "precio_consultado": "2026-10-16 08:52"
     },
     {
       "fecha": "2026-10-17",
@@ -1956,6 +1956,17 @@
     },
     {
       "fecha": "2026-10-21",
+      "hora": "09:00",
+      "nombre": "Bienestar y actividad física en el sudoeste",
+      "lugar": "Centro de Salud \"Santa Teresita\"",
+      "direccion": "FRANCIA 4435, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-el-sudoeste",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-21",
       "hora": "10:00",
       "nombre": "Fogones de Palabras",
       "lugar": "Hospital Intendente Gabriel Carrasco",
@@ -2387,6 +2398,17 @@
       "direccion": "BAYO SERVANDO 799, Rosario, Santa Fe",
       "descripcion": "Itinerancia de la muestra surgida de la IV Convocatoria de Arte Correo dirigida a escuelas secundarias organizada con el colectivo Mujeraje y…",
       "evento_url": "https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-23",
+      "hora": "09:00",
+      "nombre": "Bienestar y actividad física en el sudoeste",
+      "lugar": "Centro de Salud \"Santa Teresita\"",
+      "direccion": "FRANCIA 4435, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-el-sudoeste",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
     },
@@ -2999,7 +3021,7 @@
       "entradas_url": "https://entradaslavarden.com/Paris-Jazz-Club--JAZZ-CARTOONS/",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 01:59"
+      "precio_consultado": "2026-10-16 08:52"
     },
     {
       "fecha": "2026-10-24",
@@ -3379,6 +3401,17 @@
     },
     {
       "fecha": "2026-10-28",
+      "hora": "09:00",
+      "nombre": "Bienestar y actividad física en el sudoeste",
+      "lugar": "Centro de Salud \"Santa Teresita\"",
+      "direccion": "FRANCIA 4435, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-el-sudoeste",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-28",
       "hora": "13:00",
       "nombre": "A favor de la fantasía en contra de la inflación",
       "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
@@ -3744,6 +3777,17 @@
     },
     {
       "fecha": "2026-10-30",
+      "hora": "09:00",
+      "nombre": "Bienestar y actividad física en el sudoeste",
+      "lugar": "Centro de Salud \"Santa Teresita\"",
+      "direccion": "FRANCIA 4435, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-el-sudoeste",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-30",
       "hora": "13:00",
       "nombre": "A favor de la fantasía en contra de la inflación",
       "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
@@ -4040,7 +4084,7 @@
       "entradas_url": "https://entradaslavarden.com/Pupina-Plomer-presenta-Especial-Brujas/",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 02:00"
+      "precio_consultado": "2026-10-16 08:52"
     },
     {
       "fecha": "2026-10-30",
@@ -4689,6 +4733,17 @@
     },
     {
       "fecha": "2026-11-04",
+      "hora": "09:00",
+      "nombre": "Bienestar y actividad física en el sudoeste",
+      "lugar": "Centro de Salud \"Santa Teresita\"",
+      "direccion": "FRANCIA 4435, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-el-sudoeste",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-04",
       "hora": "13:00",
       "nombre": "Nivel de Río. Instalación de Maxi Murad",
       "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
@@ -4903,6 +4958,17 @@
     },
     {
       "fecha": "2026-11-06",
+      "hora": "09:00",
+      "nombre": "Bienestar y actividad física en el sudoeste",
+      "lugar": "Centro de Salud \"Santa Teresita\"",
+      "direccion": "FRANCIA 4435, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-el-sudoeste",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-06",
       "hora": "13:00",
       "nombre": "Casa Abierta en Casa de Cultura Barrio Alvear",
       "lugar": "Casa de Cultura Barrio Alvear",
@@ -5040,7 +5106,7 @@
       "precio_etiqueta": "Desde $25.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 02:00"
+      "precio_consultado": "2026-10-16 08:52"
     },
     {
       "fecha": "2026-11-06",
@@ -5398,6 +5464,17 @@
     },
     {
       "fecha": "2026-11-11",
+      "hora": "09:00",
+      "nombre": "Bienestar y actividad física en el sudoeste",
+      "lugar": "Centro de Salud \"Santa Teresita\"",
+      "direccion": "FRANCIA 4435, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-el-sudoeste",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-11-11",
       "hora": "13:00",
       "nombre": "Nivel de Río. Instalación de Maxi Murad",
       "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
@@ -5561,6 +5638,17 @@
       "evento_url": "https://teatrobroadwayrosario.com/cartelera/871/daniel-gambartte",
       "precio": 50000.0,
       "origen": "Teatro Broadway"
+    },
+    {
+      "fecha": "2026-11-13",
+      "hora": "09:00",
+      "nombre": "Bienestar y actividad física en el sudoeste",
+      "lugar": "Centro de Salud \"Santa Teresita\"",
+      "direccion": "FRANCIA 4435, Rosario, Santa Fe",
+      "descripcion": "Desde el distrito sudoeste te proponemos un espacio grupal de bienestar, pensado para dedicarse un momento a uno mismo y promover el…",
+      "evento_url": "https://www.rosario.gob.ar/inicio/bienestar-y-actividad-fisica-en-el-sudoeste",
+      "precio": 0,
+      "origen": "Municipalidad de Rosario"
     },
     {
       "fecha": "2026-11-13",
@@ -5824,7 +5912,7 @@
       "precio_etiqueta": "Desde $25.000 + cargo de servicio",
       "entrada_paga": true,
       "precio_fuente": "Entradas Lavardén",
-      "precio_consultado": "2026-10-16 02:00"
+      "precio_consultado": "2026-10-16 08:52"
     },
     {
       "fecha": "2026-11-21",
