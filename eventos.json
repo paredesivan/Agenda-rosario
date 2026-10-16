@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16 12:00",
+  "actualizado": "2026-10-16 13:55",
   "estado": "parcial",
   "eventos": [
     {
@@ -2099,6 +2099,17 @@
     },
     {
       "fecha": "2026-10-21",
+      "hora": "18:00",
+      "nombre": "Recorrido Guiado Nocturno",
+      "lugar": "Biblioteca Vigil",
+      "direccion": "Biblioteca Vigil, Rosario, Santa Fe",
+      "descripcion": "🎥 ¿Quién produce las imágenes que circulan en las aulas? 🎞️ Históricamente el servicio bibliotecario tuvo más de 15.000 diapositivas agrupadas en…",
+      "evento_url": "https://bibliotecavigil.org.ar/inicio/events/recorrido-guiado-nocturno/?occurrence=2026-10-21",
+      "precio": 0,
+      "origen": "Biblioteca Vigil"
+    },
+    {
+      "fecha": "2026-10-21",
       "hora": "19:00",
       "nombre": "Talleres anuales de Tango Danza",
       "lugar": "Centro Cultural  La Casa del Tango",
@@ -2278,6 +2289,17 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/inauguracion-de-muestra-historia-del-rock-en-rosario",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
+    },
+    {
+      "fecha": "2026-10-22",
+      "hora": "18:00",
+      "nombre": "Ciclo de Ecología: «El pulso del gigante: cómo ‘El Niño’ despierta y transforma el caudal del Río Paraná»",
+      "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+      "direccion": "Presidente Roca 731, Rosario, Santa Fe",
+      "descripcion": "Ciclo de Ecología: «El pulso del gigante: cómo ‘El Niño’ despierta y transforma el caudal del Río Paraná» Por Biblioteca Argentina \"Dr.…",
+      "evento_url": "https://biblioargentina.gob.ar/web/ciclo-de-ecologia-el-pulso-del-gigante-como-el-nino-despierta-y-transforma-el-caudal-del-rio-parana/",
+      "precio": 0,
+      "origen": "Biblioteca Argentina Dr. Juan Álvarez"
     },
     {
       "fecha": "2026-10-22",
@@ -5542,6 +5564,20 @@
     {
       "fecha": "2026-11-11",
       "hora": "19:00",
+      "nombre": "Pablo Juárez «Piano a la deriva»",
+      "lugar": "Teatro Astengo",
+      "direccion": "Mitre 754, Rosario",
+      "descripcion": "PIANO A LA DERIVA Un piano, muchos territorios y un viaje sin rumbo fijo. En Piano a la deriva, Pablo Juárez propone…",
+      "evento_url": "https://teatroastengo.ar/events/pablo-juarez-teatro-astengo/",
+      "precio": null,
+      "origen": "Teatro Astengo",
+      "entrada_paga": true,
+      "entradas_url": "https://www.ticketek.com.ar/pablo-juarez/teatro-astengo",
+      "precio_etiqueta": "Precio a confirmar"
+    },
+    {
+      "fecha": "2026-11-11",
+      "hora": "19:00",
       "nombre": "Talleres anuales de Tango Danza",
       "lugar": "Centro Cultural  La Casa del Tango",
       "direccion": "ILLIA PTE. ARTURO U. 1750, Rosario, Santa Fe",
@@ -5726,20 +5762,6 @@
       "evento_url": "https://www.rosario.gob.ar/inicio/tertulias-tangueras-1",
       "precio": 0,
       "origen": "Municipalidad de Rosario"
-    },
-    {
-      "fecha": "2026-11-13",
-      "hora": "21:00",
-      "nombre": "CINEGRAF «música, recuerdos y humor»",
-      "lugar": "Teatro Astengo",
-      "direccion": "Mitre 754, Rosario",
-      "descripcion": "CINEGRAF « Música, recuerdos y humor para volver a bailar nuestra historia» Hay canciones que no solo se escuchan: se viven. Son…",
-      "evento_url": "https://teatroastengo.ar/events/cinegraf-teatro-astengo/",
-      "precio": null,
-      "origen": "Teatro Astengo",
-      "entrada_paga": true,
-      "entradas_url": "https://www.ticketek.com.ar/cinegraf/teatro-astengo",
-      "precio_etiqueta": "Precio a confirmar"
     },
     {
       "fecha": "2026-11-13",

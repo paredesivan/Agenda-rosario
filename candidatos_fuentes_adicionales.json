@@ -335,6 +335,26 @@
       "referencia": "https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer",
       "fuente": "SalePlan",
       "estado": "pendiente de confirmación oficial"
+    },
+    {
+      "nombre": "Candlelight: Tributo a Taylor Swift",
+      "fecha": "2026-10-30",
+      "hora": "19:00",
+      "lugar": "City Center Rosario",
+      "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
+      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift",
+      "fuente": "SalePlan",
+      "estado": "pendiente de confirmación oficial"
+    },
+    {
+      "nombre": "Candlelight: Lo Mejor de Hans Zimmer",
+      "fecha": "2026-10-30",
+      "hora": "21:30",
+      "lugar": "City Center Rosario",
+      "direccion": "Bv. Oroño y Av. Circunvalación 25 de Mayo, Rosario, Santa Fe, Argentina",
+      "referencia": "https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer",
+      "fuente": "SalePlan",
+      "estado": "pendiente de confirmación oficial"
     }
   ]
 }

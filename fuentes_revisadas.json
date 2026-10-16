@@ -1,5 +1,5 @@
 {
-  "fecha_revision": "2026-10-16 12:15",
+  "fecha_revision": "2026-10-16 14:10",
   "salas_independientes": 13,
   "medios": 3,
   "funciones_agregadas": 6,
@@ -25,7 +25,7 @@
     "Mercado del Patio — CSV": "revisada: 0 funciones; 0 consultas pendientes",
     "Alto Rosario Shopping — CSV": "revisada: 0 funciones; 1 consultas pendientes",
     "El Cairo — CSV": "revisada: 24 funciones; 0 consultas pendientes",
-    "Centro Cultural 25 de Mayo": "consulta detenida: ConnectionError",
+    "Centro Cultural 25 de Mayo": "revisada con robots.txt: 0 eventos verificables",
     "Entrada Play": "revisada: 6 funciones; 0 fichas pendientes",
     "CentroTicket": "revisada: 9 funciones; 1 fichas pendientes",
     "Circo Rodas — Linke-arte": "revisada: 9 funciones habilitadas",
@@ -58,7 +58,7 @@
     "Rosario en Cartel": "revisada: 21 funciones verificadas; 0 fichas pendientes",
     "Rosario Times": "revisada: 3 coincidencias con registros oficiales; 3 candidatos pendientes; 0 consultas pendientes",
     "EntradaFan": "revisada: 8 coincidencias con registros oficiales; 10 candidatos pendientes; 0 consultas pendientes",
-    "SalePlan": "revisada: 0 coincidencias con registros oficiales; 26 candidatos pendientes; 0 consultas pendientes",
+    "SalePlan": "revisada: 0 coincidencias con registros oficiales; 28 candidatos pendientes; 0 consultas pendientes",
     "Disfruta Rosario": "consulta manual; auditoría pendiente",
     "Passline": "fichas futuras incorporadas con enlace directo; precio actualizado en Passline"
   },
