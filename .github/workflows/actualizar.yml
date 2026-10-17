@@ -10,6 +10,8 @@ on:
       - medir_peso.py
       - actualizar_eventos.py
       - fuentes_nuevas.py
+      - fuentes_ampliadas.py
+      - fuentes_ampliadas.json
       - fuentes_refi_folklore.py
       - fuentes_refi_folklore.json
       - fuentes_adicionales.py
