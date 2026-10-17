@@ -121,6 +121,25 @@
       "verificacion_oficial_obligatoria": false,
       "consulta_automatica": false,
       "base_de_uso": "Se toman como fuente primaria los datos factuales de las fichas publicadas por Passline: nombre, fecha, hora, sede y enlace directo. Se deja el precio para consultar en Passline, porque puede cambiar. No se copian imágenes ni descripciones. La carga de fichas es manual; no se consulta el catálogo general ni se sortea Queue-it."
+    },
+    {
+      "nombre": "Agenda Cultural Rosario",
+      "url": "https://www.agendaculturalrosario.com.ar/agenda",
+      "tipo": "fuente de publicación aceptada por el usuario",
+      "consulta_automatica": true,
+      "estado": "respaldo dinámico: conserva ficha primaria existente; si falta, publica con enlace a ACR",
+      "frecuencia_configurada_segundos": 7200,
+      "pausa_entre_consultas_segundos": 5,
+      "terminos_url": "https://www.agendaculturalrosario.com.ar/terminos",
+      "licencia": "Sección 4 autoriza cita y divulgación con fuente y enlace; no especifica extracción automática de cartelera. No se afirma permiso general.",
+      "verificacion_oficial_obligatoria": false,
+      "robots": {
+        "url": "https://www.agendaculturalrosario.com.ar/robots.txt",
+        "http": 200,
+        "revision": "2026-10-17",
+        "contenido": "User-Agent: *\nAllow: /\nAllow: /api/eventos/*/imagen\nAllow: /api/eventos/*/*\nAllow: /api/espacios/*/imagen\nAllow: /api/espacios/*/*\nDisallow: /admin\nDisallow: /admin/*\nDisallow: /cuenta\nDisallow: /cuenta/*\nDisallow: /api/\nDisallow: /api/*\n\nUser-Agent: Googlebot\nUser-Agent: Bingbot\nUser-Agent: PerplexityBot\nUser-Agent: GPTBot\nUser-Agent: Google-InspectionTool\nAllow: /\nAllow: /api/eventos/*/imagen\nAllow: /api/eventos/*/*\nAllow: /api/espacios/*/imagen\nAllow: /api/espacios/*/*\nDisallow: /admin\nDisallow: /admin/*\nDisallow: /cuenta\nDisallow: /cuenta/*\nDisallow: /api/\nDisallow: /api/*\n\nHost: https://www.agendaculturalrosario.com.ar\nSitemap: https://www.agendaculturalrosario.com.ar/sitemap.xml\n"
+      },
+      "base_de_uso": "Todas las funciones vigentes del HTML público, sin listas fijas de eventos. Cruce dinámico por título, fecha, hora y sede contra las fuentes primarias configuradas. Coincidencias conservan sus datos y enlace; sin coincidencia se publica ficha ACR. No requiere aprobación manual. Sin sinopsis, imágenes ni contactos."
     }
   ],
   "dominios_oficiales_existentes": [
@@ -142,6 +161,14 @@
     "elrayomisterioso.org.ar",
     "laorillainfinita.com.ar",
     "teatrosatir.ar"
+  ],
+  "dominios_prioritarios_acr": [
+    "biblioargentina.gob.ar",
+    "d7entradas.com.ar",
+    "centroticket.com.ar",
+    "entradaplay.com",
+    "linke-arte.com",
+    "passline.com",
+    "refiticket.ar"
   ]
 }
-

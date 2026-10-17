@@ -1,0 +1,88 @@
+SALIDAS ROSARIO — FUENTE OFICIAL PRIMERO, ACR COMO RESPALDO DINÁMICO
+Actualización del 17/10/2026. Reemplaza el paquete ACR anterior.
+Base revisada: 6ef6442044cda787deaa3622f5a3795177d1b888
+
+SUBIR EN LA RAÍZ DEL REPOSITORIO (reemplazar):
+agenda.js
+actualizar_eventos.py
+actualizacion_segura.py
+fuentes_nuevas.py
+fuentes_adicionales.py
+fuentes_adicionales.json
+auditar_fuentes.py
+
+EN tests/:
+test_acr_duplicados.py (nuevo o reemplazar si subiste el paquete anterior)
+test_actualizacion_segura.py (reemplazar)
+
+EN e2e/:
+test_agenda_browser.py (reemplazar)
+
+El resto son documentos explicativos. agenda.js.txt es una copia idéntica para
+abrir desde Android: el archivo usado por la web debe llamarse agenda.js.
+Subir el código en un mismo commit, respetando las carpetas.
+Los workflows existentes ejecutan pruebas y actualización automáticamente.
+No es necesario modificar workflows ni ejecutar programas en el teléfono.
+
+COMPORTAMIENTO PEDIDO
+En cada actualización se comparan las funciones vigentes de ACR con las fichas
+ya obtenidas de las fuentes primarias configuradas, por nombre, fecha, hora y
+sede. Se reconocen diferencias menores de títulos y nombres del recinto.
+Si hay coincidencia, se conserva íntegra la ficha primaria: enlace, descripción,
+precio y datos originales. No se añade una segunda ficha ACR para esa función.
+Si no hay coincidencia, ACR alcanza como fuente: se publica y se enlaza a ACR.
+La lista de 85 pendientes era sólo un corte anterior; no se usa en el código.
+No hay listas de nombres, IDs, fechas o cantidades de eventos en esta regla.
+
+ACR se acepta como respaldo de sus publicaciones. Se toma toda la cartelera
+incluida en el HTML público, sin el tope de 40 funciones ni el horizonte de
+30 días. Se publican nombre, fecha, hora, lugar y descripción factual breve
+redactada a partir de esos campos y de la disciplina publicada.
+Cada ficha importada enlaza a /eventos/SLUG dentro de ACR. No se consulta el
+sitio de la sala, el organizador ni la ticketera enlazada por ACR.
+Los precios no se infieren: se muestra consultar condiciones en ACR.
+No se copian imágenes, sinopsis ni datos personales de remitentes.
+
+SE EXCLUYEN
+- Fichas sin nombre, fecha, hora o lugar interpretable.
+- Fichas no aprobadas; funciones con estado distinto de scheduled.
+- Suspensiones/cancelaciones/postergaciones indicadas en campos, título o
+  nota de la función. Incluye el caso observado de Agus Bernasconi, cuyo
+  título anuncia suspensión aunque el indicador interno venía en false.
+- Funciones cuyo fin publicado ya pasó.
+
+SI NO SE PUBLICA HORA DE FIN
+No se inventa una duración. La función se muestra hasta su hora de inicio.
+Puede dejar de verse mientras todavía está en curso: es la regla conservadora
+para no mantener funciones ya terminadas cuando falta el dato de cierre.
+Si hay fin explícito, se conserva hasta ese fin, incluso al cruzar medianoche.
+La página revisa el vencimiento cada minuto y cuando se vuelve a la pestaña;
+no depende únicamente de la actualización de datos cada dos horas.
+
+DATOS ANTERIORES Y FALLAS
+Una lectura válida reemplaza las publicaciones anteriores de ACR. Así no se
+acumulan funciones borradas, suspendidas o con horario modificado.
+La protección de datos distingue esa sustitución válida de un fallo técnico:
+no vuelve a añadir publicaciones retiradas de ACR después de una lectura válida.
+Si ACR falla, se conservan los datos previos, pero la página sigue ocultando
+las funciones vencidas. Las cancelaciones nuevas sólo pueden conocerse cuando
+se vuelve a consultar la fuente; la caché del listado dura dos horas.
+La primera ejecución invalida únicamente la vieja caché del parser ACR.
+
+DUPLICADOS
+Se incluye la corrección general de Parque España / Centro Cultural Parque de
+España. Si una función ya existe desde otra fuente, la deduplicación conserva
+una tarjeta según la prioridad de fuentes existente. Toda tarjeta cuyo origen
+sea ACR enlaza a ACR; no se reescriben las fichas independientes de otras fuentes.
+
+PRUEBAS
+89 pruebas Python; 3 pruebas Chromium; prueba móvil; node --check.
+Lectura del HTML descargado: 127 fichas distintas admitidas y 583 funciones
+vigentes en el corte del 17/10/2026 a las 09:59 de Rosario. Las funciones
+incluyen repeticiones de muestras. No son 583 eventos nuevos ni 583 adicionales
+netos: primero se conservan las coincidencias con fuentes primarias y después
+se deduplican los registros restantes.
+No se ejecutó la recolección completa de todas las demás fuentes en esta revisión.
+
+Este paquete no contiene eventos.json ni cachés para evitar sobrescribir datos
+que GitHub haya actualizado. El workflow generará los datos al subir el código.

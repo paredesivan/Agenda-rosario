@@ -370,19 +370,34 @@ def evento_extra(fecha, hora, nombre, url, fuente, direccion,
 
 def sin_repetidos(eventos):
     resultado = []
-    sedes = ("lavarden", "parque de espana", "comedia")
-    for evento in eventos:
-        nombre = normalizar(evento["nombre"])
+    sedes = ("lavarden", "comedia")
+    def firma_lugar(valor):
+        valor = normalizar(valor)
+        valor = re.sub(r"\bccpe\b", "centro cultural parque espana", valor)
+        valor = re.sub(r"\b(centro|cultural|de|del|la|el)\b", " ", valor)
+        valor = " ".join(re.sub(r"[^a-z0-9]+", " ", valor).split())
+        return next((v for v in sedes if v in valor), valor)
+    def firma_nombre(valor):
+        return " ".join(re.sub(r"[^a-z0-9]+", " ", normalizar(valor)).split())
+    def confianza(evento):
+        dominio = (urlsplit(evento.get("evento_url", "")).hostname or "").removeprefix("www.")
+        origen = firma_lugar(evento.get("origen", ""))
+        sede = firma_lugar(evento.get("lugar", ""))
+        if len(sede.split()) >= 2 and sede == origen:
+            return 500
+        if dominio.endswith((".gob.ar", ".edu.ar")):
+            return 400
+        return 100
+    for evento in sorted(eventos, key=confianza, reverse=True):
+        nombre = firma_nombre(evento["nombre"])
         lugar = normalizar(evento["lugar"])
-        sede = next((v for v in sedes if v in lugar), lugar)
+        sede = firma_lugar(lugar)
         repetido = False
 
         for anterior in resultado:
-            otro = normalizar(anterior["nombre"])
+            otro = firma_nombre(anterior["nombre"])
             otro_lugar = normalizar(anterior["lugar"])
-            otra_sede = next(
-                (v for v in sedes if v in otro_lugar), otro_lugar
-            )
+            otra_sede = firma_lugar(otro_lugar)
             mismo_turno = (
                 evento["fecha"], evento["hora"], sede
             ) == (

@@ -1617,7 +1617,11 @@ def actualizar_fuentes():
         estado[nombre] = f"no accesible: {type(error).__name__}"
     from fuentes_adicionales import revisar
     nuevos.extend(revisar(hoy, datos.get("eventos", []) + nuevos, estado))
-    anteriores = preferir_venta_oficial(datos.get("eventos", []), espacios_nuevos)
+    anteriores_acr = datos.get("eventos", [])
+    if estado.get('Agenda Cultural Rosario', '').startswith('revisada:'):
+        anteriores_acr = [e for e in anteriores_acr if e.get('origen') != 'Agenda Cultural Rosario']
+        datos['revision_acr_id'] = datetime.now(ZONA).isoformat()
+    anteriores = preferir_venta_oficial(anteriores_acr, espacios_nuevos)
     nuevos = preferir_venta_oficial(nuevos, espacios_nuevos)
     vistos = {clave(e): e for e in anteriores if e["fecha"] >= hoy.isoformat()}
     agregados = 0

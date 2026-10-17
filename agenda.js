@@ -98,11 +98,25 @@ function locationTokens(value) {
     .replace(/\bmacro\b/g, "museo arte contemporaneo rosario")
     .replace(/\b(sarmiento y el rio|rosario|santa fe|argentina)\b/g, "")
     .replace(/[^a-z0-9]+/g, " ").trim();
-  return new Set(text.split(/\s+/).filter(token => token.length > 1 &&
+  return new Set(text.split(/\s+/).filter(token => (token.length > 1 || /^\d+$/.test(token)) &&
     !["calle", "avenida", "av", "piso", "bis"].includes(token)));
 }
 
+// Compara el nombre de la sede antes de incorporar domicilios escritos de
+// formas distintas. Conserva identificadores de sala, auditorio y números.
+function venueSignature(value) {
+  return [...locationTokens(value)].filter(token =>
+    !["centro", "cultural", "de", "del", "la", "el"].includes(token)).sort().join(" ");
+}
+
 function sameLocation(a, b) {
+  const venueA = venueSignature(a.lugar || "");
+  const venueB = venueSignature(b.lugar || "");
+  if (venueA.split(" ").length >= 2 && venueA === venueB) return true;
+
+  const roomsA = normalize(a.lugar || "").match(/\b(?:sala|auditorio)\s+\d+\b/g) || [];
+  const roomsB = normalize(b.lugar || "").match(/\b(?:sala|auditorio)\s+\d+\b/g) || [];
+  if (roomsA.length && roomsB.length && roomsA.join("|") !== roomsB.join("|")) return false;
   const left = locationTokens(`${a.lugar || ""} ${a.direccion || ""}`);
   const right = locationTokens(`${b.lugar || ""} ${b.direccion || ""}`);
   if (!left.size || !right.size) return false;
@@ -151,12 +165,20 @@ function deduplicatedEvents(items) {
     [...group].sort((a, b) => sourceReliability(b) - sourceReliability(a))[0]));
 }
 
-let futureCache = {source: null, day: null, items: []};
+function acrAvailable(item, now = Date.now()) {
+  if (item.origen !== "Agenda Cultural Rosario") return true;
+  const ended = item.fecha_fin && item.hora_fin;
+  const cutoff = Date.parse(`${ended ? item.fecha_fin : item.fecha}T${ended ? item.hora_fin : item.hora}:00-03:00`);
+  return Number.isFinite(cutoff) && (ended ? cutoff > now : cutoff >= now);
+}
+
+let futureCache = {source: null, day: null, minute: null, items: []};
 function futureEvents() {
   const day = todayKey();
-  if (futureCache.source !== events || futureCache.day !== day) {
-    futureCache = {source: events, day,
-      items: deduplicatedEvents(events.filter(item => item.fecha >= day))};
+  const minute = Math.floor(Date.now() / 60000);
+  if (futureCache.source !== events || futureCache.day !== day || futureCache.minute !== minute) {
+    futureCache = {source: events, day, minute,
+      items: deduplicatedEvents(events.filter(item => item.fecha >= day && acrAvailable(item)))};
   }
   return futureCache.items;
 }
@@ -268,6 +290,8 @@ function actualizarDia() {
       visibleMonth = new Date(ahora.getFullYear(), ahora.getMonth(), 1);
     }
     hoy.setTime(ahora.getTime());
+    render();
+  } else if (events.some(item => item.origen === "Agenda Cultural Rosario")) {
     render();
   }
 }

@@ -70,3 +70,28 @@ configuramos nosotros. Revaluar el alcance si aparecen nuevas restricciones.
 
 El módulo anterior mantiene sus recolectores y pausas ya instalados. Esta
 política no acredita retrospectivamente licencias de sus fuentes anteriores.
+
+
+## Excepción editorial ACR, 17/10/2026
+
+Por instrucción expresa del usuario, Agenda Cultural Rosario se acepta como
+fuente de sus propias publicaciones. No se exige confirmación en otra fuente
+ni se visitan sus enlaces externos. Las fichas vigentes con datos mínimos se
+publican con enlace directo a ACR y descripción factual propia. Se quita el
+límite de cuarenta funciones y el horizonte de treinta días para esta fuente.
+Se excluyen suspendidas y vencidas; sin hora de fin se ocultan al comenzar.
+Esta excepción cambia la validación editorial de los datos, no constituye una
+licencia del titular ni una transferencia de responsabilidad. Se mantiene la
+consulta del HTML público cada dos horas, el respeto de robots y las pausas.
+Ver AUDITORIA_ACR.md para el alcance y la incertidumbre contractual registrada.
+
+
+### Prioridad precisada por el usuario, 17/10/2026
+
+Si una función de ACR coincide con una ficha primaria obtenida por los
+recolectores existentes, se conserva esa ficha y su enlace. Sólo las funciones
+sin ese respaldo usan el enlace y los datos mínimos de ACR. El cruce se ejecuta
+cada vez por título, fecha, hora y sede. No usa una lista fija de pendientes,
+IDs ni nombres de eventos. Los dominios prioritarios son configuración de
+fuentes y no una lista de espectáculos. ACR permite publicar sin aprobación
+manual los casos que no se logran corroborar independientemente.

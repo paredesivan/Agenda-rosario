@@ -1,4 +1,4 @@
-"""Descubrimiento acotado de hechos; publica sólo con respaldo oficial.
+"""Fuentes adicionales: ACR directo y descubrimiento factual de otras fuentes.
 
 No descarga imágenes, APIs privadas ni bases completas. Un listado por fuente
 cada dos horas; hasta cuatro notas de Rosario Times al día. HTTP 403/429 pausa
@@ -287,9 +287,134 @@ def listado_entradafan(html, url):
                   firma_sede(e.get('lugar', ''))): e for e in hechos}.values())[:40]
 
 
+def acr_vigente(hecho, ahora=None):
+    """Con fin explícito conserva la función en curso; sin fin, hasta el inicio."""
+    from actualizar_eventos import ZONA
+    ahora = ahora or datetime.now(ZONA)
+    if ahora.tzinfo is None:
+        ahora = ahora.replace(tzinfo=ZONA)
+    try:
+        inicio = datetime.fromisoformat(hecho['fecha'] + 'T' + hecho['hora']).replace(tzinfo=ZONA)
+        fin = datetime.fromisoformat(hecho['fecha_fin'] + 'T' + hecho['hora_fin']).replace(tzinfo=ZONA) if hecho.get('fecha_fin') and hecho.get('hora_fin') else None
+    except (KeyError, ValueError, TypeError):
+        return False
+    return (fin > ahora) if fin else (inicio >= ahora)
+
+
+def listado_acr(html, url, ahora=None):
+    """Extrae todas las funciones públicas vigentes, con enlace a ACR.
+
+    Sólo decodifica JSON del HTML; no ejecuta JS ni consulta APIs o salas.
+    No conserva sinopsis, imágenes o contactos. Descripción factual propia.
+    """
+    partes = []
+    for tag in html.find_all('script'):
+        match = re.fullmatch(r'self\.__next_f\.push\((.*)\)\s*;?', tag.get_text(), re.S)
+        if not match:
+            continue
+        try:
+            bloque = json.loads(match[1])
+        except ValueError:
+            continue
+        if isinstance(bloque, list) and len(bloque) == 2 and bloque[0] == 1 and isinstance(bloque[1], str):
+            partes.append(bloque[1])
+    payload = ''.join(partes)
+    marca = re.search(r'"initialEvents"\s*:\s*', payload)
+    if not marca:
+        raise ValueError('Cambió el HTML público de ACR: initialEvents ausente')
+    try:
+        fichas, _ = json.JSONDecoder().raw_decode(payload[marca.end():])
+    except ValueError as error:
+        raise ValueError('Payload de ACR incompleto; se conserva caché anterior') from error
+    if not isinstance(fichas, list):
+        raise ValueError('Formato de cartelera ACR inválido')
+    hechos = []
+    suspension = re.compile(r'\b(?:suspendid[oa]s?|cancelad[oa]s?|postergad[oa]s?|aplazad[oa]s?)\b')
+    for ficha in fichas:
+        if not isinstance(ficha, dict) or ficha.get('isSuspended') is True or ficha.get('status') != 'approved':
+            continue
+        nombre, lugar = ficha.get('title'), ficha.get('venueName')
+        if not all(isinstance(v, str) and v.strip() and not v.startswith('$') for v in (nombre, lugar)):
+            continue
+        if suspension.search(norm(nombre)):
+            continue
+        slug = ficha.get('slug', '')
+        if not isinstance(slug, str) or not re.fullmatch(r'[a-z0-9-]+', slug):
+            continue
+        referencia = urljoin(url, '/eventos/' + slug)
+        disciplina = ficha.get('discipline')
+        categoria = disciplina.get('name') if isinstance(disciplina, dict) else ''
+        categoria = categoria if isinstance(categoria, str) and categoria and not categoria.startswith('$') else 'Actividad cultural'
+        descripcion = f'{categoria}: {nombre}, en {lugar}. Información publicada por Agenda Cultural Rosario.'
+        turnos = ficha.get('occurrences')
+        if not isinstance(turnos, list) or not turnos:
+            turnos = [{'date': ficha.get('eventDate'), 'time': ficha.get('eventTime'), 'status': 'scheduled'}]
+        for turno in turnos:
+            if not isinstance(turno, dict) or turno.get('status') != 'scheduled' or turno.get('isSuspended') is True:
+                continue
+            nota = turno.get('note')
+            if isinstance(nota, str) and suspension.search(norm(nota)):
+                continue
+            fecha, hora = turno.get('date'), turno.get('time')
+            if not isinstance(fecha, str) or not isinstance(hora, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', fecha) or not re.fullmatch(r'\d{2}:\d{2}', hora):
+                continue
+            try:
+                inicio = datetime.fromisoformat(fecha + 'T' + hora)
+            except ValueError:
+                continue
+            hecho = {'nombre': nombre, 'lugar': lugar, 'fecha': fecha, 'hora': hora,
+                     'direccion': '', 'referencia': referencia, 'descripcion': descripcion}
+            fin_hora = turno.get('endTime')
+            if isinstance(fin_hora, str) and re.fullmatch(r'\d{2}:\d{2}', fin_hora):
+                try:
+                    fin = datetime.fromisoformat(fecha + 'T' + fin_hora)
+                    if fin < inicio:
+                        fin += timedelta(days=1)
+                    hecho.update(fecha_fin=fin.date().isoformat(), hora_fin=fin.strftime('%H:%M'))
+                except ValueError:
+                    continue
+            if acr_vigente(hecho, ahora):
+                hechos.append(hecho)
+    return sorted({clave(h): h for h in hechos}.values(), key=lambda h: (h['fecha'], h['hora'], h['nombre']))
+
+
 def firma_sede(value):
     base = re.sub(r'\b(teatro|centro|cultural|rosario|municipal|de|del|la|el)\b', '', norm(value))
     return ' '.join(re.sub(r'[^a-z0-9 ]', ' ', base).split())
+
+
+def respaldo_acr(hecho, oficiales):
+    """Cruza funciones por datos, sin nombres de eventos ni listas curadas."""
+    def palabras(valor):
+        return re.sub(r'[^a-z0-9]+', ' ', norm(valor)).strip()
+    def titulo_similar(a, b):
+        a, b = palabras(a), palabras(b)
+        if a == b and a:
+            return True
+        if min(len(a), len(b)) >= 8 and (a in b or b in a):
+            return True
+        stop = {'de', 'del', 'la', 'las', 'el', 'los', 'en', 'y', 'con', 'presenta'}
+        x, y = set(a.split()) - stop, set(b.split()) - stop
+        compartidas = len(x & y)
+        return bool(x and y and compartidas >= 2 and compartidas / min(len(x), len(y)) >= .75 and compartidas / max(len(x), len(y)) >= .45)
+    def sede_similar(a, b):
+        # Quita siglas explicativas entre paréntesis, sin perder salas/números.
+        a = re.sub(r'\([^)]*\)', '', norm(a))
+        b = re.sub(r'\([^)]*\)', '', norm(b))
+        genericas = {'de', 'del', 'la', 'el', 'y', 'centro', 'cultural', 'teatro',
+                     'fundacion', 'nacional', 'historico', 'argentina', 'rosario'}
+        x, y = set(palabras(a).split()) - genericas, set(palabras(b).split()) - genericas
+        if not x or not y:
+            return False
+        if {t for t in x if t.isdigit()} != {t for t in y if t.isdigit()}:
+            return False
+        return x == y or (min(len(' '.join(x)), len(' '.join(y))) >= 7 and (x <= y or y <= x))
+    for evento in oficiales:
+        if (hecho.get('fecha'), hecho.get('hora')) != (evento.get('fecha'), evento.get('hora')):
+            continue
+        if titulo_similar(hecho.get('nombre', ''), evento.get('nombre', '')) and sede_similar(hecho.get('lugar', ''), evento.get('lugar', '')):
+            return evento
+    return None
 
 
 def corroborar(hecho, oficiales):
@@ -371,8 +496,13 @@ def revisar(hoy, eventos, estado, acceso=None):
     except (ValueError, OSError):
         cache = {}
     acceso = acceso or Acceso(cache)
+    if acceso.cache.get('version_acr') != 2:
+        acceso.cache.setdefault('paginas', {}).pop('https://www.agendaculturalrosario.com.ar/agenda', None)
+        acceso.cache['version_acr'] = 2
     aprobados = set(config['dominios_oficiales_existentes'])
     oficiales = [e for e in eventos if host(e.get('evento_url', '')) in aprobados]
+    primarias_acr = aprobados | set(config.get('dominios_prioritarios_acr', []))
+    oficiales_acr = [e for e in eventos if host(e.get('evento_url', '')) in primarias_acr]
     nuevos, pendientes = [], []
     for fuente in config['fuentes']:
         nombre, url = fuente['nombre'], fuente['url']
@@ -380,6 +510,26 @@ def revisar(hoy, eventos, estado, acceso=None):
             estado[nombre] = 'consulta manual; auditoría pendiente'
             continue
         try:
+            if nombre == 'Agenda Cultural Rosario':
+                encontrados = acceso.leer(url, listado_acr)
+                con_respaldo = 0
+                for h in encontrados:
+                    if not acr_vigente(h):
+                        continue
+                    oficial = respaldo_acr(h, oficiales_acr)
+                    if oficial:
+                        fuentes = oficial.setdefault('descubrimiento_fuentes', [])
+                        if nombre not in fuentes:
+                            fuentes.append(nombre)
+                        con_respaldo += 1
+                        continue
+                    e = {k: v for k, v in h.items() if k != 'referencia'}
+                    e.update(evento_url=h['referencia'], origen=nombre,
+                             precio=None, precio_etiqueta='Consultar condiciones en ACR',
+                             descubrimiento_fuentes=[nombre], fuente_verificada=False)
+                    nuevos.append(e)
+                estado[nombre] = f'revisada: {con_respaldo} funciones con respaldo prioritario conservado; {sum(e.get("origen") == nombre for e in nuevos)} funciones con enlace a ACR'
+                continue
             if nombre == 'Rosario Times':
                 refs = acceso.leer(url, portada_times)
                 encontrados, enlaces_oficiales = [], []
@@ -420,7 +570,8 @@ def revisar(hoy, eventos, estado, acceso=None):
                     except (requests.RequestException, ValueError):
                         notas_pendientes += 1
             else:
-                encontrados = acceso.leer(url, listado_entradafan if nombre == 'EntradaFan' else listado_saleplan)
+                encontrados = acceso.leer(url, {'EntradaFan': listado_entradafan, 'SalePlan': listado_saleplan,
+                                                'Agenda Cultural Rosario': listado_acr}[nombre])
                 notas_pendientes = 0
                 vinculados = 0
                 if nombre == 'SalePlan':
@@ -464,7 +615,7 @@ def revisar(hoy, eventos, estado, acceso=None):
     estado['Passline'] = 'fichas futuras incorporadas con enlace directo; precio actualizado en Passline'
     guardar(archivo_cache, acceso.cache)
     guardar(ROOT / 'candidatos_fuentes_adicionales.json',
-            {'fecha_revision': hoy.isoformat(), 'nota': 'Candidatos de fuentes secundarias; las fichas de Passline se importan como eventos con enlace directo.',
+            {'fecha_revision': hoy.isoformat(), 'nota': 'Candidatos de otras fuentes secundarias; ACR y Passline se publican directamente con enlace a sus propias fichas.',
              'candidatos': pendientes})
     return nuevos
 

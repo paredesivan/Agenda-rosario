@@ -38,6 +38,11 @@ def proteger(antes, despues, hoy):
     conteo_b = Counter(e.get('origen', 'Manual') for e in nuevos if e['fecha'] >= hoy.isoformat())
     sospechosas = {f for f, n in conteo_a.items()
                    if conteo_b[f] == 0 or (n >= 5 and conteo_b[f] < n * .5)}
+    # Una lectura válida de ACR reemplaza su snapshot, incluso si queda vacío.
+    # No restaurar publicaciones que ACR quitó o suspendió. El identificador
+    # debe cambiar en esta etapa; uno heredado no autoriza futuras pérdidas.
+    if despues.get('revision_acr_id') and despues.get('revision_acr_id') != antes.get('revision_acr_id'):
+        sospechosas.discard('Agenda Cultural Rosario')
     avisos = []
     def clave(e):
         return tuple(e.get(k, '') for k in ('fecha', 'hora', 'nombre', 'lugar', 'origen'))

@@ -79,6 +79,11 @@ def inventario():
                     slug = sala[1]
                     if isinstance(slug, str) and re.fullmatch(r"[a-z0-9-]+", slug):
                         registrar(sitios, f"https://www.teatrosatir.ar/salas/{slug}/")
+    configuracion = RAIZ / "fuentes_adicionales.json"
+    if configuracion.exists():
+        for fuente in json.loads(configuracion.read_text(encoding="utf-8")).get("fuentes", []):
+            if fuente.get("consulta_automatica") and isinstance(fuente.get("url"), str):
+                registrar(sitios, fuente["url"])
     for url in FUENTES_DINAMICAS:
         registrar(sitios, url)
     return dict(sorted(sitios.items()))
