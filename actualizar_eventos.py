@@ -581,7 +581,7 @@ def actualizar():
             print(f"{fuente}: {len(nuevos)} actividades", flush=True)
         except (requests.RequestException, ValueError) as error:
             errores.append(
-                f"{fuente}: {type(error).__name__}; "
+                f"{fuente}: {type(error).__name__}: {error}; "
                 "se conservan datos anteriores"
             )
 
@@ -874,7 +874,80 @@ def calendario_paginas(html, fuente, url, direccion, hoy):
     return eventos, fallidos
 
 
+
+def calendario_comedia(html, fuente, url, direccion, hoy):
+    """Descubre obras Kalendo y verifica fechas en cada ficha oficial."""
+    host = urlsplit(url).hostname
+    enlaces, paginas = set(), set()
+    pagina, listado = url, html
+    while pagina not in paginas:
+        paginas.add(pagina)
+        for a in listado.select("article.kalendo_event .entry-title a[href], .kalendo-compact__title[href]"):
+            enlace = urljoin(pagina, a["href"])
+            if urlsplit(enlace).hostname == host and urlsplit(enlace).path.startswith("/espectaculo/"):
+                enlaces.add(enlace)
+        siguiente = listado.select_one(".pagination .alignleft a[href], a.next.page-numbers[href]")
+        if not siguiente:
+            break
+        pagina = urljoin(pagina, siguiente["href"])
+        if pagina in paginas:
+            break
+        if urlsplit(pagina).hostname != host or len(paginas) >= 10:
+            raise ValueError("Programación de La Comedia incompleta: paginación no verificable")
+        listado = descargar(pagina)
+    if not enlaces:
+        raise ValueError("No se encontraron fichas Kalendo en la programación de La Comedia")
+
+    eventos, fallidos = {}, set()
+    for enlace in sorted(enlaces):
+        try:
+            detalle = descargar(enlace)
+            cuerpo = detalle.select_one("article.kalendo_event .entry-content")
+            if not cuerpo:
+                raise ValueError("La ficha de La Comedia no contiene descripción verificable")
+            descripcion = texto(cuerpo)
+            fichas = []
+            for tag in detalle.select('script[type="application/ld+json"]'):
+                try:
+                    fichas.extend(eventos_schema(json.loads(tag.get_text())))
+                except ValueError:
+                    continue
+            propias = [f for f in fichas if (f.get("url") or "").rstrip("/") == enlace.rstrip("/")]
+            if not propias:
+                raise ValueError("La ficha de La Comedia no contiene fechas Event verificables")
+            for ficha in propias:
+                estado = ficha.get("eventStatus", "").rsplit("/", 1)[-1]
+                if estado in ("EventCancelled", "EventPostponed", "EventRescheduled") or re.search(
+                    r"\b(?:suspendid[ao]|cancelad[ao]|reprogramad[ao])\b", normalizar(descripcion)
+                ):
+                    continue
+                valor = ficha.get("startDate", "")
+                if not isinstance(valor, str) or not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}", valor):
+                    raise ValueError("Fecha u hora incompleta en la ficha de La Comedia")
+                cuando = datetime.fromisoformat(valor)
+                if cuando.tzinfo:
+                    cuando = cuando.astimezone(ZONA)
+                if not hoy <= cuando.date() <= hoy + timedelta(days=30):
+                    continue
+                titulo = texto(detalle.select_one("article.kalendo_event h1")) or ficha.get("name", "")
+                if not titulo:
+                    raise ValueError("Ficha de La Comedia sin título")
+                evento = actividad_ampliada(
+                    cuando.date().isoformat(), cuando.strftime("%H:%M"), titulo,
+                    enlace, fuente, direccion, descripcion,
+                )
+                eventos[clave(evento)] = evento
+        except (requests.RequestException, ValueError, TypeError) as error:
+            # Si una ficha falla a mitad de lectura, no publicar un resultado parcial.
+            eventos = {k: e for k, e in eventos.items() if e["evento_url"] != enlace}
+            fallidos.add(enlace)
+            print(f"Aviso: {fuente}: {enlace}: {type(error).__name__}: {error}; se conserva la ficha anterior", flush=True)
+    return list(eventos.values()), fallidos
+
+
 def calendario(html, fuente, url, direccion, hoy):
+    if fuente == "Teatro Municipal La Comedia":
+        return calendario_comedia(html, fuente, url, direccion, hoy)
     if fuente in ("Teatro Astengo", "ATIR", "Biblioteca Vigil"):
         return calendario_mec(html, fuente, url, direccion, hoy)
     if fuente in (

@@ -1,0 +1,19 @@
+CORRECCIÓN LA COMEDIA
+
+Subir estos dos archivos respetando las rutas:
+- actualizar_eventos.py (raíz: reemplazar el existente).
+- tests/test_comedia.py (archivo nuevo: agregar, no borrar otros tests).
+
+No es necesario modificar ningún workflow: pruebas.yml ya descubre los tests nuevos.
+La siguiente actualización programada de la agenda aplicará la corrección.
+Para actualizar los eventos de inmediato, ejecutar el workflow habitual de actualización.
+
+La extracción descubre las obras publicadas y consulta sus fichas oficiales Kalendo.
+Verifica fechas, horas, cancelaciones y precios publicados; conserva fichas anteriores ante fallos.
+El aviso de error incluye ahora el motivo, además del tipo de excepción.
+
+Verificado el 17/10/2026:
+- 98 pruebas Python correctas (9 nuevas); los tests anteriores no se modificaron.
+- Consulta real: 4 funciones dentro de la ventana de 30 días, sin fallas.
+- No se ejecutaron pruebas E2E de navegador localmente: no hubo cambios de interfaz.
+- No se modificó el repositorio remoto ni se ejecutaron Actions.
