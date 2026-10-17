@@ -1,5 +1,14 @@
 let events = [];
 let activeFilters = [];
+let searchQuery = "";
+
+function matchesSearch(item) {
+  const terms = normalize(searchQuery).trim().split(/\s+/).filter(Boolean);
+  const text = normalize([item.nombre, item.artista, item.artistas, item.lugar,
+    item.direccion, item.descripcion].filter(Boolean).join(" "));
+  return terms.every(term => text.includes(term));
+}
+
 const categories = [
   ["todos", "Todo"], ["teatro", "Teatro"], ["musica", "Música"],
   ["cine", "Cine"], ["museos", "Museos y muestras"], ["ferias", "Ferias"],
@@ -60,6 +69,7 @@ function todayKey() {
 }
 
 function matchesFilter(item) {
+  if (!matchesSearch(item)) return false;
   if (!activeFilters.length) return true;
   const gratis = activeFilters.includes("gratis");
   const categoriesSelected = activeFilters.filter(filter => filter !== "gratis");
@@ -520,6 +530,9 @@ function render() {
   renderSummary();
   renderNavigation();
   renderCalendar();
+  const resultCount = futureEvents().filter(matchesFilter).length;
+  $("search-status").textContent = searchQuery ? `${resultCount} ${resultCount === 1 ? "función encontrada" : "funciones encontradas"} en todas las fechas${activeFilters.length ? " con estos filtros" : ""}` : "";
+  $("clear-search").hidden = !searchQuery;
 
   const date = selectedDate ? new Date(`${selectedDate}T12:00:00`) : null;
 
@@ -536,11 +549,11 @@ function render() {
     .filter(matchesFilter)
     .sort((a, b) => a.hora.localeCompare(b.hora));
 
-  $("day-count").textContent = `${list.length} ${list.length === 1 ? "actividad" : "actividades"}${activeFilters.length ? " con estos filtros" : ""}`;
+  $("day-count").textContent = `${list.length} ${list.length === 1 ? "actividad" : "actividades"}${activeFilters.length || searchQuery ? " con estos filtros" : ""}`;
 
   if (!list.length) {
     $("events").textContent =
-      activeFilters.length === 0 ? "Todavía no hay actividades cargadas para esta fecha." : "No hay actividades que coincidan con todos los filtros elegidos. Probá quitar uno.";
+      !searchQuery && activeFilters.length === 0 ? "Todavía no hay actividades cargadas para esta fecha." : "No hay actividades que coincidan con la búsqueda y los filtros. Probá otra palabra o quitá un filtro.";
   }
 
   list.forEach(renderEvent);
@@ -562,6 +575,25 @@ $("today").onclick = () => {
 
 $("prev").onclick = () => cambiarMes(-1);
 $("next").onclick = () => cambiarMes(1);
+
+// Buscar en todas las fechas; las categorías se combinan con la búsqueda.
+$("event-search-form").addEventListener("submit", event => {
+  event.preventDefault();
+  searchQuery = $("event-search").value.trim();
+  render();
+});
+function clearEventSearch() {
+  searchQuery = "";
+  $("event-search").value = "";
+  render();
+}
+$("clear-search").addEventListener("click", () => {
+  clearEventSearch();
+  $("event-search").focus();
+});
+$("event-search").addEventListener("input", event => {
+  if (!event.target.value && searchQuery) clearEventSearch();
+});
 
 // Cargar eventos al abrir.
 loadEvents().catch(() => {

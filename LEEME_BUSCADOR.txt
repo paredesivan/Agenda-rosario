@@ -1,0 +1,18 @@
+BUSCADOR DE EVENTOS — OPCIÓN 2
+
+Reemplazar en la raíz:
+- index.html
+- estilos.css
+- agenda.js
+
+Reemplazar en e2e/:
+- test_agenda_browser.py
+
+agenda.js.txt es una copia idéntica para Android. El archivo utilizado por la web debe llamarse agenda.js. No hace falta subir ambas copias.
+
+Buscar o Enter aplica la búsqueda en todas las fechas futuras; busca nombre, artista (si aparece en los datos), lugar, dirección y descripción, sin distinguir mayúsculas ni tildes. Las palabras se combinan y pueden estar en campos distintos. Las categorías y Gratis se mantienen como condiciones adicionales. Limpiar búsqueda restaura las fechas disponibles conservando las categorías.
+El calendario destaca los días coincidentes y muestra sus actividades. El resumen superior sigue mostrando el total de toda la agenda; debajo del buscador aparece la cantidad de funciones encontradas.
+
+Pruebas: 98 de reglas e integración, 4 E2E Chromium, comprobación móvil y sintaxis JavaScript correctas. Se agregó un método de prueba sin borrar ni modificar los tres existentes.
+Los workflows actuales ya ejecutan estas pruebas cuando se suben los archivos. No hay que modificar Actions.
+Base: 06d217d285956a86fe4d9cdb3d16a48f84219ec1.

@@ -13,6 +13,20 @@
       <div><strong id="total-events">—</strong><span>eventos cargados desde hoy</span></div>
       <p id="coverage"></p>
     </section>
+    <section class="search-section" aria-label="Buscar actividades">
+      <form id="event-search-form" role="search">
+        <label for="event-search">Buscar eventos</label>
+        <div class="search-row">
+          <div class="search-field">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+            <input id="event-search" name="q" type="search" placeholder="Nombre, artista o lugar" aria-describedby="search-hint" maxlength="200" enterkeyhint="search">
+          </div>
+          <button type="submit">Buscar</button>
+        </div>
+        <p id="search-hint" class="hint">Buscá por nombre, artista o lugar en todas las fechas disponibles.</p>
+        <div class="search-feedback"><p id="search-status" role="status" aria-live="polite"></p><button id="clear-search" type="button" hidden>Limpiar búsqueda</button></div>
+      </form>
+    </section>
     <section class="filter-section" aria-label="Filtrar actividades">
       <h2>¿Qué te gustaría hacer?</h2>
       <div class="filters" id="filters" role="group" aria-label="Filtros combinables"></div>
