@@ -135,6 +135,43 @@ class TestAgendaEnNavegador(unittest.TestCase):
         finally:
             page.close()
 
+    def test_duplicado_sedes_equivalentes_y_fuente_directa(self):
+        base = {**EVENTOS_PRUEBA['eventos'][0], 'nombre': 'Impresiones Sonoras - Ensamble Municipal de Vientos',
+                'lugar': 'Parque España', 'direccion': 'SARMIENTO DOMINGO FAUSTINO 100, Rosario, Santa Fe',
+                'origen': 'Municipalidad de Rosario', 'evento_url': 'https://rosario.gob.ar/actividad'}
+        directa = {**base, 'nombre': 'Impresiones Sonoras – Ensamble Municipal de Vientos',
+                   'lugar': 'Centro Cultural Parque de España', 'direccion': 'Sarmiento y el río, Rosario, Santa Fe',
+                   'origen': 'Centro Cultural Parque de España', 'evento_url': 'https://ccpe.org.ar/actividad'}
+        page = self.browser.new_page()
+        try:
+            page.route('**/eventos.json*', lambda route: route.fulfill(
+                content_type='application/json', body=json.dumps({'eventos': [base, directa]})))
+            page.goto(self.url)
+            page.locator('.event h3').first.wait_for()
+            self.assertEqual(page.locator('.event h3').count(), 1)
+            self.assertEqual(page.locator('a.event-info').get_attribute('href'), directa['evento_url'])
+            self.assertFalse(page.evaluate('sameLocation({lugar:"Sala 1"}, {lugar:"Sala 2"})'))
+            self.assertFalse(page.evaluate('duplicateEvents(' + json.dumps(base) + ',' +
+                                          json.dumps({**directa, 'hora':'21:00'}) + ')'))
+        finally:
+            page.close()
+
+    def test_acr_enlace_propio_y_vencimiento_sin_refrescar_datos(self):
+        page = self.browser.new_page()
+        evento = {**EVENTOS_PRUEBA['eventos'][0], 'origen':'Agenda Cultural Rosario',
+                  'evento_url':'https://www.agendaculturalrosario.com.ar/eventos/prueba',
+                  'descripcion':'Actividad cultural publicada por Agenda Cultural Rosario.'}
+        try:
+            page.route('**/eventos.json*', lambda route: route.fulfill(
+                content_type='application/json', body=json.dumps({'eventos':[evento]})))
+            page.goto(self.url)
+            page.locator('.event h3').first.wait_for()
+            self.assertEqual(page.locator('a.event-info').get_attribute('href'),evento['evento_url'])
+            self.assertFalse(page.evaluate('acrAvailable({origen:"Agenda Cultural Rosario",fecha:"2026-10-17",hora:"20:00"}, Date.parse("2026-10-17T20:30:00-03:00"))'))
+            self.assertTrue(page.evaluate('acrAvailable({origen:"Agenda Cultural Rosario",fecha:"2026-10-17",hora:"20:00",fecha_fin:"2026-10-17",hora_fin:"21:00"}, Date.parse("2026-10-17T20:30:00-03:00"))'))
+        finally:
+            page.close()
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
