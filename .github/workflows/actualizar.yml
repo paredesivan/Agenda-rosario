@@ -31,7 +31,7 @@ permissions:
 
 concurrency:
   group: actualizar-agenda
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   actualizar:
@@ -72,8 +72,17 @@ jobs:
             reportes/
 
       - name: Guardar cambios
-        if: ${{ always() && steps.actualizar.outcome != 'skipped' }}
+        id: guardar
+        if: ${{ !cancelled() && (steps.actualizar.outcome == 'success' || steps.actualizar.outcome == 'failure') }}
         run: |
+          # Si hubo otra subida durante la extracción, no publicar datos de código viejo.
+          git fetch origin main
+          base=$(git rev-parse HEAD)
+          if [ "$base" != "$(git rev-parse origin/main)" ]; then
+            echo "Hay cambios más nuevos en main; se descarta esta actualización antigua."
+            echo "publicar=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           git config user.name "agenda-bot"
           git config user.email "actions@users.noreply.github.com"
           # Incluye cache_cm25.json, cache_refi_folklore.json y las demás cachés existentes.
@@ -82,10 +91,22 @@ jobs:
           done
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar agenda"
-            git push origin HEAD:main
+            if ! git push origin HEAD:main; then
+              # Una subida puede llegar entre la comprobación y el push.
+              git fetch origin main
+              if [ "$base" != "$(git rev-parse origin/main)" ]; then
+                echo "main cambió al guardar; se descartan los resultados antiguos sin sobrescribir archivos."
+                echo "publicar=false" >> "$GITHUB_OUTPUT"
+                exit 0
+              fi
+              echo "Falló el guardado por una causa distinta a cambios nuevos en main."
+              exit 1
+            fi
           fi
+          echo "publicar=true" >> "$GITHUB_OUTPUT"
 
       - name: Publicar actualización en GitHub Pages
+        if: ${{ success() && steps.guardar.outputs.publicar == 'true' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
