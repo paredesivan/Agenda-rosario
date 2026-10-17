@@ -514,8 +514,12 @@ function renderEvent(item) {
   actions.className = "actions";
 
   // El mapa ocupa el lugar que tenía “Ver información”.
-  const maps =
-    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.direccion)}`;
+  const address = String(item.direccion || "").trim();
+  const venue = String(item.lugar || "").trim();
+  const destination = address || (venue ? `${venue}, Rosario, Santa Fe, Argentina` : "");
+  const maps = destination
+    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(destination)}`
+    : "";
   addLink(actions, "📍 Mapa", maps, "map");
 
   // Enlace directo a Ticketek si está disponible.

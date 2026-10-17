@@ -1,31 +1,4 @@
-AGENDA ROSARIO — CORRECCIÓN DE PAUSAS Y AUDITORÍA (14-10-2026)
-
-Subí o reemplazá estos CUATRO archivos en GitHub, respetando las carpetas:
-
-  corregir_pausas.py                        -> raíz del repositorio [nuevo]
-  auditar_fuentes.py                        -> raíz [REEMPLAZAR archivo anterior]
-  tests/test_auditoria_fuentes.py           -> carpeta tests/ [REEMPLAZAR]
-  .github/workflows/corregir_pausas.yml     -> carpeta .github/workflows/ [nuevo]
-
-Después, en GitHub:
-  Actions -> "Aplicar pausas seguras (una vez)" -> Run workflow
-
-La tarea automatizada:
-  - verifica que los archivos originales no hayan cambiado inesperadamente;
-  - aplica pausas de 60 s a bibliotecavigil.org.ar y 10 s a
-    www.metropolitano.ar y www.teatrosatir.ar;
-  - comprueba sintaxis y tests;
-  - guarda los cambios de actualizar_eventos.py y fuentes_nuevas.py mediante
-    un commit en la rama desde la que se ejecutó.
-
-Si aparece verde: revisar en Github que el commit se haya creado.
-Si aparece rojo: NO asumir que los scripts cambiaron; compartir captura/log.
-
-La auditoría semanal conserva el workflow existente y ahora:
-  - incluye las 13 páginas /salas/... de ATIR generadas por el recolector;
-  - distingue las referencias a redes sociales (no descargadas directamente);
-  - sigue solo redirecciones HTTPS seguras al mismo dominio base;
-  - compara Crawl-delay con la pausa configurada en el recolector.
-
-ADVERTENCIA: Son mejoras técnicas, no una garantía legal de reutilización
-ni una verificación exhaustiva de todas las URLs dinámicas o de los términos de uso.
+Reemplazar agenda.js en la raíz y e2e/test_agenda_browser.py en e2e/.
+El mapa usa la dirección; si falta, busca el lugar en Rosario, Santa Fe, Argentina.
+Se conservan los tests previos y se agrega una prueba de mapas ACR. Los 4 tests E2E pasaron.
+No hace falta ejecutar la actualización de eventos.
