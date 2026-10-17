@@ -1,0 +1,63 @@
+AMPLIACIÓN DE FUENTES — 17/10/2026
+
+Subir los siguientes archivos a estas rutas exactas del repositorio:
+
+RAÍZ:
+  fuentes_ampliadas.py               NUEVO
+  fuentes_ampliadas.json             NUEVO
+  actualizacion_segura.py            REEMPLAZAR
+  AUDITORIA_FUENTES_AMPLIADAS.md      NUEVO
+
+CARPETA tests:
+  test_fuentes_ampliadas.py          NUEVO (no reemplaza tests anteriores)
+
+CARPETA .github/workflows:
+  actualizar.yml                    REEMPLAZAR
+
+Este paquete NO cambia agenda.js, index.html ni eventos.json.
+No se modificó el repositorio remoto. Subí todos los archivos antes de ejecutar
+manualmente «Actualizar agenda», si querés iniciar la primera consulta sin esperar.
+Después continúa automáticamente cada dos horas con el cron existente.
+Las subidas de estos archivos y del nuevo test también disparan la actualización.
+
+QUÉ QUEDA OPERATIVO:
+- Santa Fe Cultura: listado Rosario; hasta 4 fichas por ejecución, rotando las
+  menos recientemente consultadas. Fichas con caché de 24 h. Publica sólo
+  eventos con fecha completa, hora, sede y localidad Rosario verificables.
+- Planaxia: 1 listado por día. Sólo enlaces candidatos a contrastar con fuentes
+  oficiales; no convierte artículos periodísticos en eventos.
+- FAER: descubrimiento semanal de páginas de programación; sólo UTC 03–12
+  (00–09 de Argentina), respetando separación mínima de 60 segundos. No
+  importa automáticamente la programación pasada del festival.
+- TuTicket: verificación de acceso. En la prueba real se detuvo porque su
+  robots devuelve HTML. NO importa eventos de TuTicket en ese estado.
+
+REGISTRADAS, SIN CONSULTA AUTOMÁTICA:
+- Alpogo: 403 observado y revisión de condiciones pendiente.
+- Turbo Entrada: catálogo JavaScript, robots no interpretable y condiciones.
+- TicketWay: catálogo dinámico, robots no interpretable y condiciones.
+No activar estas tres cambiando sólo un booleano: faltan auditoría/adaptadores.
+
+DIAGNÓSTICO GENERADO AUTOMÁTICAMENTE:
+- revision_fuentes_ampliadas.json: estados, errores y fichas diferidas.
+- candidatos_fuentes_ampliadas.json: enlaces de agendas para revisión.
+- fuentes_revisadas.json: resumen junto a las fuentes anteriores.
+- cache_fuentes_ampliadas.json: datos factuales y controles de consultas.
+Los workflows existentes guardan estos nombres por sus prefijos. No hace falta
+crear los cuatro archivos vacíos ni subir los datos de la prueba local.
+
+CONSERVACIÓN Y DUPLICADOS:
+Un fallo conserva datos anteriores. Una ficha consultada con éxito reemplaza
+sólo sus propios eventos; si declara cancelación, no se restaura automáticamente.
+Las fuentes primarias existentes conservan su ficha y precio ante coincidencias.
+Una ficha provincial primaria puede sustituir un respaldo de ACR coincidente.
+Sin precio oficial interpretado, se muestra consultar precio en la fuente.
+No se copian imágenes ni sinopsis. No hay títulos o fechas de eventos fijos.
+
+VALIDACIÓN:
+120 pruebas Python aprobadas: las 98 existentes y 22 nuevas.
+Prueba real: listado Santa Fe Cultura 8 fichas, 1 ficha interpretada;
+Planaxia 10 enlaces candidatos; TuTicket detenido por robots no interpretable.
+FAER: validación de ventana y demora por pruebas; sin consulta del catálogo
+fuera del horario publicado. E2E del navegador no ejecutado localmente: la
+interfaz no se modifica y el workflow de pruebas existente lo ejecutará.

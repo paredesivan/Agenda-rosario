@@ -12,7 +12,7 @@ from control_http import atomico
 
 ROOT = Path(__file__).resolve().parent
 ETAPAS = [('actualizar_eventos.py', 35*60), ('fuentes_nuevas.py', 45*60),
-          ('fuentes_refi_folklore.py', 12*60), ('precios_lavarden.py', 15*60),
+          ('fuentes_refi_folklore.py', 12*60), ('fuentes_ampliadas.py', 8*60), ('precios_lavarden.py', 15*60),
           ('precios_ticketek.py', 5*60)]
 
 
@@ -47,7 +47,13 @@ def proteger(antes, despues, hoy):
     def clave(e):
         return tuple(e.get(k, '') for k in ('fecha', 'hora', 'nombre', 'lugar', 'origen'))
     vistos = {clave(e) for e in nuevos}
+    revision = despues.get('revision_ampliadas', {})
+    urls_revisadas = set()
+    if revision.get('id') and revision.get('id') != antes.get('revision_ampliadas', {}).get('id'):
+        urls_revisadas = {tuple(k) for k in revision.get('fichas_revisadas', [])}
     for e in futuros:
+        if (e.get('origen'), e.get('evento_url')) in urls_revisadas:
+            continue
         if e.get('origen', 'Manual') in sospechosas and clave(e) not in vistos:
             nuevos.append({**e, 'revision_pendiente': True})
             vistos.add(clave(e))

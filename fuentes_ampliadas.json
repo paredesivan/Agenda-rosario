@@ -1,0 +1,78 @@
+{
+  "revision": "2026-10-17",
+  "dias_futuros": 180,
+  "max_fichas_por_fuente": 4,
+  "fuentes": [
+    {
+      "nombre": "Santa Fe Cultura",
+      "listado": "https://www.santafecultura.gob.ar/agenda/?localidad=rosario",
+      "adaptador": "santafe",
+      "tipo": "oficial",
+      "habilitada": true,
+      "patron_ficha": "^/evento/[^/]+/?$",
+      "selector": "a.card-evento[href]",
+      "cache_horas": 2,
+      "motivo": "Consulta factual acotada; robots público revisado 17/10/2026. Sin licencia general de textos o imágenes."
+    },
+    {
+      "nombre": "TuTicket",
+      "listado": "https://www.tuticket.com.ar/",
+      "adaptador": "schema",
+      "tipo": "ticketera",
+      "habilitada": true,
+      "patron_ficha": "^/[^/]+",
+      "motivo": "Reintenta únicamente verificar robots. Si devuelve HTML, se detiene antes de consultar la cartelera. Adaptación HTML pendiente."
+    },
+    {
+      "nombre": "Planaxia",
+      "listado": "https://planaxia.com/categoria/agenda/",
+      "adaptador": "enlaces",
+      "tipo": "descubrimiento",
+      "habilitada": true,
+      "patron_ficha": "^/agenda/[^/]+/?$",
+      "cache_horas": 24,
+      "motivo": "Sólo enlaces candidatos; robots revisado 17/10/2026; sin copia de artículos."
+    },
+    {
+      "nombre": "Fundación FAER",
+      "listado": "https://faer.ar/",
+      "adaptador": "enlaces",
+      "tipo": "descubrimiento",
+      "habilitada": true,
+      "patron_ficha": "^/(?:programacion|talleres|puente|festival)[^?]*",
+      "cache_horas": 168,
+      "motivo": "Descubrimiento semanal; consulta sólo UTC 03–12, separación 60 segundos y dos documentos semanales (robots y portada); nunca publica grilla pasada como eventos.",
+      "ventana_utc": [
+        3,
+        12
+      ]
+    },
+    {
+      "nombre": "Alpogo",
+      "listado": "https://alpogo.com/",
+      "adaptador": "schema",
+      "tipo": "ticketera",
+      "habilitada": false,
+      "patron_ficha": "^/evento/",
+      "motivo": "Acceso observado 403; no eludir. Requiere revisión de acceso y condiciones."
+    },
+    {
+      "nombre": "Turbo Entrada",
+      "listado": "https://turboentrada.com/",
+      "adaptador": "schema",
+      "tipo": "ticketera",
+      "habilitada": false,
+      "patron_ficha": "^/landing/",
+      "motivo": "Catálogo requiere JavaScript; robots devuelve HTML; auditoría contractual y adaptador pendientes."
+    },
+    {
+      "nombre": "TicketWay",
+      "listado": "https://www.ticketway.com.ar/",
+      "adaptador": "schema",
+      "tipo": "ticketera",
+      "habilitada": false,
+      "patron_ficha": "^/",
+      "motivo": "Robots devuelve HTML; catálogo dinámico y condiciones pendientes de revisión."
+    }
+  ]
+}
