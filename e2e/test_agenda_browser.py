@@ -156,6 +156,34 @@ class TestAgendaEnNavegador(unittest.TestCase):
         finally:
             page.close()
 
+    def test_mapa_acr_sin_direccion_y_regresion_con_direccion(self):
+        from urllib.parse import urlparse, parse_qs
+        for direccion in ("", "   ", None, "Sarmiento 100, Rosario"):
+            with self.subTest(direccion=direccion):
+                evento = {**EVENTOS_PRUEBA['eventos'][0],
+                          'origen': 'Agenda Cultural Rosario',
+                          'lugar': 'Centro Cultural de prueba',
+                          'direccion': direccion, 'precio': None,
+                          'precio_etiqueta': 'Consultar condiciones en ACR'}
+                page = self.browser.new_page()
+                try:
+                    page.route('**/eventos.json*', lambda route: route.fulfill(
+                        content_type='application/json', body=json.dumps({'eventos': [evento]})))
+                    page.goto(self.url)
+                    link = page.locator('.actions a.map')
+                    link.wait_for()
+                    href = link.get_attribute('href')
+                    expected = direccion.strip() if direccion and direccion.strip() else 'Centro Cultural de prueba, Rosario, Santa Fe, Argentina'
+                    self.assertEqual(parse_qs(urlparse(href).query)['query'], [expected])
+                    page.context.route('https://www.google.com/maps/**', lambda route: route.fulfill(body='Mapa de prueba'))
+                    with page.expect_popup() as popup:
+                        link.click()
+                    popup.value.wait_for_load_state()
+                    self.assertEqual(popup.value.url, href)
+                    popup.value.close()
+                finally:
+                    page.close()
+
     def test_acr_enlace_propio_y_vencimiento_sin_refrescar_datos(self):
         page = self.browser.new_page()
         evento = {**EVENTOS_PRUEBA['eventos'][0], 'origen':'Agenda Cultural Rosario',
