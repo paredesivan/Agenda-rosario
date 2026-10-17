@@ -1,0 +1,53 @@
+INTEGRACIÓN DE INSTITUCIONES — SALIDAS ROSARIO
+Base: 53082fda39d7091edbd250e83d2a587b251cb97e (17/10/2026).
+
+SUBIR RESPETANDO ESTAS RUTAS:
+- instituciones_eventos.py (nuevo, en la raíz)
+- fuentes_ampliadas.py (reemplazar en la raíz)
+- fuentes_ampliadas.json (reemplazar en la raíz)
+- tests/test_instituciones_eventos.py (nuevo, dentro de tests)
+- .github/workflows/actualizar.yml (reemplazar en esa ruta)
+- AUDITORIA_INSTITUCIONES.md (nuevo, documentación)
+
+Cuando termines de subir todos los archivos, la actualización automática ya
+existente ejecutará los tests y consultará estas fuentes. No necesitás instalar
+Python ni ejecutar nada en tu teléfono. Si subís por separado, una ejecución
+intermedia puede fallar hasta que estén los archivos completos; la última
+subida vuelve a ejecutar el proceso. Las pruebas de navegador ya configuradas
+se conservan; no se modificaron ni eliminaron pruebas anteriores.
+
+QUÉ SE AGREGA:
+Grupo Gamma / Hospital Privado de Rosario: extracción automática del listado
+público de charlas a la comunidad y sus fichas. Requiere ciudad, fecha completa,
+hora y modalidad presencial. Conserva inscripción y cupos en una descripción
+propia, y precio cero solamente cuando la ficha dice sin cargo.
+UNR y Humanidades y Artes: conectores de fichas abiertas. La UNR ya se consultaba
+para el ECU; se agrega una vía conservadora para actividades institucionales,
+con deduplicación existente. El adaptador necesita fecha propia única,
+horario explícito, sede/dirección en Rosario y acceso general confirmado.
+Politécnico: descubrimiento automático de enlaces de novedades, sin convertir
+avisos internos en salidas.
+EventosIPS, Superior de Comercio y Hospital Italiano Rosario: registrados
+pendientes y desactivados con el motivo concreto en la configuración.
+
+No se incluye eventos.json ni cachés anteriores en este ZIP: la actualización
+los genera leyendo las fuentes y conserva el trabajo que ya tenés cargado.
+No contiene nombres, fechas ni slugs de charlas fijos en el extractor.
+No modifica el repositorio remoto ni publica el sitio desde este entorno.
+
+VERIFICACIÓN:
+133 pruebas unitarias y de integración correctas, 13 de ellas nuevas.
+Sintaxis Python correcta. Sin cambios de interfaz, no se ejecutaron E2E locales.
+Comprobación HTTP real del listado Gamma: 6 fichas, 4 consultadas, 2 actividades
+futuras extraídas y 2 fichas diferidas por límite.
+UNR: 4 fichas iniciales pendientes y 3 diferidas. Humanidades: 4 pendientes y
+5 diferidas. Politécnico: 9 enlaces candidatos. Las fichas diferidas se rotan
+en próximas ejecuciones dentro de la cuota diaria; no se promete cobertura total.
+La ficha real «El jazz como danza social» también se probó individualmente:
+30/10/2026, 20:00, ECU, San Martín 750; lectura correcta.
+
+CHARLAS EXTRAÍDAS EN VIVO (referencia, no carga manual):
+2026-10-28 18:30 — Llamado a la acción: Día Mundial del ACV — 2do. Piso Auditorio HPR, Pte. Roca 2440. Requiere inscripción en la fuente oficial. Cupos limitados; consultar disponibilidad.
+2026-11-05 18:00 — Nutrición, Salud y Prevención — 2do. Piso Auditorio HPR, Pte. Roca 2440. Requiere inscripción en la fuente oficial. Cupos limitados; consultar disponibilidad.
+
+Límites y auditoría: ver AUDITORIA_INSTITUCIONES.md.

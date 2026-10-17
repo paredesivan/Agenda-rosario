@@ -73,6 +73,81 @@
       "habilitada": false,
       "patron_ficha": "^/",
       "motivo": "Robots devuelve HTML; catálogo dinámico y condiciones pendientes de revisión."
+    },
+    {
+      "nombre": "Grupo Gamma — Charlas a la comunidad",
+      "listado": "https://grupogamma.com/pacientes/charlas-a-la-comunidad",
+      "adaptador": "gamma_comunidad",
+      "tipo": "oficial",
+      "habilitada": true,
+      "patron_ficha": "^/pacientes/charlas-a-la-comunidad/[^/]+/?$",
+      "selector": "main a[href]",
+      "cache_horas": 24,
+      "max_fichas_dia": 4,
+      "motivo": "Auditoría 17/10/2026: consulta factual acotada; sin licencia general de textos o imágenes. Acceso público y sede se validan por ficha. Ver AUDITORIA_INSTITUCIONES.md."
+    },
+    {
+      "nombre": "UNR — Actividades abiertas",
+      "listado": "https://unr.edu.ar/agenda/",
+      "adaptador": "institucion_mec",
+      "tipo": "oficial",
+      "habilitada": true,
+      "patron_ficha": "^/agenda/[^/]+/?$",
+      "selector": ".mec-event-title a[href]",
+      "cache_horas": 24,
+      "max_fichas_dia": 4,
+      "motivo": "Auditoría 17/10/2026: consulta factual acotada; sin licencia general de textos o imágenes. Acceso público y sede se validan por ficha. Ver AUDITORIA_INSTITUCIONES.md."
+    },
+    {
+      "nombre": "Humanidades y Artes UNR — Agenda",
+      "listado": "https://fhumyar.unr.edu.ar/agenda/",
+      "adaptador": "institucion_mec",
+      "tipo": "oficial",
+      "habilitada": true,
+      "patron_ficha": "^/agenda/[^/]+/?$",
+      "selector": "a[href]",
+      "cache_horas": 24,
+      "max_fichas_dia": 4,
+      "motivo": "Auditoría 17/10/2026: consulta factual acotada; sin licencia general de textos o imágenes. Acceso público y sede se validan por ficha. Ver AUDITORIA_INSTITUCIONES.md."
+    },
+    {
+      "nombre": "Instituto Politécnico — Novedades",
+      "listado": "https://www.ips.edu.ar/category/noticias/",
+      "adaptador": "enlaces",
+      "tipo": "descubrimiento",
+      "habilitada": true,
+      "patron_ficha": "^/[^/]+\\.html$",
+      "selector": "article a[href]",
+      "cache_horas": 24,
+      "max_fichas_dia": 4,
+      "motivo": "Auditoría 17/10/2026: consulta factual acotada; sin licencia general de textos o imágenes. Acceso público y sede se validan por ficha. Ver AUDITORIA_INSTITUCIONES.md."
+    },
+    {
+      "nombre": "EventosIPS",
+      "listado": "https://eventos.ips.edu.ar/",
+      "adaptador": "enlaces",
+      "tipo": "descubrimiento",
+      "habilitada": false,
+      "patron_ficha": "^/",
+      "motivo": "Robots permite /; HTML presenta carga pendiente sin catálogo. No usar APIs no auditadas. Adaptador dinámico pendiente."
+    },
+    {
+      "nombre": "Escuela Superior de Comercio",
+      "listado": "https://esupcom.unr.edu.ar/institucional_novedades.php",
+      "adaptador": "enlaces",
+      "tipo": "descubrimiento",
+      "habilitada": false,
+      "patron_ficha": "^/",
+      "motivo": "Robots sin exclusiones; novedades mezcladas en una sola página sin fichas de eventos verificables. Adaptador pendiente."
+    },
+    {
+      "nombre": "Hospital Italiano Rosario",
+      "listado": "https://www.hospitalitalianorosario.com.ar/",
+      "adaptador": "enlaces",
+      "tipo": "descubrimiento",
+      "habilitada": false,
+      "patron_ficha": "^/",
+      "motivo": "No se identificó agenda pública verificable de actividades para la comunidad. No confundir con Hospital Italiano de Buenos Aires."
     }
   ]
 }

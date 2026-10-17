@@ -70,6 +70,10 @@ def ubicacion(sopa, evento, fuente):
 
 
 def ficha(contenido, url, fuente):
+    if fuente['adaptador'] in ('gamma_comunidad', 'institucion_mec'):
+        from instituciones_eventos import ficha_gamma, ficha_mec
+        parser = ficha_gamma if fuente['adaptador'] == 'gamma_comunidad' else ficha_mec
+        return parser(contenido, url, fuente)
     sopa = BeautifulSoup(contenido, 'html.parser')
     propios = []
     for script in sopa.select('script[type="application/ld+json"]'):
@@ -147,26 +151,45 @@ def revisar(config, acceso, hoy):
             paginas = acceso.cache.get('paginas', {})
             filas.sort(key=lambda e: paginas.get(e['url'], {}).get('consultado', 0))
             pendientes, cantidad, errores = 0, 0, []
+            diferidas_cuota = 0
             for fila in filas[:int(config.get('max_fichas_por_fuente', 4))]:
                 url = fila['url']
                 try:
+                    if fuente.get('max_fichas_dia'):
+                        clave_dia = urlsplit(url).netloc + ':' + hoy.isoformat()
+                        cuotas = acceso.cache.setdefault('fichas_instituciones_dia', {})
+                        # Evita crecimiento indefinido del contador persistente.
+                        for k in list(cuotas):
+                            if k.rsplit(':', 1)[-1] < hoy.isoformat():
+                                del cuotas[k]
+                        previo = paginas.get(url, {})
+                        vigente = acceso.reloj() - previo.get('consultado', 0) < 86400 if hasattr(acceso, 'reloj') else False
+                        if not vigente:
+                            usadas = cuotas.setdefault(clave_dia, [])
+                            if url in usadas or len(usadas) >= int(fuente['max_fichas_dia']):
+                                diferidas_cuota += 1
+                                continue
+                            usadas.append(url)
                     eventos = acceso.leer_datos(url, lambda h, u: ficha(h, u, fuente), horas=24)
                     revisadas.add((nombre, url))
                     for e in eventos:
                         if e.get('cancelado') or not hoy.isoformat() <= e['fecha'] <= hasta.isoformat():
                             continue
                         nuevos.append({**e, 'evento_url': url, 'origen': nombre,
-                                       'descripcion': '', 'precio': None,
-                                       'precio_etiqueta': 'Consultar precio en la fuente',
+                                       'descripcion': e.get('descripcion', ''), 'precio': e.get('precio'),
+                                       'precio_etiqueta': e.get('precio_etiqueta', 'Consultar precio en la fuente'),
                                        'fuente_verificada': True})
                         cantidad += 1
                 except (requests.RequestException, ValueError, TypeError, KeyError) as error:
                     pendientes += 1
                     errores.append({'url': url, 'motivo': str(error)})
+                    if fuente.get('max_fichas_dia'):
+                        candidatos.append({'fuente': nombre, 'url': url, 'estado': str(error)})
             estados[nombre] = {'estado': 'parcial' if pendientes else 'revisada',
                               'publicadas': cantidad, 'fichas_en_listado': len(filas),
                               'fichas_pendientes': pendientes, 'errores': errores,
-                              'diferidas_por_limite': max(0, len(filas)-int(config.get('max_fichas_por_fuente', 4)))}
+                              'diferidas_por_limite': max(0, len(filas)-int(config.get('max_fichas_por_fuente', 4))),
+                              'diferidas_por_cuota_diaria': diferidas_cuota}
         except (requests.RequestException, ValueError, TypeError, KeyError) as error:
             estados[nombre] = {'estado': 'no accesible', 'motivo': str(error), 'publicadas': 0}
     return nuevos, candidatos, estados, revisadas
