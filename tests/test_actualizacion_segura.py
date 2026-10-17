@@ -91,3 +91,18 @@ class FallosReales(unittest.TestCase):
             self.assertEqual(resultado['estado'], 'fallida')
             self.assertEqual(archivo.read_bytes(), original)
             self.assertEqual(json.loads((root / 'estado_http.json').read_text())['fuente.test']['pausado_hasta'], 9999999999)
+
+class SnapshotACR(unittest.TestCase):
+    def test_no_resucita_suspendidos_tras_lectura_exitosa(self):
+        anterior={'eventos':[evento(origen='Agenda Cultural Rosario')], 'revision_acr_id':'vieja'}
+        despues={'eventos':[], 'revision_acr_id':'nueva'}
+        salida,avisos=proteger(anterior,despues,HOY)
+        self.assertEqual(salida['eventos'],[])
+        self.assertEqual(avisos,[])
+
+    def test_marcador_heredado_no_permite_borrar_si_falla(self):
+        anterior={'eventos':[evento(origen='Agenda Cultural Rosario')], 'revision_acr_id':'igual'}
+        despues={'eventos':[], 'revision_acr_id':'igual'}
+        salida,avisos=proteger(anterior,despues,HOY)
+        self.assertEqual(len(salida['eventos']),1)
+        self.assertEqual(len(avisos),1)
