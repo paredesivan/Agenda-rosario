@@ -209,6 +209,7 @@ def funciones_prensa(html, fuente, url, hoy):
         ("Centro Cultural Parque de España", "Sarmiento y el río"),
         ("Teatro Astengo", "Mitre 754"),
         ("Teatro Broadway", "San Lorenzo 1223"),
+        ("Casa Brava", "Pichincha 120"),
         ("Metropolitano", "Junín 501"),
         ("Plataforma Lavardén", "Sarmiento y Mendoza"),
         ("Teatro Municipal La Comedia", "Mitre 958"),
@@ -1607,6 +1608,30 @@ def actualizar_fuentes():
             estado[fuente] = f"revisada: {leidas} notas, {len(encontrados)} funciones, {fallidas} errores"
         except (requests.RequestException, ValueError, TypeError) as error:
             estado[fuente] = f"no accesible: {type(error).__name__}"
+    # Publicación de Jaguar Haüs con horario a confirmar
+    try:
+        from fuente_jaguar import ejecutar as consultar_jaguar, CANDIDATOS as archivo_jaguar
+        reporte_jaguar = consultar_jaguar(hoy=hoy)
+        pendientes_jaguar = []
+        if archivo_jaguar.exists():
+            pendientes_jaguar = json.loads(archivo_jaguar.read_text(encoding='utf-8')).get('candidatos', [])
+        for candidato in pendientes_jaguar:
+            if candidato.get('fecha', '') < hoy.isoformat():
+                continue
+            if not candidato.get('nombre') or not candidato.get('evento_url'):
+                continue
+            nuevos.append({
+                'fecha': candidato['fecha'], 'hora': 'Horario a confirmar',
+                'nombre': candidato['nombre'], 'lugar': 'Jaguar Haüs',
+                'direccion': 'Rodríguez 198 bis, Rosario, Santa Fe',
+                'descripcion': 'Evento anunciado por Jaguar Haüs; horario todavía no publicado.',
+                'evento_url': candidato['evento_url'], 'precio': None,
+                'precio_etiqueta': 'Consultar precio en el enlace oficial',
+                'origen': 'Jaguar Haüs', 'horario_pendiente': True,
+            })
+        estado['Jaguar Haüs'] = reporte_jaguar['estado'] + ': ' + str(len(pendientes_jaguar)) + ' anuncios'
+    except (OSError, ValueError, requests.RequestException) as error:
+        estado['Jaguar Haüs'] = 'pendiente: ' + type(error).__name__
     nombre, url = CARTELERA
     try:
         url = "https://www.rosarioencartel.com.ar/"
@@ -1615,6 +1640,9 @@ def actualizar_fuentes():
         estado[nombre] = f"revisada: {len(nuevos_cartel)} funciones verificadas; {len(fallos)} fichas pendientes"
     except (requests.RequestException, ValueError, TypeError) as error:
         estado[nombre] = f"no accesible: {type(error).__name__}"
+    # TICKETS_BRAVOS_INTEGRACION_V1
+    from fuente_ticketsbravos import revisar_ticketsbravos
+    nuevos.extend(revisar_ticketsbravos(hoy, estado))
     from fuentes_adicionales import revisar
     nuevos.extend(revisar(hoy, datos.get("eventos", []) + nuevos, estado))
     anteriores_acr = datos.get("eventos", [])

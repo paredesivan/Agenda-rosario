@@ -177,6 +177,7 @@ function deduplicatedEvents(items) {
 
 function acrAvailable(item, now = Date.now()) {
   if (item.origen !== "Agenda Cultural Rosario") return true;
+  if (horaPendiente(item)) return item.fecha >= todayKey();
   const ended = item.fecha_fin && item.hora_fin;
   const cutoff = Date.parse(`${ended ? item.fecha_fin : item.fecha}T${ended ? item.hora_fin : item.hora}:00-03:00`);
   return Number.isFinite(cutoff) && (ended ? cutoff > now : cutoff >= now);
@@ -451,8 +452,13 @@ function etiquetaPrecio(item) {
   return estadoPrecio(item).etiqueta;
 }
 
+function horaPendiente(item) {
+  return !/^\d{1,2}:\d{2}/.test(String(item.hora || "").trim());
+}
+
 function horarioEvento(item) {
   const inicio = String(item.hora || "").trim();
+  if (horaPendiente(item)) return "Horario a confirmar";
   const finDirecto = item.hora_fin || item.hora_hasta || item.hasta || item.fin || item.endTime;
   if (finDirecto) {
     const fin = String(finDirecto).match(/(?:T|\b)(\d{1,2}):([0-5]\d)/);
@@ -551,7 +557,7 @@ function render() {
 
   const list = futureEvents().filter(e => e.fecha === selectedDate)
     .filter(matchesFilter)
-    .sort((a, b) => a.hora.localeCompare(b.hora));
+    .sort((a, b) => Number(horaPendiente(b)) - Number(horaPendiente(a)) || a.hora.localeCompare(b.hora));
 
   $("day-count").textContent = `${list.length} ${list.length === 1 ? "actividad" : "actividades"}${activeFilters.length || searchQuery ? " con estos filtros" : ""}`;
 
