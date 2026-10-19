@@ -571,78 +571,24 @@ def revisar(hoy, eventos, estado, acceso=None):
                     nuevos.append(e)
                 estado[nombre] = f'revisada: {con_respaldo} funciones con respaldo prioritario conservado; {sum(e.get("origen") == nombre for e in nuevos)} funciones con enlace a ACR'
                 continue
-            if nombre == 'Rosario Times':
-                refs = acceso.leer(url, portada_times)
-                encontrados, enlaces_oficiales = [], []
-                notas_pendientes = 0
-                for ref in refs[:4]:
-                    try:
-                        nota = acceso.leer(ref, nota_times, 'nota')
-                    except (requests.RequestException, ValueError) as error:
-                        notas_pendientes += 1
-                        pendientes.append({'fuente': nombre, 'referencia': ref,
-                                           'estado': 'nota pendiente', 'motivo': str(error)[:180]})
-                        continue
-                    encontrados.extend(nota['hechos'])
-                    pendientes.append({'fuente': nombre, 'referencia': ref,
-                                       'enlaces': nota['enlaces'], 'estado': 'comprobar organizador'})
-                    enlaces_oficiales.extend(u for u in nota['enlaces'] if host(u) in aprobados)
-                # Sólo dominios ya presentes en el proyecto. Los nuevos esperan auditoría.
-                vinculados = 0
-                for oficial in list(dict.fromkeys(enlaces_oficiales))[:4]:
-                    registros = [e for e in oficiales if host(e.get('evento_url', '')) == host(oficial)
-                                 and urlsplit(e.get('evento_url', '')).path.rstrip('/') == urlsplit(oficial).path.rstrip('/')]
-                    if registros:
-                        for e in registros:
-                            fuentes = e.setdefault('descubrimiento_fuentes', [])
-                            if nombre not in fuentes:
-                                fuentes.append(nombre)
-                        vinculados += len(registros)
-                        continue
-                    try:
-                        hechos = acceso.leer(oficial, hechos_schema, 'nota')
-                        for h in hechos:
-                            if hoy.isoformat() <= h['fecha'] <= (hoy + timedelta(days=30)).isoformat() and h['direccion']:
-                                e = {k: v for k, v in h.items() if k != 'referencia'}
-                                e.update(evento_url=oficial, origen='Fuente oficial — Rosario Times',
-                                         descripcion='', precio=None, precio_etiqueta='Precio a confirmar',
-                                         fuente_verificada=True, descubrimiento_fuentes=[nombre])
-                                nuevos.append(e)
-                    except (requests.RequestException, ValueError):
-                        notas_pendientes += 1
-            else:
-                encontrados = acceso.leer(url, {'EntradaFan': listado_entradafan, 'SalePlan': listado_saleplan,
-                                                'Agenda Cultural Rosario': listado_acr}[nombre])
-                notas_pendientes = 0
-                vinculados = 0
-                if nombre == 'SalePlan':
-                    for candidato in encontrados[:4]:
-                        if candidato.get('fecha'):
-                            continue
-                        try:
-                            detalle = acceso.leer(candidato['referencia'], nota_times, 'nota')
-                            encontrados.extend(detalle['hechos'])
-                            candidato['enlaces'] = detalle['enlaces']
-                        except (requests.RequestException, ValueError):
-                            notas_pendientes += 1
-            coincidencias = vinculados
+            # El resolver aislado lee las fichas en rotación y corrobora los
+            # datos. Esta etapa sólo descubre; no consume siempre las primeras
+            # cuatro notas ni mezcla artículos con funciones publicables.
+            parser = {'Rosario Times': portada_times, 'EntradaFan': listado_entradafan,
+                      'SalePlan': listado_saleplan}[nombre]
+            encontrados = acceso.leer(url, parser)
             for h in encontrados:
-                if h.get('fecha') and not hoy.isoformat() <= h['fecha'] <= (hoy + timedelta(days=30)).isoformat():
-                    continue
-                oficial = corroborar(h, oficiales)
-                if oficial:
-                    # Nunca sustituye precio, horario ni disponibilidad oficial con reventa.
-                    fuentes = oficial.setdefault('descubrimiento_fuentes', [])
-                    if nombre not in fuentes:
-                        fuentes.append(nombre)
-                    coincidencias += 1
-                else:
-                    pendientes.append({**h, 'fuente': nombre, 'estado': 'pendiente de confirmación oficial'})
-            estado[nombre] = (f'revisada: {coincidencias} coincidencias con registros oficiales; '
-                              f'{sum(p["fuente"] == nombre for p in pendientes)} candidatos pendientes; '
-                              f'{notas_pendientes} consultas pendientes')
+                if isinstance(h, str):
+                    h = {'referencia': h}
+                pendientes.append({**h, 'fuente': nombre, 'estado': 'en cola de resolución automática'})
+            estado[nombre] = f'descubrimiento: {len(encontrados)} fichas para resolución automática'
         except (requests.RequestException, ValueError) as error:
             estado[nombre] = f'no accesible: {str(error)[:180]}; se conservan datos'
+            # No perder la cola anterior por un fallo transitorio del listado.
+            previo = ROOT / 'candidatos_fuentes_adicionales.json'
+            if previo.exists():
+                pendientes.extend(c for c in json.loads(previo.read_text(encoding='utf-8')).get('candidatos', [])
+                                  if c.get('fuente') == nombre)
     # Passline funciona como fuente primaria para sus propias fichas. Se añaden
     # los datos mínimos con enlace directo; el precio vigente se consulta allí.
     claves_eventos = {(e.get('fecha'), e.get('hora'), norm(e.get('nombre', '')),

@@ -12,7 +12,7 @@ from control_http import atomico
 
 ROOT = Path(__file__).resolve().parent
 ETAPAS = [('actualizar_eventos.py', 35*60), ('fuentes_nuevas.py', 45*60),
-          ('fuentes_refi_folklore.py', 12*60), ('fuentes_ampliadas.py', 8*60), ('precios_lavarden.py', 15*60),
+          ('fuentes_refi_folklore.py', 12*60), ('fuentes_ampliadas.py', 8*60), ('resolver_candidatos.py', 8*60), ('precios_lavarden.py', 15*60),
           ('precios_ticketek.py', 5*60)]
 
 
@@ -51,6 +51,9 @@ def proteger(antes, despues, hoy):
     urls_revisadas = set()
     if revision.get('id') and revision.get('id') != antes.get('revision_ampliadas', {}).get('id'):
         urls_revisadas = {tuple(k) for k in revision.get('fichas_revisadas', [])}
+    resolucion = despues.get('revision_resolucion', {})
+    if resolucion.get('id') and resolucion.get('id') != antes.get('revision_resolucion', {}).get('id'):
+        urls_revisadas.update(tuple(k) for k in resolucion.get('fichas_revisadas', []))
     for e in futuros:
         if (e.get('origen'), e.get('evento_url')) in urls_revisadas:
             continue

@@ -213,6 +213,11 @@ def actualizar(root=ROOT, acceso=None, hoy=None):
     acceso = acceso or ConsultaAmpliada(cache)
     datos = json.loads((root / 'eventos.json').read_text(encoding='utf-8'))
     nuevos, candidatos, estados, revisadas = revisar(config, acceso, hoy)
+    previos = root / 'candidatos_fuentes_ampliadas.json'
+    if previos.exists():
+        fallidas = {n for n, e in estados.items() if e['estado'] == 'no accesible'}
+        candidatos.extend(c for c in json.loads(previos.read_text(encoding='utf-8')).get('candidatos', [])
+                          if c.get('fuente') in fallidas)
     datos['eventos'] = fusionar(datos['eventos'], nuevos, revisadas, hoy)
     datos['revision_ampliadas'] = {'id': uuid.uuid4().hex,
                                   'fichas_revisadas': [list(k) for k in sorted(revisadas)]}
