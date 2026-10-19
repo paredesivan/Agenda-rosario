@@ -29,40 +29,49 @@ def validar(datos):
     return datos
 
 
+def _identidad_evento(e):
+    """Identificación estable ante cambios de hora, sin confundir funciones."""
+    fuente = e.get('origen', 'Manual')
+    titulo = ' '.join(e.get('nombre', '').casefold().split())
+    fecha = e.get('fecha', '')
+    url = (e.get('evento_url') or '').strip().rstrip('/')
+    # Incluimos fecha para evitar confundir distintas funciones
+    # que comparten una misma página de la sala.
+    if url:
+        return (fuente, url, fecha, titulo)
+    lugar = ' '.join(e.get('lugar', '').casefold().split())
+    return (fuente, '', fecha, titulo, lugar)
+
+
 def proteger(antes, despues, hoy):
+    """Retener cada evento futuro ausente salvo baja individual documentada."""
     validar(antes)
     validar(despues)
-    futuros = [e for e in antes['eventos'] if e['fecha'] >= hoy.isoformat()]
-    nuevos = despues['eventos']
-    conteo_a = Counter(e.get('origen', 'Manual') for e in futuros)
-    conteo_b = Counter(e.get('origen', 'Manual') for e in nuevos if e['fecha'] >= hoy.isoformat())
-    sospechosas = {f for f, n in conteo_a.items()
-                   if conteo_b[f] == 0 or (n >= 5 and conteo_b[f] < n * .5)}
-    # Una lectura válida de ACR reemplaza su snapshot, incluso si queda vacío.
-    # No restaurar publicaciones que ACR quitó o suspendió. El identificador
-    # debe cambiar en esta etapa; uno heredado no autoriza futuras pérdidas.
-    if despues.get('revision_acr_id') and despues.get('revision_acr_id') != antes.get('revision_acr_id'):
-        sospechosas.discard('Agenda Cultural Rosario')
-    avisos = []
-    def clave(e):
-        return tuple(e.get(k, '') for k in ('fecha', 'hora', 'nombre', 'lugar', 'origen'))
-    vistos = {clave(e) for e in nuevos}
-    revision = despues.get('revision_ampliadas', {})
-    urls_revisadas = set()
-    if revision.get('id') and revision.get('id') != antes.get('revision_ampliadas', {}).get('id'):
-        urls_revisadas = {tuple(k) for k in revision.get('fichas_revisadas', [])}
-    resolucion = despues.get('revision_resolucion', {})
-    if resolucion.get('id') and resolucion.get('id') != antes.get('revision_resolucion', {}).get('id'):
-        urls_revisadas.update(tuple(k) for k in resolucion.get('fichas_revisadas', []))
-    for e in futuros:
-        if (e.get('origen'), e.get('evento_url')) in urls_revisadas:
+    actuales = despues['eventos']
+    vistos = {_identidad_evento(e) for e in actuales}
+    # No basta un HTTP 200, una ficha revisada, un listado vacío ni
+    # una revisión ACR para autorizar el borrado.
+    bajas = set()
+    for baja in despues.get('bajas_confirmadas', []):
+        if not isinstance(baja, dict):
             continue
-        if e.get('origen', 'Manual') in sospechosas and clave(e) not in vistos:
-            nuevos.append({**e, 'revision_pendiente': True})
-            vistos.add(clave(e))
-    for fuente in sorted(sospechosas):
-        avisos.append({'fuente': fuente, 'antes': conteo_a[fuente], 'obtenidos': conteo_b[fuente],
-                       'motivo': 'Caída sospechosa: conservados eventos futuros anteriores'})
+        if (baja.get('motivo') in ('cancelado', 'suspendido', 'retirado')
+                and baja.get('evidencia_url') and baja.get('fecha')
+                and baja.get('nombre') and baja.get('origen')):
+            bajas.add(_identidad_evento(baja))
+    conservados = Counter()
+    for anterior in antes['eventos']:
+        if anterior['fecha'] < hoy.isoformat():
+            continue
+        identidad = _identidad_evento(anterior)
+        if identidad in vistos or identidad in bajas:
+            continue
+        actuales.append({**anterior, 'revision_pendiente': True})
+        vistos.add(identidad)
+        conservados[anterior.get('origen', 'Manual')] += 1
+    avisos = [{'fuente': fuente, 'conservados': cantidad,
+               'motivo': 'Fichas futuras no recuperadas: conservadas pendientes de verificación'}
+              for fuente, cantidad in sorted(conservados.items())]
     if avisos:
         despues['estado'] = 'parcial'
     return despues, avisos

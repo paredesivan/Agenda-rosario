@@ -185,7 +185,7 @@ class ResolverTests(unittest.TestCase):
         self.assertIn('resolver_candidatos.py', [e[0] for e in ETAPAS])
         e = {'nombre': 'Evento', 'lugar': 'Sala', 'fecha': '2026-11-20', 'hora': '22:00', 'origen': IPS, 'evento_url': BASE + '/a'}
         despues = {'eventos': [], 'revision_resolucion': {'id': 'nuevo', 'fichas_revisadas': [[IPS, e['evento_url']]]}}
-        self.assertFalse(proteger({'eventos': [e]}, despues, HOY)[0]['eventos'])
+        self.assertTrue(proteger({'eventos': [e]}, despues, HOY)[0]['eventos'][0]['revision_pendiente'])
 
 
     def test_cancelacion_oficial_se_reconsulta_y_retira_sin_restaurar(self):
@@ -202,7 +202,7 @@ class ResolverTests(unittest.TestCase):
             despues = json.loads((p / 'eventos.json').read_text())
             self.assertIn(oficial, b.calls)
             self.assertFalse(despues['eventos'])
-            self.assertFalse(proteger(antes, despues, HOY)[0]['eventos'])
+            self.assertTrue(proteger(antes, despues, HOY)[0]['eventos'][0]['revision_pendiente'])
 
     def test_actualizar_articulo_misma_url_descubre_otra_ficha(self):
         with tempfile.TemporaryDirectory() as d:

@@ -97,8 +97,8 @@ class SnapshotACR(unittest.TestCase):
         anterior={'eventos':[evento(origen='Agenda Cultural Rosario')], 'revision_acr_id':'vieja'}
         despues={'eventos':[], 'revision_acr_id':'nueva'}
         salida,avisos=proteger(anterior,despues,HOY)
-        self.assertEqual(salida['eventos'],[])
-        self.assertEqual(avisos,[])
+        self.assertEqual(len(salida['eventos']),1)
+        self.assertTrue(salida['eventos'][0]['revision_pendiente'])
 
     def test_marcador_heredado_no_permite_borrar_si_falla(self):
         anterior={'eventos':[evento(origen='Agenda Cultural Rosario')], 'revision_acr_id':'igual'}
@@ -106,3 +106,31 @@ class SnapshotACR(unittest.TestCase):
         salida,avisos=proteger(anterior,despues,HOY)
         self.assertEqual(len(salida['eventos']),1)
         self.assertEqual(len(avisos),1)
+
+
+class ConservacionPorEvento(unittest.TestCase):
+    def test_no_pierde_uno_de_diez(self):
+        antes = {'eventos': [evento(n, evento_url=f'https://fuente.example/{n}') for n in range(10)]}
+        despues = {'eventos': copy.deepcopy(antes['eventos'][:-1])}
+        resultado, avisos = proteger(antes, despues, HOY)
+        self.assertEqual(len(resultado['eventos']), 10)
+        self.assertEqual(sum(bool(e.get('revision_pendiente')) for e in resultado['eventos']), 1)
+        self.assertTrue(avisos)
+
+    def test_revision_sin_cancelacion_no_borra(self):
+        e = evento(evento_url='https://fuente.example/cartel')
+        salida, _ = proteger({'eventos': [e]}, {'eventos': [],
+            'revision_ampliadas': {'id': 'nuevo', 'fichas_revisadas': [['Sala oficial', e['evento_url']]]}}, HOY)
+        self.assertEqual(len(salida['eventos']), 1)
+        self.assertTrue(salida['eventos'][0]['revision_pendiente'])
+
+    def test_cancelacion_individual_con_evidencia(self):
+        e = evento(evento_url='https://fuente.example/cartel')
+        baja = {**e, 'motivo': 'cancelado', 'evidencia_url': e['evento_url']}
+        salida, _ = proteger({'eventos': [e]}, {'eventos': [], 'bajas_confirmadas': [baja]}, HOY)
+        self.assertEqual(salida['eventos'], [])
+
+    def test_cambio_de_hora_no_duplica(self):
+        e = evento(evento_url='https://fuente.example/cartel')
+        salida, _ = proteger({'eventos': [e]}, {'eventos': [{**e, 'hora': '21:00'}]}, HOY)
+        self.assertEqual(len(salida['eventos']), 1)

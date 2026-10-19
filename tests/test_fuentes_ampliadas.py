@@ -115,7 +115,7 @@ class Ampliadas(unittest.TestCase):
         anterior = {'eventos': [evento()]}
         posterior = {'eventos': [], 'revision_ampliadas': {'id': 'nuevo', 'fichas_revisadas': [['Santa Fe Cultura', URL]]}}
         salida, _ = proteger(anterior, posterior, HOY)
-        self.assertFalse(salida['eventos'])
+        self.assertTrue(salida['eventos'][0]['revision_pendiente'])
         repetido, _ = proteger({**anterior, 'revision_ampliadas': posterior['revision_ampliadas']}, copy.deepcopy(posterior), HOY)
         self.assertEqual(len(repetido['eventos']), 1)
 
