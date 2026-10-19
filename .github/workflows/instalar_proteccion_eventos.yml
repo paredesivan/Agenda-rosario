@@ -1,0 +1,156 @@
+name: Instalar protección de eventos
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-agenda
+  cancel-in-progress: false
+
+jobs:
+  instalar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar dependencias de pruebas
+        run: python -m pip install requests beautifulsoup4
+      - name: Actualizar protección y pruebas sin borrar las anteriores
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          ruta = Path('actualizacion_segura.py')
+          contenido = ruta.read_text(encoding='utf-8')
+          inicio = contenido.index('def proteger(antes, despues, hoy):')
+          fin = contenido.index('\ndef ejecutar_etapa(', inicio)
+          nuevo = '''def _identidad_evento(e):
+              """Identificación estable ante cambios de hora, sin confundir funciones."""
+              fuente = e.get('origen', 'Manual')
+              titulo = ' '.join(e.get('nombre', '').casefold().split())
+              fecha = e.get('fecha', '')
+              url = (e.get('evento_url') or '').strip().rstrip('/')
+              # Incluimos fecha para evitar confundir distintas funciones
+              # que comparten una misma página de la sala.
+              if url:
+                  return (fuente, url, fecha, titulo)
+              lugar = ' '.join(e.get('lugar', '').casefold().split())
+              return (fuente, '', fecha, titulo, lugar)
+
+
+          def proteger(antes, despues, hoy):
+              """Retener cada evento futuro ausente salvo baja individual documentada."""
+              validar(antes)
+              validar(despues)
+              actuales = despues['eventos']
+              vistos = {_identidad_evento(e) for e in actuales}
+              # No basta un HTTP 200, una ficha revisada, un listado vacío ni
+              # una revisión ACR para autorizar el borrado.
+              bajas = set()
+              for baja in despues.get('bajas_confirmadas', []):
+                  if not isinstance(baja, dict):
+                      continue
+                  if (baja.get('motivo') in ('cancelado', 'suspendido', 'retirado')
+                          and baja.get('evidencia_url') and baja.get('fecha')
+                          and baja.get('nombre') and baja.get('origen')):
+                      bajas.add(_identidad_evento(baja))
+              conservados = Counter()
+              for anterior in antes['eventos']:
+                  if anterior['fecha'] < hoy.isoformat():
+                      continue
+                  identidad = _identidad_evento(anterior)
+                  if identidad in vistos or identidad in bajas:
+                      continue
+                  actuales.append({**anterior, 'revision_pendiente': True})
+                  vistos.add(identidad)
+                  conservados[anterior.get('origen', 'Manual')] += 1
+              avisos = [{'fuente': fuente, 'conservados': cantidad,
+                         'motivo': 'Fichas futuras no recuperadas: conservadas pendientes de verificación'}
+                        for fuente, cantidad in sorted(conservados.items())]
+              if avisos:
+                  despues['estado'] = 'parcial'
+              return despues, avisos
+
+          '''
+          # Evitar pérdida de cambios: sustituir exclusivamente la función.
+          ruta.write_text(contenido[:inicio] + nuevo + contenido[fin:], encoding='utf-8')
+
+          p = Path('tests/test_actualizacion_segura.py')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace("self.assertEqual(salida['eventos'],[])\n        self.assertEqual(avisos,[])",
+                        "self.assertEqual(len(salida['eventos']),1)\n        self.assertTrue(salida['eventos'][0]['revision_pendiente'])")
+          s += '''
+
+          class ConservacionPorEvento(unittest.TestCase):
+              def test_no_pierde_uno_de_diez(self):
+                  antes = {'eventos': [evento(n, evento_url=f'https://fuente.example/{n}') for n in range(10)]}
+                  despues = {'eventos': copy.deepcopy(antes['eventos'][:-1])}
+                  resultado, avisos = proteger(antes, despues, HOY)
+                  self.assertEqual(len(resultado['eventos']), 10)
+                  self.assertEqual(sum(bool(e.get('revision_pendiente')) for e in resultado['eventos']), 1)
+                  self.assertTrue(avisos)
+
+              def test_revision_sin_cancelacion_no_borra(self):
+                  e = evento(evento_url='https://fuente.example/cartel')
+                  salida, _ = proteger({'eventos': [e]}, {'eventos': [],
+                      'revision_ampliadas': {'id': 'nuevo', 'fichas_revisadas': [['Sala oficial', e['evento_url']]]}}, HOY)
+                  self.assertEqual(len(salida['eventos']), 1)
+                  self.assertTrue(salida['eventos'][0]['revision_pendiente'])
+
+              def test_cancelacion_individual_con_evidencia(self):
+                  e = evento(evento_url='https://fuente.example/cartel')
+                  baja = {**e, 'motivo': 'cancelado', 'evidencia_url': e['evento_url']}
+                  salida, _ = proteger({'eventos': [e]}, {'eventos': [], 'bajas_confirmadas': [baja]}, HOY)
+                  self.assertEqual(salida['eventos'], [])
+
+              def test_cambio_de_hora_no_duplica(self):
+                  e = evento(evento_url='https://fuente.example/cartel')
+                  salida, _ = proteger({'eventos': [e]}, {'eventos': [{**e, 'hora': '21:00'}]}, HOY)
+                  self.assertEqual(len(salida['eventos']), 1)
+          '''
+          p.write_text(s, encoding='utf-8')
+
+          # Cambiar solo aserciones incompatibles. Conservar todas las pruebas.
+          p = Path('tests/test_fuentes_ampliadas.py')
+          s = p.read_text(encoding='utf-8')
+          viejo = "self.assertFalse(salida['eventos'])\n        repetido"
+          assert viejo in s, 'Cambió test_fuentes_ampliadas: revisar manualmente'
+          s = s.replace(viejo, "self.assertTrue(salida['eventos'][0]['revision_pendiente'])\n        repetido", 1)
+          p.write_text(s, encoding='utf-8')
+
+          p = Path('tests/test_resolver_candidatos.py')
+          s = p.read_text(encoding='utf-8')
+          viejo1 = "self.assertFalse(proteger({'eventos': [e]}, despues, HOY)[0]['eventos'])"
+          viejo2 = "self.assertFalse(proteger(antes, despues, HOY)[0]['eventos'])"
+          assert viejo1 in s and viejo2 in s, 'Cambió test_resolver_candidatos: revisar manualmente'
+          s = s.replace(viejo1, "self.assertTrue(proteger({'eventos': [e]}, despues, HOY)[0]['eventos'][0]['revision_pendiente'])", 1)
+          s = s.replace(viejo2, "self.assertTrue(proteger(antes, despues, HOY)[0]['eventos'][0]['revision_pendiente'])", 1)
+          p.write_text(s, encoding='utf-8')
+          PY
+      - name: Ejecutar todas las pruebas existentes y nuevas
+        run: python -m unittest discover -s tests -v
+      - name: Guardar archivos modificados en GitHub
+        shell: bash
+        run: |
+          git config user.name "agenda-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add actualizacion_segura.py tests/test_actualizacion_segura.py tests/test_fuentes_ampliadas.py tests/test_resolver_candidatos.py
+          if git diff --cached --quiet; then
+            echo "No hay cambios para guardar"
+            exit 0
+          fi
+          git commit -m "Conservar eventos futuros ante fallos individuales de extracción"
+          git fetch origin main
+          if [ "$(git rev-parse HEAD^)" != "$(git rev-parse origin/main)" ]; then
+            echo "main cambió mientras se instalaba; no se sobreescribe código nuevo"
+            exit 1
+          fi
+          git push origin HEAD:main
