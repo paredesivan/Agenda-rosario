@@ -86,6 +86,47 @@ class Acceso:
         finally:
             self.ultima[dominio] = self.reloj()
 
+    def excepcion_robots_auditada(self, url):
+        """Sólo para rutas públicas con auditoría separada y explícita.
+
+        Una regla robots no constituye por sí sola una restricción de acceso.
+        Ausencia o incertidumbre en la auditoría mantiene el bloqueo.
+        """
+        registro = ROOT / 'excepciones_robots.json'
+        try:
+            reglas = json.loads(registro.read_text(encoding='utf-8'))
+        except (OSError, ValueError):
+            return False
+        if not isinstance(reglas, dict):
+            return False
+        destino = urlsplit(url)
+        if destino.scheme != 'https' or destino.username or destino.password:
+            return False
+        entradas = reglas.get('excepciones', [])
+        if not isinstance(entradas, list):
+            return False
+        for entrada in entradas:
+            if not isinstance(entrada, dict):
+                continue
+            if entrada.get('dominio') != destino.hostname:
+                continue
+            rutas = entrada.get('rutas_publicas', [])
+            if not isinstance(rutas, list) or not any(
+                isinstance(ruta, str) and ruta.startswith('/') and
+                (destino.path == ruta or destino.path.startswith(ruta.rstrip('/') + '/'))
+                for ruta in rutas
+            ):
+                continue
+            if (entrada.get('acceso_publico_verificado') is True
+                    and entrada.get('terminos_revisados') is True
+                    and entrada.get('sin_prohibicion_contractual_aplicable') is True
+                    and entrada.get('sin_barrera_tecnica') is True
+                    and entrada.get('revision_legal') == 'sin_impedimento_identificado'
+                    and isinstance(entrada.get('evidencia'), str)
+                    and len(entrada['evidencia'].strip()) >= 20):
+                return True
+        return False
+
     def robots(self, url):
         robots_url = urljoin(url, '/robots.txt')
         registro = self.cache.setdefault('robots', {}).get(robots_url)
@@ -105,8 +146,8 @@ class Acceso:
             self.cache['robots'][robots_url] = registro
         parser = RobotFileParser()
         parser.parse(registro['reglas'].splitlines())
-        if not parser.can_fetch(UA, url):
-            raise ValueError('ruta excluida por robots.txt')
+        if not parser.can_fetch(UA, url) and not self.excepcion_robots_auditada(url):
+            raise ValueError('ruta excluida por robots.txt; excepción sin auditoría suficiente')
         return max(5, parser.crawl_delay(UA) or 0)
 
     def leer(self, url, parser, tipo='listado'):

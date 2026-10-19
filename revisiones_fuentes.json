@@ -1,0 +1,11 @@
+{
+  "CEC Rosario — agenda propia": {"estado": "pendiente", "evidencia_url": "https://www.cecrosario.gob.ar/events/", "nota": "HTML público indexado; robots y términos no verificables desde la auditoría, HTTP directo 403 registrado previamente."},
+  "UCSF — agenda de eventos": {"estado": "pendiente", "evidencia_url": "https://www.ucsf.edu.ar/eventos/categoria/sedes/rosario/2026-10/", "nota": "Eventos oficiales fechados; falta cierre de revisión robots, términos, ubicación real y fichas."},
+  "UCA Rosario — campus y agenda": {"estado": "pendiente"},
+  "City Center Rosario — shows": {"estado": "restriccion_contractual_por_revisar"},
+  "Pullman Rosario — eventos": {"estado": "sin_cartelera_verificable"},
+  "Biblioteca Vigil — agenda propia": {"estado": "pendiente"},
+  "Colegio de Arquitectura y Urbanismo D2 — agenda": {"estado": "pendiente"},
+  "Alianza Francesa Rosario — agenda cultural": {"estado": "pendiente"},
+  "Espacio Cultural Faro — Fundación Libertad": {"estado": "pendiente"}
+}

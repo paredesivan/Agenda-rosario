@@ -70,6 +70,12 @@ def ubicacion(sopa, evento, fuente):
 
 
 def ficha(contenido, url, fuente):
+    if fuente['adaptador'] == 'aec_teatro':
+        from fuente_aec import ficha_aec
+        return ficha_aec(contenido, url, fuente)
+    if fuente['adaptador'] == 'passline_venue':
+        from fuente_passline_venues import ficha_passline
+        return ficha_passline(contenido, url, fuente)
     if fuente['adaptador'] in ('gamma_comunidad', 'institucion_mec'):
         from instituciones_eventos import ficha_gamma, ficha_mec
         parser = ficha_gamma if fuente['adaptador'] == 'gamma_comunidad' else ficha_mec
@@ -117,7 +123,8 @@ def fusionar(anteriores, nuevos, revisadas, hoy):
     # Sólo reemplazar URLs leídas con éxito; nunca vaciar una fuente por error.
     salida = [e for e in anteriores if (e.get('origen'), e.get('evento_url')) not in revisadas]
     for e in nuevos:
-        coincidencias = [p for p in salida if misma_funcion(e, p)]
+        from fuente_aec import misma_sala_aec
+        coincidencias = [p for p in salida if misma_funcion(e, p) or misma_sala_aec(e, p)]
         if not coincidencias:
             salida.append(e)
         elif all(p.get('origen') == 'Agenda Cultural Rosario' for p in coincidencias):
@@ -152,7 +159,8 @@ def revisar(config, acceso, hoy):
             filas.sort(key=lambda e: paginas.get(e['url'], {}).get('consultado', 0))
             pendientes, cantidad, errores = 0, 0, []
             diferidas_cuota = 0
-            for fila in filas[:int(config.get('max_fichas_por_fuente', 4))]:
+            max_fichas = int(fuente.get('max_fichas_por_fuente', config.get('max_fichas_por_fuente', 4)))
+            for fila in filas[:max_fichas]:
                 url = fila['url']
                 try:
                     if fuente.get('max_fichas_dia'):
@@ -188,7 +196,7 @@ def revisar(config, acceso, hoy):
             estados[nombre] = {'estado': 'parcial' if pendientes else 'revisada',
                               'publicadas': cantidad, 'fichas_en_listado': len(filas),
                               'fichas_pendientes': pendientes, 'errores': errores,
-                              'diferidas_por_limite': max(0, len(filas)-int(config.get('max_fichas_por_fuente', 4))),
+                              'diferidas_por_limite': max(0, len(filas)-max_fichas),
                               'diferidas_por_cuota_diaria': diferidas_cuota}
         except (requests.RequestException, ValueError, TypeError, KeyError) as error:
             estados[nombre] = {'estado': 'no accesible', 'motivo': str(error), 'publicadas': 0}

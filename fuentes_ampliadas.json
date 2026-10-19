@@ -1,5 +1,5 @@
 {
-  "revision": "2026-10-17",
+  "revision": "2026-10-18",
   "dias_futuros": 180,
   "max_fichas_por_fuente": 4,
   "fuentes": [
@@ -148,6 +148,95 @@
       "habilitada": false,
       "patron_ficha": "^/",
       "motivo": "No se identificó agenda pública verificable de actividades para la comunidad. No confundir con Hospital Italiano de Buenos Aires."
+    },
+    {
+      "nombre": "Passline — Floyd Bar",
+      "sede": "Floyd Bar",
+      "listado": "https://www.passline.com/venue/floyd-bar",
+      "adaptador": "passline_venue",
+      "tipo": "ticketera",
+      "habilitada": true,
+      "patron_ficha": "^/eventos/[^/]+/?$",
+      "selector": ".card a[href]",
+      "cache_horas": 24,
+      "motivo": "HTML público y robots verificados 18/10/2026. Datos factuales y enlaces; sin textos ni afiches. Ficha valida sede y Rosario; excluye formación.",
+      "max_fichas_por_fuente": 8
+    },
+    {
+      "nombre": "Passline — Somos Musica",
+      "sede": "Somos Musica",
+      "listado": "https://www.passline.com/venue/somos-musica",
+      "adaptador": "passline_venue",
+      "tipo": "ticketera",
+      "habilitada": true,
+      "patron_ficha": "^/eventos/[^/]+/?$",
+      "selector": ".card a[href]",
+      "cache_horas": 24,
+      "motivo": "HTML público y robots verificados 18/10/2026. Datos factuales y enlaces; sin textos ni afiches. Ficha valida sede y Rosario; excluye formación.",
+      "max_fichas_por_fuente": 8
+    },
+    {
+      "nombre": "Passline — Club Mercury",
+      "sede": "Club Mercury",
+      "listado": "https://www.passline.com/venue/club-mercury",
+      "adaptador": "passline_venue",
+      "tipo": "ticketera",
+      "habilitada": true,
+      "patron_ficha": "^/eventos/[^/]+/?$",
+      "selector": ".card a[href]",
+      "cache_horas": 24,
+      "motivo": "HTML público y robots verificados 18/10/2026. Datos factuales y enlaces; sin textos ni afiches. Ficha valida sede y Rosario; excluye formación.",
+      "max_fichas_por_fuente": 8
+    },
+    {
+      "nombre": "Passline — Complejo Forest",
+      "sede": "Complejo Forest",
+      "listado": "https://www.passline.com/venue/complejo-forest",
+      "adaptador": "passline_venue",
+      "tipo": "ticketera",
+      "habilitada": true,
+      "patron_ficha": "^/eventos/[^/]+/?$",
+      "selector": ".card a[href]",
+      "cache_horas": 24,
+      "motivo": "HTML público y robots verificados 18/10/2026. Datos factuales y enlaces; sin textos ni afiches. Ficha valida sede y Rosario; excluye formación.",
+      "max_fichas_por_fuente": 8
+    },
+    {
+      "nombre": "Passline — QUE SEA ROCK",
+      "sede": "QUE SEA ROCK",
+      "listado": "https://www.passline.com/venue/que-sea-rock",
+      "adaptador": "passline_venue",
+      "tipo": "ticketera",
+      "habilitada": true,
+      "patron_ficha": "^/eventos/[^/]+/?$",
+      "selector": ".card a[href]",
+      "cache_horas": 24,
+      "motivo": "HTML público y robots verificados 18/10/2026. Datos factuales y enlaces; sin textos ni afiches. Ficha valida sede y Rosario; excluye formación.",
+      "max_fichas_por_fuente": 8
+    },
+    {
+      "nombre": "Passline — Playa de la musica",
+      "sede": "Playa de la musica",
+      "listado": "https://www.passline.com/venue/playa-de-la-musica",
+      "adaptador": "passline_venue",
+      "tipo": "ticketera",
+      "habilitada": true,
+      "patron_ficha": "^/eventos/[^/]+/?$",
+      "selector": ".card a[href]",
+      "cache_horas": 24,
+      "motivo": "HTML público y robots verificados 18/10/2026. Datos factuales y enlaces; sin textos ni afiches. Ficha valida sede y Rosario; excluye formación.",
+      "max_fichas_por_fuente": 8
+    },
+    {
+      "nombre": "Empleados de Comercio Rosario — Teatro AEC",
+      "listado": "https://www.aecrosario.org.ar/cultura/teatro/",
+      "adaptador": "aec_teatro",
+      "tipo": "oficial",
+      "habilitada": true,
+      "patron_ficha": "^/[^/]+/?$",
+      "selector": "h3.pre-post-title a[href]",
+      "cache_horas": 2,
+      "motivo": "HTML y robots públicos verificados 18/10/2026. Sala abierta a todo público. Gratuidad para afiliados no se extiende a público general; no cursos ni eventos fijos."
     }
   ]
 }
