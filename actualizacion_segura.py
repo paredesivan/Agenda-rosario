@@ -13,7 +13,7 @@ from control_http import atomico
 ROOT = Path(__file__).resolve().parent
 ETAPAS = [('actualizar_eventos.py', 35*60), ('fuentes_nuevas.py', 45*60),
           ('fuentes_refi_folklore.py', 12*60), ('fuentes_ampliadas.py', 8*60), ('resolver_candidatos.py', 8*60), ('precios_lavarden.py', 15*60),
-          ('precios_ticketek.py', 5*60)]
+          ('precios_ticketek.py', 5*60), ('fuente_autodromo.py', 3*60)]
 
 
 def validar(datos):
