@@ -12,7 +12,7 @@ from control_http import atomico
 
 ROOT = Path(__file__).resolve().parent
 ETAPAS = [('actualizar_eventos.py', 35*60), ('fuentes_nuevas.py', 45*60),
-          ('fuentes_refi_folklore.py', 12*60), ('fuentes_ampliadas.py', 8*60), ('resolver_candidatos.py', 8*60), ('precios_lavarden.py', 15*60),
+          ('fuentes_refi_folklore.py', 12*60), ('fuentes_ampliadas.py', 8*60), ('fuentes_espacios_oficiales.py', 8*60), ('resolver_candidatos.py', 8*60), ('precios_lavarden.py', 15*60),
           ('precios_ticketek.py', 5*60), ('fuente_autodromo.py', 3*60)]
 
 
@@ -103,6 +103,10 @@ def ejecutar_etapa(root, script, limite, ejecutar=subprocess.run, hoy=None):
         # Los archivos de caché y de estado se aceptan únicamente tras validar la etapa.
         for nombre, contenido in auxiliares.items():
             atomico(root / nombre, contenido)
+        # La página de espacios se genera en el aislamiento y sólo se acepta
+        # tras validar la agenda de esta etapa.
+        if script == 'fuentes_espacios_oficiales.py' and (destino / 'espacios.html').is_file():
+            shutil.copy2(destino / 'espacios.html', root / 'espacios.html')
         atomico(archivo, despues)
         return {'etapa': script, 'estado': 'parcial' if avisos or despues.get('estado') == 'parcial' else 'validada', 'avisos': avisos, 'avisos_fuentes': despues.get('avisos_fuentes', [])}
 

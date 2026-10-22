@@ -1,21 +1,28 @@
 {
-  "version": "2026.10.22-control-2",
+  "version": "2026.10.22-espacios-oficiales-1",
   "archivos": [
     ".gitignore",
     "AGENTS.md",
+    "ESPACIOS_OFICIALES.md",
     "OPERACION_AGENDA.md",
     "actualizacion_segura.py",
     "actualizar_eventos.py",
     "agenda.js",
+    "e2e/test_espacios.py",
     "e2e/test_estado.py",
+    "espacios.html",
+    "espacios_oficiales.json",
     "estado.html",
+    "fuentes_espacios_oficiales.py",
     "gestion_agenda.py",
     "instalar_entrega.py",
     "requirements.txt",
+    "tests/fixtures/aserradero_ficha.html",
     "tests/test_deduplicacion_contenido.py",
+    "tests/test_espacios_oficiales.py",
     "tests/test_gestion_agenda.py",
     "tests/test_ticketsbravos.py",
     "tests/test_workflow_coordinado.py"
   ],
-  "instalada": "2026-10-22T20:03:11.618533+00:00"
+  "instalada": "2026-10-22T20:51:08.417751+00:00"
 }

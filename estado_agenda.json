@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "generado": "2026-10-22T17:40:06-03:00",
-  "ejecucion_id": "39845434752-1",
-  "inicio": "2026-10-22T17:03:16-03:00",
+  "generado": "2026-10-22T18:14:54-03:00",
+  "ejecucion_id": "39852372591-1",
+  "inicio": "2026-10-22T17:51:12-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-22 17:03",
-  "ultima_consulta_fuentes": "2026-10-22T17:31:40.116517-03:00",
+  "datos_actualizados": "2026-10-22 17:51",
+  "ultima_consulta_fuentes": "2026-10-22T18:14:23.662767-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 947,
-    "funciones_unicas": 942,
-    "nuevos": 6,
-    "ausentes": 2,
-    "duplicados": 39,
-    "conservados": 15,
-    "fuentes": 97
+    "eventos": 945,
+    "funciones_unicas": 945,
+    "nuevos": 3,
+    "ausentes": 0,
+    "duplicados": 9,
+    "conservados": 11,
+    "fuentes": 99
   },
   "alertas": [
     {
@@ -39,9 +39,9 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 420,
-      "antes": 455,
-      "conservados": 8,
+      "eventos": 412,
+      "antes": 420,
+      "conservados": 5,
       "caida": false
     },
     {
@@ -205,6 +205,16 @@
       "caida": false
     },
     {
+      "nombre": "Directorio de espacios — fuentes oficiales",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
       "nombre": "Directorio de museos",
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
@@ -230,7 +240,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 10,
-      "antes": 8,
+      "antes": 10,
       "conservados": 1,
       "caida": false
     },
@@ -250,6 +260,16 @@
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "El Aserradero — oficial",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 6,
       "antes": 0,
       "conservados": 0,
       "caida": false
@@ -376,9 +396,9 @@
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
@@ -540,7 +560,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 297,
-      "antes": 298,
+      "antes": 297,
       "conservados": 4,
       "caida": false
     },
@@ -656,9 +676,9 @@
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -730,7 +750,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 6,
-      "antes": 5,
+      "antes": 6,
       "conservados": 0,
       "caida": false
     },
@@ -740,7 +760,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 2,
-      "antes": 1,
+      "antes": 2,
       "conservados": 0,
       "caida": false
     },
@@ -790,8 +810,8 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 10,
-      "antes": 9,
-      "conservados": 2,
+      "antes": 10,
+      "conservados": 1,
       "caida": false
     },
     {
@@ -870,15 +890,15 @@
       "motivo": "No se pudo completar la lectura.",
       "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 1,
-      "antes": 3,
+      "antes": 1,
       "conservados": 0,
       "caida": false
     },
     {
       "nombre": "Tandava",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1013,6 +1033,10 @@
       "estado": "parcial"
     },
     {
+      "nombre": "fuentes_espacios_oficiales.py",
+      "estado": "parcial"
+    },
+    {
       "nombre": "resolver_candidatos.py",
       "estado": "parcial"
     },
@@ -1031,7 +1055,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-22T17:40:04-03:00",
+    "fecha": "2026-10-22T18:14:52-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1044,67 +1068,31 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/39845434752",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/39852372591",
   "cambios": {
     "nuevos": [
       {
-        "fecha": "2026-10-22",
-        "hora": "20:30",
-        "nombre": "HOMENAJE AL PADRE DEL HEAVY NACIONAL",
-        "lugar": "Distrito Siete",
-        "origen": "Distrito Siete"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "07:30",
-        "nombre": "Noche de Museos Abiertos",
-        "lugar": "Plataforma Lavardén",
-        "origen": "Plataforma Lavardén"
-      },
-      {
-        "fecha": "2026-11-06",
-        "hora": "21:00",
-        "nombre": "JUBANY + MONTE PALOMAR + FINGIR DEMENCIA",
-        "lugar": "Distrito Siete",
-        "origen": "Distrito Siete"
-      },
-      {
-        "fecha": "2026-11-07",
+        "fecha": "2026-10-25",
         "hora": "20:00",
-        "nombre": "Festival Beethoven - Quinteto Municipal de Vientos",
-        "lugar": "Centro Cultural Parque de España / AECI",
-        "origen": "Municipalidad de Rosario"
+        "nombre": "Domingos bien jugados",
+        "lugar": "El Aserradero",
+        "origen": "El Aserradero — oficial"
       },
       {
-        "fecha": "2026-11-12",
-        "hora": "23:00",
-        "nombre": "KINESIO FEST - 5TA EDICIÓN",
-        "lugar": "Complejo Forest",
-        "origen": "Passline — Complejo Forest"
+        "fecha": "2026-10-26",
+        "hora": "21:00",
+        "nombre": "Peña Lunera",
+        "lugar": "El Aserradero",
+        "origen": "El Aserradero — oficial"
       },
       {
-        "fecha": "2026-12-19",
-        "hora": "23:30",
-        "nombre": "STILL YOUNG en Floyd #23",
-        "lugar": "Floyd Bar",
-        "origen": "Passline — Floyd Bar"
+        "fecha": "2026-11-22",
+        "hora": "21:00",
+        "nombre": "La Ferni",
+        "lugar": "El Aserradero",
+        "origen": "El Aserradero — oficial"
       }
     ],
-    "ausentes": [
-      {
-        "fecha": "2026-10-22",
-        "hora": "10:00",
-        "nombre": "La Realidad oculta",
-        "lugar": "Galería de Arte La Tertulia",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-22",
-        "hora": "10:00",
-        "nombre": "Poesía enmarcada",
-        "lugar": "Galería de Arte La Tertulia",
-        "origen": "Agenda Cultural Rosario"
-      }
-    ]
+    "ausentes": []
   }
 }
