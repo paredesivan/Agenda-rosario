@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "generado": "2026-10-22T18:14:54-03:00",
-  "ejecucion_id": "39852372591-1",
-  "inicio": "2026-10-22T17:51:12-03:00",
+  "generado": "2026-10-22T19:01:16-03:00",
+  "ejecucion_id": "39858744894-1",
+  "inicio": "2026-10-22T18:37:33-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-22 17:51",
-  "ultima_consulta_fuentes": "2026-10-22T18:14:23.662767-03:00",
+  "datos_actualizados": "2026-10-22 18:37",
+  "ultima_consulta_fuentes": "2026-10-22T19:00:40.202419-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
     "eventos": 945,
     "funciones_unicas": 945,
-    "nuevos": 3,
+    "nuevos": 0,
     "ausentes": 0,
-    "duplicados": 9,
+    "duplicados": 1,
     "conservados": 11,
     "fuentes": 99
   },
@@ -40,7 +40,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 412,
-      "antes": 420,
+      "antes": 412,
       "conservados": 5,
       "caida": false
     },
@@ -270,7 +270,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 6,
-      "antes": 0,
+      "antes": 6,
       "conservados": 0,
       "caida": false
     },
@@ -676,9 +676,9 @@
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -896,9 +896,9 @@
     },
     {
       "nombre": "Tandava",
-      "estado": "atencion",
-      "motivo": "No se pudo completar la lectura.",
-      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1055,7 +1055,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-22T18:14:52-03:00",
+    "fecha": "2026-10-22T19:01:14-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1068,31 +1068,9 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/39852372591",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/39858744894",
   "cambios": {
-    "nuevos": [
-      {
-        "fecha": "2026-10-25",
-        "hora": "20:00",
-        "nombre": "Domingos bien jugados",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
-      },
-      {
-        "fecha": "2026-10-26",
-        "hora": "21:00",
-        "nombre": "Peña Lunera",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
-      },
-      {
-        "fecha": "2026-11-22",
-        "hora": "21:00",
-        "nombre": "La Ferni",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
-      }
-    ],
+    "nuevos": [],
     "ausentes": []
   }
 }
