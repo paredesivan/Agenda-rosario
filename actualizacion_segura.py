@@ -117,8 +117,14 @@ def main():
     datos = validar(json.loads((ROOT / 'eventos.json').read_text(encoding='utf-8')))
     if any(r['estado'] != 'validada' for r in resultados):
         datos['estado'] = 'parcial'
+    # Aplicar después de la protección: los respaldos no reintroducen duplicados.
+    from actualizar_eventos import sin_repetidos
+    antes_deduplicar = len(datos['eventos'])
+    datos['eventos'] = sin_repetidos(datos['eventos'])
+    duplicados = antes_deduplicar - len(datos['eventos'])
     atomico(ROOT / 'eventos.json', datos)
-    atomico(ROOT / 'salud_actualizacion.json', {'inicio': inicio, 'etapas': resultados,
+    atomico(ROOT / 'salud_actualizacion.json', {'inicio': inicio, 'fin': datetime.now(ZoneInfo('America/Argentina/Cordoba')).isoformat(),
+            'duplicados_unificados': duplicados, 'etapas': resultados,
             'estado': datos.get('estado'), 'eventos': len(datos['eventos']),
             'fuentes': json.loads((ROOT / 'fuentes_revisadas.json').read_text()).get('fuentes', {}) if (ROOT / 'fuentes_revisadas.json').exists() else {}})
     if all(r['estado'] == 'fallida' for r in resultados):
@@ -127,3 +133,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

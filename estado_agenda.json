@@ -1,0 +1,1110 @@
+{
+  "version": 1,
+  "generado": "2026-10-22T17:40:06-03:00",
+  "ejecucion_id": "39845434752-1",
+  "inicio": "2026-10-22T17:03:16-03:00",
+  "modo": "actualizar",
+  "estado": "atencion",
+  "datos_actualizados": "2026-10-22 17:03",
+  "ultima_consulta_fuentes": "2026-10-22T17:31:40.116517-03:00",
+  "fuentes_son_del_intento_actual": true,
+  "resumen": {
+    "eventos": 947,
+    "funciones_unicas": 942,
+    "nuevos": 6,
+    "ausentes": 2,
+    "duplicados": 39,
+    "conservados": 15,
+    "fuentes": 97
+  },
+  "alertas": [
+    {
+      "tipo": "tareas",
+      "mensaje": "No se pudieron desactivar todas las tareas antiguas. Consultar el resumen de Actions."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "ATIR",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 2,
+      "antes": 2,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Agenda Cultural Rosario",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 420,
+      "antes": 455,
+      "conservados": 8,
+      "caida": false
+    },
+    {
+      "nombre": "Agenda municipal — Espacios",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Alpogo",
+      "estado": "atencion",
+      "motivo": "La fuente limitó el acceso.",
+      "accion": "Se respetan sus pausas. Revisar si se repite.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Alto Rosario Shopping — CSV",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Autódromo Rosario",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 1,
+      "antes": 1,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Bajada de los Maestros",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Beatmemo",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Biblioteca Argentina Dr. Juan Álvarez",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 6,
+      "antes": 6,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Biblioteca Vigil",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 2,
+      "antes": 2,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Caras y Caretas",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Centro Cultural Madres de Plaza 25 de Mayo",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Centro Cultural Parque de España",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 4,
+      "antes": 4,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "CentroTicket",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 10,
+      "antes": 10,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Circo Rodas — Linke-arte",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Club Atletico Provincial — CSV",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Club Fosse",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Cultural de Abajo",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Directorio de museos",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Disfruta Rosario",
+      "estado": "pendiente",
+      "motivo": "Falta una revisión de acceso o de condiciones.",
+      "accion": "Revisar la fuente antes de habilitarla.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Distrito Siete",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 10,
+      "antes": 8,
+      "conservados": 1,
+      "caida": false
+    },
+    {
+      "nombre": "ECU Espacio Cultural Universitario",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 1,
+      "antes": 1,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "ECU Espacio Cultural Universitario — CSV",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "El Cairo Cine Público",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 19,
+      "antes": 19,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "El Cairo — CSV",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "El Ciudadano",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Empleados de Comercio Rosario — Teatro AEC",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 2,
+      "antes": 2,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Entrada Play",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 9,
+      "antes": 9,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "EntradaFan",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Escuela Superior de Comercio",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Espacio Bravo",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "EventosIPS",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Experimental - Museo de Ciencias en Movimiento",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Feria Internacional del Libro de Rosario",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Fundación FAER",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Grupo Gamma — Charlas a la comunidad",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 2,
+      "antes": 2,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Hospital Italiano Rosario",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Humanidades y Artes UNR — Agenda",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Instituto Politécnico — Novedades",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Jaguar Haüs",
+      "estado": "atencion",
+      "motivo": "La fuente limitó el acceso.",
+      "accion": "Se respetan sus pausas. Revisar si se repite.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "La Capital",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "La Escalera",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "La Grieta",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "La Morada",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "La Orilla Infinita",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 5,
+      "antes": 5,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "La Sonrisa de Beckett",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "La Tornería",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Mercado del Patio — CSV",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Metropolitano",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 4,
+      "antes": 4,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Microteatro Rosario",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 61,
+      "antes": 61,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Muestra Inmersiva: Estación Rosario 300",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Municipalidad de Rosario",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 297,
+      "antes": 298,
+      "conservados": 4,
+      "caida": false
+    },
+    {
+      "nombre": "Museo Diario La Capital",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo Histórico Provincial Julio Marc",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo Internacional para la Democracia",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo Urbano Arte a la Vista",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Arte Contemporáneo de Rosario (MACRO)",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Arte Sacro Barnes",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Bellas Artes Juan B. Castagnino",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Sitio: \"El Paraná y las islas\"",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la Bolsa de Comercio",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la Ciudad",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la Memoria",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la Salud",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la ópera",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo del Deporte Santafesino",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Passline",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 14,
+      "antes": 14,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Passline — Club Mercury",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 4,
+      "antes": 4,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Passline — Complejo Forest",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 6,
+      "antes": 5,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Passline — Floyd Bar",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 2,
+      "antes": 1,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Passline — Playa de la musica",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 1,
+      "antes": 1,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Passline — QUE SEA ROCK",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 2,
+      "antes": 2,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Passline — Somos Musica",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Planaxia",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Plataforma Lavardén",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 10,
+      "antes": 9,
+      "conservados": 2,
+      "caida": false
+    },
+    {
+      "nombre": "RefiTicket",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 6,
+      "antes": 6,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Rosario Folklore",
+      "estado": "pendiente",
+      "motivo": "Falta una revisión de acceso o de condiciones.",
+      "accion": "Revisar la fuente antes de habilitarla.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Rosario Times",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Rosario en Cartel",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
+      "eventos": 8,
+      "antes": 8,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Rosario3",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 6,
+      "antes": 6,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Sala de las Banderas",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "SalePlan",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Santa Fe Cultura",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
+      "eventos": 1,
+      "antes": 3,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Tandava",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Teatro Astengo",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 10,
+      "antes": 10,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Teatro Broadway",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 15,
+      "antes": 15,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Teatro El Circulo — CSV",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Teatro Municipal La Comedia",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "eventos": 5,
+      "antes": 5,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Teatro de la Manzana",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Teatro del Rayo",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 2,
+      "antes": 2,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "TicketWay",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Tickets Bravos",
+      "estado": "pendiente",
+      "motivo": "Falta una revisión de acceso o de condiciones.",
+      "accion": "Revisar la fuente antes de habilitarla.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "TuTicket",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Turbo Entrada",
+      "estado": "pendiente",
+      "motivo": "Falta una revisión de acceso o de condiciones.",
+      "accion": "Revisar la fuente antes de habilitarla.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "UNR — Actividades abiertas",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    }
+  ],
+  "etapas": [
+    {
+      "nombre": "actualizar_eventos.py",
+      "estado": "parcial"
+    },
+    {
+      "nombre": "fuentes_nuevas.py",
+      "estado": "parcial"
+    },
+    {
+      "nombre": "fuentes_refi_folklore.py",
+      "estado": "parcial"
+    },
+    {
+      "nombre": "fuentes_ampliadas.py",
+      "estado": "parcial"
+    },
+    {
+      "nombre": "resolver_candidatos.py",
+      "estado": "parcial"
+    },
+    {
+      "nombre": "precios_lavarden.py",
+      "estado": "parcial"
+    },
+    {
+      "nombre": "precios_ticketek.py",
+      "estado": "parcial"
+    },
+    {
+      "nombre": "fuente_autodromo.py",
+      "estado": "parcial"
+    }
+  ],
+  "auditoria": {},
+  "tareas_retiradas": {
+    "fecha": "2026-10-22T17:40:04-03:00",
+    "desactivadas": [],
+    "archivados": [],
+    "pendientes": [
+      "auditar_fuentes.yml",
+      "corregir_pausas.yml",
+      "instalar_agenda_completa.yml",
+      "instalar_fuentes_hello_jaguar.yml",
+      "instalar_proteccion_eventos.yml",
+      "instalar_resolucion_candidatos.yml",
+      "pruebas.yml"
+    ]
+  },
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/39845434752",
+  "cambios": {
+    "nuevos": [
+      {
+        "fecha": "2026-10-22",
+        "hora": "20:30",
+        "nombre": "HOMENAJE AL PADRE DEL HEAVY NACIONAL",
+        "lugar": "Distrito Siete",
+        "origen": "Distrito Siete"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "07:30",
+        "nombre": "Noche de Museos Abiertos",
+        "lugar": "Plataforma Lavardén",
+        "origen": "Plataforma Lavardén"
+      },
+      {
+        "fecha": "2026-11-06",
+        "hora": "21:00",
+        "nombre": "JUBANY + MONTE PALOMAR + FINGIR DEMENCIA",
+        "lugar": "Distrito Siete",
+        "origen": "Distrito Siete"
+      },
+      {
+        "fecha": "2026-11-07",
+        "hora": "20:00",
+        "nombre": "Festival Beethoven - Quinteto Municipal de Vientos",
+        "lugar": "Centro Cultural Parque de España / AECI",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-12",
+        "hora": "23:00",
+        "nombre": "KINESIO FEST - 5TA EDICIÓN",
+        "lugar": "Complejo Forest",
+        "origen": "Passline — Complejo Forest"
+      },
+      {
+        "fecha": "2026-12-19",
+        "hora": "23:30",
+        "nombre": "STILL YOUNG en Floyd #23",
+        "lugar": "Floyd Bar",
+        "origen": "Passline — Floyd Bar"
+      }
+    ],
+    "ausentes": [
+      {
+        "fecha": "2026-10-22",
+        "hora": "10:00",
+        "nombre": "La Realidad oculta",
+        "lugar": "Galería de Arte La Tertulia",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-10-22",
+        "hora": "10:00",
+        "nombre": "Poesía enmarcada",
+        "lugar": "Galería de Arte La Tertulia",
+        "origen": "Agenda Cultural Rosario"
+      }
+    ]
+  }
+}

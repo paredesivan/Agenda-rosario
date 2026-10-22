@@ -1,0 +1,14 @@
+{
+  "fecha": "2026-10-22T17:40:04-03:00",
+  "desactivadas": [],
+  "archivados": [],
+  "pendientes": [
+    "auditar_fuentes.yml",
+    "corregir_pausas.yml",
+    "instalar_agenda_completa.yml",
+    "instalar_fuentes_hello_jaguar.yml",
+    "instalar_proteccion_eventos.yml",
+    "instalar_resolucion_candidatos.yml",
+    "pruebas.yml"
+  ]
+}

@@ -368,53 +368,105 @@ def evento_extra(fecha, hora, nombre, url, fuente, direccion,
     }
 
 
-def sin_repetidos(eventos):
-    resultado = []
-    sedes = ("lavarden", "comedia")
-    def firma_lugar(valor):
-        valor = normalizar(valor)
+# Comparación factual: nunca unir fechas, funciones o salas distintas.
+_PALABRAS_GENERICAS = set("a al con de del desde el en es la las los para por que un una y muestra muestras exposicion exposiciones actividad cultural informacion publicada agenda rosario funcion obra presenta presentacion".split())
+
+
+def _tokens_evento(valor):
+    return set(re.findall(r"[a-z0-9]+", normalizar(str(valor or "")))) - _PALABRAS_GENERICAS
+
+
+def _hora_evento(evento):
+    m = re.search(r"(?<![0-9])([01]?[0-9]|2[0-3]):([0-5][0-9])(?![0-9])", str(evento.get("hora", "")))
+    return f"{int(m[1]):02d}:{m[2]}" if m else None
+
+
+def _texto_cercano(a, b):
+    if not a or not b:
+        return False
+    fila = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        siguiente = [i]
+        for j, cb in enumerate(b, 1):
+            siguiente.append(min(siguiente[-1] + 1, fila[j] + 1, fila[j - 1] + (ca != cb)))
+        fila = siguiente
+    return 1 - fila[-1] / max(len(a), len(b)) >= .85
+
+
+def _mismo_lugar(a, b):
+    def firma(e):
+        valor = normalizar(e.get("lugar", ""))
         valor = re.sub(r"\bccpe\b", "centro cultural parque espana", valor)
-        valor = re.sub(r"\b(centro|cultural|de|del|la|el)\b", " ", valor)
-        valor = " ".join(re.sub(r"[^a-z0-9]+", " ", valor).split())
-        return next((v for v in sedes if v in valor), valor)
-    def firma_nombre(valor):
-        return " ".join(re.sub(r"[^a-z0-9]+", " ", normalizar(valor)).split())
-    def confianza(evento):
-        dominio = (urlsplit(evento.get("evento_url", "")).hostname or "").removeprefix("www.")
-        origen = firma_lugar(evento.get("origen", ""))
-        sede = firma_lugar(evento.get("lugar", ""))
-        if len(sede.split()) >= 2 and sede == origen:
+        return _tokens_evento(valor) - {"centro", "cultural", "galeria", "arte", "teatro", "municipal", "fundacion"}
+    def sala(e):
+        valor = normalizar(e.get("lugar", ""))
+        m = re.search(r"\b(?:sala|auditorio)\s+(.+)", valor)
+        return " ".join(sorted(_tokens_evento(m[1]))) if m else ""
+    sa, sb = sala(a), sala(b)
+    if sa and sb and sa != sb:
+        return False
+    x, y = firma(a), firma(b)
+    if not x or not y:
+        return False
+    # Números de sede y sala son significativos, aunque el nombre sea parecido.
+    if {w for w in x if w.isdigit()} != {w for w in y if w.isdigit()}:
+        return False
+    shared = len(x & y)
+    return (x == y or (shared >= 2 and shared / min(len(x), len(y)) >= .8
+                       and shared / max(len(x), len(y)) >= .6)
+            or _texto_cercano(" ".join(sorted(x)), " ".join(sorted(y))))
+
+
+def _mismo_contenido(a, b):
+    def limpio(valor):
+        return " ".join(re.findall(r"[a-z0-9]+", normalizar(str(valor or ""))))
+    na, nb = limpio(a.get("nombre")), limpio(b.get("nombre"))
+    if na and nb and (na == nb or (min(len(na), len(nb)) >= 8 and (na in nb or nb in na))):
+        return True
+    ta, tb = _tokens_evento(na), _tokens_evento(nb)
+    shared = len(ta & tb)
+    if ta and tb and shared >= 2 and shared / min(len(ta), len(tb)) >= .75 and shared / max(len(ta), len(tb)) >= .45:
+        return True
+    def descripcion(e):
+        valor = normalizar(e.get("descripcion") or "")
+        valor = re.sub(r"informacion publicada por[^.]*\.?", " ", valor)
+        return _tokens_evento(valor) - _tokens_evento(e.get("lugar")) - _tokens_evento(e.get("direccion"))
+    da, db = descripcion(a), descripcion(b)
+    if not da or not db:
+        return False
+    comunes = len(da & db)
+    # Se exige contenido propio, no una plantilla con categoría, sede y fuente.
+    return comunes >= 6 and comunes / min(len(da), len(db)) >= .85 and comunes / max(len(da), len(db)) >= .7 and (
+        shared >= 1 and shared / min(len(ta), len(tb)) >= .5)
+
+
+def eventos_duplicados(a, b):
+    hora = _hora_evento(a)
+    return bool(a.get("fecha") and a.get("fecha") == b.get("fecha") and hora
+                and hora == _hora_evento(b) and _mismo_lugar(a, b) and _mismo_contenido(a, b))
+
+
+def sin_repetidos(eventos):
+    def confianza(e):
+        dominio = (urlsplit(e.get("evento_url", "")).hostname or "").removeprefix("www.")
+        origen, sede = _tokens_evento(e.get("origen")), _tokens_evento(e.get("lugar"))
+        if len(origen & sede) >= 2:
             return 500
         if dominio.endswith((".gob.ar", ".edu.ar")):
             return 400
+        if any(t in dominio for t in ("ticketek", "passline", "turboentrada")):
+            return 300
         return 100
+    grupos = {}
     for evento in sorted(eventos, key=confianza, reverse=True):
-        nombre = firma_nombre(evento["nombre"])
-        lugar = normalizar(evento["lugar"])
-        sede = firma_lugar(lugar)
-        repetido = False
-
-        for anterior in resultado:
-            otro = firma_nombre(anterior["nombre"])
-            otro_lugar = normalizar(anterior["lugar"])
-            otra_sede = firma_lugar(otro_lugar)
-            mismo_turno = (
-                evento["fecha"], evento["hora"], sede
-            ) == (
-                anterior["fecha"], anterior["hora"], otra_sede
-            )
-            mismo_nombre = (
-                nombre == otro
-                or len(nombre) >= 8 and nombre in otro
-                or len(otro) >= 8 and otro in nombre
-            )
-            if mismo_turno and mismo_nombre:
-                repetido = True
-                break
-
-        if not repetido:
-            resultado.append(evento)
-    return resultado
+        turno = (evento.get("fecha"), _hora_evento(evento))
+        funciones = grupos.setdefault(turno, [])
+        grupo = next((g for g in funciones if all(eventos_duplicados(evento, e) for e in g)), None)
+        if grupo is None:
+            funciones.append([evento])
+        else:
+            grupo.append(evento)
+    return [grupo[0] for funciones in grupos.values() for grupo in funciones]
 
 
 def lavarden(html, fuente, url, direccion, hoy):
@@ -960,4 +1012,5 @@ def calendario(html, fuente, url, direccion, hoy):
 
 if __name__ == "__main__":
     actualizar()
+
 

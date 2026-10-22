@@ -3,6 +3,7 @@ let activeFilters = [];
 let searchQuery = "";
 
 function matchesSearch(item) {
+  if (!searchQuery.trim()) return true;
   const terms = normalize(searchQuery).trim().split(/\s+/).filter(Boolean);
   const text = normalize([item.nombre, item.artista, item.artistas, item.lugar,
     item.direccion, item.descripcion].filter(Boolean).join(" "));
@@ -30,7 +31,15 @@ const verifiedCategories = [
   ["plataformalavarden.gob.ar/actividades/julieta-laso", ["musica"]]
 ];
 
+// Las fichas se reemplazan al recargar; reutilizar su clasificación evita
+// recalcularla para cada botón, día y filtro en teléfonos lentos.
+const categoryCache = new WeakMap();
 function eventCategories(item) {
+  if (!categoryCache.has(item)) categoryCache.set(item, computeEventCategories(item));
+  return categoryCache.get(item);
+}
+
+function computeEventCategories(item) {
   const explicit = Array.isArray(item.categorias) ? item.categorias : [item.categoria];
   const aliases = {"musica en vivo":"musica", "conciertos":"musica", "recitales":"musica",
     "muestras":"museos", "exposiciones":"museos", "literatura":"libros", "charlas":"libros",
@@ -80,29 +89,6 @@ function matchesFilter(item) {
 // Evita mostrar varias fichas del mismo evento cuando distintas fuentes lo
 // publican con títulos levemente diferentes. Solo une coincidencias de fecha,
 // hora y recinto; los casos ambiguos se mantienen separados.
-const genericTitleWords = new Set([
-  "a", "al", "algunas", "algun", "con", "de", "del", "desde", "el", "en",
-  "es", "espectaculo", "funcion", "la", "las", "los", "muestra", "obra",
-  "para", "presenta", "presentacion", "que", "un", "una", "y"
-]);
-
-function titleTokens(value) {
-  return normalize(value).replace(/[^a-z0-9]+/g, " ").trim().split(/\s+/)
-    .filter(token => token.length > 1 && !genericTitleWords.has(token));
-}
-
-function titleSimilarity(a, b) {
-  const left = new Set(titleTokens(a));
-  const right = new Set(titleTokens(b));
-  if (!left.size || !right.size) return false;
-  const shared = [...left].filter(token => right.has(token)).length;
-  const smaller = Math.min(left.size, right.size);
-  const larger = Math.max(left.size, right.size);
-  // Dos palabras distintivas compartidas y alta cobertura del título más corto
-  // permiten variantes como “Mamá Mía” y “Función de Mamá Mía…”.
-  return shared >= 2 && shared / smaller >= 0.75 && shared / larger >= 0.45;
-}
-
 function locationTokens(value) {
   let text = normalize(value).replace(/\bccpe\b/g, "centro cultural parque espana")
     .replace(/\bmacro\b/g, "museo arte contemporaneo rosario")
@@ -112,26 +98,64 @@ function locationTokens(value) {
     !["calle", "avenida", "av", "piso", "bis"].includes(token)));
 }
 
-// Compara el nombre de la sede antes de incorporar domicilios escritos de
-// formas distintas. Conserva identificadores de sala, auditorio y números.
-function venueSignature(value) {
-  return [...locationTokens(value)].filter(token =>
-    !["centro", "cultural", "de", "del", "la", "el"].includes(token)).sort().join(" ");
+function nearText(a, b) {
+  if (!a || !b) return false;
+  let row = Array.from({length: b.length + 1}, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    const next = [i];
+    for (let j = 1; j <= b.length; j++) next[j] = Math.min(
+      next[j - 1] + 1, row[j] + 1, row[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    row = next;
+  }
+  return 1 - row[b.length] / Math.max(a.length, b.length) >= 0.85;
 }
 
+const contentStopWords = new Set("a al con de del desde el en es la las los para por que un una y muestra muestras exposicion exposiciones actividad cultural informacion publicada agenda rosario funcion obra presenta presentacion".split(" "));
+function contentTokens(value) {
+  return new Set((normalize(value).match(/[a-z0-9]+/g) || []).filter(w => !contentStopWords.has(w)));
+}
+function commonCount(a, b) { return [...a].filter(w => b.has(w)).length; }
+function eventStart(item) {
+  const m = String(item.hora || "").match(/(?<![0-9])([01]?[0-9]|2[0-3]):([0-5][0-9])(?![0-9])/);
+  return m ? `${m[1].padStart(2, "0")}:${m[2]}` : null;
+}
 function sameLocation(a, b) {
-  const venueA = venueSignature(a.lugar || "");
-  const venueB = venueSignature(b.lugar || "");
-  if (venueA.split(" ").length >= 2 && venueA === venueB) return true;
+  const room = e => {
+    const m = normalize(e.lugar).match(/\b(?:sala|auditorio)\s+(.+)/);
+    return m ? [...contentTokens(m[1])].sort().join(" ") : "";
+  };
+  const ra = room(a), rb = room(b);
+  if (ra && rb && ra !== rb) return false;
+  const signature = e => new Set([...contentTokens(normalize(e.lugar)
+    .replace(/\bccpe\b/g, "centro cultural parque espana"))]
+    .filter(w => !["centro", "cultural", "galeria", "arte", "teatro", "municipal", "fundacion"].includes(w)));
+  const x = signature(a), y = signature(b);
+  if (!x.size || !y.size) return false;
+  const numbers = set => [...set].filter(w => /^\d+$/.test(w)).sort().join(" ");
+  if (numbers(x) !== numbers(y)) return false;
+  const shared = commonCount(x, y);
+  const sx = [...x].sort().join(" "), sy = [...y].sort().join(" ");
+  return sx === sy || (shared >= 2 && shared / Math.min(x.size, y.size) >= .8 &&
+    shared / Math.max(x.size, y.size) >= .6) || nearText(sx, sy);
+}
 
-  const roomsA = normalize(a.lugar || "").match(/\b(?:sala|auditorio)\s+\d+\b/g) || [];
-  const roomsB = normalize(b.lugar || "").match(/\b(?:sala|auditorio)\s+\d+\b/g) || [];
-  if (roomsA.length && roomsB.length && roomsA.join("|") !== roomsB.join("|")) return false;
-  const left = locationTokens(`${a.lugar || ""} ${a.direccion || ""}`);
-  const right = locationTokens(`${b.lugar || ""} ${b.direccion || ""}`);
-  if (!left.size || !right.size) return false;
-  const shared = [...left].filter(token => right.has(token)).length;
-  return shared / Math.min(left.size, right.size) >= 0.7;
+function sameContent(a, b) {
+  const clean = v => (normalize(v).match(/[a-z0-9]+/g) || []).join(" ");
+  const na = clean(a.nombre), nb = clean(b.nombre);
+  if (na && nb && (na === nb || (Math.min(na.length, nb.length) >= 8 &&
+      (na.includes(nb) || nb.includes(na))))) return true;
+  const ta = contentTokens(na), tb = contentTokens(nb), shared = commonCount(ta, tb);
+  if (ta.size && tb.size && shared >= 2 && shared / Math.min(ta.size, tb.size) >= .75 &&
+      shared / Math.max(ta.size, tb.size) >= .45) return true;
+  const description = e => {
+    const words = contentTokens(normalize(e.descripcion).replace(/informacion publicada por[^.]*\.?/g, " "));
+    for (const word of [...contentTokens(e.lugar), ...contentTokens(e.direccion)]) words.delete(word);
+    return words;
+  };
+  const da = description(a), db = description(b), common = commonCount(da, db);
+  return da.size > 0 && db.size > 0 && common >= 6 &&
+    common / Math.min(da.size, db.size) >= .85 && common / Math.max(da.size, db.size) >= .7 &&
+    (shared >= 1 && shared / Math.min(ta.size, tb.size) >= .5);
 }
 
 function sourceReliability(item) {
@@ -153,17 +177,16 @@ function sourceReliability(item) {
 }
 
 function duplicateEvents(a, b) {
-  const startA = String(a.hora || "").match(/\d{1,2}:\d{2}/)?.[0];
-  const startB = String(b.hora || "").match(/\d{1,2}:\d{2}/)?.[0];
-  return a.fecha === b.fecha && startA && startA === startB &&
-    sameLocation(a, b) && titleSimilarity(a.nombre, b.nombre);
+  const start = eventStart(a);
+  return Boolean(a.fecha && a.fecha === b.fecha && start && start === eventStart(b) &&
+    sameLocation(a, b) && sameContent(a, b));
 }
 
 function deduplicatedEvents(items) {
   // Comparar sólo funciones del mismo día y horario.
   const buckets = new Map();
   for (const item of items) {
-    const start = String(item.hora || "").match(/\d{1,2}:\d{2}/)?.[0];
+    const start = eventStart(item);
     const key = `${item.fecha}|${start}`;
     if (!buckets.has(key)) buckets.set(key, []);
     const groups = buckets.get(key);
@@ -615,3 +638,4 @@ loadEvents().catch(() => {
 setInterval(() => {
   loadEvents().catch(console.error);
 }, 60 * 60 * 1000);
+

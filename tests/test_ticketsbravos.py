@@ -1,7 +1,5 @@
-import json
 import unittest
 from datetime import date
-from pathlib import Path
 from fuente_ticketsbravos import _ficha, revisar_ticketsbravos
 
 class TicketsBravosTests(unittest.TestCase):
@@ -24,8 +22,11 @@ class TicketsBravosTests(unittest.TestCase):
             self.assertIn('pendiente',estado['Tickets Bravos'])
         finally:
             if anterior is not None:os.environ['TICKETS_BRAVOS_TERMS_APPROVED']=anterior
-    def test_evento_en_snapshot(self):
-        archivo=Path(__file__).resolve().parents[1]/'eventos.json'
-        if not archivo.exists(): self.skipTest('Requiere repositorio completo')
-        datos=json.loads(archivo.read_text(encoding='utf-8'))
-        self.assertTrue(any(e.get('evento_url')=='https://www.ticketsbravos.com/eventos/hello-el-unplugged-e223' for e in datos['eventos']))
+    def test_ficha_se_conserva_al_deduplicar(self):
+        # La regresión usa una ficha fija; no exige conservar eventos vencidos
+        # dentro de la agenda dinámica que publica el sitio.
+        from actualizar_eventos import sin_repetidos
+        html='<h2>Hello, el unplugged</h2><p>Fecha 21.OCT.2026 20:30hs</p><p>Lugar Casa Brava Pichincha 120, Rosario, Santa Fe</p>'
+        evento=_ficha(html,'https://www.ticketsbravos.com/eventos/hello-el-unplugged-e223',date(2026,10,18))
+        self.assertIsNotNone(evento)
+        self.assertEqual(sin_repetidos([evento,dict(evento)]),[evento])
