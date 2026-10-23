@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-10-22T19:01:16-03:00",
-  "ejecucion_id": "39858744894-1",
-  "inicio": "2026-10-22T18:37:33-03:00",
+  "generado": "2026-10-23T17:09:00-03:00",
+  "ejecucion_id": "40009936783-1",
+  "inicio": "2026-10-23T16:42:12-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-22 18:37",
-  "ultima_consulta_fuentes": "2026-10-22T19:00:40.202419-03:00",
+  "datos_actualizados": "2026-10-23 16:42",
+  "ultima_consulta_fuentes": "2026-10-23T17:08:26.220835-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 945,
-    "funciones_unicas": 945,
-    "nuevos": 0,
+    "eventos": 901,
+    "funciones_unicas": 901,
+    "nuevos": 13,
     "ausentes": 0,
-    "duplicados": 1,
-    "conservados": 11,
+    "duplicados": 6,
+    "conservados": 26,
     "fuentes": 99
   },
   "alertas": [
@@ -36,12 +36,12 @@
     },
     {
       "nombre": "Agenda Cultural Rosario",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
-      "eventos": 412,
-      "antes": 412,
-      "conservados": 5,
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 400,
+      "antes": 403,
+      "conservados": 7,
       "caida": false
     },
     {
@@ -109,8 +109,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 6,
-      "antes": 6,
+      "eventos": 5,
+      "antes": 5,
       "conservados": 0,
       "caida": false
     },
@@ -149,7 +149,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 4,
+      "eventos": 5,
       "antes": 4,
       "conservados": 0,
       "caida": false
@@ -159,8 +159,8 @@
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 10,
-      "antes": 10,
+      "eventos": 9,
+      "antes": 9,
       "conservados": 0,
       "caida": false
     },
@@ -239,9 +239,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 10,
-      "antes": 10,
-      "conservados": 1,
+      "eventos": 9,
+      "antes": 8,
+      "conservados": 0,
       "caida": false
     },
     {
@@ -270,7 +270,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 6,
-      "antes": 6,
+      "antes": 5,
       "conservados": 0,
       "caida": false
     },
@@ -279,8 +279,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 19,
-      "antes": 19,
+      "eventos": 16,
+      "antes": 16,
       "conservados": 0,
       "caida": false
     },
@@ -396,9 +396,9 @@
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
@@ -416,9 +416,9 @@
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -489,8 +489,8 @@
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 5,
-      "antes": 5,
+      "eventos": 4,
+      "antes": 4,
       "conservados": 0,
       "caida": false
     },
@@ -536,11 +536,11 @@
     },
     {
       "nombre": "Microteatro Rosario",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
-      "eventos": 61,
-      "antes": 61,
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 40,
+      "antes": 40,
       "conservados": 0,
       "caida": false
     },
@@ -559,9 +559,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 297,
-      "antes": 297,
-      "conservados": 4,
+      "eventos": 291,
+      "antes": 282,
+      "conservados": 18,
       "caida": false
     },
     {
@@ -626,9 +626,9 @@
     },
     {
       "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -749,8 +749,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 6,
-      "antes": 6,
+      "eventos": 5,
+      "antes": 5,
       "conservados": 0,
       "caida": false
     },
@@ -809,8 +809,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 10,
-      "antes": 10,
+      "eventos": 11,
+      "antes": 9,
       "conservados": 1,
       "caida": false
     },
@@ -909,8 +909,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 10,
-      "antes": 10,
+      "eventos": 9,
+      "antes": 9,
       "conservados": 0,
       "caida": false
     },
@@ -919,7 +919,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 15,
+      "eventos": 16,
       "antes": 15,
       "conservados": 0,
       "caida": false
@@ -939,7 +939,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 5,
+      "eventos": 6,
       "antes": 5,
       "conservados": 0,
       "caida": false
@@ -1006,9 +1006,9 @@
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1055,7 +1055,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-22T19:01:14-03:00",
+    "fecha": "2026-10-23T17:08:58-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1068,9 +1068,101 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/39858744894",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40009936783",
   "cambios": {
-    "nuevos": [],
+    "nuevos": [
+      {
+        "fecha": "2026-10-24",
+        "hora": "21:00",
+        "nombre": "HABLANDO A TU CORAZÓN - Cantamos a Charly",
+        "lugar": "El Aserradero",
+        "origen": "El Aserradero — oficial"
+      },
+      {
+        "fecha": "2026-10-25",
+        "hora": "20:00",
+        "nombre": "Organismos estables presentan: Mozart y otros compositores",
+        "lugar": "Teatro Municipal La Comedia",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-28",
+        "hora": "19:00",
+        "nombre": "Presentación del libro «Los Martes con Carlitos» de Héctor Rio y Dahiana Belfiori",
+        "lugar": "Plataforma Lavardén",
+        "origen": "Plataforma Lavardén"
+      },
+      {
+        "fecha": "2026-10-28",
+        "hora": "20:00",
+        "nombre": "J. S. Bach: Cantatas para Alto y concierto para tres violines y orquesta",
+        "lugar": "Teatro El Círculo",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-29",
+        "hora": "17:00",
+        "nombre": "Plataforma Invita: ¡Oktubre cumple 40 años en la casa!",
+        "lugar": "Plataforma Lavardén",
+        "origen": "Plataforma Lavardén"
+      },
+      {
+        "fecha": "2026-10-29",
+        "hora": "20:30",
+        "nombre": "LA REBELIÓN DE LAS FLORES",
+        "lugar": "Distrito Siete",
+        "origen": "Distrito Siete"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "18:00",
+        "nombre": "La Biblioteca Argentina en la Noche de Museos Abiertos",
+        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-06",
+        "hora": "20:00",
+        "nombre": "Ars Nova: 50° aniversario",
+        "lugar": "Teatro Municipal La Comedia",
+        "origen": "Teatro Municipal La Comedia"
+      },
+      {
+        "fecha": "2026-11-06",
+        "hora": "20:30",
+        "nombre": "Concierto de Primavera. El amor en el Renacimiento",
+        "lugar": "Centro Cultural Parque de España",
+        "origen": "Centro Cultural Parque de España"
+      },
+      {
+        "fecha": "2026-11-06",
+        "hora": "20:30",
+        "nombre": "Ars Nova: 50° aniversario",
+        "lugar": "Teatro Municipal La Comedia",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-29",
+        "hora": "16:00",
+        "nombre": "Muestra: La Canción del barrio",
+        "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-03",
+        "hora": "17:00",
+        "nombre": "Circuito SAR: visita e itinerario de murales de Julio Vanzo",
+        "lugar": "Galería Rosario (San Martín 956)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-22",
+        "hora": "08:30",
+        "nombre": "Calle Recreativa",
+        "lugar": "Calle Recreativa",
+        "origen": "Municipalidad de Rosario"
+      }
+    ],
     "ausentes": []
   }
 }
