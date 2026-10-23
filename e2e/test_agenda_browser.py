@@ -1,4 +1,4 @@
-"""Prueba E2E del flujo real de filtros y enlaces de la agenda."""
+"""Pruebas E2E de filtros, enlaces, deduplicación y eventos ACR."""
 import json
 import threading
 import unittest
@@ -8,51 +8,26 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-
 ROOT = Path(__file__).resolve().parents[1]
-FECHA_FUTURA = "2099-05-15"
+FECHA_FUTURA = '2099-05-15'
 EVENTOS_PRUEBA = {
-    "actualizado": "fixture E2E",
-    "eventos": [
-        {
-            "fecha": FECHA_FUTURA,
-            "hora": "19:00",
-            "nombre": "La obra teatral de prueba",
-            "lugar": "Teatro de prueba",
-            "direccion": "Corrientes 100, Rosario",
-            "descripcion": "",
-            "evento_url": "https://example.org/teatro",
-            "categorias": ["teatro"],
-            "precio": 0,
-            "precio_etiqueta": "Gratis",
-            "origen": "Teatro de prueba",
-        },
-        {
-            "fecha": FECHA_FUTURA,
-            "hora": "20:00",
-            "nombre": "Feria del barrio de prueba",
-            "lugar": "Plaza de prueba",
-            "direccion": "San Martín 200, Rosario",
-            "descripcion": "",
-            "evento_url": "https://example.org/feria",
-            "categorias": ["ferias"],
-            "precio": 2500,
-            "precio_etiqueta": "$2.500",
-            "origen": "Feria de prueba",
-        },
-        {
-            "fecha": FECHA_FUTURA,
-            "hora": "21:00",
-            "nombre": "Concierto de prueba",
-            "lugar": "Sala de música de prueba",
-            "direccion": "Córdoba 300, Rosario",
-            "descripcion": "",
-            "evento_url": "https://example.org/musica",
-            "categorias": ["musica"],
-            "precio": 5000,
-            "precio_etiqueta": "$5.000",
-            "origen": "Sala de música de prueba",
-        },
+    'actualizado': 'fixture E2E',
+    'eventos': [
+        {'fecha': FECHA_FUTURA, 'hora': '19:00', 'nombre': 'La obra teatral de prueba',
+         'lugar': 'Teatro de prueba', 'direccion': 'Corrientes 100, Rosario',
+         'descripcion': '', 'evento_url': 'https://example.org/teatro',
+         'categorias': ['teatro'], 'precio': 0, 'precio_etiqueta': 'Gratis',
+         'origen': 'Teatro de prueba'},
+        {'fecha': FECHA_FUTURA, 'hora': '20:00', 'nombre': 'Feria del barrio de prueba',
+         'lugar': 'Plaza de prueba', 'direccion': 'San Martín 200, Rosario',
+         'descripcion': '', 'evento_url': 'https://example.org/feria',
+         'categorias': ['ferias'], 'precio': 2500, 'precio_etiqueta': '$2.500',
+         'origen': 'Feria de prueba'},
+        {'fecha': FECHA_FUTURA, 'hora': '21:00', 'nombre': 'Concierto de prueba',
+         'lugar': 'Sala de música de prueba', 'direccion': 'Córdoba 300, Rosario',
+         'descripcion': '', 'evento_url': 'https://example.org/musica',
+         'categorias': ['musica'], 'precio': 5000, 'precio_etiqueta': '$5.000',
+         'origen': 'Sala de música de prueba'},
     ],
 }
 
@@ -61,11 +36,11 @@ class TestAgendaEnNavegador(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         handler = partial(SimpleHTTPRequestHandler, directory=str(ROOT))
-        cls.server = ThreadingHTTPServer(("127.0.0.1", 0), handler)
+        cls.server = ThreadingHTTPServer(('127.0.0.1', 0), handler)
         cls.server.daemon_threads = True
         cls.thread = threading.Thread(target=cls.server.serve_forever, daemon=True)
         cls.thread.start()
-        cls.url = f"http://127.0.0.1:{cls.server.server_port}/index.html"
+        cls.url = f'http://127.0.0.1:{cls.server.server_port}/index.html'
         cls.playwright = sync_playwright().start()
         cls.browser = cls.playwright.chromium.launch(headless=True)
 
@@ -80,68 +55,44 @@ class TestAgendaEnNavegador(unittest.TestCase):
     def test_carga_combina_filtros_y_muestra_enlaces(self):
         page = self.browser.new_page()
         errores_js = []
-        page.on("pageerror", lambda error: errores_js.append(str(error)))
-        page.route(
-            "**/eventos.json*",
-            lambda route: route.fulfill(
-                status=200,
-                content_type="application/json; charset=utf-8",
-                body=json.dumps(EVENTOS_PRUEBA, ensure_ascii=False),
-            ),
-        )
-
+        page.on('pageerror', lambda error: errores_js.append(str(error)))
+        page.route('**/eventos.json*', lambda route: route.fulfill(
+            status=200, content_type='application/json; charset=utf-8',
+            body=json.dumps(EVENTOS_PRUEBA, ensure_ascii=False)))
         try:
-            response = page.goto(self.url, wait_until="domcontentloaded")
+            response = page.goto(self.url, wait_until='domcontentloaded')
             self.assertIsNotNone(response)
             self.assertEqual(response.status, 200)
-            page.locator(".event h3").first.wait_for()
-            self.assertEqual(page.locator(".event h3").all_text_contents(), [
-                "La obra teatral de prueba",
-                "Feria del barrio de prueba",
-                "Concierto de prueba",
-            ])
-
+            page.locator('.event h3').first.wait_for()
+            self.assertEqual(page.locator('.event h3').all_text_contents(), [
+                'La obra teatral de prueba', 'Feria del barrio de prueba', 'Concierto de prueba'])
             page.locator('[data-filter="teatro"]').click()
-            self.assertEqual(page.locator(".event h3").all_text_contents(), [
-                "La obra teatral de prueba",
-            ])
-
-            # Las categorías seleccionadas se combinan con lógica OR.
+            self.assertEqual(page.locator('.event h3').all_text_contents(), ['La obra teatral de prueba'])
             page.locator('[data-filter="ferias"]').click()
-            self.assertEqual(page.locator(".event h3").all_text_contents(), [
-                "La obra teatral de prueba",
-                "Feria del barrio de prueba",
-            ])
-
-            # Gratis se agrega como condición AND a las categorías.
+            self.assertEqual(page.locator('.event h3').all_text_contents(), [
+                'La obra teatral de prueba', 'Feria del barrio de prueba'])
             page.locator('[data-filter="gratis"]').click()
-            self.assertEqual(page.locator(".event h3").all_text_contents(), [
-                "La obra teatral de prueba",
-            ])
-            self.assertEqual(
-                page.locator("#day-count").inner_text(),
-                "1 actividad con estos filtros",
-            )
-            self.assertEqual(
-                page.locator("a.event-info").get_attribute("href"),
-                "https://example.org/teatro",
-            )
-            self.assertTrue(
-                page.locator(".actions a.map").get_attribute("href").startswith(
-                    "https://www.google.com/maps/search/"
-                )
-            )
+            self.assertEqual(page.locator('.event h3').all_text_contents(), ['La obra teatral de prueba'])
+            self.assertEqual(page.locator('#day-count').inner_text(), '1 actividad con estos filtros')
+            self.assertEqual(page.locator('a.event-info').get_attribute('href'), 'https://example.org/teatro')
+            self.assertTrue(page.locator('.actions a.map').get_attribute('href').startswith(
+                'https://www.google.com/maps/search/'))
             self.assertEqual(errores_js, [])
         finally:
             page.close()
 
     def test_duplicado_sedes_equivalentes_y_fuente_directa(self):
-        base = {**EVENTOS_PRUEBA['eventos'][0], 'nombre': 'Impresiones Sonoras - Ensamble Municipal de Vientos',
-                'lugar': 'Parque España', 'direccion': 'SARMIENTO DOMINGO FAUSTINO 100, Rosario, Santa Fe',
-                'origen': 'Municipalidad de Rosario', 'evento_url': 'https://rosario.gob.ar/actividad'}
+        base = {**EVENTOS_PRUEBA['eventos'][0],
+                'nombre': 'Impresiones Sonoras - Ensamble Municipal de Vientos',
+                'lugar': 'Parque España',
+                'direccion': 'SARMIENTO DOMINGO FAUSTINO 100, Rosario, Santa Fe',
+                'origen': 'Municipalidad de Rosario',
+                'evento_url': 'https://rosario.gob.ar/actividad'}
         directa = {**base, 'nombre': 'Impresiones Sonoras – Ensamble Municipal de Vientos',
-                   'lugar': 'Centro Cultural Parque de España', 'direccion': 'Sarmiento y el río, Rosario, Santa Fe',
-                   'origen': 'Centro Cultural Parque de España', 'evento_url': 'https://ccpe.org.ar/actividad'}
+                   'lugar': 'Centro Cultural Parque de España',
+                   'direccion': 'Sarmiento y el río, Rosario, Santa Fe',
+                   'origen': 'Centro Cultural Parque de España',
+                   'evento_url': 'https://ccpe.org.ar/actividad'}
         page = self.browser.new_page()
         try:
             page.route('**/eventos.json*', lambda route: route.fulfill(
@@ -152,13 +103,13 @@ class TestAgendaEnNavegador(unittest.TestCase):
             self.assertEqual(page.locator('a.event-info').get_attribute('href'), directa['evento_url'])
             self.assertFalse(page.evaluate('sameLocation({lugar:"Sala 1"}, {lugar:"Sala 2"})'))
             self.assertFalse(page.evaluate('duplicateEvents(' + json.dumps(base) + ',' +
-                                          json.dumps({**directa, 'hora':'21:00'}) + ')'))
+                                           json.dumps({**directa, 'hora': '21:00'}) + ')'))
         finally:
             page.close()
 
     def test_mapa_acr_sin_direccion_y_regresion_con_direccion(self):
         from urllib.parse import urlparse, parse_qs
-        for direccion in ("", "   ", None, "Sarmiento 100, Rosario"):
+        for direccion in ('', '   ', None, 'Sarmiento 100, Rosario'):
             with self.subTest(direccion=direccion):
                 evento = {**EVENTOS_PRUEBA['eventos'][0],
                           'origen': 'Agenda Cultural Rosario',
@@ -173,9 +124,11 @@ class TestAgendaEnNavegador(unittest.TestCase):
                     link = page.locator('.actions a.map')
                     link.wait_for()
                     href = link.get_attribute('href')
-                    expected = direccion.strip() if direccion and direccion.strip() else 'Centro Cultural de prueba, Rosario, Santa Fe, Argentina'
+                    expected = (direccion.strip() if direccion and direccion.strip()
+                                else 'Centro Cultural de prueba, Rosario, Santa Fe, Argentina')
                     self.assertEqual(parse_qs(urlparse(href).query)['query'], [expected])
-                    page.context.route('https://www.google.com/maps/**', lambda route: route.fulfill(body='Mapa de prueba'))
+                    page.context.route('https://www.google.com/maps/**',
+                                       lambda route: route.fulfill(body='Mapa de prueba'))
                     with page.expect_popup() as popup:
                         link.click()
                     popup.value.wait_for_load_state()
@@ -184,22 +137,27 @@ class TestAgendaEnNavegador(unittest.TestCase):
                 finally:
                     page.close()
 
-    def test_acr_enlace_propio_y_vencimiento_sin_refrescar_datos(self):
+    def test_acr_enlace_propio_y_sin_vencimiento_por_hora(self):
+        """ACR permanece visible durante el día aunque haya empezado el evento.
+
+        La fecha pasada se elimina en futureEvents(), no en acrAvailable().
+        """
         page = self.browser.new_page()
-        evento = {**EVENTOS_PRUEBA['eventos'][0], 'origen':'Agenda Cultural Rosario',
-                  'evento_url':'https://www.agendaculturalrosario.com.ar/eventos/prueba',
-                  'descripcion':'Actividad cultural publicada por Agenda Cultural Rosario.'}
+        evento = {**EVENTOS_PRUEBA['eventos'][0],
+                  'origen': 'Agenda Cultural Rosario',
+                  'evento_url': 'https://www.agendaculturalrosario.com.ar/eventos/prueba',
+                  'descripcion': 'Actividad cultural publicada por Agenda Cultural Rosario.'}
         try:
             page.route('**/eventos.json*', lambda route: route.fulfill(
-                content_type='application/json', body=json.dumps({'eventos':[evento]})))
+                content_type='application/json', body=json.dumps({'eventos': [evento]})))
             page.goto(self.url)
             page.locator('.event h3').first.wait_for()
-            self.assertEqual(page.locator('a.event-info').get_attribute('href'),evento['evento_url'])
-            self.assertFalse(page.evaluate('acrAvailable({origen:"Agenda Cultural Rosario",fecha:"2026-10-17",hora:"20:00"}, Date.parse("2026-10-17T20:30:00-03:00"))'))
+            self.assertEqual(page.locator('a.event-info').get_attribute('href'), evento['evento_url'])
+            self.assertTrue(page.evaluate('acrAvailable({origen:"Agenda Cultural Rosario",fecha:"2026-10-17",hora:"20:00"}, Date.parse("2026-10-17T20:30:00-03:00"))'))
             self.assertTrue(page.evaluate('acrAvailable({origen:"Agenda Cultural Rosario",fecha:"2026-10-17",hora:"20:00",fecha_fin:"2026-10-17",hora_fin:"21:00"}, Date.parse("2026-10-17T20:30:00-03:00"))'))
         finally:
             page.close()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main(verbosity=2)
