@@ -199,11 +199,12 @@ function deduplicatedEvents(items) {
 }
 
 function acrAvailable(item, now = Date.now()) {
-  if (item.origen !== "Agenda Cultural Rosario") return true;
-  if (horaPendiente(item)) return item.fecha >= todayKey();
-  const ended = item.fecha_fin && item.hora_fin;
-  const cutoff = Date.parse(`${ended ? item.fecha_fin : item.fecha}T${ended ? item.hora_fin : item.hora}:00-03:00`);
-  return Number.isFinite(cutoff) && (ended ? cutoff > now : cutoff >= now);
+ // if (item.origen !== "Agenda Cultural Rosario") return true;
+ // if (horaPendiente(item)) return item.fecha >= todayKey();
+ // const ended = item.fecha_fin && item.hora_fin;
+ // const cutoff = Date.parse(`${ended ? item.fecha_fin : item.fecha}T${ended ? item.hora_fin : item.hora}:00-03:00`);
+ // return Number.isFinite(cutoff) && (ended ? cutoff > now : cutoff >= now);
+    return true;
 }
 
 let futureCache = {source: null, day: null, minute: null, items: []};
