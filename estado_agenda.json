@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-10-23T20:46:20-03:00",
-  "ejecucion_id": "40038078382-1",
-  "inicio": "2026-10-23T20:10:12-03:00",
+  "generado": "2026-10-24T02:08:03-03:00",
+  "ejecucion_id": "40063158652-1",
+  "inicio": "2026-10-24T01:38:59-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-23 20:10",
-  "ultima_consulta_fuentes": "2026-10-23T20:41:13.350353-03:00",
+  "datos_actualizados": "2026-10-24 01:39",
+  "ultima_consulta_fuentes": "2026-10-24T02:07:28.581723-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 901,
-    "funciones_unicas": 901,
-    "nuevos": 0,
+    "eventos": 830,
+    "funciones_unicas": 830,
+    "nuevos": 6,
     "ausentes": 0,
-    "duplicados": 4,
-    "conservados": 46,
+    "duplicados": 3,
+    "conservados": 20,
     "fuentes": 99
   },
   "alertas": [
@@ -29,8 +29,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 2,
-      "antes": 2,
+      "eventos": 1,
+      "antes": 1,
       "conservados": 0,
       "caida": false
     },
@@ -39,9 +39,9 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 400,
-      "antes": 400,
-      "conservados": 17,
+      "eventos": 379,
+      "antes": 379,
+      "conservados": 4,
       "caida": false
     },
     {
@@ -109,8 +109,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 5,
-      "antes": 5,
+      "eventos": 4,
+      "antes": 4,
       "conservados": 0,
       "caida": false
     },
@@ -149,8 +149,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 5,
-      "antes": 5,
+      "eventos": 4,
+      "antes": 4,
       "conservados": 0,
       "caida": false
     },
@@ -239,9 +239,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 9,
-      "antes": 9,
-      "conservados": 1,
+      "eventos": 8,
+      "antes": 8,
+      "conservados": 0,
       "caida": false
     },
     {
@@ -279,8 +279,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 16,
-      "antes": 16,
+      "eventos": 13,
+      "antes": 13,
       "conservados": 0,
       "caida": false
     },
@@ -309,8 +309,8 @@
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 2,
-      "antes": 2,
+      "eventos": 1,
+      "antes": 1,
       "conservados": 0,
       "caida": false
     },
@@ -319,8 +319,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 9,
-      "antes": 9,
+      "eventos": 8,
+      "antes": 8,
       "conservados": 0,
       "caida": false
     },
@@ -386,9 +386,9 @@
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "pendiente",
-      "motivo": "La fuente no tiene un resultado concluyente.",
-      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -396,9 +396,9 @@
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
@@ -416,9 +416,9 @@
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -539,8 +539,8 @@
       "estado": "sin_novedades",
       "motivo": "No se encontraron actividades nuevas verificables.",
       "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 40,
-      "antes": 40,
+      "eventos": 20,
+      "antes": 20,
       "conservados": 0,
       "caida": false
     },
@@ -559,9 +559,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 291,
-      "antes": 291,
-      "conservados": 26,
+      "eventos": 277,
+      "antes": 271,
+      "conservados": 14,
       "caida": false
     },
     {
@@ -739,8 +739,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 4,
-      "antes": 4,
+      "eventos": 3,
+      "antes": 3,
       "conservados": 1,
       "caida": false
     },
@@ -749,8 +749,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 5,
-      "antes": 5,
+      "eventos": 4,
+      "antes": 4,
       "conservados": 0,
       "caida": false
     },
@@ -809,8 +809,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 11,
-      "antes": 11,
+      "eventos": 10,
+      "antes": 10,
       "conservados": 1,
       "caida": false
     },
@@ -819,8 +819,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 6,
-      "antes": 6,
+      "eventos": 5,
+      "antes": 5,
       "conservados": 0,
       "caida": false
     },
@@ -909,8 +909,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 9,
-      "antes": 9,
+      "eventos": 8,
+      "antes": 8,
       "conservados": 0,
       "caida": false
     },
@@ -919,8 +919,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 16,
-      "antes": 16,
+      "eventos": 15,
+      "antes": 15,
       "conservados": 0,
       "caida": false
     },
@@ -959,8 +959,8 @@
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 2,
-      "antes": 2,
+      "eventos": 1,
+      "antes": 1,
       "conservados": 0,
       "caida": false
     },
@@ -1006,9 +1006,9 @@
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1055,7 +1055,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-23T20:46:19-03:00",
+    "fecha": "2026-10-24T02:08:01-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1068,9 +1068,52 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40038078382",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40063158652",
   "cambios": {
-    "nuevos": [],
+    "nuevos": [
+      {
+        "fecha": "2026-11-23",
+        "hora": "08:00",
+        "nombre": "Bienestar y actividad física en San Martín A",
+        "lugar": "Centro de Salud \"Vecinal San Martín A\"",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "09:00",
+        "nombre": "Actividad Física y Danza para Adultos Mayores",
+        "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "17:00",
+        "nombre": "Ajedrez para las infancias",
+        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "18:00",
+        "nombre": "Ajedrez: nivel intermedio-avanzados",
+        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "18:30",
+        "nombre": "Mis primeros pasos",
+        "lugar": "Centro Cultural  La Casa del Tango",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "20:00",
+        "nombre": "Hystérēsis. Anatomía del roce",
+        "lugar": "Burana bART (Callao 1028)",
+        "origen": "Municipalidad de Rosario"
+      }
+    ],
     "ausentes": []
   }
 }
