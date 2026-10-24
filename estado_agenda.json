@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-10-24T02:08:03-03:00",
-  "ejecucion_id": "40063158652-1",
-  "inicio": "2026-10-24T01:38:59-03:00",
+  "generado": "2026-10-24T08:27:26-03:00",
+  "ejecucion_id": "40088373848-1",
+  "inicio": "2026-10-24T08:03:57-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-24 01:39",
-  "ultima_consulta_fuentes": "2026-10-24T02:07:28.581723-03:00",
+  "datos_actualizados": "2026-10-24 08:04",
+  "ultima_consulta_fuentes": "2026-10-24T08:26:52.375557-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
     "eventos": 830,
     "funciones_unicas": 830,
-    "nuevos": 6,
+    "nuevos": 0,
     "ausentes": 0,
-    "duplicados": 3,
-    "conservados": 20,
+    "duplicados": 2,
+    "conservados": 19,
     "fuentes": 99
   },
   "alertas": [
@@ -41,7 +41,7 @@
       "accion": "Sin intervención necesaria.",
       "eventos": 379,
       "antes": 379,
-      "conservados": 4,
+      "conservados": 3,
       "caida": false
     },
     {
@@ -396,9 +396,9 @@
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
@@ -416,9 +416,9 @@
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -560,7 +560,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 277,
-      "antes": 271,
+      "antes": 277,
       "conservados": 14,
       "caida": false
     },
@@ -846,9 +846,9 @@
     },
     {
       "nombre": "Rosario en Cartel",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 8,
       "antes": 8,
       "conservados": 0,
@@ -1006,9 +1006,9 @@
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1055,7 +1055,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-24T02:08:01-03:00",
+    "fecha": "2026-10-24T08:27:24-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1068,52 +1068,9 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40063158652",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40088373848",
   "cambios": {
-    "nuevos": [
-      {
-        "fecha": "2026-11-23",
-        "hora": "08:00",
-        "nombre": "Bienestar y actividad física en San Martín A",
-        "lugar": "Centro de Salud \"Vecinal San Martín A\"",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "09:00",
-        "nombre": "Actividad Física y Danza para Adultos Mayores",
-        "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "17:00",
-        "nombre": "Ajedrez para las infancias",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "18:00",
-        "nombre": "Ajedrez: nivel intermedio-avanzados",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "18:30",
-        "nombre": "Mis primeros pasos",
-        "lugar": "Centro Cultural  La Casa del Tango",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "20:00",
-        "nombre": "Hystérēsis. Anatomía del roce",
-        "lugar": "Burana bART (Callao 1028)",
-        "origen": "Municipalidad de Rosario"
-      }
-    ],
+    "nuevos": [],
     "ausentes": []
   }
 }
