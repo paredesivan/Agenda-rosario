@@ -212,6 +212,17 @@ def informe(root=ROOT, modo='actualizar'):
               '## Avisos', '', *['- ' + a['mensaje'] for a in alertas], '',
               '## Fuentes para revisar', '',
               *[f"- {f['nombre']}: {f['motivo']} {f['accion']}" for f in fuentes if f['estado'] in ('atencion', 'pendiente')]]
+    cobertura = leer(root / 'revision_cobertura_municipal.json', {}) or {}
+    if modo == 'actualizar' and not fallo and cobertura.get('revision', '') >= (contexto.get('inicio') or fecha):
+        lineas += ['', '## Cobertura de la fuente municipal', '',
+                   f"Horizonte de consulta: {cobertura.get('horizonte_dias')} días.", '',
+                   '| Comprobación | Cantidad |', '|---|---:|',
+                   *[f'| {titulo} | {cobertura.get(campo, 0)} |' for campo, titulo in
+                     [('fichas_consultadas','Fichas consultadas'), ('fichas_con_error','Consultas fallidas'),
+                      ('funciones_extraidas','Funciones extraídas antes de deduplicar'),
+                      ('fichas_sin_funciones','Fichas sin funciones extraídas')]], '',
+                   'Los motivos de exclusión de cada ficha están en revision_cobertura_municipal.json. '
+                   'Cero funciones extraídas no demuestra que la fuente no tenga actividades.']
     (root / 'reportes').mkdir(exist_ok=True)
     (root / 'reportes/resumen.md').write_text('\n'.join(lineas) + '\n', encoding='utf-8')
     return panel

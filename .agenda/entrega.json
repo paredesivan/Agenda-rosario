@@ -1,28 +1,19 @@
 {
-  "version": "2026.10.22-espacios-oficiales-1",
+  "version": "2026.10.24-cobertura-fuentes-1",
   "archivos": [
-    ".gitignore",
-    "AGENTS.md",
-    "ESPACIOS_OFICIALES.md",
-    "OPERACION_AGENDA.md",
-    "actualizacion_segura.py",
+    "COBERTURA_FUENTES.md",
     "actualizar_eventos.py",
-    "agenda.js",
-    "e2e/test_espacios.py",
-    "e2e/test_estado.py",
-    "espacios.html",
-    "espacios_oficiales.json",
-    "estado.html",
-    "fuentes_espacios_oficiales.py",
+    "cobertura_fuentes.py",
+    "config_recoleccion.json",
+    "fuentes_nuevas.py",
     "gestion_agenda.py",
-    "instalar_entrega.py",
-    "requirements.txt",
-    "tests/fixtures/aserradero_ficha.html",
-    "tests/test_deduplicacion_contenido.py",
-    "tests/test_espacios_oficiales.py",
-    "tests/test_gestion_agenda.py",
-    "tests/test_ticketsbravos.py",
-    "tests/test_workflow_coordinado.py"
+    "tests/fixtures/cobertura/granja.html",
+    "tests/fixtures/cobertura/isla.html",
+    "tests/fixtures/cobertura/jardin.html",
+    "tests/fixtures/cobertura/pokemon.html",
+    "tests/fixtures/cobertura/siestario.html",
+    "tests/test_cobertura_fuentes.py",
+    "tests/test_comedia.py"
   ],
-  "instalada": "2026-10-22T20:51:08.417751+00:00"
+  "instalada": "2026-10-24T15:08:17.527653+00:00"
 }

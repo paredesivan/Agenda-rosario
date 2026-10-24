@@ -3,6 +3,7 @@
 Sólo agrega actividades con fecha, hora y sede verificables. Ante fallas no
 elimina actividades previamente publicadas ni bloquea el actualizador principal.
 """
+from cobertura_fuentes import HORIZONTE_DIAS
 import calendar
 import json
 import re
@@ -110,7 +111,7 @@ def schema_local(html, fuente, url, hoy):
                 momento = momento.astimezone(ZONA)
         except ValueError:
             continue
-        if not hoy <= momento.date() <= hoy + timedelta(days=30):
+        if not hoy <= momento.date() <= hoy + timedelta(days=HORIZONTE_DIAS):
             continue
         if not lugar or not domicilio:
             continue
@@ -180,7 +181,7 @@ def recurrencias_rosario3(html, url, hoy):
             funcion = date(publicado.year, mes, numero)
             if funcion.weekday() != dia_semana or (explicitos and numero not in explicitos):
                 continue
-            if not hoy <= funcion <= hoy + timedelta(days=30):
+            if not hoy <= funcion <= hoy + timedelta(days=HORIZONTE_DIAS):
                 continue
             encontrados.append({
                 "fecha": funcion.isoformat(), "hora": f"{hora:02d}:{minutos:02d}",
@@ -368,7 +369,7 @@ def calendario_orilla(html, fuente, url, direccion, hoy):
                 anio = int(m[3]) if m[3] else hoy.year + (hoy.month == 12 and int(m[2]) == 1)
                 dia = date(anio, int(m[2]), int(m[1]))
                 hora = hora_visible(m[4])
-                if not hora or not hoy <= dia <= hoy + timedelta(days=30):
+                if not hora or not hoy <= dia <= hoy + timedelta(days=HORIZONTE_DIAS):
                     continue
                 clave_funcion = (dia.isoformat(), hora)
                 if clave_funcion in vistos:
@@ -470,7 +471,7 @@ def schema_museo(html, nombre, url, direccion, hoy):
                     momento = momento.astimezone(ZONA)
             except ValueError:
                 continue
-            if not hoy <= momento.date() <= hoy + timedelta(days=30):
+            if not hoy <= momento.date() <= hoy + timedelta(days=HORIZONTE_DIAS):
                 continue
             if any(x in str(ficha.get('eventStatus', '')) for x in ('Cancelled', 'Postponed', 'Rescheduled')):
                 continue
@@ -670,7 +671,7 @@ def eventos_catalogo(datos, base, proveedor, hoy):
         except (ValueError, TypeError):
             pendientes += 1
             continue
-        if not hoy <= instante.date() <= hoy + timedelta(days=30):
+        if not hoy <= instante.date() <= hoy + timedelta(days=HORIZONTE_DIAS):
             continue
         titulo, slug = fila.get('nombre'), fila.get('slug')
         if not isinstance(titulo, str) or not isinstance(slug, str) or not titulo or not slug:
@@ -732,7 +733,7 @@ def leer_rodas(html, url, hoy):
             instante = datetime.fromisoformat(sesion.get('fechaCelebracionRecinto') or '')
         except (ValueError, TypeError):
             continue
-        if not hoy <= instante.date() <= hoy + timedelta(days=30):
+        if not hoy <= instante.date() <= hoy + timedelta(days=HORIZONTE_DIAS):
             continue
         evento = actividad_ampliada(instante.date().isoformat(), instante.strftime('%H:%M'),
             'Circo Rodas', url, 'Circo Rodas — Linke-arte', ESPACIOS_SEGUIDOS[0][3],
@@ -839,7 +840,7 @@ def municipal_espacios(html, url, hoy):
             momento = datetime.fromisoformat(instante['datetime'])
             if momento.tzinfo:
                 momento = momento.astimezone(ZONA)
-            if hoy <= momento.date() <= hoy + timedelta(days=30):
+            if hoy <= momento.date() <= hoy + timedelta(days=HORIZONTE_DIAS):
                 fechas.append((momento.date().isoformat(), momento.strftime('%H:%M')))
         paga = bool(re.search(r'\bpaga\b', normalizar(texto(bloque))))
         for fecha, hora in fechas:
@@ -929,7 +930,7 @@ def leer_feria_libro(hoy, estado):
         )
         eventos = []
         actual = max(inicio, hoy)
-        limite = min(fin, hoy + timedelta(days=30))
+        limite = min(fin, hoy + timedelta(days=HORIZONTE_DIAS))
         while actual <= limite:
             horario = horarios.get(actual.weekday())
             if horario:
@@ -1123,7 +1124,7 @@ def leer_microteatro(hoy, estado):
                         fecha = datetime.strptime(fecha_raw, "%d/%m/%Y").date()
                     except ValueError:
                         continue
-                    if hoy <= fecha <= hoy + timedelta(days=30):
+                    if hoy <= fecha <= hoy + timedelta(days=HORIZONTE_DIAS):
                         fechas.append(fecha)
                 horas_segmento = texto_formulario[posicion_horarios:posicion_horarios + 300]
                 horas = sorted(set(re.findall(
@@ -1277,7 +1278,7 @@ def eventos_calendario_ics(contenido, hoy):
             momento = momento.replace(tzinfo=zona).astimezone(ZONA)
         except (ValueError, ZoneInfoNotFoundError):
             continue
-        if not hoy <= momento.date() <= hoy + timedelta(days=30):
+        if not hoy <= momento.date() <= hoy + timedelta(days=HORIZONTE_DIAS):
             continue
         titulo = propiedades.get('SUMMARY')
         if titulo:
@@ -1289,7 +1290,7 @@ def eventos_calendario_ics(contenido, hoy):
 
 def leer_cairo(hoy):
     base = 'https://elcairocinepublico.gob.ar/'
-    meses = {hoy.strftime('%Y-%m'), (hoy + timedelta(days=30)).strftime('%Y-%m')}
+    meses = {(hoy + timedelta(days=i)).strftime('%Y-%m') for i in range(HORIZONTE_DIAS + 1)}
     eventos, errores, cache = {}, 0, {}
     for mes in sorted(meses):
         # El formato de la navegación mensual y la exportación son enlaces públicos del cine.
@@ -1366,7 +1367,7 @@ def schema_csv(html, fuente, url, direccion, hoy):
                     instante = instante.astimezone(ZONA)
             except ValueError:
                 continue
-            if not hoy <= instante.date() <= hoy + timedelta(days=30):
+            if not hoy <= instante.date() <= hoy + timedelta(days=HORIZONTE_DIAS):
                 continue
             if any(x in str(ficha.get('eventStatus', '')) for x in ('Cancelled', 'Postponed', 'Rescheduled')):
                 continue

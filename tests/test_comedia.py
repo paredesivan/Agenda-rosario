@@ -47,10 +47,15 @@ class Comedia(unittest.TestCase):
     def test_cancelaciones_y_fuera_de_ventana(self):
         for detalle in (ficha(estado='EventCancelled'), ficha(estado='EventPostponed'),
                         ficha(descripcion='Función suspendida'), ficha('2026-09-01T20:00:00-03:00'),
-                        ficha('2026-12-01T20:00:00-03:00')):
+                        ficha('2027-05-01T20:00:00-03:00')):
             with self.subTest(detalle=str(detalle)):
                 (eventos, fallidos), _ = self.extraer(detalle)
                 self.assertEqual((eventos, fallidos), ([], set()))
+
+    def test_funcion_despues_de_30_dias_dentro_del_horizonte_ampliado(self):
+        (eventos, fallidos), _ = self.extraer(ficha('2026-12-01T20:00:00-03:00'))
+        self.assertFalse(fallidos)
+        self.assertEqual([(e['fecha'], e['hora']) for e in eventos], [('2026-12-01', '20:00')])
 
     def test_ficha_incompleta_o_fecha_invalida_se_conserva(self):
         for detalle in (html('<h1>Error</h1>'), ficha('2026-02-31T20:00:00'), ficha('2026-10-21'), ficha(url=BASE+'/otra/')):

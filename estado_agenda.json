@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-10-24T08:27:26-03:00",
-  "ejecucion_id": "40088373848-1",
-  "inicio": "2026-10-24T08:03:57-03:00",
+  "generado": "2026-10-24T12:35:24-03:00",
+  "ejecucion_id": "40105589407-1",
+  "inicio": "2026-10-24T12:08:21-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-24 08:04",
-  "ultima_consulta_fuentes": "2026-10-24T08:26:52.375557-03:00",
+  "datos_actualizados": "2026-10-24 12:08",
+  "ultima_consulta_fuentes": "2026-10-24T12:34:40.218516-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 830,
-    "funciones_unicas": 830,
-    "nuevos": 0,
+    "eventos": 1145,
+    "funciones_unicas": 1145,
+    "nuevos": 315,
     "ausentes": 0,
-    "duplicados": 2,
-    "conservados": 19,
+    "duplicados": 141,
+    "conservados": 29,
     "fuentes": 99
   },
   "alertas": [
@@ -39,16 +39,16 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 379,
+      "eventos": 245,
       "antes": 379,
-      "conservados": 3,
+      "conservados": 4,
       "caida": false
     },
     {
       "nombre": "Agenda municipal — Espacios",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -159,7 +159,7 @@
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 9,
+      "eventos": 8,
       "antes": 9,
       "conservados": 0,
       "caida": false
@@ -239,7 +239,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 8,
+      "eventos": 9,
       "antes": 8,
       "conservados": 0,
       "caida": false
@@ -319,7 +319,7 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 8,
+      "eventos": 14,
       "antes": 8,
       "conservados": 0,
       "caida": false
@@ -386,9 +386,9 @@
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -559,9 +559,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 277,
+      "eventos": 705,
       "antes": 277,
-      "conservados": 14,
+      "conservados": 22,
       "caida": false
     },
     {
@@ -676,9 +676,9 @@
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -809,9 +809,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 10,
+      "eventos": 11,
       "antes": 10,
-      "conservados": 1,
+      "conservados": 2,
       "caida": false
     },
     {
@@ -846,10 +846,10 @@
     },
     {
       "nombre": "Rosario en Cartel",
-      "estado": "atencion",
-      "motivo": "No se pudo completar la lectura.",
-      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
-      "eventos": 8,
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 11,
       "antes": 8,
       "conservados": 0,
       "caida": false
@@ -859,7 +859,7 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 6,
+      "eventos": 4,
       "antes": 6,
       "conservados": 0,
       "caida": false
@@ -889,7 +889,7 @@
       "estado": "atencion",
       "motivo": "No se pudo completar la lectura.",
       "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
-      "eventos": 1,
+      "eventos": 0,
       "antes": 1,
       "conservados": 0,
       "caida": false
@@ -909,7 +909,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 8,
+      "eventos": 11,
       "antes": 8,
       "conservados": 0,
       "caida": false
@@ -919,7 +919,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 15,
+      "eventos": 24,
       "antes": 15,
       "conservados": 0,
       "caida": false
@@ -939,7 +939,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 6,
+      "eventos": 8,
       "antes": 6,
       "conservados": 0,
       "caida": false
@@ -1050,12 +1050,12 @@
     },
     {
       "nombre": "fuente_autodromo.py",
-      "estado": "parcial"
+      "estado": "fallida"
     }
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-24T08:27:24-03:00",
+    "fecha": "2026-10-24T12:35:20-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1068,9 +1068,290 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40088373848",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40105589407",
   "cambios": {
-    "nuevos": [],
+    "nuevos": [
+      {
+        "fecha": "2026-10-24",
+        "hora": "21:00",
+        "nombre": "Funciones de La Chunga en Teatro La Morada",
+        "lugar": "Teatro La Morada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-24",
+        "hora": "21:00",
+        "nombre": "Rubén Gómez y Julián Cicerchia presentan Doce Retratos",
+        "lugar": "Centro Cultural  La Casa del Tango",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-25",
+        "hora": "20:30",
+        "nombre": "Show de Santiago Molina",
+        "lugar": "Complejo Cultural Atlas",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "20:00",
+        "nombre": "Café Concert \"Nana Canta Piaf\"",
+        "lugar": "Alianza Francesa de Rosario (San Luis 846)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "21:00",
+        "nombre": "Camilo en el Metropolitano",
+        "lugar": "Metropolitano (Junín 501)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-31",
+        "hora": "21:00",
+        "nombre": "Funciones de La Chunga en Teatro La Morada",
+        "lugar": "Teatro La Morada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-12",
+        "hora": "21:00",
+        "nombre": "Diego Torres en Rosario",
+        "lugar": "Metropolitano (Junín 501)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-13",
+        "hora": "19:00",
+        "nombre": "Función de Veneno",
+        "lugar": "Cultural Fontanarrosa",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "21:00",
+        "nombre": "Coti en Rosario",
+        "lugar": "Metropolitano - Lotus Club (Junín 501)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-22",
+        "hora": "20:00",
+        "nombre": "Funciones de Perder el Tiempo",
+        "lugar": "Cultural Fontanarrosa",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-25",
+        "hora": "20:00",
+        "nombre": "Organismos estables presentan: Mozart y otros compositores",
+        "lugar": "Teatro Municipal La Comedia",
+        "origen": "Teatro Municipal La Comedia"
+      },
+      {
+        "fecha": "2026-11-25",
+        "hora": "20:00",
+        "nombre": "Hystérēsis. Anatomía del roce",
+        "lugar": "Burana bART (Callao 1028)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-26",
+        "hora": "20:00",
+        "nombre": "Hystérēsis. Anatomía del roce",
+        "lugar": "Burana bART (Callao 1028)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-26",
+        "hora": "21:00",
+        "nombre": "EL PRÍNCIPE IDIOTA PRESENTA CARISMA SECRETO",
+        "lugar": "Distrito Siete",
+        "origen": "Distrito Siete"
+      },
+      {
+        "fecha": "2026-11-27",
+        "hora": "20:00",
+        "nombre": "Hystérēsis. Anatomía del roce",
+        "lugar": "Burana bART (Callao 1028)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-27",
+        "hora": "20:00",
+        "nombre": "Quinteto Municipal de Cuerdas junto a Jorge Variego",
+        "lugar": "Museo Estévez - Santa Fe 748",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-28",
+        "hora": "20:00",
+        "nombre": "Hystérēsis. Anatomía del roce",
+        "lugar": "Burana bART (Callao 1028)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-28",
+        "hora": "21:00",
+        "nombre": "Abel Pintos",
+        "lugar": "Metropolitano",
+        "origen": "Rosario en Cartel"
+      },
+      {
+        "fecha": "2026-11-28",
+        "hora": "21:00",
+        "nombre": "VALERIA LYNCH",
+        "lugar": "La Segunda Seguros Arena",
+        "origen": "Entrada Play"
+      },
+      {
+        "fecha": "2026-11-30",
+        "hora": "20:00",
+        "nombre": "JULIAN HERNANDEZ",
+        "lugar": "Teatro Broadway",
+        "origen": "Teatro Broadway"
+      },
+      {
+        "fecha": "2026-11-30",
+        "hora": "20:00",
+        "nombre": "Hystérēsis. Anatomía del roce",
+        "lugar": "Burana bART (Callao 1028)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-05",
+        "hora": "13:00",
+        "nombre": "BODA LYNIEL",
+        "lugar": "Teatro Broadway",
+        "origen": "Teatro Broadway"
+      },
+      {
+        "fecha": "2026-12-05",
+        "hora": "19:00",
+        "nombre": "BODA LYNIEL",
+        "lugar": "Teatro Broadway",
+        "origen": "Teatro Broadway"
+      },
+      {
+        "fecha": "2026-12-05",
+        "hora": "20:00",
+        "nombre": "Hystérēsis. Anatomía del roce",
+        "lugar": "Burana bART (Callao 1028)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-09",
+        "hora": "21:00",
+        "nombre": "JAVIER SANTAOLALLA «El Club de la Tusa»",
+        "lugar": "Teatro Astengo",
+        "origen": "Teatro Astengo"
+      },
+      {
+        "fecha": "2026-12-18",
+        "hora": "20:30",
+        "nombre": "«Navidad» En busca del regalo perdido",
+        "lugar": "Teatro Astengo",
+        "origen": "Teatro Astengo"
+      },
+      {
+        "fecha": "2026-12-19",
+        "hora": "20:30",
+        "nombre": "«Navidad» En busca del regalo perdido",
+        "lugar": "Teatro Astengo",
+        "origen": "Teatro Astengo"
+      },
+      {
+        "fecha": "2026-10-24",
+        "hora": "09:00",
+        "nombre": "\"Lo que me dice el río mientras duermo\"",
+        "lugar": "Museo de Arte Decorativo Firma y Odilo Estevez",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-24",
+        "hora": "10:00",
+        "nombre": "La Granja de la Infancia",
+        "lugar": "La Granja de la Infancia",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-24",
+        "hora": "13:00",
+        "nombre": "Primavera en El Jardín de los Niños",
+        "lugar": "El Jardín de los Niños",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-24",
+        "hora": "14:00",
+        "nombre": "Primavera en La Isla de los Inventos",
+        "lugar": "La Isla de los Inventos",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-24",
+        "hora": "15:00",
+        "nombre": "Espacio Pokémon",
+        "lugar": "Cultural Fontanarrosa",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-24",
+        "hora": "15:00",
+        "nombre": "Muestra Siestario",
+        "lugar": "Centro Cultural Parque de España / AECI",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-24",
+        "hora": "Horario a confirmar",
+        "nombre": "50 veinticuatros. Sentidos y recorridos de las marchas por memoria, verdad y justicia",
+        "lugar": "Museo de la Memoria",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-25",
+        "hora": "09:00",
+        "nombre": "\"Lo que me dice el río mientras duermo\"",
+        "lugar": "Museo de Arte Decorativo Firma y Odilo Estevez",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-25",
+        "hora": "10:00",
+        "nombre": "La Granja de la Infancia",
+        "lugar": "La Granja de la Infancia",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-25",
+        "hora": "13:00",
+        "nombre": "Primavera en El Jardín de los Niños",
+        "lugar": "El Jardín de los Niños",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-25",
+        "hora": "14:00",
+        "nombre": "Primavera en La Isla de los Inventos",
+        "lugar": "La Isla de los Inventos",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-25",
+        "hora": "16:00",
+        "nombre": "Funciones y proyecciones fulldome en la Sala Planetario",
+        "lugar": "Complejo Astronómico Municipal",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-25",
+        "hora": "Horario a confirmar",
+        "nombre": "50 veinticuatros. Sentidos y recorridos de las marchas por memoria, verdad y justicia",
+        "lugar": "Museo de la Memoria",
+        "origen": "Municipalidad de Rosario"
+      }
+    ],
     "ausentes": []
   }
 }

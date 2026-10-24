@@ -13,6 +13,7 @@ import requests
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from cobertura_fuentes import HORIZONTE_DIAS
 
 ARCHIVO = Path(__file__).with_name("eventos.json")
 BASE = "https://www.rosario.gob.ar"
@@ -25,6 +26,7 @@ MESES = ("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
 CATEGORIAS = ("cine", "teatro", "musica", "concierto", "feria", "muestra",
               "exposicion", "festival", "danza", "planetario", "arte",
               "visita guiada", "visitas guiadas", "literatura", "libro")
+DIAGNOSTICO_MUNICIPAL = {}
 
 
 def texto(elemento):
@@ -79,6 +81,13 @@ def es_cultural(contenido):
         ".etiqueta-actividad, .etiquetas-secundarias-container"))
     descripcion = texto(contenido.select_one(".descripcion"))
     valor = normalizar(etiquetas + " " + texto(contenido.select_one("h1")) + " " + descripcion)
+    titulo = normalizar(texto(contenido.select_one('h1')))
+    # La cartelera también ofrece juego y recreación. Una mención a aprender
+    # en la descripción no convierte una visita pública en un curso.
+    if re.match(r'^(?:cursos?|taller(?:es)?|seminarios?|capacitacion(?:es)?|clases?|workshops?)\b', titulo):
+        return False
+    if re.search(r'\binfancias\b|\brecreacion\b', normalizar(etiquetas)):
+        return True
     return any(re.search(r"\b" + re.escape(c) + r"s?\b", valor) for c in CATEGORIAS)
 
 
@@ -105,22 +114,31 @@ def hora_regla(valor):
     return f"{hora:02d}:{minuto:02d}" if hora < 24 and minuto < 60 else None
 
 
-def fechas_regla(regla, hoy):
+def fechas_regla(regla, hoy, hora_alternativa=None):
     valor = normalizar(texto(regla.select_one(".rule-fechas")))
-    patron = r"del?\s+(\d{1,2})\s+de\s+(\w+)(?:\s+(\d{4}))?\s+al\s+(\d{1,2})\s+de\s+(\w+)(?:\s+(\d{4}))?"
+    patron = r"del?\s+(\d{1,2})(?:\s+de\s+(\w+)(?:\s+(\d{4}))?)?\s+al\s+(\d{1,2})\s+de\s+(\w+)(?:\s+(\d{4}))?"
     partes = re.fullmatch(patron, valor)
-    hora = hora_regla(texto(regla.select_one(".rule-hora")))
+    hora_publicada = texto(regla.select_one('.rule-hora'))
+    hora = hora_regla(hora_publicada) if hora_publicada else hora_alternativa
+    if not hora and hora_alternativa == 'Horario a confirmar' and normalizar(hora_publicada) in (
+            'a confirmar', 'horario a confirmar', 'sin horario confirmado'):
+        hora = hora_alternativa
     if not partes or not hora:
         return []
     dia1, mes1, anio1, dia2, mes2, anio2 = partes.groups()
+    if mes1 is None:
+        mes1, anio1 = mes2, anio2
     if mes1 not in MESES or mes2 not in MESES:
         return []
     m1, m2 = MESES.index(mes1) + 1, MESES.index(mes2) + 1
     anio = int(anio1) if anio1 else hoy.year
     if not anio1 and m2 < m1 and hoy.month <= m2:
         anio -= 1
-    inicio = date(anio, m1, int(dia1))
-    fin = date(int(anio2) if anio2 else anio + (m2 < m1), m2, int(dia2))
+    try:
+        inicio = date(anio, m1, int(dia1))
+        fin = date(int(anio2) if anio2 else anio + (m2 < m1), m2, int(dia2))
+    except ValueError:
+        return []
     dias = normalizar(texto(regla.select_one(".rule-dias")))
     if dias == "todos los dias":
         elegidos = set(range(7))
@@ -133,12 +151,36 @@ def fechas_regla(regla, hoy):
         elif re.search(r"excepto|cada|alternad", dias):
             return []
     resultados = []
-    actual, limite = max(inicio, hoy), min(fin, hoy + timedelta(days=30))
+    actual, limite = max(inicio, hoy), min(fin, hoy + timedelta(days=HORIZONTE_DIAS))
     while actual <= limite:
         if actual.weekday() in elegidos:
             resultados.append((actual.isoformat(), hora))
         actual += timedelta(days=1)
     return resultados
+
+
+def hora_descripcion(contenido):
+    """Sólo un horario de apertura inequívoco; no inferir varios turnos."""
+    valor = normalizar(texto(contenido.select_one('.descripcion')))
+    patron = (r'\b(?:de|desde(?:\s+las)?)\s+(\d{1,2}(?:[:.]\d{2})?)'
+              r'\s+(?:a|hasta(?:\s+las)?)\s+\d{1,2}(?:[:.]\d{2})?\s*(?:h\b|hs\b|horas\b)')
+    horas = {hora_regla(m[1]) for m in re.finditer(patron, valor)} - {None}
+    return next(iter(horas)) if len(horas) == 1 else None
+
+
+def precio_municipal(bloque, contenido):
+    entrada = bloque.select_one('.entrada-actividad')
+    valor = texto(entrada) if entrada else texto(contenido.select_one('.descripcion'))
+    normal = normalizar(valor)
+    # El precio general prevalece sobre una gratuidad por edad/condición.
+    pagas = bool(re.search(r'\bpaga\b|\barancelad|\$\s*\d', normal))
+    if not pagas and es_gratuito(bloque, contenido):
+        return 0, ''
+    precio, nota = acceso(valor, venta=True)
+    # Sin precio general comprobado no marcar GRATIS por menores, socios o CUD.
+    if precio == 0:
+        precio = None
+    return precio, nota or 'Consultar precio y condiciones en la fuente oficial'
 
 
 def ubicacion(bloque):
@@ -155,49 +197,72 @@ def clave(evento):
             normalizar(evento.get("lugar", "")))
 
 
-def extraer_eventos(html, url, hoy):
+def extraer_eventos(html, url, hoy, diagnostico=None):
     contenido = html.select_one("main") or html
     titulo = texto(contenido.select_one("h1"))
+    registro = diagnostico if diagnostico is not None else {}
+    registro.update(url=url, nombre=titulo, bloques=0, funciones=0, motivos=[])
     if not titulo or not es_cultural(contenido):
+        registro['motivos'].append('Sin título o fuera del alcance cultural/recreativo (se excluye formación)')
         return []
     parrafo = contenido.select_one(".descripcion p")
     resumen = " ".join(texto(parrafo).split()[:22])
     if len(texto(parrafo).split()) > 22:
         resumen = resumen.rstrip(".,:;") + "…"
     resultados = {}
-    for bloque in contenido.select(".cuando-fechas"):
-        if not es_gratuito(bloque, contenido):
-            continue
+    bloques = [b for grupo in contenido.select('.cuando-fechas')
+               for b in (grupo.select('.rule') or [grupo])]
+    # Una hora de la descripción sólo se aplica a una sede y calendario únicos.
+    sedes = {ubicacion(b)[0] for b in bloques} - {''}
+    calendarios = {texto(b.select_one('.rule-fechas')) for b in bloques
+                   if b.select_one('.rule-fechas')}
+    hora_comun = hora_descripcion(contenido) if len(sedes) == 1 and len(calendarios) <= 1 else None
+    for bloque in bloques:
+        registro['bloques'] += 1
         lugar, direccion = ubicacion(bloque)
         if not lugar:
+            registro['motivos'].append('Bloque sin sede verificable')
             continue
+        precio, etiqueta = precio_municipal(bloque, contenido)
         fechas = []
-        for regla in bloque.select(".rule"):
-            fechas.extend(fechas_regla(regla, hoy))
+        if 'rule' in bloque.get('class', []):
+            fechas.extend(fechas_regla(bloque, hoy, hora_comun or 'Horario a confirmar'))
         for instante in bloque.select("time[datetime]"):
-            if not instante.select_one(".hora-desde"):
+            raw = instante['datetime']
+            if 'T' in raw and not instante.select_one('.hora-desde'):
                 continue  # La hora de cierre no es una segunda función.
-            cuando = datetime.fromisoformat(instante["datetime"])
+            cuando = datetime.fromisoformat(raw)
             if cuando.tzinfo:
                 cuando = cuando.astimezone(ZONA)
-            if hoy <= cuando.date() <= hoy + timedelta(days=30):
-                fechas.append((cuando.date().isoformat(), cuando.strftime("%H:%M")))
+            if hoy <= cuando.date() <= hoy + timedelta(days=HORIZONTE_DIAS):
+                hora = cuando.strftime('%H:%M') if 'T' in raw else (hora_comun or 'Horario a confirmar')
+                fechas.append((cuando.date().isoformat(), hora))
+        if not fechas:
+            registro['motivos'].append('Sin fechas/horarios interpretables dentro del horizonte')
         for fecha, hora in fechas:
             evento = {"fecha": fecha, "hora": hora, "nombre": titulo,
                       "lugar": lugar, "direccion": direccion,
                       "descripcion": resumen or "Actividad de la agenda cultural municipal.",
-                      "evento_url": url, "precio": 0, "origen": ORIGEN}
+                      "evento_url": url, "precio": precio, "origen": ORIGEN,
+                      "horario_pendiente": hora == 'Horario a confirmar'}
+            if etiqueta:
+                evento['precio_etiqueta'] = etiqueta
             resultados[clave(evento)] = evento
+    registro['funciones'] = len(resultados)
+    registro['motivos'] = list(dict.fromkeys(registro['motivos']))
     return list(resultados.values())
 
 
 def consultar_evento(url, hoy):
+    registro = DIAGNOSTICO_MUNICIPAL.setdefault(url, {})
     try:
-        return url, extraer_eventos(descargar(url), url, hoy), None, False
+        return url, extraer_eventos(descargar(url), url, hoy, registro), None, False
     except requests.HTTPError as error:
+        registro.update(url=url, error=str(error), funciones=0)
         eliminado = error.response is not None and error.response.status_code in (404, 410)
         return url, [], str(error), eliminado
     except (requests.RequestException, ValueError) as error:
+        registro.update(url=url, error=str(error), funciones=0)
         return url, [], str(error), False
 
 
@@ -498,7 +563,7 @@ def lavarden(html, fuente, url, direccion, hoy):
             else hoy.year + (hoy.month == 12 and mes == 1)
         )
         dia = date(anio, mes, int(partes[1]))
-        if not hoy <= dia <= hoy + timedelta(days=30):
+        if not hoy <= dia <= hoy + timedelta(days=HORIZONTE_DIAS):
             continue
 
         venta = any(
@@ -562,7 +627,7 @@ def calendario(html, fuente, url, direccion, hoy):
             continue
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", fecha):
             continue
-        if not hoy <= date.fromisoformat(fecha) <= hoy + timedelta(days=30):
+        if not hoy <= date.fromisoformat(fecha) <= hoy + timedelta(days=HORIZONTE_DIAS):
             continue
 
         vistos.add(enlace)
@@ -616,6 +681,7 @@ def actualizar():
     eventos, fallidos, errores, correctas = [], set(), [], set()
     BLOQUEADOS.clear()
     FALLAS.clear()
+    DIAGNOSTICO_MUNICIPAL.clear()
 
     for fuente, url, direccion in EXTRAS:
         try:
@@ -700,6 +766,14 @@ def actualizar():
     )
     for error in errores:
         print(f"Aviso: {error}", flush=True)
+    revision = {'revision': ahora.isoformat(), 'horizonte_dias': HORIZONTE_DIAS,
+                'fuente': ORIGEN, 'fichas_consultadas': len(DIAGNOSTICO_MUNICIPAL),
+                'fichas_con_error': sum(bool(v.get('error')) for v in DIAGNOSTICO_MUNICIPAL.values()),
+                'funciones_extraidas': sum(v.get('funciones', 0) for v in DIAGNOSTICO_MUNICIPAL.values()),
+                'fichas_sin_funciones': sum(not v.get('funciones') for v in DIAGNOSTICO_MUNICIPAL.values()),
+                'fichas': list(DIAGNOSTICO_MUNICIPAL.values())}
+    ARCHIVO.with_name('revision_cobertura_municipal.json').write_text(
+        json.dumps(revision, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
 
 
 # Ampliación: teatros, música y bibliotecas.
@@ -747,7 +821,7 @@ def fechas_publicadas(valor, hoy, anio_confirmado=False):
         if m[1] and DIAS[dia.weekday()] != m[1]:
             continue
         hora = hora_visible(f"{m[5]}:{m[6] or '00'}")
-        if hora and hoy <= dia <= hoy + timedelta(days=30):
+        if hora and hoy <= dia <= hoy + timedelta(days=HORIZONTE_DIAS):
             resultado.append((dia.isoformat(), hora))
     return list(dict.fromkeys(resultado))
 
@@ -789,7 +863,7 @@ def calendario_mec(html, fuente, url, direccion, hoy):
             continue
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", fecha) or (enlace, fecha) in vistos:
             continue
-        if not hoy <= date.fromisoformat(fecha) <= hoy + timedelta(days=30):
+        if not hoy <= date.fromisoformat(fecha) <= hoy + timedelta(days=HORIZONTE_DIAS):
             continue
         vistos.add((enlace, fecha))
         try:
@@ -892,7 +966,7 @@ def calendario_paginas(html, fuente, url, direccion, hoy):
                 fechas = []
                 if m and m[2] in abreviaturas:
                     dia = date(int(m[3]), abreviaturas.index(m[2]) + 1, int(m[1]))
-                    if hoy <= dia <= hoy + timedelta(days=30):
+                    if hoy <= dia <= hoy + timedelta(days=HORIZONTE_DIAS):
                         fechas = [(dia.isoformat(), m[4])]
                 precio = re.search(
                     r"Precios desde\s+ARS\s*(\$\s*[\d.,]+)", descripcion
@@ -979,7 +1053,7 @@ def calendario_comedia(html, fuente, url, direccion, hoy):
                 cuando = datetime.fromisoformat(valor)
                 if cuando.tzinfo:
                     cuando = cuando.astimezone(ZONA)
-                if not hoy <= cuando.date() <= hoy + timedelta(days=30):
+                if not hoy <= cuando.date() <= hoy + timedelta(days=HORIZONTE_DIAS):
                     continue
                 titulo = texto(detalle.select_one("article.kalendo_event h1")) or ficha.get("name", "")
                 if not titulo:
