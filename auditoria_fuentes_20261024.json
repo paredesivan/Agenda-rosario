@@ -1,0 +1,1057 @@
+{
+  "generado_utc": "2026-10-24T17:56:15+00:00",
+  "tipo": "auditoria_tecnica_no_bloqueante",
+  "advertencia": "URLs del código, no registro de accesos. robots.txt no otorga permisos legales.",
+  "dominios": 79,
+  "referencias_sociales_sin_rastreo": 3,
+  "resultados": [
+    {
+      "dominio": "alpogo.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://alpogo.com/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://alpogo.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "autodromorosario.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://autodromorosario.com"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://autodromorosario.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "biblioargentina.gob.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://biblioargentina.gob.ar/web/agenda/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 301,
+      "estado": "redireccion_robots_revisar",
+      "redireccion_a": "https://biblioargentina.gob.ar/web/"
+    },
+    {
+      "dominio": "bibliotecavigil.org.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://bibliotecavigil.org.ar/inicio/eventos/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "castagninomacro.org",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://castagninomacro.org/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 404,
+      "robots_url_final": "https://castagninomacro.org/robots.txt",
+      "estado": "robots_ausente_no_implica_autorizacion"
+    },
+    {
+      "dominio": "ccatlas.org.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://ccatlas.org.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://ccatlas.org.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "ccpe.org.ar",
+      "cantidad_urls_referenciadas": 2,
+      "urls_ejemplo": [
+        "https://ccpe.org.ar/",
+        "https://ccpe.org.ar/web/agenda/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 404,
+      "robots_url_final": "https://ccpe.org.ar/robots.txt",
+      "estado": "robots_ausente_no_implica_autorizacion"
+    },
+    {
+      "dominio": "centroticket.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://centroticket.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://centroticket.com.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "clubfosse.net",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://clubfosse.net/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 503,
+      "robots_url_final": "https://clubfosse.net/robots.txt",
+      "estado": "revisar_respuesta_robots"
+    },
+    {
+      "dominio": "elcairocinepublico.gob.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://elcairocinepublico.gob.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "elciudadanoweb.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://elciudadanoweb.com/seccion/espectaculos/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://elciudadanoweb.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "elrayomisterioso.org.ar",
+      "cantidad_urls_referenciadas": 2,
+      "urls_ejemplo": [
+        "https://elrayomisterioso.org.ar/",
+        "https://elrayomisterioso.org.ar/index.php/es/component/sppagebuilder/?view=page&id=219"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://elrayomisterioso.org.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "entradaplay.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://entradaplay.com/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://entradaplay.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "entradaslavarden.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://entradaslavarden.com/?categoria=ESPECT%C3%81CULOS"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://entradaslavarden.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "esupcom.unr.edu.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://esupcom.unr.edu.ar/institucional_novedades.php"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://esupcom.unr.edu.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "eventos.ips.edu.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://eventos.ips.edu.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://eventos.ips.edu.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "faer.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://faer.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://faer.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": 60,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": true
+    },
+    {
+      "dominio": "feriadellibrorosario.gob.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://feriadellibrorosario.gob.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "fhumyar.unr.edu.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://fhumyar.unr.edu.ar/agenda/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://fhumyar.unr.edu.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "github.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://github.com/paredesivan/Agenda-rosario"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://github.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "grupogamma.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://grupogamma.com/pacientes/charlas-a-la-comunidad"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 404,
+      "robots_url_final": "https://grupogamma.com/robots.txt",
+      "estado": "robots_ausente_no_implica_autorizacion"
+    },
+    {
+      "dominio": "instagram.com",
+      "cantidad_urls_referenciadas": 3,
+      "urls_ejemplo": [
+        "https://instagram.com/casalealtad",
+        "https://instagram.com/laescalera.teatro",
+        "https://instagram.com/mistica.qtp"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "referencia_social_no_rastreada",
+      "nota": "Enlace de referencia; no se consulta robots.txt"
+    },
+    {
+      "dominio": "lacomediadehacerarte.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://lacomediadehacerarte.com/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://lacomediadehacerarte.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": 60,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": true
+    },
+    {
+      "dominio": "lagrietarosario.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://lagrietarosario.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "laorillainfinita.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://laorillainfinita.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://laorillainfinita.com.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "linke-arte.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://linke-arte.com/arg/es/circo-rodas-rosario"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 404,
+      "robots_url_final": "https://linke-arte.com/robots.txt",
+      "estado": "robots_ausente_no_implica_autorizacion"
+    },
+    {
+      "dominio": "lumiererosario.gob.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://lumiererosario.gob.ar/web/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 404,
+      "robots_url_final": "https://lumiererosario.gob.ar/robots.txt",
+      "estado": "robots_ausente_no_implica_autorizacion"
+    },
+    {
+      "dominio": "mercadodelpatio.gob.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://mercadodelpatio.gob.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "paredesivan.github.io",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://paredesivan.github.io/Agenda-rosario/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 404,
+      "robots_url_final": "https://paredesivan.github.io/robots.txt",
+      "estado": "robots_ausente_no_implica_autorizacion"
+    },
+    {
+      "dominio": "planaxia.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://planaxia.com/categoria/agenda/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://planaxia.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "plataformalavarden.gob.ar",
+      "cantidad_urls_referenciadas": 2,
+      "urls_ejemplo": [
+        "https://plataformalavarden.gob.ar/",
+        "https://plataformalavarden.gob.ar/agenda/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://plataformalavarden.gob.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "refiticket.ar",
+      "cantidad_urls_referenciadas": 2,
+      "urls_ejemplo": [
+        "https://refiticket.ar/",
+        "https://refiticket.ar/obtener_eventos/?cantidad_eventos=100"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "rosario.tur.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://rosario.tur.ar/donde-ir/cultura/centros-culturales/complejo-cultural-atlas?lang=es"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://rosario.tur.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "rosarioencartel.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://rosarioencartel.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "rosariofolklore.com.ar",
+      "cantidad_urls_referenciadas": 2,
+      "urls_ejemplo": [
+        "https://rosariofolklore.com.ar/",
+        "https://rosariofolklore.com.ar/ciudad/rosario/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://rosariofolklore.com.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "rosariotimes.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://rosariotimes.com/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "saleplan.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://saleplan.ar/rosario/eventos"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://saleplan.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "teatroastengo.ar",
+      "cantidad_urls_referenciadas": 3,
+      "urls_ejemplo": [
+        "https://teatroastengo.ar/",
+        "https://teatroastengo.ar/agenda-espectaculos/",
+        "https://teatroastengo.ar/events/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://teatroastengo.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "teatrobroadwayrosario.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://teatrobroadwayrosario.com/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://teatrobroadwayrosario.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "teatrolacomedia.gob.ar",
+      "cantidad_urls_referenciadas": 2,
+      "urls_ejemplo": [
+        "https://teatrolacomedia.gob.ar/",
+        "https://teatrolacomedia.gob.ar/espectaculos/programacion/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://teatrolacomedia.gob.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "turboentrada.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://turboentrada.com/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "unr.edu.ar",
+      "cantidad_urls_referenciadas": 2,
+      "urls_ejemplo": [
+        "https://unr.edu.ar/agenda/",
+        "https://unr.edu.ar/espacio-cultural-universitario/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 404,
+      "robots_url_final": "https://unr.edu.ar/robots.txt",
+      "estado": "robots_ausente_no_implica_autorizacion"
+    },
+    {
+      "dominio": "urbangroup.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://urbangroup.com.ar/areas/centro-cultural-guemes/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://urbangroup.com.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.aecrosario.org.ar",
+      "cantidad_urls_referenciadas": 2,
+      "urls_ejemplo": [
+        "https://www.aecrosario.org.ar/",
+        "https://www.aecrosario.org.ar/cultura/teatro/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.aecrosario.org.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.agendaculturalrosario.com.ar",
+      "cantidad_urls_referenciadas": 37,
+      "urls_ejemplo": [
+        "https://www.agendaculturalrosario.com.ar/agenda",
+        "https://www.agendaculturalrosario.com.ar/espacios",
+        "https://www.agendaculturalrosario.com.ar/espacios/casa-arijon",
+        "https://www.agendaculturalrosario.com.ar/espacios/casa-lealtad",
+        "https://www.agendaculturalrosario.com.ar/espacios/centro-cultural-el-obrador"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "www.altorosario.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.altorosario.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 503,
+      "robots_url_final": "https://www.altorosario.com.ar/robots.txt",
+      "estado": "revisar_respuesta_robots"
+    },
+    {
+      "dominio": "www.ccpe.org.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.ccpe.org.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 301,
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "www.centralcordoba.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.centralcordoba.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.centralcordoba.com.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.clubprovincial.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.clubprovincial.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 503,
+      "robots_url_final": "https://www.clubprovincial.com.ar/robots.txt",
+      "estado": "revisar_respuesta_robots"
+    },
+    {
+      "dominio": "www.cm25.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.cm25.ar/novedades.html"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "www.d7entradas.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.d7entradas.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "www.elaserradero.com.ar",
+      "cantidad_urls_referenciadas": 2,
+      "urls_ejemplo": [
+        "https://www.elaserradero.com.ar/",
+        "https://www.elaserradero.com.ar/terms-of-service"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 404,
+      "robots_url_final": "https://www.elaserradero.com.ar/robots.txt",
+      "estado": "robots_ausente_no_implica_autorizacion"
+    },
+    {
+      "dominio": "www.elrayomisterioso.org.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.elrayomisterioso.org.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "www.entradafan.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.entradafan.com.ar/entradas-rosario/c3642"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.entradafan.com.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.facebook.com",
+      "cantidad_urls_referenciadas": 2,
+      "urls_ejemplo": [
+        "https://www.facebook.com/elobradorrosario/",
+        "https://www.facebook.com/pages/La-Morada-Teatro/653965228022129"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "referencia_social_no_rastreada",
+      "nota": "Enlace de referencia; no se consulta robots.txt"
+    },
+    {
+      "dominio": "www.google.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.google.com/maps/search/?api=1&query=Montevideo+1518+Rosario"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.google.com/robots.txt",
+      "estado": "rutas_restringidas",
+      "rutas_restringidas": [
+        "https://www.google.com/maps/search/?api=1&query=Montevideo+1518+Rosario"
+      ],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.hospitalitalianorosario.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.hospitalitalianorosario.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 404,
+      "robots_url_final": "https://www.hospitalitalianorosario.com.ar/robots.txt",
+      "estado": "robots_ausente_no_implica_autorizacion"
+    },
+    {
+      "dominio": "www.instagram.com",
+      "cantidad_urls_referenciadas": 20,
+      "urls_ejemplo": [
+        "https://www.instagram.com/barelcairorosario/",
+        "https://www.instagram.com/bioceresarena/",
+        "https://www.instagram.com/cccinelumiere/",
+        "https://www.instagram.com/ccparquealem/",
+        "https://www.instagram.com/ccrfrosario/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "referencia_social_no_rastreada",
+      "nota": "Enlace de referencia; no se consulta robots.txt"
+    },
+    {
+      "dominio": "www.ips.edu.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.ips.edu.ar/category/noticias/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.ips.edu.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.lacapital.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.lacapital.com.ar/secciones/zoom.html"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "www.lasonrisadebeckett.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.lasonrisadebeckett.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.lasonrisadebeckett.com.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": 10,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": true
+    },
+    {
+      "dominio": "www.mercadodelpatio.gob.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.mercadodelpatio.gob.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.mercadodelpatio.gob.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.metropolitano.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.metropolitano.ar/espectaculos/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.metropolitano.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": 10,
+      "pausa_configurada_segundos": 10.0,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.metropolitanoros.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.metropolitanoros.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 301,
+      "estado": "redireccion_robots_revisar",
+      "redireccion_a": "https://www.metropolitano.ar/dh_default_robots.txt"
+    },
+    {
+      "dominio": "www.microteatrorosario.com",
+      "cantidad_urls_referenciadas": 2,
+      "urls_ejemplo": [
+        "https://www.microteatrorosario.com/",
+        "https://www.microteatrorosario.com/productos/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.microteatrorosario.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.museodelamemoria.gob.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.museodelamemoria.gob.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "www.passline.com",
+      "cantidad_urls_referenciadas": 6,
+      "urls_ejemplo": [
+        "https://www.passline.com/venue/club-mercury",
+        "https://www.passline.com/venue/complejo-forest",
+        "https://www.passline.com/venue/floyd-bar",
+        "https://www.passline.com/venue/playa-de-la-musica",
+        "https://www.passline.com/venue/que-sea-rock"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.passline.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false,
+      "revision_condiciones": {
+        "consulta_automatica": false,
+        "motivo": "Condiciones de uso: uso exclusivamente personal y prohibición de descarga de contenidos. Se conservan los datos previos; no se consultan sus páginas automáticamente.",
+        "evidencia_url": "https://home.passline.com/terminos-y-condiciones",
+        "seccion": "TERCERO: Condiciones de Uso del Sitio Web",
+        "revision": "2026-10-24"
+      }
+    },
+    {
+      "dominio": "www.rosario.gob.ar",
+      "cantidad_urls_referenciadas": 10,
+      "urls_ejemplo": [
+        "https://www.rosario.gob.ar",
+        "https://www.rosario.gob.ar/inicio/",
+        "https://www.rosario.gob.ar/inicio/agenda",
+        "https://www.rosario.gob.ar/inicio/centros-culturales-y-teatros",
+        "https://www.rosario.gob.ar/inicio/cine-el-cairo"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 503,
+      "robots_url_final": "https://www.rosario.gob.ar/robots.txt",
+      "estado": "revisar_respuesta_robots"
+    },
+    {
+      "dominio": "www.rosario.tur.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.rosario.tur.ar/donde-ir/cultura/museos"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.rosario.tur.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.rosario3.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.rosario3.com/seccion/ocio/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.rosario3.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.rosarioencartel.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.rosarioencartel.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "www.santafe.gob.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.santafe.gob.ar/index.php/web/content/view/full/93664"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 404,
+      "robots_url_final": "https://www.santafe.gob.ar/robots.txt",
+      "estado": "robots_ausente_no_implica_autorizacion"
+    },
+    {
+      "dominio": "www.santafecultura.gob.ar",
+      "cantidad_urls_referenciadas": 2,
+      "urls_ejemplo": [
+        "https://www.santafecultura.gob.ar/",
+        "https://www.santafecultura.gob.ar/agenda/?localidad=rosario"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.santafecultura.gob.ar/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.teatrodelamanzana.com",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.teatrodelamanzana.com/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 503,
+      "robots_url_final": "https://www.teatrodelamanzana.com/robots.txt",
+      "estado": "revisar_respuesta_robots"
+    },
+    {
+      "dominio": "www.teatroelcirculo.com",
+      "cantidad_urls_referenciadas": 3,
+      "urls_ejemplo": [
+        "https://www.teatroelcirculo.com/",
+        "https://www.teatroelcirculo.com/home",
+        "https://www.teatroelcirculo.com/tambi%C3%A9nenelcirculo"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.teatroelcirculo.com/robots.txt",
+      "estado": "sin_restriccion_robots_detectada",
+      "rutas_restringidas": [],
+      "crawl_delay_segundos": null,
+      "pausa_configurada_segundos": 1.5,
+      "revisar_demora": false
+    },
+    {
+      "dominio": "www.teatrosatir.ar",
+      "cantidad_urls_referenciadas": 15,
+      "urls_ejemplo": [
+        "https://www.teatrosatir.ar/cartelera/",
+        "https://www.teatrosatir.ar/salas/",
+        "https://www.teatrosatir.ar/salas/caras-y-caretas/",
+        "https://www.teatrosatir.ar/salas/club-fosse/",
+        "https://www.teatrosatir.ar/salas/cultural-de-abajo/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "estado": "error_robots",
+      "error": "ReadTimeout"
+    },
+    {
+      "dominio": "www.ticketway.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.ticketway.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.ticketway.com.ar/robots.txt",
+      "estado": "robots_no_interpretable"
+    },
+    {
+      "dominio": "www.tuticket.com.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.tuticket.com.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 200,
+      "robots_url_final": "https://www.tuticket.com.ar/robots.txt",
+      "estado": "robots_no_interpretable"
+    },
+    {
+      "dominio": "www.unr.edu.ar",
+      "cantidad_urls_referenciadas": 1,
+      "urls_ejemplo": [
+        "https://www.unr.edu.ar/"
+      ],
+      "terminos_de_uso": "PENDIENTE_REVISION_MANUAL",
+      "http_robots": 503,
+      "robots_url_final": "https://www.unr.edu.ar/robots.txt",
+      "estado": "revisar_respuesta_robots"
+    }
+  ]
+}

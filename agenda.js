@@ -359,6 +359,8 @@ async function loadEvents() {
       (data.estado === "parcial" ? " · Algunas fuentes están pendientes de revisión" : "");
     const renderStarted = performance.now();
     render();
+    const staticAgenda = document.getElementById('static-agenda');
+    if (staticAgenda) staticAgenda.hidden = true;
     window.agendaMetrics = {
       jsonBytes: new TextEncoder().encode(text).length,
       events: events.length,
@@ -639,4 +641,5 @@ loadEvents().catch(() => {
 setInterval(() => {
   loadEvents().catch(console.error);
 }, 60 * 60 * 1000);
+
 

@@ -1,23 +1,31 @@
 {
   "version": 1,
-  "generado": "2026-10-24T16:14:53-03:00",
-  "ejecucion_id": "40122374267-1",
-  "inicio": "2026-10-24T15:48:22-03:00",
+  "generado": "2026-10-24T18:39:40-03:00",
+  "ejecucion_id": "40133346430-1",
+  "inicio": "2026-10-24T18:14:48-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-24 15:48",
-  "ultima_consulta_fuentes": "2026-10-24T16:14:23.138312-03:00",
+  "datos_actualizados": "2026-10-24 18:14",
+  "ultima_consulta_fuentes": "2026-10-24T18:39:04.202695-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1202,
-    "funciones_unicas": 1202,
-    "nuevos": 56,
-    "ausentes": 0,
-    "duplicados": 3,
-    "conservados": 39,
-    "fuentes": 79
+    "eventos": 1223,
+    "funciones_unicas": 1223,
+    "nuevos": 24,
+    "ausentes": 3,
+    "duplicados": 4,
+    "conservados": 62,
+    "fuentes": 99
   },
   "alertas": [
+    {
+      "tipo": "cobertura",
+      "mensaje": "Hay funciones extraídas que no figuran en la agenda ni tienen una coincidencia detectada. Revisar COBERTURA_ACTUAL.md."
+    },
+    {
+      "tipo": "etapa",
+      "mensaje": "Falló la etapa fuente_autodromo.py. Se conservaron sus datos anteriores."
+    },
     {
       "tipo": "tareas",
       "mensaje": "No se pudieron desactivar todas las tareas antiguas. Consultar el resumen de Actions."
@@ -39,9 +47,9 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 301,
-      "antes": 245,
-      "conservados": 14,
+      "eventos": 300,
+      "antes": 301,
+      "conservados": 36,
       "caida": false
     },
     {
@@ -49,7 +57,7 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 0,
+      "eventos": 1,
       "antes": 0,
       "conservados": 0,
       "caida": false
@@ -81,6 +89,26 @@
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 1,
       "antes": 1,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Bajada de los Maestros",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Beatmemo",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
       "conservados": 0,
       "caida": false
     },
@@ -300,7 +328,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 15,
-      "antes": 14,
+      "antes": 15,
       "conservados": 0,
       "caida": false
     },
@@ -345,6 +373,16 @@
       "caida": false
     },
     {
+      "nombre": "Experimental - Museo de Ciencias en Movimiento",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
       "nombre": "Feria Internacional del Libro de Rosario",
       "estado": "atencion",
       "motivo": "No se pudo completar la lectura.",
@@ -366,9 +404,9 @@
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
@@ -515,17 +553,177 @@
       "caida": false
     },
     {
+      "nombre": "Muestra Inmersiva: Estación Rosario 300",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
       "nombre": "Municipalidad de Rosario",
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 705,
+      "eventos": 726,
       "antes": 705,
-      "conservados": 23,
+      "conservados": 24,
+      "caida": false
+    },
+    {
+      "nombre": "Museo Diario La Capital",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo Histórico Provincial Julio Marc",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo Internacional para la Democracia",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
       "caida": false
     },
     {
       "nombre": "Museo Urbano Arte a la Vista",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Arte Contemporáneo de Rosario (MACRO)",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Arte Sacro Barnes",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Bellas Artes Juan B. Castagnino",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Sitio: \"El Paraná y las islas\"",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la Bolsa de Comercio",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la Ciudad",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la Memoria",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la Salud",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la ópera",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo del Deporte Santafesino",
       "estado": "sin_novedades",
       "motivo": "No se encontraron actividades nuevas verificables.",
       "accion": "No hace falta intervenir por este resultado aislado.",
@@ -671,6 +869,16 @@
       "accion": "Sin intervención necesaria.",
       "eventos": 4,
       "antes": 4,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Sala de las Banderas",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
       "conservados": 0,
       "caida": false
     },
@@ -855,7 +1063,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-24T16:14:51-03:00",
+    "fecha": "2026-10-24T18:39:39-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -868,290 +1076,200 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40122374267",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40133346430",
   "cambios": {
     "nuevos": [
       {
-        "fecha": "2026-10-28",
+        "fecha": "2026-10-24",
+        "hora": "21:00",
+        "nombre": "Teatro en La Escalera: Quemarlo Todo",
+        "lugar": "Teatro La Escalera (9 de Julio 324)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-25",
         "hora": "20:00",
-        "nombre": "Orquesta de Cámara Municipal: Bach",
-        "lugar": "Teatro El Círculo",
-        "origen": "Agenda Cultural Rosario"
+        "nombre": "Teatro en Espacio Bravo: Cada Vez Otra Vez",
+        "lugar": "Espacio Bravo (Catamarca 3624)",
+        "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-10-30",
-        "hora": "21:00",
-        "nombre": "Todas las aves en vos",
-        "lugar": "La Orilla Infinita",
-        "origen": "Agenda Cultural Rosario"
+        "hora": "20:00",
+        "nombre": "Un cielo de seis cuerdas",
+        "lugar": "Centro Cultural  La Casa del Tango",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "20:30",
+        "nombre": "Teatro en la Vigil: El Espejo de la Memoria",
+        "lugar": "La Vigil (Alem 3086)",
+        "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-10-31",
         "hora": "21:00",
-        "nombre": "La Reina Rock Fest",
-        "lugar": "Monumento Nacional a la Bandera",
-        "origen": "Agenda Cultural Rosario"
+        "nombre": "Teatro en La Escalera: Quemarlo Todo",
+        "lugar": "Teatro La Escalera (9 de Julio 324)",
+        "origen": "Municipalidad de Rosario"
       },
       {
-        "fecha": "2026-11-06",
-        "hora": "20:00",
-        "nombre": "Nepal en Rosario",
-        "lugar": "Centro Cultural Güemes",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-06",
+        "fecha": "2026-10-31",
         "hora": "21:00",
-        "nombre": "Ciro y los Persas",
-        "lugar": "Anfiteatro Municipal Humberto de Nito",
-        "origen": "Agenda Cultural Rosario"
+        "nombre": "Un Poco de Ruido en Rosario",
+        "lugar": "Metropolitano (Junín 501)",
+        "origen": "Municipalidad de Rosario"
       },
       {
-        "fecha": "2026-11-07",
-        "hora": "20:00",
-        "nombre": "Homero Pettinato: Triángulo Uno",
-        "lugar": "Centro Cultural Güemes",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-07",
-        "hora": "20:00",
-        "nombre": "Silvestre y La Naranja",
-        "lugar": "La Sala de las Artes",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-07",
+        "fecha": "2026-11-20",
         "hora": "21:00",
-        "nombre": "Ciro y los Persas",
-        "lugar": "Anfiteatro Municipal Humberto de Nito",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-12",
-        "hora": "21:00",
-        "nombre": "Diego Torres: Mi norte y mi sur",
-        "lugar": "Metropolitano",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-13",
-        "hora": "21:00",
-        "nombre": "Pólvora Negra: Otoño tardío",
-        "lugar": "Plataforma Lavardén",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-14",
-        "hora": "20:00",
-        "nombre": "Mati RJ: nuevo tour",
-        "lugar": "Centro Cultural Güemes",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-15",
-        "hora": "20:00",
-        "nombre": "Silvina Gandini: FUEGO",
-        "lugar": "Plataforma Lavardén",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-21",
-        "hora": "21:00",
-        "nombre": "Coti",
-        "lugar": "Lotus Club",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-21",
-        "hora": "21:00",
-        "nombre": "Darío Grandinetti: El escritor de todas las cosas",
-        "lugar": "Plataforma Lavardén",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-28",
-        "hora": "20:00",
-        "nombre": "2 Minutos",
-        "lugar": "La Sala de las Artes",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-28",
-        "hora": "21:00",
-        "nombre": "Abel Pintos: Buenaventura",
-        "lugar": "Anfiteatro Municipal Humberto de Nito",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-29",
-        "hora": "20:00",
-        "nombre": "Zeballos: Amor fiado",
-        "lugar": "Centro Cultural Güemes",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-12-11",
-        "hora": "21:00",
-        "nombre": "Babasónicos: Impuesto de fe",
-        "lugar": "Anfiteatro Municipal Humberto de Nito",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-12-11",
-        "hora": "21:00",
-        "nombre": "Deborah De Luca",
-        "lugar": "Hipódromo de Rosario",
-        "origen": "Agenda Cultural Rosario"
+        "nombre": "Teatro en Espacio Cultural Expresiones: Agencia de Placeres",
+        "lugar": "Espacio Cultural Expresiones (Entre Ríos 1437)",
+        "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-10-29",
         "hora": "20:00",
-        "nombre": "AeMe en vivo",
-        "lugar": "Complejo Cultural Atlas (CCA)",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-08",
-        "hora": "16:00",
-        "nombre": "Navidad Made In Argentina",
-        "lugar": "La Orilla Infinita",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-13",
-        "hora": "20:00",
-        "nombre": "Sinfonía n.º 3 «Coral», de Gustav Mahler",
+        "nombre": "Macbeth, de Giuseppe Verdi",
         "lugar": "Teatro El Círculo",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-20",
-        "hora": "19:00",
-        "nombre": "Gabriel Rolón: Palabra plena",
-        "lugar": "Teatro El Círculo",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "20:00",
-        "nombre": "Benja Torres",
-        "lugar": "Centro Cultural Güemes",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-12-05",
-        "hora": "21:00",
-        "nombre": "Tony Kamo: La máquina del tiempo",
-        "lugar": "Teatro El Círculo",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-12-11",
-        "hora": "20:00",
-        "nombre": "Lucas Upstein: La isla de Upstein",
-        "lugar": "Multiespacio Nicasio",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-14",
-        "hora": "21:00",
-        "nombre": "Alex Ubago: ¿Qué pides tú?",
-        "lugar": "La Segunda Seguros Arena",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-14",
-        "hora": "21:00",
-        "nombre": "Mariano Martínez: 35 años",
-        "lugar": "Lotus Club",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-24",
-        "hora": "22:00",
-        "nombre": "Kevin Di Serna",
-        "lugar": "The Warehouse",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-24",
-        "hora": "23:59",
-        "nombre": "Cúpula Club 4 años, con Taichu (DJ set)",
-        "lugar": "La Sala de las Artes",
         "origen": "Agenda Cultural Rosario"
       },
       {
         "fecha": "2026-10-30",
-        "hora": "23:59",
-        "nombre": "Halloween Cumbiero: Cumbia Nena + Pupi Fest",
-        "lugar": "Jaguar Haüs",
+        "hora": "19:00",
+        "nombre": "Una casa y tres protagonistas | Noche de Museos Abiertos en Casa Vanzo Wernicke",
+        "lugar": "Casa Vanzo Wernicke",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-31",
+        "hora": "20:00",
+        "nombre": "Isla Mujeres: Viaje inaugural en vivo",
+        "lugar": "Capi Club",
         "origen": "Agenda Cultural Rosario"
       },
       {
         "fecha": "2026-10-31",
-        "hora": "23:59",
-        "nombre": "Cumbión del Paraná: Hernán y La Champions Liga + Naranja Dulce",
-        "lugar": "La Sala de las Artes",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-07",
-        "hora": "23:59",
-        "nombre": "Dirty Sound Club x CCG",
-        "lugar": "Centro Cultural Güemes",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-14",
-        "hora": "20:30",
-        "nombre": "Fiestón con Nico Mattioli",
-        "lugar": "Asociación Japonesa de Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-14",
-        "hora": "23:30",
-        "nombre": "Victoria Engel: Closing Underground",
-        "lugar": "Complejo Forest",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-14",
-        "hora": "23:59",
-        "nombre": "El Club de la Serpiente",
-        "lugar": "Lotus Club",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-14",
-        "hora": "23:59",
-        "nombre": "Fiesta Flash",
-        "lugar": "Centro Cultural Güemes",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-15",
-        "hora": "16:00",
-        "nombre": "Navidad Made In Argentina",
-        "lugar": "La Orilla Infinita",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-15",
-        "hora": "21:00",
-        "nombre": "Dyango: Su amigo Dyango",
+        "hora": "20:00",
+        "nombre": "Macbeth, de Giuseppe Verdi",
         "lugar": "Teatro El Círculo",
         "origen": "Agenda Cultural Rosario"
       },
       {
+        "fecha": "2026-11-02",
+        "hora": "18:00",
+        "nombre": "Visita a la escultura de Roberto Rosas con la participación de Guías por un día",
+        "lugar": "Oratorio H.E.C.A. (Av. Pellegrini 3205)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-08",
+        "hora": "16:00",
+        "nombre": "Teatro en La Orilla Infinita: Navidad Made In Argentina",
+        "lugar": "La Orilla Infinita (Colón 2148)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-14",
+        "hora": "21:00",
+        "nombre": "Teatro en Espacio Cultural Expresiones: Agencia de Placeres",
+        "lugar": "Espacio Cultural Expresiones (Entre Ríos 1437)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-15",
+        "hora": "16:00",
+        "nombre": "Teatro en La Orilla Infinita: Navidad Made In Argentina",
+        "lugar": "La Orilla Infinita (Colón 2148)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-19",
+        "hora": "14:00",
+        "nombre": "Visitas Guiadas Biblioteca Estrada",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
         "fecha": "2026-11-20",
-        "hora": "23:59",
-        "nombre": "AY! AMOR! - KARINA",
-        "lugar": "La Segunda Seguros Arena",
-        "origen": "Entrada Play"
+        "hora": "17:00",
+        "nombre": "Tertulias Tangueras",
+        "lugar": "Centro Cultural  La Casa del Tango",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-22",
+        "hora": "10:00",
+        "nombre": "Tango en Calle",
+        "lugar": "Centro Cultural  La Casa del Tango",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-22",
+        "hora": "16:00",
+        "nombre": "Teatro en La Orilla Infinita: Navidad Made In Argentina",
+        "lugar": "La Orilla Infinita (Colón 2148)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-24",
+        "hora": "09:00",
+        "nombre": "Visitas Guiadas Biblioteca Estrada",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-26",
+        "hora": "14:00",
+        "nombre": "Visitas Guiadas Biblioteca Estrada",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-27",
+        "hora": "17:00",
+        "nombre": "Tertulias Tangueras",
+        "lugar": "Centro Cultural  La Casa del Tango",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-29",
+        "hora": "10:00",
+        "nombre": "Tango en Calle",
+        "lugar": "Centro Cultural  La Casa del Tango",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-29",
+        "hora": "16:00",
+        "nombre": "Teatro en La Orilla Infinita: Navidad Made In Argentina",
+        "lugar": "La Orilla Infinita (Colón 2148)",
+        "origen": "Municipalidad de Rosario"
       }
     ],
-    "ausentes": []
+    "ausentes": [
+      {
+        "fecha": "2026-10-31",
+        "hora": "20:30",
+        "nombre": "Isla Mujeres: Viaje inaugural en vivo",
+        "lugar": "Capi Club",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-10-29",
+        "hora": "19:00",
+        "nombre": "Macbeth, de Giuseppe Verdi",
+        "lugar": "Teatro El Círculo",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-10-31",
+        "hora": "19:00",
+        "nombre": "Macbeth, de Giuseppe Verdi",
+        "lugar": "Teatro El Círculo",
+        "origen": "Agenda Cultural Rosario"
+      }
+    ]
   }
 }

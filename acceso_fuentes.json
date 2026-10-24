@@ -1,0 +1,18 @@
+{
+  "revision": "2026-10-24",
+  "dominios": {
+    "ticketek.com.ar": {
+      "rutas_excluidas": ["/websource/"],
+      "motivo": "Robots observado el 24/10/2026 excluye /websource/. El control se aplica también a redirecciones.",
+      "evidencia_url": "https://www.ticketek.com.ar/robots.txt",
+      "revision": "2026-10-24"
+    },
+    "passline.com": {
+      "consulta_automatica": false,
+      "motivo": "Condiciones de uso: uso exclusivamente personal y prohibición de descarga de contenidos. Se conservan los datos previos; no se consultan sus páginas automáticamente.",
+      "evidencia_url": "https://home.passline.com/terminos-y-condiciones",
+      "seccion": "TERCERO: Condiciones de Uso del Sitio Web",
+      "revision": "2026-10-24"
+    }
+  }
+}

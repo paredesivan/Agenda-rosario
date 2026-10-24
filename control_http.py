@@ -27,6 +27,8 @@ class SesionControlada(requests.Session):
         self.ruta = Path(ruta) if ruta else ROOT / 'estado_http.json'
         self.reloj, self.dormir = reloj, dormir
         self.cuentas = {}
+        politica = ROOT / 'acceso_fuentes.json'
+        self.politica = json.loads(politica.read_text()) if politica.exists() else {}
         config = ROOT / 'limites_consultas.json'
         self.config = json.loads(config.read_text()) if config.exists() else {}
         self.headers['User-Agent'] = 'AgendaRosario/4.0 (+https://salidasrosario.com.ar)'
@@ -37,6 +39,12 @@ class SesionControlada(requests.Session):
         if request.method not in ('GET', 'HEAD'):
             raise requests.RequestException('El recolector sólo permite GET/HEAD')
         dominio = urlsplit(request.url).hostname
+        for host, revision in self.politica.get('dominios', {}).items():
+            if dominio == host or (dominio or '').endswith('.' + host):
+                if revision.get('consulta_automatica') is False:
+                    raise requests.RequestException('Consulta automática desactivada por condiciones de uso: ' + host)
+                if any(urlsplit(request.url).path.startswith(ruta) for ruta in revision.get('rutas_excluidas', [])):
+                    raise requests.RequestException('Ruta excluida por robots documentado: ' + host)
         regla = {**self.config.get('general', {}), **self.config.get('hosts', {}).get(dominio, {})}
         demora = max(1.5, float(regla.get('pausa_segundos', 1.5)))
         # Una llamada y, como máximo, un reintento; redirects también pasan por send.
@@ -99,3 +107,4 @@ class SesionControlada(requests.Session):
                     previo['ultima'] = self.reloj()
                     atomico(self.ruta, estado)
         raise requests.RequestException('Consulta fallida')
+

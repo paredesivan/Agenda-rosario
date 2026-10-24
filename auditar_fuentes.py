@@ -18,13 +18,18 @@ from urllib.robotparser import RobotFileParser
 import requests
 
 RAIZ = Path(__file__).resolve().parent
-ARCHIVOS = ("actualizar_eventos.py", "fuentes_nuevas.py", "precios_ticketek.py")
+ARCHIVOS = ("actualizar_eventos.py", "fuentes_nuevas.py", "precios_ticketek.py",
+            "fuentes_adicionales.py", "fuentes_ampliadas.py", "fuentes_espacios_oficiales.py",
+            "instituciones_eventos.py", "instituciones_nuevas.py", "fuentes_refi_folklore.py",
+            "resolver_candidatos.py", "precios_lavarden.py", "fuente_autodromo.py",
+            "fuente_passline_venues.py")
 AGENTE = "AgendaRosario"
 HEADERS = {"User-Agent": "AgendaRosario/3.1 (+https://github.com/paredesivan/Agenda-rosario)"}
 FUENTES_DINAMICAS = (
     "https://www.rosario.gob.ar/inicio/agenda",
     "https://www.rosario.gob.ar/inicio/cultura-y-educacion",
     "https://www.teatrosatir.ar/cartelera/",
+    "https://www.ticketek.com.ar/",
 )
 SOCIALES = frozenset(("instagram.com", "facebook.com"))
 PATRON_URL = re.compile(r'https?://[^\s"\'<>]+', re.I)
@@ -58,7 +63,13 @@ def leer_pausas():
     ruta = RAIZ / "actualizar_eventos.py"
     arbol = ast.parse(ruta.read_text(encoding="utf-8"), filename=ruta.name)
     valores = asignacion_literal(arbol, "PAUSAS_POR_HOST", {})
-    return valores if isinstance(valores, dict) else {}
+    valores = valores if isinstance(valores, dict) else {}
+    limites = RAIZ / 'limites_consultas.json'
+    if limites.exists():
+        config = json.loads(limites.read_text(encoding='utf-8'))
+        for host, regla in config.get('hosts', {}).items():
+            valores[host] = max(float(valores.get(host, 1.5)), float(regla.get('pausa_segundos', 1.5)))
+    return valores
 
 
 def inventario():
@@ -86,6 +97,16 @@ def inventario():
                 registrar(sitios, fuente["url"])
     for url in FUENTES_DINAMICAS:
         registrar(sitios, url)
+    def urls_config(valor):
+        if isinstance(valor, dict):
+            for item in valor.values(): urls_config(item)
+        elif isinstance(valor, list):
+            for item in valor: urls_config(item)
+        elif isinstance(valor, str) and valor.startswith('https://'):
+            registrar(sitios, valor)
+    for nombre in ('fuentes_ampliadas.json', 'espacios_oficiales.json', 'fuentes_refi_folklore.json'):
+        path = RAIZ / nombre
+        if path.exists(): urls_config(json.loads(path.read_text(encoding='utf-8')))
     return dict(sorted(sitios.items()))
 
 
@@ -135,7 +156,10 @@ def revisar_host(host, urls, obtener=requests.get, pausa_configurada=1.5):
             return r
         r["robots_url_final"] = robots
         if respuesta.status_code == 200:
-            r.update(evaluar_reglas(respuesta.text, urls, pausa_configurada))
+            if '<html' in respuesta.text.lower() or '<!doctype' in respuesta.text.lower():
+                r['estado'] = 'robots_no_interpretable'
+            else:
+                r.update(evaluar_reglas(respuesta.text, urls, pausa_configurada))
         elif respuesta.status_code in (404, 410):
             r["estado"] = "robots_ausente_no_implica_autorizacion"
         else:
@@ -155,6 +179,12 @@ def construir_reporte(sitios):
         for future in as_completed(futures):
             res.append(future.result())
     res.sort(key=lambda r: r["dominio"])
+    politica_path = RAIZ / 'acceso_fuentes.json'
+    politica = json.loads(politica_path.read_text()) if politica_path.exists() else {}
+    for r in res:
+        for host, revision in politica.get('dominios', {}).items():
+            if r['dominio'] == host or r['dominio'].endswith('.'+host):
+                r['revision_condiciones'] = revision
     return {"generado_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "tipo": "auditoria_tecnica_no_bloqueante",
             "advertencia": "URLs del código, no registro de accesos. robots.txt no otorga permisos legales.",
@@ -182,3 +212,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

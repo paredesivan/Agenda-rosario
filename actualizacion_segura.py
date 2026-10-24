@@ -1,5 +1,7 @@
 """Ejecuta recolectores aislados. Publica sólo resultados validados."""
 import json
+import math
+import re
 import shutil
 import subprocess
 import sys
@@ -8,6 +10,7 @@ from collections import Counter
 from datetime import date, datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
+from urllib.parse import urlsplit
 from control_http import atomico
 
 ROOT = Path(__file__).resolve().parent
@@ -22,10 +25,47 @@ def validar(datos):
     for e in datos['eventos']:
         if not isinstance(e, dict):
             raise ValueError('Evento no es un objeto')
-        date.fromisoformat(e['fecha'])
+        fecha = e.get('fecha')
+        if not isinstance(fecha, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', fecha):
+            raise ValueError('Fecha debe usar YYYY-MM-DD')
+        date.fromisoformat(fecha)
         # Algunos eventos tienen horario por confirmar o rangos publicados.
         if not all(isinstance(e.get(k), str) and e[k].strip() for k in ('nombre', 'hora', 'lugar')):
             raise ValueError('Evento sin campos mínimos')
+        if re.fullmatch(r'\d{1,2}:\d{2}', e['hora']):
+            hora, minuto = map(int, e['hora'].split(':'))
+            if hora > 23 or minuto > 59:
+                raise ValueError('Hora fuera de rango')
+        if e.get('fecha_fin'):
+            fin = e['fecha_fin']
+            if not isinstance(fin, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', fin):
+                raise ValueError('Fecha de cierre inválida')
+            date.fromisoformat(fin)
+            if fin < fecha:
+                raise ValueError('Cierre anterior al comienzo')
+        if e.get('hora_fin'):
+            fin = e['hora_fin']
+            if not isinstance(fin, str) or not re.fullmatch(r'(?:[01]\d|2[0-3]):[0-5]\d', fin):
+                raise ValueError('Hora de cierre inválida')
+        precio = e.get('precio')
+        if precio is not None and (isinstance(precio, bool) or not isinstance(precio, (int, float))
+                                   or not math.isfinite(precio) or precio < 0):
+            raise ValueError('Precio inválido')
+        for campo in ('evento_url', 'entradas_url', 'mapa_url'):
+            url = e.get(campo)
+            if url is None or url == '':
+                continue
+            if not isinstance(url, str) or any(c.isspace() or ord(c) < 32 for c in url):
+                raise ValueError('Enlace inválido')
+            partes = urlsplit(url)
+            if partes.scheme not in ('http', 'https') or not partes.hostname or partes.username or partes.password:
+                raise ValueError('Enlace no seguro')
+        for campo in ('descripcion', 'direccion', 'origen', 'precio_etiqueta'):
+            if e.get(campo) is not None and not isinstance(e[campo], str):
+                raise ValueError('Campo de texto inválido: ' + campo)
+        if e.get('categorias') is not None and (not isinstance(e['categorias'], list)
+                or any(not isinstance(c, str) for c in e['categorias'])):
+            raise ValueError('Categorías inválidas')
     return datos
 
 
@@ -74,7 +114,7 @@ def proteger(antes, despues, hoy):
               for fuente, cantidad in sorted(conservados.items())]
     if avisos:
         despues['estado'] = 'parcial'
-    return despues, avisos
+    return validar(despues), avisos
 
 
 def ejecutar_etapa(root, script, limite, ejecutar=subprocess.run, hoy=None):
@@ -125,6 +165,7 @@ def main():
     from actualizar_eventos import sin_repetidos
     antes_deduplicar = len(datos['eventos'])
     datos['eventos'] = sin_repetidos(datos['eventos'])
+    validar(datos)
     duplicados = antes_deduplicar - len(datos['eventos'])
     atomico(ROOT / 'eventos.json', datos)
     atomico(ROOT / 'salud_actualizacion.json', {'inicio': inicio, 'fin': datetime.now(ZoneInfo('America/Argentina/Cordoba')).isoformat(),
@@ -137,4 +178,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 

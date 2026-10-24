@@ -95,7 +95,14 @@ def actualizar(root=ROOT, ejecutar=subprocess.run):
     except (subprocess.SubprocessError, OSError, ValueError, KeyError, TypeError) as exc:
         # La causa técnica queda en el artefacto de Actions. El panel no la replica.
         guardar(root / 'reportes/fallo_actualizacion.json', {'tipo': type(exc).__name__})
+        pausas = leer(root / 'estado_http.json', {})
         restaurar_datos(root)
+        # La restauración no debe borrar una pausa recibida durante este intento.
+        anteriores = leer(root / 'estado_http.json', {})
+        for host, valor in pausas.items():
+            if isinstance(valor, dict) and valor.get('pausado_hasta', 0) > anteriores.get(host, {}).get('pausado_hasta', 0):
+                anteriores[host] = valor
+        if anteriores: guardar(root / 'estado_http.json', anteriores)
         resultado = {'estado': 'fallida', 'fin': ahora(), 'datos_conservados': True,
                      'mensaje': 'La actualización no terminó. Se conservó la agenda anterior.'}
     guardar(root / 'reportes/resultado_actualizacion.json', resultado)
@@ -174,6 +181,16 @@ def informe(root=ROOT, modo='actualizar'):
             alertas.append({'tipo': 'caida', 'fuente': nombre, 'mensaje': f'Pasó de {antes} a {despues} fichas futuras. Revisar duplicados y cambios de fuente antes de asumir una pérdida.'})
         fuentes.append({'nombre': nombre, 'estado': estado, 'motivo': motivo, 'accion': accion,
                         'eventos': despues, 'antes': antes, 'conservados': retenidos[nombre], 'caida': caida})
+    cobertura = leer(root / 'cobertura_actual.json', {})
+    if cobertura.get('municipal_del_intento_actual'):
+        fallidas = cobertura.get('estados_municipales', {}).get('consulta_fallida', 0)
+        if fallidas:
+            alertas.append({'tipo': 'cobertura', 'mensaje': f'{fallidas} fichas municipales no se pudieron consultar. Revisar COBERTURA_ACTUAL.md.'})
+        if cobertura.get('funciones_extraidas_ausentes'):
+            alertas.append({'tipo': 'cobertura', 'mensaje': 'Hay funciones extraídas que no figuran en la agenda ni tienen una coincidencia detectada. Revisar COBERTURA_ACTUAL.md.'})
+    for etapa in salud_actual.get('etapas', []):
+        if etapa.get('estado') == 'fallida':
+            alertas.append({'tipo': 'etapa', 'mensaje': f'Falló la etapa {etapa.get("etapa", "de consulta")}. Se conservaron sus datos anteriores.'})
     if fallo:
         alertas.insert(0, {'tipo': 'actualizacion', 'mensaje': resultado['mensaje']})
     avisos = any(f['estado'] in ('atencion', 'pendiente') for f in fuentes)
@@ -218,7 +235,7 @@ def informe(root=ROOT, modo='actualizar'):
                    f"Horizonte de consulta: {cobertura.get('horizonte_dias')} días.", '',
                    '| Comprobación | Cantidad |', '|---|---:|',
                    *[f'| {titulo} | {cobertura.get(campo, 0)} |' for campo, titulo in
-                     [('fichas_consultadas','Fichas consultadas'), ('fichas_con_error','Consultas fallidas'),
+                     [('fichas_consultadas','Fichas intentadas'), ('fichas_con_error','Consultas fallidas'),
                       ('funciones_extraidas','Funciones extraídas antes de deduplicar'),
                       ('fichas_sin_funciones','Fichas sin funciones extraídas')]], '',
                    'Los motivos de exclusión de cada ficha están en revision_cobertura_municipal.json. '
@@ -304,8 +321,21 @@ def validar_publicacion(root=ROOT):
     return datos
 
 
+def avisar(root=ROOT):
+    """Avisos visibles en Actions, sin credenciales ni errores de transporte crudos."""
+    panel = leer(root / 'estado_agenda.json', {})
+    mensajes = [a['mensaje'] for a in panel.get('alertas', [])]
+    mensajes += [f"{f['nombre']}: {f['motivo']}" for f in panel.get('fuentes', [])
+                 if f.get('estado') in ('atencion', 'pendiente')]
+    for mensaje in list(dict.fromkeys(mensajes))[:30]:
+        seguro = mensaje.replace('%', '%25').replace('\r', '%0D').replace('\n', '%0A')
+        print('::warning title=Revisar fuente de la agenda::'+seguro)
+    return len(mensajes)
+
+
 def guardar_cambios(root=ROOT, ejecutar=subprocess.run):
     """Sólo fast-forward; nunca rebase ni force de resultados antiguos."""
+    validar_publicacion(root)
     ejecutar(['git', 'fetch', 'origin', 'main'], cwd=root, check=True)
     def git(*args):
         return ejecutar(['git', *args], cwd=root, check=True, capture_output=True, text=True).stdout.strip()
@@ -360,7 +390,7 @@ def publicar(root=ROOT, ejecutar=subprocess.run, esperar=None):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('accion', choices=['preparar', 'actualizar', 'auditar', 'archivar', 'informe', 'validar', 'guardar', 'publicar'])
+    parser.add_argument('accion', choices=['preparar', 'actualizar', 'auditar', 'archivar', 'informe', 'validar', 'avisar', 'guardar', 'publicar'])
     parser.add_argument('--modo', default='actualizar', choices=['actualizar', 'verificar', 'auditar'])
     args = parser.parse_args()
     if args.accion == 'informe': informe(modo=args.modo)
@@ -371,3 +401,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

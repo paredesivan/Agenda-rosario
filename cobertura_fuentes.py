@@ -13,3 +13,13 @@ def horizonte_dias(path=None):
 
 
 HORIZONTE_DIAS = horizonte_dias()
+
+
+def ordenar_consultas(enlaces, revision_path):
+    """Primero pendientes y fichas nuevas; evita postergar siempre el mismo final."""
+    path = Path(revision_path)
+    revision = json.loads(path.read_text(encoding='utf-8')) if path.exists() else {}
+    anteriores = {f['url']: f for f in revision.get('fichas', []) if f.get('url')}
+    return sorted(enlaces, key=lambda url: (
+        0 if anteriores.get(url, {}).get('error') else 1 if url not in anteriores else 2, url))
+

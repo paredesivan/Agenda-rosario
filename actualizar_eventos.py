@@ -249,6 +249,8 @@ def extraer_eventos(html, url, hoy, diagnostico=None):
                 evento['precio_etiqueta'] = etiqueta
             resultados[clave(evento)] = evento
     registro['funciones'] = len(resultados)
+    registro['detalle_funciones'] = [{k: e.get(k, '') for k in
+        ('fecha', 'hora', 'nombre', 'lugar', 'evento_url', 'origen')} for e in resultados.values()]
     registro['motivos'] = list(dict.fromkeys(registro['motivos']))
     return list(resultados.values())
 
@@ -712,7 +714,9 @@ def actualizar():
             and e["fecha"] >= hoy.isoformat()
             and e.get("evento_url")
         )
-        for indice, url in enumerate(sorted(enlaces), 1):
+        from cobertura_fuentes import ordenar_consultas
+        revision_anterior = ARCHIVO.with_name('revision_cobertura_municipal.json')
+        for indice, url in enumerate(ordenar_consultas(enlaces, revision_anterior), 1):
             _, nuevos, error, eliminado = consultar_evento(url, hoy)
             eventos.extend(nuevos)
             if error and not eliminado:
@@ -768,6 +772,7 @@ def actualizar():
         print(f"Aviso: {error}", flush=True)
     revision = {'revision': ahora.isoformat(), 'horizonte_dias': HORIZONTE_DIAS,
                 'fuente': ORIGEN, 'fichas_consultadas': len(DIAGNOSTICO_MUNICIPAL),
+                'fichas_leidas': sum(not v.get('error') for v in DIAGNOSTICO_MUNICIPAL.values()),
                 'fichas_con_error': sum(bool(v.get('error')) for v in DIAGNOSTICO_MUNICIPAL.values()),
                 'funciones_extraidas': sum(v.get('funciones', 0) for v in DIAGNOSTICO_MUNICIPAL.values()),
                 'fichas_sin_funciones': sum(not v.get('funciones') for v in DIAGNOSTICO_MUNICIPAL.values()),
@@ -1086,5 +1091,6 @@ def calendario(html, fuente, url, direccion, hoy):
 
 if __name__ == "__main__":
     actualizar()
+
 
 

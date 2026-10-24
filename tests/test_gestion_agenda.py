@@ -140,6 +140,7 @@ class Gestion(unittest.TestCase):
             git('remote', 'add', 'origin', str(remoto))
             (root / '.gitignore').write_text('reportes/\n__pycache__/\n*.pyc\n')
             (root / 'eliminar.txt').write_text('anterior')
+            g.guardar(root / 'eventos.json', {'eventos': [EVENTO]})
             folder = root / '.github/workflows'
             folder.mkdir(parents=True)
             (folder / 'prueba.yml').write_text('original')
@@ -219,3 +220,4 @@ class Instalador(unittest.TestCase):
                 with self.assertRaises(OSError): aplicar(payload, root)
             self.assertEqual((root / 'uno.py').read_text(), 'original')
             self.assertFalse((root / '.agenda/entrega.json').exists())
+
