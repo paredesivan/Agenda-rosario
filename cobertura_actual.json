@@ -1,10 +1,10 @@
 {
-  "datos_actualizados": "2026-10-24 18:14",
+  "datos_actualizados": "2026-10-24 19:29",
   "fecha_corte": "2026-10-24",
-  "eventos_futuros_publicados": 1223,
+  "eventos_futuros_publicados": 1224,
   "por_fuente": {
     "El Cairo Cine Público": 13,
-    "Municipalidad de Rosario": 726,
+    "Municipalidad de Rosario": 727,
     "Agenda Cultural Rosario": 300,
     "Empleados de Comercio Rosario — Teatro AEC": 1,
     "Teatro Broadway": 24,
@@ -37,143 +37,18 @@
     "Autódromo Rosario": 1,
     "Grupo Gamma — Charlas a la comunidad": 2
   },
-  "revision_municipal": "2026-10-24T18:14:50.904299-03:00",
+  "revision_municipal": "2026-10-24T19:29:32.556050-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [
     {
-      "url": "https://www.rosario.gob.ar/inicio/tango-en-calle",
-      "estado": "con_funciones_extraidas",
-      "funciones": 6,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/teatro-en-espacio-bravo-cada-vez-otra-vez",
+      "url": "https://www.rosario.gob.ar/inicio/circuito-mujeres-recorrido-turistico-por-rosario",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/teatro-en-espacio-cultural-expresiones-agencia-de-placeres",
-      "estado": "con_funciones_extraidas",
-      "funciones": 2,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/teatro-en-la-escalera-quemarlo-todo",
-      "estado": "con_funciones_extraidas",
-      "funciones": 2,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/teatro-en-la-orilla-infinita-navidad-made-argentina",
-      "estado": "con_funciones_extraidas",
-      "funciones": 4,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/teatro-en-la-vigil-el-espejo-de-la-memoria",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/terror-en-vhs-en-cine-lumiere-8",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/tertulias-tangueras-1",
-      "estado": "con_funciones_extraidas",
-      "funciones": 5,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/transfusiones-artisticas",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Bloque sin sede verificable"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/un-cielo-de-seis-cuerdas",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/un-maldito-policia-en-cine-lumiere",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/un-poco-de-ruido-en-rosario",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/una-casa-y-tres-protagonistas-noche-de-museos-abiertos-en-casa-vanzo-wernicke",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/victor-heredia-presenta-desde-paso-del-rey-en-la-comedia",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/visita-guiada-por-pasaje-de-la-nacion",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Bloque sin sede verificable"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/visita-la-escultura-de-roberto-rosas-con-la-participacion-de-guias-por-un-dia",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
-      "estado": "con_funciones_extraidas",
-      "funciones": 10,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/cero341-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/shippear-una-idea.-un-dia.-muchas-posibilidades",
+      "url": "https://www.rosario.gob.ar/inicio/octubre-rosa-en-el-sudoeste-se-viene-el-zumbaton",
       "estado": "sin_funciones_extraidas",
       "funciones": 0,
       "motivos": [
@@ -219,7 +94,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/anatomia-del-fervor.-collages-1998.-carlos-herrera",
       "estado": "con_funciones_extraidas",
-      "funciones": 7,
+      "funciones": 6,
       "motivos": [],
       "error": ""
     },
@@ -407,7 +282,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/el-papel-del-fuego-hugo-cava",
       "estado": "con_funciones_extraidas",
-      "funciones": 7,
+      "funciones": 6,
       "motivos": [],
       "error": ""
     },
@@ -428,7 +303,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/episodio-ii-19762026-que-digan-donde-estan",
       "estado": "con_funciones_extraidas",
-      "funciones": 7,
+      "funciones": 6,
       "motivos": [],
       "error": ""
     },
@@ -449,7 +324,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/favor-de-la-fantasia-en-contra-de-la-inflacion",
       "estado": "con_funciones_extraidas",
-      "funciones": 5,
+      "funciones": 4,
       "motivos": [
         "Bloque sin sede verificable"
       ],
@@ -607,7 +482,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
       "estado": "con_funciones_extraidas",
-      "funciones": 140,
+      "funciones": 139,
       "motivos": [],
       "error": ""
     },
@@ -628,7 +503,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/lo-que-me-dice-el-rio-mientras-duermo",
       "estado": "con_funciones_extraidas",
-      "funciones": 7,
+      "funciones": 6,
       "motivos": [],
       "error": ""
     },
@@ -700,7 +575,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/muestra-siestario",
       "estado": "con_funciones_extraidas",
-      "funciones": 4,
+      "funciones": 3,
       "motivos": [],
       "error": ""
     },
@@ -737,14 +612,14 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
       "estado": "con_funciones_extraidas",
-      "funciones": 7,
+      "funciones": 6,
       "motivos": [],
       "error": ""
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "estado": "con_funciones_extraidas",
-      "funciones": 27,
+      "funciones": 26,
       "motivos": [],
       "error": ""
     },
@@ -785,15 +660,6 @@
       "estado": "con_funciones_extraidas",
       "funciones": 2,
       "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/octubre-rosa-2026",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Bloque sin sede verificable"
-      ],
       "error": ""
     },
     {
@@ -843,18 +709,9 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/presentaciones-de-libros-en-la-biblioteca-argentina",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Bloque sin sede verificable"
-      ],
-      "error": ""
-    },
-    {
       "url": "https://www.rosario.gob.ar/inicio/primavera-en-el-jardin-de-los-ninos",
       "estado": "con_funciones_extraidas",
-      "funciones": 17,
+      "funciones": 16,
       "motivos": [],
       "error": ""
     },
@@ -868,7 +725,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/primavera-en-la-isla-de-los-inventos",
       "estado": "con_funciones_extraidas",
-      "funciones": 17,
+      "funciones": 16,
       "motivos": [],
       "error": ""
     },
@@ -911,6 +768,15 @@
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/seminario-anatomia-vivencial-y-contact-improvisacion",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/shippear-una-idea.-un-dia.-muchas-posibilidades",
       "estado": "sin_funciones_extraidas",
       "funciones": 0,
       "motivos": [
@@ -1010,11 +876,134 @@
         "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
       ],
       "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/tango-en-calle",
+      "estado": "con_funciones_extraidas",
+      "funciones": 6,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/teatro-en-espacio-bravo-cada-vez-otra-vez",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/teatro-en-espacio-cultural-expresiones-agencia-de-placeres",
+      "estado": "con_funciones_extraidas",
+      "funciones": 2,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/teatro-en-la-escalera-quemarlo-todo",
+      "estado": "con_funciones_extraidas",
+      "funciones": 2,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/teatro-en-la-orilla-infinita-navidad-made-argentina",
+      "estado": "con_funciones_extraidas",
+      "funciones": 4,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/teatro-en-la-vigil-el-espejo-de-la-memoria",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/terror-en-vhs-en-cine-lumiere-8",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/tertulias-tangueras-1",
+      "estado": "con_funciones_extraidas",
+      "funciones": 5,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/transfusiones-artisticas",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Bloque sin sede verificable"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/un-cielo-de-seis-cuerdas",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/un-maldito-policia-en-cine-lumiere",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/un-poco-de-ruido-en-rosario",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/una-casa-y-tres-protagonistas-noche-de-museos-abiertos-en-casa-vanzo-wernicke",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/victor-heredia-presenta-desde-paso-del-rey-en-la-comedia",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/visita-guiada-por-pasaje-de-la-nacion",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Bloque sin sede verificable"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/visita-la-escultura-de-roberto-rosas-con-la-participacion-de-guias-por-un-dia",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
+      "estado": "con_funciones_extraidas",
+      "funciones": 10,
+      "motivos": [],
+      "error": ""
     }
   ],
   "estados_municipales": {
-    "con_funciones_extraidas": 108,
-    "sin_funciones_extraidas": 23
+    "con_funciones_extraidas": 109,
+    "sin_funciones_extraidas": 21
   },
   "comparacion_por_funcion_disponible": true,
   "funciones_extraidas_ausentes": [
@@ -1596,7 +1585,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-10-24T18:37:59.893468-03:00",
+  "resolucion_revision": "2026-10-24T20:02:18.838994-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",

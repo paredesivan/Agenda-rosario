@@ -2,34 +2,30 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-10-24 18:14. Corte: 2026-10-24.
-Eventos futuros: 1223. Revisión municipal: 2026-10-24T18:14:50.904299-03:00.
+Datos de la agenda: 2026-10-24 19:29. Corte: 2026-10-24.
+Eventos futuros: 1224. Revisión municipal: 2026-10-24T19:29:32.556050-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
 |---|---:|
-| con_funciones_extraidas | 108 |
-| sin_funciones_extraidas | 23 |
+| con_funciones_extraidas | 109 |
+| sin_funciones_extraidas | 21 |
 
 Funciones extraídas ausentes de la agenda: 1.
 
 ## Consultas fallidas y fichas sin funciones
 
-- https://www.rosario.gob.ar/inicio/transfusiones-artisticas — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/visita-guiada-por-pasaje-de-la-nacion — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/cero341-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/shippear-una-idea.-un-dia.-muchas-posibilidades — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/octubre-rosa-en-el-sudoeste-se-viene-el-zumbaton — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
 - https://www.rosario.gob.ar/inicio/checker-tobi-y-el-viaje-los-rios-voladores-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
 - https://www.rosario.gob.ar/inicio/la-novia-del-diablo-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
 - https://www.rosario.gob.ar/inicio/muestras-en-la-tertulia — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/noche-de-galerias-abiertas — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/octubre-rosa-2026 — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/pena-folclorica-dia-de-la-independencia — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/presentaciones-de-libros-en-la-biblioteca-argentina — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/semana-del-arte-2026.-nombres-y-lugares — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/seminario-anatomia-vivencial-y-contact-improvisacion — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/shippear-una-idea.-un-dia.-muchas-posibilidades — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/taller-de-folclore-para-adultos — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
@@ -38,6 +34,8 @@ Funciones extraídas ausentes de la agenda: 1.
 - https://www.rosario.gob.ar/inicio/taller-que-nos-dice-la-arcilla — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/talleres-de-teatro-patatus-en-felipa-la-casa-del-fondo — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/transfusiones-artisticas — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/visita-guiada-por-pasaje-de-la-nacion — Bloque sin sede verificable
 
 ## Candidatos y resolución
 

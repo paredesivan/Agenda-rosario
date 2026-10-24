@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-10-24T18:39:40-03:00",
-  "ejecucion_id": "40133346430-1",
-  "inicio": "2026-10-24T18:14:48-03:00",
+  "generado": "2026-10-24T20:03:20-03:00",
+  "ejecucion_id": "40138765414-1",
+  "inicio": "2026-10-24T19:29:29-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-24 18:14",
-  "ultima_consulta_fuentes": "2026-10-24T18:39:04.202695-03:00",
+  "datos_actualizados": "2026-10-24 19:29",
+  "ultima_consulta_fuentes": "2026-10-24T20:02:43.635333-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1223,
-    "funciones_unicas": 1223,
-    "nuevos": 24,
-    "ausentes": 3,
+    "eventos": 1224,
+    "funciones_unicas": 1224,
+    "nuevos": 1,
+    "ausentes": 0,
     "duplicados": 4,
-    "conservados": 62,
+    "conservados": 77,
     "fuentes": 99
   },
   "alertas": [
@@ -48,8 +48,8 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 300,
-      "antes": 301,
-      "conservados": 36,
+      "antes": 300,
+      "conservados": 40,
       "caida": false
     },
     {
@@ -58,7 +58,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 1,
-      "antes": 0,
+      "antes": 1,
       "conservados": 0,
       "caida": false
     },
@@ -567,9 +567,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 726,
-      "antes": 705,
-      "conservados": 24,
+      "eventos": 727,
+      "antes": 726,
+      "conservados": 35,
       "caida": false
     },
     {
@@ -634,9 +634,9 @@
     },
     {
       "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -854,9 +854,9 @@
     },
     {
       "nombre": "Rosario en Cartel",
-      "estado": "atencion",
-      "motivo": "No se pudo completar la lectura.",
-      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 11,
       "antes": 11,
       "conservados": 0,
@@ -1063,7 +1063,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-24T18:39:39-03:00",
+    "fecha": "2026-10-24T20:03:18-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1076,200 +1076,17 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40133346430",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40138765414",
   "cambios": {
     "nuevos": [
       {
         "fecha": "2026-10-24",
-        "hora": "21:00",
-        "nombre": "Teatro en La Escalera: Quemarlo Todo",
-        "lugar": "Teatro La Escalera (9 de Julio 324)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-25",
-        "hora": "20:00",
-        "nombre": "Teatro en Espacio Bravo: Cada Vez Otra Vez",
-        "lugar": "Espacio Bravo (Catamarca 3624)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "20:00",
-        "nombre": "Un cielo de seis cuerdas",
-        "lugar": "Centro Cultural  La Casa del Tango",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "20:30",
-        "nombre": "Teatro en la Vigil: El Espejo de la Memoria",
-        "lugar": "La Vigil (Alem 3086)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "21:00",
-        "nombre": "Teatro en La Escalera: Quemarlo Todo",
-        "lugar": "Teatro La Escalera (9 de Julio 324)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "21:00",
-        "nombre": "Un Poco de Ruido en Rosario",
-        "lugar": "Metropolitano (Junín 501)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-20",
-        "hora": "21:00",
-        "nombre": "Teatro en Espacio Cultural Expresiones: Agencia de Placeres",
-        "lugar": "Espacio Cultural Expresiones (Entre Ríos 1437)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "20:00",
-        "nombre": "Macbeth, de Giuseppe Verdi",
-        "lugar": "Teatro El Círculo",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "19:00",
-        "nombre": "Una casa y tres protagonistas | Noche de Museos Abiertos en Casa Vanzo Wernicke",
-        "lugar": "Casa Vanzo Wernicke",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "20:00",
-        "nombre": "Isla Mujeres: Viaje inaugural en vivo",
-        "lugar": "Capi Club",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "20:00",
-        "nombre": "Macbeth, de Giuseppe Verdi",
-        "lugar": "Teatro El Círculo",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-02",
         "hora": "18:00",
-        "nombre": "Visita a la escultura de Roberto Rosas con la participación de Guías por un día",
-        "lugar": "Oratorio H.E.C.A. (Av. Pellegrini 3205)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-08",
-        "hora": "16:00",
-        "nombre": "Teatro en La Orilla Infinita: Navidad Made In Argentina",
-        "lugar": "La Orilla Infinita (Colón 2148)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-14",
-        "hora": "21:00",
-        "nombre": "Teatro en Espacio Cultural Expresiones: Agencia de Placeres",
-        "lugar": "Espacio Cultural Expresiones (Entre Ríos 1437)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-15",
-        "hora": "16:00",
-        "nombre": "Teatro en La Orilla Infinita: Navidad Made In Argentina",
-        "lugar": "La Orilla Infinita (Colón 2148)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "14:00",
-        "nombre": "Visitas Guiadas Biblioteca Estrada",
-        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-20",
-        "hora": "17:00",
-        "nombre": "Tertulias Tangueras",
-        "lugar": "Centro Cultural  La Casa del Tango",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-22",
-        "hora": "10:00",
-        "nombre": "Tango en Calle",
-        "lugar": "Centro Cultural  La Casa del Tango",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-22",
-        "hora": "16:00",
-        "nombre": "Teatro en La Orilla Infinita: Navidad Made In Argentina",
-        "lugar": "La Orilla Infinita (Colón 2148)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "09:00",
-        "nombre": "Visitas Guiadas Biblioteca Estrada",
-        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-26",
-        "hora": "14:00",
-        "nombre": "Visitas Guiadas Biblioteca Estrada",
-        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-27",
-        "hora": "17:00",
-        "nombre": "Tertulias Tangueras",
-        "lugar": "Centro Cultural  La Casa del Tango",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-29",
-        "hora": "10:00",
-        "nombre": "Tango en Calle",
-        "lugar": "Centro Cultural  La Casa del Tango",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-29",
-        "hora": "16:00",
-        "nombre": "Teatro en La Orilla Infinita: Navidad Made In Argentina",
-        "lugar": "La Orilla Infinita (Colón 2148)",
+        "nombre": "Circuito Mujeres – Recorrido turístico por Rosario",
+        "lugar": "Buenos Aires y Córdoba",
         "origen": "Municipalidad de Rosario"
       }
     ],
-    "ausentes": [
-      {
-        "fecha": "2026-10-31",
-        "hora": "20:30",
-        "nombre": "Isla Mujeres: Viaje inaugural en vivo",
-        "lugar": "Capi Club",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "19:00",
-        "nombre": "Macbeth, de Giuseppe Verdi",
-        "lugar": "Teatro El Círculo",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "19:00",
-        "nombre": "Macbeth, de Giuseppe Verdi",
-        "lugar": "Teatro El Círculo",
-        "origen": "Agenda Cultural Rosario"
-      }
-    ]
+    "ausentes": []
   }
 }
