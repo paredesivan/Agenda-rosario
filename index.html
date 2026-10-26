@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Agenda Rosario</title>
   <link rel="stylesheet" href="estilos.css">
-  <script>document.documentElement.classList.add("js");</script>
+  <script>document.documentElement.classList.add("js");
+try { document.documentElement.dataset.agendaView = localStorage.getItem('salidasrosario.vista') === 'calendario' ? 'calendario' : 'cuaderno'; }
+catch (_) { document.documentElement.dataset.agendaView = 'cuaderno'; }</script>
   <style>.js #static-agenda { display: none; }</style>
 </head>
 <body>
-  <header><h1>Rosario ♥</h1><p>Tu próxima salida está acá</p></header>
+  <header class="agenda-header"><div><p class="eyebrow">AGENDA CULTURAL DE LA CIUDAD</p><h1>Salidas <span>Rosario</span></h1><p>Tu próxima salida está acá</p></div>
+<svg class="city-sketch" aria-hidden="true" viewBox="0 0 300 180"><defs><filter id="paper-ink"><feTurbulence baseFrequency=".035" numOctaves="2" seed="8"/><feDisplacementMap in="SourceGraphic" scale="2"/></filter></defs><g filter="url(#paper-ink)" stroke="#494137" stroke-width="2" stroke-linejoin="round"><path d="M12 99Q70 55 135 88T287 92L285 140H12Z" fill="#aebda1" stroke="none"/><circle cx="72" cy="42" r="25" fill="#e9bf76" stroke="none"/><path d="M31 112V81h25v31m7 0V65h20v47m146 0V75h24v37m7 0V87h22v25" fill="#c9b29a"/><path d="M120 116V105h14V54h8V22h5V12h9v10h7v32h9v51h14v11Z" fill="#d7c2a7"/><path d="M145 99V32m10 67V32m-16 75h29m-52 12h74m-82 7h90" fill="none"/><path d="M14 137q55-13 108 0t163 0m-251 14q31-6 65 0m26 9q41-8 88-1m18-9 39-2" fill="none" stroke="#8aa9a6" stroke-width="6"/><path d="M16 123h270" fill="none"/></g></svg></header>
   <main>
+<section class="view-picker" aria-label="Estilo de la agenda"><span>Tu agenda, a tu manera</span><div role="group" aria-label="Elegir vista"><button type="button" data-agenda-view="cuaderno" aria-pressed="true">Cuaderno</button><button type="button" data-agenda-view="calendario" aria-pressed="false">Calendario</button></div></section>
     <!-- AGENDA ESTATICA INICIO -->
-<section id="static-agenda" aria-label="Próximas actividades"><h2>Próximas actividades en Rosario</h2><p>Consultá las fechas y condiciones en la fuente de cada actividad.</p><ul><li>2026-10-24 · 00:15 · <a href="/fichas/523145f9976d5137ad73.html">Julieta &amp; Julieta</a></li><li>2026-10-24 · 00:20 · <a href="/fichas/b0a6e1c0baf1dd3fb614.html">Amore di mafia</a></li><li>2026-10-24 · 08:00 · <a href="/fichas/1aedb6f5ea774ed819d4.html">Exposición La Noche de Los Lápices. Ayer y hoy</a></li><li>2026-10-24 · 09:00 · <a href="/fichas/628607c7ceeb953b03cd.html">&quot;El papel del fuego&quot; - Hugo Cava</a></li><li>2026-10-24 · 09:00 · <a href="/fichas/abb78ac5e187db37f58a.html">&quot;Lo que me dice el río mientras duermo&quot;</a></li><li>2026-10-24 · 09:00 · <a href="/fichas/5d966cb2949cae041684.html">Taller de Folclore para adultos</a></li><li>2026-10-24 · 10:00 · <a href="/fichas/3797df887df4997b5097.html">&quot;Pañuelos al Viento&quot; Tercer Encuentro de Academias y Talleres de Danzas Folclóricas</a></li><li>2026-10-24 · 10:00 · <a href="/fichas/8fe98e6c735ee36fcfd0.html">Festival Bandera 2026</a></li><li>2026-10-24 · 10:00 · <a href="/fichas/707612a953cb037cdad7.html">La Granja de la Infancia</a></li><li>2026-10-24 · 10:00 · <a href="/fichas/af08c6aa7b3be9c84015.html">La Ruta de los Azulejos. Historias, artes y oficios en la ciudad</a></li><li>2026-10-24 · 12:00 · <a href="/fichas/84a0a98a512c7593ac98.html">Pre Cosquín 2027 Sede Rosario en el Galpón 11</a></li><li>2026-10-24 · 13:00 · <a href="/fichas/5fa8418f4b23418e406e.html">A favor de la fantasía en contra de la inflación</a></li><li>2026-10-24 · 13:00 · <a href="/fichas/c5b01d5df22ade3e91b6.html">ANATOMÍA DEL FERVOR. Collages 1998. Carlos Herrera</a></li><li>2026-10-24 · 13:00 · <a href="/fichas/f6df3acdb11ebedd7e85.html">Episodio II: 1976/2026 Que digan dónde están</a></li><li>2026-10-24 · 13:00 · <a href="/fichas/f92146c99eda0397cef4.html">GEOLOCALIZADOS: Un puente entre la imagen y la palabra</a></li></ul><p><a href="/fichas/">Ver todas las actividades</a></p></section>
+<section id="static-agenda" aria-label="Próximas actividades"><h2>Próximas actividades en Rosario</h2><p>Consultá las fechas y condiciones en la fuente de cada actividad.</p><ul><li>2026-10-26 · 08:00 · <a href="/fichas/a47c816a893b6481b081.html">Bienestar y actividad física en San Martín A</a></li><li>2026-10-26 · 08:00 · <a href="/fichas/4237866dfd3066606e0e.html">Exposición La Noche de Los Lápices. Ayer y hoy</a></li><li>2026-10-26 · 08:00 · <a href="/fichas/e8d54becafd481513e37.html">Muestra Colectiva &quot;Pinceladas Mágicas&quot;</a></li><li>2026-10-26 · 08:00 · <a href="/fichas/c16504bac7af65a4e282.html">Muestra El Universo de las Miradas</a></li><li>2026-10-26 · 09:00 · <a href="/fichas/fdbc598fe7c1aef60725.html">Actividad Física y Danza para Adultos Mayores</a></li><li>2026-10-26 · 17:00 · <a href="/fichas/e5ca7a794339d588a00b.html">Ajedrez para las infancias</a></li><li>2026-10-26 · 18:00 · <a href="/fichas/4dd592523773608d27a5.html">Ajedrez: nivel intermedio-avanzados</a></li><li>2026-10-26 · 18:00 · <a href="/fichas/9fe4cb38dd869ca2f0fb.html">Odisea, de Homero a Christopher Nolan</a></li><li>2026-10-26 · 18:30 · <a href="/fichas/bd5796df54c98ca8c1e0.html">Mis primeros pasos</a></li><li>2026-10-26 · 20:00 · <a href="/fichas/15a486161cdb4a7cdca0.html">Hystérēsis. Anatomía del roce</a></li><li>2026-10-26 · 21:00 · <a href="/fichas/2692eab4422f92a523c8.html">Peña Lunera</a></li><li>2026-10-26 · Horario a confirmar · <a href="/fichas/e7d74916e98befed3b7d.html">50 veinticuatros. Sentidos y recorridos de las marchas por memoria, verdad y justicia</a></li><li>2026-10-27 · 08:00 · <a href="/fichas/93a3252b6c04d2887e6d.html">Exposición La Noche de Los Lápices. Ayer y hoy</a></li><li>2026-10-27 · 08:00 · <a href="/fichas/873b02836e8a5ee55b86.html">Muestra Colectiva &quot;Pinceladas Mágicas&quot;</a></li><li>2026-10-27 · 08:00 · <a href="/fichas/fe641050fc2c7855feed.html">Muestra El Universo de las Miradas</a></li></ul><p><a href="/fichas/">Ver todas las actividades</a></p></section>
 <!-- AGENDA ESTATICA FIN -->
-    <noscript><style>.summary,.search-section,.filter-section,.calendar,.day-heading,#updated,#events,.day-navigation{display:none}</style><p>Podés consultar las actividades y sus fuentes sin JavaScript. El calendario y los filtros requieren JavaScript.</p></noscript>
+    <noscript><style>.summary,.search-section,.filter-section,.calendar,.day-heading,#updated,#events,.day-navigation,.view-picker,.month-picker,#week-strip{display:none}</style><p>Podés consultar las actividades y sus fuentes sin JavaScript. El calendario y los filtros requieren JavaScript.</p></noscript>
     <section class="summary" aria-label="Actividades disponibles">
       <div><strong id="total-events">—</strong><span>eventos cargados desde hoy</span></div>
       <p id="coverage"></p>
@@ -25,7 +29,7 @@
         <div class="search-row">
           <div class="search-field">
             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
-            <input id="event-search" name="q" type="search" placeholder="Nombre, artista o lugar" aria-describedby="search-hint" maxlength="200" enterkeyhint="search">
+            <input id="event-search" name="q" type="search" placeholder="¿Qué querés hacer?" aria-describedby="search-hint" maxlength="200" enterkeyhint="search">
           </div>
           <button type="submit">Buscar</button>
         </div>
@@ -38,11 +42,13 @@
       <div class="filters" id="filters" role="group" aria-label="Filtros combinables"></div>
       <p class="hint">Podés combinar categorías: Teatro + Ferias muestra cualquiera de las dos. “Gratis” se suma como condición. “Todo” limpia la selección.</p>
     </section>
-    <section class="calendar" aria-label="Calendario de actividades">
+    <nav id="week-strip" class="week-strip" aria-label="Semana de actividades" hidden></nav>
+    <details class="month-picker"><summary>Elegir otra fecha</summary><section class="calendar" aria-label="Calendario de actividades">
       <div class="bar"><button id="prev" aria-label="Mes anterior">‹</button><h2 id="month"></h2><button id="next" aria-label="Mes siguiente">›</button></div>
       <div class="calendar-tools"><button id="today" type="button">Ir a hoy</button><span>Sólo podés elegir días destacados</span></div>
       <div class="days" id="days"></div>
     </section>
+    </details>
     <div class="day-heading" id="day-heading"><h2 id="selected"></h2><p id="day-count" role="status" aria-live="polite"></p></div>
     <p id="updated"></p>
     <section id="events" aria-label="Actividades del día"></section>
@@ -55,3 +61,4 @@
   <script src="agenda.js" defer></script>
 </body>
 </html>
+

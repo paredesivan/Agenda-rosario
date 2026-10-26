@@ -22,7 +22,7 @@ class Payload(unittest.TestCase):
         raw=gzip.decompress(base64.b64decode(b64));payload=json.loads(raw)
         installer=next(s['run'] for s in steps if s.get('id')=='instalar')
         self.assertIn(hashlib.sha256(raw).hexdigest(),installer)
-        self.assertEqual(payload['version'],'2026.10.24-cobertura-seguridad-seo-2')
+        self.assertEqual(payload['version'],'2026.10.26-cuaderno-calendario-1')
         # El instalador no debe revertir cambios posteriores cuando ya se instaló.
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)
@@ -38,3 +38,4 @@ class Payload(unittest.TestCase):
         self.assertLess(indexes['paginas'],indexes['navegador'])
         self.assertIn('e2e/test_estaticas.py',steps[indexes['navegador']]['run'])
         self.assertLess(indexes['avisos'],indexes['guardar'])
+

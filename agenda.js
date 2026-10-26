@@ -361,6 +361,7 @@ async function loadEvents() {
     render();
     const staticAgenda = document.getElementById('static-agenda');
     if (staticAgenda) staticAgenda.hidden = true;
+    document.documentElement.classList.remove('agenda-load-failed');
     window.agendaMetrics = {
       jsonBytes: new TextEncoder().encode(text).length,
       events: events.length,
@@ -511,9 +512,40 @@ function horarioEvento(item) {
   return inicio;
 }
 
+function categorySketch(category) {
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg');
+  svg.setAttribute('viewBox', '0 0 80 90');
+  const drawings = {
+    musica: [['M45 9L58 16L51 29L43 25L28 63Q20 78 12 70Q7 61 18 56L29 59L43 22L37 19Z','#d1a34f'], ['M29 60L38 32M22 56L31 30M40 37L48 40M37 45L45 48M34 53L42 56','none']],
+    teatro: [['M9 20Q26 26 43 20L40 48Q27 67 13 48Z','#e4b5a3'],['M35 34Q53 41 70 31L69 62Q55 81 40 64Z','#b8c7a5'],['M18 35L24 36M30 36L36 34M19 45Q27 54 34 45M44 49L50 48M57 47L63 46M46 64Q53 54 62 61','none']],
+    ferias: [['M12 39H69V74H12Z','#d5b286'], ['M7 38L19 18H62L75 38Z','#b5c8aa'], ['M19 18L18 38M34 18L33 38M49 18L49 38M62 18L65 38M23 74V54H42V74M50 53H61V64H50Z','none']],
+    libros: [['M10 22Q27 17 40 27Q55 18 70 23V70Q53 65 40 74Q25 65 10 69Z','#e7d4a4'],['M40 27V73M17 33L32 34M17 42L32 43M49 34L63 32M49 43L63 41','none']],
+    cine: [['M9 32H71V72H9Z','#c0cbb7'],['M8 22L67 12L71 29L11 39Z','#e3c595'],['M33 43L52 53L33 63Z','#b97962'],['M20 20L29 35M38 17L47 32M56 14L65 29','none']]
+  };
+  for (const [d, fill] of drawings[category] || drawings.libros) {
+    const p = document.createElementNS(ns, 'path');
+    p.setAttribute('d', d); p.setAttribute('fill', fill);
+    p.setAttribute('stroke', '#665442'); p.setAttribute('stroke-width', '2');
+    p.setAttribute('stroke-linecap', 'round'); p.setAttribute('stroke-linejoin', 'round');
+    svg.append(p);
+  }
+  return svg;
+}
+
 function renderEvent(item) {
   const card = document.createElement("article");
   card.className = "event";
+  const category = eventCategories(item).find(id => id !== 'gratis') || 'otros';
+  card.dataset.category = category;
+  const marker = document.createElement('span');
+  marker.className = 'timeline-time';
+  marker.textContent = horaPendiente(item) ? 'A confirmar' : eventStart(item);
+  marker.setAttribute('aria-hidden', 'true');
+  const sketch = document.createElement('span');
+  sketch.className = 'event-sketch';
+  sketch.setAttribute('aria-hidden', 'true');
+  sketch.append(categorySketch(category));
 
   // Toda la información del evento abre la misma ficha que antes abría el botón.
   const infoUrl = item.evento_url || item.entradas_url;
@@ -557,7 +589,7 @@ function renderEvent(item) {
   // Enlace directo a Ticketek si está disponible.
   addLink(actions, "🎫 Comprar tickets", item.entradas_url);
 
-  card.append(info, actions);
+  card.append(marker, info, sketch, actions);
   $("events").append(card);
 }
 
@@ -566,6 +598,7 @@ function render() {
   renderSummary();
   renderNavigation();
   renderCalendar();
+  renderWeekStrip();
   const resultCount = futureEvents().filter(matchesFilter).length;
   $("search-status").textContent = searchQuery ? `${resultCount} ${resultCount === 1 ? "función encontrada" : "funciones encontradas"} en todas las fechas${activeFilters.length ? " con estos filtros" : ""}` : "";
   $("clear-search").hidden = !searchQuery;
@@ -583,7 +616,7 @@ function render() {
 
   const list = futureEvents().filter(e => e.fecha === selectedDate)
     .filter(matchesFilter)
-    .sort((a, b) => Number(horaPendiente(b)) - Number(horaPendiente(a)) || a.hora.localeCompare(b.hora));
+    .sort((a, b) => Number(horaPendiente(a)) - Number(horaPendiente(b)) || a.hora.localeCompare(b.hora));
 
   $("day-count").textContent = `${list.length} ${list.length === 1 ? "actividad" : "actividades"}${activeFilters.length || searchQuery ? " con estos filtros" : ""}`;
 
@@ -631,8 +664,52 @@ $("event-search").addEventListener("input", event => {
   if (!event.target.value && searchQuery) clearEventSearch();
 });
 
+
+// Ambas presentaciones usan la misma selección, filtros y fichas.
+function renderWeekStrip() {
+  const strip = $('week-strip');
+  strip.replaceChildren();
+  const anchor = new Date(`${selectedDate || todayKey()}T12:00:00`);
+  anchor.setDate(anchor.getDate() - (anchor.getDay() + 6) % 7);
+  const dates = new Set(availableDates());
+  for (let i = 0; i < 7; i++) {
+    const date = new Date(anchor);
+    date.setDate(anchor.getDate() + i);
+    const key = dateKey(date.getFullYear(), date.getMonth(), date.getDate());
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.dataset.date = key;
+    button.disabled = !dates.has(key);
+    button.setAttribute('aria-pressed', String(key === selectedDate));
+    button.setAttribute('aria-label', date.toLocaleDateString('es-AR', {weekday:'long', day:'numeric', month:'long'}) + (dates.has(key) ? ', con actividades' : ', sin actividades'));
+    const label = document.createElement('span');
+    label.textContent = date.toLocaleDateString('es-AR', {weekday:'short'}).replace('.', '');
+    const number = document.createElement('strong');
+    number.textContent = date.getDate();
+    button.append(label, number);
+    button.onclick = () => selectDate(key);
+    strip.append(button);
+  }
+}
+function setAgendaView(view, persist = true) {
+  const value = view === 'calendario' ? 'calendario' : 'cuaderno';
+  document.documentElement.dataset.agendaView = value;
+  for (const button of document.querySelectorAll('button[data-agenda-view]')) {
+    button.setAttribute('aria-pressed', String(button.dataset.agendaView === value));
+  }
+  $('week-strip').hidden = value !== 'calendario';
+  if (persist) { try { localStorage.setItem('salidasrosario.vista', value); } catch (_) {} }
+}
+for (const button of document.querySelectorAll('button[data-agenda-view]')) {
+  button.addEventListener('click', () => setAgendaView(button.dataset.agendaView));
+}
+setAgendaView(document.documentElement.dataset.agendaView, false);
+
 // Cargar eventos al abrir.
 loadEvents().catch(() => {
+  document.documentElement.classList.add('agenda-load-failed');
+  const staticAgenda = $('static-agenda');
+  if (staticAgenda) staticAgenda.hidden = false;
   $("events").textContent =
     "Error cargando eventos. Intentá recargar la página en unos instantes.";
 });
@@ -641,5 +718,6 @@ loadEvents().catch(() => {
 setInterval(() => {
   loadEvents().catch(console.error);
 }, 60 * 60 * 1000);
+
 
 

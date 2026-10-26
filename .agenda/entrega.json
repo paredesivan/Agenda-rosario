@@ -1,26 +1,12 @@
 {
-  "version": "2026.10.24-cobertura-seguridad-seo-2",
+  "version": "2026.10.26-cuaderno-calendario-1",
   "archivos": [
-    "AUDITORIA_FUENTES_20261024.md",
-    "ENTREGA_20261024.md",
-    "acceso_fuentes.json",
-    "actualizacion_segura.py",
-    "actualizar_eventos.py",
+    "LICENCIA_COMIC_NEUE.txt",
     "agenda.js",
-    "auditar_fuentes.py",
-    "auditoria_fuentes_20261024.json",
-    "cobertura_actual.py",
-    "cobertura_fuentes.py",
-    "control_http.py",
-    "e2e/test_estaticas.py",
-    "generar_paginas.py",
-    "gestion_agenda.py",
+    "e2e/test_vistas.py",
+    "estilos.css",
     "index.html",
-    "limites_consultas.json",
-    "tests/test_entrega_cobertura_segura.py",
-    "tests/test_entrega_payload.py",
-    "tests/test_gestion_agenda.py",
-    "tests/test_paginas_estaticas.py"
+    "tests/test_entrega_payload.py"
   ],
-  "instalada": "2026-10-24T21:14:44.212802+00:00"
+  "instalada": "2026-10-26T23:16:06.941269+00:00"
 }
