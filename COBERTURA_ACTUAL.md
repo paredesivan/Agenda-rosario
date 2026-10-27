@@ -2,93 +2,31 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-10-27 14:39. Corte: 2026-10-27.
-Eventos futuros: 1175. Revisión municipal: 2026-10-27T14:39:42.562891-03:00.
+Datos de la agenda: 2026-10-27 17:42. Corte: 2026-10-27.
+Eventos futuros: 1176. Revisión municipal: 2026-10-27T17:42:44.070831-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
 |---|---:|
-| sin_funciones_extraidas | 14 |
-| con_funciones_extraidas | 79 |
-| consulta_fallida | 45 |
 
-Funciones extraídas ausentes de la agenda: 1.
+Funciones extraídas ausentes de la agenda: no medible con el informe antiguo; falta detalle por función.
 
 ## Consultas fallidas y fichas sin funciones
 
-- https://www.rosario.gob.ar/inicio/almu-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/alquimia-tienda-de-te-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/chipacheese-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/ferreteria-la-misionera-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/guapa-perfumeria-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/hay-pique-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/merceria-la-vilma-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/checker-tobi-y-el-viaje-los-rios-voladores-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/concierto-de-juan-falu-y-mariano-loiacono-en-rosario — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/la-novia-del-diablo-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/muestras-en-la-tertulia — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/noche-de-galerias-abiertas — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/noche-de-museos-en-el-cam-0 — 403 Client Error: Forbidden for url: https://www.rosario.gob.ar/inicio/noche-de-museos-en-el-cam-0
-- https://www.rosario.gob.ar/inicio/noche-de-museos-en-el-cec — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/noche-de-museos-en-el-museo-estevez — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/nuestro-trabajo — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/nueva-edicion-del-congreso-nacional-e-internacional-sobre-democracia — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/obra-de-teatro-argentologia — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/octubre-rosa-2026 — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/organismos-estables-presentan-mozart-y-otros-compositores — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/pena-folclorica-dia-de-la-independencia — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/piedra-y-camino.-cantata-la-luna-en-el-cam — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/presentaciones-de-libros-en-la-biblioteca-argentina — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/primavera-en-el-jardin-de-los-ninos — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/primavera-en-la-granja-de-la-infancia — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/primavera-en-la-isla-de-los-inventos — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/proyeccion-de-un-cabo-suelto-en-cine-lumiere — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/queres-que-te-cuente-un-cuento-0 — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/quinteto-municipal-de-cuerdas-junto-jorge-variego — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/riviera-live-music-presenta-duo-borrell-pellegrinet — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/semana-del-arte-2026.-nombres-y-lugares — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/seminario-anatomia-vivencial-y-contact-improvisacion — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/show-artistico-musica-de-aca-en-el-teatro-la-comedia — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/sin-ir-mas-lejos — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/taller-de-folclore-para-adultos — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/taller-que-nos-dice-la-arcilla — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/talleres-de-teatro-patatus-en-felipa-la-casa-del-fondo — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/tango-en-calle — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/teatro-en-espacio-cultural-expresiones-agencia-de-placeres — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/teatro-en-la-escalera-quemarlo-todo — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/teatro-en-la-orilla-infinita-navidad-made-argentina — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/teatro-en-la-vigil-el-espejo-de-la-memoria — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/terror-en-vhs-en-cine-lumiere-8 — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/tertulias-tangueras-1 — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/transfusiones-artisticas — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/un-cielo-de-seis-cuerdas — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/un-maldito-policia-en-cine-lumiere — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/un-poco-de-ruido-en-rosario — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/una-casa-y-tres-protagonistas-noche-de-museos-abiertos-en-casa-vanzo-wernicke — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/vanesa-strauch-y-chama-carra-en-rosario — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/victor-heredia-presenta-desde-paso-del-rey-en-la-comedia — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/visita-guiada-por-pasaje-de-la-nacion — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/visita-la-escultura-de-roberto-rosas-con-la-participacion-de-guias-por-un-dia — Fuente en pausa por HTTP 403/429
-- https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada — Fuente en pausa por HTTP 403/429
 
 ## Candidatos y resolución
 
 Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva el motivo por ficha.
 
 - https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
-- https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-elena-roger-rosario/e/18107 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17611 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17612 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático

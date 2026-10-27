@@ -1,31 +1,23 @@
 {
   "version": 1,
-  "generado": "2026-10-27T15:11:23-03:00",
-  "ejecucion_id": "40552500299-1",
-  "inicio": "2026-10-27T14:39:39-03:00",
+  "generado": "2026-10-27T18:05:33-03:00",
+  "ejecucion_id": "40580433507-1",
+  "inicio": "2026-10-27T17:42:39-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-27 14:39",
-  "ultima_consulta_fuentes": "2026-10-27T15:06:59.386553-03:00",
+  "datos_actualizados": "2026-10-27 17:42",
+  "ultima_consulta_fuentes": "2026-10-27T18:04:59.708369-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1175,
-    "funciones_unicas": 1175,
-    "nuevos": 5,
-    "ausentes": 2,
-    "duplicados": 3,
+    "eventos": 1176,
+    "funciones_unicas": 1176,
+    "nuevos": 1,
+    "ausentes": 0,
+    "duplicados": 5,
     "conservados": 46,
     "fuentes": 97
   },
   "alertas": [
-    {
-      "tipo": "cobertura",
-      "mensaje": "45 fichas municipales no se pudieron consultar. Revisar COBERTURA_ACTUAL.md."
-    },
-    {
-      "tipo": "cobertura",
-      "mensaje": "Hay funciones extraídas que no figuran en la agenda ni tienen una coincidencia detectada. Revisar COBERTURA_ACTUAL.md."
-    },
     {
       "tipo": "etapa",
       "mensaje": "Falló la etapa fuente_autodromo.py. Se conservaron sus datos anteriores."
@@ -41,8 +33,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 268,
-      "antes": 271,
+      "eventos": 265,
+      "antes": 268,
       "conservados": 21,
       "caida": false
     },
@@ -102,7 +94,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 6,
-      "antes": 5,
+      "antes": 6,
       "conservados": 0,
       "caida": false
     },
@@ -261,7 +253,7 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 4,
+      "eventos": 8,
       "antes": 4,
       "conservados": 0,
       "caida": false
@@ -272,7 +264,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 13,
-      "antes": 12,
+      "antes": 13,
       "conservados": 0,
       "caida": false
     },
@@ -552,7 +544,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 682,
-      "antes": 678,
+      "antes": 682,
       "conservados": 24,
       "caida": false
     },
@@ -668,9 +660,9 @@
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1047,7 +1039,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-27T15:11:21-03:00",
+    "fecha": "2026-10-27T18:05:31-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1060,60 +1052,17 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40552500299",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40580433507",
   "cambios": {
     "nuevos": [
       {
-        "fecha": "2026-10-28",
-        "hora": "16:00",
-        "nombre": "«El Rincón de los Cuentos»",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Biblioteca Argentina Dr. Juan Álvarez"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "18:00",
-        "nombre": "Los músicos de Volver a Sonar se suben al escenario del Galpón 11",
-        "lugar": "Galpón 11",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-01",
-        "hora": "18:00",
-        "nombre": "AEROPUERTO",
-        "lugar": "El Cairo Cine Público",
-        "origen": "El Cairo Cine Público"
-      },
-      {
-        "fecha": "2026-11-05",
-        "hora": "19:00",
-        "nombre": "Escucha inmersiva del disco debut de ALYX en la sala Planetario del CAM",
-        "lugar": "Complejo Astronómico Municipal",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
         "fecha": "2026-11-13",
-        "hora": "20:30",
-        "nombre": "Rulo Dellatorre presenta No es tan así en La Vigil",
-        "lugar": "La Vigil (Alem 3086)",
-        "origen": "Municipalidad de Rosario"
+        "hora": "21:00",
+        "nombre": "Tarkanos",
+        "lugar": "El Aserradero",
+        "origen": "El Aserradero — oficial"
       }
     ],
-    "ausentes": [
-      {
-        "fecha": "2026-10-27",
-        "hora": "10:00",
-        "nombre": "La Realidad oculta",
-        "lugar": "Galería de Arte La Tertulia",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-27",
-        "hora": "10:00",
-        "nombre": "Poesía enmarcada",
-        "lugar": "Galería de Arte La Tertulia",
-        "origen": "Agenda Cultural Rosario"
-      }
-    ]
+    "ausentes": []
   }
 }
