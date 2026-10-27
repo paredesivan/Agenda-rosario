@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-10-26T20:43:44-03:00",
-  "ejecucion_id": "40418551654-1",
-  "inicio": "2026-10-26T20:16:12-03:00",
+  "generado": "2026-10-27T05:24:34-03:00",
+  "ejecucion_id": "40469926404-1",
+  "inicio": "2026-10-27T04:54:16-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-26 20:16",
-  "ultima_consulta_fuentes": "2026-10-26T20:43:08.651075-03:00",
+  "datos_actualizados": "2026-10-27 04:54",
+  "ultima_consulta_fuentes": "2026-10-27T05:23:56.777402-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1179,
-    "funciones_unicas": 1179,
-    "nuevos": 106,
+    "eventos": 1165,
+    "funciones_unicas": 1165,
+    "nuevos": 0,
     "ausentes": 0,
-    "duplicados": 3,
-    "conservados": 50,
+    "duplicados": 4,
+    "conservados": 43,
     "fuentes": 97
   },
   "alertas": [
@@ -37,9 +37,9 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 274,
-      "antes": 259,
-      "conservados": 22,
+      "eventos": 271,
+      "antes": 272,
+      "conservados": 21,
       "caida": false
     },
     {
@@ -128,7 +128,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 1,
-      "antes": 0,
+      "antes": 1,
       "conservados": 0,
       "caida": false
     },
@@ -257,8 +257,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 5,
-      "antes": 3,
+      "eventos": 4,
+      "antes": 4,
       "conservados": 0,
       "caida": false
     },
@@ -268,7 +268,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 12,
-      "antes": 7,
+      "antes": 12,
       "conservados": 0,
       "caida": false
     },
@@ -374,9 +374,9 @@
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "pendiente",
-      "motivo": "La fuente no tiene un resultado concluyente.",
-      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -528,7 +528,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 66,
-      "antes": 0,
+      "antes": 66,
       "conservados": 0,
       "caida": false
     },
@@ -547,9 +547,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 685,
-      "antes": 671,
-      "conservados": 27,
+      "eventos": 674,
+      "antes": 674,
+      "conservados": 21,
       "caida": false
     },
     {
@@ -574,9 +574,9 @@
     },
     {
       "nombre": "Museo Internacional para la Democracia",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -664,9 +664,9 @@
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -798,7 +798,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 10,
-      "antes": 9,
+      "antes": 10,
       "conservados": 1,
       "caida": false
     },
@@ -834,10 +834,10 @@
     },
     {
       "nombre": "Rosario en Cartel",
-      "estado": "atencion",
-      "motivo": "No se pudo completar la lectura.",
-      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
-      "eventos": 11,
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 12,
       "antes": 11,
       "conservados": 0,
       "caida": false
@@ -898,7 +898,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 11,
-      "antes": 9,
+      "antes": 11,
       "conservados": 0,
       "caida": false
     },
@@ -1043,7 +1043,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-26T20:43:42-03:00",
+    "fecha": "2026-10-27T05:24:30-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1056,290 +1056,9 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40418551654",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40469926404",
   "cambios": {
-    "nuevos": [
-      {
-        "fecha": "2026-10-28",
-        "hora": "19:30",
-        "nombre": "Presentación del libro «Los Martes con Carlitos» de Héctor Rio",
-        "lugar": "Plataforma Lavardén",
-        "origen": "Plataforma Lavardén"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "18:00",
-        "nombre": "LOS CALVOS",
-        "lugar": "El Cairo Cine Público",
-        "origen": "El Cairo Cine Público"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "16:00",
-        "nombre": "Muestra La Canción del barrio",
-        "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "19:00",
-        "nombre": "La Noche de Museos Abiertos",
-        "lugar": "Centro Cultural Madres de Plaza 25 de Mayo",
-        "origen": "Centro Cultural Madres de Plaza 25 de Mayo"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "19:00",
-        "nombre": "Noche de Museos Abiertos en el Castagnino 2026",
-        "lugar": "Museo Municipal de Bellas Artes Juan B. Castagnino",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "19:00",
-        "nombre": "Noche de Museos en el CAM",
-        "lugar": "Complejo Astronómico Municipal",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "19:00",
-        "nombre": "Sin ir más lejos",
-        "lugar": "Estación Embarcaderos",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "19:00",
-        "nombre": "Patiecito ritualero",
-        "lugar": "Sophie's pastisserie",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "21:00",
-        "nombre": "Tribulaciones de un gigoló",
-        "lugar": "Microteatro Rosario",
-        "origen": "Microteatro Rosario"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "18:00",
-        "nombre": "ROMEO Y OFELIA",
-        "lugar": "El Cairo Cine Público",
-        "origen": "El Cairo Cine Público"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "21:00",
-        "nombre": "Tribulaciones de un gigoló",
-        "lugar": "Microteatro Rosario",
-        "origen": "Microteatro Rosario"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "21:30",
-        "nombre": "Prometo volver a engañarte",
-        "lugar": "Microteatro Rosario",
-        "origen": "Microteatro Rosario"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "22:30",
-        "nombre": "LOS CALVOS",
-        "lugar": "El Cairo Cine Público",
-        "origen": "El Cairo Cine Público"
-      },
-      {
-        "fecha": "2026-11-01",
-        "hora": "20:00",
-        "nombre": "Domingos bien jugados",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
-      },
-      {
-        "fecha": "2026-11-01",
-        "hora": "20:00",
-        "nombre": "Están todos perdonados",
-        "lugar": "Teatro de la Manzana",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-01",
-        "hora": "20:30",
-        "nombre": "ROMEO Y OFELIA",
-        "lugar": "El Cairo Cine Público",
-        "origen": "El Cairo Cine Público"
-      },
-      {
-        "fecha": "2026-11-01",
-        "hora": "22:45",
-        "nombre": "EL TREN FLUVIAL",
-        "lugar": "El Cairo Cine Público",
-        "origen": "El Cairo Cine Público"
-      },
-      {
-        "fecha": "2026-11-06",
-        "hora": "20:30",
-        "nombre": "Riviera Live Music presenta a Dúo Borrell - Pellegrinet",
-        "lugar": "Hotel Riviera (San Lorenzo 1460)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-07",
-        "hora": "21:00",
-        "nombre": "Italia",
-        "lugar": "Teatro Platea Alta",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-07",
-        "hora": "21:00",
-        "nombre": "Montaje Infinito 2026",
-        "lugar": "Espacio Bravo Teatro",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-08",
-        "hora": "20:00",
-        "nombre": "Montaje Infinito 2026",
-        "lugar": "Espacio Bravo Teatro",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-13",
-        "hora": "19:00",
-        "nombre": "Patiecito ritualero",
-        "lugar": "Sophie's pastisserie",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-15",
-        "hora": "20:00",
-        "nombre": "Montaje Infinito 2026",
-        "lugar": "Espacio Bravo Teatro",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-21",
-        "hora": "21:00",
-        "nombre": "Italia",
-        "lugar": "Teatro Platea Alta",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-21",
-        "hora": "21:00",
-        "nombre": "Montaje Infinito 2026",
-        "lugar": "Espacio Bravo Teatro",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-22",
-        "hora": "20:00",
-        "nombre": "Montaje Infinito 2026",
-        "lugar": "Espacio Bravo Teatro",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-28",
-        "hora": "21:00",
-        "nombre": "Montaje Infinito 2026",
-        "lugar": "Espacio Bravo Teatro",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-29",
-        "hora": "20:00",
-        "nombre": "Montaje Infinito 2026",
-        "lugar": "Espacio Bravo Teatro",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2027-04-17",
-        "hora": "20:00",
-        "nombre": "«Las Gratitudes» de Delphine de Vigan",
-        "lugar": "Teatro Astengo",
-        "origen": "Teatro Astengo"
-      },
-      {
-        "fecha": "2026-10-28",
-        "hora": "15:00",
-        "nombre": "Hojas de Ciudad: presentación del libro escrito por infancias de Centros Cuidar",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-28",
-        "hora": "18:30",
-        "nombre": "Congreso DiSur en el CEC",
-        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "09:00",
-        "nombre": "HABLANDO A TU CORAZÓN - Cantamos a Charly",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "15:00",
-        "nombre": "Congreso DiSur en el CEC",
-        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "19:30",
-        "nombre": "Congreso DiSur en el CEC",
-        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "19:30",
-        "nombre": "Noche de Museos en el CEC",
-        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "15:00",
-        "nombre": "Congreso DiSur en el CEC",
-        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "19:00",
-        "nombre": "Doble inauguración en Teras. Duos de artistas",
-        "lugar": "Teras (Cochabamba 1054)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "19:00",
-        "nombre": "Muestra N° 21: \"Voces Nuevas del Sur\"",
-        "lugar": "Centro Municipal de Distrito Sur \"Rosa Ziperovich\"",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-01",
-        "hora": "15:00",
-        "nombre": "Congreso DiSur en el CEC",
-        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-06",
-        "hora": "19:00",
-        "nombre": "Patiecito ritualero",
-        "lugar": "Sophie's pastisserie",
-        "origen": "Agenda Cultural Rosario"
-      }
-    ],
+    "nuevos": [],
     "ausentes": []
   }
 }
