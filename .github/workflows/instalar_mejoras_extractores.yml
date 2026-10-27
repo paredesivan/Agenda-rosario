@@ -1,0 +1,29 @@
+name: Instalar mejoras de extractores
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  instalar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt pytest
+      - name: Pruebas del instalador
+        run: python -m unittest discover -s tests -p 'test_mejoras_extraccion.py' -v
+      - name: Aplicar sin publicar
+        run: python instalar_mejoras_extraccion.py
+      - name: Pruebas completas de regresión
+        run: python -m pytest -q tests
+      - name: Registrar sólo si todo pasó
+        run: |
+          git config user.name "agenda-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add fuentes_nuevas.py fuentes_ampliadas.py fuentes_adicionales.py resolver_candidatos.py
+          if ! git diff --cached --quiet; then
+            git commit -m "Ampliar detección, deduplicar enlaces y priorizar candidatos"
+            git push
+          fi
