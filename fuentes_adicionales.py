@@ -297,6 +297,7 @@ def listado_saleplan(html, url):
         if host(link) == host(url) and '/rosario/' in urlsplit(link).path:
             refs.append({'nombre': a.get_text(' ', strip=True), 'referencia': link,
                          'estado': 'fecha completa y sede pendientes de fuente oficial'})
+    refs = list({e['referencia'].rstrip('/'): e for e in refs}.values())
     return refs[:24]
 
 

@@ -265,6 +265,14 @@ def coincidencia(hecho, eventos):
     return candidatos[0] if len(candidatos) == 1 else None
 
 
+def prioridad_pendiente(par):
+    # Primero pendientes sin intento; luego los menos recientes.
+    clave, candidato = par
+    intento = candidato.get('intento') or ''
+    visto = candidato.get('visto') or ''
+    return (bool(intento), intento, visto, clave)
+
+
 def resolver(root=ROOT, acceso=None, hoy=None):
     root = Path(root)
     hoy = hoy or datetime.now(ZONA).date()
@@ -339,7 +347,7 @@ def resolver(root=ROOT, acceso=None, hoy=None):
             else:
                 activas.append((k, c))
         filas = activas
-        filas.sort(key=lambda par: (par[1].get('intento', ''), -date.fromisoformat(par[1]['visto']).toordinal(), par[0]))
+        filas.sort(key=prioridad_pendiente)
         for indice, (k, c) in enumerate(filas):
             if indice >= 4:
                 resultados.append({'fuente': fuente, 'url': c['url'], 'estado': 'diferido', 'motivo': 'Turno de revisión rotativa en otra ejecución'})

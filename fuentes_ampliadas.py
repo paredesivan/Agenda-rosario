@@ -41,7 +41,7 @@ def listado(contenido, url, fuente):
             continue
         if re.search(fuente['patron_ficha'], urlsplit(link).path):
             enlaces.append({'url': link, 'referencia': ''})
-    enlaces = list({e['url']: e for e in enlaces}.values())
+    enlaces = list({e['url'].rstrip('/'): e for e in enlaces}.values())
     if not enlaces:
         raise ValueError('Sin fichas interpretables: cambio de estructura o catálogo vacío; conservar anteriores')
     if len(enlaces) > 500:

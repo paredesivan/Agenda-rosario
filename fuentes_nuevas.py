@@ -246,7 +246,7 @@ def leer_prensa(fuente, indice, ruta, hoy):
         link = urljoin(indice, a["href"]).split("#", 1)[0]
         if not mismo_dominio(link, indice) or ruta not in urlsplit(link).path:
             continue
-        if not INTERES.search(titular) or "/seccion/" in link or "/secciones/" in link or "/tag/" in link:
+        if "/seccion/" in link or "/secciones/" in link or "/tag/" in link:
             continue
         if link not in enlaces:
             enlaces.append(link)
@@ -258,7 +258,7 @@ def leer_prensa(fuente, indice, ruta, hoy):
             if evento.get("origen") == fuente and evento.get("fecha", "") >= hoy.isoformat() and mismo_dominio(link, indice) and link not in enlaces:
                 enlaces.insert(0, link)
     eventos, consultadas, fallidas = [], 0, 0
-    for link in enlaces[:14]:
+    for link in enlaces[:20]:
         try:
             articulo = descargar(link)
             eventos.extend(schema_local(articulo, fuente, link, hoy))
