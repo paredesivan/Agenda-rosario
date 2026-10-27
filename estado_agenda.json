@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-10-27T05:24:34-03:00",
-  "ejecucion_id": "40469926404-1",
-  "inicio": "2026-10-27T04:54:16-03:00",
+  "generado": "2026-10-27T12:13:09-03:00",
+  "ejecucion_id": "40522137018-1",
+  "inicio": "2026-10-27T11:33:01-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-27 04:54",
-  "ultima_consulta_fuentes": "2026-10-27T05:23:56.777402-03:00",
+  "datos_actualizados": "2026-10-27 11:33",
+  "ultima_consulta_fuentes": "2026-10-27T12:00:48.988061-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1165,
-    "funciones_unicas": 1165,
-    "nuevos": 0,
-    "ausentes": 0,
+    "eventos": 1172,
+    "funciones_unicas": 1172,
+    "nuevos": 8,
+    "ausentes": 1,
     "duplicados": 4,
-    "conservados": 43,
+    "conservados": 46,
     "fuentes": 97
   },
   "alertas": [
@@ -38,7 +38,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 271,
-      "antes": 272,
+      "antes": 271,
       "conservados": 21,
       "caida": false
     },
@@ -97,7 +97,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 4,
+      "eventos": 5,
       "antes": 4,
       "conservados": 0,
       "caida": false
@@ -307,7 +307,7 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 12,
+      "eventos": 13,
       "antes": 12,
       "conservados": 0,
       "caida": false
@@ -374,9 +374,9 @@
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -384,9 +384,9 @@
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
@@ -404,9 +404,9 @@
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -547,9 +547,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 674,
+      "eventos": 678,
       "antes": 674,
-      "conservados": 21,
+      "conservados": 24,
       "caida": false
     },
     {
@@ -664,9 +664,9 @@
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -838,7 +838,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 12,
-      "antes": 11,
+      "antes": 12,
       "conservados": 0,
       "caida": false
     },
@@ -927,7 +927,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 7,
+      "eventos": 8,
       "antes": 7,
       "conservados": 0,
       "caida": false
@@ -994,9 +994,9 @@
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1043,7 +1043,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-27T05:24:30-03:00",
+    "fecha": "2026-10-27T12:13:07-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1056,9 +1056,74 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40469926404",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40522137018",
   "cambios": {
-    "nuevos": [],
-    "ausentes": []
+    "nuevos": [
+      {
+        "fecha": "2026-10-30",
+        "hora": "19:00",
+        "nombre": "Noche de Museos en el Museo Estevez",
+        "lugar": "Museo de Arte Decorativo Firma y Odilo Estevez",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-04",
+        "hora": "15:00",
+        "nombre": "Producciones teatrales de adultas y adultos mayores",
+        "lugar": "Teatro Municipal La Comedia",
+        "origen": "Teatro Municipal La Comedia"
+      },
+      {
+        "fecha": "2026-11-07",
+        "hora": "21:00",
+        "nombre": "Mentiras de amor",
+        "lugar": "La Vigil (Alem 3078)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-12",
+        "hora": "21:00",
+        "nombre": "Vanesa Strauch y Chama Carrá en Rosario",
+        "lugar": "La Vigil (Alem 3078)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-03",
+        "hora": "17:00",
+        "nombre": "Circuito SAR: visita e itinerario de murales de Julio Vanzo",
+        "lugar": "Galería Rosario (San Martín 862)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-06",
+        "hora": "18:00",
+        "nombre": "Inauguración de la muestra “El paisaje en filigrana de papel”",
+        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-03",
+        "hora": "17:00",
+        "nombre": "Cierre de año en el Distrito Noroeste",
+        "lugar": "Centro Territorial de Denuncias Centro Montevideo 1968",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-12",
+        "hora": "18:00",
+        "nombre": "CUMBIÓN DEL PARANÁ - 12 DE DICIEMBRE EN CENTRAL CORDOBA",
+        "lugar": "Estadio Central Córdoba",
+        "origen": "Entrada Play"
+      }
+    ],
+    "ausentes": [
+      {
+        "fecha": "2026-11-03",
+        "hora": "17:00",
+        "nombre": "Circuito SAR: visita e itinerario de murales de Julio Vanzo",
+        "lugar": "Galería Rosario (San Martín 956)",
+        "origen": "Municipalidad de Rosario"
+      }
+    ]
   }
 }
