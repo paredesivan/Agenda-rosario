@@ -1,23 +1,27 @@
 {
   "version": 1,
-  "generado": "2026-10-27T12:13:09-03:00",
-  "ejecucion_id": "40522137018-1",
-  "inicio": "2026-10-27T11:33:01-03:00",
+  "generado": "2026-10-27T15:11:23-03:00",
+  "ejecucion_id": "40552500299-1",
+  "inicio": "2026-10-27T14:39:39-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-27 11:33",
-  "ultima_consulta_fuentes": "2026-10-27T12:00:48.988061-03:00",
+  "datos_actualizados": "2026-10-27 14:39",
+  "ultima_consulta_fuentes": "2026-10-27T15:06:59.386553-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1172,
-    "funciones_unicas": 1172,
-    "nuevos": 8,
-    "ausentes": 1,
-    "duplicados": 4,
+    "eventos": 1175,
+    "funciones_unicas": 1175,
+    "nuevos": 5,
+    "ausentes": 2,
+    "duplicados": 3,
     "conservados": 46,
     "fuentes": 97
   },
   "alertas": [
+    {
+      "tipo": "cobertura",
+      "mensaje": "45 fichas municipales no se pudieron consultar. Revisar COBERTURA_ACTUAL.md."
+    },
     {
       "tipo": "cobertura",
       "mensaje": "Hay funciones extraídas que no figuran en la agenda ni tienen una coincidencia detectada. Revisar COBERTURA_ACTUAL.md."
@@ -37,16 +41,16 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 271,
+      "eventos": 268,
       "antes": 271,
       "conservados": 21,
       "caida": false
     },
     {
       "nombre": "Agenda municipal — Espacios",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -97,8 +101,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 5,
-      "antes": 4,
+      "eventos": 6,
+      "antes": 5,
       "conservados": 0,
       "caida": false
     },
@@ -267,7 +271,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 12,
+      "eventos": 13,
       "antes": 12,
       "conservados": 0,
       "caida": false
@@ -308,7 +312,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 13,
-      "antes": 12,
+      "antes": 13,
       "conservados": 0,
       "caida": false
     },
@@ -547,8 +551,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 678,
-      "antes": 674,
+      "eventos": 682,
+      "antes": 678,
       "conservados": 24,
       "caida": false
     },
@@ -594,9 +598,9 @@
     },
     {
       "nombre": "Museo Urbano Arte a la Vista",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -614,9 +618,9 @@
     },
     {
       "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -664,9 +668,9 @@
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -928,7 +932,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 8,
-      "antes": 7,
+      "antes": 8,
       "conservados": 0,
       "caida": false
     },
@@ -1043,7 +1047,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-27T12:13:07-03:00",
+    "fecha": "2026-10-27T15:11:21-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1056,73 +1060,59 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40522137018",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40552500299",
   "cambios": {
     "nuevos": [
       {
-        "fecha": "2026-10-30",
+        "fecha": "2026-10-28",
+        "hora": "16:00",
+        "nombre": "«El Rincón de los Cuentos»",
+        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "origen": "Biblioteca Argentina Dr. Juan Álvarez"
+      },
+      {
+        "fecha": "2026-10-31",
+        "hora": "18:00",
+        "nombre": "Los músicos de Volver a Sonar se suben al escenario del Galpón 11",
+        "lugar": "Galpón 11",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-01",
+        "hora": "18:00",
+        "nombre": "AEROPUERTO",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-05",
         "hora": "19:00",
-        "nombre": "Noche de Museos en el Museo Estevez",
-        "lugar": "Museo de Arte Decorativo Firma y Odilo Estevez",
+        "nombre": "Escucha inmersiva del disco debut de ALYX en la sala Planetario del CAM",
+        "lugar": "Complejo Astronómico Municipal",
         "origen": "Municipalidad de Rosario"
       },
       {
-        "fecha": "2026-11-04",
-        "hora": "15:00",
-        "nombre": "Producciones teatrales de adultas y adultos mayores",
-        "lugar": "Teatro Municipal La Comedia",
-        "origen": "Teatro Municipal La Comedia"
-      },
-      {
-        "fecha": "2026-11-07",
-        "hora": "21:00",
-        "nombre": "Mentiras de amor",
-        "lugar": "La Vigil (Alem 3078)",
+        "fecha": "2026-11-13",
+        "hora": "20:30",
+        "nombre": "Rulo Dellatorre presenta No es tan así en La Vigil",
+        "lugar": "La Vigil (Alem 3086)",
         "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-12",
-        "hora": "21:00",
-        "nombre": "Vanesa Strauch y Chama Carrá en Rosario",
-        "lugar": "La Vigil (Alem 3078)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-03",
-        "hora": "17:00",
-        "nombre": "Circuito SAR: visita e itinerario de murales de Julio Vanzo",
-        "lugar": "Galería Rosario (San Martín 862)",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-06",
-        "hora": "18:00",
-        "nombre": "Inauguración de la muestra “El paisaje en filigrana de papel”",
-        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-03",
-        "hora": "17:00",
-        "nombre": "Cierre de año en el Distrito Noroeste",
-        "lugar": "Centro Territorial de Denuncias Centro Montevideo 1968",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-12",
-        "hora": "18:00",
-        "nombre": "CUMBIÓN DEL PARANÁ - 12 DE DICIEMBRE EN CENTRAL CORDOBA",
-        "lugar": "Estadio Central Córdoba",
-        "origen": "Entrada Play"
       }
     ],
     "ausentes": [
       {
-        "fecha": "2026-11-03",
-        "hora": "17:00",
-        "nombre": "Circuito SAR: visita e itinerario de murales de Julio Vanzo",
-        "lugar": "Galería Rosario (San Martín 956)",
-        "origen": "Municipalidad de Rosario"
+        "fecha": "2026-10-27",
+        "hora": "10:00",
+        "nombre": "La Realidad oculta",
+        "lugar": "Galería de Arte La Tertulia",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-10-27",
+        "hora": "10:00",
+        "nombre": "Poesía enmarcada",
+        "lugar": "Galería de Arte La Tertulia",
+        "origen": "Agenda Cultural Rosario"
       }
     ]
   }

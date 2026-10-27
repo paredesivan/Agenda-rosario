@@ -1,15 +1,15 @@
 {
-  "datos_actualizados": "2026-10-27 11:33",
+  "datos_actualizados": "2026-10-27 14:39",
   "fecha_corte": "2026-10-27",
-  "eventos_futuros_publicados": 1172,
+  "eventos_futuros_publicados": 1175,
   "por_fuente": {
-    "Biblioteca Argentina Dr. Juan Álvarez": 5,
+    "Biblioteca Argentina Dr. Juan Álvarez": 6,
     "Plataforma Lavardén": 10,
-    "Municipalidad de Rosario": 678,
+    "Municipalidad de Rosario": 682,
     "Biblioteca Vigil": 2,
-    "Agenda Cultural Rosario": 271,
+    "Agenda Cultural Rosario": 268,
     "Centro Cultural Parque de España": 4,
-    "El Cairo Cine Público": 12,
+    "El Cairo Cine Público": 13,
     "La Orilla Infinita": 2,
     "Distrito Siete": 8,
     "Passline — Complejo Forest": 4,
@@ -34,39 +34,102 @@
     "Passline — QUE SEA ROCK": 2,
     "Grupo Gamma — Charlas a la comunidad": 2
   },
-  "revision_municipal": "2026-10-27T11:33:04.256410-03:00",
+  "revision_municipal": "2026-10-27T14:39:42.562891-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [
     {
-      "url": "https://www.rosario.gob.ar/inicio/cierre-de-ano-en-el-distrito-noroeste",
+      "url": "https://www.rosario.gob.ar/inicio/almu-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/alquimia-tienda-de-te-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/chipacheese-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/escucha-inmersiva-del-disco-debut-de-alyx-en-la-sala-planetario-del-cam",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/inauguracion-de-la-muestra-el-paisaje-en-filigrana-de-papel",
+      "url": "https://www.rosario.gob.ar/inicio/ferreteria-la-misionera-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/guapa-perfumeria-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/hay-pique-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/los-musicos-de-volver-sonar-se-suben-al-escenario-del-galpon-11",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/mentiras-de-amor",
+      "url": "https://www.rosario.gob.ar/inicio/merceria-la-vilma-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/polvora-negra-presenta-otono-tardio",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/noche-de-museos-en-el-museo-estevez",
+      "url": "https://www.rosario.gob.ar/inicio/producciones-teatrales-de-adultas-y-adultos-mayores",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/vanesa-strauch-y-chama-carra-en-rosario",
+      "url": "https://www.rosario.gob.ar/inicio/rulo-dellatorre-presenta-no-es-tan-asi-en-la-vigil",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
@@ -182,15 +245,6 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/carina-peluqueria-descuento-para-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
       "url": "https://www.rosario.gob.ar/inicio/casa-abierta-en-casa-de-cultura-barrio-alvear",
       "estado": "con_funciones_extraidas",
       "funciones": 10,
@@ -229,6 +283,13 @@
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/ciclo-de-teatro-65-funcion-de-los-disfrazados-en-el-cmd-noroeste",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/cierre-de-ano-en-el-distrito-noroeste",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
@@ -290,15 +351,6 @@
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/don-pizza-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
       "error": ""
     },
     {
@@ -458,19 +510,17 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/j.-s.-bach-cantatas-para-alto-y-concierto-para-tres-violines-y-orquesta",
+      "url": "https://www.rosario.gob.ar/inicio/inauguracion-de-la-muestra-el-paisaje-en-filigrana-de-papel",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/jai-indumentaria-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
+      "url": "https://www.rosario.gob.ar/inicio/j.-s.-bach-cantatas-para-alto-y-concierto-para-tres-violines-y-orquesta",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
       "error": ""
     },
     {
@@ -542,6 +592,13 @@
       "url": "https://www.rosario.gob.ar/inicio/memorias-del-exilio-zurcir-voces-hasta-volverlas-familiares",
       "estado": "con_funciones_extraidas",
       "funciones": 2,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/mentiras-de-amor",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
       "motivos": [],
       "error": ""
     },
@@ -667,371 +724,324 @@
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/noche-de-museos-en-el-cam-0",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "403 Client Error: Forbidden for url: https://www.rosario.gob.ar/inicio/noche-de-museos-en-el-cam-0"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/noche-de-museos-en-el-cec",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/noche-de-museos-en-el-museo-estevez",
+      "estado": "consulta_fallida",
+      "funciones": 0,
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/nuestro-trabajo",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/nueva-edicion-del-congreso-nacional-e-internacional-sobre-democracia",
-      "estado": "con_funciones_extraidas",
-      "funciones": 4,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/obra-de-teatro-argentologia",
-      "estado": "con_funciones_extraidas",
-      "funciones": 2,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/octubre-rosa-2026",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Bloque sin sede verificable"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/organismos-estables-presentan-mozart-y-otros-compositores",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/peluqueria-ale-de-melo-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/pena-folclorica-dia-de-la-independencia",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Sin fechas/horarios interpretables dentro del horizonte"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/piedra-y-camino.-cantata-la-luna-en-el-cam",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/point-sportwear-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/presentaciones-de-libros-en-la-biblioteca-argentina",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Bloque sin sede verificable"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/primavera-en-el-jardin-de-los-ninos",
-      "estado": "con_funciones_extraidas",
-      "funciones": 15,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/primavera-en-la-granja-de-la-infancia",
-      "estado": "con_funciones_extraidas",
-      "funciones": 25,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/primavera-en-la-isla-de-los-inventos",
-      "estado": "con_funciones_extraidas",
-      "funciones": 15,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/proyeccion-de-un-cabo-suelto-en-cine-lumiere",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/queres-que-te-cuente-un-cuento-0",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/quinteto-municipal-de-cuerdas-junto-jorge-variego",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/riviera-live-music-presenta-duo-borrell-pellegrinet",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/semana-del-arte-2026.-nombres-y-lugares",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Bloque sin sede verificable"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/seminario-anatomia-vivencial-y-contact-improvisacion",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/show-artistico-musica-de-aca-en-el-teatro-la-comedia",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/sin-ir-mas-lejos",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/soma-studio-pilates-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/sos-belleza-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/taller-de-folclore-para-adultos",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/taller-que-nos-dice-la-arcilla",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/talleres-de-teatro-patatus-en-felipa-la-casa-del-fondo",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/tango-en-calle",
-      "estado": "con_funciones_extraidas",
-      "funciones": 5,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/teatro-en-espacio-cultural-expresiones-agencia-de-placeres",
-      "estado": "con_funciones_extraidas",
-      "funciones": 2,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/teatro-en-la-escalera-quemarlo-todo",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/teatro-en-la-orilla-infinita-navidad-made-argentina",
-      "estado": "con_funciones_extraidas",
-      "funciones": 4,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/teatro-en-la-vigil-el-espejo-de-la-memoria",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/terror-en-vhs-en-cine-lumiere-8",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/tertulias-tangueras-1",
-      "estado": "con_funciones_extraidas",
-      "funciones": 5,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/transfusiones-artisticas",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Bloque sin sede verificable"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/un-cielo-de-seis-cuerdas",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/un-maldito-policia-en-cine-lumiere",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/un-poco-de-ruido-en-rosario",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/una-casa-y-tres-protagonistas-noche-de-museos-abiertos-en-casa-vanzo-wernicke",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/vanesa-strauch-y-chama-carra-en-rosario",
+      "estado": "consulta_fallida",
+      "funciones": 0,
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/victor-heredia-presenta-desde-paso-del-rey-en-la-comedia",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/visita-guiada-por-pasaje-de-la-nacion",
-      "estado": "sin_funciones_extraidas",
+      "estado": "consulta_fallida",
       "funciones": 0,
-      "motivos": [
-        "Bloque sin sede verificable"
-      ],
-      "error": ""
+      "motivos": [],
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/visita-la-escultura-de-roberto-rosas-con-la-participacion-de-guias-por-un-dia",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
-      "estado": "con_funciones_extraidas",
-      "funciones": 9,
+      "estado": "consulta_fallida",
+      "funciones": 0,
       "motivos": [],
-      "error": ""
+      "error": "Fuente en pausa por HTTP 403/429"
     }
   ],
   "estados_municipales": {
-    "con_funciones_extraidas": 106,
-    "sin_funciones_extraidas": 27
+    "sin_funciones_extraidas": 14,
+    "con_funciones_extraidas": 79,
+    "consulta_fallida": 45
   },
   "comparacion_por_funcion_disponible": true,
   "funciones_extraidas_ausentes": [
@@ -1050,14 +1060,14 @@
       "nombre": "",
       "url": "",
       "fecha": "",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "Rosario Times",
       "nombre": "",
       "url": "",
       "fecha": "",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "Rosario Times",
@@ -1093,6 +1103,13 @@
       "url": "",
       "fecha": "2026-11-06",
       "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "EntradaFan",
+      "nombre": "Elena Roger Rosario",
+      "url": "",
+      "fecha": "2026-11-06",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
     },
     {
       "fuente": "EntradaFan",
@@ -1176,7 +1193,7 @@
       "nombre": "Tan Bionica Rosario",
       "url": "",
       "fecha": "2026-12-05",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "EntradaFan",
@@ -1309,14 +1326,14 @@
       "nombre": "COMO MIRAR FIJO AL SOL",
       "url": "",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
       "nombre": "El bingo musical de Veto y Fer",
       "url": "",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
@@ -1337,7 +1354,7 @@
       "nombre": "4CORAZONES - REDSPACE and more",
       "url": "",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
@@ -1379,7 +1396,7 @@
       "nombre": "LOS PEREZ GARCIA",
       "url": "",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "Planaxia",
@@ -1400,7 +1417,7 @@
       "nombre": "",
       "url": "https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "Planaxia",
@@ -1641,7 +1658,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-10-27T11:59:39.781183-03:00",
+  "resolucion_revision": "2026-10-27T15:05:58.837216-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
@@ -1652,28 +1669,34 @@
     },
     {
       "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "Rosario Times",
+      "url": "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0,
+      "errores_enlaces": [
+        {
+          "url": "https://teatrobroadwayrosario.com/cartelera/859/despertar-de-primavera",
+          "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+        }
+      ]
+    },
+    {
+      "fuente": "Rosario Times",
+      "url": "https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "Rosario Times",
+      "url": "https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1685,39 +1708,39 @@
     },
     {
       "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/",
+      "url": "https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/",
+      "url": "https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
+      "url": "https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17610",
+      "url": "https://www.entradafan.com.ar/entradas-elena-roger-rosario/e/18107",
       "estado": "reintentar",
-      "motivo": "redirección pendiente de auditoría",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17611",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17612",
       "estado": "reintentar",
       "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
       "funciones": 0
@@ -1738,12 +1761,6 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-coti-rosario/e/17708",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17612",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1797,6 +1814,12 @@
     },
     {
       "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-benjamin-amadeo-rosario/e/16747",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
@@ -1810,12 +1833,6 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-seru-giran-rosario/e/17764",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-benjamin-amadeo-rosario/e/16747",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1874,86 +1891,44 @@
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
+      "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17610",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/MTNMJTHF5EXT/el-bingo-musical-de-veto-y-fer",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/XKJ918FTFBAY/mesa-dulce-en-rosario",
       "estado": "reintentar",
       "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
       "funciones": 0
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/RRCF1QQZDTBH/como-mirar-fijo-al-sol",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/SXE8C343M99Y/4corazones-redspace-and-more",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/TWY1G0B8G6FH/los-perez-garcia",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/VJGQGP4905T0/patio-cervecero-dia-de-la-madre",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/WCQV3SS9QG9S/halloween-finesse",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/X6X35REDD54M/halloween-fest-rosario",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/ZPV5G5MSSPQV/matias-acuna-crowdworking-rosario",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/9DFW4XTXYKVC/manu-ansaldi-presenta-la-melodia-eterna",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "funciones": 0
     },
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/GJDX6446FVG2/chueka-en-taura",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "funciones": 0
     },
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/HX0MKM9STXBG/mrb-after-dark-visual-experience",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "funciones": 0
     },
     {
       "fuente": "SalePlan",
@@ -1993,7 +1968,73 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/XKJ918FTFBAY/mesa-dulce-en-rosario",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/MTNMJTHF5EXT/el-bingo-musical-de-veto-y-fer",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/RRCF1QQZDTBH/como-mirar-fijo-al-sol",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/SXE8C343M99Y/4corazones-redspace-and-more",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/TWY1G0B8G6FH/los-perez-garcia",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/VJGQGP4905T0/patio-cervecero-dia-de-la-madre",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/WCQV3SS9QG9S/halloween-finesse",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/X6X35REDD54M/halloween-fest-rosario",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/ZPV5G5MSSPQV/matias-acuna-crowdworking-rosario",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/1W1MH4BT3D9P/pena-san-martin-educacion-fisica",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/783WGSEAAQWN/escenas-de-la-vida-conyugal",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2011,30 +2052,6 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/783WGSEAAQWN/escenas-de-la-vida-conyugal",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/1W1MH4BT3D9P/pena-san-martin-educacion-fisica",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/B0V2Y6YFQWEK/candlelight-las-cuatro-estaciones-de-vivaldi",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/B3PZG0JQVG56/facu-martinez-presenta-canciones-doradas-de-telenovelas-ii",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/86Q7G7W4VX4F/el-enfermo-imaginario-version-litoralena-estreno",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
@@ -2047,7 +2064,19 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/B3PZG0JQVG56/facu-martinez-presenta-canciones-doradas-de-telenovelas-ii",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/B0V2Y6YFQWEK/candlelight-las-cuatro-estaciones-de-vivaldi",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/G3S3VJ5VTZN4/claudio-gabis-en-rosario",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2065,7 +2094,13 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/G3S3VJ5VTZN4/claudio-gabis-en-rosario",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/MXE9S0T9Q8VX/milano-en-rosario",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2089,7 +2124,13 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/MXE9S0T9Q8VX/milano-en-rosario",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/0QMTS4QEBZC9/candlelight-tributo-a-coldplay",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/BATEKKCAEETD/festival-bandera-2026",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2107,13 +2148,13 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/0QMTS4QEBZC9/candlelight-tributo-a-coldplay",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/RVXPMF6D76BP/slimesanti-rosario-under-selected",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/BATEKKCAEETD/festival-bandera-2026",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/V9N8DB5XD50R/el-pacto-sensible-vol5-edicion-especial",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2126,18 +2167,6 @@
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/B2JE0HM1KKSJ/el-beso-de-la-mujer-arana",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/RVXPMF6D76BP/slimesanti-rosario-under-selected",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/V9N8DB5XD50R/el-pacto-sensible-vol5-edicion-especial",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2236,10 +2265,16 @@
     },
     {
       "fuente": "Planaxia",
-      "url": "https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/",
+      "url": "https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/",
       "estado": "reintentar",
       "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
       "funciones": 0
+    },
+    {
+      "fuente": "Planaxia",
+      "url": "https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "Planaxia",
@@ -2250,12 +2285,6 @@
     {
       "fuente": "Planaxia",
       "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-peretti-y-delia-damas-gratis-bandana-y-festival-faer/",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "Planaxia",
-      "url": "https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
