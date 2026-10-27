@@ -35,3 +35,16 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #82
 .event-sketch svg{width:100%;height:100%}
 
 .js.agenda-load-failed #static-agenda{display:block}
+
+/* Evitar selección azul de texto en los filtros */
+.filters button {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 18px 22px 16px 20px;
+}
+
+/* Mantener el relleno dentro del botón */
+.filters button[aria-pressed="true"] {
+  background-clip: padding-box;
+}
