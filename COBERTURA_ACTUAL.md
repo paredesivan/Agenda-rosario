@@ -2,8 +2,8 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-10-28 05:35. Corte: 2026-10-28.
-Eventos futuros: 1210. Revisión municipal: 2026-10-28T05:35:28.113948-03:00.
+Datos de la agenda: 2026-10-28 13:38. Corte: 2026-10-28.
+Eventos futuros: 1221. Revisión municipal: 2026-10-28T13:38:55.094672-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
@@ -18,21 +18,20 @@ Funciones extraídas ausentes de la agenda: no medible con el informe antiguo; f
 
 Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva el motivo por ficha.
 
-- https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/avanza-la-renovacion-de-la-rambla-catalunya-en-la-costa-norte-de-rosario/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://www.entradafan.com.ar/entradas-elena-roger-rosario/e/18107 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17611 — reintentar: redirección pendiente de auditoría
-- https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17612 — reintentar: redirección pendiente de auditoría
-- https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17056 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17859 — diferido: Turno de revisión rotativa en otra ejecución
-- https://www.entradafan.com.ar/entradas-coti-rosario/e/17708 — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-baglietto-y-vitale-rosario/e/18127 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17859 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://www.entradafan.com.ar/entradas-coti-rosario/e/17708 — corroborado: Ya publicado con respaldo prioritario
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17613 — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17614 — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-festival-bandera-rosario/e/17212 — diferido: Turno de revisión rotativa en otra ejecución
@@ -56,14 +55,14 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.entradafan.com.ar/entradas-luis-fonsi-rosario/e/18092 — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17610 — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642 — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/XKJ918FTFBAY/mesa-dulce-en-rosario — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://saleplan.ar/santa-fe/rosario/planes/9DFW4XTXYKVC/manu-ansaldi-presenta-la-melodia-eterna — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://saleplan.ar/santa-fe/rosario/planes/GJDX6446FVG2/chueka-en-taura — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://saleplan.ar/santa-fe/rosario/planes/HX0MKM9STXBG/mrb-after-dark-visual-experience — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://saleplan.ar/santa-fe/rosario/planes/HYB8X8P7B5R8/fiesta-elite — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/NNBPTN2D7YW7/mercury-sabado-24-de-octubre — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/QSYHB6SKAHBZ/los-nocheros — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/VJ2PBP4K5CQY/mati-rj — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17611 — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17612 — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17056 — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-elena-roger-rosario/e/18107 — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/HYB8X8P7B5R8/fiesta-elite — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://saleplan.ar/santa-fe/rosario/planes/NNBPTN2D7YW7/mercury-sabado-24-de-octubre — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://saleplan.ar/santa-fe/rosario/planes/QSYHB6SKAHBZ/los-nocheros — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://saleplan.ar/santa-fe/rosario/planes/VJ2PBP4K5CQY/mati-rj — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/YMA7QATFZHJ4/tc-2026-rosario-gran-premio — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/ZMKXRYEWZ4MJ/rocio-quiroz-la-vanidosa-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/MTNMJTHF5EXT/el-bingo-musical-de-veto-y-fer — diferido: Turno de revisión rotativa en otra ejecución
@@ -112,17 +111,21 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://saleplan.ar/santa-fe/rosario/planes/HVB6CYCV2VQB/macbeth — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/HZDJSH3GS5NN/festival-de-danzas-espanolas — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/KRY2N32D4HCC/fresa-club-presenta-halloween-en-el-hipodromohorror-house — diferido: Turno de revisión rotativa en otra ejecución
-- https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/
-- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/
-- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-feria-del-libro-cumbion-historico-y-fiesta-chamamecera/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-feria-del-libro-cumbion-historico-y-fiesta-chamamecera/
-- https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/
-- https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-hot-since-82-claptone-santiago-motorizado-y-la-obra-las-hijas/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-peretti-y-delia-damas-gratis-bandana-y-festival-faer/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XKJ918FTFBAY/mesa-dulce-en-rosario — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/9DFW4XTXYKVC/manu-ansaldi-presenta-la-melodia-eterna — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/GJDX6446FVG2/chueka-en-taura — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/HX0MKM9STXBG/mrb-after-dark-visual-experience — diferido: Turno de revisión rotativa en otra ejecución
+- https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-hot-since-82-claptone-santiago-motorizado-y-la-obra-las-hijas/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-peretti-y-delia-damas-gratis-bandana-y-festival-faer/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-festival-bandera-darin-pietra-los-nocheros-y-cumbion/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-16-de-septiembre/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-23-de-septiembre/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-feria-del-libro-cumbion-historico-y-fiesta-chamamecera/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.ips.edu.ar/llamado-a-inscripcion-para-el-escalafonamiento-del-departamento-de-mecanica.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/consulta-el-cronograma-de-pics.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/llamado-a-inscripcion-para-el-escalafonamiento-de-la-materia-orientacion-tutorial.html — descartado: Aviso administrativo institucional; no es una salida pública

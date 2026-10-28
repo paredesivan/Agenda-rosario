@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-10-28T06:00:28-03:00",
-  "ejecucion_id": "40657861088-1",
-  "inicio": "2026-10-28T05:35:25-03:00",
+  "generado": "2026-10-28T13:59:59-03:00",
+  "ejecucion_id": "40727987930-1",
+  "inicio": "2026-10-28T13:38:53-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-28 05:35",
-  "ultima_consulta_fuentes": "2026-10-28T05:59:53.019922-03:00",
+  "datos_actualizados": "2026-10-28 13:38",
+  "ultima_consulta_fuentes": "2026-10-28T13:59:23.455697-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1210,
-    "funciones_unicas": 1210,
-    "nuevos": 1,
+    "eventos": 1221,
+    "funciones_unicas": 1221,
+    "nuevos": 11,
     "ausentes": 0,
-    "duplicados": 2,
-    "conservados": 42,
+    "duplicados": 1,
+    "conservados": 41,
     "fuentes": 97
   },
   "alertas": [
@@ -35,7 +35,7 @@
       "accion": "Sin intervención necesaria.",
       "eventos": 308,
       "antes": 308,
-      "conservados": 20,
+      "conservados": 19,
       "caida": false
     },
     {
@@ -133,7 +133,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 4,
+      "eventos": 6,
       "antes": 4,
       "conservados": 0,
       "caida": false
@@ -224,7 +224,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 9,
-      "antes": 8,
+      "antes": 9,
       "conservados": 0,
       "caida": false
     },
@@ -263,7 +263,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 13,
+      "eventos": 20,
       "antes": 13,
       "conservados": 0,
       "caida": false
@@ -303,7 +303,7 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 13,
+      "eventos": 14,
       "antes": 13,
       "conservados": 0,
       "caida": false
@@ -370,9 +370,9 @@
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -380,9 +380,9 @@
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
@@ -400,9 +400,9 @@
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -660,9 +660,9 @@
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -830,9 +830,9 @@
     },
     {
       "nombre": "Rosario en Cartel",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 12,
       "antes": 12,
       "conservados": 0,
@@ -903,7 +903,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 22,
+      "eventos": 23,
       "antes": 22,
       "conservados": 0,
       "caida": false
@@ -990,9 +990,9 @@
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1039,7 +1039,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-28T06:00:27-03:00",
+    "fecha": "2026-10-28T13:59:57-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1052,15 +1052,85 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40657861088",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40727987930",
   "cambios": {
     "nuevos": [
       {
-        "fecha": "2026-11-13",
-        "hora": "21:00",
-        "nombre": "ADIÓS PAPPO'S BLUES BIENVENIDO RIFF",
-        "lugar": "Distrito Siete",
-        "origen": "Distrito Siete"
+        "fecha": "2026-11-05",
+        "hora": "22:30",
+        "nombre": "EL MIEDO DEL ARQUERO AL TIRO PENAL",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-12",
+        "hora": "20:00",
+        "nombre": "Ecos del Exilio",
+        "lugar": "Centro Cultural Parque de España",
+        "origen": "Centro Cultural Parque de España"
+      },
+      {
+        "fecha": "2026-11-12",
+        "hora": "22:30",
+        "nombre": "ALICIA EN LAS CIUDADES",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-19",
+        "hora": "20:30",
+        "nombre": "Violeta Veinte Trío (ES) + Ernesto Jodos (AR)",
+        "lugar": "Centro Cultural Parque de España",
+        "origen": "Centro Cultural Parque de España"
+      },
+      {
+        "fecha": "2026-11-19",
+        "hora": "22:30",
+        "nombre": "EN EL CURSO DEL TIEMPO",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-26",
+        "hora": "22:30",
+        "nombre": "EL AMIGO AMERICANO",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-03",
+        "hora": "22:30",
+        "nombre": "EL ESTADO DE LAS COSAS",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-10",
+        "hora": "22:30",
+        "nombre": "PARÍS, TEXAS",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-16",
+        "hora": "20:30",
+        "nombre": "LA HOUSE",
+        "lugar": "Teatro Broadway",
+        "origen": "Teatro Broadway"
+      },
+      {
+        "fecha": "2026-12-17",
+        "hora": "22:30",
+        "nombre": "LAS ALAS DEL DESEO",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-06",
+        "hora": "18:00",
+        "nombre": "FESTIVAL SATÉLITE",
+        "lugar": "La Segunda Seguros Arena",
+        "origen": "Entrada Play"
       }
     ],
     "ausentes": []
