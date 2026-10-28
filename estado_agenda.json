@@ -1,23 +1,27 @@
 {
   "version": 1,
-  "generado": "2026-10-28T13:59:59-03:00",
-  "ejecucion_id": "40727987930-1",
-  "inicio": "2026-10-28T13:38:53-03:00",
+  "generado": "2026-10-28T20:05:14-03:00",
+  "ejecucion_id": "40781292625-1",
+  "inicio": "2026-10-28T19:36:53-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-28 13:38",
-  "ultima_consulta_fuentes": "2026-10-28T13:59:23.455697-03:00",
+  "datos_actualizados": "2026-10-28 19:36",
+  "ultima_consulta_fuentes": "2026-10-28T20:04:32.816216-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1221,
-    "funciones_unicas": 1221,
-    "nuevos": 11,
-    "ausentes": 0,
-    "duplicados": 1,
-    "conservados": 41,
+    "eventos": 1258,
+    "funciones_unicas": 1258,
+    "nuevos": 38,
+    "ausentes": 1,
+    "duplicados": 2,
+    "conservados": 63,
     "fuentes": 97
   },
   "alertas": [
+    {
+      "tipo": "cobertura",
+      "mensaje": "Hay funciones extraídas que no figuran en la agenda ni tienen una coincidencia detectada. Revisar COBERTURA_ACTUAL.md."
+    },
     {
       "tipo": "etapa",
       "mensaje": "Falló la etapa fuente_autodromo.py. Se conservaron sus datos anteriores."
@@ -35,14 +39,14 @@
       "accion": "Sin intervención necesaria.",
       "eventos": 308,
       "antes": 308,
-      "conservados": 19,
+      "conservados": 25,
       "caida": false
     },
     {
       "nombre": "Agenda municipal — Espacios",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -134,7 +138,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 6,
-      "antes": 4,
+      "antes": 6,
       "conservados": 0,
       "caida": false
     },
@@ -263,8 +267,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 20,
-      "antes": 13,
+      "eventos": 51,
+      "antes": 20,
       "conservados": 0,
       "caida": false
     },
@@ -304,7 +308,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 14,
-      "antes": 13,
+      "antes": 14,
       "conservados": 0,
       "caida": false
     },
@@ -543,9 +547,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 670,
+      "eventos": 676,
       "antes": 670,
-      "conservados": 21,
+      "conservados": 37,
       "caida": false
     },
     {
@@ -590,9 +594,9 @@
     },
     {
       "nombre": "Museo Urbano Arte a la Vista",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -610,9 +614,9 @@
     },
     {
       "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -904,7 +908,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 23,
-      "antes": 22,
+      "antes": 23,
       "conservados": 0,
       "caida": false
     },
@@ -1039,7 +1043,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-28T13:59:57-03:00",
+    "fecha": "2026-10-28T20:05:10-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1052,87 +1056,284 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40727987930",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40781292625",
   "cambios": {
     "nuevos": [
       {
-        "fecha": "2026-11-05",
-        "hora": "22:30",
-        "nombre": "EL MIEDO DEL ARQUERO AL TIRO PENAL",
-        "lugar": "El Cairo Cine Público",
-        "origen": "El Cairo Cine Público"
+        "fecha": "2026-10-30",
+        "hora": "19:00",
+        "nombre": "Noche de Museos Abiertos en el macro",
+        "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+        "origen": "Municipalidad de Rosario"
       },
       {
-        "fecha": "2026-11-12",
+        "fecha": "2026-10-30",
         "hora": "20:00",
-        "nombre": "Ecos del Exilio",
-        "lugar": "Centro Cultural Parque de España",
-        "origen": "Centro Cultural Parque de España"
+        "nombre": "Noche de Museos en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "20:30",
+        "nombre": "Proyección Cine El Cairo “El Desentierro” y “Solxs”",
+        "lugar": "El Cairo - Cine Público",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-05",
+        "hora": "20:30",
+        "nombre": "ANNEMARIE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-06",
+        "hora": "18:00",
+        "nombre": "ANNEMARIE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-07",
+        "hora": "20:30",
+        "nombre": "DESENTIERROS. LOS LIBROS QUE NO HEREDAMOS",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-07",
+        "hora": "22:30",
+        "nombre": "ANNEMARIE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
       },
       {
         "fecha": "2026-11-12",
-        "hora": "22:30",
-        "nombre": "ALICIA EN LAS CIUDADES",
-        "lugar": "El Cairo Cine Público",
-        "origen": "El Cairo Cine Público"
-      },
-      {
-        "fecha": "2026-11-19",
         "hora": "20:30",
-        "nombre": "Violeta Veinte Trío (ES) + Ernesto Jodos (AR)",
-        "lugar": "Centro Cultural Parque de España",
-        "origen": "Centro Cultural Parque de España"
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "22:30",
-        "nombre": "EN EL CURSO DEL TIEMPO",
+        "nombre": "LA VIDA ES ASÍ",
         "lugar": "El Cairo Cine Público",
         "origen": "El Cairo Cine Público"
       },
       {
-        "fecha": "2026-11-26",
+        "fecha": "2026-11-13",
+        "hora": "18:00",
+        "nombre": "LA VIDA ES ASÍ",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-14",
+        "hora": "20:30",
+        "nombre": "DESENTIERROS. LOS LIBROS QUE NO HEREDAMOS",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-15",
         "hora": "22:30",
-        "nombre": "EL AMIGO AMERICANO",
+        "nombre": "LA VIDA ES ASÍ",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-20",
+        "hora": "20:30",
+        "nombre": "DESENTIERROS. LOS LIBROS QUE NO HEREDAMOS",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-20",
+        "hora": "22:30",
+        "nombre": "LOS ESPIGADORES Y LA ESPIGADORA",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-27",
+        "hora": "18:00",
+        "nombre": "TIERRA DE CRIMEN",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-27",
+        "hora": "20:30",
+        "nombre": "DESENTIERROS. LOS LIBROS QUE NO HEREDAMOS",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-27",
+        "hora": "22:30",
+        "nombre": "LU Y PAU",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-28",
+        "hora": "18:00",
+        "nombre": "LU Y PAU",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-28",
+        "hora": "20:30",
+        "nombre": "TIERRA DE CRIMEN",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-29",
+        "hora": "21:00",
+        "nombre": "LU Y PAU",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-29",
+        "hora": "22:30",
+        "nombre": "LA RANDOM",
         "lugar": "El Cairo Cine Público",
         "origen": "El Cairo Cine Público"
       },
       {
         "fecha": "2026-12-03",
-        "hora": "22:30",
-        "nombre": "EL ESTADO DE LAS COSAS",
+        "hora": "18:00",
+        "nombre": "LU Y PAU",
         "lugar": "El Cairo Cine Público",
         "origen": "El Cairo Cine Público"
       },
       {
-        "fecha": "2026-12-10",
-        "hora": "22:30",
-        "nombre": "PARÍS, TEXAS",
-        "lugar": "El Cairo Cine Público",
-        "origen": "El Cairo Cine Público"
-      },
-      {
-        "fecha": "2026-12-16",
+        "fecha": "2026-12-03",
         "hora": "20:30",
-        "nombre": "LA HOUSE",
-        "lugar": "Teatro Broadway",
-        "origen": "Teatro Broadway"
+        "nombre": "TIERRA DE MI PADRE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
       },
       {
-        "fecha": "2026-12-17",
+        "fecha": "2026-12-05",
+        "hora": "18:00",
+        "nombre": "TIERRA DE MI PADRE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-05",
+        "hora": "20:30",
+        "nombre": "DICIEMBRE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-05",
         "hora": "22:30",
-        "nombre": "LAS ALAS DEL DESEO",
+        "nombre": "LU Y PAU",
         "lugar": "El Cairo Cine Público",
         "origen": "El Cairo Cine Público"
       },
       {
         "fecha": "2026-12-06",
+        "hora": "20:30",
+        "nombre": "TIERRA DE CRIMEN",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-06",
+        "hora": "22:30",
+        "nombre": "TIERRA DE MI PADRE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-10",
         "hora": "18:00",
-        "nombre": "FESTIVAL SATÉLITE",
-        "lugar": "La Segunda Seguros Arena",
-        "origen": "Entrada Play"
+        "nombre": "SUSANA RINALDI, LIBRE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-11",
+        "hora": "20:30",
+        "nombre": "DICIEMBRE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-11",
+        "hora": "22:30",
+        "nombre": "SUSANA RINALDI, LIBRE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-18",
+        "hora": "22:30",
+        "nombre": "AZUL PROFUNDO",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-19",
+        "hora": "20:30",
+        "nombre": "DICIEMBRE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-26",
+        "hora": "20:30",
+        "nombre": "DICIEMBRE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-27",
+        "hora": "22:30",
+        "nombre": "LA RANDOM",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-10-29",
+        "hora": "20:00",
+        "nombre": "Función de MACBETH",
+        "lugar": "Teatro El Círculo",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-31",
+        "hora": "19:00",
+        "nombre": "260° película del CineClú \"El Cartero\"",
+        "lugar": "Sala Empleados de Comercio",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-01",
+        "hora": "19:00",
+        "nombre": "6ta. Edición de Milonga para el Cholo",
+        "lugar": "Centro Cultural  La Casa del Tango",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-07",
+        "hora": "19:00",
+        "nombre": "Cada vez otra vez",
+        "lugar": "Centro Cultural  La Casa del Tango",
+        "origen": "Municipalidad de Rosario"
       }
     ],
-    "ausentes": []
+    "ausentes": [
+      {
+        "fecha": "2026-10-30",
+        "hora": "19:30",
+        "nombre": "Noche de Museos en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      }
+    ]
   }
 }
