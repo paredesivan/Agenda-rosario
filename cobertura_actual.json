@@ -1,23 +1,23 @@
 {
-  "datos_actualizados": "2026-10-27 17:42",
+  "datos_actualizados": "2026-10-27 22:24",
   "fecha_corte": "2026-10-27",
-  "eventos_futuros_publicados": 1176,
+  "eventos_futuros_publicados": 1226,
   "por_fuente": {
     "Biblioteca Argentina Dr. Juan Álvarez": 6,
     "Plataforma Lavardén": 10,
     "Municipalidad de Rosario": 682,
     "Biblioteca Vigil": 2,
-    "Agenda Cultural Rosario": 265,
+    "Agenda Cultural Rosario": 313,
     "Centro Cultural Parque de España": 4,
     "El Cairo Cine Público": 13,
-    "La Orilla Infinita": 2,
+    "La Orilla Infinita": 3,
     "Distrito Siete": 8,
     "Passline — Complejo Forest": 4,
     "Centro Cultural Madres de Plaza 25 de Mayo": 1,
     "ECU Espacio Cultural Universitario": 1,
     "Teatro del Rayo": 1,
     "Metropolitano": 4,
-    "El Aserradero — oficial": 8,
+    "El Aserradero — oficial": 9,
     "Entrada Play": 13,
     "Microteatro Rosario": 66,
     "CentroTicket": 7,
@@ -34,7 +34,7 @@
     "Passline — QUE SEA ROCK": 2,
     "Grupo Gamma — Charlas a la comunidad": 2
   },
-  "revision_municipal": "2026-10-27T17:42:44.070831-03:00",
+  "revision_municipal": "2026-10-27T22:24:26.590153-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [],
   "estados_municipales": {},
@@ -46,14 +46,14 @@
       "nombre": "",
       "url": "",
       "fecha": "",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "Rosario Times",
       "nombre": "",
       "url": "",
       "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
     },
     {
       "fuente": "EntradaFan",
@@ -267,13 +267,6 @@
     },
     {
       "fuente": "SalePlan",
-      "nombre": "Nicolás Pozo & Valentín Sambuelli",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
       "nombre": "Macbeth",
       "url": "",
       "fecha": "",
@@ -378,6 +371,13 @@
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
+      "fuente": "SalePlan",
+      "nombre": "El beso de la mujer araña",
+      "url": "",
+      "fecha": "",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
       "fuente": "Planaxia",
       "nombre": "",
       "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-festival-bandera-darin-pietra-los-nocheros-y-cumbion/",
@@ -450,6 +450,13 @@
     {
       "fuente": "Instituto Politécnico — Novedades",
       "nombre": "",
+      "url": "https://www.ips.edu.ar/llamado-a-inscripcion-para-el-concurso-interno-de-jefe-de-departamento-de-tecnologia-de-los-alimentos.html",
+      "fecha": "",
+      "motivo": "Aviso administrativo institucional; no es una salida pública"
+    },
+    {
+      "fuente": "Instituto Politécnico — Novedades",
+      "nombre": "",
       "url": "https://www.ips.edu.ar/fechas-de-sorteo-de-temas-y-entrevistas-del-concurso-de-titularizacion-para-un-cargo-de-asesor-a-pedagogico-a.html",
       "fecha": "",
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
@@ -500,13 +507,6 @@
       "fuente": "Instituto Politécnico — Novedades",
       "nombre": "",
       "url": "https://www.ips.edu.ar/nivel-superior-2.html",
-      "fecha": "",
-      "motivo": "Aviso administrativo institucional; no es una salida pública"
-    },
-    {
-      "fuente": "Instituto Politécnico — Novedades",
-      "nombre": "",
-      "url": "https://www.ips.edu.ar/dictamen-final-escalafonamiento-dpto-recursos-pedagogicos-2.html",
       "fecha": "",
       "motivo": "Aviso administrativo institucional; no es una salida pública"
     },
@@ -637,7 +637,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-10-27T18:04:05.399555-03:00",
+  "resolucion_revision": "2026-10-27T22:46:32.819599-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
@@ -648,42 +648,30 @@
     },
     {
       "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "funciones": 0
     },
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "funciones": 0
     },
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0,
+      "errores_enlaces": [
+        {
+          "url": "https://teatrobroadwayrosario.com/cartelera/859/despertar-de-primavera",
+          "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+        }
+      ]
     },
     {
       "fuente": "Rosario Times",
@@ -694,6 +682,24 @@
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "Rosario Times",
+      "url": "https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "Rosario Times",
+      "url": "https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "Rosario Times",
+      "url": "https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1339,6 +1345,13 @@
       "url": "https://www.ips.edu.ar/compra-tu-entrada.html",
       "estado": "descartado",
       "motivo": "Todas las funciones detectadas están vencidas",
+      "funciones": 0
+    },
+    {
+      "fuente": "Instituto Politécnico — Novedades",
+      "url": "https://www.ips.edu.ar/llamado-a-inscripcion-para-el-concurso-interno-de-jefe-de-departamento-de-tecnologia-de-los-alimentos.html",
+      "estado": "descartado",
+      "motivo": "Aviso administrativo institucional; no es una salida pública",
       "funciones": 0
     },
     {

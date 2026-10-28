@@ -2,8 +2,8 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-10-27 17:42. Corte: 2026-10-27.
-Eventos futuros: 1176. Revisión municipal: 2026-10-27T17:42:44.070831-03:00.
+Datos de la agenda: 2026-10-27 22:24. Corte: 2026-10-27.
+Eventos futuros: 1226. Revisión municipal: 2026-10-27T22:24:26.590153-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
@@ -19,14 +19,14 @@ Funciones extraídas ausentes de la agenda: no medible con el informe antiguo; f
 Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva el motivo por ficha.
 
 - https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
-- https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-elena-roger-rosario/e/18107 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17611 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17612 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
@@ -131,5 +131,6 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.ips.edu.ar/nivel-superior-2.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/dictamen-final-escalafonamiento-dpto-recursos-pedagogicos-2.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/compra-tu-entrada.html — descartado: Todas las funciones detectadas están vencidas
+- https://www.ips.edu.ar/llamado-a-inscripcion-para-el-concurso-interno-de-jefe-de-departamento-de-tecnologia-de-los-alimentos.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/fechas-de-sorteo-de-temas-y-entrevistas-del-concurso-de-titularizacion-para-un-cargo-de-asesor-a-pedagogico-a.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/visita-y-registrate-en-el-portal.html — pendiente: Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado
