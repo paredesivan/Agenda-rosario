@@ -1,17 +1,17 @@
 {
-  "datos_actualizados": "2026-10-27 22:24",
-  "fecha_corte": "2026-10-27",
-  "eventos_futuros_publicados": 1226,
+  "datos_actualizados": "2026-10-28 05:35",
+  "fecha_corte": "2026-10-28",
+  "eventos_futuros_publicados": 1210,
   "por_fuente": {
     "Biblioteca Argentina Dr. Juan Álvarez": 6,
     "Plataforma Lavardén": 10,
-    "Municipalidad de Rosario": 682,
+    "Municipalidad de Rosario": 670,
     "Biblioteca Vigil": 2,
-    "Agenda Cultural Rosario": 313,
+    "Agenda Cultural Rosario": 308,
     "Centro Cultural Parque de España": 4,
     "El Cairo Cine Público": 13,
     "La Orilla Infinita": 3,
-    "Distrito Siete": 8,
+    "Distrito Siete": 9,
     "Passline — Complejo Forest": 4,
     "Centro Cultural Madres de Plaza 25 de Mayo": 1,
     "ECU Espacio Cultural Universitario": 1,
@@ -34,7 +34,7 @@
     "Passline — QUE SEA ROCK": 2,
     "Grupo Gamma — Charlas a la comunidad": 2
   },
-  "revision_municipal": "2026-10-27T22:24:26.590153-03:00",
+  "revision_municipal": "2026-10-28T05:35:28.113948-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [],
   "estados_municipales": {},
@@ -53,7 +53,7 @@
       "nombre": "",
       "url": "",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
     },
     {
       "fuente": "EntradaFan",
@@ -88,14 +88,14 @@
       "nombre": "Elena Roger Rosario",
       "url": "",
       "fecha": "2026-11-06",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
     },
     {
       "fuente": "EntradaFan",
       "nombre": "Ciro y Los Persas Rosario",
       "url": "",
       "fecha": "2026-11-07",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
     },
     {
       "fuente": "EntradaFan",
@@ -389,7 +389,7 @@
       "nombre": "",
       "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-feria-del-libro-cumbion-historico-y-fiesta-chamamecera/",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-feria-del-libro-cumbion-historico-y-fiesta-chamamecera/"
     },
     {
       "fuente": "Planaxia",
@@ -403,14 +403,14 @@
       "nombre": "",
       "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/"
     },
     {
       "fuente": "Planaxia",
       "nombre": "",
       "url": "https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/"
     },
     {
       "fuente": "Planaxia",
@@ -446,6 +446,97 @@
       "url": "https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-16-de-septiembre/",
       "fecha": "",
       "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "Fundación FAER",
+      "nombre": "",
+      "url": "https://faer.ar/festival",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Fundación FAER",
+      "nombre": "",
+      "url": "https://faer.ar/programacion2026/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Fundación FAER",
+      "nombre": "",
+      "url": "https://faer.ar/talleres-y-seminarios-2026/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Fundación FAER",
+      "nombre": "",
+      "url": "https://faer.ar/puente-mercado-de-artes-escenicas/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Grupo Gamma — Charlas a la comunidad",
+      "nombre": "",
+      "url": "https://grupogamma.com/pacientes/charlas-a-la-comunidad/enfermedad-celiaca-importancia-del-abordaje-interdisciplinario",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "UNR — Actividades abiertas",
+      "nombre": "",
+      "url": "https://unr.edu.ar/agenda/caramba-inventario-incompleto-de-max-cachimba/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "UNR — Actividades abiertas",
+      "nombre": "",
+      "url": "https://unr.edu.ar/agenda/especializacion-en-costos-y-gestion-empresarial/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "UNR — Actividades abiertas",
+      "nombre": "",
+      "url": "https://unr.edu.ar/agenda/concierto-audicion-academica-matinal-en-el-ecu-6/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "UNR — Actividades abiertas",
+      "nombre": "",
+      "url": "https://unr.edu.ar/agenda/concierto-musica-de-compositores-rosarinos/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Humanidades y Artes UNR — Agenda",
+      "nombre": "",
+      "url": "https://fhumyar.unr.edu.ar/agenda/convocatoria-abierta-revista-la-creciente/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Humanidades y Artes UNR — Agenda",
+      "nombre": "",
+      "url": "https://fhumyar.unr.edu.ar/agenda/hya-en-la-noche-de-los-museos/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Humanidades y Artes UNR — Agenda",
+      "nombre": "",
+      "url": "https://fhumyar.unr.edu.ar/agenda/taller-tesoros-familiares/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Humanidades y Artes UNR — Agenda",
+      "nombre": "",
+      "url": "https://fhumyar.unr.edu.ar/agenda/11o-congreso-latinoamericano-disur/",
+      "fecha": "",
+      "motivo": ""
     },
     {
       "fuente": "Instituto Politécnico — Novedades",
@@ -637,47 +728,35 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-10-27T22:46:32.819599-03:00",
+  "resolucion_revision": "2026-10-28T05:57:33.752122-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
+      "url": "https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/",
       "estado": "pendiente",
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0,
-      "errores_enlaces": [
-        {
-          "url": "https://teatrobroadwayrosario.com/cartelera/859/despertar-de-primavera",
-          "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
-        }
-      ]
+      "funciones": 0
     },
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
     },
     {
       "fuente": "Rosario Times",
@@ -693,42 +772,48 @@
     },
     {
       "fuente": "Rosario Times",
+      "url": "https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/",
+      "url": "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-elena-roger-rosario/e/18107",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17611",
       "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "motivo": "redirección pendiente de auditoría",
       "funciones": 0
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17612",
       "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "motivo": "redirección pendiente de auditoría",
       "funciones": 0
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17056",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
@@ -884,29 +969,29 @@
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/XKJ918FTFBAY/mesa-dulce-en-rosario",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/9DFW4XTXYKVC/manu-ansaldi-presenta-la-melodia-eterna",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/GJDX6446FVG2/chueka-en-taura",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/HX0MKM9STXBG/mrb-after-dark-visual-experience",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
@@ -1175,6 +1260,12 @@
     },
     {
       "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/581JEHPHZG98/nicolas-pozo-valentin-sambuelli",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/08YCY9XPTWKC/sergio-moran-la-cruzada-decada-disco",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
@@ -1182,12 +1273,6 @@
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/4NSKXK0HXB2Q/swaggerboyz",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/581JEHPHZG98/nicolas-pozo-valentin-sambuelli",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1225,28 +1310,28 @@
       "fuente": "Planaxia",
       "url": "https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/",
       "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/",
       "funciones": 0
     },
     {
       "fuente": "Planaxia",
       "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/",
       "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/",
       "funciones": 0
     },
     {
       "fuente": "Planaxia",
       "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-feria-del-libro-cumbion-historico-y-fiesta-chamamecera/",
       "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-feria-del-libro-cumbion-historico-y-fiesta-chamamecera/",
       "funciones": 0
     },
     {
       "fuente": "Planaxia",
       "url": "https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/",
       "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/",
       "funciones": 0
     },
     {

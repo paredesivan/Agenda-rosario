@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-10-27T22:48:19-03:00",
-  "ejecucion_id": "40614827225-1",
-  "inicio": "2026-10-27T22:24:23-03:00",
+  "generado": "2026-10-28T06:00:28-03:00",
+  "ejecucion_id": "40657861088-1",
+  "inicio": "2026-10-28T05:35:25-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-27 22:24",
-  "ultima_consulta_fuentes": "2026-10-27T22:47:31.970440-03:00",
+  "datos_actualizados": "2026-10-28 05:35",
+  "ultima_consulta_fuentes": "2026-10-28T05:59:53.019922-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1226,
-    "funciones_unicas": 1226,
-    "nuevos": 50,
+    "eventos": 1210,
+    "funciones_unicas": 1210,
+    "nuevos": 1,
     "ausentes": 0,
     "duplicados": 2,
-    "conservados": 50,
+    "conservados": 42,
     "fuentes": 97
   },
   "alertas": [
@@ -33,9 +33,9 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 313,
-      "antes": 265,
-      "conservados": 25,
+      "eventos": 308,
+      "antes": 308,
+      "conservados": 20,
       "caida": false
     },
     {
@@ -223,7 +223,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 8,
+      "eventos": 9,
       "antes": 8,
       "conservados": 0,
       "caida": false
@@ -254,7 +254,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 9,
-      "antes": 8,
+      "antes": 9,
       "conservados": 0,
       "caida": false
     },
@@ -370,9 +370,9 @@
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "pendiente",
-      "motivo": "La fuente no tiene un resultado concluyente.",
-      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -380,9 +380,9 @@
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
@@ -400,9 +400,9 @@
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -474,7 +474,7 @@
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 3,
-      "antes": 2,
+      "antes": 3,
       "conservados": 0,
       "caida": false
     },
@@ -543,9 +543,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 682,
-      "antes": 682,
-      "conservados": 24,
+      "eventos": 670,
+      "antes": 670,
+      "conservados": 21,
       "caida": false
     },
     {
@@ -660,9 +660,9 @@
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -990,9 +990,9 @@
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1039,7 +1039,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-27T22:48:17-03:00",
+    "fecha": "2026-10-28T06:00:27-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1052,288 +1052,15 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40614827225",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40657861088",
   "cambios": {
     "nuevos": [
       {
-        "fecha": "2026-10-29",
-        "hora": "20:30",
-        "nombre": "El Espejo de la Memoria",
-        "lugar": "Sala Saulo Benavente (Biblioteca La Vigil)",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "16:00",
-        "nombre": "Colegas. Prácticas colectivas de tejido expandido",
-        "lugar": "Centro Cultural Parque de España (CCPE)",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "18:00",
-        "nombre": "Accionar para resistir. Cuando el tejido colectivo transforma el espacio",
-        "lugar": "Centro Cultural Parque de España (CCPE)",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
+        "fecha": "2026-11-13",
         "hora": "21:00",
-        "nombre": "Fiesta TNT",
-        "lugar": "Distrito Siete, Ovidio Lagos 790, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "21:00",
-        "nombre": "Fueye Solo: concierto acústico de bandoneón",
-        "lugar": "Centro Cultural La Casa del Tango, Illia 1750, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-30",
-        "hora": "21:00",
-        "nombre": "La plaza de Rodolfo / Juan Barreto, Julián Venegas & Alejo Castillo",
-        "lugar": "Espacio Cultural Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-05",
-        "hora": "21:00",
-        "nombre": "Jubany + Monte Palomar + Fingir Demencia",
-        "lugar": "Distrito Siete, Ovidio Lagos 790, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-06",
-        "hora": "20:00",
-        "nombre": "Festival Beethoven — Quinteto Municipal de Vientos",
-        "lugar": "Centro Cultural Parque de España (CCPE)",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-06",
-        "hora": "21:00",
-        "nombre": "Insectum — Festival Diente de León",
-        "lugar": "El Lucero del Paraná, Guayaquil 619, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-06",
-        "hora": "21:00",
-        "nombre": "Marta",
-        "lugar": "Teatro AEC - Asoc. Empleados de Comercio",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-07",
-        "hora": "20:00",
-        "nombre": "Miss (soporte de ficción) — Festival Diente de León",
-        "lugar": "El Lucero del Paraná, Guayaquil 619, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-07",
-        "hora": "21:00",
-        "nombre": "Tejer la memoria: hilo, espacio y territorio",
-        "lugar": "Centro Cultural Parque de España (CCPE)",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-14",
-        "hora": "21:00",
-        "nombre": "La función de los invisibles",
-        "lugar": "La Orilla Infinita",
-        "origen": "La Orilla Infinita"
-      },
-      {
-        "fecha": "2026-11-14",
-        "hora": "21:00",
-        "nombre": "Tributo a Buena Vista Social Club",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
-      },
-      {
-        "fecha": "2026-11-26",
-        "hora": "20:00",
-        "nombre": "Quinteto Municipal de Cuerdas junto a Jorge Variego",
-        "lugar": "Museo de Arte Decorativo Firma y Odilo Estévez",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-12-11",
-        "hora": "21:00",
-        "nombre": "Música para Volar despide el 2026",
-        "lugar": "Plataforma Lavardén",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-28",
-        "hora": "20:30",
-        "nombre": "La rebelión de las flores: proyección y conversatorio",
-        "lugar": "Distrito Siete, Ovidio Lagos 790, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "19:30",
-        "nombre": "Noche de Museos Abiertos en Plataforma Lavardén",
-        "lugar": "Plataforma Lavardén",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "20:00",
-        "nombre": "Nana Canta Piaf",
-        "lugar": "ALIANZA FRANCESA",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "20:00",
-        "nombre": "Un cielo de seis cuerdas",
-        "lugar": "Centro Cultural La Casa del Tango, Illia 1750, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "19:00",
-        "nombre": "ALYX: escucha inmersiva de Génesis",
-        "lugar": "Complejo Astronómico Municipal - Sala Planetario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-11",
-        "hora": "10:00",
-        "nombre": "La mala traducción",
-        "lugar": "Centro Cultural Parque de España (CCPE)",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-11",
-        "hora": "20:00",
-        "nombre": "Romito Romario presenta ACEYTE",
-        "lugar": "Distrito Siete, Ovidio Lagos 790, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-12-04",
-        "hora": "20:00",
-        "nombre": "Natalia Nardiello: El piano y yo",
-        "lugar": "Plataforma Lavardén",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "21:00",
-        "nombre": "Princesa Tetrabrick + El Espíritu Frenético de la Noche + Cicuta",
-        "lugar": "Distrito Siete, Ovidio Lagos 790, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "19:00",
-        "nombre": "Noche de Museos Abiertos en el Castagnino",
-        "lugar": "Museo Municipal de Bellas Artes Juan B. Castagnino, Pellegrini 2202, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "19:00",
-        "nombre": "Noche de Museos en el Museo Estévez",
-        "lugar": "Museo de Arte Decorativo Firma y Odilo Estévez",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "19:00",
-        "nombre": "Sin ir más lejos",
-        "lugar": "Estación Embarcaderos, Vélez Sarsfield 164, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "19:00",
-        "nombre": "Una casa y tres protagonistas",
-        "lugar": "Casa Vanzo Wernicke, Cochabamba 2010, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "21:30",
-        "nombre": "Berretín de Tango",
-        "lugar": "Teatro AEC - Asoc. Empleados de Comercio",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-03",
-        "hora": "15:00",
-        "nombre": "Producciones teatrales de adultas y adultos mayores",
-        "lugar": "Teatro Municipal La Comedia",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-03",
-        "hora": "18:00",
-        "nombre": "Balcarce 681: fotografías de Fito Páez — inauguración",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez, Presidente Roca 731, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-03",
-        "hora": "18:00",
-        "nombre": "Noche de Galerías Abiertas",
-        "lugar": "Galerías de Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "17:00",
-        "nombre": "Experimentación material con cera de abejas",
-        "lugar": "Centro Cultural Parque de España (CCPE)",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "21:00",
-        "nombre": "Juan Falú y Mariano Loiácono: cuerda y metal",
-        "lugar": "Distrito Siete, Ovidio Lagos 790, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-06",
-        "hora": "21:30",
-        "nombre": "Manu Ansaldi: La Melodía Eterna",
-        "lugar": "Teatro Caras y Caretas",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-06",
-        "hora": "22:00",
-        "nombre": "Fiesta Sabinera",
-        "lugar": "Somos Múcica",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-06",
-        "hora": "23:00",
-        "nombre": "Juani Favre Cuarteto — Festival Diente de León",
-        "lugar": "El Lucero del Paraná, Guayaquil 619, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-12",
-        "hora": "19:00",
-        "nombre": "Alexandra Kohan presenta El libro del dinero",
-        "lugar": "Plataforma Lavardén",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-12",
-        "hora": "19:00",
-        "nombre": "Veneno",
-        "lugar": "Centro Cultural Roberto Fontanarrosa",
-        "origen": "Agenda Cultural Rosario"
+        "nombre": "ADIÓS PAPPO'S BLUES BIENVENIDO RIFF",
+        "lugar": "Distrito Siete",
+        "origen": "Distrito Siete"
       }
     ],
     "ausentes": []
