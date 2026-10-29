@@ -1,23 +1,23 @@
 {
-  "datos_actualizados": "2026-10-29 10:04",
+  "datos_actualizados": "2026-10-29 16:39",
   "fecha_corte": "2026-10-29",
-  "eventos_futuros_publicados": 1226,
+  "eventos_futuros_publicados": 1272,
   "por_fuente": {
     "Plataforma Lavardén": 8,
     "Centro Cultural Parque de España": 6,
-    "Agenda Cultural Rosario": 303,
-    "El Cairo Cine Público": 51,
+    "Agenda Cultural Rosario": 330,
+    "El Cairo Cine Público": 62,
     "La Orilla Infinita": 3,
     "Distrito Siete": 9,
     "Passline — Complejo Forest": 4,
-    "Municipalidad de Rosario": 655,
+    "Municipalidad de Rosario": 661,
     "Centro Cultural Madres de Plaza 25 de Mayo": 1,
     "ECU Espacio Cultural Universitario": 1,
     "Biblioteca Vigil": 1,
     "Teatro del Rayo": 1,
     "Metropolitano": 4,
-    "El Aserradero — oficial": 9,
-    "Entrada Play": 14,
+    "El Aserradero — oficial": 10,
+    "Entrada Play": 15,
     "Microteatro Rosario": 66,
     "CentroTicket": 7,
     "Teatro Broadway": 23,
@@ -34,21 +34,78 @@
     "Passline — QUE SEA ROCK": 2,
     "Grupo Gamma — Charlas a la comunidad": 2
   },
-  "revision_municipal": "2026-10-29T10:04:05.042432-03:00",
+  "revision_municipal": "2026-10-29T16:39:28.595160-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [
     {
-      "url": "https://www.rosario.gob.ar/inicio/inaugura-rosarigarcia-en-el-galpon-11",
+      "url": "https://www.rosario.gob.ar/inicio/dj-set-con-andrea-giammaria",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/romeo-ofelia-en-cine-lumiere",
+      "url": "https://www.rosario.gob.ar/inicio/guias-por-un-dia-en-la-noche-de-museos-abiertos",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/hay-pique-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/muestra-escaparate-de-colecciones",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/muestra-la-ruta-de-los-azulejos",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos-en-el-museo-de-la-memoria-1",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/nueva-plaza-de-bolsillo-en-barrio-san-martin",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/peluqueria-estilo-sagasti-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/taller-aprende-manejar-tu-celular",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
       "error": ""
     },
     {
@@ -182,15 +239,6 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/cero341-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
       "url": "https://www.rosario.gob.ar/inicio/checker-tobi-y-el-viaje-los-rios-voladores-en-cine-lumiere",
       "estado": "sin_funciones_extraidas",
       "funciones": 0,
@@ -311,15 +359,6 @@
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/el-mago-nt-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
       "error": ""
     },
     {
@@ -469,7 +508,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/geolocalizados-un-puente-entre-la-imagen-y-la-palabra",
       "estado": "con_funciones_extraidas",
-      "funciones": 4,
+      "funciones": 3,
       "motivos": [],
       "error": ""
     },
@@ -477,6 +516,13 @@
       "url": "https://www.rosario.gob.ar/inicio/hysteresis.-anatomia-del-roce",
       "estado": "con_funciones_extraidas",
       "funciones": 47,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/inaugura-rosarigarcia-en-el-galpon-11",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
       "motivos": [],
       "error": ""
     },
@@ -506,15 +552,6 @@
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/la-bodeguita-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
       "error": ""
     },
     {
@@ -576,24 +613,6 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/maywa-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/maywa-kids-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
       "url": "https://www.rosario.gob.ar/inicio/memorias-del-exilio-zurcir-voces-hasta-volverlas-familiares",
       "estado": "con_funciones_extraidas",
       "funciones": 2,
@@ -622,15 +641,6 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/mosto-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
       "url": "https://www.rosario.gob.ar/inicio/muestra-colectiva-pinceladas-magicas",
       "estado": "con_funciones_extraidas",
       "funciones": 2,
@@ -648,15 +658,6 @@
       "url": "https://www.rosario.gob.ar/inicio/muestra-efervescencia-cromatica.-anomalia-de-un-universo-en-expansion",
       "estado": "con_funciones_extraidas",
       "funciones": 14,
-      "motivos": [
-        "Bloque sin sede verificable"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/muestra-el-paisaje-en-filigrana-de-papel",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
       "motivos": [
         "Bloque sin sede verificable"
       ],
@@ -915,6 +916,13 @@
       "error": ""
     },
     {
+      "url": "https://www.rosario.gob.ar/inicio/romeo-ofelia-en-cine-lumiere",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
       "url": "https://www.rosario.gob.ar/inicio/rulo-dellatorre-presenta-no-es-tan-asi-en-la-vigil",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
@@ -951,15 +959,6 @@
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/suenolandia-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
       "error": ""
     },
     {
@@ -1135,14 +1134,14 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada",
       "estado": "con_funciones_extraidas",
-      "funciones": 9,
+      "funciones": 8,
       "motivos": [],
       "error": ""
     }
   ],
   "estados_municipales": {
-    "con_funciones_extraidas": 118,
-    "sin_funciones_extraidas": 30
+    "con_funciones_extraidas": 123,
+    "sin_funciones_extraidas": 26
   },
   "comparacion_por_funcion_disponible": true,
   "funciones_extraidas_ausentes": [
@@ -1189,160 +1188,6 @@
       "nombre": "Un Poco de Ruido Rosario",
       "url": "",
       "fecha": "2026-10-31",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Ciro y Los Persas Rosario",
-      "url": "",
-      "fecha": "2026-11-06",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Axel Rosario",
-      "url": "",
-      "fecha": "2026-11-06",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Elena Roger Rosario",
-      "url": "",
-      "fecha": "2026-11-06",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Ciro y Los Persas Rosario",
-      "url": "",
-      "fecha": "2026-11-07",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Ronnie Wood Rosario",
-      "url": "",
-      "fecha": "2026-11-08",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Diego Torres Rosario",
-      "url": "",
-      "fecha": "2026-11-12",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Dyango Rosario",
-      "url": "",
-      "fecha": "2026-11-15",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Gabriel Rolon Rosario",
-      "url": "",
-      "fecha": "2026-11-20",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Baglietto Y Vitale Rosario",
-      "url": "",
-      "fecha": "2026-11-21",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Coti Rosario",
-      "url": "",
-      "fecha": "2026-11-21",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Hairspray Rosario",
-      "url": "",
-      "fecha": "2026-11-26",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Hairspray Rosario",
-      "url": "",
-      "fecha": "2026-11-27",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Hairspray Rosario",
-      "url": "",
-      "fecha": "2026-11-28",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Dario Sztajnszrajber Rosario",
-      "url": "",
-      "fecha": "2026-11-28",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Abel Pintos Rosario",
-      "url": "",
-      "fecha": "2026-11-28",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Hairspray Rosario",
-      "url": "",
-      "fecha": "2026-11-29",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Tan Bionica Rosario",
-      "url": "",
-      "fecha": "2026-12-05",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Seru Giran Rosario",
-      "url": "",
-      "fecha": "2026-12-07",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Maria Becerra Rosario",
-      "url": "",
-      "fecha": "2026-12-12",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Ha Ash Rosario",
-      "url": "",
-      "fecha": "2027-03-12",
-      "motivo": "Ya publicado con respaldo prioritario"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Las Gratitudes Rosario",
-      "url": "",
-      "fecha": "2027-04-17",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "nombre": "Luis Fonsi Rosario",
-      "url": "",
-      "fecha": "2027-04-19",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
@@ -1773,7 +1618,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-10-29T10:32:50.039949-03:00",
+  "resolucion_revision": "2026-10-29T17:07:41.593460-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
@@ -1862,16 +1707,10 @@
     },
     {
       "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-ha-ash-rosario/e/17863",
-      "estado": "corroborado",
-      "motivo": "Ya publicado con respaldo prioritario",
-      "funciones": 1
-    },
-    {
-      "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-las-gratitudes-rosario/e/18080",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "funciones": 0
     },
     {
       "fuente": "EntradaFan",
@@ -2026,6 +1865,12 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-ha-ash-rosario/e/17863",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },

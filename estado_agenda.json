@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "generado": "2026-10-29T10:34:25-03:00",
-  "ejecucion_id": "40878531671-1",
-  "inicio": "2026-10-29T10:04:02-03:00",
+  "generado": "2026-10-29T17:09:28-03:00",
+  "ejecucion_id": "40942020022-1",
+  "inicio": "2026-10-29T16:39:25-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-29 10:04",
-  "ultima_consulta_fuentes": "2026-10-29T10:33:43.954189-03:00",
+  "datos_actualizados": "2026-10-29 16:39",
+  "ultima_consulta_fuentes": "2026-10-29T17:08:45.576820-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1226,
-    "funciones_unicas": 1226,
-    "nuevos": 5,
-    "ausentes": 0,
-    "duplicados": 4,
-    "conservados": 45,
-    "fuentes": 97
+    "eventos": 1272,
+    "funciones_unicas": 1272,
+    "nuevos": 49,
+    "ausentes": 3,
+    "duplicados": 5,
+    "conservados": 50,
+    "fuentes": 96
   },
   "alertas": [
     {
@@ -34,12 +34,12 @@
   "fuentes": [
     {
       "nombre": "Agenda Cultural Rosario",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
-      "eventos": 303,
-      "antes": 300,
-      "conservados": 23,
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 330,
+      "antes": 303,
+      "conservados": 25,
       "caida": false
     },
     {
@@ -254,10 +254,10 @@
     },
     {
       "nombre": "El Aserradero — oficial",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
-      "eventos": 9,
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 10,
       "antes": 9,
       "conservados": 0,
       "caida": false
@@ -267,7 +267,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 51,
+      "eventos": 62,
       "antes": 51,
       "conservados": 0,
       "caida": false
@@ -307,7 +307,7 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 14,
+      "eventos": 15,
       "antes": 14,
       "conservados": 0,
       "caida": false
@@ -547,9 +547,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 655,
-      "antes": 653,
-      "conservados": 21,
+      "eventos": 661,
+      "antes": 655,
+      "conservados": 24,
       "caida": false
     },
     {
@@ -567,16 +567,6 @@
       "estado": "sin_novedades",
       "motivo": "No se encontraron actividades nuevas verificables.",
       "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo Internacional para la Democracia",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -614,9 +604,9 @@
     },
     {
       "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1043,7 +1033,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-29T10:34:22-03:00",
+    "fecha": "2026-10-29T17:09:22-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1056,45 +1046,312 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40878531671",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40942020022",
   "cambios": {
     "nuevos": [
       {
         "fecha": "2026-10-30",
-        "hora": "20:00",
-        "nombre": "Cada vez otra vez",
-        "lugar": "Escuela Municipal de Artes Urbanas de Rosario - EMAU",
-        "origen": "Agenda Cultural Rosario"
+        "hora": "18:00",
+        "nombre": "Muestra Escaparate de Colecciones",
+        "lugar": "Dorrego 2189, esq. Riobamba",
+        "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-10-30",
-        "hora": "20:00",
-        "nombre": "Un cielo de seis cuerdas",
-        "lugar": "Centro Cultural La Casa del Tango, Illia 1750, Rosario",
-        "origen": "Agenda Cultural Rosario"
+        "hora": "18:00",
+        "nombre": "Muestra La Ruta de los Azulejos",
+        "lugar": "Museo de la Ciudad Wladimir Mikielievich",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "19:00",
+        "nombre": "Guías por un día en la Noche de Museos Abiertos",
+        "lugar": "Museo de la Ciudad Wladimir Mikielievich",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "19:00",
+        "nombre": "Noche de Museos Abiertos en el Museo de la Memoria",
+        "lugar": "Museo de la Memoria",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "20:30",
+        "nombre": "DJ set con Andrea Giammaría",
+        "lugar": "Museo de la Ciudad Wladimir Mikielievich",
+        "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-10-30",
         "hora": "21:00",
+        "nombre": "RosariGarcía: inauguración de la muestra",
+        "lugar": "Galpón 11",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-10-31",
+        "hora": "18:00",
+        "nombre": "Volver a Sonar: Galpogasinos, Los Inoxidables y Vinilo",
+        "lugar": "Galpón 11",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-01",
+        "hora": "18:00",
+        "nombre": "Romeo y Ofelia: nuevas funciones en El Cairo",
+        "lugar": "El Cairo Cine Público",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-01",
+        "hora": "20:00",
+        "nombre": "Con-vivencias: cuerpos en escena",
+        "lugar": "La Orilla Infinita",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-06",
+        "hora": "20:00",
+        "nombre": "Alucarda",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-07",
+        "hora": "20:00",
+        "nombre": "Día de la Animación Argentina: selección de cortos",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-07",
+        "hora": "21:00",
+        "nombre": "La sombra de la botella",
+        "lugar": "Mateo Booz",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-08",
+        "hora": "18:00",
+        "nombre": "ÁFRICA MÍA",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-08",
+        "hora": "20:00",
+        "nombre": "Casa Discepolín. Érase una vez una comuna teatral",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-12",
+        "hora": "20:00",
+        "nombre": "Hiroshima mon amour: cine y conversación",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-13",
+        "hora": "18:00",
+        "nombre": "Función de Veneno",
+        "lugar": "Cultural Fontanarrosa",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-15",
+        "hora": "18:00",
+        "nombre": "LOS AMANTES DEL CÍRCULO POLAR",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-15",
+        "hora": "20:00",
+        "nombre": "En las venas",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "18:00",
+        "nombre": "FESTIVAL UNDER: ANTIFRAGILITY + CADÁVER XQUISITO + EL COLOQUIO DE LOS PÁJARO",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "20:30",
+        "nombre": "FESTIVAL UNDER: FAVELA AMARELA + ERIC, EL NACIMIENTO DE UNA ESTRELLA",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "22:30",
+        "nombre": "FESTIVAL UNDER: JUBILADXS LE ENSEÑAN + NORMA TAMBIÉN",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-22",
+        "hora": "18:00",
+        "nombre": "DESTINO FINAL",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-22",
+        "hora": "20:00",
+        "nombre": "Amor trava",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-29",
+        "hora": "18:00",
+        "nombre": "EL PACIENTE INGLÉS",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-29",
+        "hora": "20:00",
+        "nombre": "Desentierros. Los libros que no heredamos",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-29",
+        "hora": "21:00",
+        "nombre": "Festival Fontanarrosa, segunda edición",
+        "lugar": "Centro Cultural Roberto Fontanarrosa",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-12-05",
+        "hora": "20:00",
+        "nombre": "O'Connor & DarloTodo en Rosario",
+        "lugar": "Centro Cultural Güemes",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-12-06",
+        "hora": "18:00",
+        "nombre": "TOP GUN",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-13",
+        "hora": "18:00",
+        "nombre": "¿Y DÓNDE ESTÁ EL PILOTO?",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-20",
+        "hora": "18:00",
+        "nombre": "TERROR A BORDO",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-12-27",
+        "hora": "18:00",
+        "nombre": "CASABLANCA",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "17:00",
+        "nombre": "EN COMÚN: reconstruir la democracia desde la ciudad",
+        "lugar": "Centro Cultural Parque de España (CCPE)",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-01",
+        "hora": "17:00",
         "nombre": "Inaugura RosariGarcía en el Galpón 11",
         "lugar": "Galpón 11",
         "origen": "Municipalidad de Rosario"
       },
       {
-        "fecha": "2026-11-01",
+        "fecha": "2026-11-13",
         "hora": "20:00",
-        "nombre": "Romeo & Ofelia en Cine Lumière",
+        "nombre": "Veneno para las hadas",
         "lugar": "Centro Cultural Cine Lumière",
-        "origen": "Municipalidad de Rosario"
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-20",
+        "hora": "20:00",
+        "nombre": "Carafea",
+        "lugar": "La Sala de las Artes",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-20",
+        "hora": "20:00",
+        "nombre": "Mujer Cebra",
+        "lugar": "Centro Cultural Güemes",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-20",
+        "hora": "20:00",
+        "nombre": "Satánico pandemonium",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-10-29",
+        "hora": "21:00",
+        "nombre": "HABLANDO A TU CORAZON - homenaje a Charly García",
+        "lugar": "El Aserradero",
+        "origen": "El Aserradero — oficial"
       },
       {
         "fecha": "2026-10-30",
-        "hora": "19:30",
-        "nombre": "Noche de Museos Abiertos en Plataforma Lavardén",
-        "lugar": "Plataforma Lavardén",
+        "hora": "22:00",
+        "nombre": "DISCIP",
+        "lugar": "Metropolitano",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-10-31",
+        "hora": "17:00",
+        "nombre": "EN COMÚN: reconstruir la democracia desde la ciudad",
+        "lugar": "Centro Cultural Parque de España (CCPE)",
         "origen": "Agenda Cultural Rosario"
       }
     ],
-    "ausentes": []
+    "ausentes": [
+      {
+        "fecha": "2026-11-13",
+        "hora": "19:00",
+        "nombre": "Función de Veneno",
+        "lugar": "Cultural Fontanarrosa",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-29",
+        "hora": "10:00",
+        "nombre": "La Realidad oculta",
+        "lugar": "Galería de Arte La Tertulia",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-10-29",
+        "hora": "10:00",
+        "nombre": "Poesía enmarcada",
+        "lugar": "Galería de Arte La Tertulia",
+        "origen": "Agenda Cultural Rosario"
+      }
+    ]
   }
 }

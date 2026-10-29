@@ -2,31 +2,28 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-10-29 10:04. Corte: 2026-10-29.
-Eventos futuros: 1226. Revisión municipal: 2026-10-29T10:04:05.042432-03:00.
+Datos de la agenda: 2026-10-29 16:39. Corte: 2026-10-29.
+Eventos futuros: 1272. Revisión municipal: 2026-10-29T16:39:28.595160-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
 |---|---:|
-| con_funciones_extraidas | 118 |
-| sin_funciones_extraidas | 30 |
+| con_funciones_extraidas | 123 |
+| sin_funciones_extraidas | 26 |
 
 Funciones extraídas ausentes de la agenda: 1.
 
 ## Consultas fallidas y fichas sin funciones
 
+- https://www.rosario.gob.ar/inicio/hay-pique-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/nueva-plaza-de-bolsillo-en-barrio-san-martin — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/peluqueria-estilo-sagasti-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-aprende-manejar-tu-celular — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/cero341-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/checker-tobi-y-el-viaje-los-rios-voladores-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
 - https://www.rosario.gob.ar/inicio/concierto-de-juan-falu-y-mariano-loiacono-en-rosario — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/el-mago-nt-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/especial-todo-tango — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/la-bodeguita-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/la-novia-del-diablo-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/maywa-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/maywa-kids-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/mosto-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/muestra-el-paisaje-en-filigrana-de-papel — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/muestras-en-la-tertulia — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/noche-de-galerias-abiertas — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos — Bloque sin sede verificable
@@ -36,7 +33,6 @@ Funciones extraídas ausentes de la agenda: 1.
 - https://www.rosario.gob.ar/inicio/presentaciones-de-libros-en-la-biblioteca-argentina — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/semana-del-arte-2026.-nombres-y-lugares — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/seminario-anatomia-vivencial-y-contact-improvisacion — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/suenolandia-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/taller-de-folclore-para-adultos — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
@@ -63,8 +59,7 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17614 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-festival-bandera-rosario/e/17212 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-gabriel-rolon-rosario/e/17779 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
-- https://www.entradafan.com.ar/entradas-ha-ash-rosario/e/17863 — corroborado: Ya publicado con respaldo prioritario
-- https://www.entradafan.com.ar/entradas-las-gratitudes-rosario/e/18080 — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-las-gratitudes-rosario/e/18080 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-maria-becerra-rosario/e/17726 — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-un-poco-de-ruido-rosario/e/17585 — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-benjamin-amadeo-rosario/e/16747 — diferido: Turno de revisión rotativa en otra ejecución
@@ -91,6 +86,7 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.entradafan.com.ar/entradas-baglietto-y-vitale-rosario/e/18127 — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17859 — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129 — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-ha-ash-rosario/e/17863 — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/YMA7QATFZHJ4/tc-2026-rosario-gran-premio — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/ZMKXRYEWZ4MJ/rocio-quiroz-la-vanidosa-decada-disco — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/MTNMJTHF5EXT/el-bingo-musical-de-veto-y-fer — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
