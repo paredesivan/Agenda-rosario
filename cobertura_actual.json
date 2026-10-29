@@ -1,20 +1,19 @@
 {
-  "datos_actualizados": "2026-10-28 19:36",
-  "fecha_corte": "2026-10-28",
-  "eventos_futuros_publicados": 1258,
+  "datos_actualizados": "2026-10-29 02:50",
+  "fecha_corte": "2026-10-29",
+  "eventos_futuros_publicados": 1221,
   "por_fuente": {
-    "Biblioteca Argentina Dr. Juan Álvarez": 6,
-    "Plataforma Lavardén": 10,
-    "Municipalidad de Rosario": 676,
-    "Biblioteca Vigil": 2,
-    "Agenda Cultural Rosario": 308,
+    "Plataforma Lavardén": 8,
     "Centro Cultural Parque de España": 6,
+    "Agenda Cultural Rosario": 300,
     "El Cairo Cine Público": 51,
     "La Orilla Infinita": 3,
     "Distrito Siete": 9,
     "Passline — Complejo Forest": 4,
+    "Municipalidad de Rosario": 653,
     "Centro Cultural Madres de Plaza 25 de Mayo": 1,
     "ECU Espacio Cultural Universitario": 1,
+    "Biblioteca Vigil": 1,
     "Teatro del Rayo": 1,
     "Metropolitano": 4,
     "El Aserradero — oficial": 9,
@@ -26,6 +25,7 @@
     "Rosario3": 1,
     "Rosario en Cartel": 12,
     "Passline — Club Mercury": 1,
+    "Biblioteca Argentina Dr. Juan Álvarez": 3,
     "Teatro Astengo": 11,
     "RefiTicket": 5,
     "Passline — Playa de la musica": 1,
@@ -34,9 +34,72 @@
     "Passline — QUE SEA ROCK": 2,
     "Grupo Gamma — Charlas a la comunidad": 2
   },
-  "revision_municipal": "2026-10-28T19:36:56.382570-03:00",
+  "revision_municipal": "2026-10-29T02:50:43.746304-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [
+    {
+      "url": "https://www.rosario.gob.ar/inicio/cero341-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/el-mago-nt-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/la-bodeguita-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/maywa-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/maywa-kids-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/mosto-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/suenolandia-descuento-club-de-los-grandes",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
     {
       "url": "https://www.rosario.gob.ar/inicio/260deg-pelicula-del-cineclu-el-cartero",
       "estado": "con_funciones_extraidas",
@@ -47,7 +110,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/50-veinticuatros.-sentidos-y-recorridos-de-las-marchas-por-memoria-verdad-y-justicia",
       "estado": "con_funciones_extraidas",
-      "funciones": 96,
+      "funciones": 95,
       "motivos": [],
       "error": ""
     },
@@ -251,8 +314,10 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/congreso-disur-en-el-cec",
       "estado": "con_funciones_extraidas",
-      "funciones": 5,
-      "motivos": [],
+      "funciones": 4,
+      "motivos": [
+        "Sin fechas/horarios interpretables dentro del horizonte"
+      ],
       "error": ""
     },
     {
@@ -263,28 +328,10 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/coreseteria-victoriana-beskope",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin fechas/horarios interpretables dentro del horizonte"
-      ],
-      "error": ""
-    },
-    {
       "url": "https://www.rosario.gob.ar/inicio/coti-en-rosario",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/dia-mundial-de-la-medicina-tradicional-en-el-sudoeste",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
       "error": ""
     },
     {
@@ -302,24 +349,6 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/don-pizza-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/educacion-financiera-para-jovenes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
       "url": "https://www.rosario.gob.ar/inicio/el-bingo-musical-de-veto-y-fer-2",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
@@ -330,13 +359,6 @@
       "url": "https://www.rosario.gob.ar/inicio/el-papel-del-fuego-hugo-cava",
       "estado": "con_funciones_extraidas",
       "funciones": 3,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/el-rincon-de-los-cuentos",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
       "motivos": [],
       "error": ""
     },
@@ -485,16 +507,9 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/hojas-de-ciudad-presentacion-del-libro-escrito-por-infancias-de-centros-cuidar",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
       "url": "https://www.rosario.gob.ar/inicio/hysteresis.-anatomia-del-roce",
       "estado": "con_funciones_extraidas",
-      "funciones": 48,
+      "funciones": 47,
       "motivos": [],
       "error": ""
     },
@@ -507,13 +522,6 @@
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/inauguracion-de-la-muestra-el-paisaje-en-filigrana-de-papel",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/j.-s.-bach-cantatas-para-alto-y-concierto-para-tres-violines-y-orquesta",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
@@ -793,13 +801,6 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/obra-de-teatro-argentologia",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
       "url": "https://www.rosario.gob.ar/inicio/octubre-rosa-2026",
       "estado": "sin_funciones_extraidas",
       "funciones": 0,
@@ -829,15 +830,6 @@
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/point-sportwear-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
       "error": ""
     },
     {
@@ -1137,8 +1129,8 @@
     }
   ],
   "estados_municipales": {
-    "con_funciones_extraidas": 120,
-    "sin_funciones_extraidas": 28
+    "sin_funciones_extraidas": 30,
+    "con_funciones_extraidas": 116
   },
   "comparacion_por_funcion_disponible": true,
   "funciones_extraidas_ausentes": [
@@ -1157,7 +1149,7 @@
       "nombre": "",
       "url": "",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
     },
     {
       "fuente": "Rosario Times",
@@ -1192,7 +1184,7 @@
       "nombre": "Ciro y Los Persas Rosario",
       "url": "",
       "fecha": "2026-11-06",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
     },
     {
       "fuente": "EntradaFan",
@@ -1248,7 +1240,7 @@
       "nombre": "Baglietto Y Vitale Rosario",
       "url": "",
       "fecha": "2026-11-21",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
     },
     {
       "fuente": "EntradaFan",
@@ -1283,7 +1275,7 @@
       "nombre": "Dario Sztajnszrajber Rosario",
       "url": "",
       "fecha": "2026-11-28",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
     },
     {
       "fuente": "EntradaFan",
@@ -1528,7 +1520,7 @@
       "nombre": "",
       "url": "https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/"
     },
     {
       "fuente": "Planaxia",
@@ -1549,7 +1541,7 @@
       "nombre": "",
       "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-peretti-y-delia-damas-gratis-bandana-y-festival-faer/",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "503 Server Error: Service Unavailable for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-peretti-y-delia-damas-gratis-bandana-y-festival-faer/"
     },
     {
       "fuente": "Planaxia",
@@ -1563,14 +1555,14 @@
       "nombre": "",
       "url": "https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/"
     },
     {
       "fuente": "Planaxia",
       "nombre": "",
       "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-hot-since-82-claptone-santiago-motorizado-y-la-obra-las-hijas/",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-hot-since-82-claptone-santiago-motorizado-y-la-obra-las-hijas/"
     },
     {
       "fuente": "Planaxia",
@@ -1578,6 +1570,90 @@
       "url": "https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-16-de-septiembre/",
       "fecha": "",
       "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "Fundación FAER",
+      "nombre": "",
+      "url": "https://faer.ar/festival",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Fundación FAER",
+      "nombre": "",
+      "url": "https://faer.ar/programacion2026/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Fundación FAER",
+      "nombre": "",
+      "url": "https://faer.ar/talleres-y-seminarios-2026/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Fundación FAER",
+      "nombre": "",
+      "url": "https://faer.ar/puente-mercado-de-artes-escenicas/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "UNR — Actividades abiertas",
+      "nombre": "",
+      "url": "https://unr.edu.ar/agenda/caramba-inventario-incompleto-de-max-cachimba/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "UNR — Actividades abiertas",
+      "nombre": "",
+      "url": "https://unr.edu.ar/agenda/especializacion-en-costos-y-gestion-empresarial/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "UNR — Actividades abiertas",
+      "nombre": "",
+      "url": "https://unr.edu.ar/agenda/concierto-audicion-academica-matinal-en-el-ecu-6/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "UNR — Actividades abiertas",
+      "nombre": "",
+      "url": "https://unr.edu.ar/agenda/concierto-musica-de-compositores-rosarinos/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Humanidades y Artes UNR — Agenda",
+      "nombre": "",
+      "url": "https://fhumyar.unr.edu.ar/agenda/convocatoria-abierta-revista-la-creciente/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Humanidades y Artes UNR — Agenda",
+      "nombre": "",
+      "url": "https://fhumyar.unr.edu.ar/agenda/hya-en-la-noche-de-los-museos/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Humanidades y Artes UNR — Agenda",
+      "nombre": "",
+      "url": "https://fhumyar.unr.edu.ar/agenda/11o-congreso-latinoamericano-disur/",
+      "fecha": "",
+      "motivo": ""
+    },
+    {
+      "fuente": "Humanidades y Artes UNR — Agenda",
+      "nombre": "",
+      "url": "https://fhumyar.unr.edu.ar/agenda/ii-jornadas-decir-amor/",
+      "fecha": "",
+      "motivo": ""
     },
     {
       "fuente": "Instituto Politécnico — Novedades",
@@ -1769,34 +1845,34 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-10-28T20:03:38.866757-03:00",
+  "resolucion_revision": "2026-10-29T03:17:05.071490-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/avanza-la-renovacion-de-la-rambla-catalunya-en-la-costa-norte-de-rosario/",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
@@ -1838,29 +1914,29 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-baglietto-y-vitale-rosario/e/18127",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17859",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17613",
       "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "motivo": "redirección pendiente de auditoría",
       "funciones": 0
     },
     {
@@ -2028,29 +2104,29 @@
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/HYB8X8P7B5R8/fiesta-elite",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/NNBPTN2D7YW7/mercury-sabado-24-de-octubre",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/QSYHB6SKAHBZ/los-nocheros",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/VJ2PBP4K5CQY/mati-rj",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
@@ -2369,28 +2445,28 @@
       "fuente": "Planaxia",
       "url": "https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/",
       "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/",
       "funciones": 0
     },
     {
       "fuente": "Planaxia",
       "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-hot-since-82-claptone-santiago-motorizado-y-la-obra-las-hijas/",
       "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-hot-since-82-claptone-santiago-motorizado-y-la-obra-las-hijas/",
       "funciones": 0
     },
     {
       "fuente": "Planaxia",
       "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-peretti-y-delia-damas-gratis-bandana-y-festival-faer/",
       "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "motivo": "503 Server Error: Service Unavailable for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-peretti-y-delia-damas-gratis-bandana-y-festival-faer/",
       "funciones": 0
     },
     {
       "fuente": "Planaxia",
       "url": "https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/",
       "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/",
       "funciones": 0
     },
     {

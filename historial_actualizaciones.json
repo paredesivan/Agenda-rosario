@@ -1,5 +1,21 @@
 [
   {
+    "generado": "2026-10-29T03:19:56-03:00",
+    "ejecucion_id": "40825697334-1",
+    "modo": "actualizar",
+    "estado": "atencion",
+    "resumen": {
+      "eventos": 1221,
+      "funciones_unicas": 1221,
+      "nuevos": 1,
+      "ausentes": 0,
+      "duplicados": 2,
+      "conservados": 38,
+      "fuentes": 97
+    },
+    "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40825697334"
+  },
+  {
     "generado": "2026-10-28T20:05:14-03:00",
     "ejecucion_id": "40781292625-1",
     "modo": "actualizar",
