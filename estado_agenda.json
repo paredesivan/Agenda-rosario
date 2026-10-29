@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-10-29T03:19:56-03:00",
-  "ejecucion_id": "40825697334-1",
-  "inicio": "2026-10-29T02:50:40-03:00",
+  "generado": "2026-10-29T10:34:25-03:00",
+  "ejecucion_id": "40878531671-1",
+  "inicio": "2026-10-29T10:04:02-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-29 02:50",
-  "ultima_consulta_fuentes": "2026-10-29T03:19:25.745224-03:00",
+  "datos_actualizados": "2026-10-29 10:04",
+  "ultima_consulta_fuentes": "2026-10-29T10:33:43.954189-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1221,
-    "funciones_unicas": 1221,
-    "nuevos": 1,
+    "eventos": 1226,
+    "funciones_unicas": 1226,
+    "nuevos": 5,
     "ausentes": 0,
-    "duplicados": 2,
-    "conservados": 38,
+    "duplicados": 4,
+    "conservados": 45,
     "fuentes": 97
   },
   "alertas": [
@@ -37,9 +37,9 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 300,
+      "eventos": 303,
       "antes": 300,
-      "conservados": 19,
+      "conservados": 23,
       "caida": false
     },
     {
@@ -374,9 +374,9 @@
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -388,7 +388,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 2,
-      "antes": 1,
+      "antes": 2,
       "conservados": 0,
       "caida": false
     },
@@ -404,9 +404,9 @@
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -547,9 +547,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 653,
+      "eventos": 655,
       "antes": 653,
-      "conservados": 19,
+      "conservados": 21,
       "caida": false
     },
     {
@@ -834,9 +834,9 @@
     },
     {
       "nombre": "Rosario en Cartel",
-      "estado": "atencion",
-      "motivo": "No se pudo completar la lectura.",
-      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 12,
       "antes": 12,
       "conservados": 0,
@@ -929,7 +929,7 @@
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 8,
       "antes": 8,
-      "conservados": 0,
+      "conservados": 1,
       "caida": false
     },
     {
@@ -994,9 +994,9 @@
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1043,7 +1043,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-29T03:19:55-03:00",
+    "fecha": "2026-10-29T10:34:22-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1056,15 +1056,43 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40825697334",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40878531671",
   "cambios": {
     "nuevos": [
       {
-        "fecha": "2026-11-13",
-        "hora": "15:00",
-        "nombre": "Donación Voluntaria de Sangre: Celebramos el Día Nacional del Donante",
-        "lugar": "2do. Piso Auditorio HPR",
-        "origen": "Grupo Gamma — Charlas a la comunidad"
+        "fecha": "2026-10-30",
+        "hora": "20:00",
+        "nombre": "Cada vez otra vez",
+        "lugar": "Escuela Municipal de Artes Urbanas de Rosario - EMAU",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "20:00",
+        "nombre": "Un cielo de seis cuerdas",
+        "lugar": "Centro Cultural La Casa del Tango, Illia 1750, Rosario",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "21:00",
+        "nombre": "Inaugura RosariGarcía en el Galpón 11",
+        "lugar": "Galpón 11",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-01",
+        "hora": "20:00",
+        "nombre": "Romeo & Ofelia en Cine Lumière",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-30",
+        "hora": "19:30",
+        "nombre": "Noche de Museos Abiertos en Plataforma Lavardén",
+        "lugar": "Plataforma Lavardén",
+        "origen": "Agenda Cultural Rosario"
       }
     ],
     "ausentes": []
