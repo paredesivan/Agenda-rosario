@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-10-29T21:27:02-03:00",
-  "ejecucion_id": "40976531590-1",
-  "inicio": "2026-10-29T20:57:25-03:00",
+  "generado": "2026-10-30T03:24:43-03:00",
+  "ejecucion_id": "41010736338-1",
+  "inicio": "2026-10-30T02:51:34-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-29 20:57",
-  "ultima_consulta_fuentes": "2026-10-29T21:26:20.699238-03:00",
+  "datos_actualizados": "2026-10-30 02:51",
+  "ultima_consulta_fuentes": "2026-10-30T03:24:10.037426-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1275,
-    "funciones_unicas": 1275,
-    "nuevos": 3,
+    "eventos": 1198,
+    "funciones_unicas": 1198,
+    "nuevos": 1,
     "ausentes": 0,
     "duplicados": 4,
-    "conservados": 80,
+    "conservados": 43,
     "fuentes": 96
   },
   "alertas": [
@@ -37,9 +37,9 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 330,
-      "antes": 330,
-      "conservados": 39,
+      "eventos": 313,
+      "antes": 313,
+      "conservados": 23,
       "caida": false
     },
     {
@@ -137,8 +137,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 6,
-      "antes": 6,
+      "eventos": 5,
+      "antes": 5,
       "conservados": 0,
       "caida": false
     },
@@ -227,9 +227,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 9,
-      "antes": 9,
-      "conservados": 1,
+      "eventos": 8,
+      "antes": 8,
+      "conservados": 0,
       "caida": false
     },
     {
@@ -257,8 +257,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 10,
-      "antes": 10,
+      "eventos": 9,
+      "antes": 8,
       "conservados": 0,
       "caida": false
     },
@@ -267,8 +267,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 62,
-      "antes": 62,
+      "eventos": 59,
+      "antes": 59,
       "conservados": 0,
       "caida": false
     },
@@ -374,9 +374,9 @@
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "pendiente",
-      "motivo": "La fuente no tiene un resultado concluyente.",
-      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -404,9 +404,9 @@
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -477,8 +477,8 @@
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 3,
-      "antes": 3,
+      "eventos": 2,
+      "antes": 2,
       "conservados": 0,
       "caida": false
     },
@@ -527,8 +527,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 66,
-      "antes": 66,
+      "eventos": 48,
+      "antes": 48,
       "conservados": 0,
       "caida": false
     },
@@ -547,9 +547,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 664,
-      "antes": 661,
-      "conservados": 39,
+      "eventos": 632,
+      "antes": 632,
+      "conservados": 19,
       "caida": false
     },
     {
@@ -707,8 +707,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 12,
-      "antes": 12,
+      "eventos": 11,
+      "antes": 11,
       "conservados": 0,
       "caida": false
     },
@@ -727,8 +727,8 @@
       "estado": "pendiente",
       "motivo": "Falta una revisión de acceso o de condiciones.",
       "accion": "Revisar la fuente antes de habilitarla.",
-      "eventos": 4,
-      "antes": 4,
+      "eventos": 3,
+      "antes": 3,
       "conservados": 0,
       "caida": false
     },
@@ -787,8 +787,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 8,
-      "antes": 8,
+      "eventos": 7,
+      "antes": 7,
       "conservados": 0,
       "caida": false
     },
@@ -984,9 +984,9 @@
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1033,7 +1033,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-29T21:26:56-03:00",
+    "fecha": "2026-10-30T03:24:41-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1046,29 +1046,15 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/40976531590",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41010736338",
   "cambios": {
     "nuevos": [
       {
-        "fecha": "2026-10-29",
-        "hora": "17:00",
-        "nombre": "Pre Congreso sobre la Democracia Rosario En Común. Día 1",
-        "lugar": "Centro Cultural Parque de España / AECI",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "16:00",
-        "nombre": "Café Literario",
-        "lugar": "Facultad de Humanidades y Artes",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-10-29",
-        "hora": "19:30",
-        "nombre": "Desfile anual “Mis 15”: la Escuela de Diseño y Producción Textil celebra sus 15 años",
-        "lugar": "El Rosedal (Bulevar Nicasio Oroño 2149)",
-        "origen": "Municipalidad de Rosario"
+        "fecha": "2026-11-02",
+        "hora": "21:00",
+        "nombre": "Peña Lunera",
+        "lugar": "El Aserradero",
+        "origen": "El Aserradero — oficial"
       }
     ],
     "ausentes": []
