@@ -1,16 +1,16 @@
 {
-  "datos_actualizados": "2026-10-29 16:39",
+  "datos_actualizados": "2026-10-29 20:57",
   "fecha_corte": "2026-10-29",
-  "eventos_futuros_publicados": 1272,
+  "eventos_futuros_publicados": 1275,
   "por_fuente": {
     "Plataforma Lavardén": 8,
     "Centro Cultural Parque de España": 6,
+    "Municipalidad de Rosario": 664,
     "Agenda Cultural Rosario": 330,
     "El Cairo Cine Público": 62,
     "La Orilla Infinita": 3,
     "Distrito Siete": 9,
     "Passline — Complejo Forest": 4,
-    "Municipalidad de Rosario": 661,
     "Centro Cultural Madres de Plaza 25 de Mayo": 1,
     "ECU Espacio Cultural Universitario": 1,
     "Biblioteca Vigil": 1,
@@ -34,78 +34,28 @@
     "Passline — QUE SEA ROCK": 2,
     "Grupo Gamma — Charlas a la comunidad": 2
   },
-  "revision_municipal": "2026-10-29T16:39:28.595160-03:00",
+  "revision_municipal": "2026-10-29T20:57:27.896721-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [
     {
-      "url": "https://www.rosario.gob.ar/inicio/dj-set-con-andrea-giammaria",
+      "url": "https://www.rosario.gob.ar/inicio/cafe-literario-0",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/guias-por-un-dia-en-la-noche-de-museos-abiertos",
+      "url": "https://www.rosario.gob.ar/inicio/desfile-anual-mis-15-la-escuela-de-diseno-y-produccion-textil-celebra-sus-15-anos",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/hay-pique-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/muestra-escaparate-de-colecciones",
+      "url": "https://www.rosario.gob.ar/inicio/pre-congreso-sobre-la-democracia-rosario-en-comun.-dia-1",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/muestra-la-ruta-de-los-azulejos",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos-en-el-museo-de-la-memoria-1",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/nueva-plaza-de-bolsillo-en-barrio-san-martin",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/peluqueria-estilo-sagasti-descuento-club-de-los-grandes",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/taller-aprende-manejar-tu-celular",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
       "error": ""
     },
     {
@@ -146,7 +96,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/anatomia-del-fervor.-collages-1998.-carlos-herrera",
       "estado": "con_funciones_extraidas",
-      "funciones": 4,
+      "funciones": 3,
       "motivos": [],
       "error": ""
     },
@@ -234,7 +184,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/casa-abierta-en-casa-de-cultura-barrio-alvear",
       "estado": "con_funciones_extraidas",
-      "funciones": 10,
+      "funciones": 9,
       "motivos": [],
       "error": ""
     },
@@ -348,6 +298,13 @@
       "error": ""
     },
     {
+      "url": "https://www.rosario.gob.ar/inicio/dj-set-con-andrea-giammaria",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
       "url": "https://www.rosario.gob.ar/inicio/doble-inauguracion-en-teras.-duos-de-artistas",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
@@ -364,7 +321,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/el-papel-del-fuego-hugo-cava",
       "estado": "con_funciones_extraidas",
-      "funciones": 3,
+      "funciones": 2,
       "motivos": [],
       "error": ""
     },
@@ -385,7 +342,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/episodio-ii-19762026-que-digan-donde-estan",
       "estado": "con_funciones_extraidas",
-      "funciones": 4,
+      "funciones": 3,
       "motivos": [],
       "error": ""
     },
@@ -422,7 +379,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/favor-de-la-fantasia-en-contra-de-la-inflacion",
       "estado": "con_funciones_extraidas",
-      "funciones": 3,
+      "funciones": 2,
       "motivos": [
         "Bloque sin sede verificable"
       ],
@@ -513,9 +470,16 @@
       "error": ""
     },
     {
+      "url": "https://www.rosario.gob.ar/inicio/guias-por-un-dia-en-la-noche-de-museos-abiertos",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
       "url": "https://www.rosario.gob.ar/inicio/hysteresis.-anatomia-del-roce",
       "estado": "con_funciones_extraidas",
-      "funciones": 47,
+      "funciones": 46,
       "motivos": [],
       "error": ""
     },
@@ -557,7 +521,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/la-granja-de-la-infancia-1",
       "estado": "con_funciones_extraidas",
-      "funciones": 23,
+      "funciones": 22,
       "motivos": [],
       "error": ""
     },
@@ -573,7 +537,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad",
       "estado": "con_funciones_extraidas",
-      "funciones": 136,
+      "funciones": 135,
       "motivos": [],
       "error": ""
     },
@@ -594,7 +558,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/lo-que-me-dice-el-rio-mientras-duermo",
       "estado": "con_funciones_extraidas",
-      "funciones": 3,
+      "funciones": 2,
       "motivos": [],
       "error": ""
     },
@@ -643,7 +607,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/muestra-colectiva-pinceladas-magicas",
       "estado": "con_funciones_extraidas",
-      "funciones": 2,
+      "funciones": 1,
       "motivos": [],
       "error": ""
     },
@@ -666,12 +630,26 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/muestra-el-universo-de-las-miradas",
       "estado": "con_funciones_extraidas",
-      "funciones": 2,
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/muestra-escaparate-de-colecciones",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/muestra-la-cancion-del-barrio",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/muestra-la-ruta-de-los-azulejos",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
@@ -687,7 +665,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/muestra-siestario",
       "estado": "con_funciones_extraidas",
-      "funciones": 3,
+      "funciones": 2,
       "motivos": [],
       "error": ""
     },
@@ -717,14 +695,14 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito",
       "estado": "con_funciones_extraidas",
-      "funciones": 4,
+      "funciones": 3,
       "motivos": [],
       "error": ""
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
       "estado": "con_funciones_extraidas",
-      "funciones": 24,
+      "funciones": 23,
       "motivos": [],
       "error": ""
     },
@@ -755,6 +733,13 @@
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos-en-el-macro-1",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos-en-el-museo-de-la-memoria-1",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
@@ -805,11 +790,11 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/octubre-rosa-2026",
+      "url": "https://www.rosario.gob.ar/inicio/nueva-plaza-de-bolsillo-en-barrio-san-martin",
       "estado": "sin_funciones_extraidas",
       "funciones": 0,
       "motivos": [
-        "Bloque sin sede verificable"
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
       ],
       "error": ""
     },
@@ -844,15 +829,6 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/presentaciones-de-libros-en-la-biblioteca-argentina",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Bloque sin sede verificable"
-      ],
-      "error": ""
-    },
-    {
       "url": "https://www.rosario.gob.ar/inicio/primavera-en-el-jardin-de-los-ninos",
       "estado": "con_funciones_extraidas",
       "funciones": 15,
@@ -862,7 +838,7 @@
     {
       "url": "https://www.rosario.gob.ar/inicio/primavera-en-la-granja-de-la-infancia",
       "estado": "con_funciones_extraidas",
-      "funciones": 24,
+      "funciones": 23,
       "motivos": [],
       "error": ""
     },
@@ -896,9 +872,11 @@
     },
     {
       "url": "https://www.rosario.gob.ar/inicio/queres-que-te-cuente-un-cuento-0",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin fechas/horarios interpretables dentro del horizonte"
+      ],
       "error": ""
     },
     {
@@ -959,6 +937,15 @@
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/taller-aprende-manejar-tu-celular",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
       "error": ""
     },
     {
@@ -1140,8 +1127,8 @@
     }
   ],
   "estados_municipales": {
-    "con_funciones_extraidas": 123,
-    "sin_funciones_extraidas": 26
+    "con_funciones_extraidas": 125,
+    "sin_funciones_extraidas": 23
   },
   "comparacion_por_funcion_disponible": true,
   "funciones_extraidas_ausentes": [
@@ -1248,13 +1235,6 @@
     },
     {
       "fuente": "SalePlan",
-      "nombre": "Macbeth",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
       "nombre": "MATIAS ACUÑA - CROWDWORKING - ROSARIO",
       "url": "",
       "fecha": "",
@@ -1354,6 +1334,13 @@
     {
       "fuente": "SalePlan",
       "nombre": "El beso de la mujer araña",
+      "url": "",
+      "fecha": "",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "nombre": "Macbeth",
       "url": "",
       "fecha": "",
       "motivo": "Turno de revisión rotativa en otra ejecución"
@@ -1618,7 +1605,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-10-29T17:07:41.593460-03:00",
+  "resolucion_revision": "2026-10-29T21:25:25.095437-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",

@@ -2,23 +2,19 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-10-29 16:39. Corte: 2026-10-29.
-Eventos futuros: 1272. Revisión municipal: 2026-10-29T16:39:28.595160-03:00.
+Datos de la agenda: 2026-10-29 20:57. Corte: 2026-10-29.
+Eventos futuros: 1275. Revisión municipal: 2026-10-29T20:57:27.896721-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
 |---|---:|
-| con_funciones_extraidas | 123 |
-| sin_funciones_extraidas | 26 |
+| con_funciones_extraidas | 125 |
+| sin_funciones_extraidas | 23 |
 
 Funciones extraídas ausentes de la agenda: 1.
 
 ## Consultas fallidas y fichas sin funciones
 
-- https://www.rosario.gob.ar/inicio/hay-pique-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/nueva-plaza-de-bolsillo-en-barrio-san-martin — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/peluqueria-estilo-sagasti-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/taller-aprende-manejar-tu-celular — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
 - https://www.rosario.gob.ar/inicio/checker-tobi-y-el-viaje-los-rios-voladores-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
 - https://www.rosario.gob.ar/inicio/concierto-de-juan-falu-y-mariano-loiacono-en-rosario — Bloque sin sede verificable
@@ -28,11 +24,12 @@ Funciones extraídas ausentes de la agenda: 1.
 - https://www.rosario.gob.ar/inicio/noche-de-galerias-abiertas — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/noviembre-en-cine-lumiere-2 — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/octubre-rosa-2026 — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/nueva-plaza-de-bolsillo-en-barrio-san-martin — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/pena-folclorica-dia-de-la-independencia — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/presentaciones-de-libros-en-la-biblioteca-argentina — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/queres-que-te-cuente-un-cuento-0 — Sin fechas/horarios interpretables dentro del horizonte
 - https://www.rosario.gob.ar/inicio/semana-del-arte-2026.-nombres-y-lugares — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/seminario-anatomia-vivencial-y-contact-improvisacion — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-aprende-manejar-tu-celular — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/taller-de-folclore-para-adultos — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
