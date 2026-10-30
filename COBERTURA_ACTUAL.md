@@ -2,71 +2,130 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-10-30 02:51. Corte: 2026-10-30.
-Eventos futuros: 1198. Revisión municipal: 2026-10-30T02:51:37.229243-03:00.
+Datos de la agenda: 2026-10-30 09:58. Corte: 2026-10-30.
+Eventos futuros: 1201. Revisión municipal: 2026-10-30T09:58:11.013172-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
 |---|---:|
-| sin_funciones_extraidas | 29 |
-| con_funciones_extraidas | 116 |
+| sin_funciones_extraidas | 11 |
+| con_funciones_extraidas | 56 |
+| consulta_fallida | 78 |
 
 Funciones extraídas ausentes de la agenda: 1.
 
 ## Consultas fallidas y fichas sin funciones
 
-- https://www.rosario.gob.ar/inicio/alquimia-tienda-de-te-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/chipacheese-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/ferreteria-la-misionera-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/guapa-perfumeria-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/hay-pique-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/invasion-chipa-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/octubre-rosa-2026 — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/peluqueria-estilo-sagasti-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/presentaciones-de-libros-en-la-biblioteca-argentina — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/cero341-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/el-mago-nt-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/la-bodeguita-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/maywa-kids-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/mosto-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/suenolandia-descuento-club-de-los-grandes — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
 - https://www.rosario.gob.ar/inicio/checker-tobi-y-el-viaje-los-rios-voladores-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
 - https://www.rosario.gob.ar/inicio/concierto-de-juan-falu-y-mariano-loiacono-en-rosario — Bloque sin sede verificable
 - https://www.rosario.gob.ar/inicio/especial-todo-tango — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/la-novia-del-diablo-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/muestras-en-la-tertulia — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/noche-de-galerias-abiertas — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/noviembre-en-cine-lumiere-2 — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/pena-folclorica-dia-de-la-independencia — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/semana-del-arte-2026.-nombres-y-lugares — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/seminario-anatomia-vivencial-y-contact-improvisacion — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/taller-de-folclore-para-adultos — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/taller-que-nos-dice-la-arcilla — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/talleres-de-teatro-patatus-en-felipa-la-casa-del-fondo — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/transfusiones-artisticas — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/visita-guiada-por-pasaje-de-la-nacion — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy — Sin fechas/horarios interpretables dentro del horizonte
+- https://www.rosario.gob.ar/inicio/la-biblioteca-argentina-en-la-noche-de-museos-abiertos-0 — 403 Client Error: Forbidden for url: https://www.rosario.gob.ar/inicio/la-biblioteca-argentina-en-la-noche-de-museos-abiertos-0
+- https://www.rosario.gob.ar/inicio/la-granja-de-la-infancia-1 — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/la-novia-del-diablo-en-cine-lumiere — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/la-ruta-de-los-azulejos.-historias-artes-y-oficios-en-la-ciudad — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/laboratorio-creativo-de-tango-y-musica — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/lassie.-una-nueva-aventura-en-cine-lumiere-subtitulada — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/lo-que-me-dice-el-rio-mientras-duermo — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/los-musicos-de-volver-sonar-se-suben-al-escenario-del-galpon-11 — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/manu-ansaldi-presenta-la-melodia-eterna — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/memorias-del-exilio-zurcir-voces-hasta-volverlas-familiares — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/mentiras-de-amor — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/milonga-para-el-cholo-5ta.-edicion — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/mis-primeros-pasos — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/muestra-colectiva-pinceladas-magicas — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/muestra-de-fin-de-ano-de-la-escuela-de-danzas — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/muestra-efervescencia-cromatica.-anomalia-de-un-universo-en-expansion — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/muestra-el-universo-de-las-miradas — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/muestra-escaparate-de-colecciones — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/muestra-la-cancion-del-barrio — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/muestra-la-ruta-de-los-azulejos — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/muestra-ndeg-21-voces-nuevas-del-sur — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/muestra-siestario — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/muestras-en-la-tertulia — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/muestratalleres-colegas — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/musica-de-aca-ensamble-municipal-de-vientos — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/narcisa-hirsch-un-viaje-incognito — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/noche-de-galerias-abiertas — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos-en-el-castagnino-2026 — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos-en-el-macro-1 — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/noche-de-museos-abiertos-en-el-museo-de-la-memoria-1 — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/noche-de-museos-en-el-cam-0 — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/noche-de-museos-en-el-cec — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/noche-de-museos-en-el-museo-estevez — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/noviembre-en-cine-lumiere-2 — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/nuestro-trabajo — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/nueva-edicion-del-congreso-nacional-e-internacional-sobre-democracia — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/octubre-rosa-2026 — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/organismos-estables-presentan-mozart-y-otros-compositores — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/pena-folclorica-dia-de-la-independencia — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/polvora-negra-presenta-otono-tardio — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/presentaciones-de-libros-en-la-biblioteca-argentina — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/primavera-en-el-jardin-de-los-ninos — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/primavera-en-la-granja-de-la-infancia — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/primavera-en-la-isla-de-los-inventos — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/producciones-teatrales-de-adultas-y-adultos-mayores — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/proyeccion-cine-el-cairo-el-desentierro-y-solxs — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/quinteto-municipal-de-cuerdas-junto-jorge-variego — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/riviera-live-music-presenta-duo-borrell-pellegrinet — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/romeo-ofelia-en-cine-lumiere — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/rulo-dellatorre-presenta-no-es-tan-asi-en-la-vigil — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/semana-del-arte-2026.-nombres-y-lugares — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/seminario-anatomia-vivencial-y-contact-improvisacion — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/show-artistico-musica-de-aca-en-el-teatro-la-comedia — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/sin-ir-mas-lejos — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/taller-de-folclore-para-adultos — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/taller-que-nos-dice-la-arcilla — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/talleres-de-teatro-patatus-en-felipa-la-casa-del-fondo — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/tango-en-calle — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/teatro-en-espacio-cultural-expresiones-agencia-de-placeres — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/teatro-en-la-escalera-quemarlo-todo — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/teatro-en-la-orilla-infinita-navidad-made-argentina — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/teatro-en-la-vigil-el-espejo-de-la-memoria — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/terror-en-vhs-en-cine-lumiere-8 — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/tertulias-tangueras-1 — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/transfusiones-artisticas — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/un-cielo-de-seis-cuerdas — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/un-poco-de-ruido-en-rosario — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/una-casa-y-tres-protagonistas-noche-de-museos-abiertos-en-casa-vanzo-wernicke — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/vanesa-strauch-y-chama-carra-en-rosario — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/victor-heredia-presenta-desde-paso-del-rey-en-la-comedia — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/visita-guiada-por-pasaje-de-la-nacion — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/visita-la-escultura-de-roberto-rosas-con-la-participacion-de-guias-por-un-dia — Fuente en pausa por HTTP 403/429
+- https://www.rosario.gob.ar/inicio/visitas-guiadas-biblioteca-estrada — Fuente en pausa por HTTP 403/429
 
 ## Candidatos y resolución
 
 Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva el motivo por ficha.
 
-- https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/avanza-la-renovacion-de-la-rambla-catalunya-en-la-costa-norte-de-rosario/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17614 — descartado: Todas las funciones detectadas están vencidas
+- https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-festival-bandera-rosario/e/17212 — descartado: Todas las funciones detectadas están vencidas
-- https://www.entradafan.com.ar/entradas-gabriel-rolon-rosario/e/17779 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-las-gratitudes-rosario/e/18080 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-maria-becerra-rosario/e/17726 — diferido: Turno de revisión rotativa en otra ejecución
-- https://www.entradafan.com.ar/entradas-un-poco-de-ruido-rosario/e/17585 — diferido: Turno de revisión rotativa en otra ejecución
-- https://www.entradafan.com.ar/entradas-benjamin-amadeo-rosario/e/16747 — diferido: Turno de revisión rotativa en otra ejecución
-- https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983 — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17614 — descartado: Todas las funciones detectadas están vencidas
+- https://www.entradafan.com.ar/entradas-maria-becerra-rosario/e/17726 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://www.entradafan.com.ar/entradas-un-poco-de-ruido-rosario/e/17585 — corroborado: Ya publicado con respaldo prioritario
+- https://www.entradafan.com.ar/entradas-benjamin-amadeo-rosario/e/16747 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983 — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-ronnie-wood-rosario/e/17756 — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-seru-giran-rosario/e/17764 — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-diego-torres-rosario/e/16748 — diferido: Turno de revisión rotativa en otra ejecución
@@ -90,18 +149,17 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17859 — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129 — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-ha-ash-rosario/e/17863 — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/YMA7QATFZHJ4/tc-2026-rosario-gran-premio — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://saleplan.ar/santa-fe/rosario/planes/ZMKXRYEWZ4MJ/rocio-quiroz-la-vanidosa-decada-disco — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://saleplan.ar/santa-fe/rosario/planes/ZPV5G5MSSPQV/matias-acuna-crowdworking-rosario — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://saleplan.ar/santa-fe/rosario/planes/MTNMJTHF5EXT/el-bingo-musical-de-veto-y-fer — corroborado: Funciones ya publicadas con respaldo prioritario
-- https://saleplan.ar/santa-fe/rosario/planes/QHBJMK2W58RV/tablao-flamenco-entre-palmas — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/RRCF1QQZDTBH/como-mirar-fijo-al-sol — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/SXE8C343M99Y/4corazones-redspace-and-more — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/TWY1G0B8G6FH/los-perez-garcia — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-gabriel-rolon-rosario/e/17779 — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-las-gratitudes-rosario/e/18080 — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/QHBJMK2W58RV/tablao-flamenco-entre-palmas — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://saleplan.ar/santa-fe/rosario/planes/RRCF1QQZDTBH/como-mirar-fijo-al-sol — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://saleplan.ar/santa-fe/rosario/planes/SXE8C343M99Y/4corazones-redspace-and-more — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://saleplan.ar/santa-fe/rosario/planes/TWY1G0B8G6FH/los-perez-garcia — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/VJGQGP4905T0/patio-cervecero-dia-de-la-madre — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/WCQV3SS9QG9S/halloween-finesse — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/X6X35REDD54M/halloween-fest-rosario — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XG27MHSS8QKP/halloween-luduena — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/1W1MH4BT3D9P/pena-san-martin-educacion-fisica — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/783WGSEAAQWN/escenas-de-la-vida-conyugal — diferido: Turno de revisión rotativa en otra ejecución
@@ -147,17 +205,21 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://saleplan.ar/santa-fe/rosario/planes/NNBPTN2D7YW7/mercury-sabado-24-de-octubre — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/QSYHB6SKAHBZ/los-nocheros — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/VJ2PBP4K5CQY/mati-rj — diferido: Turno de revisión rotativa en otra ejecución
-- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-festival-bandera-darin-pietra-los-nocheros-y-cumbion/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-festival-bandera-darin-pietra-los-nocheros-y-cumbion/
-- https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-16-de-septiembre/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-16-de-septiembre/
-- https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-23-de-septiembre/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-23-de-septiembre/
-- https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/
-- https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-feria-del-libro-cumbion-historico-y-fiesta-chamamecera/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/YMA7QATFZHJ4/tc-2026-rosario-gran-premio — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/ZMKXRYEWZ4MJ/rocio-quiroz-la-vanidosa-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/ZPV5G5MSSPQV/matias-acuna-crowdworking-rosario — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/MTNMJTHF5EXT/el-bingo-musical-de-veto-y-fer — diferido: Turno de revisión rotativa en otra ejecución
+- https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-feria-del-libro-cumbion-historico-y-fiesta-chamamecera/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
+- https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/ — reintentar: Cuota diaria de cuatro fichas agotada; reintento automático
 - https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-hot-since-82-claptone-santiago-motorizado-y-la-obra-las-hijas/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-peretti-y-delia-damas-gratis-bandana-y-festival-faer/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-festival-bandera-darin-pietra-los-nocheros-y-cumbion/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-16-de-septiembre/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-23-de-septiembre/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.ips.edu.ar/llamado-a-inscripcion-para-el-escalafonamiento-del-departamento-de-mecanica.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/consulta-el-cronograma-de-pics.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/llamado-a-inscripcion-para-el-escalafonamiento-de-la-materia-orientacion-tutorial.html — descartado: Aviso administrativo institucional; no es una salida pública

@@ -1,23 +1,27 @@
 {
   "version": 1,
-  "generado": "2026-10-30T03:24:43-03:00",
-  "ejecucion_id": "41010736338-1",
-  "inicio": "2026-10-30T02:51:34-03:00",
+  "generado": "2026-10-30T10:24:20-03:00",
+  "ejecucion_id": "41059346061-1",
+  "inicio": "2026-10-30T09:58:07-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-30 02:51",
-  "ultima_consulta_fuentes": "2026-10-30T03:24:10.037426-03:00",
+  "datos_actualizados": "2026-10-30 09:58",
+  "ultima_consulta_fuentes": "2026-10-30T10:23:22.785136-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1198,
-    "funciones_unicas": 1198,
-    "nuevos": 1,
+    "eventos": 1201,
+    "funciones_unicas": 1201,
+    "nuevos": 3,
     "ausentes": 0,
-    "duplicados": 4,
-    "conservados": 43,
+    "duplicados": 2,
+    "conservados": 44,
     "fuentes": 96
   },
   "alertas": [
+    {
+      "tipo": "cobertura",
+      "mensaje": "78 fichas municipales no se pudieron consultar. Revisar COBERTURA_ACTUAL.md."
+    },
     {
       "tipo": "cobertura",
       "mensaje": "Hay funciones extraídas que no figuran en la agenda ni tienen una coincidencia detectada. Revisar COBERTURA_ACTUAL.md."
@@ -39,14 +43,14 @@
       "accion": "Sin intervención necesaria.",
       "eventos": 313,
       "antes": 313,
-      "conservados": 23,
+      "conservados": 22,
       "caida": false
     },
     {
       "nombre": "Agenda municipal — Espacios",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -97,7 +101,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 3,
+      "eventos": 4,
       "antes": 3,
       "conservados": 0,
       "caida": false
@@ -258,7 +262,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 9,
-      "antes": 8,
+      "antes": 9,
       "conservados": 0,
       "caida": false
     },
@@ -374,9 +378,9 @@
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -404,9 +408,9 @@
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -547,9 +551,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 632,
+      "eventos": 634,
       "antes": 632,
-      "conservados": 19,
+      "conservados": 21,
       "caida": false
     },
     {
@@ -584,9 +588,9 @@
     },
     {
       "nombre": "Museo Urbano Arte a la Vista",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -654,9 +658,9 @@
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -824,9 +828,9 @@
     },
     {
       "nombre": "Rosario en Cartel",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 12,
       "antes": 12,
       "conservados": 0,
@@ -984,9 +988,9 @@
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1033,7 +1037,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-30T03:24:41-03:00",
+    "fecha": "2026-10-30T10:24:18-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1046,15 +1050,29 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41010736338",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41059346061",
   "cambios": {
     "nuevos": [
       {
-        "fecha": "2026-11-02",
-        "hora": "21:00",
-        "nombre": "Peña Lunera",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
+        "fecha": "2026-10-31",
+        "hora": "18:00",
+        "nombre": "Presentación de la Orquesta \"Ciudad de El Trébol\"",
+        "lugar": "Museo de la Ciudad Wladimir Mikielievich",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-06",
+        "hora": "10:00",
+        "nombre": "Un Renacimiento Rosarino",
+        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "origen": "Biblioteca Argentina Dr. Juan Álvarez"
+      },
+      {
+        "fecha": "2026-11-04",
+        "hora": "17:00",
+        "nombre": "Inauguración de la muestra \"Señor D: Cerámicas del Origen. Relecturas Contemporáneas del Noroeste Argentino\"",
+        "lugar": "Secretaría de Cultura y Educación",
+        "origen": "Municipalidad de Rosario"
       }
     ],
     "ausentes": []
