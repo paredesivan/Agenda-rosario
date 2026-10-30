@@ -1,31 +1,23 @@
 {
   "version": 1,
-  "generado": "2026-10-30T10:24:20-03:00",
-  "ejecucion_id": "41059346061-1",
-  "inicio": "2026-10-30T09:58:07-03:00",
+  "generado": "2026-10-30T16:47:03-03:00",
+  "ejecucion_id": "41114966991-1",
+  "inicio": "2026-10-30T16:24:24-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-30 09:58",
-  "ultima_consulta_fuentes": "2026-10-30T10:23:22.785136-03:00",
+  "datos_actualizados": "2026-10-30 16:24",
+  "ultima_consulta_fuentes": "2026-10-30T16:46:32.888735-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1201,
-    "funciones_unicas": 1201,
-    "nuevos": 3,
+    "eventos": 1214,
+    "funciones_unicas": 1214,
+    "nuevos": 13,
     "ausentes": 0,
-    "duplicados": 2,
-    "conservados": 44,
+    "duplicados": 3,
+    "conservados": 49,
     "fuentes": 96
   },
   "alertas": [
-    {
-      "tipo": "cobertura",
-      "mensaje": "78 fichas municipales no se pudieron consultar. Revisar COBERTURA_ACTUAL.md."
-    },
-    {
-      "tipo": "cobertura",
-      "mensaje": "Hay funciones extraídas que no figuran en la agenda ni tienen una coincidencia detectada. Revisar COBERTURA_ACTUAL.md."
-    },
     {
       "tipo": "etapa",
       "mensaje": "Falló la etapa fuente_autodromo.py. Se conservaron sus datos anteriores."
@@ -41,9 +33,9 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 313,
+      "eventos": 325,
       "antes": 313,
-      "conservados": 22,
+      "conservados": 27,
       "caida": false
     },
     {
@@ -102,7 +94,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 4,
-      "antes": 3,
+      "antes": 4,
       "conservados": 0,
       "caida": false
     },
@@ -261,7 +253,7 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 9,
+      "eventos": 10,
       "antes": 9,
       "conservados": 0,
       "caida": false
@@ -388,9 +380,9 @@
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
@@ -552,7 +544,7 @@
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 634,
-      "antes": 632,
+      "antes": 634,
       "conservados": 21,
       "caida": false
     },
@@ -658,9 +650,9 @@
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -828,9 +820,9 @@
     },
     {
       "nombre": "Rosario en Cartel",
-      "estado": "atencion",
-      "motivo": "No se pudo completar la lectura.",
-      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 12,
       "antes": 12,
       "conservados": 0,
@@ -1037,7 +1029,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-30T10:24:18-03:00",
+    "fecha": "2026-10-30T16:47:02-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1050,29 +1042,99 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41059346061",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41114966991",
   "cambios": {
     "nuevos": [
       {
         "fecha": "2026-10-31",
-        "hora": "18:00",
-        "nombre": "Presentación de la Orquesta \"Ciudad de El Trébol\"",
-        "lugar": "Museo de la Ciudad Wladimir Mikielievich",
-        "origen": "Municipalidad de Rosario"
+        "hora": "21:00",
+        "nombre": "Fiesta TNT",
+        "lugar": "Distrito Siete, Ovidio Lagos 790, Rosario",
+        "origen": "Agenda Cultural Rosario"
       },
       {
-        "fecha": "2026-11-06",
-        "hora": "10:00",
-        "nombre": "Un Renacimiento Rosarino",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Biblioteca Argentina Dr. Juan Álvarez"
+        "fecha": "2026-10-31",
+        "hora": "21:00",
+        "nombre": "Fueye Solo: concierto acústico de bandoneón",
+        "lugar": "Centro Cultural La Casa del Tango, Illia 1750, Rosario",
+        "origen": "Agenda Cultural Rosario"
       },
       {
-        "fecha": "2026-11-04",
+        "fecha": "2026-11-08",
+        "hora": "20:00",
+        "nombre": "Domingos bien jugados",
+        "lugar": "El Aserradero",
+        "origen": "El Aserradero — oficial"
+      },
+      {
+        "fecha": "2026-11-01",
         "hora": "17:00",
-        "nombre": "Inauguración de la muestra \"Señor D: Cerámicas del Origen. Relecturas Contemporáneas del Noroeste Argentino\"",
-        "lugar": "Secretaría de Cultura y Educación",
-        "origen": "Municipalidad de Rosario"
+        "nombre": "RosariGarcía: inauguración de la muestra",
+        "lugar": "Galpón 11",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-12-04",
+        "hora": "20:00",
+        "nombre": "Homenaje sinfónico a Ennio Morricone",
+        "lugar": "Teatro Broadway",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-07",
+        "hora": "17:00",
+        "nombre": "RosariGarcía: inauguración de la muestra",
+        "lugar": "Galpón 11",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-08",
+        "hora": "17:00",
+        "nombre": "RosariGarcía: inauguración de la muestra",
+        "lugar": "Galpón 11",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-14",
+        "hora": "17:00",
+        "nombre": "RosariGarcía: inauguración de la muestra",
+        "lugar": "Galpón 11",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-15",
+        "hora": "17:00",
+        "nombre": "RosariGarcía: inauguración de la muestra",
+        "lugar": "Galpón 11",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "17:00",
+        "nombre": "RosariGarcía: inauguración de la muestra",
+        "lugar": "Galpón 11",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-22",
+        "hora": "17:00",
+        "nombre": "RosariGarcía: inauguración de la muestra",
+        "lugar": "Galpón 11",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-28",
+        "hora": "17:00",
+        "nombre": "RosariGarcía: inauguración de la muestra",
+        "lugar": "Galpón 11",
+        "origen": "Agenda Cultural Rosario"
+      },
+      {
+        "fecha": "2026-11-29",
+        "hora": "17:00",
+        "nombre": "RosariGarcía: inauguración de la muestra",
+        "lugar": "Galpón 11",
+        "origen": "Agenda Cultural Rosario"
       }
     ],
     "ausentes": []
