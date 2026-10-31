@@ -154,7 +154,9 @@ def informe(root=ROOT, modo='actualizar'):
     anteriores = [e for e in previo.get('eventos', []) if e.get('fecha', '') >= hoy]
     actuales = [e for e in datos['eventos'] if e.get('fecha', '') >= hoy]
     # No atribuir a esta ejecución los diagnósticos de una ejecución anterior.
-    salud_actual = salud if modo == 'actualizar' and not fallo else {}
+    inicio_salud, inicio_contexto = salud.get('inicio', ''), contexto.get('inicio', '')
+    salud_vigente = bool(inicio_contexto and inicio_salud and inicio_salud >= inicio_contexto)
+    salud_actual = salud if modo == 'actualizar' and not fallo and salud_vigente else {}
     conteo_antes, conteo = contar_futuros(anteriores, hoy), contar_futuros(actuales, hoy)
     # Comparación por función deduplicada; evita contar reemplazos de fuente como altas/bajas.
     antes_unicos, ahora_unicos = sin_repetidos(anteriores), sin_repetidos(actuales)
@@ -168,7 +170,7 @@ def informe(root=ROOT, modo='actualizar'):
     agregados = novedades(ahora_unicos, antes_unicos)
     ausentes = novedades(antes_unicos, ahora_unicos)
     retenidos = Counter(e.get('origen') or 'Sin fuente identificada' for e in actuales if e.get('revision_pendiente'))
-    revisiones = salud.get('fuentes', {})
+    revisiones = salud_actual.get('fuentes', {})
     if not isinstance(revisiones, dict):
         revisiones = {}
     fuentes = []
@@ -216,6 +218,9 @@ def informe(root=ROOT, modo='actualizar'):
              'ejecucion_url': enlace_ejecucion(),
              'cambios': {'nuevos': [resumen_evento(e) for e in agregados[:40]],
                          'ausentes': [resumen_evento(e) for e in ausentes[:40]]}}
+    from seguimiento_cobertura import completar_informe, texto_control
+    completar_informe(root, panel, salud_actual, contexto, guardar)
+    estado = panel['estado']
     guardar(root / 'estado_agenda.json', panel)
     historial = leer(root / 'historial_actualizaciones.json', [])
     if not isinstance(historial, list): historial = []
@@ -240,6 +245,7 @@ def informe(root=ROOT, modo='actualizar'):
                       ('fichas_sin_funciones','Fichas sin funciones extraídas')]], '',
                    'Los motivos de exclusión de cada ficha están en revision_cobertura_municipal.json. '
                    'Cero funciones extraídas no demuestra que la fuente no tenga actividades.']
+    lineas += texto_control(panel)
     (root / 'reportes').mkdir(exist_ok=True)
     (root / 'reportes/resumen.md').write_text('\n'.join(lineas) + '\n', encoding='utf-8')
     return panel

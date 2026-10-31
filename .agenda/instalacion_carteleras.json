@@ -1,0 +1,11 @@
+{
+  "version": "2026.10.31-recuperar-carteleras-4",
+  "archivos": [
+    "actualizar_eventos.py",
+    "actualizacion_segura.py",
+    "fuentes_nuevas.py",
+    "fuente_aec.py",
+    "calendarios_recuperados.py",
+    "tests/test_calendarios_recuperados.py"
+  ]
+}

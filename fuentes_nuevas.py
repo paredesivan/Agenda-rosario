@@ -953,6 +953,9 @@ def leer_feria_libro(hoy, estado):
                 })
             actual += timedelta(days=1)
         if not eventos:
+            if fin < hoy:
+                estado[fuente] = "revisada: edición finalizada; sin jornadas futuras"
+                return []
             raise ValueError("sin jornadas futuras con horario publicado")
         estado[fuente] = f"revisada: {len(eventos)} jornadas; fuente oficial"
         return eventos

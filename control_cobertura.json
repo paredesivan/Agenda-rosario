@@ -1,0 +1,26 @@
+{
+  "fuentes_sin_diagnostico": [
+    "ECU Espacio Cultural Universitario",
+    "El Cairo Cine Público"
+  ],
+  "municipal": {
+    "diagnostico_actual": true,
+    "fichas_consultadas": 40,
+    "consultas_fallidas": 34
+  },
+  "pendientes": {
+    "cantidad": 96,
+    "mayores_7_dias": 39,
+    "antiguedad_maxima_dias": 13,
+    "criterio": "Desde la primera evidencia registrada; puede ser anterior.",
+    "por_fuente": {
+      "EntradaFan": 20,
+      "Instituto Politécnico — Novedades": 2,
+      "Planaxia": 11,
+      "Rosario Times": 10,
+      "SalePlan": 53
+    }
+  },
+  "minutos_hasta_informe": 21.7,
+  "tiempo_intervencion_humana": "No medido"
+}

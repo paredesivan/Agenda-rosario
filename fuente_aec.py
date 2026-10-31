@@ -14,9 +14,11 @@ def ficha_aec(html,url,fuente):
     if not cuerpo: raise ValueError('AEC: cambió el cuerpo de la ficha')
     parrafos=[p.get_text(' ',strip=True) for p in cuerpo.select('p') if p.get_text(strip=True)]
     t=' '.join(parrafos);n=norm(t)
+    encabezado=s.select_one('h1')
+    sede=norm((encabezado.get_text(' ',strip=True) if encabezado else '')+' '+t)
     if re.search(r'\b(curso|taller|capacitacion|seminario|workshop|clases)\b',norm(parrafos[0] if parrafos else '')):return []
     if re.search(r'(?:exclusiv[oa]|solo|unicamente)\s+(?:para\s+)?(?:afiliados|socios)',n):return []
-    if not re.search(r'nuestro teatro|nuestro escenario|corrientes\s+450',n):
+    if not re.search(r'nuestro teatro|nuestro escenario|corrientes\s+450',sede):
         raise ValueError('AEC: falta sede teatral verificada')
     if re.search(r'\b(zavalla|general lagos|los cocos|san lorenzo)\b',n) and 'nuestro teatro' not in n:
         raise ValueError('AEC: sede fuera de Rosario')
@@ -24,6 +26,18 @@ def ficha_aec(html,url,fuente):
     # Usar únicamente el párrafo del anuncio: no horarios de boletería ni
     # aniversarios o referencias históricas del resto de la nota.
     anuncio=next((p for p in parrafos if re.search(r'\b\d{1,2}(?:\s*(?:y|,)\s*\d{1,2})*\s+de\s+(?:'+ '|'.join(MESES)+')',norm(p))),None)
+    if not anuncio:
+        pub=s.select_one('meta[property="article:published_time"]')
+        publicado=date.fromisoformat(pub['content'][:10]) if pub else None
+        dias='lunes martes miercoles jueves viernes sabado domingo'.split()
+        for parrafo in parrafos:
+            relativo=re.search(r'\b('+ '|'.join(dias) +r')\s+(\d{1,2})\s+(?:de este mes|,)',norm(parrafo))
+            if not relativo or not publicado: continue
+            candidato=date(publicado.year,publicado.month,int(relativo[2]))
+            if not 0 <= (candidato-publicado).days <= 31 or dias[candidato.weekday()]!=relativo[1]:
+                raise ValueError('AEC: fecha relativa ambigua')
+            anuncio=norm(parrafo).replace(relativo[0],f'{relativo[1]} {relativo[2]} de {list(MESES)[publicado.month-1]} de {publicado.year} ',1)
+            break
     if not anuncio: raise ValueError('AEC: fecha de función no interpretable')
     an=norm(anuncio)
     patron=r'\b(\d{1,2}(?:\s*(?:y|,)\s*\d{1,2})*)\s+de\s+('+ '|'.join(MESES)+r')(?:\s+(?:de\s+)?(20\d{2}))?'
@@ -45,7 +59,7 @@ def ficha_aec(html,url,fuente):
     hora=f'{int(hm[1]):02d}:{hm[2] or "00"}' if hm else 'Horario a confirmar'
     if hm:datetime.strptime(hora,'%H:%M')
     # Preferir nombre entre comillas del espectáculo, nunca el titular periodístico.
-    titulo=re.search(r'(?:obra|espectáculo|unipersonal|show)\s*[«“"]([^»”"]+)',t,re.I)
+    titulo=re.search(r'(?:obra|pieza|espectáculo|unipersonal|show)\s*[,.:]?\s*[«“"]([^»”"]+)',t,re.I)
     if titulo:nombre=titulo[1].strip()
     else:
         base=re.search(r'show coreográfico con base de\s+([^,.]+)',t,re.I)

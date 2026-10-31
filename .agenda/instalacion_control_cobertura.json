@@ -1,0 +1,9 @@
+{
+  "version": "2026.10.31-control-cobertura-3",
+  "archivos": [
+    "gestion_agenda.py",
+    "seguimiento_cobertura.py",
+    "fuentes_esperadas.json",
+    "tests/test_seguimiento_cobertura.py"
+  ]
+}

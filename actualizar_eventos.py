@@ -600,7 +600,8 @@ def eventos_schema(valor):
             yield from eventos_schema(v)
     elif isinstance(valor, dict):
         tipos = valor.get("@type", [])
-        if tipos == "Event" or isinstance(tipos, list) and "Event" in tipos:
+        if any(t in {"Event", "MusicEvent", "TheaterEvent", "DanceEvent", "LiteraryEvent", "ScreeningEvent", "ExhibitionEvent"}
+               for t in (tipos if isinstance(tipos, list) else [tipos])):
             yield valor
         for v in valor.values():
             if isinstance(v, (list, dict)):
@@ -682,6 +683,7 @@ def actualizar():
     )
     conocidos = anteriores.get("eventos", [])
     eventos, fallidos, errores, correctas = [], set(), [], set()
+    revisiones_fuentes = {}
     BLOQUEADOS.clear()
     FALLAS.clear()
     DIAGNOSTICO_MUNICIPAL.clear()
@@ -699,12 +701,15 @@ def actualizar():
                 correctas.add(fuente)
             if fallas:
                 errores.append(f"{fuente}: {len(fallas)} fichas pendientes")
+            incompleta = bool(fallas) or (not nuevos and fuente not in correctas)
+            revisiones_fuentes[fuente] = f"{'parcial' if incompleta else 'revisada'}: {len(nuevos)} funciones; {len(fallas)} fichas pendientes"
             print(f"{fuente}: {len(nuevos)} actividades", flush=True)
         except (requests.RequestException, ValueError) as error:
             errores.append(
                 f"{fuente}: {type(error).__name__}: {error}; "
                 "se conservan datos anteriores"
             )
+            revisiones_fuentes[fuente] = f"no accesible: {type(error).__name__}"
 
     enlaces = set()
     try:
@@ -790,6 +795,13 @@ def actualizar():
                 'funciones_extraidas': sum(v.get('funciones', 0) for v in DIAGNOSTICO_MUNICIPAL.values()),
                 'fichas_sin_funciones': sum(not v.get('funciones') for v in DIAGNOSTICO_MUNICIPAL.values()),
                 'fichas': list(DIAGNOSTICO_MUNICIPAL.values())}
+    consultadas = revision['fichas_consultadas']
+    fallas_municipales = revision['fichas_con_error']
+    revisiones_fuentes[ORIGEN] = (f"revisada: {consultadas} fichas consultadas; {fallas_municipales} errores"
+                                 if consultadas and not fallas_municipales else
+                                 f"parcial: {consultadas} fichas consultadas; {fallas_municipales} errores")
+    ARCHIVO.with_name('revision_fuentes_base.json').write_text(
+        json.dumps({'revision': ahora.isoformat(), 'fuentes': revisiones_fuentes}, ensure_ascii=False)+'\n', encoding='utf-8')
     ARCHIVO.with_name('revision_cobertura_municipal.json').write_text(
         json.dumps(revision, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
 
@@ -1090,6 +1102,11 @@ def calendario_comedia(html, fuente, url, direccion, hoy):
 
 
 def calendario(html, fuente, url, direccion, hoy):
+    from calendarios_recuperados import adaptar
+    recuperado = adaptar(html, fuente, url, direccion, hoy, descargar, actividad_ampliada,
+                         fechas_publicadas, ARCHIVO.with_name("cache_calendarios_recuperados.json"))
+    if recuperado is not None:
+        return recuperado
     if fuente == "Teatro Municipal La Comedia":
         return calendario_comedia(html, fuente, url, direccion, hoy)
     if fuente in ("Teatro Astengo", "ATIR", "Biblioteca Vigil"):

@@ -169,10 +169,16 @@ def main():
     validar(datos)
     duplicados = antes_deduplicar - len(datos['eventos'])
     atomico(ROOT / 'eventos.json', datos)
+    registro = ROOT / 'fuentes_revisadas.json'
+    fuentes_actuales = json.loads(registro.read_text()).get('fuentes', {}) if registro.exists() else {}
+    revision_base = ROOT / 'revision_fuentes_base.json'
+    base = json.loads(revision_base.read_text()) if revision_base.exists() else {}
+    if base.get('revision', '') >= inicio:
+        fuentes_actuales.update(base.get('fuentes', {}))
     atomico(ROOT / 'salud_actualizacion.json', {'inicio': inicio, 'fin': datetime.now(ZoneInfo('America/Argentina/Cordoba')).isoformat(),
             'duplicados_unificados': duplicados, 'etapas': resultados,
             'estado': datos.get('estado'), 'eventos': len(datos['eventos']),
-            'fuentes': json.loads((ROOT / 'fuentes_revisadas.json').read_text()).get('fuentes', {}) if (ROOT / 'fuentes_revisadas.json').exists() else {}})
+            'fuentes': fuentes_actuales})
     if all(r['estado'] == 'fallida' for r in resultados):
         raise SystemExit('Todas las etapas fallaron; se conserva la agenda y se avisa en Actions')
 
