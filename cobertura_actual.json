@@ -1,5 +1,5 @@
 {
-  "datos_actualizados": "2026-10-31 12:42",
+  "datos_actualizados": "2026-10-31 15:34",
   "fecha_corte": "2026-10-31",
   "eventos_futuros_publicados": 1107,
   "por_fuente": {
@@ -32,7 +32,7 @@
     "Passline — QUE SEA ROCK": 2,
     "Grupo Gamma — Charlas a la comunidad": 2
   },
-  "revision_municipal": "2026-10-31T12:42:49.288293-03:00",
+  "revision_municipal": "2026-10-31T15:34:49.922002-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [],
   "estados_municipales": {},
@@ -132,13 +132,6 @@
     },
     {
       "fuente": "SalePlan",
-      "nombre": "Halloween Ludueña",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
       "nombre": "PATIO CERVECERO - Dia de la madre",
       "url": "",
       "fecha": "",
@@ -226,7 +219,7 @@
       "nombre": "EMI GALVAN ALL NIGHT LONG - 7HS SET",
       "url": "",
       "fecha": "",
-      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
@@ -238,6 +231,13 @@
     {
       "fuente": "SalePlan",
       "nombre": "ESPECIAL HALLOWEEN: FDD EN MERCU!!",
+      "url": "",
+      "fecha": "",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
+    },
+    {
+      "fuente": "SalePlan",
+      "nombre": "👻 HALLOWEEN PARTY 👻 🗓️ SÁBADO 31 DE OCTUBRE",
       "url": "",
       "fecha": "",
       "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
@@ -502,7 +502,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-10-31T13:02:08.314808-03:00",
+  "resolucion_revision": "2026-10-31T15:58:31.662200-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
@@ -750,6 +750,27 @@
     },
     {
       "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-dyango-rosario/e/18102",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-luis-fonsi-rosario/e/18092",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-seru-giran-rosario/e/17764",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983",
       "estado": "pendiente",
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
@@ -757,40 +778,19 @@
     },
     {
       "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-axel-rosario/e/18101",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-maria-becerra-rosario/e/17726",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-ronnie-wood-rosario/e/17756",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-axel-rosario/e/18101",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-dyango-rosario/e/18102",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-luis-fonsi-rosario/e/18092",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-seru-giran-rosario/e/17764",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1069,7 +1069,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/PY9GTDVG79PS/nu-metal-show-especial-halloween",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/KAW23E38DE14/halloween-party-sabado-31-de-octubre",
       "estado": "reintentar",
       "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0
@@ -1083,7 +1083,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/QHBJMK2W58RV/tablao-flamenco-entre-palmas",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/PY9GTDVG79PS/nu-metal-show-especial-halloween",
       "estado": "reintentar",
       "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0
@@ -1097,7 +1097,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/R1V11KGE0R9S/crema-x-sabores-de-barrio",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/QHBJMK2W58RV/tablao-flamenco-entre-palmas",
       "estado": "reintentar",
       "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0
@@ -1111,7 +1111,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/SFAKAM5KY83F/emi-galvan-all-night-long-7hs-set",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/R1V11KGE0R9S/crema-x-sabores-de-barrio",
       "estado": "reintentar",
       "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0
@@ -1124,7 +1124,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/TWY1G0B8G6FH/los-perez-garcia",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/SFAKAM5KY83F/emi-galvan-all-night-long-7hs-set",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1136,7 +1136,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/VJGQGP4905T0/patio-cervecero-dia-de-la-madre",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/TWY1G0B8G6FH/los-perez-garcia",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1148,7 +1148,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/VP792B424F4E/la-retro",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/VJGQGP4905T0/patio-cervecero-dia-de-la-madre",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1160,7 +1160,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/X6X35REDD54M/halloween-fest-rosario",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/VP792B424F4E/la-retro",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1172,7 +1172,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/X6X35REDD54M/halloween-fest-rosario",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1184,13 +1184,19 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/XG27MHSS8QKP/halloween-luduena",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/QSYHB6SKAHBZ/los-nocheros",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/XG27MHSS8QKP/halloween-luduena",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },

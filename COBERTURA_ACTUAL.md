@@ -2,8 +2,8 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-10-31 12:42. Corte: 2026-10-31.
-Eventos futuros: 1107. Revisión municipal: 2026-10-31T12:42:49.288293-03:00.
+Datos de la agenda: 2026-10-31 15:34. Corte: 2026-10-31.
+Eventos futuros: 1107. Revisión municipal: 2026-10-31T15:34:49.922002-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
@@ -52,13 +52,13 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17859 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-gabriel-rolon-rosario/e/17779 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-las-gratitudes-rosario/e/18080 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://www.entradafan.com.ar/entradas-dyango-rosario/e/18102 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://www.entradafan.com.ar/entradas-luis-fonsi-rosario/e/18092 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://www.entradafan.com.ar/entradas-seru-giran-rosario/e/17764 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-maria-becerra-rosario/e/17726 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-ronnie-wood-rosario/e/17756 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-axel-rosario/e/18101 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-dyango-rosario/e/18102 — diferido: Turno de revisión rotativa en otra ejecución
-- https://www.entradafan.com.ar/entradas-luis-fonsi-rosario/e/18092 — diferido: Turno de revisión rotativa en otra ejecución
-- https://www.entradafan.com.ar/entradas-seru-giran-rosario/e/17764 — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-axel-rosario/e/18101 — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-maria-becerra-rosario/e/17726 — diferido: Turno de revisión rotativa en otra ejecución
+- https://www.entradafan.com.ar/entradas-ronnie-wood-rosario/e/17756 — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer — descartado: Las fechas conocidas están vencidas; evidencia conservada y revisión semanal
 - https://saleplan.ar/santa-fe/rosario/planes/86Q7G7W4VX4F/el-enfermo-imaginario-version-litoralena-estreno — descartado: Las fechas conocidas están vencidas; evidencia conservada y revisión semanal
 - https://saleplan.ar/santa-fe/rosario/planes/MXE9S0T9Q8VX/milano-en-rosario — descartado: Las fechas conocidas están vencidas; evidencia conservada y revisión semanal
@@ -98,26 +98,27 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://saleplan.ar/santa-fe/rosario/planes/7D598A77F5F5/candlelight-las-cuatro-estaciones-de-vivaldi — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/FMT3MRZ8V0X9/especial-halloween-fdd-en-mercu — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/B0V2Y6YFQWEK/candlelight-las-cuatro-estaciones-de-vivaldi — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
-- https://saleplan.ar/santa-fe/rosario/planes/PY9GTDVG79PS/nu-metal-show-especial-halloween — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://saleplan.ar/santa-fe/rosario/planes/KAW23E38DE14/halloween-party-sabado-31-de-octubre — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/R97VKAA5W67G/candlelight-queen-vs-abba — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
-- https://saleplan.ar/santa-fe/rosario/planes/QHBJMK2W58RV/tablao-flamenco-entre-palmas — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://saleplan.ar/santa-fe/rosario/planes/PY9GTDVG79PS/nu-metal-show-especial-halloween — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/RA7P8ATRBTH7/candlelight-tributo-a-joan-manuel-serrat — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
-- https://saleplan.ar/santa-fe/rosario/planes/R1V11KGE0R9S/crema-x-sabores-de-barrio — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://saleplan.ar/santa-fe/rosario/planes/QHBJMK2W58RV/tablao-flamenco-entre-palmas — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/KRY2N32D4HCC/fresa-club-presenta-halloween-en-el-hipodromohorror-house — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
-- https://saleplan.ar/santa-fe/rosario/planes/SFAKAM5KY83F/emi-galvan-all-night-long-7hs-set — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://saleplan.ar/santa-fe/rosario/planes/R1V11KGE0R9S/crema-x-sabores-de-barrio — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/XKJ918FTFBAY/mesa-dulce-en-rosario — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/TWY1G0B8G6FH/los-perez-garcia — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/SFAKAM5KY83F/emi-galvan-all-night-long-7hs-set — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/9DFW4XTXYKVC/manu-ansaldi-presenta-la-melodia-eterna — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/VJGQGP4905T0/patio-cervecero-dia-de-la-madre — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/TWY1G0B8G6FH/los-perez-garcia — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/GJDX6446FVG2/chueka-en-taura — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/VP792B424F4E/la-retro — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/VJGQGP4905T0/patio-cervecero-dia-de-la-madre — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/HX0MKM9STXBG/mrb-after-dark-visual-experience — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/X6X35REDD54M/halloween-fest-rosario — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/VP792B424F4E/la-retro — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/HYB8X8P7B5R8/fiesta-elite — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/X6X35REDD54M/halloween-fest-rosario — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/NNBPTN2D7YW7/mercury-sabado-24-de-octubre — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/XG27MHSS8QKP/halloween-luduena — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/QSYHB6SKAHBZ/los-nocheros — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XG27MHSS8QKP/halloween-luduena — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/VJ2PBP4K5CQY/mati-rj — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/YMA7QATFZHJ4/tc-2026-rosario-gran-premio — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/ZMKXRYEWZ4MJ/rocio-quiroz-la-vanidosa-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
