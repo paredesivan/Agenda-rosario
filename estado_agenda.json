@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "generado": "2026-10-31T03:04:47-03:00",
-  "ejecucion_id": "41173760253-1",
-  "inicio": "2026-10-31T02:44:14-03:00",
+  "generado": "2026-10-31T09:56:48-03:00",
+  "ejecucion_id": "41201662484-1",
+  "inicio": "2026-10-31T09:33:56-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-31 02:44",
-  "ultima_consulta_fuentes": "2026-10-31T03:04:10.795242-03:00",
+  "datos_actualizados": "2026-10-31 09:33",
+  "ultima_consulta_fuentes": "2026-10-31T09:56:15.583865-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
     "eventos": 1097,
     "funciones_unicas": 1097,
-    "nuevos": 1,
+    "nuevos": 0,
     "ausentes": 0,
-    "duplicados": 1,
+    "duplicados": 0,
     "conservados": 39,
-    "fuentes": 94
+    "fuentes": 75
   },
   "alertas": [
     {
@@ -60,26 +60,6 @@
     },
     {
       "nombre": "Alto Rosario Shopping — CSV",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Bajada de los Maestros",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Beatmemo",
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
@@ -234,7 +214,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 10,
-      "antes": 9,
+      "antes": 10,
       "conservados": 0,
       "caida": false
     },
@@ -329,16 +309,6 @@
       "caida": false
     },
     {
-      "nombre": "Experimental - Museo de Ciencias en Movimiento",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
       "nombre": "Feria Internacional del Libro de Rosario",
       "estado": "atencion",
       "motivo": "No se pudo completar la lectura.",
@@ -350,9 +320,9 @@
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -360,9 +330,9 @@
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
@@ -380,9 +350,9 @@
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -509,16 +479,6 @@
       "caida": false
     },
     {
-      "nombre": "Muestra Inmersiva: Estación Rosario 300",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
       "nombre": "Municipalidad de Rosario",
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
@@ -529,150 +489,10 @@
       "caida": false
     },
     {
-      "nombre": "Museo Diario La Capital",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo Histórico Provincial Julio Marc",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
       "nombre": "Museo Urbano Arte a la Vista",
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo de Arte Contemporáneo de Rosario (MACRO)",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo de Arte Sacro Barnes",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo de Bellas Artes Juan B. Castagnino",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo de Sitio: \"El Paraná y las islas\"",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo de la Bolsa de Comercio",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo de la Ciudad",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo de la Memoria",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo de la Salud",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo de la ópera",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
-      "nombre": "Museo del Deporte Santafesino",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -819,16 +639,6 @@
       "caida": false
     },
     {
-      "nombre": "Sala de las Banderas",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
-      "eventos": 0,
-      "antes": 0,
-      "conservados": 0,
-      "caida": false
-    },
-    {
       "nombre": "SalePlan",
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
@@ -960,9 +770,9 @@
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1009,7 +819,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-31T03:04:45-03:00",
+    "fecha": "2026-10-31T09:56:46-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1022,17 +832,9 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41173760253",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41201662484",
   "cambios": {
-    "nuevos": [
-      {
-        "fecha": "2026-11-15",
-        "hora": "20:00",
-        "nombre": "Domingos bien jugados",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
-      }
-    ],
+    "nuevos": [],
     "ausentes": []
   }
 }
