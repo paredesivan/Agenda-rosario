@@ -1,0 +1,10 @@
+{
+  "version": "2026.10.31-descubrimiento-automatico-5",
+  "archivos": [
+    "fuentes_nuevas.py",
+    "calendarios_recuperados.py",
+    "descubrimiento_html.py",
+    "tests/test_calendarios_recuperados.py",
+    "tests/test_descubrimiento_automatico.py"
+  ]
+}

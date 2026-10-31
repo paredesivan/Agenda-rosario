@@ -815,11 +815,6 @@ def preferir_venta_oficial(eventos, nuevos):
     return [e for e in eventos if not (e.get('origen') == 'Rosario en Cartel' and
             any(misma_propuesta(e, n) and (e['fecha'], e['hora']) != (n['fecha'], n['hora']) for n in verificados))]
 
-# Una ficha comprobada sirve de arranque y deja de consultarse al finalizar su edición.
-SEMILLAS_ESPACIOS = (
-    ('https://www.rosario.gob.ar/inicio/festival-gualicho-cofradia-encuentro-y-fiesta-ricotera', date(2026, 10, 17)),
-)
-
 
 def municipal_espacios(html, url, hoy):
     from actualizar_eventos import ubicacion, fechas_regla
@@ -865,7 +860,7 @@ def municipal_espacios(html, url, hoy):
 
 
 def leer_municipal_espacios(hoy, estado):
-    candidatos = {url for url, hasta in SEMILLAS_ESPACIOS if hoy <= hasta}
+    candidatos = set()
     # Revisitar fichas publicadas de estos espacios sin depender de una fecha mensual.
     if ARCHIVO.exists():
         anteriores = json.loads(ARCHIVO.read_text(encoding='utf-8')).get('eventos', [])

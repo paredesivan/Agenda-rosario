@@ -8,6 +8,7 @@ from unittest.mock import Mock, patch
 import actualizar_eventos as a
 from calendarios_recuperados import adaptar, funciones_vigil, argentina, ccpe
 from fuente_aec import ficha_aec
+from descubrimiento_html import huella_html
 
 HOY = date(2026, 10, 31)
 sopa = lambda t: BeautifulSoup(t, 'html.parser')
@@ -16,7 +17,7 @@ sopa = lambda t: BeautifulSoup(t, 'html.parser')
 class CalendariosRecuperados(unittest.TestCase):
     def test_vigil_separa_funciones_y_tarifas_de_socios(self):
         h = sopa('''<meta property="article:published_time" content="2026-10-23T10:00:00Z">
-        <article><div class="entry-content"><p>Temporada 2026</p>
+        <article><h1>Teatro Vigil</h1><div class="entry-content"><p>Temporada 2026</p>
         <p>Viernes 6 de noviembre 20:30h<br><strong>Una historia de museo</strong></p>
         <p>Socixs gratis.<br>Anticipadas <a href="/venta">acá</a> $15.000. En puerta $20.000</p>
         <p>Sábado 7 noviembre 20:30 h<br><strong>Una comedia diferente.</strong></p>
@@ -68,7 +69,7 @@ class CalendariosRecuperados(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d)/'cache.json'
             evento={'fecha':'2026-11-05','hora':'20:00'}
-            p.write_text(json.dumps({'Centro Cultural Parque de España':{'consultado':1000,'eventos':[evento]}}))
+            p.write_text(json.dumps({'Centro Cultural Parque de España':{'consultado':1000,'huella':huella_html(sopa(''), 'https://ccpe.org.ar'),'eventos':[evento]}}))
             descarga=Mock()
             with patch('calendarios_recuperados.time.time', return_value=1100):
                 e,_=adaptar(sopa(''), 'Centro Cultural Parque de España','https://ccpe.org.ar','',date(2026,11,6),

@@ -268,6 +268,25 @@ def consultar_evento(url, hoy):
         return url, [], str(error), False
 
 
+def consultar_lote_municipal(seleccion, hoy):
+    eventos, fallidos, no_consultadas = [], set(), []
+    for indice, url in enumerate(seleccion):
+        _, nuevos, error, eliminado = consultar_evento(url, hoy)
+        eventos.extend(nuevos)
+        if error and not eliminado:
+            fallidos.add(url)
+        if error and re.search(r'403|429|pausad|en pausa', error, re.I):
+            restantes = seleccion[indice + 1:]
+            # Una pausa previa impide incluso enviar la primera petición.
+            if re.search(r'pausad|en pausa', error, re.I) and not re.search(r'HTTP 403:|Client Error', error):
+                DIAGNOSTICO_MUNICIPAL.pop(url, None)
+                restantes = seleccion[indice:]
+            no_consultadas.extend(restantes)
+            fallidos.update(restantes)
+            break
+    return eventos, fallidos, no_consultadas
+
+
 def combinar_eventos(nuevos, anteriores, fallidos, hoy):
     resultados = {clave(e): e for e in nuevos}
     for evento in anteriores:
@@ -712,6 +731,7 @@ def actualizar():
             revisiones_fuentes[fuente] = f"no accesible: {type(error).__name__}"
 
     enlaces = set()
+    no_consultadas = []
     try:
         enlaces, avisos = obtener_enlaces()
         errores.extend(avisos)
@@ -733,16 +753,11 @@ def actualizar():
         seleccion = (ordenados[inicio_lote:] + ordenados[:inicio_lote])[:lote]
         if len(ordenados) > len(seleccion):
             errores.append(f'Municipalidad: revisión rotativa {len(seleccion)}/{len(ordenados)} fichas; el resto se conserva')
-        for indice, url in enumerate(seleccion, 1):
-            _, nuevos, error, eliminado = consultar_evento(url, hoy)
-            eventos.extend(nuevos)
-            if error and not eliminado:
-                fallidos.add(url)
-            if indice % 20 == 0:
-                print(
-                    f"Municipalidad: {indice}/{len(enlaces)} fichas",
-                    flush=True,
-                )
+        nuevos, fallas, no_consultadas = consultar_lote_municipal(seleccion, hoy)
+        eventos.extend(nuevos)
+        fallidos.update(fallas)
+        if no_consultadas:
+            errores.append(f'Municipalidad: {len(no_consultadas)} fichas sin consultar por pausa de acceso; reintento automático')
         if len(seleccion) == len(ordenados) and not fallidos:
             correctas.add(ORIGEN)
     except (requests.RequestException, ValueError, RuntimeError) as error:
@@ -792,6 +807,8 @@ def actualizar():
                 'fuente': ORIGEN, 'fichas_consultadas': len(DIAGNOSTICO_MUNICIPAL),
                 'fichas_leidas': sum(not v.get('error') for v in DIAGNOSTICO_MUNICIPAL.values()),
                 'fichas_con_error': sum(bool(v.get('error')) for v in DIAGNOSTICO_MUNICIPAL.values()),
+                'fichas_no_consultadas_por_pausa': len(no_consultadas),
+                'urls_no_consultadas_por_pausa': no_consultadas,
                 'funciones_extraidas': sum(v.get('funciones', 0) for v in DIAGNOSTICO_MUNICIPAL.values()),
                 'fichas_sin_funciones': sum(not v.get('funciones') for v in DIAGNOSTICO_MUNICIPAL.values()),
                 'fichas': list(DIAGNOSTICO_MUNICIPAL.values())}
@@ -799,7 +816,7 @@ def actualizar():
     fallas_municipales = revision['fichas_con_error']
     revisiones_fuentes[ORIGEN] = (f"revisada: {consultadas} fichas consultadas; {fallas_municipales} errores"
                                  if consultadas and not fallas_municipales else
-                                 f"parcial: {consultadas} fichas consultadas; {fallas_municipales} errores")
+                                 f"parcial: {consultadas} fichas intentadas; {revision['fichas_leidas']} leídas; {fallas_municipales} errores; {len(no_consultadas)} sin consultar por pausa")
     ARCHIVO.with_name('revision_fuentes_base.json').write_text(
         json.dumps({'revision': ahora.isoformat(), 'fuentes': revisiones_fuentes}, ensure_ascii=False)+'\n', encoding='utf-8')
     ARCHIVO.with_name('revision_cobertura_municipal.json').write_text(

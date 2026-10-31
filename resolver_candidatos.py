@@ -18,6 +18,7 @@ from fuentes_adicionales import host, norm, respaldo_acr, firma_sede
 from fuentes_ampliadas import ConsultaAmpliada
 from fuentes_refi_folklore import ZONA, schemas, categorias_factuales, guardar
 from instituciones_eventos import acceso_publico, condiciones
+from cola_candidatos import resolver_local, turnos_justos
 
 ROOT = Path(__file__).resolve().parent
 SIN_HORA = 'Horario a confirmar'
@@ -306,6 +307,7 @@ def resolver(root=ROOT, acceso=None, hoy=None):
         previo = cola.setdefault(k, {'fuente': fuente, 'url': url, 'intento': '', 'hechos': []})
         if all(c.get(k) for k in ('nombre', 'fecha', 'hora', 'lugar')):
             previo['hechos'] = [{k: c.get(k, '') for k in ('nombre', 'fecha', 'hora', 'lugar', 'direccion')}]
+        previo.setdefault('primera_evidencia', hoy.isoformat())
         previo['visto'] = hoy.isoformat()
     # Un dominio con fuente apagada no se reactiva por una cola antigua.
     permitidos = primarios | set(fuentes.values())
@@ -341,16 +343,25 @@ def resolver(root=ROOT, acceso=None, hoy=None):
         # las novedades sin leer tienen prioridad sobre el archivo histórico.
         activas = []
         for k, c in filas:
+            local = resolver_local(c, bases, hoy, coincidencia)
+            if local:
+                r = dict(fuente=fuente, url=c['url'], **local)
+                if c.get('resultado', {}).get('estado') != r['estado'] or not c.get('resuelto_dia'):
+                    c['resuelto_dia'] = hoy.isoformat()
+                c['resultado'] = r
+                resultados.append(r)
+                continue
             previo = c.get('resultado', {})
             if previo.get('estado') == 'descartado' and c.get('revisado_dia') and hoy - date.fromisoformat(c['revisado_dia']) < timedelta(days=7):
                 resultados.append(previo)
             else:
                 activas.append((k, c))
-        filas = activas
-        filas.sort(key=prioridad_pendiente)
+        filas = turnos_justos(activas, prioridad_pendiente)
         for indice, (k, c) in enumerate(filas):
             if indice >= 12:
-                resultados.append({'fuente': fuente, 'url': c['url'], 'estado': 'diferido', 'motivo': 'Turno de revisión rotativa en otra ejecución'})
+                r = {'fuente': fuente, 'url': c['url'], 'estado': 'diferido', 'motivo': 'Turno de revisión rotativa en otra ejecución'}
+                c['resultado'] = r
+                resultados.append(r)
                 continue
             r = {'fuente': fuente, 'url': c['url'], 'estado': 'pendiente', 'motivo': '', 'funciones': 0}
             try:

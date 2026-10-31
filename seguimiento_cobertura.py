@@ -49,7 +49,7 @@ def medir_pendientes(root, fecha, guardar):
         if resultado.get('estado') not in ('pendiente', 'reintentar', 'diferido'):
             continue
         evidencia = [fecha[:10]]
-        for valor in (registro.get(key), entrada.get('intento'), entrada.get('visto')):
+        for valor in (registro.get(key), entrada.get('primera_evidencia'), entrada.get('intento'), entrada.get('visto')):
             if isinstance(valor, str) and dias(valor, fecha) is not None:
                 evidencia.append(valor[:10])
         desde = min(evidencia)
@@ -76,7 +76,13 @@ def revisar_municipal(root, panel, contexto, fecha, actual):
         panel['alertas'].append(dict(tipo='cobertura', mensaje=
             'La agenda municipal no tiene fichas consultadas en este intento. '
             'Los eventos conservados no prueban una revisión nueva.'))
+    pausadas = revision.get('fichas_no_consultadas_por_pausa', 0) if vigente else None
+    if pausadas:
+        panel['alertas'].append(dict(tipo='cobertura', mensaje=
+            f'{pausadas} fichas municipales no consultadas por pausa de acceso; reintento automático.'))
     return dict(diagnostico_actual=bool(vigente), fichas_consultadas=consultadas,
+                fichas_leidas=revision.get('fichas_leidas') if vigente else None,
+                no_consultadas_por_pausa=pausadas,
                 consultas_fallidas=revision.get('fichas_con_error') if vigente else None)
 
 

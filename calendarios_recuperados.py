@@ -9,6 +9,7 @@ from urllib.parse import urljoin, urlsplit
 from bs4 import BeautifulSoup
 import requests
 from cobertura_fuentes import HORIZONTE_DIAS
+from descubrimiento_html import descubrir, huella_html, seleccionar, combinar
 
 MESES = 'enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre'.split()
 EXCLUIDOS = re.compile(r'^(?:curso|taller|seminario|convocatoria|residencia|profesorado)\b')
@@ -76,14 +77,15 @@ def fechas_del_indice(html):
     return fechas_indice
 
 
-def ccpe(html, fuente, url, direccion, hoy, descargar, crear, fechas):
-    enlaces = {urljoin(url, a['href']): texto(a) for a in html.select('.mec-event-title a[href]')
-               if not EXCLUIDOS.search(norm(texto(a.parent)))}
+def ccpe(html, fuente, url, direccion, hoy, descargar, crear, fechas, elegir=None):
+    enlaces = descubrir(html, url, '.mec-event-title a[href]', descargar,
+                        admitir=lambda a: not EXCLUIDOS.search(norm(texto(a.parent))))
+    elegir = elegir or (lambda e, n: list(e.items())[:n])
     if not enlaces:
         raise ValueError('CCPE: la agenda no contiene fichas públicas reconocibles')
     eventos, fallidos = [], set()
     fechas_indice = fechas_del_indice(html)
-    for link, titulo in list(enlaces.items())[:16]:
+    for link, titulo in elegir(enlaces, 16):
         if not local(link, url) or EXCLUIDOS.search(norm(titulo)):
             continue
         if re.fullmatch(r'\d{4}-\d{2}-\d{2}', fechas_indice.get(link, '')) and fechas_indice[link] < hoy.isoformat():
@@ -113,16 +115,15 @@ def ccpe(html, fuente, url, direccion, hoy, descargar, crear, fechas):
     return eventos, fallidos
 
 
-def argentina(html, fuente, url, direccion, hoy, descargar, crear, fechas):
-    tarjetas = html.select('article .entry-title a[href], h2.entry-title a[href], h3.entry-title a[href]')
-    if not tarjetas:
+def argentina(html, fuente, url, direccion, hoy, descargar, crear, fechas, elegir=None):
+    enlaces = descubrir(html, url, 'article .entry-title a[href], h2.entry-title a[href], h3.entry-title a[href]', descargar)
+    if not enlaces:
         raise ValueError('Biblioteca Argentina: falta el listado de publicaciones')
-    eventos, fallidos, vistos = [], set(), set()
-    for a in tarjetas[:12]:
-        link, titulo = urljoin(url, a['href']), texto(a)
-        if link in vistos or not local(link, url) or EXCLUIDOS.search(norm(titulo)):
+    eventos, fallidos = [], set()
+    elegir = elegir or (lambda e, n: list(e.items())[:n])
+    for link, titulo in elegir(enlaces, 12):
+        if not local(link, url) or EXCLUIDOS.search(norm(titulo)) or 'profesorado' in norm(titulo):
             continue
-        vistos.add(link)
         try:
             detalle = descargar(link)
             cuerpo = detalle.select_one('article .entry-content, .entry-content')
@@ -130,8 +131,8 @@ def argentina(html, fuente, url, direccion, hoy, descargar, crear, fechas):
                 raise ValueError('Biblioteca Argentina: ficha incompleta')
             # Excluir biografías, recomendaciones y navegación posterior.
             parrafos = cuerpo.select('p')
-            anuncio = next((texto(p) for p in parrafos if not p.find_parent('blockquote') and
-                           re.search(r'\b(?:lunes|martes|miercoles|jueves|viernes|sabado|domingo)\b', norm(texto(p)))), '')
+            anuncio = next((texto(p) for p in parrafos[:4] if not p.find_parent('blockquote') and
+                           fechas(texto(p), hoy)), '')
             descripcion = texto(cuerpo)
             if re.search(r'(?:actividad|funcion|evento|presentacion|concierto)\s+(?:fue |esta |se encuentra )?(?:cancelad|suspendid|postergad)[oa]', norm(descripcion)):
                 continue
@@ -151,15 +152,22 @@ def funciones_vigil(html, url, hoy, crear, fechas):
         raise ValueError('Vigil: falta el cuerpo de la noticia')
     temporada = re.search(r'temporada\s+(20\d{2})', norm(texto(cuerpo)))
     anio = int(temporada[1]) if temporada else anio_publicado(html)
-    if anio != hoy.year:
+    if not anio:
+        return []
+    contexto = texto(html.select_one('h1')) + ' ' + texto(cuerpo)[:500]
+    if 'teatro vigil' not in norm(contexto):
         return []
     eventos, bloque = [], []
     def cerrar():
         if not bloque:
             return
-        lineas = bloque[0].get_text('\n', strip=True).splitlines()
-        turnos = fechas(lineas[0], hoy)
-        titulo = texto(bloque[0].select_one('strong')) or (lineas[1] if len(lineas) > 1 else '')
+        lineas = lineas_parrafo(bloque[0])
+        patron = r'\b(\d{1,2}\s+(?:de\s+)?(?:'+ '|'.join(MESES) +r'))\b(?!\s*,?\s*(?:de\s+)?20\d{2})'
+        anuncio = re.sub(patron, lambda m: m[1]+' de '+str(anio), norm(lineas[0]))
+        turnos = fechas(anuncio, hoy)
+        titulo = lineas[1] if len(lineas) > 1 else ''
+        if not titulo and len(bloque) > 1:
+            titulo = texto(bloque[1].select_one('strong'))
         if not titulo or EXCLUIDOS.search(norm(titulo)):
             return
         descripcion = '\n'.join(linea for p in bloque for linea in lineas_parrafo(p))
@@ -169,7 +177,7 @@ def funciones_vigil(html, url, hoy, crear, fechas):
             eventos.append(publicar_evento(crear, dia, hora, titulo.rstrip('.'), url,
                 'Biblioteca Vigil', 'Alem 3086', descripcion, 'Teatro Vigil'))
     for p in cuerpo.select('p'):
-        primera = p.get_text('\n', strip=True).splitlines()
+        primera = lineas_parrafo(p)
         es_fecha = primera and re.search(r'\b(?:lunes|martes|miercoles|jueves|viernes|sabado|domingo)\s+\d', norm(primera[0]))
         if es_fecha:
             cerrar(); bloque = [p]
@@ -179,16 +187,17 @@ def funciones_vigil(html, url, hoy, crear, fechas):
     return eventos
 
 
-def vigil(html, fuente, url, direccion, hoy, descargar, crear, fechas):
+def vigil(html, fuente, url, direccion, hoy, descargar, crear, fechas, elegir=None):
     # El calendario MEC puede estar vacío aunque haya programación en noticias.
     portada_url = urljoin(url, '/inicio/')
-    portada = descargar(portada_url)
-    enlaces = {urljoin(portada_url, a['href']): texto(a) for a in portada.select('article h2 a[href], article .entry-title a[href]')}
+    portada = html if html.select('article .entry-title a[href], article h2 a[href]') else descargar(portada_url)
+    enlaces = descubrir(portada, portada_url, 'article h2 a[href], article .entry-title a[href]', descargar)
     if not enlaces:
         raise ValueError('Vigil: no se reconocen las noticias de la portada')
     eventos, fallidos = [], set()
-    for link, titulo in list(enlaces.items())[:3]:
-        if not local(link, portada_url) or 'teatro vigil' not in norm(titulo):
+    elegir = elegir or (lambda e, n: list(e.items())[:n])
+    for link, titulo in elegir(enlaces, 4):
+        if not local(link, portada_url):
             continue
         try:
             eventos.extend(funciones_vigil(descargar(link), link, hoy, crear, fechas))
@@ -210,12 +219,26 @@ def adaptar(html, fuente, url, direccion, hoy, descargar, crear, fechas, cache_p
     path = Path(cache_path)
     cache = json.loads(path.read_text()) if path.exists() else {}
     anterior = cache.get(fuente, {})
-    if time.time() - anterior.get('consultado', 0) < 21600:
+    if fuente == 'Biblioteca Vigil':
+        html = descargar(urljoin(url, '/inicio/'))
+    huella = huella_html(html, url)
+    ahora = time.time()
+    pendientes = set(anterior.get('enlaces', {})) - set(anterior.get('intentos', {}))
+    if not pendientes and ahora - anterior.get('consultado', 0) < 7200 and anterior.get('huella') == huella:
         return [e for e in anterior['eventos'] if hoy.isoformat() <= e['fecha'] <= (hoy+timedelta(days=HORIZONTE_DIAS)).isoformat()], set()
-    eventos, fallidos = lectores[fuente](html, fuente, url, direccion, hoy, descargar, crear, fechas)
-    if not fallidos:
-        cache[fuente] = dict(consultado=time.time(), eventos=eventos)
-        temporal = path.with_suffix('.tmp')
-        temporal.write_text(json.dumps(cache, ensure_ascii=False))
-        temporal.replace(path)
+    consultadas = set()
+    def consultar(link):
+        consultadas.add(link)
+        return descargar(link)
+    def elegir(enlaces, limite):
+        return seleccionar(enlaces, limite, anterior, ahora)
+    nuevos, fallidos = lectores[fuente](html, fuente, url, direccion, hoy, consultar, crear, fechas, elegir)
+    eventos = combinar(anterior.get('eventos', []), nuevos, consultadas, fallidos, hoy)
+    cache[fuente] = {**anterior, 'consultado': ahora if not fallidos else 0,
+        'huella': huella, 'eventos': eventos,
+        'revision': {'enlaces_descubiertos': len(anterior.get('enlaces', {})),
+                     'paginas_consultadas': sorted(consultadas), 'fichas_fallidas': sorted(fallidos)}}
+    temporal = path.with_suffix('.tmp')
+    temporal.write_text(json.dumps(cache, ensure_ascii=False))
+    temporal.replace(path)
     return eventos, fallidos

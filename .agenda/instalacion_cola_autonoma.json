@@ -1,0 +1,10 @@
+{
+  "version": "2026.10.31-cola-autonoma-6",
+  "archivos": [
+    "resolver_candidatos.py",
+    "cola_candidatos.py",
+    "actualizar_eventos.py",
+    "seguimiento_cobertura.py",
+    "tests/test_cola_autonoma.py"
+  ]
+}
