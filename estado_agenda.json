@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-10-30T16:47:03-03:00",
-  "ejecucion_id": "41114966991-1",
-  "inicio": "2026-10-30T16:24:24-03:00",
+  "generado": "2026-10-30T21:10:33-03:00",
+  "ejecucion_id": "41146642414-1",
+  "inicio": "2026-10-30T20:48:47-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-30 16:24",
-  "ultima_consulta_fuentes": "2026-10-30T16:46:32.888735-03:00",
+  "datos_actualizados": "2026-10-30 20:48",
+  "ultima_consulta_fuentes": "2026-10-30T21:10:04.374097-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
     "eventos": 1214,
     "funciones_unicas": 1214,
-    "nuevos": 13,
+    "nuevos": 0,
     "ausentes": 0,
     "duplicados": 3,
-    "conservados": 49,
+    "conservados": 71,
     "fuentes": 96
   },
   "alertas": [
@@ -34,8 +34,8 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 325,
-      "antes": 313,
-      "conservados": 27,
+      "antes": 325,
+      "conservados": 48,
       "caida": false
     },
     {
@@ -225,7 +225,7 @@
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 8,
       "antes": 8,
-      "conservados": 0,
+      "conservados": 1,
       "caida": false
     },
     {
@@ -254,7 +254,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 10,
-      "antes": 9,
+      "antes": 10,
       "conservados": 0,
       "caida": false
     },
@@ -600,9 +600,9 @@
     },
     {
       "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -650,9 +650,9 @@
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1029,7 +1029,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-30T16:47:02-03:00",
+    "fecha": "2026-10-30T21:10:32-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1042,101 +1042,9 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41114966991",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41146642414",
   "cambios": {
-    "nuevos": [
-      {
-        "fecha": "2026-10-31",
-        "hora": "21:00",
-        "nombre": "Fiesta TNT",
-        "lugar": "Distrito Siete, Ovidio Lagos 790, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-10-31",
-        "hora": "21:00",
-        "nombre": "Fueye Solo: concierto acústico de bandoneón",
-        "lugar": "Centro Cultural La Casa del Tango, Illia 1750, Rosario",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-08",
-        "hora": "20:00",
-        "nombre": "Domingos bien jugados",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
-      },
-      {
-        "fecha": "2026-11-01",
-        "hora": "17:00",
-        "nombre": "RosariGarcía: inauguración de la muestra",
-        "lugar": "Galpón 11",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-12-04",
-        "hora": "20:00",
-        "nombre": "Homenaje sinfónico a Ennio Morricone",
-        "lugar": "Teatro Broadway",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-07",
-        "hora": "17:00",
-        "nombre": "RosariGarcía: inauguración de la muestra",
-        "lugar": "Galpón 11",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-08",
-        "hora": "17:00",
-        "nombre": "RosariGarcía: inauguración de la muestra",
-        "lugar": "Galpón 11",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-14",
-        "hora": "17:00",
-        "nombre": "RosariGarcía: inauguración de la muestra",
-        "lugar": "Galpón 11",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-15",
-        "hora": "17:00",
-        "nombre": "RosariGarcía: inauguración de la muestra",
-        "lugar": "Galpón 11",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-21",
-        "hora": "17:00",
-        "nombre": "RosariGarcía: inauguración de la muestra",
-        "lugar": "Galpón 11",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-22",
-        "hora": "17:00",
-        "nombre": "RosariGarcía: inauguración de la muestra",
-        "lugar": "Galpón 11",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-28",
-        "hora": "17:00",
-        "nombre": "RosariGarcía: inauguración de la muestra",
-        "lugar": "Galpón 11",
-        "origen": "Agenda Cultural Rosario"
-      },
-      {
-        "fecha": "2026-11-29",
-        "hora": "17:00",
-        "nombre": "RosariGarcía: inauguración de la muestra",
-        "lugar": "Galpón 11",
-        "origen": "Agenda Cultural Rosario"
-      }
-    ],
+    "nuevos": [],
     "ausentes": []
   }
 }

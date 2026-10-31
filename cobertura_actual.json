@@ -1,5 +1,5 @@
 {
-  "datos_actualizados": "2026-10-30 16:24",
+  "datos_actualizados": "2026-10-30 20:48",
   "fecha_corte": "2026-10-30",
   "eventos_futuros_publicados": 1214,
   "por_fuente": {
@@ -34,7 +34,7 @@
     "Passline — QUE SEA ROCK": 2,
     "Grupo Gamma — Charlas a la comunidad": 2
   },
-  "revision_municipal": "2026-10-30T16:24:27.218951-03:00",
+  "revision_municipal": "2026-10-30T20:48:49.755266-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [],
   "estados_municipales": {},
@@ -64,23 +64,16 @@
     },
     {
       "fuente": "EntradaFan",
-      "nombre": "Camilo Rosario",
-      "url": "",
-      "fecha": "2026-10-30",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
       "nombre": "Un Poco de Ruido Rosario",
       "url": "",
       "fecha": "2026-10-31",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
-      "fuente": "SalePlan",
-      "nombre": "Candlelight: Tributo a Taylor Swift",
+      "fuente": "EntradaFan",
+      "nombre": "Ciro y Los Persas Rosario ",
       "url": "",
-      "fecha": "",
+      "fecha": "2026-11-06",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
@@ -134,35 +127,14 @@
     },
     {
       "fuente": "SalePlan",
-      "nombre": "Festival de Danzas Españolas",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "nombre": "SWAGGERBOYZ",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "nombre": "COMO MIRAR FIJO AL SOL",
+      "nombre": "Candlelight: Peaky Blinders",
       "url": "",
       "fecha": "",
       "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
     },
     {
       "fuente": "SalePlan",
-      "nombre": "El bingo musical de Veto y Fer",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "nombre": "SERGIO DALMA",
+      "nombre": "COMO MIRAR FIJO AL SOL",
       "url": "",
       "fecha": "",
       "motivo": "Turno de revisión rotativa en otra ejecución"
@@ -179,7 +151,7 @@
       "nombre": "4CORAZONES - REDSPACE and more",
       "url": "",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
@@ -228,7 +200,7 @@
       "nombre": "LOS PEREZ GARCIA",
       "url": "",
       "fecha": "",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
@@ -240,6 +212,34 @@
     {
       "fuente": "SalePlan",
       "nombre": "Macbeth",
+      "url": "",
+      "fecha": "",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "nombre": "TABLAO FLAMENCO - ENTRE PALMAS",
+      "url": "",
+      "fecha": "",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+    },
+    {
+      "fuente": "SalePlan",
+      "nombre": "Nu Metal Show - Especial Halloween",
+      "url": "",
+      "fecha": "",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+    },
+    {
+      "fuente": "SalePlan",
+      "nombre": "Víctor Heredia: Desde Paso del Rey",
+      "url": "",
+      "fecha": "",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático"
+    },
+    {
+      "fuente": "SalePlan",
+      "nombre": "La función de los invisibles",
       "url": "",
       "fecha": "",
       "motivo": "Turno de revisión rotativa en otra ejecución"
@@ -504,7 +504,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-10-30T16:45:40.080219-03:00",
+  "resolucion_revision": "2026-10-30T21:08:51.290888-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
@@ -728,13 +728,13 @@
     },
     {
       "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17859",
+      "url": "https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129",
+      "url": "https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17859",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -764,6 +764,27 @@
     },
     {
       "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/9ZWWM688AHFH/victor-heredia-desde-paso-del-rey",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/ATC34HA4Q6ES/candlelight-peaky-blinders",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/PY9GTDVG79PS/nu-metal-show-especial-halloween",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/QHBJMK2W58RV/tablao-flamenco-entre-palmas",
       "estado": "reintentar",
       "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
@@ -772,23 +793,20 @@
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/RRCF1QQZDTBH/como-mirar-fijo-al-sol",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
-      "funciones": 0
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/SXE8C343M99Y/4corazones-redspace-and-more",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
-      "funciones": 0
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/TWY1G0B8G6FH/los-perez-garcia",
-      "estado": "reintentar",
-      "motivo": "Cuota diaria de cuatro fichas agotada; reintento automático",
-      "funciones": 0
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
