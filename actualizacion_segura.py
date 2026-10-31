@@ -139,6 +139,7 @@ def ejecutar_etapa(root, script, limite, ejecutar=subprocess.run, hoy=None):
                     atomico(root / 'estado_http.json', json.loads(estado_http.read_text()))
                 except (ValueError, OSError):
                     pass
+            print(f'AVISO etapa {script} fallida ({type(error).__name__}): {error}', flush=True)
             return {'etapa': script, 'estado': 'fallida', 'error': str(error), 'agenda_conservada': True}
         # Los archivos de caché y de estado se aceptan únicamente tras validar la etapa.
         for nombre, contenido in auxiliares.items():

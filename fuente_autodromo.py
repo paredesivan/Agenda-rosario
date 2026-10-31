@@ -129,7 +129,8 @@ def actualizar(root=ROOT, session=None, hoy=None):
         except (requests.RequestException, RuntimeError) as exc:
             print('Autódromo: página inaccesible:', pagina, str(exc), flush=True)
     if not enlaces:
-        raise RuntimeError('No se detectaron fichas en las páginas públicas; no se modifica la agenda')
+        print('AVISO Autódromo: catálogo sin enlaces verificables; se conserva la agenda', flush=True)
+        return {'nuevos': 0, 'revisados': 0, 'errores': [{'motivo': 'sin_enlaces_verificables'}]}
     path = Path(root) / 'eventos.json'
     datos = json.loads(path.read_text(encoding='utf-8'))
     anteriores = datos['eventos']

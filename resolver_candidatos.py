@@ -325,8 +325,8 @@ def resolver(root=ROOT, acceso=None, hoy=None):
         vigente = acceso.reloj() - previo.get('consultado', 0) < 86400
         usadas = cuotas.setdefault(dia, [])
         if not vigente:
-            if url in usadas or len(usadas) >= 4:
-                raise ValueError('Cuota diaria de cuatro fichas agotada; reintento automático')
+            if url in usadas or len(usadas) >= 8:
+                raise ValueError('Cuota diaria de ocho fichas agotada; reintento automático')
             usadas.append(url)
         return acceso.leer_datos(url, lambda h, u: detalle(h, u, fuente), horas=24)
 
@@ -349,7 +349,7 @@ def resolver(root=ROOT, acceso=None, hoy=None):
         filas = activas
         filas.sort(key=prioridad_pendiente)
         for indice, (k, c) in enumerate(filas):
-            if indice >= 4:
+            if indice >= 12:
                 resultados.append({'fuente': fuente, 'url': c['url'], 'estado': 'diferido', 'motivo': 'Turno de revisión rotativa en otra ejecución'})
                 continue
             r = {'fuente': fuente, 'url': c['url'], 'estado': 'pendiente', 'motivo': '', 'funciones': 0}

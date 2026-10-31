@@ -1,0 +1,11 @@
+{
+  "version": "2026.10.31-reparacion-extracciones-2",
+  "archivos": [
+    "actualizar_eventos.py",
+    "fuente_autodromo.py",
+    "actualizacion_segura.py",
+    "resolver_candidatos.py",
+    "tests/test_resolver_candidatos.py",
+    "tests/test_reparacion_oct31.py"
+  ]
+}

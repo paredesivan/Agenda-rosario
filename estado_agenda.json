@@ -1,27 +1,23 @@
 {
   "version": 1,
-  "generado": "2026-10-31T09:56:48-03:00",
-  "ejecucion_id": "41201662484-1",
-  "inicio": "2026-10-31T09:33:56-03:00",
+  "generado": "2026-10-31T10:57:14-03:00",
+  "ejecucion_id": "41206385724-1",
+  "inicio": "2026-10-31T10:37:20-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-31 09:33",
-  "ultima_consulta_fuentes": "2026-10-31T09:56:15.583865-03:00",
+  "datos_actualizados": "2026-10-31 10:37",
+  "ultima_consulta_fuentes": "2026-10-31T10:56:25.795678-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1097,
-    "funciones_unicas": 1097,
-    "nuevos": 0,
+    "eventos": 1102,
+    "funciones_unicas": 1102,
+    "nuevos": 5,
     "ausentes": 0,
-    "duplicados": 0,
+    "duplicados": 5,
     "conservados": 39,
-    "fuentes": 75
+    "fuentes": 94
   },
   "alertas": [
-    {
-      "tipo": "etapa",
-      "mensaje": "Falló la etapa fuente_autodromo.py. Se conservaron sus datos anteriores."
-    },
     {
       "tipo": "tareas",
       "mensaje": "No se pudieron desactivar todas las tareas antiguas. Consultar el resumen de Actions."
@@ -33,16 +29,16 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 297,
+      "eventos": 293,
       "antes": 297,
       "conservados": 21,
       "caida": false
     },
     {
       "nombre": "Agenda municipal — Espacios",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -60,6 +56,26 @@
     },
     {
       "nombre": "Alto Rosario Shopping — CSV",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Bajada de los Maestros",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Beatmemo",
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
@@ -309,6 +325,16 @@
       "caida": false
     },
     {
+      "nombre": "Experimental - Museo de Ciencias en Movimiento",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
       "nombre": "Feria Internacional del Libro de Rosario",
       "estado": "atencion",
       "motivo": "No se pudo completar la lectura.",
@@ -330,9 +356,9 @@
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
@@ -479,20 +505,170 @@
       "caida": false
     },
     {
+      "nombre": "Muestra Inmersiva: Estación Rosario 300",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
       "nombre": "Municipalidad de Rosario",
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 582,
+      "eventos": 592,
       "antes": 582,
       "conservados": 17,
       "caida": false
     },
     {
-      "nombre": "Museo Urbano Arte a la Vista",
+      "nombre": "Museo Diario La Capital",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo Histórico Provincial Julio Marc",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo Provincial de Ciencias Naturales Dr. Ángel Gallardo",
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo Urbano Arte a la Vista",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Arte Contemporáneo de Rosario (MACRO)",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Arte Sacro Barnes",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Bellas Artes Juan B. Castagnino",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de Sitio: \"El Paraná y las islas\"",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la Bolsa de Comercio",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la Ciudad",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la Memoria",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la Salud",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo de la ópera",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Museo del Deporte Santafesino",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -623,7 +799,7 @@
       "estado": "atencion",
       "motivo": "No se pudo completar la lectura.",
       "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
-      "eventos": 12,
+      "eventos": 11,
       "antes": 12,
       "conservados": 0,
       "caida": false
@@ -635,6 +811,16 @@
       "accion": "Sin intervención necesaria.",
       "eventos": 1,
       "antes": 1,
+      "conservados": 0,
+      "caida": false
+    },
+    {
+      "nombre": "Sala de las Banderas",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 0,
+      "antes": 0,
       "conservados": 0,
       "caida": false
     },
@@ -814,12 +1000,12 @@
     },
     {
       "nombre": "fuente_autodromo.py",
-      "estado": "fallida"
+      "estado": "parcial"
     }
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-31T09:56:46-03:00",
+    "fecha": "2026-10-31T10:57:12-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -832,9 +1018,45 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41201662484",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41206385724",
   "cambios": {
-    "nuevos": [],
+    "nuevos": [
+      {
+        "fecha": "2026-11-07",
+        "hora": "20:00",
+        "nombre": "Dia de la animación argentina en Cine Lumière",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-08",
+        "hora": "20:00",
+        "nombre": "Casa Discepolín en Cine Lumière",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "18:00",
+        "nombre": "Colores perdidos en Cine Lumière",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-10-31",
+        "hora": "10:00",
+        "nombre": "Alegría de primavera",
+        "lugar": "Plaza 25 de Mayo",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-07",
+        "hora": "18:00",
+        "nombre": "Colores perdidos en Cine Lumière",
+        "lugar": "Centro Cultural Cine Lumière",
+        "origen": "Municipalidad de Rosario"
+      }
+    ],
     "ausentes": []
   }
 }

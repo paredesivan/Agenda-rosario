@@ -113,17 +113,17 @@ class ResolverTests(unittest.TestCase):
     def test_rotacion_y_cuota_persistente_no_repite_las_primeras(self):
         with tempfile.TemporaryDirectory() as d:
             p = Path(d)
-            urls = ['https://rosariotimes.com/' + str(i) for i in range(6)]
+            urls = ['https://rosariotimes.com/' + str(i) for i in range(10)]
             self.preparar(p, [{'fuente': 'Rosario Times', 'referencia': u} for u in urls])
             a = Acceso({u: '<article>Sin evento fechado</article>' for u in urls})
             resolver(p, a, HOY)
-            self.assertEqual(len(a.calls), 4)
+            self.assertEqual(len(a.calls), 8)
             b = Acceso(a.paginas, copy.deepcopy(a.cache))
             resolver(p, b, HOY)
             self.assertEqual(b.calls, [])
             c = Acceso(a.paginas, copy.deepcopy(b.cache))
             resolver(p, c, date(2026, 10, 20))
-            self.assertTrue(set(urls[4:]) <= set(c.calls))
+            self.assertTrue(set(urls[8:]) <= set(c.calls))
 
     def test_no_borra_evento_por_fallo_403(self):
         url = OFICIAL + '/e'

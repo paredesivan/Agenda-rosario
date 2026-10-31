@@ -284,6 +284,7 @@ def actualizar():
     anteriores = json.loads(ARCHIVO.read_text(encoding="utf-8")) if ARCHIVO.exists() else {"eventos": []}
     conocidos = anteriores.get("eventos", [])
     enlaces, errores = obtener_enlaces()
+    print(f"Municipal: {len(enlaces)} enlaces del índice; {sum(e.get('origen') == ORIGEN and e.get('fecha', '') >= hoy.isoformat() for e in conocidos)} fichas futuras conservadas como respaldo", flush=True)
     enlaces.update(url for e in conocidos if e.get("origen") == ORIGEN
                    and e["fecha"] >= hoy.isoformat() and (url := url_oficial(e.get("evento_url", ""))))
     eventos, fallidos = [], set()
@@ -705,18 +706,29 @@ def actualizar():
                 "se conservan datos anteriores"
             )
 
+    enlaces = set()
     try:
         enlaces, avisos = obtener_enlaces()
         errores.extend(avisos)
-        enlaces.update(
-            e["evento_url"] for e in conocidos
-            if e.get("origen") == ORIGEN
-            and e["fecha"] >= hoy.isoformat()
-            and e.get("evento_url")
-        )
+    except (requests.RequestException, ValueError, RuntimeError) as error:
+        errores.append(f"Municipalidad: índice inaccesible ({type(error).__name__}: {error}); se reintentan fichas conocidas")
+    enlaces = {url_oficial(url) for url in enlaces if url_oficial(url)}
+    enlaces.update(
+        url for e in conocidos
+        if e.get("origen") == ORIGEN and e.get("fecha", "") >= hoy.isoformat()
+        if (url := url_oficial(e.get("evento_url", "")))
+    )
+    print(f"Municipalidad: índice y respaldo reúnen {len(enlaces)} fichas para consultar", flush=True)
+    try:
         from cobertura_fuentes import ordenar_consultas
         revision_anterior = ARCHIVO.with_name('revision_cobertura_municipal.json')
-        for indice, url in enumerate(ordenar_consultas(enlaces, revision_anterior), 1):
+        ordenados = ordenar_consultas(enlaces, revision_anterior)
+        lote = 40
+        inicio_lote = ((ahora.toordinal() * 12 + ahora.hour // 2) * lote) % max(1, len(ordenados))
+        seleccion = (ordenados[inicio_lote:] + ordenados[:inicio_lote])[:lote]
+        if len(ordenados) > len(seleccion):
+            errores.append(f'Municipalidad: revisión rotativa {len(seleccion)}/{len(ordenados)} fichas; el resto se conserva')
+        for indice, url in enumerate(seleccion, 1):
             _, nuevos, error, eliminado = consultar_evento(url, hoy)
             eventos.extend(nuevos)
             if error and not eliminado:
@@ -726,7 +738,8 @@ def actualizar():
                     f"Municipalidad: {indice}/{len(enlaces)} fichas",
                     flush=True,
                 )
-        correctas.add(ORIGEN)
+        if len(seleccion) == len(ordenados) and not fallidos:
+            correctas.add(ORIGEN)
     except (requests.RequestException, ValueError, RuntimeError) as error:
         errores.append(
             f"Municipalidad: {type(error).__name__}; "
