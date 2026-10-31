@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "generado": "2026-10-30T21:10:33-03:00",
-  "ejecucion_id": "41146642414-1",
-  "inicio": "2026-10-30T20:48:47-03:00",
+  "generado": "2026-10-31T03:04:47-03:00",
+  "ejecucion_id": "41173760253-1",
+  "inicio": "2026-10-31T02:44:14-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-10-30 20:48",
-  "ultima_consulta_fuentes": "2026-10-30T21:10:04.374097-03:00",
+  "datos_actualizados": "2026-10-31 02:44",
+  "ultima_consulta_fuentes": "2026-10-31T03:04:10.795242-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1214,
-    "funciones_unicas": 1214,
-    "nuevos": 0,
+    "eventos": 1097,
+    "funciones_unicas": 1097,
+    "nuevos": 1,
     "ausentes": 0,
-    "duplicados": 3,
-    "conservados": 71,
-    "fuentes": 96
+    "duplicados": 1,
+    "conservados": 39,
+    "fuentes": 94
   },
   "alertas": [
     {
@@ -33,9 +33,9 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 325,
-      "antes": 325,
-      "conservados": 48,
+      "eventos": 297,
+      "antes": 297,
+      "conservados": 21,
       "caida": false
     },
     {
@@ -99,16 +99,6 @@
       "caida": false
     },
     {
-      "nombre": "Biblioteca Vigil",
-      "estado": "pendiente",
-      "motivo": "La fuente no tiene un resultado concluyente.",
-      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 1,
-      "antes": 1,
-      "conservados": 0,
-      "caida": false
-    },
-    {
       "nombre": "Caras y Caretas",
       "estado": "bien",
       "motivo": "Consulta completada.",
@@ -123,8 +113,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 1,
-      "antes": 1,
+      "eventos": 0,
+      "antes": 0,
       "conservados": 0,
       "caida": false
     },
@@ -133,8 +123,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 5,
-      "antes": 5,
+      "eventos": 4,
+      "antes": 4,
       "conservados": 0,
       "caida": false
     },
@@ -223,18 +213,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 8,
-      "antes": 8,
-      "conservados": 1,
-      "caida": false
-    },
-    {
-      "nombre": "ECU Espacio Cultural Universitario",
-      "estado": "pendiente",
-      "motivo": "La fuente no tiene un resultado concluyente.",
-      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 1,
-      "antes": 1,
+      "eventos": 7,
+      "antes": 7,
       "conservados": 0,
       "caida": false
     },
@@ -254,7 +234,7 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 10,
-      "antes": 10,
+      "antes": 9,
       "conservados": 0,
       "caida": false
     },
@@ -263,8 +243,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 59,
-      "antes": 59,
+      "eventos": 56,
+      "antes": 56,
       "conservados": 0,
       "caida": false
     },
@@ -303,8 +283,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 15,
-      "antes": 15,
+      "eventos": 14,
+      "antes": 14,
       "conservados": 0,
       "caida": false
     },
@@ -370,9 +350,9 @@
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "pendiente",
-      "motivo": "La fuente no tiene un resultado concluyente.",
-      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -380,9 +360,9 @@
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
@@ -400,9 +380,9 @@
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -513,8 +493,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 4,
-      "antes": 4,
+      "eventos": 3,
+      "antes": 3,
       "conservados": 0,
       "caida": false
     },
@@ -523,8 +503,8 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 48,
-      "antes": 48,
+      "eventos": 24,
+      "antes": 24,
       "conservados": 0,
       "caida": false
     },
@@ -543,9 +523,9 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 634,
-      "antes": 634,
-      "conservados": 21,
+      "eventos": 582,
+      "antes": 582,
+      "conservados": 17,
       "caida": false
     },
     {
@@ -783,8 +763,8 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 7,
-      "antes": 7,
+      "eventos": 5,
+      "antes": 5,
       "conservados": 0,
       "caida": false
     },
@@ -820,9 +800,9 @@
     },
     {
       "nombre": "Rosario en Cartel",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 12,
       "antes": 12,
       "conservados": 0,
@@ -933,8 +913,8 @@
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 1,
-      "antes": 1,
+      "eventos": 0,
+      "antes": 0,
       "conservados": 0,
       "caida": false
     },
@@ -980,9 +960,9 @@
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
@@ -1029,7 +1009,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-10-30T21:10:32-03:00",
+    "fecha": "2026-10-31T03:04:45-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1042,9 +1022,17 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41146642414",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41173760253",
   "cambios": {
-    "nuevos": [],
+    "nuevos": [
+      {
+        "fecha": "2026-11-15",
+        "hora": "20:00",
+        "nombre": "Domingos bien jugados",
+        "lugar": "El Aserradero",
+        "origen": "El Aserradero — oficial"
+      }
+    ],
     "ausentes": []
   }
 }
