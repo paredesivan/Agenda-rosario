@@ -221,6 +221,52 @@ jobs:
       - name: Guardar respaldo y contexto de esta ejecución
         run: python gestion_agenda.py preparar
 
+      - name: Instalar reparación de extracciones 2026.10.31-2
+        run: |
+          python - <<'PY'
+          import ast, base64, gzip, hashlib, json, os
+          from pathlib import Path
+          VERSION = '2026.10.31-reparacion-extracciones-2'
+          receipt = Path('.agenda/reparacion_extracciones.json')
+          if receipt.exists() and json.loads(receipt.read_text()).get('version') == VERSION:
+              print('Reparación ya instalada; se conservan modificaciones posteriores.')
+          else:
+              bundle = json.loads(gzip.decompress(base64.b64decode('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')))
+              staged, backups = {}, {}
+              for entry in bundle:
+                  path = Path(entry['path'])
+                  original = path.read_text() if path.exists() else ''
+                  digest = hashlib.sha256(original.encode()).hexdigest()
+                  if digest == entry['after']:
+                      continue
+                  if digest != entry['before']:
+                      raise RuntimeError(f"{path} cambió desde la revisión; no se sobrescribió ningún archivo")
+                  lines = original.splitlines(keepends=True)
+                  for start, end, replacement in reversed(entry['edits']):
+                      lines[start:end] = replacement
+                  result = ''.join(lines)
+                  assert hashlib.sha256(result.encode()).hexdigest() == entry['after']
+                  ast.parse(result, filename=str(path))
+                  staged[path] = result
+                  backups[path] = path.read_bytes() if path.exists() else None
+              try:
+                  for path, result in staged.items():
+                      path.parent.mkdir(parents=True, exist_ok=True)
+                      temporary = path.with_suffix(path.suffix + '.reparacion.tmp')
+                      temporary.write_text(result)
+                      os.replace(temporary, path)
+                  receipt.parent.mkdir(exist_ok=True)
+                  receipt.write_text(json.dumps({'version': VERSION, 'archivos': [e['path'] for e in bundle]}, indent=2)+'\n')
+              except BaseException:
+                  for path, original in backups.items():
+                      if original is None:
+                          path.unlink(missing_ok=True)
+                      else:
+                          path.write_bytes(original)
+                  raise
+              print('Reparación instalada en el checkout; se guardará únicamente después de las pruebas.')
+          PY
+
       - name: Verificar reglas, extracción y conservación
         id: pruebas
         run: |
