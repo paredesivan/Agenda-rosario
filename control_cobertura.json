@@ -5,13 +5,13 @@
   ],
   "municipal": {
     "diagnostico_actual": true,
-    "fichas_consultadas": 0,
-    "fichas_leidas": 0,
-    "no_consultadas_por_pausa": 40,
+    "fichas_consultadas": 40,
+    "fichas_leidas": 40,
+    "no_consultadas_por_pausa": 0,
     "consultas_fallidas": 0
   },
   "pendientes": {
-    "cantidad": 80,
+    "cantidad": 81,
     "mayores_7_dias": 21,
     "antiguedad_maxima_dias": 14,
     "criterio": "Desde la primera evidencia registrada; puede ser anterior.",
@@ -20,9 +20,9 @@
       "Instituto Politécnico — Novedades": 2,
       "Planaxia": 11,
       "Rosario Times": 10,
-      "SalePlan": 42
+      "SalePlan": 43
     }
   },
-  "minutos_hasta_informe": 23.58,
+  "minutos_hasta_informe": 27.18,
   "tiempo_intervencion_humana": "No medido"
 }
