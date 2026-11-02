@@ -34,7 +34,7 @@
     "Microteatro Rosario": 61
   },
   "revision_municipal": "2026-11-02T12:57:01.021199-03:00",
-  "municipal_del_intento_actual": true,
+  "municipal_del_intento_actual": false,
   "fichas_municipales": [],
   "estados_municipales": {},
   "comparacion_por_funcion_disponible": false,
