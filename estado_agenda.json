@@ -1,34 +1,34 @@
 {
   "version": 1,
-  "generado": "2026-11-02T03:39:45-03:00",
-  "ejecucion_id": "41397958634-1",
-  "inicio": "2026-11-02T03:07:37-03:00",
+  "generado": "2026-11-02T13:20:03-03:00",
+  "ejecucion_id": "41476547897-1",
+  "inicio": "2026-11-02T12:56:57-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-11-02 03:07",
-  "ultima_consulta_fuentes": "2026-11-02T03:38:59.221003-03:00",
+  "datos_actualizados": "2026-11-02 12:57",
+  "ultima_consulta_fuentes": "2026-11-02T13:19:25.311637-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1059,
-    "funciones_unicas": 1059,
-    "nuevos": 0,
+    "eventos": 1070,
+    "funciones_unicas": 1070,
+    "nuevos": 11,
     "ausentes": 0,
-    "duplicados": 3,
+    "duplicados": 2,
     "conservados": 36,
     "fuentes": 97
   },
   "alertas": [
-    {
-      "tipo": "cobertura",
-      "mensaje": "1 fichas municipales no se pudieron consultar. Revisar COBERTURA_ACTUAL.md."
-    },
     {
       "tipo": "tareas",
       "mensaje": "No se pudieron desactivar todas las tareas antiguas. Consultar el resumen de Actions."
     },
     {
       "tipo": "cobertura",
-      "mensaje": "10 fichas municipales no consultadas por pausa de acceso; reintento automático."
+      "mensaje": "La agenda municipal no tiene fichas consultadas en este intento. Los eventos conservados no prueban una revisión nueva."
+    },
+    {
+      "tipo": "cobertura",
+      "mensaje": "40 fichas municipales no consultadas por pausa de acceso; reintento automático."
     },
     {
       "tipo": "cobertura",
@@ -42,15 +42,15 @@
   "fuentes": [
     {
       "nombre": "ATIR",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -59,11 +59,11 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 250,
-      "antes": 251,
-      "conservados": 21,
+      "antes": 250,
+      "conservados": 20,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -76,7 +76,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -89,7 +89,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -102,7 +102,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -115,7 +115,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -128,20 +128,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Biblioteca Argentina Dr. Juan Álvarez",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
-      "eventos": 4,
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "eventos": 5,
       "antes": 4,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -154,20 +154,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Caras y Caretas",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -180,7 +180,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -188,12 +188,12 @@
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 4,
+      "eventos": 6,
       "antes": 4,
-      "conservados": 0,
+      "conservados": 1,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -202,11 +202,11 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 7,
-      "antes": 6,
+      "antes": 7,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -219,7 +219,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -232,33 +232,33 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Club Fosse",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Cultural de Abajo",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -271,7 +271,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -284,7 +284,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -297,7 +297,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -310,7 +310,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -336,7 +336,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -349,7 +349,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -357,7 +357,7 @@
       "estado": "pendiente",
       "motivo": "La fuente no tiene un resultado concluyente.",
       "accion": "Revisar el detalle en Actions si este estado se mantiene.",
-      "eventos": 49,
+      "eventos": 55,
       "antes": 49,
       "conservados": 0,
       "caida": false,
@@ -375,7 +375,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -388,7 +388,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -401,7 +401,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -409,12 +409,12 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 12,
+      "eventos": 13,
       "antes": 12,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -427,7 +427,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -440,20 +440,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Espacio Bravo",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -466,7 +466,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -479,7 +479,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -492,33 +492,33 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Grupo Gamma — Charlas a la comunidad",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -531,20 +531,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -557,7 +557,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -570,7 +570,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -583,46 +583,46 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "La Escalera",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "La Grieta",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "La Morada",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -635,33 +635,33 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "La Sonrisa de Beckett",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "La Tornería",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -674,20 +674,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Metropolitano",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -700,7 +700,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -713,7 +713,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -721,12 +721,12 @@
       "estado": "atencion",
       "motivo": "La fuente limitó el acceso.",
       "accion": "Se respetan sus pausas. Revisar si se repite.",
-      "eventos": 559,
+      "eventos": 558,
       "antes": 559,
       "conservados": 14,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -739,7 +739,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -752,7 +752,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -765,7 +765,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -778,7 +778,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -791,7 +791,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -804,7 +804,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -817,7 +817,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -830,7 +830,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -843,7 +843,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -856,20 +856,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -882,7 +882,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -895,7 +895,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -908,7 +908,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -921,7 +921,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -934,7 +934,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -947,7 +947,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -960,7 +960,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -973,7 +973,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -986,7 +986,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -999,7 +999,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1012,7 +1012,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1025,7 +1025,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1038,7 +1038,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1046,12 +1046,12 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 4,
+      "eventos": 5,
       "antes": 4,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1064,7 +1064,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1077,20 +1077,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Rosario en Cartel",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 18,
       "antes": 18,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1103,7 +1103,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1116,7 +1116,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1129,7 +1129,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1142,20 +1142,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Tandava",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1168,7 +1168,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1181,7 +1181,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1194,7 +1194,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1202,25 +1202,25 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 7,
+      "eventos": 8,
       "antes": 7,
       "conservados": 1,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Teatro de la Manzana",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1233,7 +1233,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1246,7 +1246,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1259,7 +1259,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1272,7 +1272,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1285,20 +1285,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-02T03:39:45-03:00",
+      "ultimo_diagnostico": "2026-11-02T13:20:03-03:00",
       "dias_sin_diagnostico": 0
     }
   ],
@@ -1342,7 +1342,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-11-02T03:39:43-03:00",
+    "fecha": "2026-11-02T13:20:01-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1355,9 +1355,87 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41397958634",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41476547897",
   "cambios": {
-    "nuevos": [],
+    "nuevos": [
+      {
+        "fecha": "2026-11-05",
+        "hora": "18:00",
+        "nombre": "EL TREN FLUVIAL",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-06",
+        "hora": "18:30",
+        "nombre": "Concierto: «Jóvenes solistas»",
+        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "origen": "Biblioteca Argentina Dr. Juan Álvarez"
+      },
+      {
+        "fecha": "2026-11-06",
+        "hora": "20:30",
+        "nombre": "DESOBEDIENTE",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-06",
+        "hora": "22:30",
+        "nombre": "EL TREN FLUVIAL",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-07",
+        "hora": "18:00",
+        "nombre": "LOS CALVOS",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-08",
+        "hora": "21:00",
+        "nombre": "EL TREN FLUVIAL",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-08",
+        "hora": "22:30",
+        "nombre": "LOS CALVOS",
+        "lugar": "El Cairo Cine Público",
+        "origen": "El Cairo Cine Público"
+      },
+      {
+        "fecha": "2026-11-12",
+        "hora": "20:00",
+        "nombre": "Concierto 25º aniversario coro Mutual AMR",
+        "lugar": "Teatro Municipal La Comedia",
+        "origen": "Teatro Municipal La Comedia"
+      },
+      {
+        "fecha": "2026-11-18",
+        "hora": "20:30",
+        "nombre": "Ecos del Exilio",
+        "lugar": "Centro Cultural Parque de España",
+        "origen": "Centro Cultural Parque de España"
+      },
+      {
+        "fecha": "2026-11-22",
+        "hora": "19:00",
+        "nombre": "EL JUNCAL | ESPACIO DE DANZA Y MUSICA POPULAR",
+        "lugar": "REFI",
+        "origen": "RefiTicket"
+      },
+      {
+        "fecha": "2026-12-18",
+        "hora": "22:00",
+        "nombre": "GIORGIA ANGIULI",
+        "lugar": "La Segunda Seguros Arena",
+        "origen": "Entrada Play"
+      }
+    ],
     "ausentes": []
   },
   "control_cobertura": {
@@ -1367,25 +1445,25 @@
     ],
     "municipal": {
       "diagnostico_actual": true,
-      "fichas_consultadas": 30,
-      "fichas_leidas": 29,
-      "no_consultadas_por_pausa": 10,
-      "consultas_fallidas": 1
+      "fichas_consultadas": 0,
+      "fichas_leidas": 0,
+      "no_consultadas_por_pausa": 40,
+      "consultas_fallidas": 0
     },
     "pendientes": {
-      "cantidad": 85,
+      "cantidad": 94,
       "mayores_7_dias": 21,
       "antiguedad_maxima_dias": 15,
       "criterio": "Desde la primera evidencia registrada; puede ser anterior.",
       "por_fuente": {
         "EntradaFan": 15,
-        "Instituto Politécnico — Novedades": 2,
+        "Instituto Politécnico — Novedades": 3,
         "Planaxia": 11,
-        "Rosario Times": 10,
-        "SalePlan": 47
+        "Rosario Times": 12,
+        "SalePlan": 53
       }
     },
-    "minutos_hasta_informe": 32.13,
+    "minutos_hasta_informe": 23.1,
     "tiempo_intervencion_humana": "No medido"
   }
 }
