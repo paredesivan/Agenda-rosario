@@ -1,16 +1,16 @@
 {
-  "datos_actualizados": "2026-11-02 12:57",
+  "datos_actualizados": "2026-11-02 20:31",
   "fecha_corte": "2026-11-02",
-  "eventos_futuros_publicados": 1070,
+  "eventos_futuros_publicados": 1075,
   "por_fuente": {
     "Teatro Municipal La Comedia": 8,
     "Biblioteca Argentina Dr. Juan Álvarez": 5,
-    "El Cairo Cine Público": 55,
+    "El Cairo Cine Público": 59,
     "Grupo Gamma — Charlas a la comunidad": 2,
     "Centro Cultural Parque de España": 6,
     "Municipalidad de Rosario": 558,
     "Teatro Astengo": 11,
-    "Distrito Siete": 6,
+    "Distrito Siete": 7,
     "Agenda Cultural Rosario": 250,
     "CentroTicket": 7,
     "Centro Cultural Madres de Plaza 25 de Mayo": 1,
@@ -33,13 +33,20 @@
     "Passline — QUE SEA ROCK": 2,
     "Microteatro Rosario": 61
   },
-  "revision_municipal": "2026-11-02T12:57:01.021199-03:00",
-  "municipal_del_intento_actual": false,
+  "revision_municipal": "2026-11-02T20:31:57.262917-03:00",
+  "municipal_del_intento_actual": true,
   "fichas_municipales": [],
   "estados_municipales": {},
   "comparacion_por_funcion_disponible": false,
   "funciones_extraidas_ausentes": [],
   "candidatos": [
+    {
+      "fuente": "Rosario Times",
+      "nombre": "",
+      "url": "",
+      "fecha": "",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
+    },
     {
       "fuente": "Rosario Times",
       "nombre": "",
@@ -73,7 +80,7 @@
       "nombre": "Axel Rosario",
       "url": "",
       "fecha": "2026-11-06",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
     },
     {
       "fuente": "EntradaFan",
@@ -510,20 +517,14 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-11-02T13:18:35.174961-03:00",
+  "resolucion_revision": "2026-11-02T20:54:35.753347-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0,
-      "errores_enlaces": [
-        {
-          "url": "https://teatrobroadwayrosario.com/cartelera/859/despertar-de-primavera",
-          "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
-        }
-      ]
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
+      "funciones": 0
     },
     {
       "fuente": "Rosario Times",
@@ -535,13 +536,13 @@
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0
     },
     {
       "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/todo-listo-para-el-inicio-de-la-fiesta-de-las-colectividades-2026/",
+      "url": "https://rosariotimes.com/se-reactivaron-las-obras-del-gasoducto-rosario-oeste/",
       "estado": "reintentar",
       "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0
@@ -551,6 +552,13 @@
       "url": "https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/",
       "estado": "pendiente",
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "Rosario Times",
+      "url": "https://rosariotimes.com/todo-listo-para-el-inicio-de-la-fiesta-de-las-colectividades-2026/",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0
     },
     {
@@ -598,9 +606,8 @@
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "EntradaFan",
@@ -765,6 +772,27 @@
     },
     {
       "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-seru-giran-rosario/e/17764",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-axel-rosario/e/18101",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983",
       "estado": "pendiente",
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
@@ -780,39 +808,18 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-luis-fonsi-rosario/e/18092",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-maria-becerra-rosario/e/17726",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-ronnie-wood-rosario/e/17756",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-seru-giran-rosario/e/17764",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-axel-rosario/e/18101",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1456,13 +1463,6 @@
     },
     {
       "fuente": "Planaxia",
-      "url": "https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/",
-      "estado": "pendiente",
-      "motivo": "Cuerpo de agenda no interpretable",
-      "funciones": 0
-    },
-    {
-      "fuente": "Planaxia",
       "url": "https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/",
       "estado": "reintentar",
       "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
@@ -1513,6 +1513,13 @@
     {
       "fuente": "Planaxia",
       "url": "https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-23-de-septiembre/",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "Planaxia",
+      "url": "https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/",
       "estado": "reintentar",
       "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0
@@ -1582,14 +1589,14 @@
     },
     {
       "fuente": "Instituto Politécnico — Novedades",
-      "url": "https://www.ips.edu.ar/fechas-de-sorteo-de-temas-y-entrevistas-del-concurso-de-titularizacion-para-un-cargo-de-asesor-a-pedagogico-a.html",
+      "url": "https://www.ips.edu.ar/acta-sorteo-de-temas-y-orden-de-exposicion-para-el-concurso-de-titularzacion-para-un-1-cargo-de-asesor-pedagogico.html",
       "estado": "pendiente",
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0
     },
     {
       "fuente": "Instituto Politécnico — Novedades",
-      "url": "https://www.ips.edu.ar/acta-sorteo-de-temas-y-orden-de-exposicion-para-el-concurso-de-titularzacion-para-un-1-cargo-de-asesor-pedagogico.html",
+      "url": "https://www.ips.edu.ar/fechas-de-sorteo-de-temas-y-entrevistas-del-concurso-de-titularizacion-para-un-cargo-de-asesor-a-pedagogico-a.html",
       "estado": "pendiente",
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0
