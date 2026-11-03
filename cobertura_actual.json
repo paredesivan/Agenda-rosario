@@ -1,5 +1,5 @@
 {
-  "datos_actualizados": "2026-11-03 13:16",
+  "datos_actualizados": "2026-11-03 18:50",
   "fecha_corte": "2026-11-03",
   "eventos_futuros_publicados": 1126,
   "por_fuente": {
@@ -33,92 +33,11 @@
     "Passline — QUE SEA ROCK": 2,
     "Microteatro Rosario": 61
   },
-  "revision_municipal": "2026-11-03T13:16:23.064604-03:00",
+  "revision_municipal": "2026-11-03T18:50:18.903015-03:00",
   "municipal_del_intento_actual": true,
-  "fichas_municipales": [
-    {
-      "url": "https://www.rosario.gob.ar/inicio/consejo-de-ninas-y-ninos-en-casa-de-cultura-barrio-alvear",
-      "estado": "con_funciones_extraidas",
-      "funciones": 4,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/coti-en-rosario",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/desentierros.-los-libros-que-no-heredamos-en-cine-lumiere",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/dia-de-la-animacion-argentina-en-cine-lumiere",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/diego-torres-en-rosario",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/en-las-venas-en-cine-lumiere",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/encuentro-coral",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/entrenamiento-y-ensayo-para-bailarines-de-tango",
-      "estado": "con_funciones_extraidas",
-      "funciones": 4,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/escucha-inmersiva-del-disco-debut-de-alyx-en-la-sala-planetario-del-cam",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/espacio-pokemon",
-      "estado": "con_funciones_extraidas",
-      "funciones": 7,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy",
-      "estado": "consulta_fallida",
-      "funciones": 0,
-      "motivos": [],
-      "error": "403 Client Error: Forbidden for url: https://www.rosario.gob.ar/inicio/exposicion-la-noche-de-los-lapices.-ayer-y-hoy"
-    }
-  ],
-  "estados_municipales": {
-    "con_funciones_extraidas": 10,
-    "consulta_fallida": 1
-  },
-  "comparacion_por_funcion_disponible": true,
+  "fichas_municipales": [],
+  "estados_municipales": {},
+  "comparacion_por_funcion_disponible": false,
   "funciones_extraidas_ausentes": [],
   "candidatos": [
     {
@@ -133,14 +52,14 @@
       "nombre": "",
       "url": "",
       "fecha": "",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "Rosario Times",
       "nombre": "",
       "url": "",
       "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
     },
     {
       "fuente": "Rosario Times",
@@ -154,7 +73,7 @@
       "nombre": "Ciro y Los Persas Rosario ",
       "url": "",
       "fecha": "2026-11-06",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
     },
     {
       "fuente": "EntradaFan",
@@ -168,7 +87,7 @@
       "nombre": "Elena Roger Rosario",
       "url": "",
       "fecha": "2026-11-06",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
     },
     {
       "fuente": "SalePlan",
@@ -598,7 +517,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-11-03T13:41:58.471502-03:00",
+  "resolucion_revision": "2026-11-03T19:14:20.125657-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
@@ -633,6 +552,13 @@
       "url": "https://rosariotimes.com/avanza-la-renovacion-de-la-rambla-catalunya-en-la-costa-norte-de-rosario/",
       "estado": "reintentar",
       "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "Rosario Times",
+      "url": "https://rosariotimes.com/todo-listo-para-el-inicio-de-la-fiesta-de-las-colectividades-2026/",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0
     },
     {
@@ -686,13 +612,6 @@
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/se-reactivaron-las-obras-del-gasoducto-rosario-oeste/",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/todo-listo-para-el-inicio-de-la-fiesta-de-las-colectividades-2026/",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -859,6 +778,27 @@
     },
     {
       "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-luis-fonsi-rosario/e/18092",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17859",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "EntradaFan",
+      "url": "https://www.entradafan.com.ar/entradas-elena-roger-rosario/e/18107",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0
+    },
+    {
+      "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-baglietto-y-vitale-rosario/e/18127",
       "estado": "pendiente",
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
@@ -874,39 +814,18 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-gabriel-rolon-rosario/e/17779",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-las-gratitudes-rosario/e/18080",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-luis-fonsi-rosario/e/18092",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-ciro-y-los-persas-rosario-/e/17859",
-      "estado": "diferido",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "EntradaFan",
-      "url": "https://www.entradafan.com.ar/entradas-elena-roger-rosario/e/18107",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
