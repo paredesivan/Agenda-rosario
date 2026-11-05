@@ -1,0 +1,9 @@
+{
+  "version": "2026.11.02-aplazar-bloqueos-8",
+  "archivos": [
+    "actualizar_eventos.py",
+    "aplazar_municipales.py",
+    "seguimiento_cobertura.py",
+    "tests/test_aplazar_municipales.py"
+  ]
+}

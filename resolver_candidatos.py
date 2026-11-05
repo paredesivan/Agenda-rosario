@@ -18,7 +18,7 @@ from fuentes_adicionales import host, norm, respaldo_acr, firma_sede
 from fuentes_ampliadas import ConsultaAmpliada
 from fuentes_refi_folklore import ZONA, schemas, categorias_factuales, guardar
 from instituciones_eventos import acceso_publico, condiciones
-from cola_candidatos import resolver_local, turnos_justos
+from cola_candidatos import resolver_local, turnos_justos, prioridad_candidato
 
 ROOT = Path(__file__).resolve().parent
 SIN_HORA = 'Horario a confirmar'
@@ -26,6 +26,15 @@ MESES = dict(zip(('enero febrero marzo abril mayo junio julio agosto septiembre 
 FORMACION = re.compile(r'\b(cursos?|taller(?:es)?|capacitacion|formacion|seminarios?|masterclass|workshops?|clases?)\b')
 ADMINISTRATIVO = re.compile(r'\b(escalafonamiento|mesas (?:complementarias|extraordinarias)|dictamen|llamado a inscripcion|cronograma de pics|nivel superior)\b')
 CANCELADO = re.compile(r'\b(cancelad[oa]|suspendid[oa]|postergad[oa]|reprogramad[oa])\b')
+NO_AGENDA = re.compile(r'\b(?:obras? (?:del|de la|de un|de una) (?:gasoducto|autopista)|construccion (?:de|del|de la) (?:gasoducto|autopista|tercer carril)|renovacion de la rambla)\b')
+ACTIVIDAD = re.compile(r'\b(?:festival|fiesta|concierto|show|espectaculo|visita guiada|inauguracion|muestra|feria|teatro|charla|evento)\b')
+
+
+def noticia_ajena(titulo, texto_actividad, hechos, enlaces, primarios):
+    """Sólo descarta titulares inequívocos sin actividad ni respaldo oficial."""
+    texto = norm(titulo or '')
+    return bool(NO_AGENDA.search(texto) and not texto_actividad and not ACTIVIDAD.search(texto)
+                and not hechos and not any(host(u) in primarios for u in enlaces))
 
 
 def cargar(path, defecto):
@@ -248,7 +257,10 @@ def detalle(contenido, url, fuente=''):
             abierto = True
         except ValueError:
             descartes.append('Acceso para público general no confirmado')
+    titulo = sopa.select_one('h1')
     return {'hechos': list(unicos.values()), 'enlaces': enlaces[:24],
+            'titulo': titulo.get_text(' ', strip=True) if titulo else '',
+            'indicios_actividad': bool(ACTIVIDAD.search(norm(cuerpo.get_text(' ', strip=True)))),
             'descartes': list(dict.fromkeys(descartes)), 'acceso_publico': abierto}
 
 
@@ -356,7 +368,7 @@ def resolver(root=ROOT, acceso=None, hoy=None):
                 resultados.append(previo)
             else:
                 activas.append((k, c))
-        filas = turnos_justos(activas, prioridad_pendiente)
+        filas = turnos_justos(activas, lambda par: prioridad_candidato(par, hoy))
         for indice, (k, c) in enumerate(filas):
             if indice >= 12:
                 r = {'fuente': fuente, 'url': c['url'], 'estado': 'diferido', 'motivo': 'Turno de revisión rotativa en otra ejecución'}
@@ -376,6 +388,7 @@ def resolver(root=ROOT, acceso=None, hoy=None):
                     r.update(estado='corroborado', motivo='Ya publicado con respaldo prioritario', funciones=len(hechos))
                 else:
                     ficha = leer(c['url'], fuente)
+                    c['titulo'] = ficha.get('titulo', '')
                     # Las filas fechadas de EntradaFan son evidencia del listado
                     # actual. En otras fuentes no reutilizar funciones de una
                     # versión anterior si la nueva ficha las quitó.
@@ -437,7 +450,9 @@ def resolver(root=ROOT, acceso=None, hoy=None):
                     for e in verificadas:
                         if e and fuente not in e.setdefault('descubrimiento_fuentes', []):
                             e['descubrimiento_fuentes'].append(fuente)
-                    if aceptados:
+                    if fuente == 'Rosario Times' and noticia_ajena(c['titulo'], ficha.get('indicios_actividad'), hechos, ficha['enlaces'], primarios):
+                        r.update(estado='descartado', motivo='Noticia de infraestructura sin indicios de actividad; revisión semanal')
+                    elif aceptados:
                         r.update(estado='publicado', motivo='Ficha oficial con datos verificables', funciones=aceptados)
                     elif respaldos_enlazados and not hechos:
                         r.update(estado='corroborado', motivo='La nota enlaza funciones oficiales ya publicadas', funciones=len(respaldos_enlazados))
@@ -457,9 +472,14 @@ def resolver(root=ROOT, acceso=None, hoy=None):
             if 'Cuota diaria' not in r['motivo']:
                 c['intento'] = ahora
                 c['revisado_dia'] = hoy.isoformat()
+                c['ultimo_intento'] = {'fecha': ahora, 'estado': r['estado'], 'motivo': r['motivo']}
             c['resultado'] = r
             resultados.append(r)
             print(json.dumps(r, ensure_ascii=False), flush=True)
+    for resultado in resultados:
+        candidato = cola.get(resultado['fuente'] + '|' + resultado['url'], {})
+        if candidato.get('ultimo_intento'):
+            resultado['ultimo_intento'] = candidato['ultimo_intento'].copy()
     # Reemplazo de URLs sólo si hubo lectura oficial válida. Los errores nunca
     # quitan datos. El protector global reconoce este identificador de revisión.
     from fuentes_ampliadas import fusionar
@@ -495,3 +515,4 @@ def resolver(root=ROOT, acceso=None, hoy=None):
 
 if __name__ == '__main__':
     resolver()
+

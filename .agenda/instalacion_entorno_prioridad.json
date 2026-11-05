@@ -1,0 +1,8 @@
+{
+  "version": "2026.11.04-entorno-estable-10",
+  "archivos": [
+    "cola_candidatos.py",
+    "resolver_candidatos.py",
+    "tests/test_prioridad_candidatos.py"
+  ]
+}

@@ -16,7 +16,27 @@ def dias(desde, hasta):
         return None
 
 
+def vincular_diagnosticos(fuentes, revisiones):
+    # Son nombres de una misma fuente en dos etapas, no fuentes retiradas.
+    alias = {'El Cairo Cine Público': 'El Cairo — CSV',
+             'ECU Espacio Cultural Universitario': 'ECU Espacio Cultural Universitario — CSV'}
+    por_nombre = {f['nombre']: f for f in fuentes}
+    salida = dict(revisiones)
+    for nombre, origen in alias.items():
+        if nombre in salida or origen not in salida:
+            continue
+        salida[nombre] = salida[origen]
+        if nombre in por_nombre and origen in por_nombre:
+            fila, diagnostico = por_nombre[nombre], por_nombre[origen]
+            for campo in ('estado', 'motivo', 'accion'):
+                if campo in diagnostico:
+                    fila[campo] = diagnostico[campo]
+            fila['diagnostico_desde'] = origen
+    return salida
+
+
 def registrar_fuentes(root, fuentes, revisiones, fecha, guardar, actual):
+    revisiones = vincular_diagnosticos(fuentes, revisiones) if actual else {}
     registro = cargar(root, '.agenda/seguimiento_fuentes.json', {})
     esperadas = cargar(root, 'fuentes_esperadas.json', {}).get('fuentes', [])
     previo = cargar(root, 'estado_agenda.json', {}).get('fuentes', [])
@@ -80,7 +100,12 @@ def revisar_municipal(root, panel, contexto, fecha, actual):
     if pausadas:
         panel['alertas'].append(dict(tipo='cobertura', mensaje=
             f'{pausadas} fichas municipales no consultadas por pausa de acceso; reintento automático.'))
+    aplazadas = revision.get('fichas_aplazadas_por_bloqueo', 0) if vigente else None
+    if aplazadas:
+        panel['alertas'].append(dict(tipo='cobertura', mensaje=
+            f'{aplazadas} fichas municipales aplazadas por bloqueo previo; revisión automática semanal.'))
     return dict(diagnostico_actual=bool(vigente), fichas_consultadas=consultadas,
+                aplazadas_por_bloqueo=aplazadas,
                 fichas_leidas=revision.get('fichas_leidas') if vigente else None,
                 no_consultadas_por_pausa=pausadas,
                 consultas_fallidas=revision.get('fichas_con_error') if vigente else None)

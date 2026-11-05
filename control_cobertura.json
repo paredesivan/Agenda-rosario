@@ -1,28 +1,26 @@
 {
-  "fuentes_sin_diagnostico": [
-    "ECU Espacio Cultural Universitario",
-    "El Cairo Cine Público"
-  ],
+  "fuentes_sin_diagnostico": [],
   "municipal": {
     "diagnostico_actual": true,
-    "fichas_consultadas": 0,
-    "fichas_leidas": 0,
-    "no_consultadas_por_pausa": 40,
+    "fichas_consultadas": 40,
+    "aplazadas_por_bloqueo": 0,
+    "fichas_leidas": 40,
+    "no_consultadas_por_pausa": 0,
     "consultas_fallidas": 0
   },
   "pendientes": {
-    "cantidad": 96,
-    "mayores_7_dias": 24,
-    "antiguedad_maxima_dias": 16,
+    "cantidad": 91,
+    "mayores_7_dias": 34,
+    "antiguedad_maxima_dias": 17,
     "criterio": "Desde la primera evidencia registrada; puede ser anterior.",
     "por_fuente": {
       "EntradaFan": 15,
       "Instituto Politécnico — Novedades": 3,
       "Planaxia": 11,
       "Rosario Times": 13,
-      "SalePlan": 54
+      "SalePlan": 49
     }
   },
-  "minutos_hasta_informe": 25.78,
+  "minutos_hasta_informe": 38.13,
   "tiempo_intervencion_humana": "No medido"
 }

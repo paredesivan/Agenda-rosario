@@ -131,6 +131,10 @@ def ejecutar_etapa(root, script, limite, ejecutar=subprocess.run, hoy=None):
             for p in destino.glob('*.json'):
                 if p.name.startswith(('cache_', 'candidatos_', 'revision_', 'verificacion_')) or p.name in ('fuentes_revisadas.json', 'estado_http.json'):
                     auxiliares[p.name] = json.loads(p.read_text(encoding='utf-8'))
+            reintentos_path = destino / '.agenda/reintentos_municipales.json'
+            reintentos = json.loads(reintentos_path.read_text()) if reintentos_path.exists() else None
+            if reintentos is not None and not isinstance(reintentos, dict):
+                raise ValueError('Registro municipal inválido')
         except (subprocess.SubprocessError, ValueError, OSError, KeyError, TypeError) as error:
             # Las pausas HTTP sobreviven aunque se descarte la agenda de la etapa.
             estado_http = destino / 'estado_http.json'
@@ -144,6 +148,11 @@ def ejecutar_etapa(root, script, limite, ejecutar=subprocess.run, hoy=None):
         # Los archivos de caché y de estado se aceptan únicamente tras validar la etapa.
         for nombre, contenido in auxiliares.items():
             atomico(root / nombre, contenido)
+        # Sólo este registro factual público se promueve de .agenda; no se
+        # copian recibos de instalación ni archivos arbitrarios del aislamiento.
+        if reintentos is not None:
+            (root / '.agenda').mkdir(exist_ok=True)
+            atomico(root / '.agenda/reintentos_municipales.json', reintentos)
         # La página de espacios se genera en el aislamiento y sólo se acepta
         # tras validar la agenda de esta etapa.
         if script == 'fuentes_espacios_oficiales.py' and (destino / 'espacios.html').is_file():

@@ -369,6 +369,17 @@ def guardar_cambios(root=ROOT, ejecutar=subprocess.run):
     return git('rev-parse', 'HEAD')
 
 
+def pages_confirmado(cmd, repo, head):
+    # Un build duplicado cancelado puede figurar como errored aunque el otro
+    # despliegue del mismo commit haya publicado correctamente.
+    consulta = f'repos/{repo}/actions/runs?head_sha={head}&per_page=30'
+    runs = json.loads(cmd(['gh', 'api', consulta])).get('workflow_runs', [])
+    return any(r.get('head_sha') == head
+               and r.get('path', '').startswith('dynamic/pages/')
+               and r.get('status') == 'completed'
+               and r.get('conclusion') == 'success' for r in runs)
+
+
 def publicar(root=ROOT, ejecutar=subprocess.run, esperar=None):
     import time
     esperar = esperar or time.sleep
@@ -385,11 +396,12 @@ def publicar(root=ROOT, ejecutar=subprocess.run, esperar=None):
     for _ in range(24):
         build = json.loads(cmd(['gh', 'api', f'repos/{repo}/pages/builds/latest']))
         if build.get('commit') == head:
-            if build.get('status') == 'built':
+            confirmado = build.get('status') == 'built'
+            if build.get('status') == 'errored':
+                confirmado = pages_confirmado(cmd, repo, head)
+            if confirmado:
                 guardar(root / 'reportes/publicacion.json', {'estado': 'confirmada', 'commit': head, 'fecha': ahora()})
                 return
-            if build.get('status') == 'errored':
-                raise RuntimeError('GitHub Pages no pudo publicar. Revisar la ejecución de Pages; los archivos validados están guardados.')
         esperar(10)
     raise RuntimeError('Publicación solicitada, pero GitHub Pages no confirmó el resultado dentro del plazo. Revisar Pages antes de afirmar que está publicado.')
 

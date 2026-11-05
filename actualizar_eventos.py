@@ -480,9 +480,31 @@ def _texto_cercano(a, b):
     return 1 - fila[-1] / max(len(a), len(b)) >= .85
 
 
+def _sede_domicilio(e):
+    lugar = normalizar(e.get('lugar', ''))
+    partes = lugar.rsplit(',', 1)
+    if (len(partes) == 2 and re.search(r'\d', partes[1])
+            and not re.search(r'\b(sala|auditorio|piso|sector|local)\b', partes[1])):
+        return partes[0].strip(), partes[1].strip(), True
+    return lugar, normalizar(e.get('direccion', '')), False
+
+
+def _domicilios_compatibles(a, b):
+    ignorar = set('calle avenida av n numero rosario santa fe argentina de del la el'.split())
+    x = set(re.findall(r'[a-z0-9]+', a)) - ignorar
+    y = set(re.findall(r'[a-z0-9]+', b)) - ignorar
+    numeros = lambda t: {w for w in t if w.isdigit()}
+    if not numeros(x) or numeros(x) != numeros(y) or ('bis' in x) != ('bis' in y):
+        return False
+    return any(w in y and w.isalpha() and len(w) >= 3 for w in x)
+
+
 def _mismo_lugar(a, b):
-    def firma(e):
-        valor = normalizar(e.get("lugar", ""))
+    na, da, pa = _sede_domicilio(a)
+    nb, db, pb = _sede_domicilio(b)
+    if (pa or pb) and not _domicilios_compatibles(da, db):
+        return False
+    def firma(valor):
         valor = re.sub(r"\bccpe\b", "centro cultural parque espana", valor)
         return _tokens_evento(valor) - {"centro", "cultural", "galeria", "arte", "teatro", "municipal", "fundacion"}
     def sala(e):
@@ -492,7 +514,7 @@ def _mismo_lugar(a, b):
     sa, sb = sala(a), sala(b)
     if sa and sb and sa != sb:
         return False
-    x, y = firma(a), firma(b)
+    x, y = firma(na), firma(nb)
     if not x or not y:
         return False
     # Números de sede y sala son significativos, aunque el nombre sea parecido.
@@ -731,7 +753,7 @@ def actualizar():
             revisiones_fuentes[fuente] = f"no accesible: {type(error).__name__}"
 
     enlaces = set()
-    no_consultadas = []
+    no_consultadas, aplazadas = [], []
     try:
         enlaces, avisos = obtener_enlaces()
         errores.extend(avisos)
@@ -747,7 +769,13 @@ def actualizar():
     try:
         from cobertura_fuentes import ordenar_consultas
         revision_anterior = ARCHIVO.with_name('revision_cobertura_municipal.json')
-        ordenados = ordenar_consultas(enlaces, revision_anterior)
+        from aplazar_municipales import planificar
+        registro_aplazadas = ARCHIVO.parent / '.agenda/reintentos_municipales.json'
+        elegibles, aplazadas = planificar(enlaces, revision_anterior, registro_aplazadas, ahora)
+        if aplazadas:
+            fallidos.update(f['url'] for f in aplazadas)
+            errores.append(f'Municipalidad: {len(aplazadas)} fichas aplazadas por bloqueo previo; reintento semanal sin eludir pausas')
+        ordenados = ordenar_consultas(elegibles, revision_anterior)
         lote = 40
         inicio_lote = ((ahora.toordinal() * 12 + ahora.hour // 2) * lote) % max(1, len(ordenados))
         seleccion = (ordenados[inicio_lote:] + ordenados[:inicio_lote])[:lote]
@@ -809,14 +837,18 @@ def actualizar():
                 'fichas_con_error': sum(bool(v.get('error')) for v in DIAGNOSTICO_MUNICIPAL.values()),
                 'fichas_no_consultadas_por_pausa': len(no_consultadas),
                 'urls_no_consultadas_por_pausa': no_consultadas,
+                'fichas_aplazadas_por_bloqueo': len(aplazadas),
+                'aplazadas_por_bloqueo': aplazadas,
                 'funciones_extraidas': sum(v.get('funciones', 0) for v in DIAGNOSTICO_MUNICIPAL.values()),
                 'fichas_sin_funciones': sum(not v.get('funciones') for v in DIAGNOSTICO_MUNICIPAL.values()),
                 'fichas': list(DIAGNOSTICO_MUNICIPAL.values())}
+    from aplazar_municipales import registrar
+    registrar(revision, ARCHIVO.parent / '.agenda/reintentos_municipales.json')
     consultadas = revision['fichas_consultadas']
     fallas_municipales = revision['fichas_con_error']
     revisiones_fuentes[ORIGEN] = (f"revisada: {consultadas} fichas consultadas; {fallas_municipales} errores"
-                                 if consultadas and not fallas_municipales else
-                                 f"parcial: {consultadas} fichas intentadas; {revision['fichas_leidas']} leídas; {fallas_municipales} errores; {len(no_consultadas)} sin consultar por pausa")
+                                 if consultadas and not fallas_municipales and not aplazadas and not no_consultadas else
+                                 f"parcial: {consultadas} fichas intentadas; {revision['fichas_leidas']} leídas; {fallas_municipales} errores; {len(no_consultadas)} sin consultar por pausa; {len(aplazadas)} aplazadas por bloqueo previo")
     ARCHIVO.with_name('revision_fuentes_base.json').write_text(
         json.dumps({'revision': ahora.isoformat(), 'fuentes': revisiones_fuentes}, ensure_ascii=False)+'\n', encoding='utf-8')
     ARCHIVO.with_name('revision_cobertura_municipal.json').write_text(

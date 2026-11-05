@@ -1,0 +1,8 @@
+{
+  "version": "2026.11.01-continuidad-7",
+  "archivos": [
+    "gestion_agenda.py",
+    "seguimiento_cobertura.py",
+    "tests/test_continuidad_noviembre.py"
+  ]
+}

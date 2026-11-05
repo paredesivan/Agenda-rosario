@@ -37,6 +37,18 @@ CASOS = [
         dict(BASE, nombre='Esculturas modernas', descripcion='Muestras y exposiciones. Información publicada por Agenda Cultural Rosario.'), 2),
 ]
 
+DOMICILIO = dict(BASE, lugar='Casa de Cultura Barrial', direccion='ROCA JULIO N 4253, Rosario, Santa Fe')
+CASOS += [
+    ('direccion_dentro_sede', DOMICILIO, dict(BASE, lugar='Casa de Cultura Barrial, Roca 4253'), 1),
+    ('calle_orden_invertido', dict(BASE, lugar='Secretaría de Cultura', direccion='DEL VALLE ARISTOBULO 2734, Rosario'), dict(BASE, lugar='Secretaría de Cultura, Av. Aristóbulo del Valle 2734'), 1),
+    ('sede_sin_domicilio_no_presume', dict(BASE, lugar='Casa de Cultura Barrial'), dict(BASE, lugar='Casa de Cultura Barrial, Roca 4253'), 2),
+    ('calle_distinta_misma_altura', DOMICILIO, dict(BASE, lugar='Casa de Cultura Barrial, Belgrano 4253'), 2),
+    ('altura_distinta', DOMICILIO, dict(BASE, lugar='Casa de Cultura Barrial, Roca 4254'), 2),
+    ('altura_bis', DOMICILIO, dict(BASE, lugar='Casa de Cultura Barrial, Roca 4253 bis'), 2),
+    ('otra_sala_con_direccion', dict(DOMICILIO, lugar='Casa de Cultura Barrial Sala Norte'), dict(BASE, lugar='Casa de Cultura Barrial Sala Sur, Roca 4253'), 2),
+    ('otra_hora_con_direccion', DOMICILIO, dict(BASE, lugar='Casa de Cultura Barrial, Roca 4253', hora='19:00'), 2),
+]
+
 class DeduplicacionContenido(unittest.TestCase):
     def test_publicacion(self):
         for nombre, a, b, cantidad in CASOS:

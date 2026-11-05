@@ -9,6 +9,18 @@ def fecha_valida(valor):
         return None
 
 
+def prioridad_candidato(par, hoy):
+    """Prioriza próximas fechas conocidas sin inventar fechas de publicación."""
+    clave, candidato = par
+    fechas = [fecha_valida(h.get('fecha')) for h in candidato.get('hechos', [])]
+    futuras = [f for f in fechas if f and f >= hoy]
+    intento = candidato.get('intento') or ''
+    dia_intento = fecha_valida(intento[:10])
+    antiguo = bool(dia_intento and (hoy - dia_intento).days >= 7)
+    return (not antiguo, intento if antiguo else '', not bool(futuras),
+            min(futuras, default=date.max), intento, candidato.get('visto') or '', clave)
+
+
 def resolver_local(candidato, bases, hoy, coincidencia):
     hechos = candidato.get('hechos', [])
     if not hechos:
@@ -46,3 +58,4 @@ def turnos_justos(filas, prioridad):
         if i < len(nuevas):
             salida.append(nuevas[i])
     return salida
+

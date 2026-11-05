@@ -107,6 +107,25 @@ class TestAgendaEnNavegador(unittest.TestCase):
         finally:
             page.close()
 
+    def test_direccion_en_sede_unifica_y_conserva_otro_horario(self):
+        oficial = dict(EVENTOS_PRUEBA['eventos'][0], lugar='Casa de Cultura Barrial',
+                       direccion='ROCA JULIO N 4253, Rosario, Santa Fe',
+                       origen='Municipalidad de Rosario', evento_url='https://rosario.gob.ar/funcion')
+        copia = dict(oficial, lugar='Casa de Cultura Barrial, Roca 4253', direccion='',
+                     origen='Agenda Cultural Rosario', evento_url='https://www.agendaculturalrosario.com.ar/eventos/funcion')
+        otra = dict(oficial, hora='21:00', evento_url='https://rosario.gob.ar/otra-funcion')
+        page = self.browser.new_page()
+        try:
+            page.route('**/eventos.json*', lambda route: route.fulfill(content_type='application/json',
+                body=json.dumps({'eventos':[copia, oficial, otra]})))
+            page.goto(self.url)
+            page.locator('.event h3').first.wait_for()
+            self.assertEqual(page.locator('.event').count(), 2)
+            self.assertEqual(page.locator('a.event-info').evaluate_all('(items) => items.map(a => a.getAttribute("href"))'),
+                             [oficial['evento_url'], otra['evento_url']])
+        finally:
+            page.close()
+
     def test_mapa_acr_sin_direccion_y_regresion_con_direccion(self):
         from urllib.parse import urlparse, parse_qs
         for direccion in ('', '   ', None, 'Sarmiento 100, Rosario'):

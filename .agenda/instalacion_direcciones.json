@@ -1,0 +1,11 @@
+{
+  "version": "2026.11.03-deduplicar-direcciones-9",
+  "archivos": [
+    "actualizar_eventos.py",
+    "actualizacion_segura.py",
+    "agenda.js",
+    "tests/test_deduplicacion_contenido.py",
+    "tests/test_promover_reintentos.py",
+    "e2e/test_agenda_browser.py"
+  ]
+}

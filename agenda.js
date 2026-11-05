@@ -119,17 +119,34 @@ function eventStart(item) {
   const m = String(item.hora || "").match(/(?<![0-9])([01]?[0-9]|2[0-3]):([0-5][0-9])(?![0-9])/);
   return m ? `${m[1].padStart(2, "0")}:${m[2]}` : null;
 }
+function venueAddress(e) {
+  const lugar = normalize(e.lugar), i = lugar.lastIndexOf(",");
+  const suffix = i >= 0 ? lugar.slice(i + 1) : "";
+  if (/\d/.test(suffix) && !/\b(sala|auditorio|piso|sector|local)\b/.test(suffix))
+    return [lugar.slice(0, i).trim(), suffix.trim(), true];
+  return [lugar, normalize(e.direccion || ""), false];
+}
+function compatibleAddresses(a, b) {
+  const ignore = new Set("calle avenida av n numero rosario santa fe argentina de del la el".split(" "));
+  const tokens = t => new Set((t.match(/[a-z0-9]+/g) || []).filter(w => !ignore.has(w)));
+  const x = tokens(a), y = tokens(b);
+  const numbers = t => [...t].filter(w => /^\d+$/.test(w)).sort().join(" ");
+  if (!numbers(x) || numbers(x) !== numbers(y) || x.has("bis") !== y.has("bis")) return false;
+  return [...x].some(w => y.has(w) && /^[a-z]{3,}$/.test(w));
+}
 function sameLocation(a, b) {
+  const [na, da, pa] = venueAddress(a), [nb, db, pb] = venueAddress(b);
+  if ((pa || pb) && !compatibleAddresses(da, db)) return false;
   const room = e => {
     const m = normalize(e.lugar).match(/\b(?:sala|auditorio)\s+(.+)/);
     return m ? [...contentTokens(m[1])].sort().join(" ") : "";
   };
   const ra = room(a), rb = room(b);
   if (ra && rb && ra !== rb) return false;
-  const signature = e => new Set([...contentTokens(normalize(e.lugar)
+  const signature = name => new Set([...contentTokens(name
     .replace(/\bccpe\b/g, "centro cultural parque espana"))]
     .filter(w => !["centro", "cultural", "galeria", "arte", "teatro", "municipal", "fundacion"].includes(w)));
-  const x = signature(a), y = signature(b);
+  const x = signature(na), y = signature(nb);
   if (!x.size || !y.size) return false;
   const numbers = set => [...set].filter(w => /^\d+$/.test(w)).sort().join(" ");
   if (numbers(x) !== numbers(y)) return false;
