@@ -35,9 +35,10 @@ concurrency:
 
 jobs:
   agenda:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 145
     env:
+      ENTREGA_COORDINADA: '2026.11.04-entorno-estable-10'
       MODO: ${{ github.event_name == 'pull_request' && 'verificar' || github.event.schedule == '10 12 * * 1' && 'auditar' || inputs.accion || 'actualizar' }}
     steps:
       - name: Descargar la versión que inició esta ejecución
@@ -217,6 +218,16 @@ jobs:
 
       - name: Instalar dependencias
         run: python -m pip install -r requirements.txt
+
+      - name: Reutilizar Chromium entre ejecuciones
+        id: browser-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-ubuntu-24.04-${{ runner.arch }}-playwright-${{ hashFiles('requirements.txt') }}
+
+      - name: Preparar navegador de pruebas
+        run: python -m playwright install --with-deps chromium
 
       - name: Guardar respaldo y contexto de esta ejecución
         run: python gestion_agenda.py preparar
@@ -451,6 +462,190 @@ jobs:
               print('Reparación instalada en el checkout; se guardará únicamente después de las pruebas.')
           PY
 
+      - name: Confirmar publicación y diagnóstico de fuentes 2026.11.01-7
+        run: |
+          python - <<'PY'
+          import ast, base64, gzip, hashlib, json, os
+          from pathlib import Path
+          VERSION = '2026.11.01-continuidad-7'
+          receipt = Path('.agenda/instalacion_continuidad.json')
+          if receipt.exists() and json.loads(receipt.read_text()).get('version') == VERSION:
+              print('Reparación ya instalada; se conservan modificaciones posteriores.')
+          else:
+              bundle = json.loads(gzip.decompress(base64.b64decode('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')))
+              staged, backups = {}, {}
+              for entry in bundle:
+                  path = Path(entry['path'])
+                  original = path.read_text() if path.exists() else ''
+                  digest = hashlib.sha256(original.encode()).hexdigest()
+                  if digest == entry['after']:
+                      continue
+                  if digest != entry['before']:
+                      raise RuntimeError(f"{path} cambió desde la revisión; no se sobrescribió ningún archivo")
+                  lines = original.splitlines(keepends=True)
+                  for start, end, replacement in reversed(entry['edits']):
+                      lines[start:end] = replacement
+                  result = ''.join(lines)
+                  assert hashlib.sha256(result.encode()).hexdigest() == entry['after']
+                  ast.parse(result, filename=str(path)) if path.suffix == '.py' else json.loads(result)
+                  staged[path] = result
+                  backups[path] = path.read_bytes() if path.exists() else None
+              try:
+                  for path, result in staged.items():
+                      path.parent.mkdir(parents=True, exist_ok=True)
+                      temporary = path.with_suffix(path.suffix + '.reparacion.tmp')
+                      temporary.write_text(result)
+                      os.replace(temporary, path)
+                  receipt.parent.mkdir(exist_ok=True)
+                  receipt.write_text(json.dumps({'version': VERSION, 'archivos': [e['path'] for e in bundle]}, indent=2)+'\n')
+              except BaseException:
+                  for path, original in backups.items():
+                      if original is None:
+                          path.unlink(missing_ok=True)
+                      else:
+                          path.write_bytes(original)
+                  raise
+              print('Reparación instalada en el checkout; se guardará únicamente después de las pruebas.')
+          PY
+
+      - name: Aplazar fichas bloqueadas sin eludir pausas 2026.11.02-8
+        run: |
+          python - <<'PY'
+          import ast, base64, gzip, hashlib, json, os
+          from pathlib import Path
+          VERSION = '2026.11.02-aplazar-bloqueos-8'
+          receipt = Path('.agenda/instalacion_aplazamientos.json')
+          if receipt.exists() and json.loads(receipt.read_text()).get('version') == VERSION:
+              print('Reparación ya instalada; se conservan modificaciones posteriores.')
+          else:
+              bundle = json.loads(gzip.decompress(base64.b64decode('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')))
+              staged, backups = {}, {}
+              for entry in bundle:
+                  path = Path(entry['path'])
+                  original = path.read_text() if path.exists() else ''
+                  digest = hashlib.sha256(original.encode()).hexdigest()
+                  if digest == entry['after']:
+                      continue
+                  if digest != entry['before']:
+                      raise RuntimeError(f"{path} cambió desde la revisión; no se sobrescribió ningún archivo")
+                  lines = original.splitlines(keepends=True)
+                  for start, end, replacement in reversed(entry['edits']):
+                      lines[start:end] = replacement
+                  result = ''.join(lines)
+                  assert hashlib.sha256(result.encode()).hexdigest() == entry['after']
+                  ast.parse(result, filename=str(path)) if path.suffix == '.py' else json.loads(result)
+                  staged[path] = result
+                  backups[path] = path.read_bytes() if path.exists() else None
+              try:
+                  for path, result in staged.items():
+                      path.parent.mkdir(parents=True, exist_ok=True)
+                      temporary = path.with_suffix(path.suffix + '.reparacion.tmp')
+                      temporary.write_text(result)
+                      os.replace(temporary, path)
+                  receipt.parent.mkdir(exist_ok=True)
+                  receipt.write_text(json.dumps({'version': VERSION, 'archivos': [e['path'] for e in bundle]}, indent=2)+'\n')
+              except BaseException:
+                  for path, original in backups.items():
+                      if original is None:
+                          path.unlink(missing_ok=True)
+                      else:
+                          path.write_bytes(original)
+                  raise
+              print('Reparación instalada en el checkout; se guardará únicamente después de las pruebas.')
+          PY
+
+      - name: Unificar funciones con dirección dentro de la sede 2026.11.03-9
+        run: |
+          python - <<'PY'
+          import ast, base64, gzip, hashlib, json, os
+          from pathlib import Path
+          VERSION = '2026.11.03-deduplicar-direcciones-9'
+          receipt = Path('.agenda/instalacion_direcciones.json')
+          if receipt.exists() and json.loads(receipt.read_text()).get('version') == VERSION:
+              print('Reparación ya instalada; se conservan modificaciones posteriores.')
+          else:
+              bundle = json.loads(gzip.decompress(base64.b64decode('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')))
+              staged, backups = {}, {}
+              for entry in bundle:
+                  path = Path(entry['path'])
+                  original = path.read_text() if path.exists() else ''
+                  digest = hashlib.sha256(original.encode()).hexdigest()
+                  if digest == entry['after']:
+                      continue
+                  if digest != entry['before']:
+                      raise RuntimeError(f"{path} cambió desde la revisión; no se sobrescribió ningún archivo")
+                  lines = original.splitlines(keepends=True)
+                  for start, end, replacement in reversed(entry['edits']):
+                      lines[start:end] = replacement
+                  result = ''.join(lines)
+                  assert hashlib.sha256(result.encode()).hexdigest() == entry['after']
+                  if path.suffix == '.py': ast.parse(result, filename=str(path))
+                  staged[path] = result
+                  backups[path] = path.read_bytes() if path.exists() else None
+              try:
+                  for path, result in staged.items():
+                      path.parent.mkdir(parents=True, exist_ok=True)
+                      temporary = path.with_suffix(path.suffix + '.reparacion.tmp')
+                      temporary.write_text(result)
+                      os.replace(temporary, path)
+                  receipt.parent.mkdir(exist_ok=True)
+                  receipt.write_text(json.dumps({'version': VERSION, 'archivos': [e['path'] for e in bundle]}, indent=2)+'\n')
+              except BaseException:
+                  for path, original in backups.items():
+                      if original is None:
+                          path.unlink(missing_ok=True)
+                      else:
+                          path.write_bytes(original)
+                  raise
+              print('Reparación instalada en el checkout; se guardará únicamente después de las pruebas.')
+          PY
+
+      - name: Priorizar candidatos con fechas cercanas 2026.11.04-10
+        run: |
+          python - <<'PY'
+          import ast, base64, gzip, hashlib, json, os
+          from pathlib import Path
+          VERSION = '2026.11.04-entorno-estable-10'
+          receipt = Path('.agenda/instalacion_entorno_prioridad.json')
+          if receipt.exists() and json.loads(receipt.read_text()).get('version') == VERSION:
+              print('Reparación ya instalada; se conservan modificaciones posteriores.')
+          else:
+              bundle = json.loads(gzip.decompress(base64.b64decode('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')))
+              staged, backups = {}, {}
+              for entry in bundle:
+                  path = Path(entry['path'])
+                  original = path.read_text() if path.exists() else ''
+                  digest = hashlib.sha256(original.encode()).hexdigest()
+                  if digest == entry['after']:
+                      continue
+                  if digest != entry['before']:
+                      raise RuntimeError(f"{path} cambió desde la revisión; no se sobrescribió ningún archivo")
+                  lines = original.splitlines(keepends=True)
+                  for start, end, replacement in reversed(entry['edits']):
+                      lines[start:end] = replacement
+                  result = ''.join(lines)
+                  assert hashlib.sha256(result.encode()).hexdigest() == entry['after']
+                  ast.parse(result, filename=str(path)) if path.suffix == '.py' else json.loads(result)
+                  staged[path] = result
+                  backups[path] = path.read_bytes() if path.exists() else None
+              try:
+                  for path, result in staged.items():
+                      path.parent.mkdir(parents=True, exist_ok=True)
+                      temporary = path.with_suffix(path.suffix + '.reparacion.tmp')
+                      temporary.write_text(result)
+                      os.replace(temporary, path)
+                  receipt.parent.mkdir(exist_ok=True)
+                  receipt.write_text(json.dumps({'version': VERSION, 'archivos': [e['path'] for e in bundle]}, indent=2)+'\n')
+              except BaseException:
+                  for path, original in backups.items():
+                      if original is None:
+                          path.unlink(missing_ok=True)
+                      else:
+                          path.write_bytes(original)
+                  raise
+              print('Reparación instalada en el checkout; se guardará únicamente después de las pruebas.')
+          PY
+
       - name: Verificar reglas, extracción y conservación
         id: pruebas
         run: |
@@ -488,16 +683,6 @@ jobs:
       - name: Mostrar avisos de fuentes y cobertura
         id: avisos
         run: python gestion_agenda.py avisar
-
-      - name: Reutilizar Chromium entre ejecuciones
-        id: browser-cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-agenda-chromium-playwright-1.51.0
-
-      - name: Preparar navegador de pruebas
-        run: python -m playwright install --with-deps chromium
 
       - name: Probar agenda y panel en el navegador
         id: navegador

@@ -1,0 +1,335 @@
+name: Integrar Colectividades a Agenda Rosario
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/instalar_colectividades.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: integrar-colectividades
+  cancel-in-progress: false
+
+jobs:
+  instalar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar version actual
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar extractor automatico y prueba de regresion
+        run: |
+          cat > fuente_colectividades.py <<'PY_COLECTIVIDADES_MODULO'
+          """Consulta las jornadas de Colectividades publicadas en la portada municipal.
+
+          Sin fechas/eventos precargados: el año, los días y las URLs se leen de la web
+          oficial. La fuente se ejecuta en cada actualización normal de Agenda Rosario.
+          """
+
+          import re
+          import requests
+          from datetime import date, timedelta
+          from urllib.parse import urljoin, urlsplit
+
+          BASE = 'https://www.rosario.gob.ar/inicio/colectividades'
+          ORIGEN = 'Municipalidad de Rosario — Colectividades'
+          HORIZONTE_DIAS = 180
+          MESES = ('enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+                   'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre')
+          PATRON_DIA = re.compile(r'^/inicio/colectividades-(20\d{2})-dia-(\d{1,2})/?$', re.I)
+
+
+          def limpio(elemento):
+              return ' '.join(elemento.get_text(' ', strip=True).split())
+
+
+          def fecha_en_texto(texto, anio):
+              coincidencia = re.search(r'(?<!\d)(\d{1,2})\s*[./]\s*(\d{1,2})(?!\d)', texto)
+              if not coincidencia:
+                  return None
+              try:
+                  return date(anio, int(coincidencia[2]), int(coincidencia[1]))
+              except ValueError:
+                  return None
+
+
+          def rango_publicado(texto, anio):
+              patron = r'\bdel?\s+(\d{1,2})\s+al\s+(\d{1,2})\s+de\s+(' + '|'.join(MESES) + r')\b'
+              m = re.search(patron, texto, re.I)
+              if not m:
+                  return None
+              try:
+                  primero = date(anio, MESES.index(m[3].lower()) + 1, int(m[1]))
+                  ultimo = date(anio, MESES.index(m[3].lower()) + 1, int(m[2]))
+              except ValueError:
+                  return None
+              if ultimo < primero or (ultimo - primero).days > 31:
+                  return None
+              return primero, ultimo
+
+
+          def hora_publicada(texto):
+              m = re.search(r'\btodos\s+los\s+d[ií]as\s+desde\s+las\s+(\d{1,2})(?:[:.](\d{2}))?\s*h\b', texto, re.I)
+              if not m:
+                  return None
+              hora, minutos = int(m[1]), int(m[2] or '0')
+              return f'{hora:02d}:{minutos:02d}' if hora < 24 and minutos < 60 else None
+
+
+          def tarjetas_publicadas(html, hoy):
+              cuerpo = limpio(html.select_one('main') or html)
+              hora = hora_publicada(cuerpo)
+              if not hora:
+                  raise ValueError('Colectividades: la portada no confirma la hora de apertura')
+              if 'parque nacional a la bandera' not in cuerpo.lower():
+                  raise ValueError('Colectividades: la portada no confirma el lugar')
+
+              tarjetas = {}
+              for a in html.select('a[href]'):
+                  link = urljoin(BASE, a.get('href', ''))
+                  partes = urlsplit(link)
+                  match = PATRON_DIA.fullmatch(partes.path)
+                  if partes.hostname not in ('www.rosario.gob.ar', 'rosario.gob.ar') or not match:
+                      continue
+                  anio, ordinal = int(match[1]), int(match[2])
+                  if ordinal > 31:
+                      continue
+                  rango = rango_publicado(cuerpo, anio)
+                  titulo = limpio(a)
+                  fecha = fecha_en_texto(titulo, anio)
+                  if fecha is None and rango:
+                      # Sólo se usa ordinal si se publica expresamente en el enlace.
+                      dia = re.search(r'\bd[ií]a\s+(\d{1,2})\b', titulo, re.I)
+                      if dia and int(dia[1]) == ordinal:
+                          fecha = rango[0] + timedelta(days=ordinal - 1)
+                  if fecha is None or (rango and not rango[0] <= fecha <= rango[1]):
+                      continue
+                  if not hoy <= fecha <= hoy + timedelta(days=HORIZONTE_DIAS):
+                      continue
+                  # La jornada diaria tiene su propia ficha oficial; nunca usar la portada
+                  # como URL del evento, salvo caída del enlace específico.
+                  tarjetas[fecha.isoformat()] = (link, hora, anio)
+              if not tarjetas:
+                  # Fuera de temporada es normal tener cero funciones. Un cambio de HTML
+                  # con días futuros publicados sí es un error detectable en diagnóstico.
+                  if re.search(r'colectividades\s+20\d{2}', cuerpo, re.I):
+                      m = re.search(r'colectividades\s+(20\d{2})', cuerpo, re.I)
+                      periodo = rango_publicado(cuerpo, int(m[1])) if m else None
+                      if periodo and periodo[1] < hoy:
+                          return {}, cuerpo
+                  raise ValueError('Colectividades: no se detectaron jornadas verificables')
+              return tarjetas, cuerpo
+
+
+          def revisar_detalle(html, fecha, hora):
+              cuerpo = html.select_one('main') or html
+              texto = limpio(cuerpo)
+              titulo = limpio(cuerpo.select_one('h1')) if cuerpo.select_one('h1') else ''
+              if not re.search(r'colectividades', titulo, re.I):
+                  return None  # No aceptar una ficha redirigida a otro evento.
+              if re.search(r'\b(?:suspendid[ao]|cancelad[ao])\b', titulo, re.I):
+                  return False
+              confirmacion = re.search(r'\b(\d{1,2})\s+de\s+(' + '|'.join(MESES) + r')\b', texto, re.I)
+              if confirmacion:
+                  dia_mes = fecha_en_texto(f'{confirmacion[1]}.{MESES.index(confirmacion[2].lower()) + 1}', fecha.year)
+                  if dia_mes != fecha:
+                      return None
+              precio = 0 if re.search(r'\bgratis\b|entrada\s+(?:libre\s+y\s+)?gratuita\b', texto, re.I) else None
+              return precio
+
+
+          def recolectar(hoy, descargar):
+              """Devuelve una función por fecha oficial; una falla parcial no borra datos."""
+              html = descargar(BASE)
+              tarjetas, cuerpo = tarjetas_publicadas(html, hoy)
+              resultados = []
+              for fecha, (url, hora, anio) in sorted(tarjetas.items()):
+                  precio = None
+                  try:
+                      detalle = revisar_detalle(descargar(url), date.fromisoformat(fecha), hora)
+                      if detalle is False:
+                          continue  # Cancelación explícita.
+                      if detalle is not None:
+                          precio = detalle
+                  except (requests.RequestException, ValueError) as error:
+                      # La portada ya confirmó fecha, sede y horario. No perder la jornada
+                      # si falló la consulta opcional del precio en la ficha específica.
+                      print(f'Colectividades: detalle no accesible ({type(error).__name__}); usando portada oficial', flush=True)
+                  evento = {
+                      'fecha': fecha, 'hora': hora,
+                      'nombre': f'Encuentro y Fiesta Nacional de Colectividades {anio}',
+                      'lugar': 'Parque Nacional a la Bandera',
+                      'direccion': 'Parque Nacional a la Bandera, Rosario, Santa Fe',
+                      'descripcion': 'Jornada de Colectividades: gastronomía, música y danzas. Programación en el enlace oficial.',
+                      'evento_url': url, 'precio': precio, 'origen': ORIGEN,
+                  }
+                  if precio is None:
+                      evento['precio_etiqueta'] = 'Consultar condiciones en la fuente oficial'
+                  resultados.append(evento)
+              return resultados
+          PY_COLECTIVIDADES_MODULO
+          cat > tests/test_colectividades.py <<'PY_COLECTIVIDADES_PRUEBAS'
+          import unittest
+          from datetime import date
+          from bs4 import BeautifulSoup
+          import requests
+          from fuente_colectividades import BASE, ORIGEN, recolectar, tarjetas_publicadas
+
+
+          def html(texto):
+              return BeautifulSoup(texto, 'html.parser')
+
+
+          class Colectividades(unittest.TestCase):
+              def fixture(self, anio=2026):
+                  vinculos = '\n'.join(
+                      f'<a href="/inicio/colectividades-{anio}-dia-{i}">{i + 5:02d}.11 '
+                      f'42° Encuentro y Fiesta Nacional de Colectividades Colectividades {anio} - Día {i}</a>'
+                      for i in range(1, 11))
+                  return html(f'<main><h1>Colectividades {anio}</h1>'
+                              '<p>Del 6 al 15 de noviembre en el Parque Nacional a la Bandera.</p>'
+                              '<p>Todos los días desde las 19 h.</p>' + vinculos + '</main>')
+
+              def test_diez_jornadas_extraidas_del_indice(self):
+                  t, _ = tarjetas_publicadas(self.fixture(), date(2026, 11, 5))
+                  self.assertEqual(list(sorted(t)), [f'2026-11-{i:02d}' for i in range(6, 16)])
+                  self.assertEqual(t['2026-11-06'][1], '19:00')
+
+              def test_ano_dinamico_sin_fechas_fijas(self):
+                  t, _ = tarjetas_publicadas(self.fixture(2027), date(2027, 11, 5))
+                  self.assertEqual(len(t), 10)
+                  self.assertTrue(all(k.startswith('2027-') for k in t))
+
+              def test_precio_y_deduplicacion_url(self):
+                  portada = self.fixture()
+                  def descargar(url):
+                      if url == BASE:
+                          return portada
+                      ordinal = int(url.rsplit('-', 1)[-1])
+                      return html(f'<main><h1>Colectividades 2026 - Día {ordinal}</h1>'
+                                  f'<p>{ordinal + 5} DE Noviembre</p><p>DE 19 a 23:59 horas</p>'
+                                  '<p>Parque a La Bandera</p><p>Gratis</p></main>')
+                  eventos = recolectar(date(2026, 11, 5), descargar)
+                  self.assertEqual(len(eventos), 10)
+                  self.assertEqual(len({e['fecha'] for e in eventos}), 10)
+                  self.assertTrue(all(e['precio'] == 0 for e in eventos))
+                  self.assertTrue(all(e['origen'] == ORIGEN for e in eventos))
+                  self.assertTrue(all(e['evento_url'].startswith('https://www.rosario.gob.ar/inicio/') for e in eventos))
+
+              def test_fallo_detalle_conserva_fecha_sin_inventar_gratuidad(self):
+                  def descargar(url):
+                      if url != BASE:
+                          raise requests.HTTPError('403')
+                      return self.fixture()
+                  eventos = recolectar(date(2026, 11, 5), descargar)
+                  self.assertEqual(len(eventos), 10)
+                  self.assertTrue(all(e['precio'] is None for e in eventos))
+
+              def test_no_duplica_la_ficha_de_acr(self):
+                  try:
+                      from actualizar_eventos import sin_repetidos
+                  except ImportError:
+                      self.skipTest('Integración comprobable al instalar en Agenda Rosario')
+                  oficial = recolectar(date(2026, 11, 15),
+                                       lambda url: self.fixture() if url == BASE else
+                                       html('<main><h1>Colectividades 2026</h1><p>15 de noviembre</p>Gratis</main>'))[0]
+                  acr = {**oficial, 'nombre': 'Encuentro y Fiesta Nacional de Colectividades 2026',
+                         'evento_url': 'https://www.agendaculturalrosario.com.ar/eventos/fiesta',
+                         'origen': 'Agenda Cultural Rosario'}
+                  resultado = sin_repetidos([acr, oficial])
+                  self.assertEqual(len(resultado), 1)
+                  self.assertEqual(resultado[0]['origen'], ORIGEN)
+
+              def test_no_generar_sin_hora_o_lugar(self):
+                  pagina = html('<main><p>Del 6 al 15 de noviembre.</p><a href="/inicio/colectividades-2026-dia-1">06.11</a></main>')
+                  with self.assertRaises(ValueError):
+                      tarjetas_publicadas(pagina, date(2026, 11, 5))
+
+              def test_no_aceptar_anio_vencido(self):
+                  pagina = self.fixture(2026)
+                  t, _ = tarjetas_publicadas(pagina, date(2027, 1, 1))
+                  self.assertEqual(t, {})
+
+              def test_ignorar_enlaces_externos_y_fechas_fuera_de_rango(self):
+                  pagina = self.fixture()
+                  main = pagina.select_one('main')
+                  main.append(html('<a href="https://noticia.example/inicio/colectividades-2026-dia-11">16.11</a>'))
+                  main.append(html('<a href="/inicio/colectividades-2026-dia-12">22.11</a>'))
+                  t, _ = tarjetas_publicadas(pagina, date(2026, 11, 5))
+                  self.assertEqual(len(t), 10)
+
+
+          if __name__ == '__main__':
+              unittest.main()
+          PY_COLECTIVIDADES_PRUEBAS
+          python - <<'PY_COLECTIVIDADES_PARTE'
+          from pathlib import Path
+          import ast
+          p = Path('fuentes_nuevas.py')
+          s = p.read_text(encoding='utf-8')
+          anchor1 = '    nuevos.extend(leer_feria_libro(hoy, estado))'
+          anchor2 = '    anteriores_acr = datos.get("eventos", [])'
+          marker = 'INICIO COLECTIVIDADES AUTOMATICAS'
+          if marker not in s:
+              assert s.count(anchor1) == 1, 'La estructura de actualizar_fuentes cambió; no se aplica parche'
+              assert s.count(anchor2) == 1, 'La conservación cambió; no se aplica parche'
+              fragmento1 = """    # INICIO COLECTIVIDADES AUTOMATICAS
+              from fuente_colectividades import recolectar, ORIGEN as ORIGEN_COLECTIVIDADES
+              try:
+                  funciones_colectividades = recolectar(hoy, descargar)
+                  nuevos.extend(funciones_colectividades)
+                  estado[ORIGEN_COLECTIVIDADES] = f'revisada: {len(funciones_colectividades)} jornadas'
+              except (requests.RequestException, ValueError) as error:
+                  estado[ORIGEN_COLECTIVIDADES] = f'no accesible: {type(error).__name__}; datos previos conservados'
+              # FIN COLECTIVIDADES AUTOMATICAS
+          """
+              fragmento2 = """    # Reemplazar solo las fechas comprobadas de esta fuente, nunca las de otros orígenes.
+              fechas_colectividades = {e['fecha'] for e in nuevos if e.get('origen') == ORIGEN_COLECTIVIDADES}
+              if fechas_colectividades:
+                  anteriores_acr = [e for e in anteriores_acr if not (
+                      e.get('origen') == ORIGEN_COLECTIVIDADES
+                      and e.get('fecha') in fechas_colectividades)]
+          """
+              s = s.replace(anchor1, fragmento1 + anchor1, 1)
+              s = s.replace(anchor2, anchor2 + '\n' + fragmento2.rstrip('\n'), 1)
+              ast.parse(s, filename=str(p))
+              p.write_text(s, encoding='utf-8')
+              print('Fuente Colectividades integrada en las actualizaciones normales')
+          else:
+              assert s.count(marker) == 1, 'Marcador duplicado en fuentes_nuevas.py'
+              print('Fuente Colectividades ya integrada; no se duplica')
+          PY_COLECTIVIDADES_PARTE
+      - name: Preparar dependencias
+        run: python -m pip install -r requirements.txt
+      - name: Verificar extractor y codigo completo
+        run: |
+          python -m py_compile fuente_colectividades.py fuentes_nuevas.py
+          python -m unittest discover -s tests -p 'test_colectividades.py' -v
+          python -m unittest discover -s tests -p 'test_*.py' -q
+      - name: Guardar cambios probados sin sobrescribir otros commits
+        id: guardar
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add fuente_colectividades.py fuentes_nuevas.py tests/test_colectividades.py
+          if git diff --cached --quiet; then
+            echo 'No hubo cambios de codigo: la integracion ya estaba instalada.'
+          else
+            git commit -m 'Agregar Colectividades con jornadas oficiales y pruebas'
+            git push origin HEAD:main
+          fi
+      - name: Ejecutar actualizacion normal y publicacion
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run actualizar.yml --ref main -f accion=actualizar
