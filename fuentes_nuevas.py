@@ -1580,6 +1580,15 @@ def actualizar_fuentes():
     # Los eventos previos permanecen en eventos.json si una fuente no responde.
     # No se requiere ningún archivo de respaldo mensual.
     nuevos = []
+    # INICIO COLECTIVIDADES AUTOMATICAS
+    from fuente_colectividades import recolectar, ORIGEN as ORIGEN_COLECTIVIDADES
+    try:
+        funciones_colectividades = recolectar(hoy, descargar)
+        nuevos.extend(funciones_colectividades)
+        estado[ORIGEN_COLECTIVIDADES] = f'revisada: {len(funciones_colectividades)} jornadas'
+    except (requests.RequestException, ValueError) as error:
+        estado[ORIGEN_COLECTIVIDADES] = f'no accesible: {type(error).__name__}; datos previos conservados'
+    # FIN COLECTIVIDADES AUTOMATICAS
     nuevos.extend(leer_feria_libro(hoy, estado))
     nuevos.extend(leer_microteatro(hoy, estado))
     nuevos.extend(leer_atir(hoy, estado))
@@ -1645,6 +1654,12 @@ def actualizar_fuentes():
     from fuentes_adicionales import revisar
     nuevos.extend(revisar(hoy, datos.get("eventos", []) + nuevos, estado))
     anteriores_acr = datos.get("eventos", [])
+    # Reemplazar solo las fechas comprobadas de esta fuente, nunca las de otros orígenes.
+    fechas_colectividades = {e['fecha'] for e in nuevos if e.get('origen') == ORIGEN_COLECTIVIDADES}
+    if fechas_colectividades:
+        anteriores_acr = [e for e in anteriores_acr if not (
+            e.get('origen') == ORIGEN_COLECTIVIDADES
+            and e.get('fecha') in fechas_colectividades)]
     if estado.get('Agenda Cultural Rosario', '').startswith('revisada:'):
         anteriores_acr = [e for e in anteriores_acr if e.get('origen') != 'Agenda Cultural Rosario']
         datos['revision_acr_id'] = datetime.now(ZONA).isoformat()
