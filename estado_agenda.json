@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-11-05T21:07:58-03:00",
-  "ejecucion_id": "42130970830-1",
-  "inicio": "2026-11-05T20:39:19-03:00",
+  "generado": "2026-11-06T04:23:16-03:00",
+  "ejecucion_id": "42176912624-1",
+  "inicio": "2026-11-06T03:50:14-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-11-05 20:39",
-  "ultima_consulta_fuentes": "2026-11-05T21:07:33.666373-03:00",
+  "datos_actualizados": "2026-11-06 03:50",
+  "ultima_consulta_fuentes": "2026-11-06T04:22:55.854864-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1198,
-    "funciones_unicas": 1198,
-    "nuevos": 1,
+    "eventos": 1145,
+    "funciones_unicas": 1145,
+    "nuevos": 0,
     "ausentes": 0,
-    "duplicados": 5,
-    "conservados": 65,
+    "duplicados": 4,
+    "conservados": 54,
     "fuentes": 98
   },
   "alertas": [
@@ -36,7 +36,7 @@
     },
     {
       "tipo": "pendientes",
-      "mensaje": "34 candidatos llevan al menos siete días pendientes."
+      "mensaje": "40 candidatos llevan al menos siete días pendientes."
     }
   ],
   "fuentes": [
@@ -50,7 +50,7 @@
       "conservados": 2,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -58,12 +58,12 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 361,
-      "antes": 362,
-      "conservados": 33,
+      "eventos": 352,
+      "antes": 352,
+      "conservados": 25,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -76,7 +76,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -89,7 +89,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -102,7 +102,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -115,7 +115,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -128,20 +128,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Biblioteca Argentina Dr. Juan Álvarez",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
       "eventos": 6,
       "antes": 6,
       "conservados": 1,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -154,7 +154,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -167,7 +167,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -180,7 +180,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -188,12 +188,12 @@
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 8,
-      "antes": 8,
+      "eventos": 7,
+      "antes": 7,
       "conservados": 1,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -201,12 +201,12 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 7,
-      "antes": 7,
+      "eventos": 6,
+      "antes": 6,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -219,7 +219,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -232,7 +232,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -245,7 +245,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -258,7 +258,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -271,7 +271,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -284,7 +284,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -297,7 +297,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -305,12 +305,12 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 8,
-      "antes": 8,
-      "conservados": 1,
+      "eventos": 7,
+      "antes": 7,
+      "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -324,7 +324,7 @@
       "caida": false,
       "diagnostico_desde": "ECU Espacio Cultural Universitario — CSV",
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -337,7 +337,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -345,12 +345,12 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 9,
-      "antes": 9,
+      "eventos": 8,
+      "antes": 8,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -358,13 +358,13 @@
       "estado": "pendiente",
       "motivo": "Hay fichas pendientes de revisión.",
       "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
-      "eventos": 59,
-      "antes": 59,
+      "eventos": 56,
+      "antes": 56,
       "conservados": 0,
       "caida": false,
       "diagnostico_desde": "El Cairo — CSV",
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -377,7 +377,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -390,7 +390,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -403,7 +403,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -416,7 +416,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -429,7 +429,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -442,7 +442,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -455,7 +455,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -468,7 +468,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -481,7 +481,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -494,20 +494,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "pendiente",
-      "motivo": "La fuente no tiene un resultado concluyente.",
-      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -515,12 +515,12 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 3,
-      "antes": 3,
+      "eventos": 2,
+      "antes": 2,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -533,20 +533,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -559,7 +559,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -572,7 +572,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -585,7 +585,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -598,20 +598,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "La Grieta",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -624,7 +624,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -637,7 +637,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -650,7 +650,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -663,7 +663,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -676,7 +676,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -689,20 +689,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Microteatro Rosario",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
-      "eventos": 61,
-      "antes": 61,
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 40,
+      "antes": 40,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -715,7 +715,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -723,12 +723,12 @@
       "estado": "atencion",
       "motivo": "La fuente limitó el acceso.",
       "accion": "Se respetan sus pausas. Revisar si se repite.",
-      "eventos": 541,
-      "antes": 541,
-      "conservados": 27,
+      "eventos": 527,
+      "antes": 527,
+      "conservados": 25,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -741,7 +741,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -754,7 +754,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -767,7 +767,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -780,7 +780,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -793,7 +793,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -806,7 +806,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -819,7 +819,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -832,7 +832,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -845,7 +845,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -858,7 +858,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -871,7 +871,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -884,7 +884,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -897,7 +897,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -910,7 +910,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -923,7 +923,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -936,7 +936,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -949,7 +949,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -962,7 +962,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -975,7 +975,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -988,7 +988,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1001,7 +1001,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1014,7 +1014,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1027,7 +1027,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1040,7 +1040,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1053,7 +1053,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1066,7 +1066,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1079,7 +1079,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1092,20 +1092,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Rosario en Cartel",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 20,
       "antes": 20,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1118,7 +1118,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1131,7 +1131,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1144,7 +1144,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1157,7 +1157,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1170,20 +1170,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Teatro Astengo",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
-      "eventos": 11,
-      "antes": 11,
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
+      "eventos": 10,
+      "antes": 10,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1192,11 +1192,11 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 22,
-      "antes": 20,
+      "antes": 22,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1209,7 +1209,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1222,7 +1222,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1235,7 +1235,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1248,7 +1248,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1261,7 +1261,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1274,7 +1274,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1287,7 +1287,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1300,20 +1300,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-05T21:07:58-03:00",
+      "ultimo_diagnostico": "2026-11-06T04:23:16-03:00",
       "dias_sin_diagnostico": 0
     }
   ],
@@ -1357,7 +1357,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-11-05T21:07:55-03:00",
+    "fecha": "2026-11-06T04:23:14-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1370,17 +1370,9 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/42130970830",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/42176912624",
   "cambios": {
-    "nuevos": [
-      {
-        "fecha": "2026-12-06",
-        "hora": "16:00",
-        "nombre": "LA GRANJA DE ZENÓN",
-        "lugar": "Teatro Broadway",
-        "origen": "Teatro Broadway"
-      }
-    ],
+    "nuevos": [],
     "ausentes": []
   },
   "control_cobertura": {
@@ -1394,19 +1386,19 @@
       "consultas_fallidas": 0
     },
     "pendientes": {
-      "cantidad": 91,
-      "mayores_7_dias": 34,
-      "antiguedad_maxima_dias": 17,
+      "cantidad": 89,
+      "mayores_7_dias": 40,
+      "antiguedad_maxima_dias": 18,
       "criterio": "Desde la primera evidencia registrada; puede ser anterior.",
       "por_fuente": {
         "EntradaFan": 15,
         "Instituto Politécnico — Novedades": 3,
         "Planaxia": 11,
-        "Rosario Times": 13,
-        "SalePlan": 49
+        "Rosario Times": 12,
+        "SalePlan": 48
       }
     },
-    "minutos_hasta_informe": 28.65,
+    "minutos_hasta_informe": 33.03,
     "tiempo_intervencion_humana": "No medido"
   }
 }
