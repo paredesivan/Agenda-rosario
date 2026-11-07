@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 145
     env:
-      ENTREGA_COORDINADA: '2026.11.04-entorno-estable-10'
+      ENTREGA_COORDINADA: '2026.11.07-migracion-lavarden-12'
       MODO: ${{ github.event_name == 'pull_request' && 'verificar' || github.event.schedule == '10 12 * * 1' && 'auditar' || inputs.accion || 'actualizar' }}
     steps:
       - name: Descargar la versión que inició esta ejecución
@@ -626,6 +626,56 @@ jobs:
                   result = ''.join(lines)
                   assert hashlib.sha256(result.encode()).hexdigest() == entry['after']
                   ast.parse(result, filename=str(path)) if path.suffix == '.py' else json.loads(result)
+                  staged[path] = result
+                  backups[path] = path.read_bytes() if path.exists() else None
+              try:
+                  for path, result in staged.items():
+                      path.parent.mkdir(parents=True, exist_ok=True)
+                      temporary = path.with_suffix(path.suffix + '.reparacion.tmp')
+                      temporary.write_text(result)
+                      os.replace(temporary, path)
+                  receipt.parent.mkdir(exist_ok=True)
+                  receipt.write_text(json.dumps({'version': VERSION, 'archivos': [e['path'] for e in bundle]}, indent=2)+'\n')
+              except BaseException:
+                  for path, original in backups.items():
+                      if original is None:
+                          path.unlink(missing_ok=True)
+                      else:
+                          path.write_bytes(original)
+                  raise
+              print('Reparación instalada en el checkout; se guardará únicamente después de las pruebas.')
+          PY
+
+      - name: Migrar Lavardén y conservar evidencia 2026.11.07-12
+        run: |
+          python - <<'PY'
+          import ast, base64, gzip, hashlib, json, os
+          from pathlib import Path
+          VERSION = '2026.11.07-migracion-lavarden-12'
+          receipt = Path('.agenda/instalacion_migracion_lavarden.json')
+          if receipt.exists() and json.loads(receipt.read_text()).get('version') == VERSION:
+              print('Reparación ya instalada; se conservan modificaciones posteriores.')
+          else:
+              bundle = json.loads(gzip.decompress(base64.b64decode('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')))
+              staged, backups = {}, {}
+              for entry in bundle:
+                  path = Path(entry['path'])
+                  original = path.read_text() if path.exists() else ''
+                  digest = hashlib.sha256(original.encode()).hexdigest()
+                  if digest == entry['after']:
+                      continue
+                  changes = entry.get('variants', {}).get(digest, entry['edits'] if digest == entry['before'] else None)
+                  if changes is None:
+                      raise RuntimeError(f"{path} cambió desde la revisión; no se sobrescribió ningún archivo")
+                  lines = original.splitlines(keepends=True)
+                  for start, end, replacement in reversed(changes):
+                      lines[start:end] = replacement
+                  result = ''.join(lines)
+                  assert hashlib.sha256(result.encode()).hexdigest() == entry['after']
+                  if path.suffix == '.py':
+                      ast.parse(result, filename=str(path))
+                  elif path.suffix == '.json':
+                      json.loads(result)
                   staged[path] = result
                   backups[path] = path.read_bytes() if path.exists() else None
               try:
