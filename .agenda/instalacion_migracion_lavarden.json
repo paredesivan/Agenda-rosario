@@ -1,0 +1,13 @@
+{
+  "version": "2026.11.07-migracion-lavarden-12",
+  "archivos": [
+    "actualizar_eventos.py",
+    "agenda.js",
+    "fuentes_ampliadas.py",
+    "fuentes_ampliadas.json",
+    "seguimiento_cobertura.py",
+    "tests/test_deduplicacion_contenido.py",
+    "tests/test_migracion_lavarden.py",
+    "tests/test_seguimiento_cobertura.py"
+  ]
+}

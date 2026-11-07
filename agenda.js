@@ -120,10 +120,12 @@ function eventStart(item) {
   return m ? `${m[1].padStart(2, "0")}:${m[2]}` : null;
 }
 function venueAddress(e) {
-  const lugar = normalize(e.lugar), i = lugar.lastIndexOf(",");
-  const suffix = i >= 0 ? lugar.slice(i + 1) : "";
+  const lugar = normalize(e.lugar);
+  const sinLocalidad = lugar.replace(/,\s*(?:rosario(?:\s*,\s*santa fe)?|santa fe)(?:\s*,\s*argentina)?\s*$/, "");
+  const i = sinLocalidad.lastIndexOf(",");
+  const suffix = i >= 0 ? sinLocalidad.slice(i + 1) : "";
   if (/\d/.test(suffix) && !/\b(sala|auditorio|piso|sector|local)\b/.test(suffix))
-    return [lugar.slice(0, i).trim(), suffix.trim(), true];
+    return [sinLocalidad.slice(0, i).trim(), suffix.trim(), true];
   return [lugar, normalize(e.direccion || ""), false];
 }
 function compatibleAddresses(a, b) {

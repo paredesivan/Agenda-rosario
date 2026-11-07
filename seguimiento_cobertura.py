@@ -66,20 +66,19 @@ def medir_pendientes(root, fecha, guardar):
     pendientes = []
     for key, entrada in cola.items():
         resultado = entrada.get('resultado', {})
-        if resultado.get('estado') not in ('pendiente', 'reintentar', 'diferido'):
-            continue
         evidencia = [fecha[:10]]
         for valor in (registro.get(key), entrada.get('primera_evidencia'), entrada.get('intento'), entrada.get('visto')):
             if isinstance(valor, str) and dias(valor, fecha) is not None:
                 evidencia.append(valor[:10])
         desde = min(evidencia)
         registro[key] = desde
+        if resultado.get('estado') not in ('pendiente', 'reintentar', 'diferido'):
+            continue
         pendientes.append(dict(fuente=entrada.get('fuente', ''), desde_observado=desde,
                                dias=dias(desde, fecha)))
-    # Sólo mantiene candidatos todavía pendientes; no guarda URLs en el panel.
-    activos = {k: registro[k] for k, e in cola.items()
-               if e.get('resultado', {}).get('estado') in ('pendiente', 'reintentar', 'diferido')}
-    guardar(Path(root)/'.agenda/seguimiento_pendientes.json', activos)
+    # Una resolución no borra la primera evidencia: una revisión semanal
+    # puede reabrir el candidato. El panel sólo cuenta pendientes actuales.
+    guardar(Path(root)/'.agenda/seguimiento_pendientes.json', registro)
     return {'cantidad': len(pendientes), 'mayores_7_dias': sum(p['dias'] >= 7 for p in pendientes),
             'antiguedad_maxima_dias': max((p['dias'] for p in pendientes), default=0),
             'criterio': 'Desde la primera evidencia registrada; puede ser anterior.',

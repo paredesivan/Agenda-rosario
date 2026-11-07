@@ -336,11 +336,6 @@ from time import monotonic, sleep
 
 EXTRAS = (
     (
-        "Plataforma Lavardén",
-        "https://plataformalavarden.gob.ar/agenda/",
-        "Mendoza 1085",
-    ),
-    (
         "Centro Cultural Parque de España",
         "https://ccpe.org.ar/web/agenda/",
         "Sarmiento y el río",
@@ -482,7 +477,8 @@ def _texto_cercano(a, b):
 
 def _sede_domicilio(e):
     lugar = normalizar(e.get('lugar', ''))
-    partes = lugar.rsplit(',', 1)
+    sin_localidad = re.sub(r',\s*(?:rosario(?:\s*,\s*santa fe)?|santa fe)(?:\s*,\s*argentina)?\s*$', '', lugar)
+    partes = sin_localidad.rsplit(',', 1)
     if (len(partes) == 2 and re.search(r'\d', partes[1])
             and not re.search(r'\b(sala|auditorio|piso|sector|local)\b', partes[1])):
         return partes[0].strip(), partes[1].strip(), True

@@ -1,5 +1,21 @@
 [
   {
+    "generado": "2026-11-07T13:14:42-03:00",
+    "ejecucion_id": "42387859523-1",
+    "modo": "actualizar",
+    "estado": "atencion",
+    "resumen": {
+      "eventos": 1069,
+      "funciones_unicas": 1069,
+      "nuevos": 0,
+      "ausentes": 0,
+      "duplicados": 3,
+      "conservados": 32,
+      "fuentes": 98
+    },
+    "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/42387859523"
+  },
+  {
     "generado": "2026-11-07T06:23:39-03:00",
     "ejecucion_id": "42357076061-1",
     "modo": "actualizar",
@@ -462,21 +478,5 @@
       "fuentes": 96
     },
     "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41114966991"
-  },
-  {
-    "generado": "2026-10-30T10:24:20-03:00",
-    "ejecucion_id": "41059346061-1",
-    "modo": "actualizar",
-    "estado": "atencion",
-    "resumen": {
-      "eventos": 1201,
-      "funciones_unicas": 1201,
-      "nuevos": 3,
-      "ausentes": 0,
-      "duplicados": 2,
-      "conservados": 44,
-      "fuentes": 96
-    },
-    "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/41059346061"
   }
 ]

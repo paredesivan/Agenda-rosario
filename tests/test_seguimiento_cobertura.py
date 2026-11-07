@@ -58,6 +58,13 @@ class Seguimiento(unittest.TestCase):
         e['resultado']['estado'] = 'publicado'
         guardar(self.root/'cache_resolucion_candidatos.json', {'cola': {'url-secreta': e}})
         self.assertEqual(medir_pendientes(self.root, '2026-11-03', guardar)['cantidad'], 0)
+        e['visto'] = '2026-11-10'
+        e['resultado']['estado'] = 'diferido'
+        guardar(self.root/'cache_resolucion_candidatos.json', {'cola': {'url-secreta': e}})
+        reabierto = medir_pendientes(self.root, '2026-11-10', guardar)
+        self.assertEqual(reabierto['antiguedad_maxima_dias'], 21)
+        self.assertEqual(reabierto['cantidad'], 1)
+
 
     def test_verificacion_no_inventa_revision_actual_ni_tiempo_humano(self):
         p = panel(actual=False)

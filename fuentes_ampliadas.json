@@ -4,6 +4,18 @@
   "max_fichas_por_fuente": 4,
   "fuentes": [
     {
+      "nombre": "Plataforma Lavardén",
+      "listado": "https://www.santafecultura.gob.ar/agenda/?i=plataformalavarden",
+      "adaptador": "santafe",
+      "tipo": "oficial",
+      "habilitada": true,
+      "patron_ficha": "^/evento/[^/]+/?$",
+      "selector": "a.card-evento[href]",
+      "cache_horas": 2,
+      "max_fichas_por_fuente": 4,
+      "motivo": "Migración anunciada por la portada oficial anterior el 7/11/2026. Se conserva el nombre de fuente, se usa el lector provincial y se respetan robots, caché, pausas y revisión rotativa."
+    },
+    {
       "nombre": "Santa Fe Cultura",
       "listado": "https://www.santafecultura.gob.ar/agenda/?localidad=rosario",
       "adaptador": "santafe",

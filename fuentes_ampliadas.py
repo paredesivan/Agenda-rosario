@@ -115,6 +115,12 @@ def ficha(contenido, url, fuente):
                           'hora': inicio.strftime('%H:%M'), 'nombre': nombre.strip(),
                           'lugar': sede, 'direccion': calle,
                           'categorias': categorias_factuales(nombre, '', e.get('@type', '')),
+                          **({'precio': 0, 'precio_etiqueta': 'Entrada gratuita'}
+                             if fuente['adaptador'] == 'santafe' and any(
+                                 norm(t.get_text(' ', strip=True)) == 'precio'
+                                 and norm(t.parent.get_text(' ', strip=True)) in
+                                 ('precio gratuito', 'precio entrada gratuita', 'precio gratis')
+                                 for t in sopa.select('h4.block__title')) else {}),
                           **({'fecha_fin': fin.date().isoformat(), 'hora_fin': fin.strftime('%H:%M')} if fin else {})})
     return resultado
 
@@ -124,10 +130,20 @@ def fusionar(anteriores, nuevos, revisadas, hoy):
     salida = [e for e in anteriores if (e.get('origen'), e.get('evento_url')) not in revisadas]
     for e in nuevos:
         from fuente_aec import misma_sala_aec
-        coincidencias = [p for p in salida if misma_funcion(e, p) or misma_sala_aec(e, p)]
+        from actualizar_eventos import eventos_duplicados
+        migrada = (e.get('origen') == 'Plataforma Lavardén'
+                   and urlsplit(e.get('evento_url', '')).hostname == 'www.santafecultura.gob.ar')
+        coincidencias = [p for p in salida if misma_funcion(e, p) or misma_sala_aec(e, p) or (
+            migrada and p.get('origen') == e['origen']
+            and urlsplit(p.get('evento_url', '')).hostname == 'plataformalavarden.gob.ar'
+            and eventos_duplicados(e, p))]
         if not coincidencias:
             salida.append(e)
-        elif all(p.get('origen') == 'Agenda Cultural Rosario' for p in coincidencias):
+        elif all(p.get('origen') == 'Agenda Cultural Rosario' or (
+                e.get('origen') == p.get('origen') == 'Plataforma Lavardén'
+                and urlsplit(e.get('evento_url', '')).hostname == 'www.santafecultura.gob.ar'
+                and urlsplit(p.get('evento_url', '')).hostname == 'plataformalavarden.gob.ar')
+                for p in coincidencias):
             salida = [p for p in salida if p not in coincidencias]
             salida.append(e)
     return sorted(salida, key=lambda e: (e['fecha'], e['hora'], e['nombre']))
