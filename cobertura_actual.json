@@ -1,10 +1,10 @@
 {
-  "datos_actualizados": "2026-11-07 12:45",
+  "datos_actualizados": "2026-11-07 13:27",
   "fecha_corte": "2026-11-07",
-  "eventos_futuros_publicados": 1069,
+  "eventos_futuros_publicados": 1071,
   "por_fuente": {
     "Plataforma Lavardén": 11,
-    "Municipalidad de Rosario": 520,
+    "Municipalidad de Rosario": 522,
     "Agenda Cultural Rosario": 325,
     "El Cairo Cine Público": 53,
     "ECU Espacio Cultural Universitario": 1,
@@ -33,7 +33,7 @@
     "Microteatro Rosario": 20,
     "Grupo Gamma — Charlas a la comunidad": 2
   },
-  "revision_municipal": "2026-11-07T12:45:12.948237-03:00",
+  "revision_municipal": "2026-11-07T13:27:50.409462-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [
     {
@@ -302,7 +302,14 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/42deg-encuentro-y-fiesta-nacional-de-colectividades",
+      "url": "https://www.rosario.gob.ar/inicio/ajedrez-para-las-infancias-0",
+      "estado": "con_funciones_extraidas",
+      "funciones": 4,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/almacigo.-laboratorio-de-futuros-deseables",
       "estado": "sin_funciones_extraidas",
       "funciones": 0,
       "motivos": [
@@ -311,33 +318,26 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/50-veinticuatros.-sentidos-y-recorridos-de-las-marchas-por-memoria-verdad-y-justicia",
+      "url": "https://www.rosario.gob.ar/inicio/amor-trava-en-cine-lumiere",
       "estado": "con_funciones_extraidas",
-      "funciones": 86,
+      "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/9deg-festival-de-magia-de-rosario",
+      "url": "https://www.rosario.gob.ar/inicio/aproximacion-la-murga-la-catarsis-del-tango",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere",
       "estado": "sin_funciones_extraidas",
       "funciones": 0,
       "motivos": [
-        "Bloque sin sede verificable"
+        "Sin fechas/horarios interpretables dentro del horizonte"
       ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/actividad-fisica-y-danza-para-adultos-mayores",
-      "estado": "con_funciones_extraidas",
-      "funciones": 16,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/ajedrez-nivel-intermedio-avanzados",
-      "estado": "con_funciones_extraidas",
-      "funciones": 4,
-      "motivos": [],
       "error": ""
     }
   ],
@@ -360,7 +360,7 @@
       "nombre": "",
       "url": "",
       "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
     },
     {
       "fuente": "Rosario Times",
@@ -818,7 +818,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-11-07T13:13:33.873782-03:00",
+  "resolucion_revision": "2026-11-07T13:51:01.475178-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
@@ -877,6 +877,18 @@
     },
     {
       "fuente": "Rosario Times",
+      "url": "https://rosariotimes.com/la-municipalidad-de-rosario-preve-un-plan-de-obras-record-para-2027/",
+      "estado": "pendiente",
+      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "funciones": 0,
+      "ultimo_intento": {
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
+        "estado": "pendiente",
+        "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
+      }
+    },
+    {
+      "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/",
       "estado": "pendiente",
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
@@ -888,7 +900,7 @@
         }
       ],
       "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -900,7 +912,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -912,7 +924,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -924,7 +936,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -936,7 +948,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -948,7 +960,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -960,7 +972,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -972,7 +984,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -980,22 +992,10 @@
     {
       "fuente": "Rosario Times",
       "url": "https://rosariotimes.com/todo-listo-para-el-inicio-de-la-fiesta-de-las-colectividades-2026/",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
-      "funciones": 0,
-      "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
-        "estado": "pendiente",
-        "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
-      }
-    },
-    {
-      "fuente": "Rosario Times",
-      "url": "https://rosariotimes.com/la-municipalidad-de-rosario-preve-un-plan-de-obras-record-para-2027/",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución",
       "ultimo_intento": {
-        "fecha": "2026-11-07T06:19:18.096198-03:00",
+        "fecha": "2026-11-07T13:13:33.873782-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1195,7 +1195,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -2350,7 +2350,7 @@
       "motivo": "Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
         "estado": "pendiente",
         "motivo": "Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado"
       }
@@ -2362,7 +2362,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -2374,7 +2374,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-07T13:13:33.873782-03:00",
+        "fecha": "2026-11-07T13:51:01.475178-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
