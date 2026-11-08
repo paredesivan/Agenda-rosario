@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generado": "2026-11-07T19:24:55-03:00",
-  "ejecucion_id": "42417919558-1",
-  "inicio": "2026-11-07T18:52:53-03:00",
+  "generado": "2026-11-07T22:52:06-03:00",
+  "ejecucion_id": "42434305167-1",
+  "inicio": "2026-11-07T22:27:32-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-11-07 18:52",
-  "ultima_consulta_fuentes": "2026-11-07T19:24:34.782260-03:00",
+  "datos_actualizados": "2026-11-07 22:27",
+  "ultima_consulta_fuentes": "2026-11-07T22:51:42.076085-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1155,
-    "funciones_unicas": 1155,
-    "nuevos": 84,
+    "eventos": 1216,
+    "funciones_unicas": 1216,
+    "nuevos": 61,
     "ausentes": 0,
-    "duplicados": 3,
-    "conservados": 36,
+    "duplicados": 5,
+    "conservados": 52,
     "fuentes": 98
   },
   "alertas": [
@@ -30,15 +30,15 @@
   "fuentes": [
     {
       "nombre": "ATIR",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 5,
-      "antes": 4,
+      "antes": 5,
       "conservados": 2,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -46,12 +46,12 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 325,
+      "eventos": 322,
       "antes": 325,
-      "conservados": 26,
+      "conservados": 41,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -64,7 +64,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -77,7 +77,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -90,7 +90,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -103,7 +103,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -116,7 +116,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -129,7 +129,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -142,20 +142,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Caras y Caretas",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -168,7 +168,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -181,7 +181,7 @@
       "conservados": 1,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -194,7 +194,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -207,7 +207,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -220,33 +220,33 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Club Fosse",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Cultural de Abajo",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -259,7 +259,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -272,7 +272,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -285,7 +285,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -298,7 +298,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -312,7 +312,7 @@
       "caida": false,
       "diagnostico_desde": "ECU Espacio Cultural Universitario — CSV",
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -325,7 +325,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -334,11 +334,11 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 9,
-      "antes": 7,
+      "antes": 9,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -352,7 +352,7 @@
       "caida": false,
       "diagnostico_desde": "El Cairo — CSV",
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -365,7 +365,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -378,7 +378,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -391,7 +391,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -404,7 +404,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -417,7 +417,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -430,20 +430,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Espacio Bravo",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -456,7 +456,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -469,7 +469,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -482,7 +482,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -495,7 +495,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -508,7 +508,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -521,7 +521,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -534,7 +534,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -547,7 +547,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -560,7 +560,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -573,46 +573,46 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "La Escalera",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "La Grieta",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "La Morada",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -625,33 +625,33 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "La Sonrisa de Beckett",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "La Tornería",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -664,20 +664,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Metropolitano",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 1,
       "antes": 1,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -690,7 +690,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -703,7 +703,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -711,12 +711,12 @@
       "estado": "bien",
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
-      "eventos": 603,
-      "antes": 522,
+      "eventos": 667,
+      "antes": 603,
       "conservados": 7,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -729,7 +729,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -742,7 +742,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -755,7 +755,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -768,7 +768,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -781,7 +781,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -794,7 +794,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -807,7 +807,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -820,7 +820,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -833,7 +833,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -846,7 +846,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -859,7 +859,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -872,7 +872,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -885,7 +885,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -898,7 +898,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -911,7 +911,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -924,7 +924,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -937,7 +937,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -950,7 +950,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -963,7 +963,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -976,7 +976,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -989,7 +989,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1002,7 +1002,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1015,7 +1015,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1028,7 +1028,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1041,7 +1041,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1054,7 +1054,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1067,7 +1067,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1080,20 +1080,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Rosario en Cartel",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 16,
       "antes": 16,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1106,7 +1106,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1119,7 +1119,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1132,7 +1132,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1145,20 +1145,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Tandava",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1171,7 +1171,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1184,7 +1184,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1197,7 +1197,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1207,23 +1207,23 @@
       "accion": "Sin intervención necesaria.",
       "eventos": 6,
       "antes": 6,
-      "conservados": 0,
+      "conservados": 1,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Teatro de la Manzana",
-      "estado": "bien",
-      "motivo": "Consulta completada.",
-      "accion": "Sin intervención necesaria.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1236,7 +1236,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1249,7 +1249,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1262,7 +1262,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1275,7 +1275,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1288,7 +1288,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1301,7 +1301,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-07T19:24:55-03:00",
+      "ultimo_diagnostico": "2026-11-07T22:52:06-03:00",
       "dias_sin_diagnostico": 0
     }
   ],
@@ -1345,7 +1345,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-11-07T19:24:53-03:00",
+    "fecha": "2026-11-07T22:52:03-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1358,287 +1358,287 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/42417919558",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/42434305167",
   "cambios": {
     "nuevos": [
       {
-        "fecha": "2026-11-12",
-        "hora": "20:30",
-        "nombre": "Rosario y Voz Ronda Clasificatoria 2",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
-      },
-      {
-        "fecha": "2026-11-20",
-        "hora": "21:00",
-        "nombre": "TODO TERMINARÁ PARA NAVIDAD. Sesenta y seis minutos antes de Nochebuena",
-        "lugar": "Teatro del Rayo",
-        "origen": "ATIR"
-      },
-      {
-        "fecha": "2026-11-21",
-        "hora": "21:00",
-        "nombre": "Concierto de la Orquesta de Carlos Quilici",
-        "lugar": "Centro Cultural  La Casa del Tango",
+        "fecha": "2026-11-07",
+        "hora": "10:00",
+        "nombre": "Ponele Ficha",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-07",
-        "hora": "14:00",
-        "nombre": "Casa Abierta en Casa de Cultura Barrio Alvear",
-        "lugar": "Casa de Cultura Barrio Alvear",
+        "hora": "15:00",
+        "nombre": "Inauguración: Tío Rolo se llena de colores en la nueva plaza.",
+        "lugar": "La Cumparsita y Juane Basso (ex 2106)",
         "origen": "Municipalidad de Rosario"
       },
       {
-        "fecha": "2026-11-07",
-        "hora": "19:30",
-        "nombre": "Banda 3AM en el Galpón 11",
-        "lugar": "Galpón 11",
+        "fecha": "2026-11-08",
+        "hora": "08:00",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-09",
+        "hora": "07:00",
+        "nombre": "Muestra \"Señor D: Cerámicas del Origen. Relecturas Contemporáneas del Noroeste Argentino\"",
+        "lugar": "Secretaría de Cultura y Educación",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-09",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-10",
+        "hora": "07:00",
+        "nombre": "Muestra \"Señor D: Cerámicas del Origen. Relecturas Contemporáneas del Noroeste Argentino\"",
+        "lugar": "Secretaría de Cultura y Educación",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-10",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-10",
+        "hora": "08:00",
+        "nombre": "Muestra “El paisaje en filigrana de papel”",
+        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-11",
+        "hora": "07:00",
+        "nombre": "Muestra \"Señor D: Cerámicas del Origen. Relecturas Contemporáneas del Noroeste Argentino\"",
+        "lugar": "Secretaría de Cultura y Educación",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-11",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-11",
+        "hora": "08:00",
+        "nombre": "Muestra “El paisaje en filigrana de papel”",
+        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-12",
+        "hora": "07:00",
+        "nombre": "Muestra \"Señor D: Cerámicas del Origen. Relecturas Contemporáneas del Noroeste Argentino\"",
+        "lugar": "Secretaría de Cultura y Educación",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-12",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-12",
+        "hora": "08:00",
+        "nombre": "Muestra “El paisaje en filigrana de papel”",
+        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-13",
+        "hora": "07:00",
+        "nombre": "Muestra \"Señor D: Cerámicas del Origen. Relecturas Contemporáneas del Noroeste Argentino\"",
+        "lugar": "Secretaría de Cultura y Educación",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-13",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-13",
+        "hora": "08:00",
+        "nombre": "Muestra “El paisaje en filigrana de papel”",
+        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-14",
-        "hora": "09:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "hora": "08:00",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-15",
+        "hora": "08:00",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-16",
+        "hora": "07:00",
+        "nombre": "Muestra \"Señor D: Cerámicas del Origen. Relecturas Contemporáneas del Noroeste Argentino\"",
+        "lugar": "Secretaría de Cultura y Educación",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-16",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-16",
+        "hora": "08:00",
+        "nombre": "Muestra “El paisaje en filigrana de papel”",
+        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-17",
+        "hora": "07:00",
+        "nombre": "Muestra \"Señor D: Cerámicas del Origen. Relecturas Contemporáneas del Noroeste Argentino\"",
+        "lugar": "Secretaría de Cultura y Educación",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-17",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-17",
+        "hora": "08:00",
+        "nombre": "Muestra “El paisaje en filigrana de papel”",
+        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-18",
+        "hora": "07:00",
+        "nombre": "Muestra \"Señor D: Cerámicas del Origen. Relecturas Contemporáneas del Noroeste Argentino\"",
+        "lugar": "Secretaría de Cultura y Educación",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-18",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-18",
+        "hora": "08:00",
+        "nombre": "Muestra “El paisaje en filigrana de papel”",
+        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-19",
+        "hora": "07:00",
+        "nombre": "Muestra \"Señor D: Cerámicas del Origen. Relecturas Contemporáneas del Noroeste Argentino\"",
+        "lugar": "Secretaría de Cultura y Educación",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-19",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-19",
+        "hora": "08:00",
+        "nombre": "Muestra “El paisaje en filigrana de papel”",
+        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-20",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-20",
+        "hora": "08:00",
+        "nombre": "Muestra “El paisaje en filigrana de papel”",
+        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-21",
-        "hora": "09:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "hora": "08:00",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-22",
+        "hora": "08:00",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-23",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "08:00",
+        "nombre": "Muestra “El paisaje en filigrana de papel”",
+        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-24",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-24",
+        "hora": "08:00",
+        "nombre": "Muestra “El paisaje en filigrana de papel”",
+        "lugar": "Centro Municipal de Distrito Centro \"Antonio Berni\"",
         "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-25",
         "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-26",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-27",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-28",
-        "hora": "09:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-28",
-        "hora": "14:00",
-        "nombre": "Casa Abierta en Casa de Cultura Barrio Alvear",
-        "lugar": "Casa de Cultura Barrio Alvear",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-11-30",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-01",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-02",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-03",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-04",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-05",
-        "hora": "09:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-07",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-08",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-09",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-10",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-11",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-12",
-        "hora": "09:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-14",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-15",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-16",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
-        "origen": "Municipalidad de Rosario"
-      },
-      {
-        "fecha": "2026-12-17",
-        "hora": "08:00",
-        "nombre": "\"Balcarce 681\": muestra de fotografías inéditas tomadas a Fito Páez en su casa de Rosario",
-        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "nombre": "Muestra Huellas de lo humano",
+        "lugar": "Biblioteca Pública Municipal José Manuel Estrada",
         "origen": "Municipalidad de Rosario"
       }
     ],
@@ -1655,7 +1655,7 @@
       "consultas_fallidas": 0
     },
     "pendientes": {
-      "cantidad": 101,
+      "cantidad": 111,
       "mayores_7_dias": 66,
       "antiguedad_maxima_dias": 19,
       "criterio": "Desde la primera evidencia registrada; puede ser anterior.",
@@ -1664,10 +1664,10 @@
         "Instituto Politécnico — Novedades": 3,
         "Planaxia": 11,
         "Rosario Times": 13,
-        "SalePlan": 62
+        "SalePlan": 72
       }
     },
-    "minutos_hasta_informe": 32.03,
+    "minutos_hasta_informe": 24.57,
     "tiempo_intervencion_humana": "No medido"
   }
 }

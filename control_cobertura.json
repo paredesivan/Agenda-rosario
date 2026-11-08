@@ -9,7 +9,7 @@
     "consultas_fallidas": 0
   },
   "pendientes": {
-    "cantidad": 101,
+    "cantidad": 111,
     "mayores_7_dias": 66,
     "antiguedad_maxima_dias": 19,
     "criterio": "Desde la primera evidencia registrada; puede ser anterior.",
@@ -18,9 +18,9 @@
       "Instituto Politécnico — Novedades": 3,
       "Planaxia": 11,
       "Rosario Times": 13,
-      "SalePlan": 62
+      "SalePlan": 72
     }
   },
-  "minutos_hasta_informe": 32.03,
+  "minutos_hasta_informe": 24.57,
   "tiempo_intervencion_humana": "No medido"
 }
