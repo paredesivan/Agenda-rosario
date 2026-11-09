@@ -1,0 +1,10 @@
+{
+  "version": "2026.11.08-identidad-funciones-13",
+  "archivos": [
+    "actualizar_eventos.py",
+    "agenda.js",
+    "fuentes_nuevas.py",
+    "tests/test_deduplicacion_contenido.py",
+    "tests/test_ciclo_cairo.py"
+  ]
+}

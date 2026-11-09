@@ -522,10 +522,30 @@ def _mismo_lugar(a, b):
             or _texto_cercano(" ".join(sorted(x)), " ".join(sorted(y))))
 
 
+def _titulo_funcion(evento):
+    valor = normalizar(str(evento.get("nombre") or ""))
+    partes = re.split(r"\s+en\s+", valor)
+    if len(partes) > 1:
+        sede = _tokens_evento(partes[-1]) - {"centro", "cultural", "teatro", "cine"}
+        if sede and any(len(p) >= 4 for p in sede) and sede <= _tokens_evento(evento.get("lugar")):
+            valor = " en ".join(partes[:-1])
+    return " ".join(re.findall(r"[a-z0-9]+", valor))
+
+
+def _ciclo_repetido(evento, eventos):
+    if evento.get("origen") != "Agenda Cultural Rosario" or not _hora_evento(evento):
+        return False
+    titulo = " ".join(re.findall(r"[a-z0-9]+", normalizar(evento.get("nombre", ""))))
+    funciones = [e for e in eventos if e.get("ciclo_nombre") and e.get("ciclo_url")
+                 and e.get("origen") != "Agenda Cultural Rosario"
+                 and titulo == " ".join(re.findall(r"[a-z0-9]+", normalizar(e["ciclo_nombre"])))
+                 and evento.get("fecha") == e.get("fecha")
+                 and _hora_evento(evento) == _hora_evento(e) and _mismo_lugar(evento, e)]
+    return len(funciones) == 1
+
+
 def _mismo_contenido(a, b):
-    def limpio(valor):
-        return " ".join(re.findall(r"[a-z0-9]+", normalizar(str(valor or ""))))
-    na, nb = limpio(a.get("nombre")), limpio(b.get("nombre"))
+    na, nb = _titulo_funcion(a), _titulo_funcion(b)
     if na and nb and (na == nb or (min(len(na), len(nb)) >= 8 and (na in nb or nb in na))):
         return True
     ta, tb = _tokens_evento(na), _tokens_evento(nb)
@@ -552,6 +572,9 @@ def eventos_duplicados(a, b):
 
 
 def sin_repetidos(eventos):
+    eventos = list(eventos)
+    ciclos = [e for e in eventos if e.get("ciclo_nombre") and e.get("ciclo_url")]
+    eventos = [e for e in eventos if not _ciclo_repetido(e, ciclos)]
     def confianza(e):
         dominio = (urlsplit(e.get("evento_url", "")).hostname or "").removeprefix("www.")
         origen, sede = _tokens_evento(e.get("origen")), _tokens_evento(e.get("lugar"))

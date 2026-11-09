@@ -55,6 +55,24 @@ CASOS += [
     ('otra_hora_con_direccion', DOMICILIO, dict(BASE, lugar='Casa de Cultura Barrial, Roca 4253', hora='19:00'), 2),
 ]
 
+CINE = dict(BASE, lugar='Centro Cultural Cine del Barrio', descripcion='')
+PELÍCULA = dict(CINE, nombre='Historia del puerto', origen='Cine del Barrio',
+                evento_url='https://cine.example/pelicula/puerto/',
+                ciclo_nombre='Ciclo: Historias de la ciudad', ciclo_url='https://cine.example/ciclo/ciudad/')
+CICLO = dict(CINE, nombre='Ciclo / Historias de la ciudad', origen='Agenda Cultural Rosario')
+CASOS += [
+    ('titulo_con_sede_y_subtitulo', dict(CINE, nombre='Casa de artistas en Cine del Barrio'),
+     dict(CINE, nombre='Casa de artistas. Una historia colectiva'), 1),
+    ('en_como_parte_del_titulo', dict(CINE, nombre='Noche en la ciudad'),
+     dict(CINE, nombre='Noche. Una historia colectiva'), 2),
+    ('sede_dentro_titulo_distinta', dict(CINE, nombre='Casa de artistas en Cine del Centro'),
+     dict(CINE, nombre='Casa de artistas. Una historia colectiva'), 2),
+    ('ciclo_y_pelicula_documentados', PELÍCULA, CICLO, 1),
+    ('ciclo_sin_enlace_no_presume', dict(PELÍCULA, ciclo_url=''), CICLO, 2),
+    ('ciclo_otro_horario', PELÍCULA, dict(CICLO, hora='18:00'), 2),
+    ('ciclo_otra_sala', PELÍCULA, dict(CICLO, lugar='Cine del Barrio Sala 2'), 2),
+]
+
 class DeduplicacionContenido(unittest.TestCase):
     def test_publicacion(self):
         for nombre, a, b, cantidad in CASOS:
@@ -72,6 +90,13 @@ class DeduplicacionContenido(unittest.TestCase):
             if (deduplicatedEvents(orden).length !== cantidad) throw Error(nombre);
           }
         }'''
+        subprocess.run(['node', '-e', codigo], check=True, capture_output=True, text=True)
+
+    def test_ciclo_con_dos_peliculas_simultaneas_queda_sin_unificar(self):
+        peliculas = [PELÍCULA, dict(PELÍCULA, nombre='Memoria del bosque'), CICLO]
+        self.assertEqual(len(sin_repetidos(peliculas)), 3)
+        codigo = (Path(__file__).resolve().parents[1] / 'agenda.js').read_text().split('function acrAvailable(')[0]
+        codigo += '\nif (deduplicatedEvents(' + json.dumps(peliculas) + ').length !== 3) throw Error("ciclo ambiguo");'
         subprocess.run(['node', '-e', codigo], check=True, capture_output=True, text=True)
 
     def test_prioriza_oficial_y_no_modifica_originales(self):

@@ -158,9 +158,30 @@ function sameLocation(a, b) {
     shared / Math.max(x.size, y.size) >= .6) || nearText(sx, sy);
 }
 
+function eventTitle(item) {
+  let value = normalize(item.nombre);
+  const parts = value.split(/\s+en\s+/);
+  if (parts.length > 1) {
+    const venue = contentTokens(parts[parts.length - 1]), location = contentTokens(item.lugar);
+    for (const generic of ["centro", "cultural", "teatro", "cine"]) venue.delete(generic);
+    if (venue.size && [...venue].some(word => word.length >= 4) && [...venue].every(word => location.has(word)))
+      value = parts.slice(0, -1).join(" en ");
+  }
+  return (value.match(/[a-z0-9]+/g) || []).join(" ");
+}
+
+function repeatedCycle(item, items) {
+  if (item.origen !== "Agenda Cultural Rosario" || !eventStart(item)) return false;
+  const clean = value => (normalize(value).match(/[a-z0-9]+/g) || []).join(" ");
+  const title = clean(item.nombre);
+  const screenings = items.filter(other => other.ciclo_nombre && other.ciclo_url &&
+    other.origen !== "Agenda Cultural Rosario" && title === clean(other.ciclo_nombre) &&
+    item.fecha === other.fecha && eventStart(item) === eventStart(other) && sameLocation(item, other));
+  return screenings.length === 1;
+}
+
 function sameContent(a, b) {
-  const clean = v => (normalize(v).match(/[a-z0-9]+/g) || []).join(" ");
-  const na = clean(a.nombre), nb = clean(b.nombre);
+  const na = eventTitle(a), nb = eventTitle(b);
   if (na && nb && (na === nb || (Math.min(na.length, nb.length) >= 8 &&
       (na.includes(nb) || nb.includes(na))))) return true;
   const ta = contentTokens(na), tb = contentTokens(nb), shared = commonCount(ta, tb);
@@ -202,6 +223,8 @@ function duplicateEvents(a, b) {
 }
 
 function deduplicatedEvents(items) {
+  const cycles = items.filter(item => item.ciclo_nombre && item.ciclo_url);
+  items = items.filter(item => !repeatedCycle(item, cycles));
   // Comparar sólo funciones del mismo día y horario.
   const buckets = new Map();
   for (const item of items) {

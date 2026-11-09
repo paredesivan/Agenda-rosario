@@ -1300,11 +1300,19 @@ def leer_cairo(hoy):
                 if not mismo_dominio(enlace, base):
                     enlace = urljoin(base, 'cartelera-de-sala/')
                 descripcion, precio_texto = funcion['descripcion'], ''
+                ciclo = {}
                 if enlace != urljoin(base, 'cartelera-de-sala/'):
                     try:
                         if enlace not in cache:
                             cache[enlace] = descargar(enlace)
                         ficha = cache[enlace]
+                        etiquetas = ficha.select('.categoria-online-tag a[rel~="tag"][href]')
+                        if len(etiquetas) == 1:
+                            tag = etiquetas[0]
+                            link = urljoin(enlace, tag['href'])
+                            if (mismo_dominio(link, base) and urlsplit(link).scheme == 'https'
+                                    and urlsplit(link).path.startswith('/cartelera-de-sala/categoria/')):
+                                ciclo = {'ciclo_nombre': texto(tag), 'ciclo_url': link}
                         # Sólo el rótulo de entrada, no el año de la película ni precios relacionados.
                         titulo_precio = next((h for h in ficha.select('h2, h3, h4') if normalizar(texto(h)).strip(': ') == 'entrada'), None)
                         if titulo_precio:
@@ -1326,6 +1334,7 @@ def leer_cairo(hoy):
                     'El Cairo Cine Público')
                 evento['descripcion'] = resumen(texto(BeautifulSoup(descripcion, 'html.parser')))
                 evento['categorias'] = ['cine']
+                evento.update(ciclo)
                 eventos[clave(evento)] = evento
         except (requests.RequestException, ValueError):
             errores += 1
