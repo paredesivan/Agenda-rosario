@@ -4,7 +4,7 @@ Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descu
 
 Datos de la agenda: 2026-11-09 17:46. Corte: 2026-11-09.
 Eventos futuros: 1152. Revisión municipal: 2026-11-09T17:46:23.778268-03:00.
-Diagnóstico municipal de este intento: sí.
+Diagnóstico municipal de este intento: no; es un corte anterior o una revisión local.
 
 | Resultado municipal | Fichas |
 |---|---:|
