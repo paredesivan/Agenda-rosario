@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 145
     env:
-      ENTREGA_COORDINADA: '2026.11.07-migracion-lavarden-12'
+      ENTREGA_COORDINADA: '2026.11.08-identidad-funciones-13'
       MODO: ${{ github.event_name == 'pull_request' && 'verificar' || github.event.schedule == '10 12 * * 1' && 'auditar' || inputs.accion || 'actualizar' }}
     steps:
       - name: Descargar la versión que inició esta ejecución
@@ -657,6 +657,56 @@ jobs:
               print('Reparación ya instalada; se conservan modificaciones posteriores.')
           else:
               bundle = json.loads(gzip.decompress(base64.b64decode('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')))
+              staged, backups = {}, {}
+              for entry in bundle:
+                  path = Path(entry['path'])
+                  original = path.read_text() if path.exists() else ''
+                  digest = hashlib.sha256(original.encode()).hexdigest()
+                  if digest == entry['after']:
+                      continue
+                  changes = entry.get('variants', {}).get(digest, entry['edits'] if digest == entry['before'] else None)
+                  if changes is None:
+                      raise RuntimeError(f"{path} cambió desde la revisión; no se sobrescribió ningún archivo")
+                  lines = original.splitlines(keepends=True)
+                  for start, end, replacement in reversed(changes):
+                      lines[start:end] = replacement
+                  result = ''.join(lines)
+                  assert hashlib.sha256(result.encode()).hexdigest() == entry['after']
+                  if path.suffix == '.py':
+                      ast.parse(result, filename=str(path))
+                  elif path.suffix == '.json':
+                      json.loads(result)
+                  staged[path] = result
+                  backups[path] = path.read_bytes() if path.exists() else None
+              try:
+                  for path, result in staged.items():
+                      path.parent.mkdir(parents=True, exist_ok=True)
+                      temporary = path.with_suffix(path.suffix + '.reparacion.tmp')
+                      temporary.write_text(result)
+                      os.replace(temporary, path)
+                  receipt.parent.mkdir(exist_ok=True)
+                  receipt.write_text(json.dumps({'version': VERSION, 'archivos': [e['path'] for e in bundle]}, indent=2)+'\n')
+              except BaseException:
+                  for path, original in backups.items():
+                      if original is None:
+                          path.unlink(missing_ok=True)
+                      else:
+                          path.write_bytes(original)
+                  raise
+              print('Reparación instalada en el checkout; se guardará únicamente después de las pruebas.')
+          PY
+
+      - name: Vincular ciclos y títulos de funciones 2026.11.08-13
+        run: |
+          python - <<'PY'
+          import ast, base64, gzip, hashlib, json, os
+          from pathlib import Path
+          VERSION = '2026.11.08-identidad-funciones-13'
+          receipt = Path('.agenda/instalacion_identidad_funciones.json')
+          if receipt.exists() and json.loads(receipt.read_text()).get('version') == VERSION:
+              print('Reparación ya instalada; se conservan modificaciones posteriores.')
+          else:
+              bundle = json.loads(gzip.decompress(base64.b64decode('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')))
               staged, backups = {}, {}
               for entry in bundle:
                   path = Path(entry['path'])
