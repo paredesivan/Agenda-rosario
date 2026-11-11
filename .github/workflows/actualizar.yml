@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 145
     env:
-      ENTREGA_COORDINADA: '2026.11.08-identidad-funciones-13'
+      ENTREGA_COORDINADA: '2026.11.11-carteleras-16'
       MODO: ${{ github.event_name == 'pull_request' && 'verificar' || github.event.schedule == '10 12 * * 1' && 'auditar' || inputs.accion || 'actualizar' }}
     steps:
       - name: Descargar la versión que inició esta ejecución
@@ -707,6 +707,106 @@ jobs:
               print('Reparación ya instalada; se conservan modificaciones posteriores.')
           else:
               bundle = json.loads(gzip.decompress(base64.b64decode('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')))
+              staged, backups = {}, {}
+              for entry in bundle:
+                  path = Path(entry['path'])
+                  original = path.read_text() if path.exists() else ''
+                  digest = hashlib.sha256(original.encode()).hexdigest()
+                  if digest == entry['after']:
+                      continue
+                  changes = entry.get('variants', {}).get(digest, entry['edits'] if digest == entry['before'] else None)
+                  if changes is None:
+                      raise RuntimeError(f"{path} cambió desde la revisión; no se sobrescribió ningún archivo")
+                  lines = original.splitlines(keepends=True)
+                  for start, end, replacement in reversed(changes):
+                      lines[start:end] = replacement
+                  result = ''.join(lines)
+                  assert hashlib.sha256(result.encode()).hexdigest() == entry['after']
+                  if path.suffix == '.py':
+                      ast.parse(result, filename=str(path))
+                  elif path.suffix == '.json':
+                      json.loads(result)
+                  staged[path] = result
+                  backups[path] = path.read_bytes() if path.exists() else None
+              try:
+                  for path, result in staged.items():
+                      path.parent.mkdir(parents=True, exist_ok=True)
+                      temporary = path.with_suffix(path.suffix + '.reparacion.tmp')
+                      temporary.write_text(result)
+                      os.replace(temporary, path)
+                  receipt.parent.mkdir(exist_ok=True)
+                  receipt.write_text(json.dumps({'version': VERSION, 'archivos': [e['path'] for e in bundle]}, indent=2)+'\n')
+              except BaseException:
+                  for path, original in backups.items():
+                      if original is None:
+                          path.unlink(missing_ok=True)
+                      else:
+                          path.write_bytes(original)
+                  raise
+              print('Reparación instalada en el checkout; se guardará únicamente después de las pruebas.')
+          PY
+
+      - name: Corroborar horarios contradictorios 2026.11.10-14
+        run: |
+          python - <<'PY'
+          import ast, base64, gzip, hashlib, json, os
+          from pathlib import Path
+          VERSION = '2026.11.10-horarios-en-revision-14'
+          receipt = Path('.agenda/instalacion_horarios_en_revision.json')
+          if receipt.exists() and json.loads(receipt.read_text()).get('version') == VERSION:
+              print('Reparación ya instalada; se conservan modificaciones posteriores.')
+          else:
+              bundle = json.loads(gzip.decompress(base64.b64decode('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')))
+              staged, backups = {}, {}
+              for entry in bundle:
+                  path = Path(entry['path'])
+                  original = path.read_text() if path.exists() else ''
+                  digest = hashlib.sha256(original.encode()).hexdigest()
+                  if digest == entry['after']:
+                      continue
+                  changes = entry.get('variants', {}).get(digest, entry['edits'] if digest == entry['before'] else None)
+                  if changes is None:
+                      raise RuntimeError(f"{path} cambió desde la revisión; no se sobrescribió ningún archivo")
+                  lines = original.splitlines(keepends=True)
+                  for start, end, replacement in reversed(changes):
+                      lines[start:end] = replacement
+                  result = ''.join(lines)
+                  assert hashlib.sha256(result.encode()).hexdigest() == entry['after']
+                  if path.suffix == '.py':
+                      ast.parse(result, filename=str(path))
+                  elif path.suffix == '.json':
+                      json.loads(result)
+                  staged[path] = result
+                  backups[path] = path.read_bytes() if path.exists() else None
+              try:
+                  for path, result in staged.items():
+                      path.parent.mkdir(parents=True, exist_ok=True)
+                      temporary = path.with_suffix(path.suffix + '.reparacion.tmp')
+                      temporary.write_text(result)
+                      os.replace(temporary, path)
+                  receipt.parent.mkdir(exist_ok=True)
+                  receipt.write_text(json.dumps({'version': VERSION, 'archivos': [e['path'] for e in bundle]}, indent=2)+'\n')
+              except BaseException:
+                  for path, original in backups.items():
+                      if original is None:
+                          path.unlink(missing_ok=True)
+                      else:
+                          path.write_bytes(original)
+                  raise
+              print('Reparación instalada en el checkout; se guardará únicamente después de las pruebas.')
+          PY
+
+      - name: Corregir horarios de Colectividades y Astengo 2026.11.11-16
+        run: |
+          python - <<'PY'
+          import ast, base64, gzip, hashlib, json, os
+          from pathlib import Path
+          VERSION = '2026.11.11-carteleras-16'
+          receipt = Path('.agenda/instalacion_carteleras_noviembre.json')
+          if receipt.exists() and json.loads(receipt.read_text()).get('version') == VERSION:
+              print('Reparación ya instalada; se conservan modificaciones posteriores.')
+          else:
+              bundle = json.loads(gzip.decompress(base64.b64decode('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')))
               staged, backups = {}, {}
               for entry in bundle:
                   path = Path(entry['path'])
