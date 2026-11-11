@@ -24,6 +24,17 @@ class Colectividades(unittest.TestCase):
         self.assertEqual(list(sorted(t)), [f'2026-11-{i:02d}' for i in range(6, 16)])
         self.assertEqual(t['2026-11-06'][1], '19:00')
 
+    def test_portada_durante_el_festival_con_fecha_limite(self):
+        portada = html('<main><h1>Colectividades 2027</h1>'
+                       '<p>Hasta el15 de noviembre desde las 19 h en el Parque Nacional a la Bandera.</p>'
+                       '<a href="/inicio/colectividades-2027-dia-1">10.11 Día 1</a>'
+                       '<a href="/inicio/colectividades-2027-dia-2">11.11 Día 2</a>'
+                       '<a href="/inicio/colectividades-2027-dia-3">16.11 Día 3</a></main>')
+        jornadas, _ = tarjetas_publicadas(portada, date(2027, 11, 11))
+        self.assertEqual(list(jornadas), ['2027-11-11'])
+        self.assertEqual(jornadas['2027-11-11'][1], '19:00')
+        self.assertEqual(tarjetas_publicadas(portada, date(2027, 11, 17))[0], {})
+
     def test_ano_dinamico_sin_fechas_fijas(self):
         t, _ = tarjetas_publicadas(self.fixture(2027), date(2027, 11, 5))
         self.assertEqual(len(t), 10)

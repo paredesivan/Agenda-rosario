@@ -81,6 +81,27 @@ class ACR(unittest.TestCase):
         from actualizar_eventos import ZONA
         self.assertFalse(acr_vigente({'fecha':'2026-10-17','hora':'20:00'},datetime(2026,10,17,21,tzinfo=ZONA)))
 
+    def test_horario_en_revision_requiere_respaldo_de_la_misma_ficha(self):
+        from actualizacion_segura import proteger, unificar_horarios_acr
+        enlace = 'https://www.rosario.gob.ar/inicio/muestra-de-prueba'
+        f = ficha(title='Colores del puerto', venueName='Casa de Cultura Barrial',
+                  editorialNotes='[REVISAR: hay dos horarios distintos]', ticketingUrl=enlace)
+        h, = listado_acr(html_flight([f]), URL)
+        self.assertEqual(h['hora'], 'Horario a confirmar')
+        self.assertTrue(h['horario_pendiente'])
+        acr = dict(h, origen='Agenda Cultural Rosario', evento_url=h['referencia'])
+        oficial = dict(acr, origen='Municipalidad de Rosario', evento_url=enlace,
+                       hora='16:00', horario_pendiente=False)
+        anterior = dict(acr, hora='21:00', horario_pendiente=False)
+        protegido, _ = proteger({'eventos': [anterior, oficial]}, {'eventos': [acr, oficial]}, date.fromisoformat(DIA))
+        self.assertEqual(unificar_horarios_acr(protegido['eventos']), [oficial])
+        for variante in (dict(oficial, revision_pendiente=True),
+                         dict(oficial, evento_url=enlace+'-otra'),
+                         dict(oficial, nombre='Otra actividad'),
+                         dict(oficial, lugar='Otra sede')):
+            self.assertEqual(unificar_horarios_acr([acr, variante]), [acr, variante])
+
+
 class Duplicados(unittest.TestCase):
     def test_parque_espana_variantes_y_fuente_directa(self):
         a={'fecha':DIA,'hora':'20:00','nombre':'Impresiones Sonoras - Ensamble Municipal de Vientos',

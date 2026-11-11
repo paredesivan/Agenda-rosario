@@ -943,6 +943,16 @@ def actividad_ampliada(fecha, hora, titulo, enlace, fuente, direccion,
     return e
 
 
+def hora_funcion_astengo(descripcion, fecha, hora, hoy):
+    apertura = re.search(r'\bapertura de puertas\s*:?\s*(?:a las?\s+)?(\d{1,2}[:.]\d{2})',
+                         normalizar(descripcion))
+    if not apertura or hora_visible(apertura[1]) != hora:
+        return hora
+    horarios = {h for dia, h in fechas_publicadas(descripcion, hoy, anio_confirmado=True)
+                if dia == fecha and h != hora}
+    return horarios.pop() if len(horarios) == 1 else 'Horario a confirmar'
+
+
 def calendario_mec(html, fuente, url, direccion, hoy):
     fichas = []
     for s in html.select('script[type="application/ld+json"]'):
@@ -989,8 +999,10 @@ def calendario_mec(html, fuente, url, direccion, hoy):
             if isinstance(domicilio, dict):
                 domicilio = domicilio.get("streetAddress", direccion)
 
-            if fuente == "Teatro Astengo" and not re.search(r"\d", str(domicilio)):
-                domicilio = direccion
+            if fuente == "Teatro Astengo":
+                hora = hora_funcion_astengo(descripcion, fecha, hora, hoy)
+                if not re.search(r"\d", str(domicilio)):
+                    domicilio = direccion
 
             if fuente == "Biblioteca Vigil":
                 calle = re.search(r"\b(Alem|Gaboto)\s+(\d{3,4})\b", descripcion, re.I)
@@ -1002,10 +1014,11 @@ def calendario_mec(html, fuente, url, direccion, hoy):
                     lugar, domicilio = "Teatro Vigil", "Alem 3086"
 
             precio_visible = texto(detalle.select_one(".mec-single-event-cost"))
-            eventos.append(actividad_ampliada(
-                fecha, hora, f.get("name", ""), enlace, fuente, domicilio,
-                precio_visible + " " + descripcion, lugar,
-            ))
+            evento = actividad_ampliada(fecha, hora, f.get("name", ""), enlace, fuente, domicilio,
+                                       precio_visible + " " + descripcion, lugar)
+            if hora == 'Horario a confirmar':
+                evento['horario_pendiente'] = True
+            eventos.append(evento)
         except (requests.RequestException, ValueError):
             fallidos.add(enlace)
     return eventos, fallidos

@@ -16,6 +16,8 @@ MESES = ('enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
          'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre')
 PATRON_DIA = re.compile(r'^/inicio/colectividades-(20\d{2})-dia-(\d{1,2})/?$', re.I)
 
+PATRON_HASTA = r'\bhasta\s+el\s*(\d{1,2})\s+de\s+(' + '|'.join(MESES) + r')\b'
+
 
 def limpio(elemento):
     return ' '.join(elemento.get_text(' ', strip=True).split())
@@ -46,12 +48,23 @@ def rango_publicado(texto, anio):
     return primero, ultimo
 
 
+def fecha_limite(texto, anio):
+    limite = re.search(PATRON_HASTA, texto, re.I)
+    if limite:
+        return date(anio, MESES.index(limite[2].lower()) + 1, int(limite[1]))
+    return None
+
+
 def hora_publicada(texto):
-    m = re.search(r'\btodos\s+los\s+d[ií]as\s+desde\s+las\s+(\d{1,2})(?:[:.](\d{2}))?\s*h\b', texto, re.I)
+    apertura = r'\s+desde\s+las\s+(\d{1,2})(?:[:.](\d{2}))?\s*h\b'
+    m = re.search(r'\btodos\s+los\s+d[ií]as' + apertura, texto, re.I)
+    if not m:
+        m = re.search(PATRON_HASTA + apertura, texto, re.I)
     if not m:
         return None
-    hora, minutos = int(m[1]), int(m[2] or '0')
-    return f'{hora:02d}:{minutos:02d}' if hora < 24 and minutos < 60 else None
+    horas, minutos = m.groups()[-2:]
+    hora, minuto = int(horas), int(minutos or '0')
+    return f'{hora:02d}:{minuto:02d}' if hora < 24 and minuto < 60 else None
 
 
 def tarjetas_publicadas(html, hoy):
@@ -80,7 +93,8 @@ def tarjetas_publicadas(html, hoy):
             dia = re.search(r'\bd[ií]a\s+(\d{1,2})\b', titulo, re.I)
             if dia and int(dia[1]) == ordinal:
                 fecha = rango[0] + timedelta(days=ordinal - 1)
-        if fecha is None or (rango and not rango[0] <= fecha <= rango[1]):
+        limite = fecha_limite(cuerpo, anio)
+        if fecha is None or (rango and not rango[0] <= fecha <= rango[1]) or (limite and fecha > limite):
             continue
         if not hoy <= fecha <= hoy + timedelta(days=HORIZONTE_DIAS):
             continue
@@ -93,7 +107,9 @@ def tarjetas_publicadas(html, hoy):
         if re.search(r'colectividades\s+20\d{2}', cuerpo, re.I):
             m = re.search(r'colectividades\s+(20\d{2})', cuerpo, re.I)
             periodo = rango_publicado(cuerpo, int(m[1])) if m else None
-            if periodo and periodo[1] < hoy:
+            limite = fecha_limite(cuerpo, int(m[1])) if m else None
+            ultimo = periodo[1] if periodo else limite
+            if ultimo and ultimo < hoy:
                 return {}, cuerpo
         raise ValueError('Colectividades: no se detectaron jornadas verificables')
     return tarjetas, cuerpo

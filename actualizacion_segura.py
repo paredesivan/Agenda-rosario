@@ -161,6 +161,28 @@ def ejecutar_etapa(root, script, limite, ejecutar=subprocess.run, hoy=None):
         return {'etapa': script, 'estado': 'parcial' if avisos or despues.get('estado') == 'parcial' else 'validada', 'avisos': avisos, 'avisos_fuentes': despues.get('avisos_fuentes', [])}
 
 
+def unificar_horarios_acr(eventos):
+    """Usa la ficha municipal enlazada para el mismo día cuando ACR pide verificar la hora."""
+    from actualizar_eventos import _mismo_contenido, _mismo_lugar
+    horarios = {}
+    for evento in eventos:
+        if (evento.get("origen") == "Municipalidad de Rosario"
+                and not evento.get("revision_pendiente") and not evento.get("horario_pendiente")
+                and re.fullmatch(r"\d{2}:\d{2}", evento["hora"]) and evento.get("evento_url")):
+            clave = (evento["evento_url"].rstrip("/"), evento["fecha"])
+            horarios.setdefault(clave, []).append(evento)
+
+    def respaldada(evento):
+        referencia = evento.get("referencia_horario_oficial")
+        if not (evento.get("origen") == "Agenda Cultural Rosario"
+                and evento.get("horario_pendiente") and referencia):
+            return False
+        return any(_mismo_contenido(evento, oficial) and _mismo_lugar(evento, oficial)
+                   for oficial in horarios.get((referencia.rstrip("/"), evento["fecha"]), []))
+
+    return [e for e in eventos if not respaldada(e)]
+
+
 def main():
     inicio = datetime.now(ZoneInfo('America/Argentina/Cordoba')).isoformat()
     resultados = []
@@ -174,7 +196,7 @@ def main():
     # Aplicar después de la protección: los respaldos no reintroducen duplicados.
     from actualizar_eventos import sin_repetidos
     antes_deduplicar = len(datos['eventos'])
-    datos['eventos'] = sin_repetidos(datos['eventos'])
+    datos['eventos'] = sin_repetidos(unificar_horarios_acr(datos['eventos']))
     validar(datos)
     duplicados = antes_deduplicar - len(datos['eventos'])
     atomico(ROOT / 'eventos.json', datos)

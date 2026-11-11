@@ -1,0 +1,9 @@
+{
+  "version": "2026.11.11-carteleras-16",
+  "archivos": [
+    "fuente_colectividades.py",
+    "tests/test_colectividades.py",
+    "actualizar_eventos.py",
+    "tests/test_horario_astengo.py"
+  ]
+}

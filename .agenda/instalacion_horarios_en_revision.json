@@ -1,0 +1,8 @@
+{
+  "version": "2026.11.10-horarios-en-revision-14",
+  "archivos": [
+    "fuentes_adicionales.py",
+    "actualizacion_segura.py",
+    "tests/test_acr_duplicados.py"
+  ]
+}

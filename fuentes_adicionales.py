@@ -335,6 +335,8 @@ def acr_vigente(hecho, ahora=None):
     ahora = ahora or datetime.now(ZONA)
     if ahora.tzinfo is None:
         ahora = ahora.replace(tzinfo=ZONA)
+    if hecho.get('horario_pendiente'):
+        return hecho.get('fecha', '') >= ahora.date().isoformat()
     try:
         inicio = datetime.fromisoformat(hecho['fecha'] + 'T' + hecho['hora']).replace(tzinfo=ZONA)
         fin = datetime.fromisoformat(hecho['fecha_fin'] + 'T' + hecho['hora_fin']).replace(tzinfo=ZONA) if hecho.get('fecha_fin') and hecho.get('hora_fin') else None
@@ -388,6 +390,10 @@ def listado_acr(html, url, ahora=None):
         categoria = disciplina.get('name') if isinstance(disciplina, dict) else ''
         categoria = categoria if isinstance(categoria, str) and categoria and not categoria.startswith('$') else 'Actividad cultural'
         descripcion = f'{categoria}: {nombre}, en {lugar}. Información publicada por Agenda Cultural Rosario.'
+        notas = ficha.get('editorialNotes')
+        horario_en_revision = isinstance(notas, str) and re.search(
+            r'\[revisar:[^\]]*\bhorarios (?:distintos|contradictorios)\b', norm(notas))
+        enlace_oficial = ficha.get('ticketingUrl')
         turnos = ficha.get('occurrences')
         if not isinstance(turnos, list) or not turnos:
             turnos = [{'date': ficha.get('eventDate'), 'time': ficha.get('eventTime'), 'status': 'scheduled'}]
@@ -415,6 +421,13 @@ def listado_acr(html, url, ahora=None):
                     hecho.update(fecha_fin=fin.date().isoformat(), hora_fin=fin.strftime('%H:%M'))
                 except ValueError:
                     continue
+            if horario_en_revision:
+                hecho.update(hora='Horario a confirmar', horario_pendiente=True, hora_informada=hora)
+                hecho.pop('fecha_fin', None)
+                hecho.pop('hora_fin', None)
+                if isinstance(enlace_oficial, str) and enlace_oficial.startswith(
+                        'https://www.rosario.gob.ar/inicio/'):
+                    hecho['referencia_horario_oficial'] = enlace_oficial
             if acr_vigente(hecho, ahora):
                 hechos.append(hecho)
     return sorted({clave(h): h for h in hechos}.values(), key=lambda h: (h['fecha'], h['hora'], h['nombre']))
@@ -538,9 +551,9 @@ def revisar(hoy, eventos, estado, acceso=None):
     except (ValueError, OSError):
         cache = {}
     acceso = acceso or Acceso(cache)
-    if acceso.cache.get('version_acr') != 2:
+    if acceso.cache.get('version_acr') != 3:
         acceso.cache.setdefault('paginas', {}).pop('https://www.agendaculturalrosario.com.ar/agenda', None)
-        acceso.cache['version_acr'] = 2
+        acceso.cache['version_acr'] = 3
     aprobados = set(config['dominios_oficiales_existentes'])
     oficiales = [e for e in eventos if host(e.get('evento_url', '')) in aprobados]
     primarias_acr = aprobados | set(config.get('dominios_prioritarios_acr', []))
