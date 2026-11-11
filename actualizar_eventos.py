@@ -794,13 +794,24 @@ def actualizar():
         if aplazadas:
             fallidos.update(f['url'] for f in aplazadas)
             errores.append(f'Municipalidad: {len(aplazadas)} fichas aplazadas por bloqueo previo; reintento semanal sin eludir pausas')
-        ordenados = ordenar_consultas(elegibles, revision_anterior)
+        # El registro vive en la raíz para que la etapa aislada lo promueva
+        # con los demás diagnósticos revision_*, sólo después de validarse.
+        registro_rotacion = ARCHIVO.with_name('revision_rotacion_municipal.json')
+        historial_rotacion = json.loads(registro_rotacion.read_text(encoding='utf-8')) if registro_rotacion.exists() else {}
+        if not isinstance(historial_rotacion, dict) or not all(isinstance(k, str) and isinstance(v, str) for k, v in historial_rotacion.items()):
+            raise ValueError('Registro de rotación municipal inválido')
+        ordenados = sorted(elegibles, key=lambda url: (historial_rotacion.get(url, ''), url))
         lote = 40
-        inicio_lote = ((ahora.toordinal() * 12 + ahora.hour // 2) * lote) % max(1, len(ordenados))
-        seleccion = (ordenados[inicio_lote:] + ordenados[:inicio_lote])[:lote]
+        seleccion = ordenados[:lote]
         if len(ordenados) > len(seleccion):
             errores.append(f'Municipalidad: revisión rotativa {len(seleccion)}/{len(ordenados)} fichas; el resto se conserva')
         nuevos, fallas, no_consultadas = consultar_lote_municipal(seleccion, hoy)
+        # Sólo cuenta intentos reales; errores se reintentan en otra vuelta.
+        for url in seleccion:
+            if url in DIAGNOSTICO_MUNICIPAL:
+                historial_rotacion[url] = ahora.isoformat()
+        historial_rotacion = {url: historial_rotacion[url] for url in enlaces if url in historial_rotacion}
+        registro_rotacion.write_text(json.dumps(historial_rotacion, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         eventos.extend(nuevos)
         fallidos.update(fallas)
         if no_consultadas:
