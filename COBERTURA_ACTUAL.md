@@ -2,22 +2,31 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-11-10 17:50. Corte: 2026-11-10.
-Eventos futuros: 1177. Revisión municipal: 2026-11-10T17:50:41.412423-03:00.
+Datos de la agenda: 2026-11-10 22:57. Corte: 2026-11-10.
+Eventos futuros: 1177. Revisión municipal: 2026-11-10T22:57:03.905313-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
 |---|---:|
-| con_funciones_extraidas | 37 |
-| sin_funciones_extraidas | 3 |
+| con_funciones_extraidas | 28 |
+| sin_funciones_extraidas | 12 |
 
 Funciones extraídas ausentes de la agenda: 0.
 
 ## Consultas fallidas y fichas sin funciones
 
+- https://www.rosario.gob.ar/inicio/seminario-anatomia-vivencial-y-contact-improvisacion — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-folclore-para-adultos — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-robotica-en-el-sudoeste — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-que-nos-dice-la-arcilla — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-sin-orillas — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/talleres-2026-puerto-joven-preinscripcion — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/talleres-de-teatro-patatus-en-felipa-la-casa-del-fondo — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/expo-educativa-0 — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 - https://www.rosario.gob.ar/inicio/festival-fontanarrosa-1 — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/presentaciones-de-libros-en-la-biblioteca-argentina — Bloque sin sede verificable
 
 ## Candidatos y resolución
 
@@ -32,14 +41,14 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://rosariotimes.com/fito-paez-vuelve-con-su-show-a-rosario-sera-el-19-de-diciembre/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
-- https://rosariotimes.com/todo-listo-para-el-inicio-de-la-fiesta-de-las-colectividades-2026/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/la-municipalidad-de-rosario-preve-un-plan-de-obras-record-para-2027/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/llega-el-reventon-al-mercado-del-patio-descuentos-y-ofertas-el-viernes-20-de-noviembre/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/todo-listo-para-el-inicio-de-la-fiesta-de-las-colectividades-2026/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/la-municipalidad-de-rosario-preve-un-plan-de-obras-record-para-2027/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/llega-el-reventon-al-mercado-del-patio-descuentos-y-ofertas-el-viernes-20-de-noviembre/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17610 — descartado: Todas las funciones detectadas están vencidas
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17611 — descartado: Todas las funciones detectadas están vencidas
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17612 — descartado: Todas las funciones detectadas están vencidas
@@ -195,10 +204,11 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://saleplan.ar/santa-fe/rosario/planes/TWY1G0B8G6FH/los-perez-garcia — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/T418N6GB4955/el-trio-de-la-folcloreishon-presenta-sin-arreglo — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/M5YGEESXHM85/segundo-encuentro-federal-de-mujeres-agropecuarias — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/WPZPY1MWBZE9/crean-bosque-14112026-campus-green — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/TTYHG23RJXP5/andy-chango — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/PS9HE3F7ZYCK/juanjo-piedrabuena-cali-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/WPZPY1MWBZE9/crean-bosque-14112026-campus-green — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/HX0MKM9STXBG/mrb-after-dark-visual-experience — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/HYB8X8P7B5R8/fiesta-elite — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/VJGQGP4905T0/patio-cervecero-dia-de-la-madre — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/VP792B424F4E/la-retro — diferido: Turno de revisión rotativa en otra ejecución
