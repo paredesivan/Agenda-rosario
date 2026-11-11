@@ -11,7 +11,7 @@
   "pendientes": {
     "cantidad": 132,
     "mayores_7_dias": 88,
-    "antiguedad_maxima_dias": 22,
+    "antiguedad_maxima_dias": 23,
     "criterio": "Desde la primera evidencia registrada; puede ser anterior.",
     "por_fuente": {
       "EntradaFan": 10,
@@ -21,6 +21,6 @@
       "SalePlan": 93
     }
   },
-  "minutos_hasta_informe": 30.52,
+  "minutos_hasta_informe": 39.48,
   "tiempo_intervencion_humana": "No medido"
 }
