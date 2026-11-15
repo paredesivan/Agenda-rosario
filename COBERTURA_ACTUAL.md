@@ -2,23 +2,31 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-11-15 14:10. Corte: 2026-11-15.
-Eventos futuros: 1088. Revisión municipal: 2026-11-15T14:10:30.496049-03:00.
+Datos de la agenda: 2026-11-15 19:48. Corte: 2026-11-15.
+Eventos futuros: 1089. Revisión municipal: 2026-11-15T19:48:43.735596-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
 |---|---:|
-| con_funciones_extraidas | 36 |
-| sin_funciones_extraidas | 4 |
+| sin_funciones_extraidas | 12 |
+| con_funciones_extraidas | 28 |
 
 Funciones extraídas ausentes de la agenda: 0.
 
 ## Consultas fallidas y fichas sin funciones
 
-- https://www.rosario.gob.ar/inicio/festival-fontanarrosa-1 — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/la-novia-del-diablo-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/super-finde-mil-dias — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
+- https://www.rosario.gob.ar/inicio/colectividades-2026-dia-10 — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-folclore-para-adultos — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-que-nos-dice-la-arcilla — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-sin-orillas — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/talleres-de-teatro-patatus-en-felipa-la-casa-del-fondo — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/42deg-encuentro-y-fiesta-nacional-de-colectividades — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/9deg-festival-de-magia-de-rosario — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/checker-tobi-y-el-viaje-los-rios-voladores-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
+- https://www.rosario.gob.ar/inicio/circuitos-culturales-65-visitas-especiales — Bloque sin sede verificable
 
 ## Candidatos y resolución
 
@@ -36,14 +44,14 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://rosariotimes.com/la-municipalidad-de-rosario-preve-un-plan-de-obras-record-para-2027/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://rosariotimes.com/candlelight-llega-a-rosario-con-concierto-solo-de-clasicos-navidenos/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
-- https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/fito-paez-vuelve-con-su-show-a-rosario-sera-el-19-de-diciembre/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://rosariotimes.com/fito-paez-vuelve-con-su-show-a-rosario-sera-el-19-de-diciembre/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://rosariotimes.com/durante-el-fin-de-semana-largo-la-provincia-de-santa-fe-recibio-mas-de-110-000-turistas/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/rosario-refuerza-las-obras-hidraulicas-en-el-noroeste-para-enfrentar-las-lluvias-intensas/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/del-25-al-29-de-noviembre-llega-a-rosario-una-nueva-edicion-del-festival-fontanarrosa/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/la-fiesta-de-las-colectividades-se-extiende-hasta-el-lunes-16-de-noviembre/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17610 — descartado: Todas las funciones detectadas están vencidas
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17611 — descartado: Todas las funciones detectadas están vencidas
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17612 — descartado: Todas las funciones detectadas están vencidas
@@ -198,26 +206,27 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://saleplan.ar/santa-fe/rosario/planes/1BPNF4P7YR7J/too-yugan-en-rosario-imponiendo-zona-sur-tour — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/D1NCMJZVPHDB/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/0M0PZE227CT4/el-viaje-de-chihiro-por-capsula-producciones — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/F3H4G16D8QAA/maibo-party-en-qtp — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/DGMMWWGZNBZ2/pietro-presenta-la-belleza-y-la-verdad — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/1PSXK0Q8CR1M/londonground-x-boiler — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/F5FDKQEFMEHE/candlelight-el-senor-de-los-anillos — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/F3H4G16D8QAA/maibo-party-en-qtp — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/22Q0DWQAMS25/lola-sanchez — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/KB6JRXXHSJAA/luca-topino-quinteto — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/F5FDKQEFMEHE/candlelight-el-senor-de-los-anillos — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/VJ2PBP4K5CQY/mati-rj — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/MJS34EF13E9D/carafea — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/KB6JRXXHSJAA/luca-topino-quinteto — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/YMA7QATFZHJ4/tc-2026-rosario-gran-premio — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/QGF5MS30RKHB/tablao-de-la-casona — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/MJS34EF13E9D/carafea — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/BYQJ5V452CD0/felix-buenaventura-180-remates-por-hora-stand-up — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/RS8XRFN2ENBR/candlelight-tributo-a-phil-collins — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/QGF5MS30RKHB/tablao-de-la-casona — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/M91WP1A7Q84V/potencia-emprendedora-rosario — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/TC2VD5DGYX1S/umbra-x-eternal-by-parc-sud-producciones — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/RS8XRFN2ENBR/candlelight-tributo-a-phil-collins — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/8Y7RGK07XGBG/musica-de-aca — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/TC2VD5DGYX1S/umbra-x-eternal-by-parc-sud-producciones — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/AWJ062FQBF5F/silvestre-y-la-naranja — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/XXKG92WDF9CJ/navidad-made-in-argentina — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/BQQYXW7VPDYX/otro-club-de-cine-presenta-la-ultima-del-ano — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/YFW3NDXY0N90/yama-yama — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XXKG92WDF9CJ/navidad-made-in-argentina — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/CK7X2FF7HEYN/dramer-en-rosario-sabado-7-de-noviembre — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/YFW3NDXY0N90/yama-yama — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/ZMKXRYEWZ4MJ/rocio-quiroz-la-vanidosa-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/QHBJMK2W58RV/tablao-flamenco-entre-palmas — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/QPP8WT7CYFX4/border-el-musical-rosario — diferido: Turno de revisión rotativa en otra ejecución
