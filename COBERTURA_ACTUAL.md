@@ -2,25 +2,30 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-11-14 17:43. Corte: 2026-11-14.
-Eventos futuros: 1030. Revisión municipal: 2026-11-14T17:43:49.243572-03:00.
+Datos de la agenda: 2026-11-14 22:55. Corte: 2026-11-14.
+Eventos futuros: 1031. Revisión municipal: 2026-11-14T22:55:51.818159-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
 |---|---:|
-| con_funciones_extraidas | 34 |
-| sin_funciones_extraidas | 6 |
+| sin_funciones_extraidas | 11 |
+| con_funciones_extraidas | 29 |
 
 Funciones extraídas ausentes de la agenda: 0.
 
 ## Consultas fallidas y fichas sin funciones
 
-- https://www.rosario.gob.ar/inicio/taller-de-iniciacion-la-panaderia-francesa — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/festival-fontanarrosa-1 — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/la-novia-del-diablo-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/super-finde-mil-dias — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/42deg-encuentro-y-fiesta-nacional-de-colectividades — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/9deg-festival-de-magia-de-rosario — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/funcion-tres-hermanas — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/seminario-anatomia-vivencial-y-contact-improvisacion — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/sinfonia-ndeg3-coral-en-re-menor-de-gustav-mahler — Sin fechas/horarios interpretables dentro del horizonte; Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-folclore-para-adultos — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-que-nos-dice-la-arcilla — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-sin-orillas — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/talleres-de-teatro-patatus-en-felipa-la-casa-del-fondo — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
 
 ## Candidatos y resolución
 
@@ -37,15 +42,15 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://rosariotimes.com/la-fiesta-de-las-colectividades-se-extiende-hasta-el-lunes-16-de-noviembre/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
-- https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://rosariotimes.com/todo-listo-para-el-inicio-de-la-fiesta-de-las-colectividades-2026/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
-- https://rosariotimes.com/la-municipalidad-de-rosario-preve-un-plan-de-obras-record-para-2027/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/candlelight-llega-a-rosario-con-concierto-solo-de-clasicos-navidenos/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/la-municipalidad-de-rosario-preve-un-plan-de-obras-record-para-2027/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://rosariotimes.com/candlelight-llega-a-rosario-con-concierto-solo-de-clasicos-navidenos/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://rosariotimes.com/llega-el-reventon-al-mercado-del-patio-descuentos-y-ofertas-el-viernes-20-de-noviembre/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17610 — descartado: Todas las funciones detectadas están vencidas
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17611 — descartado: Todas las funciones detectadas están vencidas
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17612 — descartado: Todas las funciones detectadas están vencidas
@@ -128,89 +133,101 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://saleplan.ar/santa-fe/rosario/planes/46B7WYREN8DV/chachacha-30 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/S54P8YGH9JHK/harry-potter-2-por-capsula-producciones — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/6X9VPYTZARED/border-el-musical-rosario — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
-- https://saleplan.ar/santa-fe/rosario/planes/XXKG92WDF9CJ/navidad-made-in-argentina — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://saleplan.ar/santa-fe/rosario/planes/0N6Q0T5NSWAW/tumba-la-casa-santa-noche-081126 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/86Q7G7W4VX4F/el-enfermo-imaginario-version-litoralena-estreno — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/0N6Q0T5NSWAW/tumba-la-casa-santa-noche-081126 — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/8S6MSG6RBA67/los-palmae — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/3AHR7YQYP404/maison-x-nocturna-domingo-8-de-noviembre — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/1W1MH4BT3D9P/pena-san-martin-educacion-fisica — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/8S6MSG6RBA67/los-palmae — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/BGJS2DTWQ2PE/jorge-migoya — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/783WGSEAAQWN/escenas-de-la-vida-conyugal — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/1W1MH4BT3D9P/pena-san-martin-educacion-fisica — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/220BWYF6ZVW1/kinesio-fest-5ta-edicion — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/EN8371595TFD/jueves-electronicos-by-chicago-0511 — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/783WGSEAAQWN/escenas-de-la-vida-conyugal — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/2X1GBYGBSVXG/pena-la-coplera-nestor-garnica — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/FVZAW3XT9JP3/cine-en-la-terracita-by-cineclu — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/EN8371595TFD/jueves-electronicos-by-chicago-0511 — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/B2314QTH465C/concierto-25o-aniversario-coro-mutual-amr — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/NQZ3V7RGACD0/fiesta-economicas-uca — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/FVZAW3XT9JP3/cine-en-la-terracita-by-cineclu — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/BTWJQC8HZ17H/nico-de-tracy-rosario — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/4A02BD7N734J/mathame — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/NQZ3V7RGACD0/fiesta-economicas-uca — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/T418N6GB4955/el-trio-de-la-folcloreishon-presenta-sin-arreglo — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/NV138KA6ED2J/bloom-cierre-de-temporada — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/4A02BD7N734J/mathame — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/3648MC743FB8/y-que — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/QN8B472B4Z4V/611-mario-pereyra-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/NV138KA6ED2J/bloom-cierre-de-temporada — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/AQYTXBJGAN61/terapia-de-copas — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/2Q194G38SEFA/xamila-denise-en-rosario — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/QN8B472B4Z4V/611-mario-pereyra-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/DBY09Z0AJGG6/salasflaco-rosario-under-selected — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/2C6KKDGCX95K/otto-lva-halloween-2026 — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/2Q194G38SEFA/xamila-denise-en-rosario — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/DQDSQF1H682D/bariloche-90 — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/7VJJFG91ENJ0/halloween-el-brujo-ezequiel-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/2C6KKDGCX95K/otto-lva-halloween-2026 — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/DT3WGQZ83N9G/chamuyando-standup-rosario — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/9ZWWM688AHFH/victor-heredia-desde-paso-del-rey — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/7VJJFG91ENJ0/halloween-el-brujo-ezequiel-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/FAQ55SBEYD3F/charly-day-en-ccg — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/KRY2N32D4HCC/fresa-club-presenta-halloween-en-el-hipodromohorror-house — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/9ZWWM688AHFH/victor-heredia-desde-paso-del-rey — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/KCYN35KANKQ8/cinegraf — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/4VG9ANHAW29B/pela-romero-presenta-aprendiendo-a-quere-me — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/KRY2N32D4HCC/fresa-club-presenta-halloween-en-el-hipodromohorror-house — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/PHR3E4RSPXN0/goteo-en-mercury-viernes-13-de-noviembre — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/54DS10XV2EXJ/broke-party-en-rosario-especial-halloween — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/4VG9ANHAW29B/pela-romero-presenta-aprendiendo-a-quere-me — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/ZA70V47822TG/ariel-el-traidor-decada-disco-viernes-1311 — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/A7V4AM7TBW8K/nepal-en-rosario — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/54DS10XV2EXJ/broke-party-en-rosario-especial-halloween — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/ZKHPXK3ETMFH/goteo-club-de-reggaeton — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/A7V4AM7TBW8K/nepal-en-rosario — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/2C0E0B41JN47/ultima-pena-san-martin-educacion-fisica — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/BG89NKSWKY0J/mistica-n-roll — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/2N2ZC0Y64WBE/sudbeat-showcase-141126-hipodromo-de-rosario — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/XKJ918FTFBAY/mesa-dulce-en-rosario — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/3KQHS3NQ12YM/mati-rj — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/34XTTX90994W/victoria-engel-clossing-underground — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/GJDX6446FVG2/chueka-en-taura — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/4A0VY95M4GA4/horifestival-26 — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/3KQHS3NQ12YM/mati-rj — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/SFAKAM5KY83F/emi-galvan-all-night-long-7hs-set — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/794XPDADA2G0/entre-tapas-y-copas — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/4A0VY95M4GA4/horifestival-26 — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/TWY1G0B8G6FH/los-perez-garcia — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/A9ZNGDX68PZ8/mariano-martinez — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/794XPDADA2G0/entre-tapas-y-copas — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/M5YGEESXHM85/segundo-encuentro-federal-de-mujeres-agropecuarias — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/ATC34HA4Q6ES/candlelight-peaky-blinders — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/9K789S0H0TQ2/dyango — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/PS9HE3F7ZYCK/juanjo-piedrabuena-cali-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/BV6G1391KH94/maverick-10-anos-de-musica-de-los-80 — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/A9ZNGDX68PZ8/mariano-martinez — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/HX0MKM9STXBG/mrb-after-dark-visual-experience — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/D1NCMJZVPHDB/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/ATC34HA4Q6ES/candlelight-peaky-blinders — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/HYB8X8P7B5R8/fiesta-elite — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/F5FDKQEFMEHE/candlelight-el-senor-de-los-anillos — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/BV6G1391KH94/maverick-10-anos-de-musica-de-los-80 — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/VJGQGP4905T0/patio-cervecero-dia-de-la-madre — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/J32Q5Z3EQ5MQ/sunset-santo-cupido — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/C4T30E3DA4SC/mercury-sabado-14-de-noviembre — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/VP792B424F4E/la-retro — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/J9D5KXVSM931/alex-ubago-en-la-segunda-seguros-arena — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/CBNSASN6RCDF/gabriel-rolon — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/QZTX84AWNJH4/ars-nova-50-aniversario — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/MA33YGFEWGV9/el-profe-borda-despide-el-ano-en-rosario — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/CDN26V30SK9Z/nuestro-trabajo — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/R0WTEGAP9E39/los-guanacos-y-salida-de-emergencia-en-garcia — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/RS8XRFN2ENBR/candlelight-tributo-a-phil-collins — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/D1NCMJZVPHDB/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/SEEXV4M8D4YW/0711-good-morning-quinchito — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/TTYHG23RJXP5/andy-chango — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/F5FDKQEFMEHE/candlelight-el-senor-de-los-anillos — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/VZY14RA62BRT/boliche-leproso — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/WPZPY1MWBZE9/crean-bosque-14112026-campus-green — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/J32Q5Z3EQ5MQ/sunset-santo-cupido — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/NNBPTN2D7YW7/mercury-sabado-24-de-octubre — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/J9D5KXVSM931/alex-ubago-en-la-segunda-seguros-arena — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/QSYHB6SKAHBZ/los-nocheros — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/XK69V22J5WSS/audiostoners-homenaje-a-chris-cornell-jaguar-haus-rosario — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/KB6JRXXHSJAA/luca-topino-quinteto — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/XG27MHSS8QKP/halloween-luduena — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/MA33YGFEWGV9/el-profe-borda-despide-el-ano-en-rosario — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/1BPNF4P7YR7J/too-yugan-en-rosario-imponiendo-zona-sur-tour — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/MJS34EF13E9D/carafea — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/0M0PZE227CT4/el-viaje-de-chihiro-por-capsula-producciones — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/MTA80V6A32MH/rouge-1411 — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/1PSXK0Q8CR1M/londonground-x-boiler — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/PHBKWMSN9BF3/teacordas-14-11 — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/22Q0DWQAMS25/lola-sanchez — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/QGF5MS30RKHB/tablao-de-la-casona — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/VJ2PBP4K5CQY/mati-rj — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/RS8XRFN2ENBR/candlelight-tributo-a-phil-collins — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/YMA7QATFZHJ4/tc-2026-rosario-gran-premio — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/TTYHG23RJXP5/andy-chango — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/BYQJ5V452CD0/felix-buenaventura-180-remates-por-hora-stand-up — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/WPZPY1MWBZE9/crean-bosque-14112026-campus-green — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/M91WP1A7Q84V/potencia-emprendedora-rosario — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/8Y7RGK07XGBG/musica-de-aca — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XK69V22J5WSS/audiostoners-homenaje-a-chris-cornell-jaguar-haus-rosario — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/AWJ062FQBF5F/silvestre-y-la-naranja — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XXKG92WDF9CJ/navidad-made-in-argentina — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/BQQYXW7VPDYX/otro-club-de-cine-presenta-la-ultima-del-ano — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/YFW3NDXY0N90/yama-yama — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/CK7X2FF7HEYN/dramer-en-rosario-sabado-7-de-noviembre — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/ZMKXRYEWZ4MJ/rocio-quiroz-la-vanidosa-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/QHBJMK2W58RV/tablao-flamenco-entre-palmas — diferido: Turno de revisión rotativa en otra ejecución
