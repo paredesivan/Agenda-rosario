@@ -2,38 +2,24 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-11-17 10:26. Corte: 2026-11-17.
-Eventos futuros: 1093. Revisión municipal: 2026-11-17T10:26:14.166870-03:00.
+Datos de la agenda: 2026-11-17 19:23. Corte: 2026-11-17.
+Eventos futuros: 1101. Revisión municipal: 2026-11-17T19:23:53.583301-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
 |---|---:|
-| sin_funciones_extraidas | 19 |
-| con_funciones_extraidas | 21 |
+| sin_funciones_extraidas | 5 |
+| con_funciones_extraidas | 35 |
 
 Funciones extraídas ausentes de la agenda: 0.
 
 ## Consultas fallidas y fichas sin funciones
 
-- https://www.rosario.gob.ar/inicio/42deg-encuentro-y-fiesta-nacional-de-colectividades — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/9deg-festival-de-magia-de-rosario — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/checker-tobi-y-el-viaje-los-rios-voladores-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/circuitos-culturales-65-visitas-especiales — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/festival-fontanarrosa-1 — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/la-novia-del-diablo-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/muestra-insieme-el-arte-que-nos-une-con-italia — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/noche-de-librerias-0 — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/operativo-de-salud-animal-en-el-distrito-sudoeste — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/presentaciones-de-libros-en-la-biblioteca-argentina — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/rosario-en-las-calles.-memorias-urbanas-de-la-ciudad — Sin explicación registrada; revisar.
-- https://www.rosario.gob.ar/inicio/super-finde-mil-dias — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/taller-de-robotica-en-el-sudoeste — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/taller-que-nos-dice-la-arcilla — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/taller-sin-orillas — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/talleres-2026-puerto-joven-preinscripcion — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
-- https://www.rosario.gob.ar/inicio/talleres-de-teatro-patatus-en-felipa-la-casa-del-fondo — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/aventuras-nocturnas-una-noche-para-habitar-el-palacio-de-los-leones — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/estaciones-de-alfabetizacion-para-alumnos-de-segundo-ciclo. — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/huerta-primavera-verano — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/propuestas-para-primera-infancia-en-librerias — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/taller-gratuito-de-huerta-de-verano-en-el-distrito-sudoeste — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 
 ## Candidatos y resolución
 
@@ -49,17 +35,17 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://rosariotimes.com/llega-el-musical-despertar-de-primavera-a-rosario-cuando-y-donde-comprar-las-entradas/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://rosariotimes.com/stefano-marconi-el-nino-de-10-anos-con-el-coeficiente-intelectual-mas-alto-del-pais-llega-al-salon-del-automovil-de-rosario/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://rosariotimes.com/desde-este-viernes-reabre-el-museo-gallardo-de-rosario-tras-dos-anos-de-obras/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
-- https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://rosariotimes.com/en-noviembre-vuelve-el-festival-fontanarrosa-con-la-presencia-de-guillermo-francella/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
-- https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/ — diferido: Turno de revisión rotativa en otra ejecución
-- https://rosariotimes.com/la-municipalidad-de-rosario-preve-un-plan-de-obras-record-para-2027/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/del-6-al-15-de-noviembre-llega-a-rosario-la-fiesta-de-las-colectividades-2026/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://rosariotimes.com/comenzo-la-construccion-de-la-segunda-etapa-del-tercer-carril-de-la-autopista-rosario-santa-fe/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://rosariotimes.com/la-municipalidad-de-rosario-preve-un-plan-de-obras-record-para-2027/ — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://rosariotimes.com/la-fiesta-de-las-colectividades-se-extiende-hasta-el-lunes-16-de-noviembre/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/del-25-al-29-de-noviembre-llega-a-rosario-una-nueva-edicion-del-festival-fontanarrosa/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/candlelight-llega-a-rosario-con-concierto-solo-de-clasicos-navidenos/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://rosariotimes.com/colectividades-2026-se-extiende-hasta-este-martes-17-de-noviembre/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/el-tc-vuelve-a-rosario-despues-de-siete-anos-y-llega-el-salon-del-automovil/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/llega-el-salon-del-automovil-de-rosario-del-23-al-25-de-octubre-mas-de-100-autos-en-exhibicion-electricos-hibridos-clasicos-y-deportivos-y-simuladores-de-formula-1/ — diferido: Turno de revisión rotativa en otra ejecución
+- https://rosariotimes.com/como-se-prepara-rosario-para-enfrentar-el-fenomeno-de-el-nino/ — diferido: Turno de revisión rotativa en otra ejecución
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17610 — descartado: Todas las funciones detectadas están vencidas
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17611 — descartado: Todas las funciones detectadas están vencidas
 - https://www.entradafan.com.ar/entradas-escenas-de-la-vida-conyugal/e/17612 — descartado: Todas las funciones detectadas están vencidas
@@ -85,7 +71,7 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.entradafan.com.ar/entradas-el-jefe-del-jefe-rosario/e/18310 — corroborado: Todas las funciones futuras ya tienen respaldo prioritario
 - https://www.entradafan.com.ar/entradas-gabriel-rolon-rosario/e/17779 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://www.entradafan.com.ar/entradas-baglietto-y-vitale-rosario/e/18127 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://www.entradafan.com.ar/entradas-seru-giran-rosario/e/17764 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
