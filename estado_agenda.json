@@ -1,34 +1,26 @@
 {
   "version": 1,
-  "generado": "2026-11-17T00:27:01-03:00",
-  "ejecucion_id": "44006460010-1",
-  "inicio": "2026-11-16T23:56:02-03:00",
+  "generado": "2026-11-17T10:54:47-03:00",
+  "ejecucion_id": "44092513076-1",
+  "inicio": "2026-11-17T10:26:10-03:00",
   "modo": "actualizar",
   "estado": "atencion",
-  "datos_actualizados": "2026-11-16 23:56",
-  "ultima_consulta_fuentes": "2026-11-17T00:26:40.716869-03:00",
+  "datos_actualizados": "2026-11-17 10:26",
+  "ultima_consulta_fuentes": "2026-11-17T10:54:24.910462-03:00",
   "fuentes_son_del_intento_actual": true,
   "resumen": {
-    "eventos": 1041,
-    "funciones_unicas": 1041,
-    "nuevos": 7,
+    "eventos": 1093,
+    "funciones_unicas": 1093,
+    "nuevos": 52,
     "ausentes": 0,
     "duplicados": 4,
-    "conservados": 16,
+    "conservados": 18,
     "fuentes": 98
   },
   "alertas": [
     {
       "tipo": "tareas",
       "mensaje": "No se pudieron desactivar todas las tareas antiguas. Consultar el resumen de Actions."
-    },
-    {
-      "tipo": "cobertura",
-      "mensaje": "La agenda municipal no tiene fichas consultadas en este intento. Los eventos conservados no prueban una revisión nueva."
-    },
-    {
-      "tipo": "cobertura",
-      "mensaje": "40 fichas municipales no consultadas por pausa de acceso; reintento automático."
     },
     {
       "tipo": "cobertura",
@@ -50,7 +42,7 @@
       "conservados": 1,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -59,11 +51,11 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 296,
-      "antes": 295,
-      "conservados": 12,
+      "antes": 296,
+      "conservados": 14,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -76,7 +68,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -89,7 +81,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -102,7 +94,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -115,7 +107,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -128,20 +120,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Biblioteca Argentina Dr. Juan Álvarez",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 2,
       "antes": 2,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -154,7 +146,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -167,7 +159,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -180,20 +172,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Centro Cultural Parque de España",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "atencion",
+      "motivo": "No se pudo completar la lectura.",
+      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
       "eventos": 4,
       "antes": 4,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -206,7 +198,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -219,7 +211,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -232,7 +224,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -245,7 +237,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -258,7 +250,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -271,7 +263,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -284,7 +276,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -297,7 +289,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -306,11 +298,11 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 8,
-      "antes": 7,
+      "antes": 8,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -323,7 +315,7 @@
       "motivo": "Sin diagnóstico en esta ejecución.",
       "accion": "Revisar la fuente; su ausencia no demuestra que esté vacía.",
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -336,7 +328,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -345,11 +337,11 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 4,
-      "antes": 1,
+      "antes": 4,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -363,7 +355,7 @@
       "caida": false,
       "diagnostico_desde": "El Cairo — CSV",
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -376,7 +368,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -389,7 +381,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -402,7 +394,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -415,7 +407,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -428,7 +420,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -441,7 +433,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -454,7 +446,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -467,7 +459,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -480,7 +472,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -493,20 +485,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Fundación FAER",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "La fuente no tiene un resultado concluyente.",
+      "accion": "Revisar el detalle en Actions si este estado se mantiene.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -519,7 +511,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -532,20 +524,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Humanidades y Artes UNR — Agenda",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -558,7 +550,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -571,7 +563,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -584,7 +576,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -597,7 +589,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -610,7 +602,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -623,7 +615,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -636,7 +628,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -649,7 +641,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -662,7 +654,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -675,7 +667,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -688,7 +680,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -701,7 +693,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -714,7 +706,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -722,25 +714,25 @@
       "estado": "atencion",
       "motivo": "La fuente limitó el acceso.",
       "accion": "Se respetan sus pausas. Revisar si se repite.",
-      "eventos": 539,
+      "eventos": 590,
       "antes": 539,
       "conservados": 3,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Municipalidad de Rosario — Colectividades",
-      "estado": "atencion",
-      "motivo": "No se pudo completar la lectura.",
-      "accion": "Conservamos datos previos. Si persiste, revisar el extractor.",
-      "eventos": 0,
+      "estado": "bien",
+      "motivo": "Consulta completada.",
+      "accion": "Sin intervención necesaria.",
+      "eventos": 1,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -753,7 +745,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -766,7 +758,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -779,20 +771,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Museo Urbano Arte a la Vista",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -805,20 +797,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Museo de Arte Decorativo Firma y Odilo Estévez",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -831,7 +823,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -844,7 +836,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -857,7 +849,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -870,20 +862,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "Museo de la Ciudad",
-      "estado": "sin_novedades",
-      "motivo": "No se encontraron actividades nuevas verificables.",
-      "accion": "No hace falta intervenir por este resultado aislado.",
+      "estado": "pendiente",
+      "motivo": "Hay fichas pendientes de revisión.",
+      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -896,7 +888,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -909,7 +901,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -922,7 +914,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -935,7 +927,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -948,7 +940,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -961,7 +953,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -974,7 +966,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -987,7 +979,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1000,7 +992,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1013,7 +1005,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1026,7 +1018,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1039,7 +1031,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1052,7 +1044,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1061,11 +1053,11 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 6,
-      "antes": 5,
+      "antes": 6,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1078,7 +1070,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1091,7 +1083,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1100,11 +1092,11 @@
       "motivo": "Consulta completada.",
       "accion": "Sin intervención necesaria.",
       "eventos": 17,
-      "antes": 16,
+      "antes": 17,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1117,7 +1109,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1130,7 +1122,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1143,7 +1135,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1156,7 +1148,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1169,7 +1161,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1182,7 +1174,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1195,7 +1187,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1208,7 +1200,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1221,7 +1213,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1234,7 +1226,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1247,7 +1239,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1260,7 +1252,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1273,7 +1265,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1286,7 +1278,7 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
@@ -1299,20 +1291,20 @@
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     },
     {
       "nombre": "UNR — Actividades abiertas",
-      "estado": "pendiente",
-      "motivo": "Hay fichas pendientes de revisión.",
-      "accion": "Se reintentan en las próximas actualizaciones cuando corresponda.",
+      "estado": "sin_novedades",
+      "motivo": "No se encontraron actividades nuevas verificables.",
+      "accion": "No hace falta intervenir por este resultado aislado.",
       "eventos": 0,
       "antes": 0,
       "conservados": 0,
       "caida": false,
       "diagnostico_actual": true,
-      "ultimo_diagnostico": "2026-11-17T00:27:01-03:00",
+      "ultimo_diagnostico": "2026-11-17T10:54:47-03:00",
       "dias_sin_diagnostico": 0
     }
   ],
@@ -1356,7 +1348,7 @@
   ],
   "auditoria": {},
   "tareas_retiradas": {
-    "fecha": "2026-11-17T00:26:59-03:00",
+    "fecha": "2026-11-17T10:54:45-03:00",
     "desactivadas": [],
     "archivados": [],
     "pendientes": [
@@ -1369,57 +1361,288 @@
       "pruebas.yml"
     ]
   },
-  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/44006460010",
+  "ejecucion_url": "https://github.com/paredesivan/Agenda-rosario/actions/runs/44092513076",
   "cambios": {
     "nuevos": [
       {
-        "fecha": "2026-11-19",
+        "fecha": "2026-11-20",
         "hora": "20:30",
-        "nombre": "Rosario y Voz Semifinal",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
+        "nombre": "Riviera Live Music: Charly Samamé + Chino Suárez",
+        "lugar": "Hotel Riviera - San Lorenzo 1460",
+        "origen": "Municipalidad de Rosario"
       },
       {
-        "fecha": "2026-11-21",
-        "hora": "21:00",
-        "nombre": "Sur Guateque",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
+        "fecha": "2026-11-28",
+        "hora": "20:00",
+        "nombre": "Tango Madre",
+        "lugar": "Centro Cultural  La Casa del Tango",
+        "origen": "Municipalidad de Rosario"
       },
       {
-        "fecha": "2026-12-11",
-        "hora": "21:00",
-        "nombre": "CARMINA BURANA EN D7",
-        "lugar": "Distrito Siete",
-        "origen": "Distrito Siete"
+        "fecha": "2026-12-06",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-17",
+        "hora": "15:00",
+        "nombre": "Cierre Muestra de Teatro \"Grandes Artistas\"",
+        "lugar": "Plataforma Lavardén",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-17",
+        "hora": "19:00",
+        "nombre": "Encuentro y Fiesta Nacional de Colectividades 2026",
+        "lugar": "Parque Nacional a la Bandera",
+        "origen": "Municipalidad de Rosario — Colectividades"
       },
       {
         "fecha": "2026-11-19",
-        "hora": "17:30",
-        "nombre": "Darío Grandinetti Artista Distinguido",
-        "lugar": "Bar El Cairo",
-        "origen": "Rosario en Cartel"
+        "hora": "19:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
       },
       {
         "fecha": "2026-11-20",
-        "hora": "20:00",
-        "nombre": "Patiecito ritualero: Aini San Juan y Virginia San Juan",
-        "lugar": "Sophie's pastisserie",
-        "origen": "Agenda Cultural Rosario"
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
       },
       {
-        "fecha": "2026-12-17",
-        "hora": "20:00",
-        "nombre": "FONSO Y LAS PARITARIAS",
-        "lugar": "REFI",
-        "origen": "RefiTicket"
+        "fecha": "2026-11-21",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
       },
       {
-        "fecha": "2026-11-23",
-        "hora": "21:00",
-        "nombre": "Peña Lunera",
-        "lugar": "El Aserradero",
-        "origen": "El Aserradero — oficial"
+        "fecha": "2026-11-22",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-25",
+        "hora": "18:30",
+        "nombre": "Concierto El remanso suena en la Biblioteca",
+        "lugar": "Biblioteca Argentina Dr. Juan Álvarez",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-27",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-28",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-11-29",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-02",
+        "hora": "19:00",
+        "nombre": "Un día en Sonidos - Quinteto Municipal de Vientos",
+        "lugar": "Museo de Arte Contemporáneo Rosario (MACRO)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-04",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-05",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-11",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-12",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-13",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-18",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-19",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-20",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-25",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-26",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2026-12-27",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-01",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-02",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-03",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-08",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-09",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-10",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-15",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-16",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-17",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-22",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-23",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-24",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-29",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-30",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
+      },
+      {
+        "fecha": "2027-01-31",
+        "hora": "16:00",
+        "nombre": "Emergentes 2026 en el CEC",
+        "lugar": "Centro de Expresiones Contemporáneas (CEC)",
+        "origen": "Municipalidad de Rosario"
       }
     ],
     "ausentes": []
@@ -1428,10 +1651,10 @@
     "fuentes_sin_diagnostico": [],
     "municipal": {
       "diagnostico_actual": true,
-      "fichas_consultadas": 0,
+      "fichas_consultadas": 40,
       "aplazadas_por_bloqueo": 1,
-      "fichas_leidas": 0,
-      "no_consultadas_por_pausa": 40,
+      "fichas_leidas": 40,
+      "no_consultadas_por_pausa": 0,
       "consultas_fallidas": 0
     },
     "pendientes": {
@@ -1447,7 +1670,7 @@
         "SalePlan": 133
       }
     },
-    "minutos_hasta_informe": 30.98,
+    "minutos_hasta_informe": 28.62,
     "tiempo_intervencion_humana": "No medido"
   }
 }
