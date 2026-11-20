@@ -4,9 +4,9 @@
     "diagnostico_actual": true,
     "fichas_consultadas": 40,
     "aplazadas_por_bloqueo": 1,
-    "fichas_leidas": 40,
+    "fichas_leidas": 39,
     "no_consultadas_por_pausa": 0,
-    "consultas_fallidas": 0
+    "consultas_fallidas": 1
   },
   "pendientes": {
     "cantidad": 188,
@@ -21,6 +21,6 @@
       "SalePlan": 139
     }
   },
-  "minutos_hasta_informe": 29.85,
+  "minutos_hasta_informe": 28.32,
   "tiempo_intervencion_humana": "No medido"
 }

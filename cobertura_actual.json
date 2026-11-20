@@ -1,10 +1,10 @@
 {
-  "datos_actualizados": "2026-11-20 09:53",
+  "datos_actualizados": "2026-11-20 18:49",
   "fecha_corte": "2026-11-20",
-  "eventos_futuros_publicados": 1045,
+  "eventos_futuros_publicados": 1050,
   "por_fuente": {
     "El Cairo Cine Público": 46,
-    "Municipalidad de Rosario": 588,
+    "Municipalidad de Rosario": 592,
     "Agenda Cultural Rosario": 276,
     "Centro Cultural Parque de España": 2,
     "Rosario en Cartel": 16,
@@ -12,7 +12,7 @@
     "Distrito Siete": 8,
     "Teatro Broadway": 15,
     "ATIR": 3,
-    "Biblioteca Argentina Dr. Juan Álvarez": 4,
+    "Biblioteca Argentina Dr. Juan Álvarez": 5,
     "Teatro Astengo": 6,
     "Passline — Floyd Bar": 2,
     "Passline": 3,
@@ -26,214 +26,34 @@
     "Microteatro Rosario": 40,
     "Grupo Gamma — Charlas a la comunidad": 1
   },
-  "revision_municipal": "2026-11-20T09:53:33.673003-03:00",
+  "revision_municipal": "2026-11-20T18:49:52.416478-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [
     {
-      "url": "https://www.rosario.gob.ar/inicio/encuentros-en-la-bebeteca-2",
+      "url": "https://www.rosario.gob.ar/inicio/canje-de-reciclables-en-noviembre",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/cesar-miranda-en-concierto",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/tango-madre-0",
+      "url": "https://www.rosario.gob.ar/inicio/mediacion-de-lectura-en-la-isla-de-los-inventos",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/teatro-en-ccpe-los-habitantes",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/un-dia-en-sonidos-quinteto-municipal-de-vientos",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/ajedrez-nivel-intermedio-avanzados",
-      "estado": "con_funciones_extraidas",
-      "funciones": 2,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/ajedrez-para-las-infancias-0",
-      "estado": "con_funciones_extraidas",
-      "funciones": 2,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/clinica-de-palabras-graciosas",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/club-de-cuenteras-y-cuenteros-en-la-biblioteca-argentina",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/colores-perdidos-en-cine-lumiere-0",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/concierto-de-fin-de-ano-de-la-escuela-orquesta-barrio-luduena",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/concierto-de-la-orquesta-de-carlos-quilici",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/concierto-orquestal-de-arsis-orquesta",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/concierto-orquestal-de-arsis-orquesta-en-la-alianza-francesa",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/conciertos-de-graduacion-de-los-conjuntos-de-guitarras",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/consejo-de-ninas-y-ninos-en-casa-de-cultura-barrio-alvear",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/coti-en-rosario",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/dalia-gutmann-presenta-menjunje",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/desentierros.-los-libros-que-no-heredamos-en-cine-lumiere",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/en-las-venas-en-cine-lumiere",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/encuentro-coral",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/entrenamiento-y-ensayo-para-bailarines-de-tango",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/espacio-pokemon",
-      "estado": "con_funciones_extraidas",
-      "funciones": 5,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/experimental-15.-intersecciones-confluencias-desvios",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/norberto-en-cine-lumiere-1",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/ovejita-negra",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/premios-la-gordillo-0",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/primavera-en-el-jardin-de-los-ninos",
-      "estado": "con_funciones_extraidas",
-      "funciones": 6,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/primavera-en-la-granja-de-la-infancia",
-      "estado": "con_funciones_extraidas",
-      "funciones": 8,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/primavera-en-la-isla-de-los-inventos",
-      "estado": "con_funciones_extraidas",
-      "funciones": 6,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/propuestas-para-primera-infancia-en-librerias",
+      "url": "https://www.rosario.gob.ar/inicio/noche-de-teatros-independientes",
       "estado": "sin_funciones_extraidas",
       "funciones": 0,
       "motivos": [
@@ -242,78 +62,266 @@
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/quinteto-bataraz-y-lucas-querini-grupo-en-concierto",
+      "url": "https://www.rosario.gob.ar/inicio/organismos-estables-presentan-mozart-y-otros-compositores",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/quinteto-municipal-de-cuerdas-junto-jorge-variego",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/rosario-en-las-calles.-memorias-urbanas-de-la-ciudad",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/satanico-pandemonium-en-cine-lumiere",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/taller-de-folclore-para-adultos",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/talleres-2026-puerto-joven-preinscripcion",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/tango-en-calle",
+      "url": "https://www.rosario.gob.ar/inicio/por-ese-palpitar.-exposicion-del-colectivo-de-arte-dorado-cipres-casa-del-parana-en-el-cam",
       "estado": "con_funciones_extraidas",
       "funciones": 2,
       "motivos": [],
       "error": ""
     },
     {
-      "url": "https://www.rosario.gob.ar/inicio/teatro-en-espacio-cultural-expresiones-agencia-de-placeres",
+      "url": "https://www.rosario.gob.ar/inicio/9deg-festival-de-magia-de-rosario",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Bloque sin sede verificable"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/aproximacion-la-murga-la-catarsis-del-tango",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin fechas/horarios interpretables dentro del horizonte"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/balcarce-681-muestra-de-fotografias-ineditas-tomadas-fito-paez-en-su-casa-de-rosario",
+      "estado": "con_funciones_extraidas",
+      "funciones": 67,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/bebes-en-bibliotecas",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/benjamin-amadeo-en-rosario",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/bulldog-lucho-al-attaque",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/checker-tobi-y-el-viaje-los-rios-voladores-en-cine-lumiere",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin fechas/horarios interpretables dentro del horizonte"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/circuitos-culturales-65-visitas-especiales",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Bloque sin sede verificable"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/concierto-el-remanso-suena-en-la-biblioteca",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/concierto-una-tarde-de-musica-al-piano-en-la-biblioteca-argentina",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/conversacion-entre-guillermo-francella-y-luis-rubio",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/emergentes-2026-en-el-cec",
+      "estado": "con_funciones_extraidas",
+      "funciones": 45,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/experimental.-museo-de-ciencias-en-movimiento",
+      "estado": "con_funciones_extraidas",
+      "funciones": 6,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/fernando-borroni-presenta-su-espectaculo-del-sueno-la-poesia",
+      "estado": "consulta_fallida",
+      "funciones": 0,
+      "motivos": [],
+      "error": "404 Client Error: Not Found for url: https://www.rosario.gob.ar/inicio/fernando-borroni-presenta-su-espectaculo-del-sueno-la-poesia"
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/festival-en-el-complejo-astronomico",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/festival-fontanarrosa-1",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Bloque sin sede verificable"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/funcion-cit-el-enfermo-imaginario-version-litoralena",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/funcion-cit-los-disfrazados-0",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/funcion-cit-noche-de-reyes",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/funciones-de-ciertos-pecados-en-sala-la-escalera",
+      "estado": "con_funciones_extraidas",
+      "funciones": 2,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/funciones-de-perder-el-tiempo",
+      "estado": "con_funciones_extraidas",
+      "funciones": 2,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/la-noche-en-mi-barrio-belgrano",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/la-novia-del-diablo-en-cine-lumiere",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Sin fechas/horarios interpretables dentro del horizonte"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/limericks-zoo-loco-y-cuentos",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/muestra-insieme-el-arte-que-nos-une-con-italia",
+      "estado": "con_funciones_extraidas",
+      "funciones": 6,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/muestra-y-cierre-de-talleres-en-el-alem",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/noche-de-librerias-0",
+      "estado": "sin_funciones_extraidas",
+      "funciones": 0,
+      "motivos": [
+        "Bloque sin sede verificable"
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/shhh...-circo.-una-fiesta-silenciosa-en-la-zona-de-desconexion-de-la-emau",
+      "estado": "con_funciones_extraidas",
+      "funciones": 2,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/sunset-en-el-11-djsets",
+      "estado": "con_funciones_extraidas",
+      "funciones": 3,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/teatro-en-la-orilla-infinita-navidad-made-argentina",
+      "estado": "con_funciones_extraidas",
+      "funciones": 2,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/terror-en-vhs-en-cine-lumiere-9",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/tertulias-tangueras-1",
+      "estado": "con_funciones_extraidas",
+      "funciones": 1,
+      "motivos": [],
+      "error": ""
+    },
+    {
+      "url": "https://www.rosario.gob.ar/inicio/un-cabo-suelto-en-cine-lumiere",
       "estado": "con_funciones_extraidas",
       "funciones": 1,
       "motivos": [],
@@ -321,8 +329,9 @@
     }
   ],
   "estados_municipales": {
-    "con_funciones_extraidas": 34,
-    "sin_funciones_extraidas": 6
+    "sin_funciones_extraidas": 9,
+    "con_funciones_extraidas": 30,
+    "consulta_fallida": 1
   },
   "comparacion_por_funcion_disponible": true,
   "funciones_extraidas_ausentes": [],
@@ -448,20 +457,6 @@
     },
     {
       "fuente": "SalePlan",
-      "nombre": "YAMA YAMA!",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "nombre": "Gabriel Rolón",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
       "nombre": "CARAFEA",
       "url": "",
       "fecha": "",
@@ -491,6 +486,13 @@
     {
       "fuente": "SalePlan",
       "nombre": "AGENCIA DE PLACERES EN ROSARIO",
+      "url": "",
+      "fecha": "",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "nombre": "Gabriel Rolón",
       "url": "",
       "fecha": "",
       "motivo": "Turno de revisión rotativa en otra ejecución"
@@ -536,6 +538,13 @@
       "url": "",
       "fecha": "",
       "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "nombre": "El beso de la mujer araña",
+      "url": "",
+      "fecha": "",
+      "motivo": "Las fechas conocidas están vencidas; evidencia conservada y revisión semanal"
     },
     {
       "fuente": "Planaxia",
@@ -797,7 +806,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-11-20T10:21:51.409047-03:00",
+  "resolucion_revision": "2026-11-20T19:17:19.827231-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
@@ -1315,7 +1324,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1327,7 +1336,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1339,7 +1348,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1351,7 +1360,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1363,7 +1372,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1375,7 +1384,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1387,7 +1396,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1395,8 +1404,8 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-las-gratitudes-rosario/e/18080",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
         "fecha": "2026-11-20T10:21:51.409047-03:00",
@@ -1407,8 +1416,8 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-luis-fonsi-rosario/e/18092",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
         "fecha": "2026-11-20T10:21:51.409047-03:00",
@@ -3046,7 +3055,7 @@
       "motivo": "Cuerpo de agenda no interpretable",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Cuerpo de agenda no interpretable"
       }
@@ -3058,7 +3067,7 @@
       "motivo": "Cuerpo de agenda no interpretable",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Cuerpo de agenda no interpretable"
       }
@@ -3070,7 +3079,7 @@
       "motivo": "Cuerpo de agenda no interpretable",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Cuerpo de agenda no interpretable"
       }
@@ -3082,7 +3091,7 @@
       "motivo": "Cuerpo de agenda no interpretable",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Cuerpo de agenda no interpretable"
       }
@@ -3094,7 +3103,7 @@
       "motivo": "Cuerpo de agenda no interpretable",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Cuerpo de agenda no interpretable"
       }
@@ -3106,7 +3115,7 @@
       "motivo": "Cuerpo de agenda no interpretable",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Cuerpo de agenda no interpretable"
       }
@@ -3118,7 +3127,7 @@
       "motivo": "Cuerpo de agenda no interpretable",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Cuerpo de agenda no interpretable"
       }
@@ -3130,7 +3139,7 @@
       "motivo": "Cuerpo de agenda no interpretable",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Cuerpo de agenda no interpretable"
       }
@@ -3231,21 +3240,9 @@
       "motivo": "Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado"
-      }
-    },
-    {
-      "fuente": "Instituto Politécnico — Novedades",
-      "url": "https://www.ips.edu.ar/enunciado-matematica-ingreso-2027.html",
-      "estado": "pendiente",
-      "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
-      "funciones": 0,
-      "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
-        "estado": "pendiente",
-        "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
     },
     {
@@ -3255,7 +3252,19 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
+        "estado": "pendiente",
+        "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
+      }
+    },
+    {
+      "fuente": "Instituto Politécnico — Novedades",
+      "url": "https://www.ips.edu.ar/enunciado-matematica-ingreso-2027.html",
+      "estado": "pendiente",
+      "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
+      "funciones": 0,
+      "ultimo_intento": {
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3267,7 +3276,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3279,7 +3288,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3291,7 +3300,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3303,7 +3312,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-20T10:21:51.409047-03:00",
+        "fecha": "2026-11-20T19:17:19.827231-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
