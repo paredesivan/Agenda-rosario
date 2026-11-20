@@ -4,23 +4,23 @@
     "diagnostico_actual": true,
     "fichas_consultadas": 40,
     "aplazadas_por_bloqueo": 1,
-    "fichas_leidas": 39,
+    "fichas_leidas": 40,
     "no_consultadas_por_pausa": 0,
-    "consultas_fallidas": 1
+    "consultas_fallidas": 0
   },
   "pendientes": {
-    "cantidad": 181,
-    "mayores_7_dias": 146,
-    "antiguedad_maxima_dias": 31,
+    "cantidad": 185,
+    "mayores_7_dias": 156,
+    "antiguedad_maxima_dias": 32,
     "criterio": "Desde la primera evidencia registrada; puede ser anterior.",
     "por_fuente": {
       "EntradaFan": 9,
       "Instituto Politécnico — Novedades": 6,
       "Planaxia": 11,
       "Rosario Times": 20,
-      "SalePlan": 135
+      "SalePlan": 139
     }
   },
-  "minutos_hasta_informe": 25.83,
+  "minutos_hasta_informe": 27.3,
   "tiempo_intervencion_humana": "No medido"
 }
