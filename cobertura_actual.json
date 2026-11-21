@@ -1,11 +1,11 @@
 {
-  "datos_actualizados": "2026-11-21 09:39",
+  "datos_actualizados": "2026-11-21 17:32",
   "fecha_corte": "2026-11-21",
-  "eventos_futuros_publicados": 967,
+  "eventos_futuros_publicados": 1031,
   "por_fuente": {
     "Biblioteca Argentina Dr. Juan Álvarez": 5,
     "Municipalidad de Rosario": 563,
-    "Agenda Cultural Rosario": 257,
+    "Agenda Cultural Rosario": 321,
     "El Cairo Cine Público": 43,
     "Teatro Astengo": 6,
     "Passline — Floyd Bar": 2,
@@ -26,7 +26,7 @@
     "Microteatro Rosario": 20,
     "Grupo Gamma — Charlas a la comunidad": 1
   },
-  "revision_municipal": "2026-11-21T09:39:23.708709-03:00",
+  "revision_municipal": "2026-11-21T17:32:19.815578-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [],
   "estados_municipales": {},
@@ -80,7 +80,7 @@
       "nombre": "Baglietto Y Vitale Rosario",
       "url": "",
       "fecha": "2026-11-21",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
     },
     {
       "fuente": "SalePlan",
@@ -161,6 +161,13 @@
     },
     {
       "fuente": "SalePlan",
+      "nombre": "Te Acordas 2000 - Sunset a orillas del río",
+      "url": "",
+      "fecha": "",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
       "nombre": "Candlelight: Disney Canciones de Amor",
       "url": "",
       "fecha": "",
@@ -224,6 +231,13 @@
     },
     {
       "fuente": "SalePlan",
+      "nombre": "KANICHE - DECADA DISCO - Sabado 21",
+      "url": "",
+      "fecha": "",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
       "nombre": "Costa",
       "url": "",
       "fecha": "",
@@ -232,20 +246,6 @@
     {
       "fuente": "SalePlan",
       "nombre": "MRB | EDICIÓN BLACKOUT",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "nombre": "Navidad: Made in Argentina",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "nombre": "ATTACK ON TITAN: The Last Concert - Orquesta Sinfonica en Rosario | 22 De Noviembre",
       "url": "",
       "fecha": "",
       "motivo": "Turno de revisión rotativa en otra ejecución"
@@ -269,21 +269,21 @@
       "nombre": "",
       "url": "https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/",
       "fecha": "",
-      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/"
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
     },
     {
       "fuente": "Planaxia",
       "nombre": "",
       "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/",
       "fecha": "",
-      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/"
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
     },
     {
       "fuente": "Planaxia",
       "nombre": "",
       "url": "https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/",
       "fecha": "",
-      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/"
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
     },
     {
       "fuente": "Planaxia",
@@ -304,7 +304,7 @@
       "nombre": "",
       "url": "https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/",
       "fecha": "",
-      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/"
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
     },
     {
       "fuente": "Planaxia",
@@ -323,6 +323,13 @@
     {
       "fuente": "Instituto Politécnico — Novedades",
       "nombre": "",
+      "url": "https://www.ips.edu.ar/atencion-estudiantes-de-2-ano.html",
+      "fecha": "",
+      "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
+    },
+    {
+      "fuente": "Instituto Politécnico — Novedades",
+      "nombre": "",
       "url": "https://www.ips.edu.ar/enunciado-matematica-ingreso-2027.html",
       "fecha": "",
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
@@ -332,7 +339,7 @@
       "nombre": "",
       "url": "https://www.ips.edu.ar/mesas-de-examenes-diciembre-2026.html",
       "fecha": "",
-      "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
     },
     {
       "fuente": "Instituto Politécnico — Novedades",
@@ -375,13 +382,6 @@
       "url": "https://www.ips.edu.ar/llamado-a-inscripcion-para-el-concurso-interno-de-jefe-de-departamento-de-tecnologia-de-los-alimentos.html",
       "fecha": "",
       "motivo": "Aviso administrativo institucional; no es una salida pública"
-    },
-    {
-      "fuente": "Instituto Politécnico — Novedades",
-      "nombre": "",
-      "url": "https://www.ips.edu.ar/fechas-de-sorteo-de-temas-y-entrevistas-del-concurso-de-titularizacion-para-un-cargo-de-asesor-a-pedagogico-a.html",
-      "fecha": "",
-      "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
     },
     {
       "fuente": "Passline",
@@ -510,7 +510,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-11-21T10:02:19.220429-03:00",
+  "resolucion_revision": "2026-11-21T17:55:07.013002-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
@@ -1052,8 +1052,8 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-baglietto-y-vitale-rosario/e/18127",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
         "fecha": "2026-11-21T10:02:19.220429-03:00",
@@ -1064,8 +1064,8 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
         "fecha": "2026-11-21T10:02:19.220429-03:00",
@@ -1076,8 +1076,8 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
         "fecha": "2026-11-21T10:02:19.220429-03:00",
@@ -1088,8 +1088,8 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
         "fecha": "2026-11-21T10:02:19.220429-03:00",
@@ -1104,7 +1104,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "fecha": "2026-11-21T17:55:07.013002-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1116,7 +1116,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "fecha": "2026-11-21T17:55:07.013002-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1956,7 +1956,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/F5FDKQEFMEHE/candlelight-el-senor-de-los-anillos",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/F34VFZ4T6Z2B/kaniche-decada-disco-sabado-21",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1973,7 +1973,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/FTNHPRBQ99FD/costa",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/F5FDKQEFMEHE/candlelight-el-senor-de-los-anillos",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1990,7 +1990,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/KXM5ZBPWNXQ6/ave-rapaz-homenaje-a-heroes-del-silencio-y-bunbury-en-rosario",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/FTNHPRBQ99FD/costa",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2007,7 +2007,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/NMWSZ1JYX758/attack-on-titan-the-last-concert-orquesta-sinfonica-en-rosario-22-de-noviembre",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/KXM5ZBPWNXQ6/ave-rapaz-homenaje-a-heroes-del-silencio-y-bunbury-en-rosario",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2024,7 +2024,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/RS8XRFN2ENBR/candlelight-tributo-a-phil-collins",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/MMJGGBVGRQ0G/te-acordas-2000-sunset-a-orillas-del-rio",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2041,7 +2041,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/WRN937HW6E47/coti",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/NMWSZ1JYX758/attack-on-titan-the-last-concert-orquesta-sinfonica-en-rosario-22-de-noviembre",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2058,7 +2058,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/RS8XRFN2ENBR/candlelight-tributo-a-phil-collins",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2075,7 +2075,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/XXKG92WDF9CJ/navidad-made-in-argentina",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/WRN937HW6E47/coti",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2092,6 +2092,12 @@
     },
     {
       "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/M3E2E8KYB48C/homero-taisen-presenta-triangulo-uno",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución",
@@ -2100,6 +2106,12 @@
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/XXKG92WDF9CJ/navidad-made-in-argentina",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
@@ -2807,66 +2819,6 @@
     },
     {
       "fuente": "Planaxia",
-      "url": "https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/",
-      "estado": "reintentar",
-      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/",
-      "funciones": 0,
-      "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
-        "estado": "reintentar",
-        "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/"
-      }
-    },
-    {
-      "fuente": "Planaxia",
-      "url": "https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/",
-      "estado": "reintentar",
-      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/",
-      "funciones": 0,
-      "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
-        "estado": "reintentar",
-        "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/"
-      }
-    },
-    {
-      "fuente": "Planaxia",
-      "url": "https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/",
-      "estado": "reintentar",
-      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/",
-      "funciones": 0,
-      "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
-        "estado": "reintentar",
-        "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/"
-      }
-    },
-    {
-      "fuente": "Planaxia",
-      "url": "https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/",
-      "estado": "reintentar",
-      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/",
-      "funciones": 0,
-      "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
-        "estado": "reintentar",
-        "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/"
-      }
-    },
-    {
-      "fuente": "Planaxia",
-      "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/",
-      "estado": "reintentar",
-      "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/",
-      "funciones": 0,
-      "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
-        "estado": "reintentar",
-        "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/"
-      }
-    },
-    {
-      "fuente": "Planaxia",
       "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-feria-del-libro-cumbion-historico-y-fiesta-chamamecera/",
       "estado": "reintentar",
       "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
@@ -2935,6 +2887,66 @@
         "fecha": "2026-11-21T00:40:11.873353-03:00",
         "estado": "reintentar",
         "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-23-de-septiembre/"
+      }
+    },
+    {
+      "fuente": "Planaxia",
+      "url": "https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
+      "funciones": 0,
+      "ultimo_intento": {
+        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "estado": "reintentar",
+        "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/"
+      }
+    },
+    {
+      "fuente": "Planaxia",
+      "url": "https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
+      "funciones": 0,
+      "ultimo_intento": {
+        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "estado": "reintentar",
+        "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/"
+      }
+    },
+    {
+      "fuente": "Planaxia",
+      "url": "https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
+      "funciones": 0,
+      "ultimo_intento": {
+        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "estado": "reintentar",
+        "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/"
+      }
+    },
+    {
+      "fuente": "Planaxia",
+      "url": "https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
+      "funciones": 0,
+      "ultimo_intento": {
+        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "estado": "reintentar",
+        "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/"
+      }
+    },
+    {
+      "fuente": "Planaxia",
+      "url": "https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
+      "funciones": 0,
+      "ultimo_intento": {
+        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "estado": "reintentar",
+        "motivo": "500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/"
       }
     },
     {
@@ -3033,9 +3045,21 @@
       "motivo": "Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "fecha": "2026-11-21T17:55:07.013002-03:00",
         "estado": "pendiente",
         "motivo": "Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado"
+      }
+    },
+    {
+      "fuente": "Instituto Politécnico — Novedades",
+      "url": "https://www.ips.edu.ar/atencion-estudiantes-de-2-ano.html",
+      "estado": "pendiente",
+      "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
+      "funciones": 0,
+      "ultimo_intento": {
+        "fecha": "2026-11-21T17:55:07.013002-03:00",
+        "estado": "pendiente",
+        "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
     },
     {
@@ -3045,7 +3069,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "fecha": "2026-11-21T17:55:07.013002-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3057,7 +3081,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "fecha": "2026-11-21T17:55:07.013002-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3069,7 +3093,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "fecha": "2026-11-21T17:55:07.013002-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3081,7 +3105,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "fecha": "2026-11-21T17:55:07.013002-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3093,7 +3117,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-21T10:02:19.220429-03:00",
+        "fecha": "2026-11-21T17:55:07.013002-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3101,8 +3125,8 @@
     {
       "fuente": "Instituto Politécnico — Novedades",
       "url": "https://www.ips.edu.ar/mesas-de-examenes-diciembre-2026.html",
-      "estado": "pendiente",
-      "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
         "fecha": "2026-11-21T10:02:19.220429-03:00",

@@ -2,8 +2,8 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-11-21 09:39. Corte: 2026-11-21.
-Eventos futuros: 967. Revisión municipal: 2026-11-21T09:39:23.708709-03:00.
+Datos de la agenda: 2026-11-21 17:32. Corte: 2026-11-21.
+Eventos futuros: 1031. Revisión municipal: 2026-11-21T17:32:19.815578-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
@@ -67,10 +67,10 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.entradafan.com.ar/entradas-hairspray-rosario/e/18100 — corroborado: Todas las funciones futuras ya tienen respaldo prioritario
 - https://www.entradafan.com.ar/entradas-elena-roger-rosario/e/18107 — descartado: Las fechas conocidas están vencidas; evidencia conservada y revisión semanal
 - https://www.entradafan.com.ar/entradas-el-jefe-del-jefe-rosario/e/18310 — corroborado: Todas las funciones futuras ya tienen respaldo prioritario
-- https://www.entradafan.com.ar/entradas-baglietto-y-vitale-rosario/e/18127 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://www.entradafan.com.ar/entradas-baglietto-y-vitale-rosario/e/18127 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-seru-giran-rosario/e/17764 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://www.entradafan.com.ar/entradas-maria-becerra-rosario/e/17726 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://www.entradafan.com.ar/entradas-las-gratitudes-rosario/e/18080 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
@@ -172,23 +172,25 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://saleplan.ar/santa-fe/rosario/planes/8Y7RGK07XGBG/musica-de-aca — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/DGMMWWGZNBZ2/pietro-presenta-la-belleza-y-la-verdad — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/AWJ062FQBF5F/silvestre-y-la-naranja — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/F5FDKQEFMEHE/candlelight-el-senor-de-los-anillos — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/F34VFZ4T6Z2B/kaniche-decada-disco-sabado-21 — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/BQQYXW7VPDYX/otro-club-de-cine-presenta-la-ultima-del-ano — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/FTNHPRBQ99FD/costa — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/F5FDKQEFMEHE/candlelight-el-senor-de-los-anillos — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/CK7X2FF7HEYN/dramer-en-rosario-sabado-7-de-noviembre — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/KXM5ZBPWNXQ6/ave-rapaz-homenaje-a-heroes-del-silencio-y-bunbury-en-rosario — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/FTNHPRBQ99FD/costa — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/ZMKXRYEWZ4MJ/rocio-quiroz-la-vanidosa-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/NMWSZ1JYX758/attack-on-titan-the-last-concert-orquesta-sinfonica-en-rosario-22-de-noviembre — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/KXM5ZBPWNXQ6/ave-rapaz-homenaje-a-heroes-del-silencio-y-bunbury-en-rosario — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/QHBJMK2W58RV/tablao-flamenco-entre-palmas — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/RS8XRFN2ENBR/candlelight-tributo-a-phil-collins — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/MMJGGBVGRQ0G/te-acordas-2000-sunset-a-orillas-del-rio — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/QPP8WT7CYFX4/border-el-musical-rosario — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/WRN937HW6E47/coti — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/NMWSZ1JYX758/attack-on-titan-the-last-concert-orquesta-sinfonica-en-rosario-22-de-noviembre — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/X6X35REDD54M/halloween-fest-rosario — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/RS8XRFN2ENBR/candlelight-tributo-a-phil-collins — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/EQAK655TJKZS/pena-raices-de-nuestra-comunidad — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/XXKG92WDF9CJ/navidad-made-in-argentina — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/WRN937HW6E47/coti — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/KESBK9EGQ88R/onda-sabanera-decada-disco — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/M3E2E8KYB48C/homero-taisen-presenta-triangulo-uno — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XXKG92WDF9CJ/navidad-made-in-argentina — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/MRM1E2N9SXBC/dirty-hyrox — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/G3S3VJ5VTZN4/claudio-gabis-en-rosario — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/B3PZG0JQVG56/facu-martinez-presenta-canciones-doradas-de-telenovelas-ii — diferido: Turno de revisión rotativa en otra ejecución
@@ -253,17 +255,17 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://saleplan.ar/santa-fe/rosario/planes/3KQHS3NQ12YM/mati-rj — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/4A0VY95M4GA4/horifestival-26 — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/794XPDADA2G0/entre-tapas-y-copas — diferido: Turno de revisión rotativa en otra ejecución
-- https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/
-- https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/
-- https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/
-- https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/
-- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/ — reintentar: 500 Server Error: Internal Server Error for url: https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/
 - https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-feria-del-libro-cumbion-historico-y-fiesta-chamamecera/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-festival-bandera-darin-pietra-los-nocheros-y-cumbion/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-hot-since-82-claptone-santiago-motorizado-y-la-obra-las-hijas/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-peretti-y-delia-damas-gratis-bandana-y-festival-faer/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-16-de-septiembre/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://planaxia.com/agenda/que-se-puede-hacer-un-miercoles-agenda-de-eventos-del-23-de-septiembre/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://planaxia.com/agenda/agenda-regional-del-11-al-13-de-septiembre-pablo-picotto-mario-pereyra-y-la-fiesta-de-las-legumbres-la-guia-definitiva/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://planaxia.com/agenda/agenda-regional-del-18-al-20-de-septiembre-circulo-vuela-festival-de-cine-latinoamericano-y-muestra-homenaje-a-berni-la-guia-para-salir-este-fin-de-semana/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://planaxia.com/agenda/agenda-regional-del-2-al-4-de-octubre-leon-gieco-gustavo-garzon-y-perro-primo-la-guia-del-finde/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://planaxia.com/agenda/agenda-regional-del-25-al-27-de-septiembre-damas-gratis-los-tipitos-y-el-san-pedro-country-music-festival-la-guia-del-finde/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://planaxia.com/agenda/que-hacer-en-rosario-agenda-planaxera-cielo-razzo-eruca-sativa-marcha-del-orgullo-y-festival-nerd/ — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://www.ips.edu.ar/llamado-a-inscripcion-para-el-escalafonamiento-del-departamento-de-mecanica.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/consulta-el-cronograma-de-pics.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/llamado-a-inscripcion-para-el-escalafonamiento-de-la-materia-orientacion-tutorial.html — descartado: Aviso administrativo institucional; no es una salida pública
@@ -277,9 +279,10 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.ips.edu.ar/dictamen-final-del-concurso-de-titularizacion-de-un-1-cargo-de-asesor-pedagogico.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/importante-mesas-extraordinarias-previas.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/visita-y-registrate-en-el-portal.html — pendiente: Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado
+- https://www.ips.edu.ar/atencion-estudiantes-de-2-ano.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/acta-sorteo-de-temas-y-orden-de-exposicion-para-el-concurso-de-titularzacion-para-un-1-cargo-de-asesor-pedagogico.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/enunciado-matematica-ingreso-2027.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/fechas-de-sorteo-de-temas-y-entrevistas-del-concurso-de-titularizacion-para-un-cargo-de-asesor-a-pedagogico-a.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/importante-examen-de-ingreso-2027.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/impresion-3d-en-nexo-tecnologico.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
-- https://www.ips.edu.ar/mesas-de-examenes-diciembre-2026.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
+- https://www.ips.edu.ar/mesas-de-examenes-diciembre-2026.html — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
