@@ -1,7 +1,7 @@
 {
-  "datos_actualizados": "2026-11-22 14:50",
+  "datos_actualizados": "2026-11-22 20:37",
   "fecha_corte": "2026-11-22",
-  "eventos_futuros_publicados": 993,
+  "eventos_futuros_publicados": 994,
   "por_fuente": {
     "El Cairo Cine Público": 40,
     "Agenda Cultural Rosario": 283,
@@ -9,7 +9,7 @@
     "Municipalidad de Rosario": 539,
     "ATIR": 1,
     "Distrito Siete": 7,
-    "El Aserradero — oficial": 4,
+    "El Aserradero — oficial": 5,
     "Passline": 2,
     "Biblioteca Argentina Dr. Juan Álvarez": 4,
     "Teatro Municipal La Comedia": 3,
@@ -26,129 +26,11 @@
     "Microteatro Rosario": 57,
     "Grupo Gamma — Charlas a la comunidad": 1
   },
-  "revision_municipal": "2026-11-22T14:50:32.137676-03:00",
+  "revision_municipal": "2026-11-22T20:37:21.871289-03:00",
   "municipal_del_intento_actual": true,
-  "fichas_municipales": [
-    {
-      "url": "https://www.rosario.gob.ar/inicio/cuentos-al-paso-una-manana-de-historias-en-estacion-embarcaderos",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/hockey-line-iron-cup-en-el-estadio-norte",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/patin-carrera-2deg-torneo-arpac",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/voley-playa-copa-ciudad-de-rosario-en-la-florida-0",
-      "estado": "sin_funciones_extraidas",
-      "funciones": 0,
-      "motivos": [
-        "Sin título o fuera del alcance cultural/recreativo (se excluye formación)"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/moscas-en-cine-lumiere",
-      "estado": "con_funciones_extraidas",
-      "funciones": 2,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/muestra-el-paisaje-en-filigrana-de-papel",
-      "estado": "con_funciones_extraidas",
-      "funciones": 6,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/muestra-huellas-de-lo-humano",
-      "estado": "con_funciones_extraidas",
-      "funciones": 23,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/muestras-de-fin-de-ano-2026-banda-villa-hortensia",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/muestras-de-fin-de-ano-2026-escuela-orquesta-barrio-luduena",
-      "estado": "con_funciones_extraidas",
-      "funciones": 3,
-      "motivos": [
-        "Sin fechas/horarios interpretables dentro del horizonte"
-      ],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/muestratalleres-colegas",
-      "estado": "con_funciones_extraidas",
-      "funciones": 4,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/navidad-espectacular.-destino-rosario-en-el-teatro-el-circulo",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/negro-pasion-inspiraciones-e-influencias",
-      "estado": "con_funciones_extraidas",
-      "funciones": 4,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/nivel-de-rio.-instalacion-de-maxi-murad",
-      "estado": "con_funciones_extraidas",
-      "funciones": 6,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/palabras-cruzadas.-taller-literario-con-gabriela-gervasoni",
-      "estado": "con_funciones_extraidas",
-      "funciones": 1,
-      "motivos": [],
-      "error": ""
-    },
-    {
-      "url": "https://www.rosario.gob.ar/inicio/presentacion-del-libro-los-monos-de-aurora-en-la-isla-de-los-inventos",
-      "estado": "consulta_fallida",
-      "funciones": 0,
-      "motivos": [],
-      "error": "403 Client Error: Forbidden for url: https://www.rosario.gob.ar/inicio/presentacion-del-libro-los-monos-de-aurora-en-la-isla-de-los-inventos"
-    }
-  ],
-  "estados_municipales": {
-    "con_funciones_extraidas": 11,
-    "sin_funciones_extraidas": 3,
-    "consulta_fallida": 1
-  },
-  "comparacion_por_funcion_disponible": true,
+  "fichas_municipales": [],
+  "estados_municipales": {},
+  "comparacion_por_funcion_disponible": false,
   "funciones_extraidas_ausentes": [],
   "candidatos": [
     {
@@ -279,28 +161,7 @@
     },
     {
       "fuente": "SalePlan",
-      "nombre": "Navidad: Made in Argentina",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "nombre": "ATTACK ON TITAN: The Last Concert - Orquesta Sinfonica en Rosario | 22 De Noviembre",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
       "nombre": "RAP DE BARRIO - ROSARIO - GIRA DESPEDIDA",
-      "url": "",
-      "fecha": "",
-      "motivo": "Turno de revisión rotativa en otra ejecución"
-    },
-    {
-      "fuente": "SalePlan",
-      "nombre": "Lucho Garcia, Humor Emocion y Vibra",
       "url": "",
       "fecha": "",
       "motivo": "Turno de revisión rotativa en otra ejecución"
@@ -364,6 +225,27 @@
     {
       "fuente": "SalePlan",
       "nombre": "El mejor intento, luz señal y Cundo",
+      "url": "",
+      "fecha": "",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "nombre": "Fernando Borroni - Del sueño a la poesía",
+      "url": "",
+      "fecha": "",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "nombre": "URIEL LOZANO - DECADA DISCO - Viernes 27/11",
+      "url": "",
+      "fecha": "",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
+      "nombre": "Massano",
       "url": "",
       "fecha": "",
       "motivo": "Turno de revisión rotativa en otra ejecución"
@@ -628,7 +510,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-11-22T15:15:53.030302-03:00",
+  "resolucion_revision": "2026-11-22T21:02:53.563790-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
@@ -1191,7 +1073,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1203,7 +1085,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1215,7 +1097,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1227,7 +1109,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1239,7 +1121,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1251,7 +1133,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -1856,7 +1738,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/2E2Y40NTAA6E/fernando-borroni-del-sueno-a-la-poesia",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/38GH3KMDP2E5/el-caribefunk-en-rosario-21-nov",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1873,7 +1755,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/38GH3KMDP2E5/el-caribefunk-en-rosario-21-nov",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/5VSF0J4JA7MJ/candlelight-disney-canciones-de-amor",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1890,7 +1772,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/5VSF0J4JA7MJ/candlelight-disney-canciones-de-amor",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/7NW2VJX6ESCB/mrb-edicion-blackout",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1907,7 +1789,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/7NW2VJX6ESCB/mrb-edicion-blackout",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/7P0FAY3C1ZMB/lisa-scharosendo-en-rosario",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1924,7 +1806,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/7P0FAY3C1ZMB/lisa-scharosendo-en-rosario",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/CQ7VKA6BJ186/buenos-aires-nu-metal-fest-en-rosario",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1941,7 +1823,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/CQ7VKA6BJ186/buenos-aires-nu-metal-fest-en-rosario",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/DGMMWWGZNBZ2/pietro-presenta-la-belleza-y-la-verdad",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1958,7 +1840,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/DGMMWWGZNBZ2/pietro-presenta-la-belleza-y-la-verdad",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/F34VFZ4T6Z2B/kaniche-decada-disco-sabado-21",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1975,7 +1857,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/F34VFZ4T6Z2B/kaniche-decada-disco-sabado-21",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/FTNHPRBQ99FD/costa",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -1992,7 +1874,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/FTNHPRBQ99FD/costa",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/KXM5ZBPWNXQ6/ave-rapaz-homenaje-a-heroes-del-silencio-y-bunbury-en-rosario",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2009,7 +1891,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/KXM5ZBPWNXQ6/ave-rapaz-homenaje-a-heroes-del-silencio-y-bunbury-en-rosario",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/MMJGGBVGRQ0G/te-acordas-2000-sunset-a-orillas-del-rio",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2026,7 +1908,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/MMJGGBVGRQ0G/te-acordas-2000-sunset-a-orillas-del-rio",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/WRN937HW6E47/coti",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2043,7 +1925,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/WRN937HW6E47/coti",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/0HA78YTFCYYA/massano",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2060,7 +1942,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/9R1KYK3DNKQH/raresh-franco-cinelli",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/2E2Y40NTAA6E/fernando-borroni-del-sueno-a-la-poesia",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2077,7 +1959,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/ATC34HA4Q6ES/candlelight-peaky-blinders",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/4AMGXQ8V1JB6/uriel-lozano-decada-disco-viernes-2711",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2094,7 +1976,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/D1NCMJZVPHDB/candlelight-tributo-a-michael-jackson",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/9R1KYK3DNKQH/raresh-franco-cinelli",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2111,7 +1993,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/F5FDKQEFMEHE/candlelight-el-senor-de-los-anillos",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/ATC34HA4Q6ES/candlelight-peaky-blinders",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2128,7 +2010,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/FC8DQ7VK206Z/organismos-estables-presentan-mozart-y-otros-compositores",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/D1NCMJZVPHDB/candlelight-tributo-a-michael-jackson",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2145,7 +2027,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/JX1AA2T62D8Y/lucho-garcia-humor-emocion-y-vibra",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/F5FDKQEFMEHE/candlelight-el-senor-de-los-anillos",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2162,7 +2044,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/K0TZY4EGN6YS/la-juntada-de-los-artistas-decada-disco-domingo-22",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/FC8DQ7VK206Z/organismos-estables-presentan-mozart-y-otros-compositores",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2179,7 +2061,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/K1EJ3B9YBMRV/el-mejor-intento-luz-senal-y-cundo",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/JX1AA2T62D8Y/lucho-garcia-humor-emocion-y-vibra",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2196,7 +2078,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/NMWSZ1JYX758/attack-on-titan-the-last-concert-orquesta-sinfonica-en-rosario-22-de-noviembre",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/K0TZY4EGN6YS/la-juntada-de-los-artistas-decada-disco-domingo-22",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2213,7 +2095,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/R14GT1070XF1/dan-lluvia-en-rosario",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/K1EJ3B9YBMRV/el-mejor-intento-luz-senal-y-cundo",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2230,7 +2112,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/RS8XRFN2ENBR/candlelight-tributo-a-phil-collins",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/NMWSZ1JYX758/attack-on-titan-the-last-concert-orquesta-sinfonica-en-rosario-22-de-noviembre",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2247,7 +2129,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/WNHPY4RWXW4J/zell",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/R14GT1070XF1/dan-lluvia-en-rosario",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2264,7 +2146,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/WSJW4WYGX7TK/rap-de-barrio-rosario-gira-despedida",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/RS8XRFN2ENBR/candlelight-tributo-a-phil-collins",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2281,7 +2163,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/X8D93QMK8BPN/cuti-y-roberto-carabajal",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/WNHPY4RWXW4J/zell",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2298,7 +2180,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/WSJW4WYGX7TK/rap-de-barrio-rosario-gira-despedida",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2315,7 +2197,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/XNZ25ZMQRE3Q/benja-torres",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/X8D93QMK8BPN/cuti-y-roberto-carabajal",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2332,7 +2214,7 @@
     },
     {
       "fuente": "SalePlan",
-      "url": "https://saleplan.ar/santa-fe/rosario/planes/XXKG92WDF9CJ/navidad-made-in-argentina",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución"
     },
@@ -2349,6 +2231,12 @@
     },
     {
       "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/XNZ25ZMQRE3Q/benja-torres",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
+    },
+    {
+      "fuente": "SalePlan",
       "url": "https://saleplan.ar/santa-fe/rosario/planes/AR13842GSX99/rouge-3110-halloween",
       "estado": "diferido",
       "motivo": "Turno de revisión rotativa en otra ejecución",
@@ -2357,6 +2245,12 @@
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
+    },
+    {
+      "fuente": "SalePlan",
+      "url": "https://saleplan.ar/santa-fe/rosario/planes/XXKG92WDF9CJ/navidad-made-in-argentina",
+      "estado": "diferido",
+      "motivo": "Turno de revisión rotativa en otra ejecución"
     },
     {
       "fuente": "SalePlan",
@@ -3268,7 +3162,7 @@
       "motivo": "Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado"
       }
@@ -3280,7 +3174,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3292,7 +3186,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3304,7 +3198,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3316,7 +3210,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3328,7 +3222,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3340,7 +3234,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3352,7 +3246,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-22T15:15:53.030302-03:00",
+        "fecha": "2026-11-22T21:02:53.563790-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
