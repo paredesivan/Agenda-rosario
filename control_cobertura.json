@@ -1,26 +1,37 @@
 {
-  "fuentes_sin_diagnostico": [],
+  "fuentes_sin_diagnostico": [
+    "ATIR",
+    "Biblioteca Argentina Dr. Juan Álvarez",
+    "Biblioteca Vigil",
+    "Centro Cultural Parque de España",
+    "Distrito Siete",
+    "Metropolitano",
+    "Municipalidad de Rosario",
+    "Teatro Astengo",
+    "Teatro Broadway",
+    "Teatro Municipal La Comedia"
+  ],
   "municipal": {
-    "diagnostico_actual": true,
-    "fichas_consultadas": 40,
-    "aplazadas_por_bloqueo": 2,
-    "fichas_leidas": 39,
-    "no_consultadas_por_pausa": 0,
-    "consultas_fallidas": 1
+    "diagnostico_actual": false,
+    "fichas_consultadas": null,
+    "aplazadas_por_bloqueo": null,
+    "fichas_leidas": null,
+    "no_consultadas_por_pausa": null,
+    "consultas_fallidas": null
   },
   "pendientes": {
-    "cantidad": 222,
-    "mayores_7_dias": 182,
-    "antiguedad_maxima_dias": 36,
+    "cantidad": 223,
+    "mayores_7_dias": 186,
+    "antiguedad_maxima_dias": 37,
     "criterio": "Desde la primera evidencia registrada; puede ser anterior.",
     "por_fuente": {
       "EntradaFan": 8,
-      "Instituto Politécnico — Novedades": 8,
+      "Instituto Politécnico — Novedades": 9,
       "Planaxia": 11,
       "Rosario Times": 24,
       "SalePlan": 171
     }
   },
-  "minutos_hasta_informe": 26.1,
+  "minutos_hasta_informe": 42.5,
   "tiempo_intervencion_humana": "No medido"
 }
