@@ -2,17 +2,37 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-11-24 14:44. Corte: 2026-11-24.
-Eventos futuros: 930. Revisión municipal: 2026-11-24T14:44:44.941519-03:00.
+Datos de la agenda: 2026-11-24 23:28. Corte: 2026-11-24.
+Eventos futuros: 932. Revisión municipal: 2026-11-24T23:28:29.061809-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
 |---|---:|
+| sin_funciones_extraidas | 16 |
+| con_funciones_extraidas | 23 |
+| consulta_fallida | 1 |
 
-Funciones extraídas ausentes de la agenda: no medible con el informe antiguo; falta detalle por función.
+Funciones extraídas ausentes de la agenda: 0.
 
 ## Consultas fallidas y fichas sin funciones
 
+- https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
+- https://www.rosario.gob.ar/inicio/checker-tobi-y-el-viaje-los-rios-voladores-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
+- https://www.rosario.gob.ar/inicio/circuitos-culturales-65-visitas-especiales — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/festival-fontanarrosa-1 — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/la-novia-del-diablo-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
+- https://www.rosario.gob.ar/inicio/noche-de-teatros-independientes — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/presentaciones-de-libros-en-la-biblioteca-argentina — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/primavera-en-el-triptico-de-la-infancia — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/taller-borges-el-detective-fantastico — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-lectura-y-conversacion — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-robotica-en-el-sudoeste — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-de-tecnicas-de-danza-y-composicion-instantanea — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/taller-sin-orillas — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/talleres-anuales-de-tango-danza — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/talleres-de-teatro-patatus-en-felipa-la-casa-del-fondo — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/fernando-borroni-presenta-su-espectaculo-del-sueno-la-poesia — 404 Client Error: Not Found for url: https://www.rosario.gob.ar/inicio/fernando-borroni-presenta-su-espectaculo-del-sueno-la-poesia
 
 ## Candidatos y resolución
 
@@ -299,7 +319,6 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.ips.edu.ar/dictamen-final-del-concurso-de-un-1-cargo-de-asesor-pedagogico.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/dictamen-final-del-concurso-de-titularizacion-de-un-1-cargo-de-asesor-pedagogico.html — descartado: Aviso administrativo institucional; no es una salida pública
 - https://www.ips.edu.ar/importante-mesas-extraordinarias-previas.html — descartado: Aviso administrativo institucional; no es una salida pública
-- https://www.ips.edu.ar/mesas-de-examenes-diciembre-2026.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/visita-y-registrate-en-el-portal.html — pendiente: Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado
 - https://www.ips.edu.ar/fechas-de-sorteo-de-temas-y-entrevistas-del-concurso-de-titularizacion-para-un-cargo-de-asesor-a-pedagogico-a.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/acta-sorteo-de-temas-y-orden-de-exposicion-para-el-concurso-de-titularzacion-para-un-1-cargo-de-asesor-pedagogico.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
@@ -307,3 +326,4 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.ips.edu.ar/enunciado-matematica-ingreso-2027.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/importante-examen-de-ingreso-2027.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/impresion-3d-en-nexo-tecnologico.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
+- https://www.ips.edu.ar/mesas-de-examenes-diciembre-2026.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado

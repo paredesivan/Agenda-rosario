@@ -2,11 +2,11 @@
   "fuentes_sin_diagnostico": [],
   "municipal": {
     "diagnostico_actual": true,
-    "fichas_consultadas": 0,
+    "fichas_consultadas": 40,
     "aplazadas_por_bloqueo": 2,
-    "fichas_leidas": 0,
-    "no_consultadas_por_pausa": 40,
-    "consultas_fallidas": 0
+    "fichas_leidas": 39,
+    "no_consultadas_por_pausa": 0,
+    "consultas_fallidas": 1
   },
   "pendientes": {
     "cantidad": 222,
@@ -21,6 +21,6 @@
       "SalePlan": 171
     }
   },
-  "minutos_hasta_informe": 21.78,
+  "minutos_hasta_informe": 26.1,
   "tiempo_intervencion_humana": "No medido"
 }
