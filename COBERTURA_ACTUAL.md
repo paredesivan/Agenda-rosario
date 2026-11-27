@@ -2,29 +2,27 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-11-27 10:56. Corte: 2026-11-27.
-Eventos futuros: 929. Revisión municipal: 2026-11-27T10:56:34.039699-03:00.
+Datos de la agenda: 2026-11-27 19:43. Corte: 2026-11-27.
+Eventos futuros: 936. Revisión municipal: 2026-11-27T19:43:39.994241-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
 |---|---:|
-| sin_funciones_extraidas | 8 |
-| con_funciones_extraidas | 31 |
+| con_funciones_extraidas | 33 |
+| sin_funciones_extraidas | 6 |
 | consulta_fallida | 1 |
 
 Funciones extraídas ausentes de la agenda: 0.
 
 ## Consultas fallidas y fichas sin funciones
 
-- https://www.rosario.gob.ar/inicio/noche-latinoamericana-en-burana — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/bajo-tus-pies-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/checker-tobi-y-el-viaje-los-rios-voladores-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/circuitos-culturales-65-visitas-especiales — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/fernando-borroni-presenta-su-espectaculo-del-sueno-la-poesia — 404 Client Error: Not Found for url: https://www.rosario.gob.ar/inicio/fernando-borroni-presenta-su-espectaculo-del-sueno-la-poesia
-- https://www.rosario.gob.ar/inicio/festival-fontanarrosa-1 — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/la-novia-del-diablo-en-cine-lumiere — Sin fechas/horarios interpretables dentro del horizonte
-- https://www.rosario.gob.ar/inicio/primavera-en-el-triptico-de-la-infancia — Bloque sin sede verificable
-- https://www.rosario.gob.ar/inicio/taller-de-actuacion-cuerpos-crudos-en-sala-tandava — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/cursos-de-la-unr-para-personas-mayores — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/diciembre-en-cine-lumiere-2 — Bloque sin sede verificable
+- https://www.rosario.gob.ar/inicio/presentacion-de-proyecto-de-la-nueva-plaza-argentina — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/jornada-de-recepcion-de-residuos-informaticos-2 — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
+- https://www.rosario.gob.ar/inicio/laboratorio-creativo-de-tango-y-musica — Sin fechas/horarios interpretables dentro del horizonte
+- https://www.rosario.gob.ar/inicio/palabras-cruzadas.-taller-literario-con-gabriela-gervasoni — 404 Client Error: Not Found for url: https://www.rosario.gob.ar/inicio/palabras-cruzadas.-taller-literario-con-gabriela-gervasoni
+- https://www.rosario.gob.ar/inicio/taller-sin-orillas — Sin título o fuera del alcance cultural/recreativo (se excluye formación)
 
 ## Candidatos y resolución
 
@@ -87,7 +85,7 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://www.entradafan.com.ar/entradas-seru-giran-rosario/e/17764 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-maria-becerra-rosario/e/17726 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://www.entradafan.com.ar/entradas-maria-becerra-rosario/e/17726 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-las-gratitudes-rosario/e/18080 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://www.entradafan.com.ar/entradas-luis-fonsi-rosario/e/18092 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://saleplan.ar/santa-fe/rosario/planes/GQTPDMR77BCK/candlelight-lo-mejor-de-hans-zimmer — corroborado: Todas las funciones futuras ya tienen respaldo prioritario
@@ -191,12 +189,13 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://saleplan.ar/santa-fe/rosario/planes/J726ZN8F7F1Y/parc-sud-x-mvmnt-roccofx-matias-fontanella — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/RS8XRFN2ENBR/candlelight-tributo-a-phil-collins — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/Q1D0HE7MYDVH/guerreras-k-pop-show-inmersivo-4d — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/TX4GZWXNY60W/mica-racciati-set-electrico-presentan-su-nuevo-disco — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/STT2K9GF1BER/humor-y-medios — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/Q96P450TJK28/familia-sustantivo-femenino — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/WNHPY4RWXW4J/zell — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/TX4GZWXNY60W/mica-racciati-set-electrico-presentan-su-nuevo-disco — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/ZPV5G5MSSPQV/matias-acuna-crowdworking-rosario — diferido: Turno de revisión rotativa en otra ejecución
-- https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/WNHPY4RWXW4J/zell — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/RRCF1QQZDTBH/como-mirar-fijo-al-sol — diferido: Turno de revisión rotativa en otra ejecución
+- https://saleplan.ar/santa-fe/rosario/planes/XE0SJG8QRNNQ/candlelight-tributo-a-michael-jackson — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/YEP007BGN837/candlelight-tributo-a-taylor-swift — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/3B4P2RCMWJKE/producciones-teatrales-de-adultos-mayores — diferido: Turno de revisión rotativa en otra ejecución
 - https://saleplan.ar/santa-fe/rosario/planes/S54P8YGH9JHK/harry-potter-2-por-capsula-producciones — diferido: Turno de revisión rotativa en otra ejecución
@@ -318,8 +317,8 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.ips.edu.ar/acta-sorteo-de-temas-y-orden-de-exposicion-para-el-concurso-de-titularzacion-para-un-1-cargo-de-asesor-pedagogico.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/atencion-estudiantes-de-2-ano.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/eleccion-de-especialidades-2do.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
-- https://www.ips.edu.ar/enunciado-matematica-ingreso-2027.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
+- https://www.ips.edu.ar/enunciado-matematica-ingreso-2027.html — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://www.ips.edu.ar/importante-examen-de-ingreso-2027.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
 - https://www.ips.edu.ar/impresion-3d-en-nexo-tecnologico.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
-- https://www.ips.edu.ar/ingreso-secundario-2027.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
+- https://www.ips.edu.ar/ingreso-secundario-2027.html — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://www.ips.edu.ar/mesas-de-examenes-diciembre-2026.html — pendiente: La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado
