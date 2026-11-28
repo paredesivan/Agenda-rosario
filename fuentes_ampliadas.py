@@ -69,7 +69,42 @@ def ubicacion(sopa, evento, fuente):
     return sede.strip(), calle
 
 
+def feria_convocatoria(contenido, url, fuente):
+    sopa = BeautifulSoup(contenido, 'html.parser')
+    titulo = sopa.select_one('h1')
+    nombre = titulo.get_text(' ', strip=True) if titulo else ''
+    nombre = re.sub(r'^convocatoria\s+(?:abierta\s+)?(?:para\s+)?', '', nombre, flags=re.I).strip()
+    if not norm(nombre).startswith('feria '):
+        return []
+    meses = 'enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre'.split()
+    dias_semana = r'(?:lunes|martes|miercoles|jueves|viernes|sabado|domingo)'
+    lista = rf'{dias_semana}\s+\d{{1,2}}(?:\s*(?:,|y|e)\s*{dias_semana}\s+\d{{1,2}})*'
+    patron = rf'\b(?:se desarrollara|se realizara|tendra lugar)\s+(?:los\s+dias\s+)?({lista})\s+de\s+({"|".join(meses)})\s+de\s+(20\d{{2}})\b'
+    texto = norm(sopa.get_text(' ', strip=True))
+    m = re.search(patron, texto)
+    h = re.search(r'\bla feria se realizara en el centro cultural parque de espana de\s+(\d{1,2})(?::(\d{2}))?\s+a\s+(\d{1,2})(?::(\d{2}))?\s*h\b', texto)
+    if not m or not h or not re.search(r'\b(?:publico|entrada|visitantes)\b', texto):
+        raise ValueError('Feria sin fechas, sede u horario público verificables')
+    if re.search(r'\b(?:feria cancelada|feria suspendida|se cancela la feria|se suspende la feria)\b', texto):
+        return [{'cancelado': True}]
+    from datetime import date, time
+    inicio = time(int(h[1]), int(h[2] or 0))
+    fin = time(int(h[3]), int(h[4] or 0))
+    if fin <= inicio:
+        raise ValueError('Horario de feria no interpretable')
+    resultado = []
+    for dia in re.findall(r'\d{1,2}', m[1]):
+        fecha = date(int(m[3]), meses.index(m[2])+1, int(dia))
+        resultado.append({'cancelado': False, 'fecha': fecha.isoformat(), 'hora': inicio.strftime('%H:%M'),
+                          'hora_fin': fin.strftime('%H:%M'), 'fecha_fin': fecha.isoformat(),
+                          'nombre': nombre, 'lugar': 'Centro Cultural Parque de España',
+                          'direccion': 'Sarmiento y el río', 'categorias': ['ferias']})
+    return resultado
+
+
 def ficha(contenido, url, fuente):
+    if fuente['adaptador'] == 'ccpe_ferias':
+        return feria_convocatoria(contenido, url, fuente)
     if fuente['adaptador'] == 'aec_teatro':
         from fuente_aec import ficha_aec
         return ficha_aec(contenido, url, fuente)
@@ -172,7 +207,15 @@ def revisar(config, acceso, hoy):
                 continue
             # Recorrer primero fichas no leídas o con caché más antigua.
             paginas = acceso.cache.get('paginas', {})
-            filas.sort(key=lambda e: paginas.get(e['url'], {}).get('consultado', 0))
+            # Registrar también intentos fallidos: si no, un error permanente
+            # desplaza indefinidamente a fichas que aún no fueron consultadas.
+            intentos = acceso.cache.setdefault('intentos_rotacion', {}).setdefault(nombre, {})
+            vigentes = {e['url'] for e in filas}
+            for antigua in list(intentos):
+                if antigua not in vigentes:
+                    del intentos[antigua]
+            filas.sort(key=lambda e: (max(intentos.get(e['url'], 0),
+                              paginas.get(e['url'], {}).get('consultado', 0)), e['url']))
             pendientes, cantidad, errores = 0, 0, []
             diferidas_cuota = 0
             max_fichas = int(fuente.get('max_fichas_por_fuente', config.get('max_fichas_por_fuente', 4)))
@@ -194,6 +237,7 @@ def revisar(config, acceso, hoy):
                                 diferidas_cuota += 1
                                 continue
                             usadas.append(url)
+                    intentos[url] = acceso.reloj() if hasattr(acceso, 'reloj') else datetime.now(timezone.utc).timestamp()
                     eventos = acceso.leer_datos(url, lambda h, u: ficha(h, u, fuente), horas=24)
                     revisadas.add((nombre, url))
                     for e in eventos:
@@ -209,7 +253,7 @@ def revisar(config, acceso, hoy):
                     errores.append({'url': url, 'motivo': str(error)})
                     if fuente.get('max_fichas_dia'):
                         candidatos.append({'fuente': nombre, 'url': url, 'estado': str(error)})
-            estados[nombre] = {'estado': 'parcial' if pendientes else 'revisada',
+            estados[nombre] = {'estado': 'parcial' if pendientes or diferidas_cuota or len(filas) > max_fichas else 'revisada',
                               'publicadas': cantidad, 'fichas_en_listado': len(filas),
                               'fichas_pendientes': pendientes, 'errores': errores,
                               'diferidas_por_limite': max(0, len(filas)-max_fichas),

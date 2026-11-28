@@ -1,0 +1,9 @@
+{
+  "version": "2026.11.28-cobertura-18",
+  "archivos": [
+    "actualizar_eventos.py",
+    "fuentes_ampliadas.py",
+    "fuentes_ampliadas.json",
+    "tests/test_cobertura_noviembre.py"
+  ]
+}

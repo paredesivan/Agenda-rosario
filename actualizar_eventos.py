@@ -502,6 +502,7 @@ def _mismo_lugar(a, b):
         return False
     def firma(valor):
         valor = re.sub(r"\bccpe\b", "centro cultural parque espana", valor)
+        valor = re.sub(r"\bcmd\b", "centro municipal distrito", valor)
         return _tokens_evento(valor) - {"centro", "cultural", "galeria", "arte", "teatro", "municipal", "fundacion"}
     def sala(e):
         valor = normalizar(e.get("lugar", ""))
@@ -594,7 +595,27 @@ def sin_repetidos(eventos):
             funciones.append([evento])
         else:
             grupo.append(evento)
-    return [grupo[0] for funciones in grupos.values() for grupo in funciones]
+    unicos = [grupo[0] for funciones in grupos.values() for grupo in funciones]
+    oficiales = [e for e in unicos if (urlsplit(e.get('evento_url', '')).hostname or '').endswith('.gob.ar')
+                 and e.get('origen') != 'Agenda Cultural Rosario']
+    salida = []
+    for e in unicos:
+        # La regla especial es sólo para exposiciones de un agregador, con
+        # título idéntico, sede equivalente y una única ficha oficial ese día.
+        if (e.get('origen') == 'Agenda Cultural Rosario' and _hora_evento(e)
+                and normalizar(e.get('descripcion', '')).startswith('muestras y exposiciones:')):
+            candidatos = [o for o in oficiales if o.get('fecha') == e.get('fecha')
+                          and o.get('horario_pendiente') is True and not _hora_evento(o)
+                          and _titulo_funcion(o) == _titulo_funcion(e) and _mismo_lugar(o, e)]
+            if len(candidatos) == 1:
+                o = candidatos[0]
+                # Si hay varias funciones/horarios distintos, no se presupone identidad.
+                pares = [x for x in unicos if x is not o and x.get('fecha') == e.get('fecha')
+                         and _titulo_funcion(x) == _titulo_funcion(e) and _mismo_lugar(x, e)]
+                if len(pares) == 1:
+                    continue
+        salida.append(e)
+    return salida
 
 
 def lavarden(html, fuente, url, direccion, hoy):

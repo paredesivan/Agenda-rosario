@@ -249,6 +249,19 @@
       "selector": "h3.pre-post-title a[href]",
       "cache_horas": 2,
       "motivo": "HTML y robots públicos verificados 18/10/2026. Sala abierta a todo público. Gratuidad para afiliados no se extiende a público general; no cursos ni eventos fijos."
+    },
+    {
+      "nombre": "Centro Cultural Parque de España — ferias",
+      "listado": "https://ccpe.org.ar/web/?s=feria",
+      "adaptador": "ccpe_ferias",
+      "tipo": "oficial",
+      "habilitada": true,
+      "patron_ficha": "^/web/actividades/[^/]+/?$",
+      "selector": "a[href]",
+      "cache_horas": 24,
+      "max_fichas_por_fuente": 4,
+      "max_fichas_dia": 4,
+      "motivo": "Descubrimiento mediante búsqueda pública del sitio; respeta robots y pausas. Sólo ferias con fecha, horario y sede explícitos; no publica convocatorias ni cursos."
     }
   ]
 }
