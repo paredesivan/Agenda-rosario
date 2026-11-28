@@ -1,5 +1,5 @@
 {
-  "datos_actualizados": "2026-11-28 11:02",
+  "datos_actualizados": "2026-11-28 13:53",
   "fecha_corte": "2026-11-28",
   "eventos_futuros_publicados": 806,
   "por_fuente": {
@@ -25,7 +25,7 @@
     "Passline": 1,
     "Microteatro Rosario": 20
   },
-  "revision_municipal": "2026-11-28T11:02:58.982220-03:00",
+  "revision_municipal": "2026-11-28T13:53:35.784341-03:00",
   "municipal_del_intento_actual": true,
   "fichas_municipales": [],
   "estados_municipales": {},
@@ -65,14 +65,14 @@
       "nombre": "Dario Sztajnszrajber Rosario",
       "url": "",
       "fecha": "2026-11-28",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
     },
     {
       "fuente": "EntradaFan",
       "nombre": "Abel Pintos Rosario",
       "url": "",
       "fecha": "2026-11-28",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático"
     },
     {
       "fuente": "SalePlan",
@@ -502,7 +502,7 @@
       "motivo": ""
     }
   ],
-  "resolucion_revision": "2026-11-28T11:23:37.676908-03:00",
+  "resolucion_revision": "2026-11-28T14:16:17.408289-03:00",
   "resolucion_candidatos": [
     {
       "fuente": "Rosario Times",
@@ -1095,8 +1095,8 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
         "fecha": "2026-11-28T11:23:37.676908-03:00",
@@ -1107,8 +1107,8 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
         "fecha": "2026-11-28T11:23:37.676908-03:00",
@@ -1119,8 +1119,8 @@
     {
       "fuente": "EntradaFan",
       "url": "https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642",
-      "estado": "pendiente",
-      "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
+      "estado": "reintentar",
+      "motivo": "Cuota diaria de ocho fichas agotada; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
         "fecha": "2026-11-28T11:23:37.676908-03:00",
@@ -1135,7 +1135,7 @@
       "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-28T11:23:37.676908-03:00",
+        "fecha": "2026-11-28T14:16:17.408289-03:00",
         "estado": "pendiente",
         "motivo": "Sin coincidencia oficial ni ficha primaria interpretable; reintento automático"
       }
@@ -3401,7 +3401,7 @@
       "motivo": "Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-28T11:23:37.676908-03:00",
+        "fecha": "2026-11-28T14:16:17.408289-03:00",
         "estado": "pendiente",
         "motivo": "Aviso administrativo u oferta de formación excluidos; Acceso para público general no confirmado"
       }
@@ -3413,7 +3413,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-28T11:23:37.676908-03:00",
+        "fecha": "2026-11-28T14:16:17.408289-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3425,7 +3425,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-28T11:23:37.676908-03:00",
+        "fecha": "2026-11-28T14:16:17.408289-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3437,7 +3437,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-28T11:23:37.676908-03:00",
+        "fecha": "2026-11-28T14:16:17.408289-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3449,7 +3449,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-28T11:23:37.676908-03:00",
+        "fecha": "2026-11-28T14:16:17.408289-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3461,7 +3461,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-28T11:23:37.676908-03:00",
+        "fecha": "2026-11-28T14:16:17.408289-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3473,7 +3473,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-28T11:23:37.676908-03:00",
+        "fecha": "2026-11-28T14:16:17.408289-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3485,7 +3485,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-28T11:23:37.676908-03:00",
+        "fecha": "2026-11-28T14:16:17.408289-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3497,7 +3497,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-28T11:23:37.676908-03:00",
+        "fecha": "2026-11-28T14:16:17.408289-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }
@@ -3509,7 +3509,7 @@
       "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado",
       "funciones": 0,
       "ultimo_intento": {
-        "fecha": "2026-11-28T11:23:37.676908-03:00",
+        "fecha": "2026-11-28T14:16:17.408289-03:00",
         "estado": "pendiente",
         "motivo": "La noticia no informa fecha completa de una actividad; Acceso para público general no confirmado"
       }

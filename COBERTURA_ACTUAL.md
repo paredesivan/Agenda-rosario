@@ -2,8 +2,8 @@
 
 Compara diagnósticos de extracción y agenda. No mide publicaciones nunca descubiertas ni garantiza cobertura completa de las fuentes.
 
-Datos de la agenda: 2026-11-28 11:02. Corte: 2026-11-28.
-Eventos futuros: 806. Revisión municipal: 2026-11-28T11:02:58.982220-03:00.
+Datos de la agenda: 2026-11-28 13:53. Corte: 2026-11-28.
+Eventos futuros: 806. Revisión municipal: 2026-11-28T13:53:35.784341-03:00.
 Diagnóstico municipal de este intento: sí.
 
 | Resultado municipal | Fichas |
@@ -71,9 +71,9 @@ Los candidatos no equivalen a eventos únicos perdidos. La resolución conserva 
 - https://www.entradafan.com.ar/entradas-baglietto-y-vitale-rosario/e/18127 — descartado: Las fechas conocidas están vencidas; evidencia conservada y revisión semanal
 - https://www.entradafan.com.ar/entradas-el-jefe-del-jefe-rosario/e/18310 — descartado: Las fechas conocidas están vencidas; evidencia conservada y revisión semanal
 - https://www.entradafan.com.ar/entradas-massano-rosario/e/18280 — descartado: Las fechas conocidas están vencidas; evidencia conservada y revisión semanal
-- https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
-- https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
+- https://www.entradafan.com.ar/entradas-abel-pintos-rosario/e/17983 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://www.entradafan.com.ar/entradas-dario-sztajnszrajber-rosario/e/18129 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
+- https://www.entradafan.com.ar/entradas-tan-bionica-rosario/e/16642 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-seru-giran-rosario/e/17764 — pendiente: Sin coincidencia oficial ni ficha primaria interpretable; reintento automático
 - https://www.entradafan.com.ar/entradas-maria-becerra-rosario/e/17726 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
 - https://www.entradafan.com.ar/entradas-las-gratitudes-rosario/e/18080 — reintentar: Cuota diaria de ocho fichas agotada; reintento automático
