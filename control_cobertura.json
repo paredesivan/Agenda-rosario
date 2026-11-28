@@ -2,25 +2,25 @@
   "fuentes_sin_diagnostico": [],
   "municipal": {
     "diagnostico_actual": true,
-    "fichas_consultadas": 7,
-    "aplazadas_por_bloqueo": 1,
-    "fichas_leidas": 6,
-    "no_consultadas_por_pausa": 33,
-    "consultas_fallidas": 1
+    "fichas_consultadas": 0,
+    "aplazadas_por_bloqueo": 2,
+    "fichas_leidas": 0,
+    "no_consultadas_por_pausa": 40,
+    "consultas_fallidas": 0
   },
   "pendientes": {
-    "cantidad": 251,
-    "mayores_7_dias": 237,
+    "cantidad": 232,
+    "mayores_7_dias": 212,
     "antiguedad_maxima_dias": 40,
     "criterio": "Desde la primera evidencia registrada; puede ser anterior.",
     "por_fuente": {
-      "EntradaFan": 11,
+      "EntradaFan": 7,
       "Instituto Politécnico — Novedades": 10,
       "Planaxia": 11,
       "Rosario Times": 25,
-      "SalePlan": 194
+      "SalePlan": 179
     }
   },
-  "minutos_hasta_informe": 29.22,
+  "minutos_hasta_informe": 21.42,
   "tiempo_intervencion_humana": "No medido"
 }
