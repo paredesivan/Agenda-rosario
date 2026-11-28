@@ -1,0 +1,173 @@
+name: 'Agenda: instalar correcciones de cobertura 2026.11.28'
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/reparar_agenda.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: actualizar-agenda
+  cancel-in-progress: false
+jobs:
+  instalar:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Instalar dependencias vigentes
+        run: python -m pip install -r requirements.txt
+      - name: Aplicar correcciones sin modificar eventos publicados
+        run: |
+          python - <<'PYTHON'
+          from pathlib import Path
+          import json
+          import subprocess
+          import re
+          from datetime import date
+          
+          VERSION = '2026.11.28-cobertura-18'
+          ROOT = Path.cwd()
+          RECIBO = ROOT / '.agenda/instalacion_cobertura_noviembre.json'
+          if RECIBO.exists() and json.loads(RECIBO.read_text()).get('version') == VERSION:
+              print('Entrega ya instalada; no se sobrescriben cambios posteriores.')
+              raise SystemExit(0)
+          
+          # Sólo se modifican fragmentos exactos, comprobados en la versión revisada.
+          def sustituir(s, antes, despues):
+              if s.count(antes) != 1:
+                  raise SystemExit('Código distinto del revisado: se cancela la instalación sin publicar.')
+              return s.replace(antes, despues, 1)
+          
+          p = ROOT / 'actualizar_eventos.py'
+          s = p.read_text(encoding='utf-8')
+          # Los acrónimos de los distritos representan la misma sede, no salas distintas.
+          s = sustituir(s, '        valor = re.sub(r"\\bccpe\\b", "centro cultural parque espana", valor)',
+              '        valor = re.sub(r"\\bccpe\\b", "centro cultural parque espana", valor)\n        valor = re.sub(r"\\bcmd\\b", "centro municipal distrito", valor)')
+          # No tomar el horario de un agregador como horario oficial. Se suprime su copia
+          # sólo ante una coincidencia inequívoca con una ficha oficial de exposición.
+          old = '    return [grupo[0] for funciones in grupos.values() for grupo in funciones]'
+          new = '''    unicos = [grupo[0] for funciones in grupos.values() for grupo in funciones]
+              oficiales = [e for e in unicos if (urlsplit(e.get('evento_url', '')).hostname or '').endswith('.gob.ar')
+                           and e.get('origen') != 'Agenda Cultural Rosario']
+              salida = []
+              for e in unicos:
+                  # La regla especial es sólo para exposiciones de un agregador, con
+                  # título idéntico, sede equivalente y una única ficha oficial ese día.
+                  if (e.get('origen') == 'Agenda Cultural Rosario' and _hora_evento(e)
+                          and normalizar(e.get('descripcion', '')).startswith('muestras y exposiciones:')):
+                      candidatos = [o for o in oficiales if o.get('fecha') == e.get('fecha')
+                                    and o.get('horario_pendiente') is True and not _hora_evento(o)
+                                    and _titulo_funcion(o) == _titulo_funcion(e) and _mismo_lugar(o, e)]
+                      if len(candidatos) == 1:
+                          o = candidatos[0]
+                          # Si hay varias funciones/horarios distintos, no se presupone identidad.
+                          pares = [x for x in unicos if x is not o and x.get('fecha') == e.get('fecha')
+                                   and _titulo_funcion(x) == _titulo_funcion(e) and _mismo_lugar(x, e)]
+                          if len(pares) == 1:
+                              continue
+                  salida.append(e)
+              return salida'''
+          s = sustituir(s, old, new)
+          q = ROOT / 'fuentes_ampliadas.py'
+          a = q.read_text(encoding='utf-8')
+          a = sustituir(a, "            filas.sort(key=lambda e: paginas.get(e['url'], {}).get('consultado', 0))", '''            # Registrar también intentos fallidos: si no, un error permanente
+                      # desplaza indefinidamente a fichas que aún no fueron consultadas.
+                      intentos = acceso.cache.setdefault('intentos_rotacion', {}).setdefault(nombre, {})
+                      vigentes = {e['url'] for e in filas}
+                      for antigua in list(intentos):
+                          if antigua not in vigentes:
+                              del intentos[antigua]
+                      filas.sort(key=lambda e: (max(intentos.get(e['url'], 0),
+                                        paginas.get(e['url'], {}).get('consultado', 0)), e['url']))''')
+          a = sustituir(a, "                    eventos = acceso.leer_datos(url, lambda h, u: ficha(h, u, fuente), horas=24)", '''                    intentos[url] = acceso.reloj() if hasattr(acceso, 'reloj') else datetime.now(timezone.utc).timestamp()
+                              eventos = acceso.leer_datos(url, lambda h, u: ficha(h, u, fuente), horas=24)''')
+          a = sustituir(a, "            estados[nombre] = {'estado': 'parcial' if pendientes else 'revisada',", "            estados[nombre] = {'estado': 'parcial' if pendientes or diferidas_cuota or len(filas) > max_fichas else 'revisada',")
+          # Extensión limitada: recuperar ferias futuras mencionadas en convocatorias.
+          # No se considera gratuita una feria porque la infraestructura sea gratuita.
+          parser = r'''def feria_convocatoria(contenido, url, fuente):
+              sopa = BeautifulSoup(contenido, 'html.parser')
+              titulo = sopa.select_one('h1')
+              nombre = titulo.get_text(' ', strip=True) if titulo else ''
+              nombre = re.sub(r'^convocatoria\s+(?:abierta\s+)?(?:para\s+)?', '', nombre, flags=re.I).strip()
+              if not norm(nombre).startswith('feria '):
+                  return []
+              meses = 'enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre'.split()
+              dias_semana = r'(?:lunes|martes|miercoles|jueves|viernes|sabado|domingo)'
+              lista = rf'{dias_semana}\s+\d{{1,2}}(?:\s*(?:,|y|e)\s*{dias_semana}\s+\d{{1,2}})*'
+              patron = rf'\b(?:se desarrollara|se realizara|tendra lugar)\s+(?:los\s+dias\s+)?({lista})\s+de\s+({"|".join(meses)})\s+de\s+(20\d{{2}})\b'
+              texto = norm(sopa.get_text(' ', strip=True))
+              m = re.search(patron, texto)
+              h = re.search(r'\bla feria se realizara en el centro cultural parque de espana de\s+(\d{1,2})(?::(\d{2}))?\s+a\s+(\d{1,2})(?::(\d{2}))?\s*h\b', texto)
+              if not m or not h or not re.search(r'\b(?:publico|entrada|visitantes)\b', texto):
+                  raise ValueError('Feria sin fechas, sede u horario público verificables')
+              if re.search(r'\b(?:feria cancelada|feria suspendida|se cancela la feria|se suspende la feria)\b', texto):
+                  return [{'cancelado': True}]
+              from datetime import date, time
+              inicio = time(int(h[1]), int(h[2] or 0))
+              fin = time(int(h[3]), int(h[4] or 0))
+              if fin <= inicio:
+                  raise ValueError('Horario de feria no interpretable')
+              resultado = []
+              for dia in re.findall(r'\d{1,2}', m[1]):
+                  fecha = date(int(m[3]), meses.index(m[2])+1, int(dia))
+                  resultado.append({'cancelado': False, 'fecha': fecha.isoformat(), 'hora': inicio.strftime('%H:%M'),
+                                    'hora_fin': fin.strftime('%H:%M'), 'fecha_fin': fecha.isoformat(),
+                                    'nombre': nombre, 'lugar': 'Centro Cultural Parque de España',
+                                    'direccion': 'Sarmiento y el río', 'categorias': ['ferias']})
+              return resultado
+          
+          
+          '''
+          a = sustituir(a, 'def ficha(contenido, url, fuente):\n', parser + 'def ficha(contenido, url, fuente):\n    if fuente[\'adaptador\'] == \'ccpe_ferias\':\n        return feria_convocatoria(contenido, url, fuente)\n')
+          # Se prueba una búsqueda pública normal del sitio; el lector existente debe
+          # verificar robots, condiciones y pausas. No hay URLs de eventos fijas.
+          c = ROOT / 'fuentes_ampliadas.json'
+          config = json.loads(c.read_text(encoding='utf-8'))
+          nombre = 'Centro Cultural Parque de España — ferias'
+          if any(f['nombre'] == nombre for f in config['fuentes']):
+              raise SystemExit('Fuente ya presente sin recibo; revisar antes de sobrescribir')
+          config['fuentes'].append({'nombre': nombre, 'listado': 'https://ccpe.org.ar/web/?s=feria',
+              'adaptador': 'ccpe_ferias', 'tipo': 'oficial', 'habilitada': True,
+              'patron_ficha': '^/web/actividades/[^/]+/?$', 'selector': 'a[href]',
+              'cache_horas': 24, 'max_fichas_por_fuente': 4, 'max_fichas_dia': 4,
+              'motivo': 'Descubrimiento mediante búsqueda pública del sitio; respeta robots y pausas. Sólo ferias con fecha, horario y sede explícitos; no publica convocatorias ni cursos.'})
+          test = ROOT / "tests/test_cobertura_noviembre.py"
+          if test.exists():
+              raise SystemExit("Prueba existente sin recibo; no se sobrescribe")
+          # El código no toca datos publicados ni cachés históricas.
+          p.write_text(s, encoding='utf-8')
+          q.write_text(a, encoding='utf-8')
+          c.write_text(json.dumps(config, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+          test.write_text('import unittest\nfrom datetime import date\nfrom actualizar_eventos import sin_repetidos\nfrom fuentes_ampliadas import feria_convocatoria, revisar\n\nclass CoberturaNoviembre(unittest.TestCase):\n    def test_muestra_horario_no_confirmado(self):\n        oficial = dict(fecha=\'2026-12-01\', hora=\'Horario a confirmar\', horario_pendiente=True,\n                       nombre=\'Historia de las marchas\', lugar=\'Museo de la Memoria\',\n                       origen=\'Municipalidad de Rosario\', evento_url=\'https://www.rosario.gob.ar/inicio/prueba\', precio=0)\n        copia = dict(oficial, hora=\'10:00\', horario_pendiente=False, origen=\'Agenda Cultural Rosario\',\n                     evento_url=\'https://agenda.example/muestra\', descripcion=\'Muestras y Exposiciones: Historia de las marchas\', precio=None)\n        self.assertEqual(sin_repetidos([copia, oficial]), [oficial])\n        self.assertEqual(len(sin_repetidos([copia, oficial, dict(copia, hora=\'18:00\')])), 3)\n        self.assertEqual(len(sin_repetidos([dict(copia, descripcion=\'Teatro\'), oficial])), 2)\n    def test_acronimo(self):\n        a = dict(fecha=\'2026-12-01\', hora=\'08:00\', nombre=\'Muestra de arte\', lugar=\'Centro Municipal de Distrito Centro Antonio Berni\', origen=\'Municipalidad de Rosario\', evento_url=\'https://www.rosario.gob.ar/inicio/prueba\')\n        b = dict(a, lugar=\'CMD Centro Antonio Berni\', origen=\'Agenda Cultural Rosario\', evento_url=\'https://agenda.example/muestra\')\n        self.assertEqual(sin_repetidos([b,a]), [a])\n    def test_feria(self):\n        html = \'<h1>Convocatoria abierta Feria de libros</h1><p>La feria se desarrollará los días jueves 10, viernes 11 y sábado 12 de diciembre de 2026. La Feria se realizará en el Centro Cultural Parque de España de 17 a 21 h. Atención al público. Infraestructura gratuita. Inscripción hasta el 20 de noviembre.</p>\'\n        eventos = feria_convocatoria(html,\'https://ccpe.org.ar/web/actividades/prueba/\',{})\n        self.assertEqual([e[\'fecha\'] for e in eventos], [\'2026-12-10\',\'2026-12-11\',\'2026-12-12\'])\n        self.assertTrue(all(e[\'hora\']==\'17:00\' and \'precio\' not in e for e in eventos))\n        self.assertEqual(feria_convocatoria(html.replace(\'Feria de libros\',\'Residencia de escritores\'),\'\',{}),[])\n        self.assertEqual(feria_convocatoria(html+\'<p>Se suspende la feria</p>\',\'\',{}),[{\'cancelado\':True}])\n        with self.assertRaises(ValueError): feria_convocatoria(html.replace(\'de 17 a 21 h\',\'\'),\'\',{})\n    def test_rotacion(self):\n        class Fake:\n            def __init__(self): self.cache={}; self.calls=[]; self.t=0\n            def reloj(self): self.t+=1; return self.t\n            def leer_datos(self,url,parser,horas=2):\n                self.calls.append(url)\n                if url.endswith(\'/agenda/\'): return parser(\'<a href="/evento/a/">A</a><a href="/evento/b/">B</a>\',url)\n                raise ValueError(\'error de prueba\')\n        f = dict(nombre=\'Prueba\',listado=\'https://example.org/agenda/\',adaptador=\'santafe\',tipo=\'oficial\',habilitada=True,patron_ficha=\'^/evento/[^/]+/$\',max_fichas_por_fuente=1)\n        acceso=Fake()\n        for _ in range(2): revisar({\'fuentes\':[f]},acceso,date(2026,11,28))\n        self.assertEqual(acceso.calls[1::2], [\'https://example.org/evento/a/\',\'https://example.org/evento/b/\'])\n', encoding="utf-8")
+          RECIBO.parent.mkdir(exist_ok=True)
+          RECIBO.write_text(json.dumps({'version': VERSION, 'archivos': ['actualizar_eventos.py','fuentes_ampliadas.py','fuentes_ampliadas.json','tests/test_cobertura_noviembre.py']}, indent=2)+'\n')
+          PYTHON
+      - name: Validar código y pruebas del repositorio
+        run: |
+          python -m py_compile actualizar_eventos.py fuentes_ampliadas.py tests/test_cobertura_noviembre.py
+          python -m unittest discover -s tests -v
+      - name: Guardar únicamente los cambios comprobados
+        id: guardar
+        run: |
+          git add -- actualizar_eventos.py fuentes_ampliadas.py fuentes_ampliadas.json tests/test_cobertura_noviembre.py .agenda/instalacion_cobertura_noviembre.json
+          if git diff --cached --quiet; then
+            echo "Entrega ya instalada; no se crea otro commit."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Agenda: corregir cobertura, rotación y duplicados 2026.11.28-18'
+          git push origin HEAD:main
+      - name: Ejecutar el workflow principal sobre la versión instalada
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run actualizar.yml --ref main -f accion=actualizar
